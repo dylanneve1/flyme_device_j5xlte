@@ -366,6 +366,9 @@
     .end annotation
 
     .prologue
+
+    invoke-direct/range {p0 .. p0}, Landroid/media/MediaRecorder;->enforceFlymeMediaPermission()V
+
     const-wide/16 v2, 0x0
 
     .line 850
