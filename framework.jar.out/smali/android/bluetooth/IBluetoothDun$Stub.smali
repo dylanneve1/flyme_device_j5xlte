@@ -32,7 +32,7 @@
 
 .field static final TRANSACTION_getConnectionState_1:I = 0x2
 
-.field static final TRANSACTION_getDevicesMatchingConnectionStates_3:I = 0x4
+.field static final TRANSACTION_getDevicesMatchingConnectionStates:I = 0x4
 
 
 # direct methods
@@ -46,7 +46,7 @@
     .line 20
     const-string/jumbo v0, "android.bluetooth.IBluetoothDun"
 
-    invoke-virtual {p0, p0, v0}, Landroid/bluetooth/IBluetoothDun$Stub;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
+    invoke-virtual {p0, p0, v0}, Landroid/os/Binder;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
 
     .line 18
     return-void

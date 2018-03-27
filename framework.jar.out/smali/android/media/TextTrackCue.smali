@@ -414,7 +414,9 @@
     :try_start_0
     move-object v0, p1
 
-    check-cast v0, Landroid/media/TextTrackCue;
+    nop
+
+    nop
 
     move-object v1, v0
 
@@ -709,7 +711,7 @@
 
     .line 522
     .local v0, "res":Ljava/lang/StringBuilder;
-    iget-wide v2, p0, Landroid/media/TextTrackCue;->mStartTimeMs:J
+    iget-wide v2, p0, Landroid/media/SubtitleTrack$Cue;->mStartTimeMs:J
 
     invoke-static {v2, v3}, Landroid/media/WebVttParser;->timeToString(J)Ljava/lang/String;
 
@@ -728,7 +730,7 @@
     move-result-object v1
 
     .line 523
-    iget-wide v2, p0, Landroid/media/TextTrackCue;->mEndTimeMs:J
+    iget-wide v2, p0, Landroid/media/SubtitleTrack$Cue;->mEndTimeMs:J
 
     invoke-static {v2, v3}, Landroid/media/WebVttParser;->timeToString(J)Ljava/lang/String;
 

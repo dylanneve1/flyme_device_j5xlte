@@ -188,7 +188,7 @@
     .line 56
     const-string/jumbo v5, "android.app.MediaRouteButton:MediaRouteChooserDialogFragment"
 
-    invoke-virtual {v0, v2, v5}, Lcom/android/internal/app/MediaRouteChooserDialogFragment;->show(Landroid/app/FragmentManager;Ljava/lang/String;)V
+    invoke-virtual {v0, v2, v5}, Landroid/app/DialogFragment;->show(Landroid/app/FragmentManager;Ljava/lang/String;)V
 
     .line 57
     return-object v0
@@ -204,7 +204,7 @@
     .local v1, "f":Lcom/android/internal/app/MediaRouteControllerDialogFragment;
     const-string/jumbo v5, "android.app.MediaRouteButton:MediaRouteControllerDialogFragment"
 
-    invoke-virtual {v1, v2, v5}, Lcom/android/internal/app/MediaRouteControllerDialogFragment;->show(Landroid/app/FragmentManager;Ljava/lang/String;)V
+    invoke-virtual {v1, v2, v5}, Landroid/app/DialogFragment;->show(Landroid/app/FragmentManager;Ljava/lang/String;)V
 
     .line 65
     return-object v1

@@ -56,25 +56,25 @@
     .line 46
     const-string/jumbo v0, "org.cyanogenmod.theme.name"
 
-    invoke-virtual {p1, v0}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p1, v0}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Landroid/content/pm/ThemeInfo;->name:Ljava/lang/String;
+    iput-object v0, p0, Landroid/content/pm/BaseThemeInfo;->name:Ljava/lang/String;
 
     .line 47
-    iget-object v0, p0, Landroid/content/pm/ThemeInfo;->name:Ljava/lang/String;
+    iget-object v0, p0, Landroid/content/pm/BaseThemeInfo;->name:Ljava/lang/String;
 
-    iput-object v0, p0, Landroid/content/pm/ThemeInfo;->themeId:Ljava/lang/String;
+    iput-object v0, p0, Landroid/content/pm/BaseThemeInfo;->themeId:Ljava/lang/String;
 
     .line 48
     const-string/jumbo v0, "org.cyanogenmod.theme.author"
 
-    invoke-virtual {p1, v0}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p1, v0}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Landroid/content/pm/ThemeInfo;->author:Ljava/lang/String;
+    iput-object v0, p0, Landroid/content/pm/BaseThemeInfo;->author:Ljava/lang/String;
 
     .line 44
     return-void

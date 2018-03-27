@@ -38,9 +38,9 @@
 
 .field static final TRANSACTION_setSurface:I = 0x2
 
-.field static final TRANSACTION_startActivityIntentSender_3:I = 0x4
+.field static final TRANSACTION_startActivity:I = 0x3
 
-.field static final TRANSACTION_startActivity_2:I = 0x3
+.field static final TRANSACTION_startActivityIntentSender:I = 0x4
 
 
 # direct methods

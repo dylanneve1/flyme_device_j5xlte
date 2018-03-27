@@ -253,7 +253,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v9}, Ljava/lang/SecurityException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v9}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v2
 
@@ -271,7 +271,7 @@
     invoke-virtual {v11}, Ljava/io/PrintWriter;->println()V
 
     .line 100
-    invoke-virtual {v9, v11}, Ljava/lang/SecurityException;->printStackTrace(Ljava/io/PrintWriter;)V
+    invoke-virtual {v9, v11}, Ljava/lang/Throwable;->printStackTrace(Ljava/io/PrintWriter;)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 

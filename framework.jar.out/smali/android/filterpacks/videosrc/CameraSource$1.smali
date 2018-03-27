@@ -74,7 +74,7 @@
     .line 346
     iget-object v0, p0, Landroid/filterpacks/videosrc/CameraSource$1;->this$0:Landroid/filterpacks/videosrc/CameraSource;
 
-    invoke-virtual {v0}, Landroid/filterpacks/videosrc/CameraSource;->notify()V
+    invoke-virtual {v0}, Ljava/lang/Object;->notify()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 

@@ -136,7 +136,7 @@
     .local v2, "in":Ljava/io/InputStream;
     :goto_0
     :try_start_1
-    invoke-virtual {p0}, Landroid/print/PrintFileDocumentAdapter$WriteFileAsyncTask;->isCancelled()Z
+    invoke-virtual {p0}, Landroid/os/AsyncTask;->isCancelled()Z
     :try_end_1
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
@@ -165,7 +165,7 @@
     .restart local v2    # "in":Ljava/io/InputStream;
     :cond_1
     :try_start_2
-    invoke-virtual {v2, v0}, Ljava/io/InputStream;->read([B)I
+    invoke-virtual {v2, v0}, Ljava/io/FileInputStream;->read([B)I
 
     move-result v5
 
@@ -176,7 +176,7 @@
     .line 130
     const/4 v6, 0x0
 
-    invoke-virtual {v4, v0, v6, v5}, Ljava/io/OutputStream;->write([BII)V
+    invoke-virtual {v4, v0, v6, v5}, Ljava/io/FileOutputStream;->write([BII)V
     :try_end_2
     .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_0
     .catchall {:try_start_2 .. :try_end_2} :catchall_1

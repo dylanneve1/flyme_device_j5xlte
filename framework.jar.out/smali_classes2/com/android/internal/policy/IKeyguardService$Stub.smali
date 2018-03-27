@@ -26,21 +26,21 @@
 # static fields
 .field private static final DESCRIPTOR:Ljava/lang/String; = "com.android.internal.policy.IKeyguardService"
 
-.field static final TRANSACTION_addStateMonitorCallback_1:I = 0x2
+.field static final TRANSACTION_addStateMonitorCallback:I = 0x2
 
-.field static final TRANSACTION_dismiss_4:I = 0x5
+.field static final TRANSACTION_dismiss:I = 0x5
 
 .field static final TRANSACTION_doKeyguardTimeout:I = 0x10
 
-.field static final TRANSACTION_keyguardDone_3:I = 0x4
+.field static final TRANSACTION_keyguardDone:I = 0x4
 
 .field static final TRANSACTION_onActivityDrawn_19:I = 0x14
 
 .field static final TRANSACTION_onBootCompleted:I = 0x12
 
-.field static final TRANSACTION_onDreamingStarted_5:I = 0x6
+.field static final TRANSACTION_onDreamingStarted:I = 0x6
 
-.field static final TRANSACTION_onDreamingStopped_6:I = 0x7
+.field static final TRANSACTION_onDreamingStopped:I = 0x7
 
 .field static final TRANSACTION_onFinishedGoingToSleep_8:I = 0x9
 
@@ -64,7 +64,7 @@
 
 .field static final TRANSACTION_startKeyguardExitAnimation_18:I = 0x13
 
-.field static final TRANSACTION_verifyUnlock_2:I = 0x3
+.field static final TRANSACTION_verifyUnlock:I = 0x3
 
 
 # direct methods

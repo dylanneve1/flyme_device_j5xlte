@@ -34,7 +34,7 @@
     .line 44
     const-string/jumbo v1, "frame"
 
-    invoke-virtual {p0, v1}, Landroid/filterpacks/base/FrameStore;->pullInput(Ljava/lang/String;)Landroid/filterfw/core/Frame;
+    invoke-virtual {p0, v1}, Landroid/filterfw/core/Filter;->pullInput(Ljava/lang/String;)Landroid/filterfw/core/Frame;
 
     move-result-object v0
 
@@ -55,7 +55,7 @@
     .line 39
     const-string/jumbo v0, "frame"
 
-    invoke-virtual {p0, v0}, Landroid/filterpacks/base/FrameStore;->addInputPort(Ljava/lang/String;)V
+    invoke-virtual {p0, v0}, Landroid/filterfw/core/Filter;->addInputPort(Ljava/lang/String;)V
 
     .line 38
     return-void

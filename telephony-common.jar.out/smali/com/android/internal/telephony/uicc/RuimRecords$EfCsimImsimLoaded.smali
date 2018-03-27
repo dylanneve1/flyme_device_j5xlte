@@ -114,7 +114,7 @@
     .line 426
     iget-object v3, p0, Lcom/android/internal/telephony/uicc/RuimRecords$EfCsimImsimLoaded;->this$0:Lcom/android/internal/telephony/uicc/RuimRecords;
 
-    iput-object v6, v3, Lcom/android/internal/telephony/uicc/RuimRecords;->mImsi:Ljava/lang/String;
+    iput-object v6, v3, Lcom/android/internal/telephony/uicc/IccRecords;->mImsi:Ljava/lang/String;
 
     .line 427
     iget-object v3, p0, Lcom/android/internal/telephony/uicc/RuimRecords$EfCsimImsimLoaded;->this$0:Lcom/android/internal/telephony/uicc/RuimRecords;
@@ -179,12 +179,12 @@
 
     move-result-object v5
 
-    iput-object v5, v4, Lcom/android/internal/telephony/uicc/RuimRecords;->mImsi:Ljava/lang/String;
+    iput-object v5, v4, Lcom/android/internal/telephony/uicc/IccRecords;->mImsi:Ljava/lang/String;
 
     .line 438
     iget-object v4, p0, Lcom/android/internal/telephony/uicc/RuimRecords$EfCsimImsimLoaded;->this$0:Lcom/android/internal/telephony/uicc/RuimRecords;
 
-    iget-object v4, v4, Lcom/android/internal/telephony/uicc/RuimRecords;->mImsi:Ljava/lang/String;
+    iget-object v4, v4, Lcom/android/internal/telephony/uicc/IccRecords;->mImsi:Ljava/lang/String;
 
     if-eqz v4, :cond_2
 
@@ -193,7 +193,7 @@
 
     iget-object v5, p0, Lcom/android/internal/telephony/uicc/RuimRecords$EfCsimImsimLoaded;->this$0:Lcom/android/internal/telephony/uicc/RuimRecords;
 
-    iget-object v5, v5, Lcom/android/internal/telephony/uicc/RuimRecords;->mImsi:Ljava/lang/String;
+    iget-object v5, v5, Lcom/android/internal/telephony/uicc/IccRecords;->mImsi:Ljava/lang/String;
 
     const/16 v6, 0xf
 
@@ -219,7 +219,7 @@
 
     iget-object v6, p0, Lcom/android/internal/telephony/uicc/RuimRecords$EfCsimImsimLoaded;->this$0:Lcom/android/internal/telephony/uicc/RuimRecords;
 
-    iget-object v6, v6, Lcom/android/internal/telephony/uicc/RuimRecords;->mImsi:Ljava/lang/String;
+    iget-object v6, v6, Lcom/android/internal/telephony/uicc/IccRecords;->mImsi:Ljava/lang/String;
 
     invoke-virtual {v6, v3, v7}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
@@ -265,7 +265,7 @@
     .line 451
     iget-object v4, p0, Lcom/android/internal/telephony/uicc/RuimRecords$EfCsimImsimLoaded;->this$0:Lcom/android/internal/telephony/uicc/RuimRecords;
 
-    iget-object v4, v4, Lcom/android/internal/telephony/uicc/RuimRecords;->mContext:Landroid/content/Context;
+    iget-object v4, v4, Lcom/android/internal/telephony/uicc/IccRecords;->mContext:Landroid/content/Context;
 
     invoke-static {v4, v1, v3}, Lcom/android/internal/telephony/MccTable;->updateMccMncConfiguration(Landroid/content/Context;Ljava/lang/String;Z)V
 
@@ -273,7 +273,7 @@
     :cond_3
     iget-object v3, p0, Lcom/android/internal/telephony/uicc/RuimRecords$EfCsimImsimLoaded;->this$0:Lcom/android/internal/telephony/uicc/RuimRecords;
 
-    iget-object v3, v3, Lcom/android/internal/telephony/uicc/RuimRecords;->mImsiReadyRegistrants:Landroid/os/RegistrantList;
+    iget-object v3, v3, Lcom/android/internal/telephony/uicc/IccRecords;->mImsiReadyRegistrants:Landroid/os/RegistrantList;
 
     invoke-virtual {v3}, Landroid/os/RegistrantList;->notifyRegistrants()V
 

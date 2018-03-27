@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/server/power/PowerManagerService;
 
     .prologue
-    .line 3275
+    .line 3289
     iput-object p1, p0, Lcom/android/server/power/PowerManagerService$2;->this$0:Lcom/android/server/power/PowerManagerService;
 
     invoke-direct {p0}, Landroid/service/vr/IVrStateCallbacks$Stub;-><init>()V
@@ -39,7 +39,7 @@
     .param p1, "enabled"    # Z
 
     .prologue
-    .line 3278
+    .line 3292
     iget-object v1, p0, Lcom/android/server/power/PowerManagerService$2;->this$0:Lcom/android/server/power/PowerManagerService;
 
     if-eqz p1, :cond_1
@@ -51,7 +51,7 @@
 
     invoke-static {v1, v2, v0}, Lcom/android/server/power/PowerManagerService;->-wrap25(Lcom/android/server/power/PowerManagerService;II)V
 
-    .line 3280
+    .line 3294
     iget-object v0, p0, Lcom/android/server/power/PowerManagerService$2;->this$0:Lcom/android/server/power/PowerManagerService;
 
     invoke-static {v0}, Lcom/android/server/power/PowerManagerService;->-get11(Lcom/android/server/power/PowerManagerService;)Ljava/lang/Object;
@@ -60,7 +60,7 @@
 
     monitor-enter v1
 
-    .line 3281
+    .line 3295
     :try_start_0
     iget-object v0, p0, Lcom/android/server/power/PowerManagerService$2;->this$0:Lcom/android/server/power/PowerManagerService;
 
@@ -70,12 +70,12 @@
 
     if-eq v0, p1, :cond_0
 
-    .line 3282
+    .line 3296
     iget-object v0, p0, Lcom/android/server/power/PowerManagerService$2;->this$0:Lcom/android/server/power/PowerManagerService;
 
     invoke-static {v0, p1}, Lcom/android/server/power/PowerManagerService;->-set1(Lcom/android/server/power/PowerManagerService;Z)Z
 
-    .line 3283
+    .line 3297
     iget-object v0, p0, Lcom/android/server/power/PowerManagerService$2;->this$0:Lcom/android/server/power/PowerManagerService;
 
     iget v2, v0, Lcom/android/server/power/PowerManagerService;->mDirty:I
@@ -84,7 +84,7 @@
 
     iput v2, v0, Lcom/android/server/power/PowerManagerService;->mDirty:I
 
-    .line 3284
+    .line 3298
     iget-object v0, p0, Lcom/android/server/power/PowerManagerService$2;->this$0:Lcom/android/server/power/PowerManagerService;
 
     invoke-virtual {v0}, Lcom/android/server/power/PowerManagerService;->updatePowerStateLocked()V
@@ -94,16 +94,16 @@
     :cond_0
     monitor-exit v1
 
-    .line 3277
+    .line 3291
     return-void
 
-    .line 3278
+    .line 3292
     :cond_1
     const/4 v0, 0x0
 
     goto :goto_0
 
-    .line 3280
+    .line 3294
     :catchall_0
     move-exception v0
 

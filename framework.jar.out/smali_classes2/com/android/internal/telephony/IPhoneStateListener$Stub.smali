@@ -26,7 +26,7 @@
 # static fields
 .field private static final DESCRIPTOR:Ljava/lang/String; = "com.android.internal.telephony.IPhoneStateListener"
 
-.field static final TRANSACTION_onCallForwardingIndicatorChanged_3:I = 0x4
+.field static final TRANSACTION_onCallForwardingIndicatorChanged:I = 0x4
 
 .field static final TRANSACTION_onCallStateChanged:I = 0x6
 
@@ -42,7 +42,7 @@
 
 .field static final TRANSACTION_onDataConnectionStateChanged:I = 0x7
 
-.field static final TRANSACTION_onMessageWaitingIndicatorChanged_2:I = 0x3
+.field static final TRANSACTION_onMessageWaitingIndicatorChanged:I = 0x3
 
 .field static final TRANSACTION_onOemHookRawEvent:I = 0x10
 
@@ -52,9 +52,9 @@
 
 .field static final TRANSACTION_onPreciseDataConnectionStateChanged:I = 0xd
 
-.field static final TRANSACTION_onServiceStateChanged_0:I = 0x1
+.field static final TRANSACTION_onServiceStateChanged:I = 0x1
 
-.field static final TRANSACTION_onSignalStrengthChanged_1:I = 0x2
+.field static final TRANSACTION_onSignalStrengthChanged:I = 0x2
 
 .field static final TRANSACTION_onSignalStrengthsChanged:I = 0x9
 

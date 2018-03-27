@@ -204,7 +204,7 @@
     iput-object v1, p0, Lcom/android/internal/telephony/TelephonyProto$TelephonyLog;->endTime:Lcom/android/internal/telephony/TelephonyProto$Time;
 
     .line 172
-    iput-object v1, p0, Lcom/android/internal/telephony/TelephonyProto$TelephonyLog;->unknownFieldData:Lcom/android/framework/protobuf/nano/FieldArray;
+    iput-object v1, p0, Lcom/android/framework/protobuf/nano/ExtendableMessageNano;->unknownFieldData:Lcom/android/framework/protobuf/nano/FieldArray;
 
     .line 173
     const/4 v0, -0x1

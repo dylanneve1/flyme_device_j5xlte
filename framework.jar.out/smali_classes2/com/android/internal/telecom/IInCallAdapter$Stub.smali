@@ -36,7 +36,7 @@
 
 .field static final TRANSACTION_mergeConference:I = 0xe
 
-.field static final TRANSACTION_mute_5:I = 0x6
+.field static final TRANSACTION_mute:I = 0x6
 
 .field static final TRANSACTION_phoneAccountSelected:I = 0xb
 
@@ -54,7 +54,7 @@
 
 .field static final TRANSACTION_sendCallEvent:I = 0x13
 
-.field static final TRANSACTION_setAudioRoute_6:I = 0x7
+.field static final TRANSACTION_setAudioRoute:I = 0x7
 
 .field static final TRANSACTION_splitFromConference:I = 0xd
 
@@ -66,7 +66,7 @@
 
 .field static final TRANSACTION_turnOnProximitySensor:I = 0x10
 
-.field static final TRANSACTION_unholdCall_4:I = 0x5
+.field static final TRANSACTION_unholdCall:I = 0x5
 
 
 # direct methods

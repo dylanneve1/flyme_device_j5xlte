@@ -87,7 +87,7 @@
 
     int-to-long v2, v1
 
-    invoke-virtual {v0, p0, v2, v3}, Landroid/widget/NumberPicker;->postDelayed(Ljava/lang/Runnable;J)Z
+    invoke-virtual {v0, p0, v2, v3}, Landroid/view/View;->postDelayed(Ljava/lang/Runnable;J)Z
 
     .line 2189
     return-void
@@ -112,7 +112,7 @@
     .line 2200
     iget-object v0, p0, Landroid/widget/NumberPicker$PressedStateHelper;->this$0:Landroid/widget/NumberPicker;
 
-    invoke-virtual {v0, p0}, Landroid/widget/NumberPicker;->post(Ljava/lang/Runnable;)Z
+    invoke-virtual {v0, p0}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
 
     .line 2196
     return-void
@@ -133,7 +133,7 @@
     .line 2178
     iget-object v0, p0, Landroid/widget/NumberPicker$PressedStateHelper;->this$0:Landroid/widget/NumberPicker;
 
-    invoke-virtual {v0, p0}, Landroid/widget/NumberPicker;->removeCallbacks(Ljava/lang/Runnable;)Z
+    invoke-virtual {v0, p0}, Landroid/view/View;->removeCallbacks(Ljava/lang/Runnable;)Z
 
     .line 2179
     iget-object v0, p0, Landroid/widget/NumberPicker$PressedStateHelper;->this$0:Landroid/widget/NumberPicker;
@@ -170,7 +170,7 @@
 
     move-result v3
 
-    invoke-virtual {v0, v4, v1, v2, v3}, Landroid/widget/NumberPicker;->invalidate(IIII)V
+    invoke-virtual {v0, v4, v1, v2, v3}, Landroid/view/View;->invalidate(IIII)V
 
     .line 2183
     :cond_0
@@ -202,7 +202,7 @@
 
     move-result v2
 
-    invoke-virtual {v0, v4, v4, v1, v2}, Landroid/widget/NumberPicker;->invalidate(IIII)V
+    invoke-virtual {v0, v4, v4, v1, v2}, Landroid/view/View;->invalidate(IIII)V
 
     .line 2175
     :cond_1
@@ -261,7 +261,7 @@
 
     move-result v3
 
-    invoke-virtual {v0, v4, v1, v2, v3}, Landroid/widget/NumberPicker;->invalidate(IIII)V
+    invoke-virtual {v0, v4, v1, v2, v3}, Landroid/view/View;->invalidate(IIII)V
 
     goto :goto_0
 
@@ -286,7 +286,7 @@
 
     move-result v2
 
-    invoke-virtual {v0, v4, v4, v1, v2}, Landroid/widget/NumberPicker;->invalidate(IIII)V
+    invoke-virtual {v0, v4, v4, v1, v2}, Landroid/view/View;->invalidate(IIII)V
 
     goto :goto_0
 
@@ -319,7 +319,7 @@
     int-to-long v2, v1
 
     .line 2222
-    invoke-virtual {v0, p0, v2, v3}, Landroid/widget/NumberPicker;->postDelayed(Ljava/lang/Runnable;J)Z
+    invoke-virtual {v0, p0, v2, v3}, Landroid/view/View;->postDelayed(Ljava/lang/Runnable;J)Z
 
     .line 2225
     :cond_0
@@ -354,7 +354,7 @@
 
     move-result v3
 
-    invoke-virtual {v0, v4, v1, v2, v3}, Landroid/widget/NumberPicker;->invalidate(IIII)V
+    invoke-virtual {v0, v4, v1, v2, v3}, Landroid/view/View;->invalidate(IIII)V
 
     goto :goto_0
 
@@ -379,7 +379,7 @@
     int-to-long v2, v1
 
     .line 2230
-    invoke-virtual {v0, p0, v2, v3}, Landroid/widget/NumberPicker;->postDelayed(Ljava/lang/Runnable;J)Z
+    invoke-virtual {v0, p0, v2, v3}, Landroid/view/View;->postDelayed(Ljava/lang/Runnable;J)Z
 
     .line 2233
     :cond_1
@@ -408,7 +408,7 @@
 
     move-result v2
 
-    invoke-virtual {v0, v4, v4, v1, v2}, Landroid/widget/NumberPicker;->invalidate(IIII)V
+    invoke-virtual {v0, v4, v4, v1, v2}, Landroid/view/View;->invalidate(IIII)V
 
     goto/16 :goto_0
 

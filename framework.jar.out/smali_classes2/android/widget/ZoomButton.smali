@@ -108,7 +108,7 @@
     iput-wide v0, p0, Landroid/widget/ZoomButton;->mZoomSpeed:J
 
     .line 54
-    invoke-virtual {p0, p0}, Landroid/widget/ZoomButton;->setOnLongClickListener(Landroid/view/View$OnLongClickListener;)V
+    invoke-virtual {p0, p0}, Landroid/view/View;->setOnLongClickListener(Landroid/view/View$OnLongClickListener;)V
 
     .line 52
     return-void
@@ -123,7 +123,7 @@
 
     .prologue
     .line 97
-    invoke-virtual {p0}, Landroid/widget/ZoomButton;->clearFocus()V
+    invoke-virtual {p0}, Landroid/view/View;->clearFocus()V
 
     .line 98
     invoke-super {p0, p1, p2}, Landroid/widget/ImageButton;->dispatchUnhandledMove(Landroid/view/View;I)Z
@@ -179,7 +179,7 @@
     .line 72
     iget-object v0, p0, Landroid/widget/ZoomButton;->mRunnable:Ljava/lang/Runnable;
 
-    invoke-virtual {p0, v0}, Landroid/widget/ZoomButton;->post(Ljava/lang/Runnable;)Z
+    invoke-virtual {p0, v0}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
 
     .line 73
     return v1
@@ -234,7 +234,7 @@
     .line 90
     const/4 v0, 0x0
 
-    invoke-virtual {p0, v0}, Landroid/widget/ZoomButton;->setPressed(Z)V
+    invoke-virtual {p0, v0}, Landroid/view/View;->setPressed(Z)V
 
     .line 92
     :cond_0

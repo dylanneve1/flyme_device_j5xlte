@@ -70,7 +70,7 @@
 
     .line 65
     :cond_0
-    invoke-virtual {p0, v0, v1}, Landroid/renderscript/ScriptC;->setID(J)V
+    invoke-virtual {p0, v0, v1}, Landroid/renderscript/BaseObj;->setID(J)V
 
     .line 59
     return-void
@@ -130,7 +130,7 @@
 
     .line 84
     :cond_1
-    invoke-virtual {p0, v0, v1}, Landroid/renderscript/ScriptC;->setID(J)V
+    invoke-virtual {p0, v0, v1}, Landroid/renderscript/BaseObj;->setID(J)V
 
     .line 73
     return-void

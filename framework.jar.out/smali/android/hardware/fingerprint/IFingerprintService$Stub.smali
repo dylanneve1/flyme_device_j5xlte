@@ -28,13 +28,13 @@
 
 .field static final TRANSACTION_addLockoutResetCallback:I = 0xe
 
-.field static final TRANSACTION_authenticate_0:I = 0x1
+.field static final TRANSACTION_authenticate:I = 0x1
 
-.field static final TRANSACTION_cancelAuthentication_1:I = 0x2
+.field static final TRANSACTION_cancelAuthentication:I = 0x2
 
 .field static final TRANSACTION_cancelEnrollment:I = 0x4
 
-.field static final TRANSACTION_enroll_2:I = 0x3
+.field static final TRANSACTION_enroll:I = 0x3
 
 .field static final TRANSACTION_getAuthenticatorId:I = 0xc
 

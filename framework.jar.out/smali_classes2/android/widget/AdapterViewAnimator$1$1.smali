@@ -73,7 +73,7 @@
     iget-wide v4, v3, Landroid/widget/AdapterViewAnimator$ViewAndMetaData;->itemId:J
 
     .line 653
-    invoke-virtual {v0, v1, v2, v4, v5}, Landroid/widget/AdapterViewAnimator;->performItemClick(Landroid/view/View;IJ)Z
+    invoke-virtual {v0, v1, v2, v4, v5}, Landroid/widget/AdapterView;->performItemClick(Landroid/view/View;IJ)Z
 
     .line 651
     :goto_0
@@ -91,7 +91,7 @@
 
     const/4 v4, 0x0
 
-    invoke-virtual {v0, v1, v4, v2, v3}, Landroid/widget/AdapterViewAnimator;->performItemClick(Landroid/view/View;IJ)Z
+    invoke-virtual {v0, v1, v4, v2, v3}, Landroid/widget/AdapterView;->performItemClick(Landroid/view/View;IJ)Z
 
     goto :goto_0
 .end method

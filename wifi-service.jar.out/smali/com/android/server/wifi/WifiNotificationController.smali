@@ -12,7 +12,7 @@
 
 
 # static fields
-.field private static final ICON_NETWORKS_AVAILABLE:I = 0x10806e6
+.field private static final ICON_NETWORKS_AVAILABLE:I = 0x10806e8
 
 .field private static final NUM_SCANS_BEFORE_ACTUALLY_SCANNING:I = 0x3
 
@@ -498,7 +498,7 @@
     .prologue
     const/4 v10, 0x0
 
-    const v9, 0x10806e6
+    const v9, 0x10806e8
 
     const/4 v8, 0x0
 

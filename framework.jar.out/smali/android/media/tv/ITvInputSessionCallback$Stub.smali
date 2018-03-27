@@ -26,7 +26,7 @@
 # static fields
 .field private static final DESCRIPTOR:Ljava/lang/String; = "android.media.tv.ITvInputSessionCallback"
 
-.field static final TRANSACTION_onChannelRetuned_2:I = 0x3
+.field static final TRANSACTION_onChannelRetuned:I = 0x3
 
 .field static final TRANSACTION_onContentAllowed:I = 0x8
 
@@ -48,13 +48,13 @@
 
 .field static final TRANSACTION_onTimeShiftStatusChanged:I = 0xb
 
-.field static final TRANSACTION_onTrackSelected_4:I = 0x5
+.field static final TRANSACTION_onTrackSelected:I = 0x5
 
-.field static final TRANSACTION_onTracksChanged_3:I = 0x4
+.field static final TRANSACTION_onTracksChanged:I = 0x4
 
 .field static final TRANSACTION_onTuned:I = 0xe
 
-.field static final TRANSACTION_onVideoAvailable_5:I = 0x6
+.field static final TRANSACTION_onVideoAvailable:I = 0x6
 
 .field static final TRANSACTION_onVideoUnavailable:I = 0x7
 
@@ -70,7 +70,7 @@
     .line 20
     const-string/jumbo v0, "android.media.tv.ITvInputSessionCallback"
 
-    invoke-virtual {p0, p0, v0}, Landroid/media/tv/ITvInputSessionCallback$Stub;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
+    invoke-virtual {p0, p0, v0}, Landroid/os/Binder;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
 
     .line 18
     return-void

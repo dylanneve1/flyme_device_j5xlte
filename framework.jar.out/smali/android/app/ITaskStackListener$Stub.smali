@@ -26,7 +26,7 @@
 # static fields
 .field private static final DESCRIPTOR:Ljava/lang/String; = "android.app.ITaskStackListener"
 
-.field static final TRANSACTION_onActivityDismissingDockedStack_5:I = 0x6
+.field static final TRANSACTION_onActivityDismissingDockedStack:I = 0x6
 
 .field static final TRANSACTION_onActivityForcedResizable:I = 0x5
 

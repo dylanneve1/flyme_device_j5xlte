@@ -91,7 +91,7 @@
     .local v0, "expected":Ljava/lang/SecurityException;
     const-string/jumbo v2, "security exception\'s error message."
 
-    invoke-virtual {v0}, Ljava/lang/SecurityException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v3
 
@@ -123,7 +123,7 @@
     move-result-object v2
 
     .line 111
-    invoke-virtual {v0}, Ljava/lang/SecurityException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v3
 
@@ -200,7 +200,7 @@
     .local v6, "expected":Ljava/lang/SecurityException;
     const-string/jumbo v0, "security exception\'s error message."
 
-    invoke-virtual {v6}, Ljava/lang/SecurityException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v6}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v1
 
@@ -232,7 +232,7 @@
     move-result-object v0
 
     .line 130
-    invoke-virtual {v6}, Ljava/lang/SecurityException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v6}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v1
 
@@ -303,7 +303,7 @@
     .local v0, "expected":Ljava/lang/SecurityException;
     const-string/jumbo v1, "security exception\'s error message."
 
-    invoke-virtual {v0}, Ljava/lang/SecurityException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v2
 
@@ -331,7 +331,7 @@
     move-result-object v1
 
     .line 149
-    invoke-virtual {v0}, Ljava/lang/SecurityException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v2
 
@@ -353,7 +353,7 @@
     move-result-object v1
 
     .line 150
-    invoke-virtual {v0}, Ljava/lang/SecurityException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v2
 
@@ -406,7 +406,7 @@
     .prologue
     .line 166
     .local p1, "testCaseClass":Ljava/lang/Class;, "Ljava/lang/Class<*>;"
-    invoke-virtual {p0}, Landroid/test/AndroidTestCase;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v3
 
@@ -460,7 +460,7 @@
     const/4 v5, 0x1
 
     :try_start_0
-    invoke-virtual {v1, v5}, Ljava/lang/reflect/Field;->setAccessible(Z)V
+    invoke-virtual {v1, v5}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
 
     .line 172
     const/4 v5, 0x0

@@ -72,7 +72,7 @@
 
 .field static final TRANSACTION_setImeWindowStatus:I = 0x9
 
-.field static final TRANSACTION_setSystemUiVisibility:I = 0x7
+.field static final TRANSACTION_setSystemUiVisibility_6:I = 0x7
 
 .field static final TRANSACTION_setWindowState:I = 0xa
 

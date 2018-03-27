@@ -900,13 +900,13 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v2}, Lcom/android/internal/telephony/uicc/SimPhoneBookAdnRecordCache;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {v0, v2}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v2
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v2}, Lcom/android/internal/telephony/uicc/SimPhoneBookAdnRecordCache;->sendMessage(Landroid/os/Message;)Z
+    invoke-virtual {v0, v2}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
     goto/16 :goto_0
 
@@ -1030,13 +1030,13 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v2}, Lcom/android/internal/telephony/uicc/SimPhoneBookAdnRecordCache;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {v0, v2}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v2
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v2}, Lcom/android/internal/telephony/uicc/SimPhoneBookAdnRecordCache;->sendMessage(Landroid/os/Message;)Z
+    invoke-virtual {v0, v2}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
     goto/16 :goto_0
 
@@ -1561,7 +1561,7 @@
 
     const/4 v2, 0x2
 
-    invoke-virtual {p0, v2}, Lcom/android/internal/telephony/uicc/SimPhoneBookAdnRecordCache;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {p0, v2}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v2
 
@@ -2039,7 +2039,7 @@
     .line 263
     const/4 v7, 0x5
 
-    invoke-virtual {p0, v7, v1, v8, p2}, Lcom/android/internal/telephony/uicc/SimPhoneBookAdnRecordCache;->obtainMessage(IIILjava/lang/Object;)Landroid/os/Message;
+    invoke-virtual {p0, v7, v1, v8, p2}, Landroid/os/Handler;->obtainMessage(IIILjava/lang/Object;)Landroid/os/Message;
 
     move-result-object v7
 

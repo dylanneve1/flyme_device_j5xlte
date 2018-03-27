@@ -147,10 +147,10 @@
     new-instance v1, Landroid/accessibilityservice/AccessibilityServiceInfo$CapabilityInfo;
 
     .line 124
-    const v2, 0x10401d0
+    const v2, 0x10401d2
 
     .line 125
-    const v3, 0x10401d1
+    const v3, 0x10401d3
 
     .line 123
     invoke-direct {v1, v4, v2, v3}, Landroid/accessibilityservice/AccessibilityServiceInfo$CapabilityInfo;-><init>(III)V
@@ -165,10 +165,10 @@
     new-instance v1, Landroid/accessibilityservice/AccessibilityServiceInfo$CapabilityInfo;
 
     .line 128
-    const v2, 0x10401d2
+    const v2, 0x10401d4
 
     .line 129
-    const v3, 0x10401d3
+    const v3, 0x10401d5
 
     .line 127
     invoke-direct {v1, v5, v2, v3}, Landroid/accessibilityservice/AccessibilityServiceInfo$CapabilityInfo;-><init>(III)V
@@ -183,10 +183,10 @@
     new-instance v1, Landroid/accessibilityservice/AccessibilityServiceInfo$CapabilityInfo;
 
     .line 132
-    const v2, 0x10401d4
+    const v2, 0x10401d6
 
     .line 133
-    const v3, 0x10401d5
+    const v3, 0x10401d7
 
     .line 131
     invoke-direct {v1, v6, v2, v3}, Landroid/accessibilityservice/AccessibilityServiceInfo$CapabilityInfo;-><init>(III)V
@@ -201,10 +201,10 @@
     new-instance v1, Landroid/accessibilityservice/AccessibilityServiceInfo$CapabilityInfo;
 
     .line 136
-    const v2, 0x10401d6
+    const v2, 0x10401d8
 
     .line 137
-    const v3, 0x10401d7
+    const v3, 0x10401d9
 
     .line 135
     invoke-direct {v1, v7, v2, v3}, Landroid/accessibilityservice/AccessibilityServiceInfo$CapabilityInfo;-><init>(III)V
@@ -219,10 +219,10 @@
     new-instance v1, Landroid/accessibilityservice/AccessibilityServiceInfo$CapabilityInfo;
 
     .line 140
-    const v2, 0x10401d8
+    const v2, 0x10401da
 
     .line 141
-    const v3, 0x10401d9
+    const v3, 0x10401db
 
     .line 139
     invoke-direct {v1, v8, v2, v3}, Landroid/accessibilityservice/AccessibilityServiceInfo$CapabilityInfo;-><init>(III)V
@@ -239,10 +239,10 @@
     const/16 v2, 0x20
 
     .line 144
-    const v3, 0x10401da
+    const v3, 0x10401dc
 
     .line 145
-    const v4, 0x10401db
+    const v4, 0x10401dd
 
     .line 143
     invoke-direct {v1, v2, v3, v4}, Landroid/accessibilityservice/AccessibilityServiceInfo$CapabilityInfo;-><init>(III)V

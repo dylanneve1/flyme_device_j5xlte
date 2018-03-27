@@ -26,7 +26,7 @@
 # static fields
 .field private static final DESCRIPTOR:Ljava/lang/String; = "android.content.IClipboard"
 
-.field static final TRANSACTION_addPrimaryClipChangedListener_4:I = 0x5
+.field static final TRANSACTION_addPrimaryClipChangedListener:I = 0x5
 
 .field static final TRANSACTION_getPrimaryClip:I = 0x2
 
@@ -36,7 +36,7 @@
 
 .field static final TRANSACTION_hasPrimaryClip:I = 0x4
 
-.field static final TRANSACTION_removePrimaryClipChangedListener_5:I = 0x6
+.field static final TRANSACTION_removePrimaryClipChangedListener:I = 0x6
 
 .field static final TRANSACTION_setPrimaryClip:I = 0x1
 

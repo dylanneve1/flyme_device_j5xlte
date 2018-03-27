@@ -74,7 +74,7 @@
     invoke-virtual {v2, v1}, Ljava/io/ByteArrayOutputStream;->writeTo(Ljava/io/OutputStream;)V
 
     .line 8107
-    invoke-virtual {v1}, Ljava/io/FileOutputStream;->flush()V
+    invoke-virtual {v1}, Ljava/io/OutputStream;->flush()V
 
     .line 8108
     invoke-static {v1}, Landroid/os/FileUtils;->sync(Ljava/io/FileOutputStream;)Z

@@ -155,7 +155,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Landroid/print/PrintServiceRecommendationsLoader;->deliverResult(Ljava/lang/Object;)V
+    invoke-virtual {p0, v0}, Landroid/content/Loader;->deliverResult(Ljava/lang/Object;)V
 
     .line 72
     return-void

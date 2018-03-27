@@ -99,7 +99,7 @@
     if-nez v1, :cond_0
 
     .line 68
-    invoke-virtual {p0}, Lcom/android/internal/view/menu/IconMenuItemView;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -178,12 +178,12 @@
 
     .line 285
     .local v6, "tmpRect":Landroid/graphics/Rect;
-    invoke-virtual {p0, v3, v6}, Lcom/android/internal/view/menu/IconMenuItemView;->getLineBounds(ILandroid/graphics/Rect;)I
+    invoke-virtual {p0, v3, v6}, Landroid/widget/TextView;->getLineBounds(ILandroid/graphics/Rect;)I
 
     .line 286
     iget-object v0, p0, Lcom/android/internal/view/menu/IconMenuItemView;->mPositionIconAvailable:Landroid/graphics/Rect;
 
-    invoke-virtual {p0}, Lcom/android/internal/view/menu/IconMenuItemView;->getWidth()I
+    invoke-virtual {p0}, Landroid/view/View;->getWidth()I
 
     move-result v1
 
@@ -192,7 +192,7 @@
     invoke-virtual {v0, v3, v3, v1, v2}, Landroid/graphics/Rect;->set(IIII)V
 
     .line 287
-    invoke-virtual {p0}, Lcom/android/internal/view/menu/IconMenuItemView;->getLayoutDirection()I
+    invoke-virtual {p0}, Landroid/view/View;->getLayoutDirection()I
 
     move-result v5
 
@@ -258,13 +258,13 @@
 
     if-nez v1, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/internal/view/menu/IconMenuItemView;->isPressed()Z
+    invoke-virtual {p0}, Landroid/view/View;->isPressed()Z
 
     move-result v1
 
     if-nez v1, :cond_2
 
-    invoke-virtual {p0}, Lcom/android/internal/view/menu/IconMenuItemView;->isFocused()Z
+    invoke-virtual {p0}, Landroid/view/View;->isFocused()Z
 
     move-result v1
 
@@ -330,7 +330,7 @@
     const/4 v1, -0x1
 
     .line 260
-    invoke-virtual {p0}, Lcom/android/internal/view/menu/IconMenuItemView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    invoke-virtual {p0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v0
 
@@ -349,11 +349,11 @@
     .line 268
     .restart local v0    # "lp":Lcom/android/internal/view/menu/IconMenuView$LayoutParams;
     :cond_0
-    invoke-virtual {p0}, Lcom/android/internal/view/menu/IconMenuItemView;->getText()Ljava/lang/CharSequence;
+    invoke-virtual {p0}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
     move-result-object v1
 
-    invoke-virtual {p0}, Lcom/android/internal/view/menu/IconMenuItemView;->getPaint()Landroid/text/TextPaint;
+    invoke-virtual {p0}, Landroid/widget/TextView;->getPaint()Landroid/text/TextPaint;
 
     move-result-object v2
 
@@ -406,7 +406,7 @@
 
     move-result v0
 
-    invoke-virtual {p0, v0}, Lcom/android/internal/view/menu/IconMenuItemView;->setEnabled(Z)V
+    invoke-virtual {p0, v0}, Landroid/widget/TextView;->setEnabled(Z)V
 
     .line 109
     return-void
@@ -427,10 +427,10 @@
     const/4 v0, 0x1
 
     .line 98
-    invoke-virtual {p0, v0}, Lcom/android/internal/view/menu/IconMenuItemView;->setClickable(Z)V
+    invoke-virtual {p0, v0}, Landroid/view/View;->setClickable(Z)V
 
     .line 99
-    invoke-virtual {p0, v0}, Lcom/android/internal/view/menu/IconMenuItemView;->setFocusable(Z)V
+    invoke-virtual {p0, v0}, Landroid/view/View;->setFocusable(Z)V
 
     .line 101
     iget v0, p0, Lcom/android/internal/view/menu/IconMenuItemView;->mTextAppearance:I
@@ -444,7 +444,7 @@
 
     iget v1, p0, Lcom/android/internal/view/menu/IconMenuItemView;->mTextAppearance:I
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/internal/view/menu/IconMenuItemView;->setTextAppearance(Landroid/content/Context;I)V
+    invoke-virtual {p0, v0, v1}, Landroid/widget/TextView;->setTextAppearance(Landroid/content/Context;I)V
 
     .line 105
     :cond_0
@@ -492,7 +492,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/android/internal/view/menu/IconMenuItemView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {p0, v0}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 248
     return-void
@@ -533,7 +533,7 @@
     if-eqz v0, :cond_1
 
     .line 130
-    invoke-virtual {p0, v2}, Lcom/android/internal/view/menu/IconMenuItemView;->playSoundEffect(I)V
+    invoke-virtual {p0, v2}, Landroid/view/View;->playSoundEffect(I)V
 
     .line 131
     return v3
@@ -612,7 +612,7 @@
 
     .line 174
     :cond_2
-    invoke-virtual {p0, v0}, Lcom/android/internal/view/menu/IconMenuItemView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 152
     return-void
@@ -670,15 +670,15 @@
     invoke-virtual {p1, v3, v3, v0, v1}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
     .line 186
-    invoke-virtual {p0, v2, p1, v2, v2}, Lcom/android/internal/view/menu/IconMenuItemView;->setCompoundDrawables(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {p0, v2, p1, v2, v2}, Landroid/widget/TextView;->setCompoundDrawables(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
 
     .line 189
     const/16 v0, 0x51
 
-    invoke-virtual {p0, v0}, Lcom/android/internal/view/menu/IconMenuItemView;->setGravity(I)V
+    invoke-virtual {p0, v0}, Landroid/widget/TextView;->setGravity(I)V
 
     .line 196
-    invoke-virtual {p0}, Lcom/android/internal/view/menu/IconMenuItemView;->requestLayout()V
+    invoke-virtual {p0}, Landroid/view/View;->requestLayout()V
 
     .line 177
     :goto_0
@@ -686,12 +686,12 @@
 
     .line 198
     :cond_0
-    invoke-virtual {p0, v2, v2, v2, v2}, Lcom/android/internal/view/menu/IconMenuItemView;->setCompoundDrawables(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {p0, v2, v2, v2, v2}, Landroid/widget/TextView;->setCompoundDrawables(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
 
     .line 201
     const/16 v0, 0x11
 
-    invoke-virtual {p0, v0}, Lcom/android/internal/view/menu/IconMenuItemView;->setGravity(I)V
+    invoke-virtual {p0, v0}, Landroid/widget/TextView;->setGravity(I)V
 
     goto :goto_0
 .end method
@@ -783,7 +783,7 @@
     if-eqz p1, :cond_0
 
     .line 148
-    invoke-virtual {p0, p1}, Lcom/android/internal/view/menu/IconMenuItemView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     goto :goto_0
 .end method

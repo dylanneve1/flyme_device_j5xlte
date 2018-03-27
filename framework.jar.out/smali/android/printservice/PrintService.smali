@@ -188,12 +188,12 @@
 
     new-instance v1, Landroid/content/ComponentName;
 
-    invoke-virtual {p0}, Landroid/printservice/PrintService;->getPackageName()Ljava/lang/String;
+    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getPackageName()Ljava/lang/String;
 
     move-result-object v2
 
     .line 354
-    invoke-virtual {p0}, Landroid/printservice/PrintService;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v3
 

@@ -154,7 +154,7 @@
     .local v7, "e":Ljava/lang/Exception;
     sget-object v0, Ljava/lang/System;->err:Ljava/io/PrintStream;
 
-    invoke-virtual {v7, v0}, Ljava/lang/Exception;->printStackTrace(Ljava/io/PrintStream;)V
+    invoke-virtual {v7, v0}, Ljava/lang/Throwable;->printStackTrace(Ljava/io/PrintStream;)V
 
     .line 58
     invoke-static {v9}, Ljava/lang/System;->exit(I)V
@@ -190,7 +190,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v8}, Ljava/lang/IllegalArgumentException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v8}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v2
 

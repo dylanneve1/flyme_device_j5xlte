@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/server/devicepolicy/DevicePolicyManagerService;
 
     .prologue
-    .line 482
+    .line 484
     iput-object p1, p0, Lcom/android/server/devicepolicy/DevicePolicyManagerService$4;->this$0:Lcom/android/server/devicepolicy/DevicePolicyManagerService;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -46,26 +46,26 @@
 
     const/4 v9, 0x0
 
-    .line 485
+    .line 487
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 486
+    .line 488
     .local v0, "action":Ljava/lang/String;
     const-string/jumbo v4, "android.intent.extra.user_handle"
 
-    .line 487
+    .line 489
     invoke-virtual {p0}, Lcom/android/server/devicepolicy/DevicePolicyManagerService$4;->getSendingUserId()I
 
     move-result v5
 
-    .line 486
+    .line 488
     invoke-virtual {p2, v4, v5}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
     move-result v2
 
-    .line 494
+    .line 496
     .local v2, "userHandle":I
     const-string/jumbo v4, "android.intent.action.USER_STARTED"
 
@@ -75,7 +75,7 @@
 
     if-eqz v4, :cond_1
 
-    .line 495
+    .line 497
     iget-object v4, p0, Lcom/android/server/devicepolicy/DevicePolicyManagerService$4;->this$0:Lcom/android/server/devicepolicy/DevicePolicyManagerService;
 
     iget-object v4, v4, Lcom/android/server/devicepolicy/DevicePolicyManagerService;->mOwners:Lcom/android/server/devicepolicy/Owners;
@@ -86,12 +86,12 @@
 
     if-ne v2, v4, :cond_1
 
-    .line 496
+    .line 498
     iget-object v5, p0, Lcom/android/server/devicepolicy/DevicePolicyManagerService$4;->this$0:Lcom/android/server/devicepolicy/DevicePolicyManagerService;
 
     monitor-enter v5
 
-    .line 497
+    .line 499
     :try_start_0
     iget-object v4, p0, Lcom/android/server/devicepolicy/DevicePolicyManagerService$4;->this$0:Lcom/android/server/devicepolicy/DevicePolicyManagerService;
 
@@ -101,7 +101,7 @@
 
     if-eqz v4, :cond_0
 
-    .line 498
+    .line 500
     iget-object v4, p0, Lcom/android/server/devicepolicy/DevicePolicyManagerService$4;->this$0:Lcom/android/server/devicepolicy/DevicePolicyManagerService;
 
     const/4 v6, 0x1
@@ -113,7 +113,7 @@
     :cond_0
     monitor-exit v5
 
-    .line 502
+    .line 504
     :cond_1
     const-string/jumbo v4, "android.intent.action.BOOT_COMPLETED"
 
@@ -123,7 +123,7 @@
 
     if-eqz v4, :cond_2
 
-    .line 503
+    .line 505
     iget-object v4, p0, Lcom/android/server/devicepolicy/DevicePolicyManagerService$4;->this$0:Lcom/android/server/devicepolicy/DevicePolicyManagerService;
 
     iget-object v4, v4, Lcom/android/server/devicepolicy/DevicePolicyManagerService;->mOwners:Lcom/android/server/devicepolicy/Owners;
@@ -134,7 +134,7 @@
 
     if-ne v2, v4, :cond_2
 
-    .line 504
+    .line 506
     iget-object v4, p0, Lcom/android/server/devicepolicy/DevicePolicyManagerService$4;->this$0:Lcom/android/server/devicepolicy/DevicePolicyManagerService;
 
     invoke-static {v4}, Lcom/android/server/devicepolicy/DevicePolicyManagerService;->-wrap4(Lcom/android/server/devicepolicy/DevicePolicyManagerService;)Ljava/lang/String;
@@ -143,23 +143,23 @@
 
     if-eqz v4, :cond_2
 
-    .line 505
+    .line 507
     new-instance v1, Landroid/content/IntentFilter;
 
     invoke-direct {v1}, Landroid/content/IntentFilter;-><init>()V
 
-    .line 506
+    .line 508
     .local v1, "filterConsent":Landroid/content/IntentFilter;
     const-string/jumbo v4, "com.android.server.action.REMOTE_BUGREPORT_SHARING_DECLINED"
 
     invoke-virtual {v1, v4}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 507
+    .line 509
     const-string/jumbo v4, "com.android.server.action.REMOTE_BUGREPORT_SHARING_ACCEPTED"
 
     invoke-virtual {v1, v4}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 508
+    .line 510
     iget-object v4, p0, Lcom/android/server/devicepolicy/DevicePolicyManagerService$4;->this$0:Lcom/android/server/devicepolicy/DevicePolicyManagerService;
 
     iget-object v4, v4, Lcom/android/server/devicepolicy/DevicePolicyManagerService;->mContext:Landroid/content/Context;
@@ -172,7 +172,7 @@
 
     invoke-virtual {v4, v5, v1}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
-    .line 509
+    .line 511
     iget-object v4, p0, Lcom/android/server/devicepolicy/DevicePolicyManagerService$4;->this$0:Lcom/android/server/devicepolicy/DevicePolicyManagerService;
 
     iget-object v4, v4, Lcom/android/server/devicepolicy/DevicePolicyManagerService;->mInjector:Lcom/android/server/devicepolicy/DevicePolicyManagerService$Injector;
@@ -183,29 +183,29 @@
 
     const-string/jumbo v5, "DevicePolicyManagerService"
 
-    .line 511
+    .line 513
     iget-object v6, p0, Lcom/android/server/devicepolicy/DevicePolicyManagerService$4;->this$0:Lcom/android/server/devicepolicy/DevicePolicyManagerService;
 
     iget-object v6, v6, Lcom/android/server/devicepolicy/DevicePolicyManagerService;->mContext:Landroid/content/Context;
 
-    .line 512
+    .line 514
     const/4 v7, 0x3
 
-    .line 511
+    .line 513
     invoke-static {v6, v7}, Lcom/android/server/devicepolicy/RemoteBugreportUtils;->buildNotification(Landroid/content/Context;I)Landroid/app/Notification;
 
     move-result-object v6
 
-    .line 513
+    .line 515
     sget-object v7, Landroid/os/UserHandle;->ALL:Landroid/os/UserHandle;
 
-    .line 510
+    .line 512
     const v8, 0x28700e57
 
-    .line 509
+    .line 511
     invoke-virtual {v4, v5, v8, v6, v7}, Landroid/app/NotificationManager;->notifyAsUser(Ljava/lang/String;ILandroid/app/Notification;Landroid/os/UserHandle;)V
 
-    .line 515
+    .line 517
     .end local v1    # "filterConsent":Landroid/content/IntentFilter;
     :cond_2
     const-string/jumbo v4, "android.intent.action.BOOT_COMPLETED"
@@ -216,17 +216,17 @@
 
     if-nez v4, :cond_3
 
-    .line 516
+    .line 518
     const-string/jumbo v4, "com.android.server.ACTION_EXPIRED_PASSWORD_NOTIFICATION"
 
     invoke-virtual {v4, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v4
 
-    .line 515
+    .line 517
     if-eqz v4, :cond_4
 
-    .line 521
+    .line 523
     :cond_3
     iget-object v4, p0, Lcom/android/server/devicepolicy/DevicePolicyManagerService$4;->this$0:Lcom/android/server/devicepolicy/DevicePolicyManagerService;
 
@@ -238,7 +238,7 @@
 
     invoke-virtual {v4, v5}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
-    .line 528
+    .line 530
     :cond_4
     const-string/jumbo v4, "android.intent.action.USER_UNLOCKED"
 
@@ -248,27 +248,27 @@
 
     if-nez v4, :cond_5
 
-    .line 529
+    .line 531
     const-string/jumbo v4, "android.intent.action.USER_STARTED"
 
     invoke-virtual {v4, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v4
 
-    .line 528
+    .line 530
     if-nez v4, :cond_5
 
-    .line 530
+    .line 532
     const-string/jumbo v4, "android.security.STORAGE_CHANGED"
 
     invoke-virtual {v4, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v4
 
-    .line 528
+    .line 530
     if-eqz v4, :cond_6
 
-    .line 531
+    .line 533
     :cond_5
     const-string/jumbo v4, "android.intent.extra.user_handle"
 
@@ -278,7 +278,7 @@
 
     move-result v3
 
-    .line 532
+    .line 534
     .local v3, "userId":I
     new-instance v4, Lcom/android/server/devicepolicy/DevicePolicyManagerService$MonitoringCertNotificationTask;
 
@@ -296,7 +296,7 @@
 
     invoke-virtual {v4, v5}, Lcom/android/server/devicepolicy/DevicePolicyManagerService$MonitoringCertNotificationTask;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
-    .line 534
+    .line 536
     .end local v3    # "userId":I
     :cond_6
     const-string/jumbo v4, "android.intent.action.USER_ADDED"
@@ -307,17 +307,17 @@
 
     if-eqz v4, :cond_8
 
-    .line 535
+    .line 537
     iget-object v4, p0, Lcom/android/server/devicepolicy/DevicePolicyManagerService$4;->this$0:Lcom/android/server/devicepolicy/DevicePolicyManagerService;
 
     invoke-static {v4}, Lcom/android/server/devicepolicy/DevicePolicyManagerService;->-wrap6(Lcom/android/server/devicepolicy/DevicePolicyManagerService;)V
 
-    .line 484
+    .line 486
     :cond_7
     :goto_0
     return-void
 
-    .line 496
+    .line 498
     :catchall_0
     move-exception v4
 
@@ -325,7 +325,7 @@
 
     throw v4
 
-    .line 536
+    .line 538
     :cond_8
     const-string/jumbo v4, "android.intent.action.USER_REMOVED"
 
@@ -335,19 +335,19 @@
 
     if-eqz v4, :cond_9
 
-    .line 537
+    .line 539
     iget-object v4, p0, Lcom/android/server/devicepolicy/DevicePolicyManagerService$4;->this$0:Lcom/android/server/devicepolicy/DevicePolicyManagerService;
 
     invoke-static {v4}, Lcom/android/server/devicepolicy/DevicePolicyManagerService;->-wrap6(Lcom/android/server/devicepolicy/DevicePolicyManagerService;)V
 
-    .line 538
+    .line 540
     iget-object v4, p0, Lcom/android/server/devicepolicy/DevicePolicyManagerService$4;->this$0:Lcom/android/server/devicepolicy/DevicePolicyManagerService;
 
     invoke-virtual {v4, v2}, Lcom/android/server/devicepolicy/DevicePolicyManagerService;->removeUserData(I)V
 
     goto :goto_0
 
-    .line 539
+    .line 541
     :cond_9
     const-string/jumbo v4, "android.intent.action.USER_STARTED"
 
@@ -357,12 +357,12 @@
 
     if-eqz v4, :cond_a
 
-    .line 540
+    .line 542
     iget-object v5, p0, Lcom/android/server/devicepolicy/DevicePolicyManagerService$4;->this$0:Lcom/android/server/devicepolicy/DevicePolicyManagerService;
 
     monitor-enter v5
 
-    .line 542
+    .line 544
     :try_start_1
     iget-object v4, p0, Lcom/android/server/devicepolicy/DevicePolicyManagerService$4;->this$0:Lcom/android/server/devicepolicy/DevicePolicyManagerService;
 
@@ -370,7 +370,7 @@
 
     invoke-virtual {v4, v2}, Landroid/util/SparseArray;->remove(I)V
 
-    .line 543
+    .line 545
     iget-object v4, p0, Lcom/android/server/devicepolicy/DevicePolicyManagerService$4;->this$0:Lcom/android/server/devicepolicy/DevicePolicyManagerService;
 
     invoke-static {v4, v2}, Lcom/android/server/devicepolicy/DevicePolicyManagerService;->-wrap17(Lcom/android/server/devicepolicy/DevicePolicyManagerService;I)V
@@ -379,14 +379,14 @@
 
     monitor-exit v5
 
-    .line 545
+    .line 547
     iget-object v4, p0, Lcom/android/server/devicepolicy/DevicePolicyManagerService$4;->this$0:Lcom/android/server/devicepolicy/DevicePolicyManagerService;
 
     invoke-static {v4, v9, v2}, Lcom/android/server/devicepolicy/DevicePolicyManagerService;->-wrap7(Lcom/android/server/devicepolicy/DevicePolicyManagerService;Ljava/lang/String;I)V
 
     goto :goto_0
 
-    .line 540
+    .line 542
     :catchall_1
     move-exception v4
 
@@ -394,7 +394,7 @@
 
     throw v4
 
-    .line 546
+    .line 548
     :cond_a
     const-string/jumbo v4, "android.intent.action.EXTERNAL_APPLICATIONS_UNAVAILABLE"
 
@@ -404,14 +404,14 @@
 
     if-eqz v4, :cond_b
 
-    .line 547
+    .line 549
     iget-object v4, p0, Lcom/android/server/devicepolicy/DevicePolicyManagerService$4;->this$0:Lcom/android/server/devicepolicy/DevicePolicyManagerService;
 
     invoke-static {v4, v9, v2}, Lcom/android/server/devicepolicy/DevicePolicyManagerService;->-wrap7(Lcom/android/server/devicepolicy/DevicePolicyManagerService;Ljava/lang/String;I)V
 
     goto :goto_0
 
-    .line 548
+    .line 550
     :cond_b
     const-string/jumbo v4, "android.intent.action.PACKAGE_CHANGED"
 
@@ -421,7 +421,7 @@
 
     if-nez v4, :cond_c
 
-    .line 549
+    .line 551
     const-string/jumbo v4, "android.intent.action.PACKAGE_ADDED"
 
     invoke-virtual {v4, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -430,17 +430,17 @@
 
     if-eqz v4, :cond_d
 
-    .line 550
+    .line 552
     const-string/jumbo v4, "android.intent.extra.REPLACING"
 
     invoke-virtual {p2, v4, v10}, Landroid/content/Intent;->getBooleanExtra(Ljava/lang/String;Z)Z
 
     move-result v4
 
-    .line 548
+    .line 550
     if-eqz v4, :cond_d
 
-    .line 551
+    .line 553
     :cond_c
     iget-object v4, p0, Lcom/android/server/devicepolicy/DevicePolicyManagerService$4;->this$0:Lcom/android/server/devicepolicy/DevicePolicyManagerService;
 
@@ -456,7 +456,7 @@
 
     goto :goto_0
 
-    .line 552
+    .line 554
     :cond_d
     const-string/jumbo v4, "android.intent.action.PACKAGE_REMOVED"
 
@@ -466,7 +466,7 @@
 
     if-eqz v4, :cond_e
 
-    .line 553
+    .line 555
     const-string/jumbo v4, "android.intent.extra.REPLACING"
 
     invoke-virtual {p2, v4, v10}, Landroid/content/Intent;->getBooleanExtra(Ljava/lang/String;Z)Z
@@ -475,7 +475,7 @@
 
     if-eqz v4, :cond_f
 
-    .line 555
+    .line 557
     :cond_e
     const-string/jumbo v4, "android.intent.action.MANAGED_PROFILE_ADDED"
 
@@ -485,14 +485,14 @@
 
     if-eqz v4, :cond_7
 
-    .line 556
+    .line 558
     iget-object v4, p0, Lcom/android/server/devicepolicy/DevicePolicyManagerService$4;->this$0:Lcom/android/server/devicepolicy/DevicePolicyManagerService;
 
     invoke-static {v4}, Lcom/android/server/devicepolicy/DevicePolicyManagerService;->-wrap5(Lcom/android/server/devicepolicy/DevicePolicyManagerService;)V
 
     goto/16 :goto_0
 
-    .line 554
+    .line 556
     :cond_f
     iget-object v4, p0, Lcom/android/server/devicepolicy/DevicePolicyManagerService$4;->this$0:Lcom/android/server/devicepolicy/DevicePolicyManagerService;
 

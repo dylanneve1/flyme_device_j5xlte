@@ -194,7 +194,7 @@
     iput v1, p0, Landroid/bluetooth/le/BluetoothLeAdvertiser$AdvertiseCallbackWrapper;->mClientIf:I
 
     .line 331
-    invoke-virtual {p0}, Landroid/bluetooth/le/BluetoothLeAdvertiser$AdvertiseCallbackWrapper;->notifyAll()V
+    invoke-virtual {p0}, Ljava/lang/Object;->notifyAll()V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
@@ -243,7 +243,7 @@
 
     .line 359
     :goto_0
-    invoke-virtual {p0}, Landroid/bluetooth/le/BluetoothLeAdvertiser$AdvertiseCallbackWrapper;->notifyAll()V
+    invoke-virtual {p0}, Ljava/lang/Object;->notifyAll()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -367,7 +367,7 @@
     .line 264
     const-wide/16 v4, 0x7d0
 
-    invoke-virtual {p0, v4, v5}, Landroid/bluetooth/le/BluetoothLeAdvertiser$AdvertiseCallbackWrapper;->wait(J)V
+    invoke-virtual {p0, v4, v5}, Ljava/lang/Object;->wait(J)V
     :try_end_1
     .catch Ljava/lang/InterruptedException; {:try_start_1 .. :try_end_1} :catch_0
     .catch Landroid/os/RemoteException; {:try_start_1 .. :try_end_1} :catch_0
@@ -517,7 +517,7 @@
     .line 294
     const-wide/16 v2, 0x7d0
 
-    invoke-virtual {p0, v2, v3}, Landroid/bluetooth/le/BluetoothLeAdvertiser$AdvertiseCallbackWrapper;->wait(J)V
+    invoke-virtual {p0, v2, v3}, Ljava/lang/Object;->wait(J)V
     :try_end_0
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0

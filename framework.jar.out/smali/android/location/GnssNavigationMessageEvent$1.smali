@@ -46,7 +46,7 @@
 
     .prologue
     .line 97
-    invoke-virtual {p0}, Landroid/location/GnssNavigationMessageEvent$1;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v2
 

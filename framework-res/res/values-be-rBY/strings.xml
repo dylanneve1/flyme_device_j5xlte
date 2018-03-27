@@ -120,6 +120,8 @@
     <string name="tethered_notification_no_device_message">Няма падлучаных прылад</string>
     <string name="tethered_notification_one_device_message">%1$s падлучаная прылада</string>
     <string name="tethered_notification_multi_device_message">Падлучана прылад: %1$s</string>
+    <string name="silent_mode_priority">Важныя</string>
+    <string name="silent_mode_none">Не</string>
     <string name="byteShort">B</string>
     <string name="kilobyteShort">Кб</string>
     <string name="megabyteShort">Мб</string>

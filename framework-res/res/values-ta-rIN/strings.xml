@@ -113,6 +113,8 @@
     <string name="tethered_notification_no_device_message">இணைக்கப்பட்ட சாதனம் இல்லை</string>
     <string name="tethered_notification_one_device_message">%1$s இணைக்கப்பட்ட சாதனம்</string>
     <string name="tethered_notification_multi_device_message">%1$s இணைக்கப்பட்ட சாதனங்கள்</string>
+    <string name="silent_mode_priority">முன்னுரிமை</string>
+    <string name="silent_mode_none">ஏதுமில்லை</string>
     <string name="byteShort">பை.</string>
     <string name="kilobyteShort">கி.பை.</string>
     <string name="megabyteShort">மெ.பை.</string>

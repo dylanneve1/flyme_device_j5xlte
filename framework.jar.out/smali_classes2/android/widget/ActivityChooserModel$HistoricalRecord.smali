@@ -90,7 +90,7 @@
 
     .line 842
     :cond_1
-    invoke-virtual {p0}, Landroid/widget/ActivityChooserModel$HistoricalRecord;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v1
 

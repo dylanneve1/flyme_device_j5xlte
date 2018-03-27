@@ -30,7 +30,7 @@
 
 .field static final TRANSACTION_registerNetdEventCallback_1:I = 0x2
 
-.field static final TRANSACTION_unregisterNetdEventCallback:I = 0x3
+.field static final TRANSACTION_unregisterNetdEventCallback_2:I = 0x3
 
 
 # direct methods
@@ -44,7 +44,7 @@
     .line 16
     const-string/jumbo v0, "android.net.IIpConnectivityMetrics"
 
-    invoke-virtual {p0, p0, v0}, Landroid/net/IIpConnectivityMetrics$Stub;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
+    invoke-virtual {p0, p0, v0}, Landroid/os/Binder;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
 
     .line 14
     return-void

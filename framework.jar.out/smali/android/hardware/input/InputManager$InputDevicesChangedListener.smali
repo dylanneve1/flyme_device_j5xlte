@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Landroid/hardware/input/InputManager;
 
     .prologue
-    .line 1036
+    .line 1046
     iput-object p1, p0, Landroid/hardware/input/InputManager$InputDevicesChangedListener;->this$0:Landroid/hardware/input/InputManager;
 
     invoke-direct {p0}, Landroid/hardware/input/IInputDevicesChangedListener$Stub;-><init>()V
@@ -54,11 +54,11 @@
     .end annotation
 
     .prologue
-    .line 1039
+    .line 1049
     iget-object v0, p0, Landroid/hardware/input/InputManager$InputDevicesChangedListener;->this$0:Landroid/hardware/input/InputManager;
 
     invoke-static {v0, p1}, Landroid/hardware/input/InputManager;->-wrap0(Landroid/hardware/input/InputManager;[I)V
 
-    .line 1038
+    .line 1048
     return-void
 .end method

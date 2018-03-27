@@ -30,7 +30,7 @@
     .param p2, "val$userHandle"    # I
 
     .prologue
-    .line 521
+    .line 523
     iput-object p1, p0, Lcom/android/server/devicepolicy/DevicePolicyManagerService$4$1;->this$1:Lcom/android/server/devicepolicy/DevicePolicyManagerService$4;
 
     iput p2, p0, Lcom/android/server/devicepolicy/DevicePolicyManagerService$4$1;->val$userHandle:I
@@ -46,7 +46,7 @@
     .locals 2
 
     .prologue
-    .line 524
+    .line 526
     iget-object v0, p0, Lcom/android/server/devicepolicy/DevicePolicyManagerService$4$1;->this$1:Lcom/android/server/devicepolicy/DevicePolicyManagerService$4;
 
     iget-object v0, v0, Lcom/android/server/devicepolicy/DevicePolicyManagerService$4;->this$0:Lcom/android/server/devicepolicy/DevicePolicyManagerService;
@@ -55,6 +55,6 @@
 
     invoke-static {v0, v1}, Lcom/android/server/devicepolicy/DevicePolicyManagerService;->-wrap8(Lcom/android/server/devicepolicy/DevicePolicyManagerService;I)V
 
-    .line 523
+    .line 525
     return-void
 .end method

@@ -22,10 +22,10 @@
     invoke-direct {p0}, Landroid/media/SubtitleTrack$Cue;-><init>()V
 
     .line 281
-    iput-wide p1, p0, Landroid/media/TtmlCue;->mStartTimeMs:J
+    iput-wide p1, p0, Landroid/media/SubtitleTrack$Cue;->mStartTimeMs:J
 
     .line 282
-    iput-wide p3, p0, Landroid/media/TtmlCue;->mEndTimeMs:J
+    iput-wide p3, p0, Landroid/media/SubtitleTrack$Cue;->mEndTimeMs:J
 
     .line 283
     iput-object p5, p0, Landroid/media/TtmlCue;->mText:Ljava/lang/String;

@@ -66,7 +66,9 @@
     move-object v0, p1
 
     .line 2193
-    check-cast v0, Landroid/hardware/Camera$Coordinate;
+    nop
+
+    nop
 
     .line 2194
     .local v0, "c":Landroid/hardware/Camera$Coordinate;

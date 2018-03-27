@@ -149,7 +149,9 @@
     if-eqz v5, :cond_1
 
     .line 274
-    check-cast v4, Landroid/view/TextureView;
+    nop
+
+    nop
 
     .end local v4    # "view":Landroid/view/View;
     invoke-virtual {v4}, Landroid/view/TextureView;->getBitmap()Landroid/graphics/Bitmap;
@@ -171,7 +173,7 @@
 
     .line 283
     .local v3, "drawable":Landroid/graphics/drawable/BitmapDrawable;
-    invoke-virtual {v3, v1}, Landroid/graphics/drawable/BitmapDrawable;->setBounds(Landroid/graphics/Rect;)V
+    invoke-virtual {v3, v1}, Landroid/graphics/drawable/Drawable;->setBounds(Landroid/graphics/Rect;)V
 
     .line 284
     iget-object v5, p1, Landroid/transition/TransitionValues;->values:Ljava/util/Map;
@@ -459,7 +461,7 @@
 
     invoke-direct {v2, v0, v5, v6}, Landroid/transition/Crossfade$1;-><init>(Landroid/transition/Crossfade;Landroid/view/View;Landroid/graphics/drawable/BitmapDrawable;)V
 
-    invoke-virtual {v8, v2}, Landroid/animation/ObjectAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
+    invoke-virtual {v8, v2}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
     .line 211
     const/4 v9, 0x0
@@ -513,7 +515,7 @@
 
     invoke-direct/range {v2 .. v7}, Landroid/transition/Crossfade$2;-><init>(Landroid/transition/Crossfade;ZLandroid/view/View;Landroid/graphics/drawable/BitmapDrawable;Landroid/graphics/drawable/BitmapDrawable;)V
 
-    invoke-virtual {v8, v2}, Landroid/animation/ObjectAnimator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
+    invoke-virtual {v8, v2}, Landroid/animation/Animator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
     .line 233
     new-instance v16, Landroid/animation/AnimatorSet;

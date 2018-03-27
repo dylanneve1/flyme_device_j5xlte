@@ -51,10 +51,10 @@
     .locals 2
 
     .prologue
-    .line 5153
+    .line 5136
     invoke-direct {p0}, Landroid/app/Notification$Style;-><init>()V
 
-    .line 5151
+    .line 5134
     new-instance v0, Ljava/util/ArrayList;
 
     const/4 v1, 0x5
@@ -65,7 +65,7 @@
 
     invoke-static/range {p0 .. p0}, Landroid/app/Notification$InboxStyle$FlymeInjector;->initFlymeExtFields(Landroid/app/Notification$InboxStyle;)V
 
-    .line 5153
+    .line 5136
     return-void
 .end method
 
@@ -76,10 +76,10 @@
     .end annotation
 
     .prologue
-    .line 5160
+    .line 5143
     invoke-direct {p0}, Landroid/app/Notification$Style;-><init>()V
 
-    .line 5151
+    .line 5134
     new-instance v0, Ljava/util/ArrayList;
 
     const/4 v1, 0x5
@@ -104,14 +104,14 @@
     .prologue
     const/4 v6, 0x0
 
-    .line 5269
+    .line 5252
     const/4 v0, 0x0
 
-    .line 5270
+    .line 5253
     .local v0, "endMargin":I
     if-eqz p3, :cond_0
 
-    .line 5271
+    .line 5254
     iget-object v4, p0, Landroid/app/Notification$InboxStyle;->mBuilder:Landroid/app/Notification$Builder;
 
     invoke-static {v4}, Landroid/app/Notification$Builder;->-get2(Landroid/app/Notification$Builder;)Landroid/app/Notification;
@@ -126,7 +126,7 @@
 
     move-result v3
 
-    .line 5272
+    .line 5255
     .local v3, "max":I
     iget-object v4, p0, Landroid/app/Notification$InboxStyle;->mBuilder:Landroid/app/Notification$Builder;
 
@@ -142,13 +142,13 @@
 
     move-result v2
 
-    .line 5273
+    .line 5256
     .local v2, "ind":Z
     if-nez v3, :cond_1
 
     move v1, v2
 
-    .line 5274
+    .line 5257
     :goto_0
     iget-object v4, p0, Landroid/app/Notification$InboxStyle;->mBuilder:Landroid/app/Notification$Builder;
 
@@ -164,17 +164,17 @@
 
     if-eqz v1, :cond_2
 
-    .line 5278
+    .line 5261
     .end local v2    # "ind":Z
     .end local v3    # "max":I
     :cond_0
     :goto_1
     invoke-virtual {p1, p2, v0}, Landroid/widget/RemoteViews;->setViewLayoutMarginEndDimen(II)V
 
-    .line 5268
+    .line 5251
     return-void
 
-    .line 5273
+    .line 5256
     .restart local v2    # "ind":Z
     .restart local v3    # "max":I
     :cond_1
@@ -183,7 +183,7 @@
     .local v1, "hasProgress":Z
     goto :goto_0
 
-    .line 5275
+    .line 5258
     .end local v1    # "hasProgress":Z
     :cond_2
     const v0, #android:dimen@notification_content_picture_margin#t
@@ -198,10 +198,10 @@
     .param p1, "extras"    # Landroid/os/Bundle;
 
     .prologue
-    .line 5193
+    .line 5176
     invoke-super {p0, p1}, Landroid/app/Notification$Style;->addExtras(Landroid/os/Bundle;)V
 
-    .line 5195
+    .line 5178
     iget-object v1, p0, Landroid/app/Notification$InboxStyle;->mTexts:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
@@ -210,7 +210,7 @@
 
     new-array v0, v1, [Ljava/lang/CharSequence;
 
-    .line 5196
+    .line 5179
     .local v0, "a":[Ljava/lang/CharSequence;
     const-string/jumbo v2, "android.textLines"
 
@@ -226,7 +226,7 @@
 
     invoke-static/range {p0 .. p1}, Landroid/app/Notification$InboxStyle$FlymeInjector;->addFlymeExtras(Landroid/app/Notification$InboxStyle;Landroid/os/Bundle;)V
 
-    .line 5192
+    .line 5175
     return-void
 .end method
 
@@ -235,7 +235,7 @@
     .param p1, "cs"    # Ljava/lang/CharSequence;
 
     .prologue
-    .line 5185
+    .line 5168
     iget-object v0, p0, Landroid/app/Notification$InboxStyle;->mTexts:Ljava/util/ArrayList;
 
     invoke-static {p1}, Landroid/app/Notification;->safeCharSequence(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
@@ -573,6 +573,6 @@
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 5186
+    .line 5169
     return-object p0
 .end method

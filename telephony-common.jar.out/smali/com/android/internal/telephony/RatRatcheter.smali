@@ -168,7 +168,7 @@
     :try_start_2
     const-string/jumbo v12, "ratchet_rat_families"
 
-    invoke-virtual {v1, v12}, Landroid/os/PersistableBundle;->getStringArray(Ljava/lang/String;)[Ljava/lang/String;
+    invoke-virtual {v1, v12}, Landroid/os/BaseBundle;->getStringArray(Ljava/lang/String;)[Ljava/lang/String;
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 

@@ -520,7 +520,7 @@
     .line 576
     :goto_1
     :try_start_5
-    invoke-virtual {p0, p3, p4}, Landroid/media/TtmlTrack;->finishedRun(J)V
+    invoke-virtual {p0, p3, p4}, Landroid/media/SubtitleTrack;->finishedRun(J)V
 
     .line 577
     const-string/jumbo v4, ""
@@ -549,7 +549,7 @@
     .line 574
     .local v0, "e":Ljava/io/IOException;
     :try_start_7
-    invoke-virtual {v0}, Ljava/io/IOException;->printStackTrace()V
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     goto :goto_1
 
@@ -590,7 +590,7 @@
     if-eqz v0, :cond_0
 
     .line 597
-    invoke-virtual {p0, v0}, Landroid/media/TtmlTrack;->addCue(Landroid/media/SubtitleTrack$Cue;)Z
+    invoke-virtual {p0, v0}, Landroid/media/SubtitleTrack;->addCue(Landroid/media/SubtitleTrack$Cue;)Z
 
     goto :goto_0
 
@@ -644,7 +644,7 @@
     .prologue
     .line 606
     .local p1, "activeCues":Ljava/util/Vector;, "Ljava/util/Vector<Landroid/media/SubtitleTrack$Cue;>;"
-    iget-boolean v1, p0, Landroid/media/TtmlTrack;->mVisible:Z
+    iget-boolean v1, p0, Landroid/media/SubtitleTrack;->mVisible:Z
 
     if-nez v1, :cond_0
 
@@ -653,11 +653,11 @@
 
     .line 611
     :cond_0
-    iget-boolean v1, p0, Landroid/media/TtmlTrack;->DEBUG:Z
+    iget-boolean v1, p0, Landroid/media/SubtitleTrack;->DEBUG:Z
 
     if-eqz v1, :cond_1
 
-    iget-object v1, p0, Landroid/media/TtmlTrack;->mTimeProvider:Landroid/media/MediaTimeProvider;
+    iget-object v1, p0, Landroid/media/SubtitleTrack;->mTimeProvider:Landroid/media/MediaTimeProvider;
 
     if-eqz v1, :cond_1
 
@@ -676,7 +676,7 @@
     move-result-object v2
 
     .line 614
-    iget-object v3, p0, Landroid/media/TtmlTrack;->mTimeProvider:Landroid/media/MediaTimeProvider;
+    iget-object v3, p0, Landroid/media/SubtitleTrack;->mTimeProvider:Landroid/media/MediaTimeProvider;
 
     const/4 v4, 0x0
 

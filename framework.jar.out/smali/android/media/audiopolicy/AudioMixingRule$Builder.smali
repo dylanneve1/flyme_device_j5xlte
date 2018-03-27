@@ -507,7 +507,9 @@
 
     .line 339
     :cond_2
-    check-cast p2, Landroid/media/AudioAttributes;
+    nop
+
+    nop
 
     .end local p2    # "property":Ljava/lang/Object;
     invoke-direct {p0, p2, v2, p1}, Landroid/media/audiopolicy/AudioMixingRule$Builder;->addRuleInternal(Landroid/media/AudioAttributes;Ljava/lang/Integer;I)Landroid/media/audiopolicy/AudioMixingRule$Builder;
@@ -534,7 +536,9 @@
 
     .line 345
     :cond_4
-    check-cast p2, Ljava/lang/Integer;
+    nop
+
+    nop
 
     .end local p2    # "property":Ljava/lang/Object;
     invoke-direct {p0, v2, p2, p1}, Landroid/media/audiopolicy/AudioMixingRule$Builder;->addRuleInternal(Landroid/media/AudioAttributes;Ljava/lang/Integer;I)Landroid/media/audiopolicy/AudioMixingRule$Builder;

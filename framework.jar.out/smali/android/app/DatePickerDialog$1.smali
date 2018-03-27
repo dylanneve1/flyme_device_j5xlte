@@ -47,7 +47,7 @@
 
     const/4 v2, -0x1
 
-    invoke-virtual {v1, v2}, Landroid/app/DatePickerDialog;->getButton(I)Landroid/widget/Button;
+    invoke-virtual {v1, v2}, Landroid/app/AlertDialog;->getButton(I)Landroid/widget/Button;
 
     move-result-object v0
 
@@ -56,7 +56,7 @@
     if-eqz v0, :cond_0
 
     .line 226
-    invoke-virtual {v0, p1}, Landroid/widget/Button;->setEnabled(Z)V
+    invoke-virtual {v0, p1}, Landroid/widget/TextView;->setEnabled(Z)V
 
     .line 223
     :cond_0

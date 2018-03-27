@@ -26,12 +26,12 @@
     .param p3, "$anonymous1"    # I
 
     .prologue
-    .line 697
+    .line 702
     iput-object p1, p0, Lcom/android/server/policy/GlobalActions$14;->this$0:Lcom/android/server/policy/GlobalActions;
 
     invoke-direct {p0, p2, p3}, Lcom/android/server/policy/GlobalActions$SinglePressAction;-><init>(II)V
 
-    .line 698
+    .line 703
     return-void
 .end method
 
@@ -41,7 +41,7 @@
     .locals 3
 
     .prologue
-    .line 702
+    .line 707
     new-instance v1, Lcom/android/internal/widget/LockPatternUtils;
 
     iget-object v2, p0, Lcom/android/server/policy/GlobalActions$14;->this$0:Lcom/android/server/policy/GlobalActions;
@@ -56,7 +56,7 @@
 
     invoke-virtual {v1, v2}, Lcom/android/internal/widget/LockPatternUtils;->requireCredentialEntry(I)V
 
-    .line 704
+    .line 709
     :try_start_0
     invoke-static {}, Landroid/view/WindowManagerGlobal;->getWindowManagerService()Landroid/view/IWindowManager;
 
@@ -68,15 +68,15 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 701
+    .line 706
     :goto_0
     return-void
 
-    .line 705
+    .line 710
     :catch_0
     move-exception v0
 
-    .line 706
+    .line 711
     .local v0, "e":Landroid/os/RemoteException;
     const-string/jumbo v1, "GlobalActions"
 
@@ -91,7 +91,7 @@
     .locals 1
 
     .prologue
-    .line 717
+    .line 722
     const/4 v0, 0x0
 
     return v0
@@ -101,7 +101,7 @@
     .locals 1
 
     .prologue
-    .line 712
+    .line 717
     const/4 v0, 0x1
 
     return v0

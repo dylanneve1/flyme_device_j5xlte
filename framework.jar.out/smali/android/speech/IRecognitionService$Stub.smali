@@ -26,7 +26,7 @@
 # static fields
 .field private static final DESCRIPTOR:Ljava/lang/String; = "android.speech.IRecognitionService"
 
-.field static final TRANSACTION_cancel:I = 0x3
+.field static final TRANSACTION_cancel_2:I = 0x3
 
 .field static final TRANSACTION_startListening_0:I = 0x1
 
@@ -44,7 +44,7 @@
     .line 24
     const-string/jumbo v0, "android.speech.IRecognitionService"
 
-    invoke-virtual {p0, p0, v0}, Landroid/speech/IRecognitionService$Stub;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
+    invoke-virtual {p0, p0, v0}, Landroid/os/Binder;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
 
     .line 22
     return-void

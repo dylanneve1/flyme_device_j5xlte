@@ -280,7 +280,7 @@
     iput-object v0, p0, Lcom/android/internal/widget/MediaNotificationView;->mRightIcon:Landroid/widget/ImageView;
 
     .line 156
-    const v0, 0x10203ba
+    const v0, 0x10203bb
 
     invoke-virtual {p0, v0}, Lcom/android/internal/widget/MediaNotificationView;->findViewById(I)Landroid/view/View;
 
@@ -289,7 +289,7 @@
     iput-object v0, p0, Lcom/android/internal/widget/MediaNotificationView;->mActions:Landroid/view/View;
 
     .line 157
-    const v0, 0x10203af
+    const v0, 0x10203b0
 
     invoke-virtual {p0, v0}, Lcom/android/internal/widget/MediaNotificationView;->findViewById(I)Landroid/view/View;
 
@@ -298,7 +298,7 @@
     iput-object v0, p0, Lcom/android/internal/widget/MediaNotificationView;->mHeader:Landroid/view/View;
 
     .line 158
-    const v0, 0x10203b8
+    const v0, 0x10203b9
 
     invoke-virtual {p0, v0}, Lcom/android/internal/widget/MediaNotificationView;->findViewById(I)Landroid/view/View;
 

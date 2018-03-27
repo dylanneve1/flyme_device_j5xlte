@@ -26,7 +26,7 @@
 # static fields
 .field private static final DESCRIPTOR:Ljava/lang/String; = "com.android.ims.internal.uce.presence.IPresenceService"
 
-.field static final TRANSACTION_addListener:I = 0x2
+.field static final TRANSACTION_addListener_1:I = 0x2
 
 .field static final TRANSACTION_getContactCap_5:I = 0x6
 
@@ -38,7 +38,7 @@
 
 .field static final TRANSACTION_reenableService_3:I = 0x4
 
-.field static final TRANSACTION_removeListener:I = 0x3
+.field static final TRANSACTION_removeListener_2:I = 0x3
 
 .field static final TRANSACTION_setNewFeatureTag:I = 0x8
 
@@ -54,7 +54,7 @@
     .line 17
     const-string/jumbo v0, "com.android.ims.internal.uce.presence.IPresenceService"
 
-    invoke-virtual {p0, p0, v0}, Lcom/android/ims/internal/uce/presence/IPresenceService$Stub;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
+    invoke-virtual {p0, p0, v0}, Landroid/os/Binder;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
 
     .line 15
     return-void

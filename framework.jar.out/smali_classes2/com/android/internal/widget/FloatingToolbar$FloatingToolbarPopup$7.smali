@@ -107,7 +107,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v3}, Landroid/view/ViewGroup;->getHeight()I
+    invoke-virtual {v3}, Landroid/view/View;->getHeight()I
 
     move-result v3
 
@@ -120,7 +120,7 @@
     sub-float/2addr v2, v3
 
     .line 762
-    invoke-virtual {v1, v2}, Landroid/view/ViewGroup;->setY(F)V
+    invoke-virtual {v1, v2}, Landroid/view/View;->setY(F)V
 
     .line 764
     iget-object v1, p0, Lcom/android/internal/widget/FloatingToolbar$FloatingToolbarPopup$7;->this$1:Lcom/android/internal/widget/FloatingToolbar$FloatingToolbarPopup;

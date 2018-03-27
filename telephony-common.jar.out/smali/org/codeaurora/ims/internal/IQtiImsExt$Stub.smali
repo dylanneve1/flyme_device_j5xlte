@@ -30,25 +30,25 @@
 
 .field static final TRANSACTION_getHandoverConfig_14:I = 0xf
 
-.field static final TRANSACTION_getImsPhoneId_8:I = 0x9
+.field static final TRANSACTION_getImsPhoneId:I = 0x9
 
 .field static final TRANSACTION_getPacketCount_2:I = 0x3
 
-.field static final TRANSACTION_getPacketErrorCount_3:I = 0x4
+.field static final TRANSACTION_getPacketErrorCount:I = 0x4
 
-.field static final TRANSACTION_querySsacStatus:I = 0x8
+.field static final TRANSACTION_querySsacStatus_7:I = 0x8
 
-.field static final TRANSACTION_queryVoltePreference_13:I = 0xe
+.field static final TRANSACTION_queryVoltePreference:I = 0xe
 
 .field static final TRANSACTION_queryVopsStatus_6:I = 0x7
 
-.field static final TRANSACTION_registerForParticipantStatusInfo:I = 0xc
+.field static final TRANSACTION_registerForParticipantStatusInfo_11:I = 0xc
 
 .field static final TRANSACTION_registerForViceRefreshInfo:I = 0xb
 
 .field static final TRANSACTION_resumePendingCall_9:I = 0xa
 
-.field static final TRANSACTION_sendCallDeflectRequest_4:I = 0x5
+.field static final TRANSACTION_sendCallDeflectRequest:I = 0x5
 
 .field static final TRANSACTION_sendCallTransferRequest_5:I = 0x6
 
@@ -70,7 +70,7 @@
     .line 19
     const-string/jumbo v0, "org.codeaurora.ims.internal.IQtiImsExt"
 
-    invoke-virtual {p0, p0, v0}, Lorg/codeaurora/ims/internal/IQtiImsExt$Stub;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
+    invoke-virtual {p0, p0, v0}, Landroid/os/Binder;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
 
     .line 17
     return-void

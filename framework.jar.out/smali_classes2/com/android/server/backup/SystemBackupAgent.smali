@@ -125,7 +125,7 @@
 
     invoke-direct {v1, p0}, Lcom/android/server/backup/AccountSyncSettingsBackupHelper;-><init>(Landroid/content/Context;)V
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/server/backup/SystemBackupAgent;->addHelper(Ljava/lang/String;Landroid/app/backup/BackupHelper;)V
+    invoke-virtual {p0, v0, v1}, Landroid/app/backup/BackupAgentHelper;->addHelper(Ljava/lang/String;Landroid/app/backup/BackupHelper;)V
 
     .line 81
     const-string/jumbo v0, "preferred_activities"
@@ -134,7 +134,7 @@
 
     invoke-direct {v1}, Lcom/android/server/backup/PreferredActivityBackupHelper;-><init>()V
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/server/backup/SystemBackupAgent;->addHelper(Ljava/lang/String;Landroid/app/backup/BackupHelper;)V
+    invoke-virtual {p0, v0, v1}, Landroid/app/backup/BackupAgentHelper;->addHelper(Ljava/lang/String;Landroid/app/backup/BackupHelper;)V
 
     .line 82
     const-string/jumbo v0, "notifications"
@@ -143,7 +143,7 @@
 
     invoke-direct {v1, p0}, Lcom/android/server/backup/NotificationBackupHelper;-><init>(Landroid/content/Context;)V
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/server/backup/SystemBackupAgent;->addHelper(Ljava/lang/String;Landroid/app/backup/BackupHelper;)V
+    invoke-virtual {p0, v0, v1}, Landroid/app/backup/BackupAgentHelper;->addHelper(Ljava/lang/String;Landroid/app/backup/BackupHelper;)V
 
     .line 83
     const-string/jumbo v0, "permissions"
@@ -152,7 +152,7 @@
 
     invoke-direct {v1}, Lcom/android/server/backup/PermissionBackupHelper;-><init>()V
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/server/backup/SystemBackupAgent;->addHelper(Ljava/lang/String;Landroid/app/backup/BackupHelper;)V
+    invoke-virtual {p0, v0, v1}, Landroid/app/backup/BackupAgentHelper;->addHelper(Ljava/lang/String;Landroid/app/backup/BackupHelper;)V
 
     .line 84
     const-string/jumbo v0, "usage_stats"
@@ -161,7 +161,7 @@
 
     invoke-direct {v1, p0}, Lcom/android/server/backup/UsageStatsBackupHelper;-><init>(Landroid/content/Context;)V
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/server/backup/SystemBackupAgent;->addHelper(Ljava/lang/String;Landroid/app/backup/BackupHelper;)V
+    invoke-virtual {p0, v0, v1}, Landroid/app/backup/BackupAgentHelper;->addHelper(Ljava/lang/String;Landroid/app/backup/BackupHelper;)V
 
     .line 85
     const-string/jumbo v0, "shortcut_manager"
@@ -170,7 +170,7 @@
 
     invoke-direct {v1}, Lcom/android/server/backup/ShortcutBackupHelper;-><init>()V
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/server/backup/SystemBackupAgent;->addHelper(Ljava/lang/String;Landroid/app/backup/BackupHelper;)V
+    invoke-virtual {p0, v0, v1}, Landroid/app/backup/BackupAgentHelper;->addHelper(Ljava/lang/String;Landroid/app/backup/BackupHelper;)V
 
     .line 86
     const-string/jumbo v0, "account_manager"
@@ -179,7 +179,7 @@
 
     invoke-direct {v1}, Lcom/android/server/backup/AccountManagerBackupHelper;-><init>()V
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/server/backup/SystemBackupAgent;->addHelper(Ljava/lang/String;Landroid/app/backup/BackupHelper;)V
+    invoke-virtual {p0, v0, v1}, Landroid/app/backup/BackupAgentHelper;->addHelper(Ljava/lang/String;Landroid/app/backup/BackupHelper;)V
 
     .line 87
     invoke-super {p0, p1, p2, p3}, Landroid/app/backup/BackupAgentHelper;->onBackup(Landroid/os/ParcelFileDescriptor;Landroid/app/backup/BackupDataOutput;Landroid/os/ParcelFileDescriptor;)V
@@ -255,7 +255,7 @@
 
     iget-object v4, p0, Lcom/android/server/backup/SystemBackupAgent;->mWallpaperHelper:Landroid/app/backup/WallpaperBackupHelper;
 
-    invoke-virtual {p0, v3, v4}, Lcom/android/server/backup/SystemBackupAgent;->addHelper(Ljava/lang/String;Landroid/app/backup/BackupHelper;)V
+    invoke-virtual {p0, v3, v4}, Landroid/app/backup/BackupAgentHelper;->addHelper(Ljava/lang/String;Landroid/app/backup/BackupHelper;)V
 
     .line 106
     const-string/jumbo v3, "system_files"
@@ -279,7 +279,7 @@
     .line 106
     invoke-direct {v4, p0, v5, v6}, Landroid/app/backup/WallpaperBackupHelper;-><init>(Landroid/content/Context;[Ljava/lang/String;[Ljava/lang/String;)V
 
-    invoke-virtual {p0, v3, v4}, Lcom/android/server/backup/SystemBackupAgent;->addHelper(Ljava/lang/String;Landroid/app/backup/BackupHelper;)V
+    invoke-virtual {p0, v3, v4}, Landroid/app/backup/BackupAgentHelper;->addHelper(Ljava/lang/String;Landroid/app/backup/BackupHelper;)V
 
     .line 110
     const-string/jumbo v3, "account_sync_settings"
@@ -288,7 +288,7 @@
 
     invoke-direct {v4, p0}, Lcom/android/server/backup/AccountSyncSettingsBackupHelper;-><init>(Landroid/content/Context;)V
 
-    invoke-virtual {p0, v3, v4}, Lcom/android/server/backup/SystemBackupAgent;->addHelper(Ljava/lang/String;Landroid/app/backup/BackupHelper;)V
+    invoke-virtual {p0, v3, v4}, Landroid/app/backup/BackupAgentHelper;->addHelper(Ljava/lang/String;Landroid/app/backup/BackupHelper;)V
 
     .line 111
     const-string/jumbo v3, "preferred_activities"
@@ -297,7 +297,7 @@
 
     invoke-direct {v4}, Lcom/android/server/backup/PreferredActivityBackupHelper;-><init>()V
 
-    invoke-virtual {p0, v3, v4}, Lcom/android/server/backup/SystemBackupAgent;->addHelper(Ljava/lang/String;Landroid/app/backup/BackupHelper;)V
+    invoke-virtual {p0, v3, v4}, Landroid/app/backup/BackupAgentHelper;->addHelper(Ljava/lang/String;Landroid/app/backup/BackupHelper;)V
 
     .line 112
     const-string/jumbo v3, "notifications"
@@ -306,7 +306,7 @@
 
     invoke-direct {v4, p0}, Lcom/android/server/backup/NotificationBackupHelper;-><init>(Landroid/content/Context;)V
 
-    invoke-virtual {p0, v3, v4}, Lcom/android/server/backup/SystemBackupAgent;->addHelper(Ljava/lang/String;Landroid/app/backup/BackupHelper;)V
+    invoke-virtual {p0, v3, v4}, Landroid/app/backup/BackupAgentHelper;->addHelper(Ljava/lang/String;Landroid/app/backup/BackupHelper;)V
 
     .line 113
     const-string/jumbo v3, "permissions"
@@ -315,7 +315,7 @@
 
     invoke-direct {v4}, Lcom/android/server/backup/PermissionBackupHelper;-><init>()V
 
-    invoke-virtual {p0, v3, v4}, Lcom/android/server/backup/SystemBackupAgent;->addHelper(Ljava/lang/String;Landroid/app/backup/BackupHelper;)V
+    invoke-virtual {p0, v3, v4}, Landroid/app/backup/BackupAgentHelper;->addHelper(Ljava/lang/String;Landroid/app/backup/BackupHelper;)V
 
     .line 114
     const-string/jumbo v3, "usage_stats"
@@ -324,7 +324,7 @@
 
     invoke-direct {v4, p0}, Lcom/android/server/backup/UsageStatsBackupHelper;-><init>(Landroid/content/Context;)V
 
-    invoke-virtual {p0, v3, v4}, Lcom/android/server/backup/SystemBackupAgent;->addHelper(Ljava/lang/String;Landroid/app/backup/BackupHelper;)V
+    invoke-virtual {p0, v3, v4}, Landroid/app/backup/BackupAgentHelper;->addHelper(Ljava/lang/String;Landroid/app/backup/BackupHelper;)V
 
     .line 115
     const-string/jumbo v3, "shortcut_manager"
@@ -333,7 +333,7 @@
 
     invoke-direct {v4}, Lcom/android/server/backup/ShortcutBackupHelper;-><init>()V
 
-    invoke-virtual {p0, v3, v4}, Lcom/android/server/backup/SystemBackupAgent;->addHelper(Ljava/lang/String;Landroid/app/backup/BackupHelper;)V
+    invoke-virtual {p0, v3, v4}, Landroid/app/backup/BackupAgentHelper;->addHelper(Ljava/lang/String;Landroid/app/backup/BackupHelper;)V
 
     .line 116
     const-string/jumbo v3, "account_manager"
@@ -342,7 +342,7 @@
 
     invoke-direct {v4}, Lcom/android/server/backup/AccountManagerBackupHelper;-><init>()V
 
-    invoke-virtual {p0, v3, v4}, Lcom/android/server/backup/SystemBackupAgent;->addHelper(Ljava/lang/String;Landroid/app/backup/BackupHelper;)V
+    invoke-virtual {p0, v3, v4}, Landroid/app/backup/BackupAgentHelper;->addHelper(Ljava/lang/String;Landroid/app/backup/BackupHelper;)V
 
     .line 119
     :try_start_0

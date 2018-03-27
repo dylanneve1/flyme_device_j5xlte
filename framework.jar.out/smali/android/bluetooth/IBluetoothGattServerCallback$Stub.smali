@@ -26,7 +26,7 @@
 # static fields
 .field private static final DESCRIPTOR:Ljava/lang/String; = "android.bluetooth.IBluetoothGattServerCallback"
 
-.field static final TRANSACTION_onCharacteristicReadRequest_4:I = 0x5
+.field static final TRANSACTION_onCharacteristicReadRequest:I = 0x5
 
 .field static final TRANSACTION_onCharacteristicWriteRequest:I = 0x7
 
@@ -46,7 +46,7 @@
 
 .field static final TRANSACTION_onServerRegistered_0:I = 0x1
 
-.field static final TRANSACTION_onServiceAdded_3:I = 0x4
+.field static final TRANSACTION_onServiceAdded:I = 0x4
 
 
 # direct methods
@@ -60,7 +60,7 @@
     .line 19
     const-string/jumbo v0, "android.bluetooth.IBluetoothGattServerCallback"
 
-    invoke-virtual {p0, p0, v0}, Landroid/bluetooth/IBluetoothGattServerCallback$Stub;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
+    invoke-virtual {p0, p0, v0}, Landroid/os/Binder;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
 
     .line 17
     return-void

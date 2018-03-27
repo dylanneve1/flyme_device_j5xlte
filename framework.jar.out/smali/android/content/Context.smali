@@ -163,8 +163,6 @@
 
 .field public static final NSD_SERVICE:Ljava/lang/String; = "servicediscovery"
 
-.field public static final OVERLAY_SERVICE:Ljava/lang/String; = "overlay"
-
 .field public static final PERSISTENT_DATA_BLOCK_SERVICE:Ljava/lang/String; = "persistent_data_block"
 
 .field public static final POWER_SERVICE:Ljava/lang/String; = "power"
@@ -371,7 +369,7 @@
     .end annotation
 
     .prologue
-    .line 4278
+    .line 4268
     invoke-virtual {p0}, Landroid/content/Context;->createCredentialProtectedStorageContext()Landroid/content/Context;
 
     move-result-object v0
@@ -388,7 +386,7 @@
     .end annotation
 
     .prologue
-    .line 4244
+    .line 4234
     invoke-virtual {p0}, Landroid/content/Context;->createDeviceProtectedStorageContext()Landroid/content/Context;
 
     move-result-object v0
@@ -773,7 +771,7 @@
     .end annotation
 
     .prologue
-    .line 4335
+    .line 4325
     invoke-virtual {p0}, Landroid/content/Context;->isCredentialProtectedStorage()Z
 
     move-result v0
@@ -790,7 +788,7 @@
     .end annotation
 
     .prologue
-    .line 4319
+    .line 4309
     invoke-virtual {p0}, Landroid/content/Context;->isDeviceProtectedStorage()Z
 
     move-result v0
@@ -805,7 +803,7 @@
     .locals 1
 
     .prologue
-    .line 4305
+    .line 4295
     const/4 v0, 0x0
 
     return v0

@@ -138,7 +138,9 @@
     move-object v0, p1
 
     .line 130
-    check-cast v0, Landroid/net/wifi/nan/ConfigRequest;
+    nop
+
+    nop
 
     .line 132
     .local v0, "lhs":Landroid/net/wifi/nan/ConfigRequest;

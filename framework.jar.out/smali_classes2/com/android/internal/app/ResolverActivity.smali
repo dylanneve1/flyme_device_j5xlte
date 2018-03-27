@@ -1577,7 +1577,7 @@
 
     .line 650
     :goto_0
-    const v1, 0x10203eb
+    const v1, 0x10203ea
 
     if-ne v0, v1, :cond_1
 
@@ -2207,7 +2207,7 @@
 
     .line 335
     :cond_a
-    const v17, 0x10203dd
+    const v17, 0x10203dc
 
     move-object/from16 v0, p0
 
@@ -2231,7 +2231,7 @@
     invoke-virtual {v7, v0}, Landroid/view/ViewGroup;->setVisibility(I)V
 
     .line 338
-    const v17, 0x10203eb
+    const v17, 0x10203ea
 
     move/from16 v0, v17
 
@@ -2248,7 +2248,7 @@
     iput-object v0, v1, Lcom/android/internal/app/ResolverActivity;->mAlwaysButton:Landroid/widget/Button;
 
     .line 339
-    const v17, 0x10203ea
+    const v17, 0x10203e9
 
     move/from16 v0, v17
 

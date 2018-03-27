@@ -28,16 +28,16 @@
 
     .prologue
     .line 35
-    invoke-virtual {p0}, Landroid/media/effect/effects/IdentityEffect;->beginGLEffect()V
+    invoke-virtual {p0}, Landroid/media/effect/FilterEffect;->beginGLEffect()V
 
     .line 37
-    invoke-virtual {p0, p1, p2, p3}, Landroid/media/effect/effects/IdentityEffect;->frameFromTexture(III)Landroid/filterfw/core/Frame;
+    invoke-virtual {p0, p1, p2, p3}, Landroid/media/effect/FilterEffect;->frameFromTexture(III)Landroid/filterfw/core/Frame;
 
     move-result-object v0
 
     .line 38
     .local v0, "inputFrame":Landroid/filterfw/core/Frame;
-    invoke-virtual {p0, p4, p2, p3}, Landroid/media/effect/effects/IdentityEffect;->frameFromTexture(III)Landroid/filterfw/core/Frame;
+    invoke-virtual {p0, p4, p2, p3}, Landroid/media/effect/FilterEffect;->frameFromTexture(III)Landroid/filterfw/core/Frame;
 
     move-result-object v1
 
@@ -52,7 +52,7 @@
     invoke-virtual {v1}, Landroid/filterfw/core/Frame;->release()Landroid/filterfw/core/Frame;
 
     .line 45
-    invoke-virtual {p0}, Landroid/media/effect/effects/IdentityEffect;->endGLEffect()V
+    invoke-virtual {p0}, Landroid/media/effect/FilterEffect;->endGLEffect()V
 
     .line 34
     return-void

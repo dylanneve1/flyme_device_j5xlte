@@ -30,18 +30,18 @@
     .param p3, "_pkg"    # Ljava/lang/String;
 
     .prologue
-    .line 785
+    .line 777
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 786
+    .line 778
     iput p1, p0, Lcom/android/server/AppOpsService$ChangeRec;->op:I
 
-    .line 787
+    .line 779
     iput p2, p0, Lcom/android/server/AppOpsService$ChangeRec;->uid:I
 
-    .line 788
+    .line 780
     iput-object p3, p0, Lcom/android/server/AppOpsService$ChangeRec;->pkg:Ljava/lang/String;
 
-    .line 785
+    .line 777
     return-void
 .end method

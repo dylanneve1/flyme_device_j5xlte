@@ -32,11 +32,11 @@
 
 .field static final TRANSACTION_checkVoldPassword:I = 0x10
 
-.field static final TRANSACTION_getBoolean_3:I = 0x4
+.field static final TRANSACTION_getBoolean:I = 0x4
 
 .field static final TRANSACTION_getLockPatternSize:I = 0xf
 
-.field static final TRANSACTION_getLong_4:I = 0x5
+.field static final TRANSACTION_getLong:I = 0x5
 
 .field static final TRANSACTION_getPassword:I = 0x1c
 
@@ -64,11 +64,11 @@
 
 .field static final TRANSACTION_setLockPattern:I = 0x7
 
-.field static final TRANSACTION_setLong_1:I = 0x2
+.field static final TRANSACTION_setLong:I = 0x2
 
 .field static final TRANSACTION_setSeparateProfileChallengeEnabled:I = 0x13
 
-.field static final TRANSACTION_setString_2:I = 0x3
+.field static final TRANSACTION_setString:I = 0x3
 
 .field static final TRANSACTION_systemReady:I = 0x18
 

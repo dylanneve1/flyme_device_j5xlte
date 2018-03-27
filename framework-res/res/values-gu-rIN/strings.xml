@@ -113,6 +113,8 @@
     <string name="tethered_notification_no_device_message">કોઇ ડિવાઇસ કનેક્ટ થયેલ નથી</string>
     <string name="tethered_notification_one_device_message">%1$s ડિવાઇસ કનેક્ટ થયેલ છે</string>
     <string name="tethered_notification_multi_device_message">%1$s ડિવાઇસેસ કનેક્ટ થયેલ છે</string>
+    <string name="silent_mode_priority">પ્રાધાન્યતા</string>
+    <string name="silent_mode_none">કોઈ નહીં</string>
     <string name="byteShort">B</string>
     <string name="kilobyteShort">KB</string>
     <string name="megabyteShort">MB</string>

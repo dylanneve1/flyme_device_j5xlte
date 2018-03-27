@@ -49,7 +49,7 @@
 
     .prologue
     .line 3293
-    invoke-virtual {p0}, Landroid/widget/Editor$SuggestionsPopupWindow$CustomPopupWindow;->isShowing()Z
+    invoke-virtual {p0}, Landroid/widget/PopupWindow;->isShowing()Z
 
     move-result v0
 

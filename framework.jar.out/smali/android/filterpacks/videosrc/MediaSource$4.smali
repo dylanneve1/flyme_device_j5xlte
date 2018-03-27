@@ -90,7 +90,7 @@
     .line 564
     iget-object v0, p0, Landroid/filterpacks/videosrc/MediaSource$4;->this$0:Landroid/filterpacks/videosrc/MediaSource;
 
-    invoke-virtual {v0}, Landroid/filterpacks/videosrc/MediaSource;->notify()V
+    invoke-virtual {v0}, Ljava/lang/Object;->notify()V
 
     .line 565
     iget-object v0, p0, Landroid/filterpacks/videosrc/MediaSource$4;->this$0:Landroid/filterpacks/videosrc/MediaSource;

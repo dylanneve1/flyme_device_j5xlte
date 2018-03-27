@@ -123,6 +123,8 @@
     <string name="tethered_notification_no_device_message">No connected device</string>
     <string name="tethered_notification_one_device_message">%1$s connected device</string>
     <string name="tethered_notification_multi_device_message">%1$s connected devices</string>
+    <string name="silent_mode_priority">Priority</string>
+    <string name="silent_mode_none">None</string>
     <string name="month_day_year" formatted="false">%-e %B %Y</string>
     <string name="time_of_day" formatted="false">%-l:%M:%S %p</string>
     <string name="date_and_time" formatted="false">%d-%b-%Y, %-l:%M:%S %p</string>

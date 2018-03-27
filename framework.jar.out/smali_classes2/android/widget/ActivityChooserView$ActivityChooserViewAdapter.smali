@@ -335,7 +335,7 @@
     :cond_0
     iget-object v5, p0, Landroid/widget/ActivityChooserView$ActivityChooserViewAdapter;->this$0:Landroid/widget/ActivityChooserView;
 
-    invoke-virtual {v5}, Landroid/widget/ActivityChooserView;->getContext()Landroid/content/Context;
+    invoke-virtual {v5}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v5
 
@@ -396,7 +396,7 @@
     :cond_2
     iget-object v5, p0, Landroid/widget/ActivityChooserView$ActivityChooserViewAdapter;->this$0:Landroid/widget/ActivityChooserView;
 
-    invoke-virtual {v5}, Landroid/widget/ActivityChooserView;->getContext()Landroid/content/Context;
+    invoke-virtual {v5}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v5
 
@@ -610,7 +610,7 @@
 
     iget-object v1, p0, Landroid/widget/ActivityChooserView$ActivityChooserViewAdapter;->this$0:Landroid/widget/ActivityChooserView;
 
-    invoke-virtual {v1}, Landroid/widget/ActivityChooserView;->isShown()Z
+    invoke-virtual {v1}, Landroid/view/View;->isShown()Z
 
     move-result v1
 
@@ -623,7 +623,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Landroid/widget/ActivityChooserModel;->unregisterObserver(Ljava/lang/Object;)V
+    invoke-virtual {v0, v1}, Landroid/database/Observable;->unregisterObserver(Ljava/lang/Object;)V
 
     .line 702
     :cond_0
@@ -634,7 +634,7 @@
 
     iget-object v1, p0, Landroid/widget/ActivityChooserView$ActivityChooserViewAdapter;->this$0:Landroid/widget/ActivityChooserView;
 
-    invoke-virtual {v1}, Landroid/widget/ActivityChooserView;->isShown()Z
+    invoke-virtual {v1}, Landroid/view/View;->isShown()Z
 
     move-result v1
 
@@ -647,11 +647,11 @@
 
     move-result-object v1
 
-    invoke-virtual {p1, v1}, Landroid/widget/ActivityChooserModel;->registerObserver(Ljava/lang/Object;)V
+    invoke-virtual {p1, v1}, Landroid/database/Observable;->registerObserver(Ljava/lang/Object;)V
 
     .line 706
     :cond_1
-    invoke-virtual {p0}, Landroid/widget/ActivityChooserView$ActivityChooserViewAdapter;->notifyDataSetChanged()V
+    invoke-virtual {p0}, Landroid/widget/BaseAdapter;->notifyDataSetChanged()V
 
     .line 697
     return-void
@@ -671,7 +671,7 @@
     iput p1, p0, Landroid/widget/ActivityChooserView$ActivityChooserViewAdapter;->mMaxActivityCount:I
 
     .line 820
-    invoke-virtual {p0}, Landroid/widget/ActivityChooserView$ActivityChooserViewAdapter;->notifyDataSetChanged()V
+    invoke-virtual {p0}, Landroid/widget/BaseAdapter;->notifyDataSetChanged()V
 
     .line 817
     :cond_0
@@ -702,7 +702,7 @@
     iput-boolean p2, p0, Landroid/widget/ActivityChooserView$ActivityChooserViewAdapter;->mHighlightDefaultActivity:Z
 
     .line 853
-    invoke-virtual {p0}, Landroid/widget/ActivityChooserView$ActivityChooserViewAdapter;->notifyDataSetChanged()V
+    invoke-virtual {p0}, Landroid/widget/BaseAdapter;->notifyDataSetChanged()V
 
     .line 848
     :cond_1
@@ -723,7 +723,7 @@
     iput-boolean p1, p0, Landroid/widget/ActivityChooserView$ActivityChooserViewAdapter;->mShowFooterView:Z
 
     .line 831
-    invoke-virtual {p0}, Landroid/widget/ActivityChooserView$ActivityChooserViewAdapter;->notifyDataSetChanged()V
+    invoke-virtual {p0}, Landroid/widget/BaseAdapter;->notifyDataSetChanged()V
 
     .line 828
     :cond_0

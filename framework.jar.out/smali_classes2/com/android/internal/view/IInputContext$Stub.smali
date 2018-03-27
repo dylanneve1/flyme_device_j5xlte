@@ -46,15 +46,15 @@
 
 .field static final TRANSACTION_finishComposingText:I = 0x8
 
-.field static final TRANSACTION_getCursorCapsMode:I = 0x3
+.field static final TRANSACTION_getCursorCapsMode_2:I = 0x3
 
 .field static final TRANSACTION_getExtractedText:I = 0x4
 
 .field static final TRANSACTION_getSelectedText:I = 0x16
 
-.field static final TRANSACTION_getTextAfterCursor:I = 0x2
+.field static final TRANSACTION_getTextAfterCursor_1:I = 0x2
 
-.field static final TRANSACTION_getTextBeforeCursor:I = 0x1
+.field static final TRANSACTION_getTextBeforeCursor_0:I = 0x1
 
 .field static final TRANSACTION_performContextMenuAction:I = 0xe
 

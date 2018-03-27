@@ -57,7 +57,7 @@
     invoke-virtual {p0, v0}, Lcom/android/internal/graphics/drawable/AnimationScaleListDrawable;->setConstantState(Landroid/graphics/drawable/DrawableContainer$DrawableContainerState;)V
 
     .line 61
-    invoke-virtual {p0}, Lcom/android/internal/graphics/drawable/AnimationScaleListDrawable;->getState()[I
+    invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->getState()[I
 
     move-result-object v1
 
@@ -258,7 +258,7 @@
     invoke-super {p0, p1}, Landroid/graphics/drawable/DrawableContainer;->applyTheme(Landroid/content/res/Resources$Theme;)V
 
     .line 242
-    invoke-virtual {p0}, Lcom/android/internal/graphics/drawable/AnimationScaleListDrawable;->getState()[I
+    invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->getState()[I
 
     move-result-object v0
 
@@ -308,7 +308,7 @@
 
     .line 82
     .local v0, "a":Landroid/content/res/TypedArray;
-    invoke-virtual {p0, p1}, Lcom/android/internal/graphics/drawable/AnimationScaleListDrawable;->updateDensity(Landroid/content/res/Resources;)V
+    invoke-virtual {p0, p1}, Landroid/graphics/drawable/DrawableContainer;->updateDensity(Landroid/content/res/Resources;)V
 
     .line 83
     invoke-virtual {v0}, Landroid/content/res/TypedArray;->recycle()V
@@ -317,7 +317,7 @@
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/internal/graphics/drawable/AnimationScaleListDrawable;->inflateChildElements(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;Landroid/content/res/Resources$Theme;)V
 
     .line 87
-    invoke-virtual {p0}, Lcom/android/internal/graphics/drawable/AnimationScaleListDrawable;->getState()[I
+    invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->getState()[I
 
     move-result-object v1
 
@@ -336,7 +336,7 @@
 
     .line 168
     .local v1, "result":Z
-    invoke-virtual {p0}, Lcom/android/internal/graphics/drawable/AnimationScaleListDrawable;->getCurrent()Landroid/graphics/drawable/Drawable;
+    invoke-virtual {p0}, Landroid/graphics/drawable/DrawableContainer;->getCurrent()Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
@@ -412,7 +412,7 @@
 
     .line 72
     .local v1, "idx":I
-    invoke-virtual {p0, v1}, Lcom/android/internal/graphics/drawable/AnimationScaleListDrawable;->selectDrawable(I)Z
+    invoke-virtual {p0, v1}, Landroid/graphics/drawable/DrawableContainer;->selectDrawable(I)Z
 
     move-result v2
 
@@ -443,7 +443,9 @@
     if-eqz v0, :cond_0
 
     .line 250
-    check-cast p1, Lcom/android/internal/graphics/drawable/AnimationScaleListDrawable$AnimationScaleListState;
+    nop
+
+    nop
 
     .end local p1    # "state":Landroid/graphics/drawable/DrawableContainer$DrawableContainerState;
     iput-object p1, p0, Lcom/android/internal/graphics/drawable/AnimationScaleListDrawable;->mAnimationScaleListState:Lcom/android/internal/graphics/drawable/AnimationScaleListDrawable$AnimationScaleListState;
@@ -458,7 +460,7 @@
 
     .prologue
     .line 151
-    invoke-virtual {p0}, Lcom/android/internal/graphics/drawable/AnimationScaleListDrawable;->getCurrent()Landroid/graphics/drawable/Drawable;
+    invoke-virtual {p0}, Landroid/graphics/drawable/DrawableContainer;->getCurrent()Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
@@ -486,7 +488,7 @@
 
     .prologue
     .line 159
-    invoke-virtual {p0}, Lcom/android/internal/graphics/drawable/AnimationScaleListDrawable;->getCurrent()Landroid/graphics/drawable/Drawable;
+    invoke-virtual {p0}, Landroid/graphics/drawable/DrawableContainer;->getCurrent()Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 

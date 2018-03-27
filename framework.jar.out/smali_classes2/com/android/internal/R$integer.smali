@@ -265,6 +265,8 @@
 
 .field public static final config_shutdownBatteryTemperature:I = 0x10e0059
 
+.field public static final config_sms_authorization_timeout_ms:I = 0x10e00ba
+
 .field public static final config_soundEffectVolumeDb:I = 0x10e0004
 
 .field public static final config_toastDefaultGravity:I = 0x10e00a0
@@ -373,7 +375,7 @@
 
 .field public static final config_zen_repeat_callers_threshold:I = 0x10e00a8
 
-.field public static final date_picker_mode:I = 0x10e00db
+.field public static final date_picker_mode:I = 0x10e00dc
 
 .field public static final db_connection_pool_size:I = 0x10e0088
 
@@ -381,17 +383,17 @@
 
 .field public static final db_wal_autocheckpoint:I = 0x10e008a
 
-.field public static final dock_enter_exit_duration:I = 0x10e00da
+.field public static final dock_enter_exit_duration:I = 0x10e00db
 
 .field public static final power_key_hits_emergency:I = 0x10e00b8
 
 .field public static final status_bar_notification_info_maxnum:I = 0x10e0003
 
-.field public static final thumbnail_width_tv:I = 0x10e00bc
+.field public static final thumbnail_width_tv:I = 0x10e00bd
 
-.field public static final time_picker_mode:I = 0x10e00dc
+.field public static final time_picker_mode:I = 0x10e00dd
 
-.field public static final wifi_hotspot_security_type:I = 0x10e00bb
+.field public static final wifi_hotspot_security_type:I = 0x10e00bc
 
 
 # direct methods
@@ -399,7 +401,7 @@
     .locals 0
 
     .prologue
-    .line 24540
+    .line 26307
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

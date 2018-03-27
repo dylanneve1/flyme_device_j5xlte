@@ -669,7 +669,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 1602
-    invoke-virtual {p0}, Landroid/content/pm/ShortcutInfo;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v3
 
@@ -1195,7 +1195,9 @@
     move-object v3, v4
 
     .line 268
-    check-cast v3, Landroid/os/Bundle;
+    nop
+
+    nop
 
     invoke-virtual {v2, v3}, Landroid/content/Intent;->replaceExtras(Landroid/os/Bundle;)Landroid/content/Intent;
 
@@ -1650,7 +1652,9 @@
     if-nez p1, :cond_0
 
     .line 1585
-    check-cast v0, Landroid/os/Bundle;
+    nop
+
+    nop
 
     invoke-virtual {p0, v0}, Landroid/content/Intent;->replaceExtras(Landroid/os/Bundle;)Landroid/content/Intent;
 

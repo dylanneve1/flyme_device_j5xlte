@@ -92,7 +92,7 @@
     .local v0, "e":Landroid/filterfw/core/ProtocolException;
     new-instance v2, Landroid/filterfw/io/GraphIOException;
 
-    invoke-virtual {v0}, Landroid/filterfw/core/ProtocolException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v3
 

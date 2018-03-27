@@ -493,7 +493,7 @@
     .local v0, "e":Landroid/os/RemoteException;
     const-string/jumbo v1, "BluetoothHealth"
 
-    invoke-virtual {v0}, Landroid/os/RemoteException;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->toString()Ljava/lang/String;
 
     move-result-object v2
 
@@ -576,7 +576,7 @@
     .local v0, "e":Landroid/os/RemoteException;
     const-string/jumbo v1, "BluetoothHealth"
 
-    invoke-virtual {v0}, Landroid/os/RemoteException;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->toString()Ljava/lang/String;
 
     move-result-object v2
 
@@ -660,7 +660,7 @@
     .local v0, "e":Landroid/os/RemoteException;
     const-string/jumbo v1, "BluetoothHealth"
 
-    invoke-virtual {v0}, Landroid/os/RemoteException;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->toString()Ljava/lang/String;
 
     move-result-object v2
 
@@ -925,7 +925,7 @@
     .local v0, "e":Landroid/os/RemoteException;
     const-string/jumbo v1, "BluetoothHealth"
 
-    invoke-virtual {v0}, Landroid/os/RemoteException;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->toString()Ljava/lang/String;
 
     move-result-object v2
 
@@ -1112,7 +1112,7 @@
     .local v0, "e":Landroid/os/RemoteException;
     const-string/jumbo v1, "BluetoothHealth"
 
-    invoke-virtual {v0}, Landroid/os/RemoteException;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->toString()Ljava/lang/String;
 
     move-result-object v2
 
@@ -1222,7 +1222,7 @@
     .local v1, "e":Landroid/os/RemoteException;
     const-string/jumbo v4, "BluetoothHealth"
 
-    invoke-virtual {v1}, Landroid/os/RemoteException;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/Throwable;->toString()Ljava/lang/String;
 
     move-result-object v5
 
@@ -1345,7 +1345,7 @@
     .local v0, "e":Landroid/os/RemoteException;
     const-string/jumbo v2, "BluetoothHealth"
 
-    invoke-virtual {v0}, Landroid/os/RemoteException;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->toString()Ljava/lang/String;
 
     move-result-object v3
 

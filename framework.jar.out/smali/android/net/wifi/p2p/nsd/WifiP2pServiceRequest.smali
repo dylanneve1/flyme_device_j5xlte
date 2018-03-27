@@ -387,7 +387,9 @@
     move-object v0, p1
 
     .line 223
-    check-cast v0, Landroid/net/wifi/p2p/nsd/WifiP2pServiceRequest;
+    nop
+
+    nop
 
     .line 229
     .local v0, "req":Landroid/net/wifi/p2p/nsd/WifiP2pServiceRequest;

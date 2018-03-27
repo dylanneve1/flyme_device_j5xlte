@@ -30,17 +30,17 @@
 
 .field static final TRANSACTION_addClientProgress:I = 0x2
 
-.field static final TRANSACTION_close_6:I = 0x7
+.field static final TRANSACTION_close:I = 0x7
 
 .field static final TRANSACTION_commit:I = 0x8
 
 .field static final TRANSACTION_getNames:I = 0x3
 
-.field static final TRANSACTION_openRead_4:I = 0x5
+.field static final TRANSACTION_openRead:I = 0x5
 
 .field static final TRANSACTION_openWrite:I = 0x4
 
-.field static final TRANSACTION_removeSplit_5:I = 0x6
+.field static final TRANSACTION_removeSplit:I = 0x6
 
 .field static final TRANSACTION_setClientProgress:I = 0x1
 

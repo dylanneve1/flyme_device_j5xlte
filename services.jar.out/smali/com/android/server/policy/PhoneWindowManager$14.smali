@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/server/policy/PhoneWindowManager;
 
     .prologue
-    .line 7310
+    .line 7311
     iput-object p1, p0, Lcom/android/server/policy/PhoneWindowManager$14;->this$0:Lcom/android/server/policy/PhoneWindowManager;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -44,12 +44,12 @@
 
     const/4 v5, 0x1
 
-    .line 7312
+    .line 7313
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 7313
+    .line 7314
     .local v0, "action":Ljava/lang/String;
     const-string/jumbo v2, "org.codeaurora.intent.action.WIFI_DISPLAY_VIDEO"
 
@@ -59,27 +59,27 @@
 
     if-eqz v2, :cond_0
 
-    .line 7314
+    .line 7315
     const-string/jumbo v2, "state"
 
     invoke-virtual {p2, v2, v3}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
     move-result v1
 
-    .line 7315
+    .line 7316
     .local v1, "state":I
     if-ne v1, v5, :cond_1
 
-    .line 7316
+    .line 7317
     iget-object v2, p0, Lcom/android/server/policy/PhoneWindowManager$14;->this$0:Lcom/android/server/policy/PhoneWindowManager;
 
     iput-boolean v5, v2, Lcom/android/server/policy/PhoneWindowManager;->mWifiDisplayConnected:Z
 
-    .line 7320
+    .line 7321
     :goto_0
     iget-object v2, p0, Lcom/android/server/policy/PhoneWindowManager$14;->this$0:Lcom/android/server/policy/PhoneWindowManager;
 
-    .line 7321
+    .line 7322
     const-string/jumbo v3, "wfd_UIBC_rot"
 
     const/4 v4, -0x1
@@ -88,20 +88,20 @@
 
     move-result v3
 
-    .line 7320
+    .line 7321
     iput v3, v2, Lcom/android/server/policy/PhoneWindowManager;->mWifiDisplayCustomRotation:I
 
-    .line 7322
+    .line 7323
     iget-object v2, p0, Lcom/android/server/policy/PhoneWindowManager$14;->this$0:Lcom/android/server/policy/PhoneWindowManager;
 
     invoke-virtual {v2, v5}, Lcom/android/server/policy/PhoneWindowManager;->updateRotation(Z)V
 
-    .line 7311
+    .line 7312
     .end local v1    # "state":I
     :cond_0
     return-void
 
-    .line 7318
+    .line 7319
     .restart local v1    # "state":I
     :cond_1
     iget-object v2, p0, Lcom/android/server/policy/PhoneWindowManager$14;->this$0:Lcom/android/server/policy/PhoneWindowManager;

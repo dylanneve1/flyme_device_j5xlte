@@ -48,6 +48,8 @@
 
 .field static final TRANSACTION_finishSessionAsUser:I = 0x26
 
+.field static final TRANSACTION_getAccounts:I = 0x4
+
 .field static final TRANSACTION_getAccountsAsUser:I = 0x7
 
 .field static final TRANSACTION_getAccountsByFeatures:I = 0x9
@@ -56,13 +58,11 @@
 
 .field static final TRANSACTION_getAccountsForPackage:I = 0x5
 
-.field static final TRANSACTION_getAccounts_3:I = 0x4
-
 .field static final TRANSACTION_getAuthToken:I = 0x16
 
 .field static final TRANSACTION_getAuthTokenLabel:I = 0x1d
 
-.field static final TRANSACTION_getAuthenticatorTypes_2:I = 0x3
+.field static final TRANSACTION_getAuthenticatorTypes:I = 0x3
 
 .field static final TRANSACTION_getPassword_0:I = 0x1
 

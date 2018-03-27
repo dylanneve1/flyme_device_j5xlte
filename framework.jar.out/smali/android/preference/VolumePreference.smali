@@ -112,7 +112,7 @@
     const/4 v4, 0x0
 
     .line 131
-    invoke-virtual {p0}, Landroid/preference/VolumePreference;->getPreferenceManager()Landroid/preference/PreferenceManager;
+    invoke-virtual {p0}, Landroid/preference/Preference;->getPreferenceManager()Landroid/preference/PreferenceManager;
 
     move-result-object v2
 
@@ -124,7 +124,7 @@
     if-eqz v2, :cond_2
 
     .line 134
-    invoke-virtual {p0}, Landroid/preference/VolumePreference;->getDialog()Landroid/app/Dialog;
+    invoke-virtual {p0}, Landroid/preference/DialogPreference;->getDialog()Landroid/app/Dialog;
 
     move-result-object v0
 
@@ -147,7 +147,7 @@
 
     move-result-object v2
 
-    const v3, 0x10203d8
+    const v3, 0x10203d7
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -212,7 +212,7 @@
     invoke-super {p0, p1}, Landroid/preference/SeekBarDialogPreference;->onBindDialogView(Landroid/view/View;)V
 
     .line 71
-    const v1, 0x10203d8
+    const v1, 0x10203d7
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -224,7 +224,7 @@
     .local v0, "seekBar":Landroid/widget/SeekBar;
     new-instance v1, Landroid/preference/SeekBarVolumizer;
 
-    invoke-virtual {p0}, Landroid/preference/VolumePreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/preference/Preference;->getContext()Landroid/content/Context;
 
     move-result-object v2
 
@@ -247,7 +247,7 @@
     invoke-virtual {v1, v0}, Landroid/preference/SeekBarVolumizer;->setSeekBar(Landroid/widget/SeekBar;)V
 
     .line 76
-    invoke-virtual {p0}, Landroid/preference/VolumePreference;->getPreferenceManager()Landroid/preference/PreferenceManager;
+    invoke-virtual {p0}, Landroid/preference/Preference;->getPreferenceManager()Landroid/preference/PreferenceManager;
 
     move-result-object v1
 
@@ -427,7 +427,7 @@
 
     const-class v2, Landroid/preference/VolumePreference$SavedState;
 
-    invoke-virtual {v1, v2}, Ljava/lang/Class;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v1, v2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -440,7 +440,7 @@
 
     .line 192
     .local v0, "myState":Landroid/preference/VolumePreference$SavedState;
-    invoke-virtual {v0}, Landroid/preference/VolumePreference$SavedState;->getSuperState()Landroid/os/Parcelable;
+    invoke-virtual {v0}, Landroid/view/AbsSavedState;->getSuperState()Landroid/os/Parcelable;
 
     move-result-object v1
 
@@ -508,7 +508,7 @@
 
     .line 171
     .local v1, "superState":Landroid/os/Parcelable;
-    invoke-virtual {p0}, Landroid/preference/VolumePreference;->isPersistent()Z
+    invoke-virtual {p0}, Landroid/preference/Preference;->isPersistent()Z
 
     move-result v2
 

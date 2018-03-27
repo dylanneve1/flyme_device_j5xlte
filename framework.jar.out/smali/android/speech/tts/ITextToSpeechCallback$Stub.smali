@@ -30,7 +30,7 @@
 
 .field static final TRANSACTION_onBeginSynthesis_4:I = 0x5
 
-.field static final TRANSACTION_onError_3:I = 0x4
+.field static final TRANSACTION_onError:I = 0x4
 
 .field static final TRANSACTION_onStart_0:I = 0x1
 

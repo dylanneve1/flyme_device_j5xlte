@@ -123,6 +123,8 @@
     <string name="tethered_notification_no_device_message">Nenhum dispositivo conectado</string>
     <string name="tethered_notification_one_device_message">%1$s dispositivo conectado</string>
     <string name="tethered_notification_multi_device_message">%1$s dispositivos conectados</string>
+    <string name="silent_mode_priority">Prioridade</string>
+    <string name="silent_mode_none">Nenhum</string>
     <string name="byteShort">B</string>
     <string name="kilobyteShort">KB</string>
     <string name="megabyteShort">MB</string>

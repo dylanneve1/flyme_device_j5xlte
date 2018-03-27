@@ -92,7 +92,7 @@
     :try_start_0
     iget-object v1, p0, Landroid/filterfw/core/FieldPort;->mField:Ljava/lang/reflect/Field;
 
-    iget-object v2, p0, Landroid/filterfw/core/FieldPort;->mFilter:Landroid/filterfw/core/Filter;
+    iget-object v2, p0, Landroid/filterfw/core/FilterPort;->mFilter:Landroid/filterfw/core/Filter;
 
     invoke-virtual {v1, v2}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
@@ -209,10 +209,10 @@
 
     .line 98
     :try_start_0
-    invoke-virtual {p0}, Landroid/filterfw/core/FieldPort;->assertPortIsOpen()V
+    invoke-virtual {p0}, Landroid/filterfw/core/FilterPort;->assertPortIsOpen()V
 
     .line 99
-    invoke-virtual {p0, p1, p2}, Landroid/filterfw/core/FieldPort;->checkFrameType(Landroid/filterfw/core/Frame;Z)V
+    invoke-virtual {p0, p1, p2}, Landroid/filterfw/core/FilterPort;->checkFrameType(Landroid/filterfw/core/Frame;Z)V
 
     .line 102
     invoke-virtual {p1}, Landroid/filterfw/core/Frame;->getObjectValue()Ljava/lang/Object;
@@ -336,7 +336,7 @@
     :try_start_1
     iget-object v1, p0, Landroid/filterfw/core/FieldPort;->mField:Ljava/lang/reflect/Field;
 
-    iget-object v2, p0, Landroid/filterfw/core/FieldPort;->mFilter:Landroid/filterfw/core/Filter;
+    iget-object v2, p0, Landroid/filterfw/core/FilterPort;->mFilter:Landroid/filterfw/core/Filter;
 
     iget-object v3, p0, Landroid/filterfw/core/FieldPort;->mValue:Ljava/lang/Object;
 
@@ -355,9 +355,9 @@
     if-eqz p1, :cond_0
 
     .line 72
-    iget-object v1, p0, Landroid/filterfw/core/FieldPort;->mFilter:Landroid/filterfw/core/Filter;
+    iget-object v1, p0, Landroid/filterfw/core/FilterPort;->mFilter:Landroid/filterfw/core/Filter;
 
-    iget-object v2, p0, Landroid/filterfw/core/FieldPort;->mName:Ljava/lang/String;
+    iget-object v2, p0, Landroid/filterfw/core/FilterPort;->mName:Ljava/lang/String;
 
     invoke-virtual {v1, v2, p1}, Landroid/filterfw/core/Filter;->notifyFieldPortValueUpdated(Ljava/lang/String;Landroid/filterfw/core/FilterContext;)V
     :try_end_2

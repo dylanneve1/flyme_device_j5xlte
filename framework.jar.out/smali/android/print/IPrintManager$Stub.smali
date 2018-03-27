@@ -52,7 +52,7 @@
 
 .field static final TRANSACTION_removePrintJobStateChangeListener:I = 0x7
 
-.field static final TRANSACTION_removePrintServiceRecommendationsChangeListener:I = 0xd
+.field static final TRANSACTION_removePrintServiceRecommendationsChangeListener_12:I = 0xd
 
 .field static final TRANSACTION_removePrintServicesChangeListener:I = 0x9
 

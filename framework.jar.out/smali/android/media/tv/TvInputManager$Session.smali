@@ -344,7 +344,7 @@
     .line 2354
     iget-object v4, p0, Landroid/media/tv/TvInputManager$Session;->mHandler:Landroid/media/tv/TvInputManager$Session$InputEventHandler;
 
-    invoke-virtual {v4, v6}, Landroid/media/tv/TvInputManager$Session$InputEventHandler;->removeMessages(I)V
+    invoke-virtual {v4, v6}, Landroid/os/Handler;->removeMessages(I)V
 
     .line 2356
     iget-object v4, p0, Landroid/media/tv/TvInputManager$Session;->mPendingEvents:Landroid/util/SparseArray;
@@ -374,7 +374,7 @@
 
     const/4 v5, 0x0
 
-    invoke-virtual {v4, v6, v3, v5}, Landroid/media/tv/TvInputManager$Session$InputEventHandler;->obtainMessage(III)Landroid/os/Message;
+    invoke-virtual {v4, v6, v3, v5}, Landroid/os/Handler;->obtainMessage(III)Landroid/os/Message;
 
     move-result-object v2
 
@@ -494,7 +494,7 @@
     .line 2393
     iget-object v0, p0, Landroid/media/tv/TvInputManager$Session;->mSender:Landroid/media/tv/TvInputManager$Session$TvInputEventSender;
 
-    invoke-virtual {v0}, Landroid/media/tv/TvInputManager$Session$TvInputEventSender;->dispose()V
+    invoke-virtual {v0}, Landroid/view/InputEventSender;->dispose()V
 
     .line 2394
     const/4 v0, 0x0
@@ -626,7 +626,7 @@
 
     iget-object v5, p0, Landroid/media/tv/TvInputManager$Session;->mHandler:Landroid/media/tv/TvInputManager$Session$InputEventHandler;
 
-    invoke-virtual {v5}, Landroid/media/tv/TvInputManager$Session$InputEventHandler;->getLooper()Landroid/os/Looper;
+    invoke-virtual {v5}, Landroid/os/Handler;->getLooper()Landroid/os/Looper;
 
     move-result-object v5
 
@@ -648,7 +648,7 @@
     .local v2, "seq":I
     iget-object v3, p0, Landroid/media/tv/TvInputManager$Session;->mSender:Landroid/media/tv/TvInputManager$Session$TvInputEventSender;
 
-    invoke-virtual {v3, v2, v0}, Landroid/media/tv/TvInputManager$Session$TvInputEventSender;->sendInputEvent(ILandroid/view/InputEvent;)Z
+    invoke-virtual {v3, v2, v0}, Landroid/view/InputEventSender;->sendInputEvent(ILandroid/view/InputEvent;)Z
 
     move-result v3
 
@@ -664,7 +664,7 @@
 
     const/4 v4, 0x2
 
-    invoke-virtual {v3, v4, p1}, Landroid/media/tv/TvInputManager$Session$InputEventHandler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
+    invoke-virtual {v3, v4, p1}, Landroid/os/Handler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
 
     move-result-object v1
 
@@ -679,7 +679,7 @@
 
     const-wide/16 v4, 0x9c4
 
-    invoke-virtual {v3, v1, v4, v5}, Landroid/media/tv/TvInputManager$Session$InputEventHandler;->sendMessageDelayed(Landroid/os/Message;J)Z
+    invoke-virtual {v3, v1, v4, v5}, Landroid/os/Handler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
     .line 2306
     const/4 v3, -0x1
@@ -885,7 +885,7 @@
 
     const/4 v4, 0x1
 
-    invoke-virtual {v2, v4, v1}, Landroid/media/tv/TvInputManager$Session$InputEventHandler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
+    invoke-virtual {v2, v4, v1}, Landroid/os/Handler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
 
     move-result-object v0
 
@@ -898,7 +898,7 @@
     .line 2259
     iget-object v2, p0, Landroid/media/tv/TvInputManager$Session;->mHandler:Landroid/media/tv/TvInputManager$Session$InputEventHandler;
 
-    invoke-virtual {v2, v0}, Landroid/media/tv/TvInputManager$Session$InputEventHandler;->sendMessage(Landroid/os/Message;)Z
+    invoke-virtual {v2, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
@@ -1073,7 +1073,7 @@
 
     const/4 v4, 0x2
 
-    invoke-virtual {v2, v4, v1}, Landroid/media/tv/TvInputManager$Session$InputEventHandler;->removeMessages(ILjava/lang/Object;)V
+    invoke-virtual {v2, v4, v1}, Landroid/os/Handler;->removeMessages(ILjava/lang/Object;)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 

@@ -26,7 +26,7 @@
 # static fields
 .field private static final DESCRIPTOR:Ljava/lang/String; = "android.hardware.location.IFusedLocationHardwareSink"
 
-.field static final TRANSACTION_onCapabilities_2:I = 0x3
+.field static final TRANSACTION_onCapabilities:I = 0x3
 
 .field static final TRANSACTION_onDiagnosticDataAvailable:I = 0x2
 

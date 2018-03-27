@@ -60,7 +60,7 @@
     .line 3584
     iget-object v0, p0, Landroid/media/MediaCodec$MediaImage$MediaPlane;->this$1:Landroid/media/MediaCodec$MediaImage;
 
-    invoke-virtual {v0}, Landroid/media/MediaCodec$MediaImage;->throwISEIfImageIsInvalid()V
+    invoke-virtual {v0}, Landroid/media/Image;->throwISEIfImageIsInvalid()V
 
     .line 3585
     iget-object v0, p0, Landroid/media/MediaCodec$MediaImage$MediaPlane;->mData:Ljava/nio/ByteBuffer;
@@ -75,7 +75,7 @@
     .line 3577
     iget-object v0, p0, Landroid/media/MediaCodec$MediaImage$MediaPlane;->this$1:Landroid/media/MediaCodec$MediaImage;
 
-    invoke-virtual {v0}, Landroid/media/MediaCodec$MediaImage;->throwISEIfImageIsInvalid()V
+    invoke-virtual {v0}, Landroid/media/Image;->throwISEIfImageIsInvalid()V
 
     .line 3578
     iget v0, p0, Landroid/media/MediaCodec$MediaImage$MediaPlane;->mColInc:I
@@ -90,7 +90,7 @@
     .line 3571
     iget-object v0, p0, Landroid/media/MediaCodec$MediaImage$MediaPlane;->this$1:Landroid/media/MediaCodec$MediaImage;
 
-    invoke-virtual {v0}, Landroid/media/MediaCodec$MediaImage;->throwISEIfImageIsInvalid()V
+    invoke-virtual {v0}, Landroid/media/Image;->throwISEIfImageIsInvalid()V
 
     .line 3572
     iget v0, p0, Landroid/media/MediaCodec$MediaImage$MediaPlane;->mRowInc:I

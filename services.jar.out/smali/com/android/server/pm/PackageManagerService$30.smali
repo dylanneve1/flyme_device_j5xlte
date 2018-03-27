@@ -1,14 +1,11 @@
 .class Lcom/android/server/pm/PackageManagerService$30;
-.super Ljava/lang/Object;
+.super Landroid/content/pm/IPackageMoveObserver$Stub;
 .source "PackageManagerService.java"
-
-# interfaces
-.implements Ljava/lang/Runnable;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/server/pm/PackageManagerService;->removeUnusedPackagesLPw(Lcom/android/server/pm/UserManagerService;I)V
+    value = Lcom/android/server/pm/PackageManagerService;->movePrimaryStorage(Ljava/lang/String;)I
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,48 +17,56 @@
 # instance fields
 .field final synthetic this$0:Lcom/android/server/pm/PackageManagerService;
 
-.field final synthetic val$packageName:Ljava/lang/String;
-
-.field final synthetic val$userHandle:I
+.field final synthetic val$realMoveId:I
 
 
 # direct methods
-.method constructor <init>(Lcom/android/server/pm/PackageManagerService;Ljava/lang/String;I)V
+.method constructor <init>(Lcom/android/server/pm/PackageManagerService;I)V
     .locals 0
     .param p1, "this$0"    # Lcom/android/server/pm/PackageManagerService;
-    .param p2, "val$packageName"    # Ljava/lang/String;
-    .param p3, "val$userHandle"    # I
+    .param p2, "val$realMoveId"    # I
 
     .prologue
-    .line 20710
+    .line 20688
     iput-object p1, p0, Lcom/android/server/pm/PackageManagerService$30;->this$0:Lcom/android/server/pm/PackageManagerService;
 
-    iput-object p2, p0, Lcom/android/server/pm/PackageManagerService$30;->val$packageName:Ljava/lang/String;
+    iput p2, p0, Lcom/android/server/pm/PackageManagerService$30;->val$realMoveId:I
 
-    iput p3, p0, Lcom/android/server/pm/PackageManagerService$30;->val$userHandle:I
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Landroid/content/pm/IPackageMoveObserver$Stub;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public run()V
-    .locals 4
+.method public onCreated(ILandroid/os/Bundle;)V
+    .locals 0
+    .param p1, "moveId"    # I
+    .param p2, "extras"    # Landroid/os/Bundle;
 
     .prologue
-    .line 20712
+    .line 20690
+    return-void
+.end method
+
+.method public onStatusChanged(IIJ)V
+    .locals 3
+    .param p1, "moveId"    # I
+    .param p2, "status"    # I
+    .param p3, "estMillis"    # J
+
+    .prologue
+    .line 20696
     iget-object v0, p0, Lcom/android/server/pm/PackageManagerService$30;->this$0:Lcom/android/server/pm/PackageManagerService;
 
-    iget-object v1, p0, Lcom/android/server/pm/PackageManagerService$30;->val$packageName:Ljava/lang/String;
+    invoke-static {v0}, Lcom/android/server/pm/PackageManagerService;->-get8(Lcom/android/server/pm/PackageManagerService;)Lcom/android/server/pm/PackageManagerService$MoveCallbacks;
 
-    iget v2, p0, Lcom/android/server/pm/PackageManagerService$30;->val$userHandle:I
+    move-result-object v0
 
-    const/4 v3, 0x0
+    iget v1, p0, Lcom/android/server/pm/PackageManagerService$30;->val$realMoveId:I
 
-    invoke-static {v0, v1, v2, v3}, Lcom/android/server/pm/PackageManagerService;->-wrap12(Lcom/android/server/pm/PackageManagerService;Ljava/lang/String;II)I
+    invoke-static {v0, v1, p2, p3, p4}, Lcom/android/server/pm/PackageManagerService$MoveCallbacks;->-wrap2(Lcom/android/server/pm/PackageManagerService$MoveCallbacks;IIJ)V
 
-    .line 20711
+    .line 20695
     return-void
 .end method

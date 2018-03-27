@@ -112,6 +112,8 @@
     <string name="tethered_notification_no_device_message">Kee connectéierten Apparat</string>
     <string name="tethered_notification_one_device_message">%1$s connectéierten Apparat</string>
     <string name="tethered_notification_multi_device_message">%1$s connectéiert Apparater</string>
+    <string name="silent_mode_priority">Prioritéit</string>
+    <string name="silent_mode_none">Keen</string>
     <string name="byteShort">B</string>
     <string name="kilobyteShort">kB</string>
     <string name="megabyteShort">MB</string>

@@ -43,7 +43,7 @@
     .line 104
     iget-object v0, p0, Landroid/content/ContentQueryMap$1;->this$0:Landroid/content/ContentQueryMap;
 
-    invoke-virtual {v0}, Landroid/content/ContentQueryMap;->countObservers()I
+    invoke-virtual {v0}, Ljava/util/Observable;->countObservers()I
 
     move-result v0
 

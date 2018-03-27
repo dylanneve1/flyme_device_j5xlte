@@ -44,30 +44,6 @@
 .method public abstract getNameForUid(I)Ljava/lang/String;
 .end method
 
-.method public abstract getOverlayPackages(I)Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(I)",
-            "Ljava/util/List",
-            "<",
-            "Landroid/content/pm/PackageInfo;",
-            ">;"
-        }
-    .end annotation
-.end method
-
-.method public abstract getTargetPackageNames(I)Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(I)",
-            "Ljava/util/List",
-            "<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end method
-
 .method public abstract grantDefaultPermissionsToDefaultDialerApp(Ljava/lang/String;I)V
 .end method
 
@@ -112,9 +88,6 @@
 .end method
 
 .method public abstract setLocationPackagesProvider(Landroid/content/pm/PackageManagerInternal$PackagesProvider;)V
-.end method
-
-.method public abstract setResourceDirs(ILjava/lang/String;[Ljava/lang/String;)V
 .end method
 
 .method public abstract setSimCallManagerPackagesProvider(Landroid/content/pm/PackageManagerInternal$PackagesProvider;)V

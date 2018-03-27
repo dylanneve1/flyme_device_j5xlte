@@ -41,7 +41,7 @@
     invoke-super {p0}, Landroid/app/VoiceInteractor$PickOptionRequest;->onCancel()V
 
     .line 1917
-    invoke-virtual {p0}, Lcom/android/internal/app/ResolverActivity$PickTargetOptionRequest;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Landroid/app/VoiceInteractor$Request;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -55,7 +55,7 @@
     invoke-static {v0, v1}, Lcom/android/internal/app/ResolverActivity;->-set1(Lcom/android/internal/app/ResolverActivity;Lcom/android/internal/app/ResolverActivity$PickTargetOptionRequest;)Lcom/android/internal/app/ResolverActivity$PickTargetOptionRequest;
 
     .line 1920
-    invoke-virtual {v0}, Lcom/android/internal/app/ResolverActivity;->finish()V
+    invoke-virtual {v0}, Landroid/app/Activity;->finish()V
 
     .line 1915
     :cond_0
@@ -88,7 +88,7 @@
 
     .line 1933
     :cond_0
-    invoke-virtual {p0}, Lcom/android/internal/app/ResolverActivity$PickTargetOptionRequest;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Landroid/app/VoiceInteractor$Request;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -125,7 +125,7 @@
     invoke-static {v0, v5}, Lcom/android/internal/app/ResolverActivity;->-set1(Lcom/android/internal/app/ResolverActivity;Lcom/android/internal/app/ResolverActivity$PickTargetOptionRequest;)Lcom/android/internal/app/ResolverActivity$PickTargetOptionRequest;
 
     .line 1938
-    invoke-virtual {v0}, Lcom/android/internal/app/ResolverActivity;->finish()V
+    invoke-virtual {v0}, Landroid/app/Activity;->finish()V
 
     .line 1925
     .end local v1    # "ti":Lcom/android/internal/app/ResolverActivity$TargetInfo;

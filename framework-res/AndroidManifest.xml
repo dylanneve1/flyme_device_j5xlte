@@ -57,10 +57,6 @@
     <protected-broadcast android:name="android.intent.action.USER_INITIALIZE"/>
     <protected-broadcast android:name="android.intent.action.INTENT_FILTER_NEEDS_VERIFICATION"/>
     <protected-broadcast android:name="android.intent.action.SU_SESSION_CHANGED"/>
-    <protected-broadcast android:name="android.intent.action.OVERLAY_ADDED"/>
-    <protected-broadcast android:name="android.intent.action.OVERLAY_CHANGED"/>
-    <protected-broadcast android:name="android.intent.action.OVERLAY_REMOVED"/>
-    <protected-broadcast android:name="android.intent.action.OVERLAY_PRIORITY_CHANGED"/>
     <protected-broadcast android:name="Auth_password_wrong"/>
     <protected-broadcast android:name="android.os.action.POWER_SAVE_MODE_CHANGED"/>
     <protected-broadcast android:name="android.os.action.POWER_SAVE_MODE_CHANGING"/>
@@ -409,7 +405,29 @@
     <protected-broadcast android:name="com.android.server.retaildemo.ACTION_RESET_DEMO"/>
     <protected-broadcast android:name="cyanogenmod.intent.action.LID_STATE_CHANGED"/>
     <protected-broadcast android:name="com.android.server.policy.PhoneWindowManager.ACTION_TORCH_OFF"/>
-    <protected-broadcast android:name="projekt.substratum.APP_CRASHED"/>
+    <protected-broadcast android:name="com.meizu.safe.ACTION_BLOCK_LOCKED_SCREEN_SHOW"/>
+    <protected-broadcast android:name="meizu.intent.action.BATTERY_LOW_WRANING_DIALOG"/>
+    <protected-broadcast android:name="flyme.intent.action.ACTION_SHOW_LOCK_HOME"/>
+    <protected-broadcast android:name="com.android.server.notification"/>
+    <protected-broadcast android:name="com.meizu.action.DISABLE_TETHER"/>
+    <protected-broadcast android:name="com.meizu.power.powerexception.enter_idle_mode"/>
+    <protected-broadcast android:name="com.meizu.power.powerexception"/>
+    <protected-broadcast android:name="com.meizu.safe.alphame.pure.UPDATE_FINISHED"/>
+    <protected-broadcast android:name="com.meizu.safe.alphame.data_broadcast"/>
+    <protected-broadcast android:name="com.meizu.blockservice.NOTIFICATION_DELETED_ACTION_INCALL"/>
+    <protected-broadcast android:name="com.meizu.blockservice.NOTIFICATION_DELETED_ACTION_MMS"/>
+    <protected-broadcast android:name="com.meizu.safe.permission.lsvm.NOTIFICATION_ACTION_ALLOW_SHOW_ON_LOCKED_SCREEN"/>
+    <protected-broadcast android:name="com.meizu.safe.permission.lsvm.NOTIFICATION_ACTION_FORBID_SHOW_ON_LOCKED_SCREEN"/>
+    <protected-broadcast android:name="com.meizu.safe.permission.lsvm.NOTIFICATION_ACTION_GO_SETTING"/>
+    <protected-broadcast android:name="com.meizu.safe.permission.lsvm.NOTIFICATION_ACTION_IGNORE"/>
+    <protected-broadcast android:name="traffic_action_idle_start_alarm_sim1"/>
+    <protected-broadcast android:name="traffic_action_idle_start_alarm_sim2"/>
+    <protected-broadcast android:name="traffic_action_idle_end_alarm_sim1"/>
+    <protected-broadcast android:name="traffic_action_idle_end_alarm_sim2"/>
+    <protected-broadcast android:name="traffic_action_24_clock_alarm"/>
+    <protected-broadcast android:name="traffic_correct_alarm_sim1"/>
+    <protected-broadcast android:name="traffic_correct_alarm_sim2"/>
+    <protected-broadcast android:name="android.com.meizu.safe.provider.SafeWidgetProvider"/>
     <eat-comment/>
     <eat-comment/>
     <permission-group android:description="@string/permgroupdesc_contacts" android:icon="@drawable/perm_group_contacts" android:label="@string/permgrouplab_contacts" android:name="android.permission-group.CONTACTS" android:priority="100"/>
@@ -480,6 +498,7 @@
     <permission android:name="android.permission.RECEIVE_BLUETOOTH_MAP" android:protectionLevel="system|signature"/>
     <permission android:name="android.permission.BIND_DIRECTORY_SEARCH" android:protectionLevel="system|signature"/>
     <permission android:name="android.permission.MODIFY_CELL_BROADCASTS" android:protectionLevel="system|signature"/>
+    <permission android:name="android.permission.AUTHORIZE_OUTGOING_SMS" android:protectionLevel="signature"/>
     <eat-comment/>
     <permission android:description="@string/permdesc_setAlarm" android:label="@string/permlab_setAlarm" android:name="com.android.alarm.permission.SET_ALARM" android:protectionLevel="normal"/>
     <eat-comment/>
@@ -657,6 +676,7 @@
     <permission android:name="android.permission.UPDATE_APP_OPS_STATS" android:protectionLevel="system|installer|signature"/>
     <permission android:name="android.permission.MANAGE_APP_OPS_RESTRICTIONS" android:protectionLevel="installer|signature"/>
     <permission android:name="android.permission.INTERNAL_SYSTEM_WINDOW" android:protectionLevel="signature"/>
+    <permission android:name="android.permission.HIDE_NON_SYSTEM_OVERLAY_WINDOWS" android:protectionLevel="installer|signature"/>
     <permission android:name="android.permission.MANAGE_APP_TOKENS" android:protectionLevel="signature"/>
     <permission android:name="android.permission.REGISTER_WINDOW_MANAGER_LISTENERS" android:protectionLevel="signature"/>
     <permission android:name="android.permission.FREEZE_SCREEN" android:protectionLevel="signature"/>
@@ -815,7 +835,6 @@
     <permission android:name="android.permission.ACCESS_VR_MANAGER" android:protectionLevel="signature"/>
     <permission android:name="android.permission.UPDATE_LOCK_TASK_PACKAGES" android:protectionLevel="setup|signature"/>
     <permission android:name="android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME" android:protectionLevel="system|signature"/>
-    <permission android:description="@string/permdesc_modifyOverlays" android:label="@string/permlab_modifyOverlays" android:name="oms.permission.MODIFY_OVERLAYS" android:protectionLevel="signatureOrSystem"/>
     <application android:allowClearUserData="false" android:backupAgent="com.android.server.backup.SystemBackupAgent" android:defaultToDeviceProtectedStorage="true" android:directBootAware="true" android:hasCode="false" android:icon="@drawable/ic_launcher_android" android:killAfterRestore="false" android:label="@string/android_system_label" android:persistent="true" android:process="system" android:supportsRtl="true" android:theme="@style/Theme.DeviceDefault.Light.DarkActionBar">
         <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:documentLaunchMode="never" android:excludeFromRecents="true" android:finishOnCloseSystemDialogs="true" android:name="com.android.internal.app.ChooserActivity" android:process=":ui" android:relinquishTaskIdentity="true" android:theme="@style/Theme.DeviceDefault.Resolver">
             <intent-filter>

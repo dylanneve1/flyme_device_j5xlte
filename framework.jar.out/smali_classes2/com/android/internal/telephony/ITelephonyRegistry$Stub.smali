@@ -26,11 +26,11 @@
 # static fields
 .field private static final DESCRIPTOR:Ljava/lang/String; = "com.android.internal.telephony.ITelephonyRegistry"
 
-.field static final TRANSACTION_addOnSubscriptionsChangedListener_0:I = 0x1
+.field static final TRANSACTION_addOnSubscriptionsChangedListener:I = 0x1
+
+.field static final TRANSACTION_listen:I = 0x3
 
 .field static final TRANSACTION_listenForSubscriber:I = 0x4
-
-.field static final TRANSACTION_listen_2:I = 0x3
 
 .field static final TRANSACTION_notifyCallForwardingChanged:I = 0xa
 
@@ -82,7 +82,7 @@
 
 .field static final TRANSACTION_notifyVoLteServiceStateChanged:I = 0x1a
 
-.field static final TRANSACTION_removeOnSubscriptionsChangedListener_1:I = 0x2
+.field static final TRANSACTION_removeOnSubscriptionsChangedListener:I = 0x2
 
 
 # direct methods

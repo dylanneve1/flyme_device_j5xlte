@@ -190,7 +190,7 @@
     invoke-virtual {v4, v7}, Ljava/io/DataOutputStream;->writeInt(I)V
 
     .line 70
-    invoke-virtual {v4}, Ljava/io/DataOutputStream;->close()V
+    invoke-virtual {v4}, Ljava/io/FilterOutputStream;->close()V
 
     .line 71
     invoke-static {v2}, Llibcore/io/IoUtils;->closeQuietly(Ljava/io/FileDescriptor;)V

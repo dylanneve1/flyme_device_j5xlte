@@ -34,7 +34,7 @@
 
 .field static final TRANSACTION_denyUsbDebugging:I = 0x12
 
-.field static final TRANSACTION_getCurrentAccessory:I = 0x3
+.field static final TRANSACTION_getCurrentAccessory_2:I = 0x3
 
 .field static final TRANSACTION_getDeviceList:I = 0x1
 
@@ -46,11 +46,11 @@
 
 .field static final TRANSACTION_grantDevicePermission:I = 0xb
 
-.field static final TRANSACTION_hasAccessoryPermission_7:I = 0x8
+.field static final TRANSACTION_hasAccessoryPermission:I = 0x8
 
 .field static final TRANSACTION_hasDefaults:I = 0xd
 
-.field static final TRANSACTION_hasDevicePermission_6:I = 0x7
+.field static final TRANSACTION_hasDevicePermission:I = 0x7
 
 .field static final TRANSACTION_isFunctionEnabled:I = 0xf
 
@@ -58,15 +58,15 @@
 
 .field static final TRANSACTION_openDevice_1:I = 0x2
 
-.field static final TRANSACTION_requestAccessoryPermission_9:I = 0xa
+.field static final TRANSACTION_requestAccessoryPermission:I = 0xa
 
-.field static final TRANSACTION_requestDevicePermission_8:I = 0x9
+.field static final TRANSACTION_requestDevicePermission:I = 0x9
 
 .field static final TRANSACTION_setAccessoryPackage_5:I = 0x6
 
 .field static final TRANSACTION_setCurrentFunction_15:I = 0x10
 
-.field static final TRANSACTION_setDevicePackage:I = 0x5
+.field static final TRANSACTION_setDevicePackage_4:I = 0x5
 
 .field static final TRANSACTION_setPortRoles:I = 0x16
 

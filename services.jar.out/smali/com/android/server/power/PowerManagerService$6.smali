@@ -30,7 +30,7 @@
     .param p2, "val$r"    # Ljava/lang/Runnable;
 
     .prologue
-    .line 4258
+    .line 4272
     iput-object p1, p0, Lcom/android/server/power/PowerManagerService$6;->this$0:Lcom/android/server/power/PowerManagerService;
 
     iput-object p2, p0, Lcom/android/server/power/PowerManagerService$6;->val$r:Ljava/lang/Runnable;
@@ -48,7 +48,7 @@
     .param p2, "accuracy"    # I
 
     .prologue
-    .line 4277
+    .line 4291
     return-void
 .end method
 
@@ -59,12 +59,12 @@
     .prologue
     const/4 v2, 0x5
 
-    .line 4261
+    .line 4275
     iget-object v1, p0, Lcom/android/server/power/PowerManagerService$6;->this$0:Lcom/android/server/power/PowerManagerService;
 
     invoke-static {v1}, Lcom/android/server/power/PowerManagerService;->-wrap10(Lcom/android/server/power/PowerManagerService;)V
 
-    .line 4262
+    .line 4276
     iget-object v1, p0, Lcom/android/server/power/PowerManagerService$6;->this$0:Lcom/android/server/power/PowerManagerService;
 
     invoke-static {v1}, Lcom/android/server/power/PowerManagerService;->-get7(Lcom/android/server/power/PowerManagerService;)Lcom/android/server/power/PowerManagerService$PowerManagerHandler;
@@ -77,17 +77,17 @@
 
     if-nez v1, :cond_0
 
-    .line 4263
+    .line 4277
     const-string/jumbo v1, "PowerManagerService"
 
     const-string/jumbo v2, "Proximity sensor took too long, wake event already triggered!"
 
     invoke-static {v1, v2}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 4264
+    .line 4278
     return-void
 
-    .line 4266
+    .line 4280
     :cond_0
     iget-object v1, p0, Lcom/android/server/power/PowerManagerService$6;->this$0:Lcom/android/server/power/PowerManagerService;
 
@@ -97,14 +97,14 @@
 
     invoke-virtual {v1, v2}, Lcom/android/server/power/PowerManagerService$PowerManagerHandler;->removeMessages(I)V
 
-    .line 4267
+    .line 4281
     iget-object v1, p1, Landroid/hardware/SensorEvent;->values:[F
 
     const/4 v2, 0x0
 
     aget v0, v1, v2
 
-    .line 4268
+    .line 4282
     .local v0, "distance":F
     const/high16 v1, 0x40a00000    # 5.0f
 
@@ -112,7 +112,7 @@
 
     if-gez v1, :cond_1
 
-    .line 4269
+    .line 4283
     iget-object v1, p0, Lcom/android/server/power/PowerManagerService$6;->this$0:Lcom/android/server/power/PowerManagerService;
 
     invoke-static {v1}, Lcom/android/server/power/PowerManagerService;->-get15(Lcom/android/server/power/PowerManagerService;)Landroid/hardware/Sensor;
@@ -127,17 +127,17 @@
 
     if-ltz v1, :cond_2
 
-    .line 4270
+    .line 4284
     :cond_1
     iget-object v1, p0, Lcom/android/server/power/PowerManagerService$6;->val$r:Ljava/lang/Runnable;
 
     invoke-interface {v1}, Ljava/lang/Runnable;->run()V
 
-    .line 4260
+    .line 4274
     :goto_0
     return-void
 
-    .line 4272
+    .line 4286
     :cond_2
     const-string/jumbo v1, "PowerManagerService"
 

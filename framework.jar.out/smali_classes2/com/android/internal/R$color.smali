@@ -29,9 +29,9 @@
 
 .field public static final darker_gray:I = 0x1060000
 
-.field public static final decor_button_dark_color:I = 0x1060126
+.field public static final decor_button_dark_color:I = 0x106011f
 
-.field public static final decor_button_light_color:I = 0x1060127
+.field public static final decor_button_light_color:I = 0x1060120
 
 .field public static final holo_blue_bright:I = 0x106001b
 
@@ -71,8 +71,6 @@
 
 .field public static final notification_progress_background_color:I = 0x1060053
 
-.field public static final notification_text_default_color:I = 0x1060116
-
 .field public static final primary_text_dark:I = 0x1060001
 
 .field public static final primary_text_dark_nodisable:I = 0x1060002
@@ -93,15 +91,13 @@
 
 .field public static final secondary_text_light_nodisable:I = 0x1060008
 
-.field public static final sender_text_color:I = 0x1060117
-
 .field public static final system_bar_background_semi_transparent:I = 0x1060074
 
 .field public static final system_notification_accent_color:I = 0x106005b
 
 .field public static final tab_indicator_text:I = 0x1060009
 
-.field public static final tab_indicator_text_v4:I = 0x1060154
+.field public static final tab_indicator_text_v4:I = 0x106014d
 
 .field public static final tertiary_text_dark:I = 0x1060010
 
@@ -149,7 +145,7 @@
     .locals 0
 
     .prologue
-    .line 23128
+    .line 24897
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

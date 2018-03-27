@@ -42,7 +42,7 @@
 
 .field static final TRANSACTION_deviceSelect:I = 0x8
 
-.field static final TRANSACTION_getActiveSource_1:I = 0x2
+.field static final TRANSACTION_getActiveSource:I = 0x2
 
 .field static final TRANSACTION_getDeviceList:I = 0x17
 
@@ -54,7 +54,7 @@
 
 .field static final TRANSACTION_getSystemAudioMode:I = 0xd
 
-.field static final TRANSACTION_oneTouchPlay_2:I = 0x3
+.field static final TRANSACTION_oneTouchPlay:I = 0x3
 
 .field static final TRANSACTION_portSelect:I = 0x9
 

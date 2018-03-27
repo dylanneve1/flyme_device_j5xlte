@@ -192,7 +192,7 @@
     .local v6, "e":Ljava/lang/IllegalArgumentException;
     new-instance v1, Ljava/lang/UnsupportedOperationException;
 
-    invoke-virtual {v6}, Ljava/lang/IllegalArgumentException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v6}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v2
 

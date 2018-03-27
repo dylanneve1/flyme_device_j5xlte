@@ -33,8 +33,6 @@
 
 .field public static final config_allowDisablingAssistDisclosure:I = 0x11200d1
 
-.field public static final config_allowNotificationIconTextTinting:I = 0x11200e9
-
 .field public static final config_allowTheaterModeWakeFromCameraLens:I = 0x112002e
 
 .field public static final config_allowTheaterModeWakeFromDock:I = 0x1120034
@@ -105,7 +103,7 @@
 
 .field public static final config_cellBroadcastAppLinks:I = 0x112007f
 
-.field public static final config_dateformat:I = 0x11200e5
+.field public static final config_dateformat:I = 0x11200e6
 
 .field public static final config_defaultInTouchMode:I = 0x11200ae
 
@@ -221,8 +219,6 @@
 
 .field public static final config_intrusiveNotificationLed:I = 0x1120048
 
-.field public static final config_invert_colors_on_doze:I = 0x11200ea
-
 .field public static final config_lidControlsScreenLock:I = 0x112003b
 
 .field public static final config_lidControlsSleep:I = 0x112003c
@@ -305,6 +301,8 @@
 
 .field public static final config_sip_wifi_only:I = 0x112006a
 
+.field public static final config_sms_authorization_enabled:I = 0x11200e0
+
 .field public static final config_sms_capable:I = 0x1120068
 
 .field public static final config_sms_decode_gsm_8bit_data:I = 0x11200a2
@@ -359,11 +357,9 @@
 
 .field public static final config_usbChargingMessage:I = 0x1120028
 
-.field public static final config_usb_data_unlock:I = 0x11200e6
+.field public static final config_usb_data_unlock:I = 0x11200e7
 
 .field public static final config_useAttentionLight:I = 0x1120029
-
-.field public static final config_useDarkBgNotificationIconTextTinting:I = 0x11200eb
 
 .field public static final config_useDefaultBatchingForAccel:I = 0x11200d9
 
@@ -431,7 +427,7 @@
 
 .field public static final imsServiceAllowTurnOff:I = 0x1120097
 
-.field public static final operator_custom_sim_icon:I = 0x11200e7
+.field public static final operator_custom_sim_icon:I = 0x11200e8
 
 .field public static final preferences_prefer_dual_pane:I = 0x1120005
 
@@ -457,7 +453,7 @@
     .locals 0
 
     .prologue
-    .line 21976
+    .line 23795
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

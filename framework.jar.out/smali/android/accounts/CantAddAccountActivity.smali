@@ -26,7 +26,7 @@
 
     .prologue
     .line 39
-    invoke-virtual {p0}, Landroid/accounts/CantAddAccountActivity;->onBackPressed()V
+    invoke-virtual {p0}, Landroid/app/Activity;->onBackPressed()V
 
     .line 38
     return-void
@@ -43,7 +43,7 @@
     .line 35
     const v0, 0x1090034
 
-    invoke-virtual {p0, v0}, Landroid/accounts/CantAddAccountActivity;->setContentView(I)V
+    invoke-virtual {p0, v0}, Landroid/app/Activity;->setContentView(I)V
 
     .line 33
     return-void

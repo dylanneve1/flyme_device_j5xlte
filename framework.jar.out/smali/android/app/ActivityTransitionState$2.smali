@@ -54,7 +54,7 @@
     .line 323
     iget-object v0, p0, Landroid/app/ActivityTransitionState$2;->val$finalDecor:Landroid/view/ViewGroup;
 
-    invoke-virtual {v0}, Landroid/view/ViewGroup;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
+    invoke-virtual {v0}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
 
     move-result-object v0
 

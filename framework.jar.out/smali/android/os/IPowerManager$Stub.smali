@@ -52,13 +52,13 @@
 
 .field static final TRANSACTION_nap:I = 0xb
 
-.field static final TRANSACTION_powerHint_4:I = 0x5
+.field static final TRANSACTION_powerHint:I = 0x5
 
 .field static final TRANSACTION_reboot:I = 0x11
 
 .field static final TRANSACTION_rebootSafeMode:I = 0x12
 
-.field static final TRANSACTION_releaseWakeLock_2:I = 0x3
+.field static final TRANSACTION_releaseWakeLock:I = 0x3
 
 .field static final TRANSACTION_setAttentionLight:I = 0x1a
 
@@ -78,9 +78,9 @@
 
 .field static final TRANSACTION_updateBlockedUids:I = 0x1b
 
-.field static final TRANSACTION_updateWakeLockUids_3:I = 0x4
+.field static final TRANSACTION_updateWakeLockUids:I = 0x4
 
-.field static final TRANSACTION_updateWakeLockWorkSource_5:I = 0x6
+.field static final TRANSACTION_updateWakeLockWorkSource:I = 0x6
 
 .field static final TRANSACTION_userActivity:I = 0x8
 

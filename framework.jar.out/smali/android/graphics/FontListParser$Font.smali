@@ -55,25 +55,25 @@
     .end annotation
 
     .prologue
-    .line 59
+    .line 56
     .local p3, "axes":Ljava/util/List;, "Ljava/util/List<Landroid/graphics/FontListParser$Axis;>;"
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 60
+    .line 57
     iput-object p1, p0, Landroid/graphics/FontListParser$Font;->fontName:Ljava/lang/String;
 
-    .line 61
+    .line 58
     iput p2, p0, Landroid/graphics/FontListParser$Font;->ttcIndex:I
 
-    .line 62
+    .line 59
     iput-object p3, p0, Landroid/graphics/FontListParser$Font;->axes:Ljava/util/List;
 
-    .line 63
+    .line 60
     iput p4, p0, Landroid/graphics/FontListParser$Font;->weight:I
 
-    .line 64
+    .line 61
     iput-boolean p5, p0, Landroid/graphics/FontListParser$Font;->isItalic:Z
 
-    .line 59
+    .line 56
     return-void
 .end method

@@ -38,7 +38,7 @@
 
 .field static final TRANSACTION_isLanguageAvailable_8:I = 0x9
 
-.field static final TRANSACTION_isSpeaking_4:I = 0x5
+.field static final TRANSACTION_isSpeaking:I = 0x5
 
 .field static final TRANSACTION_loadLanguage_10:I = 0xb
 
@@ -46,7 +46,7 @@
 
 .field static final TRANSACTION_playAudio_2:I = 0x3
 
-.field static final TRANSACTION_playSilence_3:I = 0x4
+.field static final TRANSACTION_playSilence:I = 0x4
 
 .field static final TRANSACTION_setCallback_11:I = 0xc
 
@@ -54,7 +54,7 @@
 
 .field static final TRANSACTION_stop_5:I = 0x6
 
-.field static final TRANSACTION_synthesizeToFileDescriptor_1:I = 0x2
+.field static final TRANSACTION_synthesizeToFileDescriptor:I = 0x2
 
 
 # direct methods

@@ -48,7 +48,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Landroid/widget/YearPickerView;->requestFocus()Z
+    invoke-virtual {v1}, Landroid/view/View;->requestFocus()Z
 
     .line 362
     iget-object v1, p0, Landroid/widget/DatePickerCalendarDelegate$4;->this$0:Landroid/widget/DatePickerCalendarDelegate;
@@ -57,7 +57,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Landroid/widget/YearPickerView;->getSelectedView()Landroid/view/View;
+    invoke-virtual {v1}, Landroid/widget/AbsListView;->getSelectedView()Landroid/view/View;
 
     move-result-object v0
 

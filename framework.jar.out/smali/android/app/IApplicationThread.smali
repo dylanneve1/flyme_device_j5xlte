@@ -65,8 +65,6 @@
 
 .field public static final SCHEDULE_ACTIVITY_CONFIGURATION_CHANGED_TRANSACTION:I = 0x19
 
-.field public static final SCHEDULE_ASSETS_CHANGED_TRANSACTION:I = 0x3e
-
 .field public static final SCHEDULE_BIND_SERVICE_TRANSACTION:I = 0x14
 
 .field public static final SCHEDULE_CONFIGURATION_CHANGED_TRANSACTION:I = 0x10
@@ -293,14 +291,6 @@
 .end method
 
 .method public abstract scheduleActivityConfigurationChanged(Landroid/os/IBinder;Landroid/content/res/Configuration;Z)V
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
-.end method
-
-.method public abstract scheduleAssetsChanged(Ljava/lang/String;Landroid/content/pm/ApplicationInfo;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

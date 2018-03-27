@@ -123,6 +123,8 @@
     <string name="tethered_notification_no_device_message">Không có thiết bị kết nối</string>
     <string name="tethered_notification_one_device_message">%1$s thiết bị đã kết nối</string>
     <string name="tethered_notification_multi_device_message">%1$s thiết bị đã kết nối</string>
+    <string name="silent_mode_priority">Ưu tiên</string>
+    <string name="silent_mode_none">Không có</string>
     <string name="month_day_year" formatted="false">Ngày %d tháng %-m năm %Y</string>
     <string name="time_of_day" formatted="false">%H:%M:%S</string>
     <string name="date_and_time" formatted="false">%d-%m-%Y %H:%M:%S</string>

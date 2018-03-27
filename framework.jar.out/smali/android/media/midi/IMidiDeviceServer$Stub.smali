@@ -30,15 +30,15 @@
 
 .field static final TRANSACTION_closePort:I = 0x3
 
-.field static final TRANSACTION_connectPorts_4:I = 0x5
+.field static final TRANSACTION_connectPorts:I = 0x5
 
-.field static final TRANSACTION_getDeviceInfo_5:I = 0x6
+.field static final TRANSACTION_getDeviceInfo:I = 0x6
 
 .field static final TRANSACTION_openInputPort:I = 0x1
 
 .field static final TRANSACTION_openOutputPort:I = 0x2
 
-.field static final TRANSACTION_setDeviceInfo_6:I = 0x7
+.field static final TRANSACTION_setDeviceInfo:I = 0x7
 
 
 # direct methods
@@ -52,7 +52,7 @@
     .line 16
     const-string/jumbo v0, "android.media.midi.IMidiDeviceServer"
 
-    invoke-virtual {p0, p0, v0}, Landroid/media/midi/IMidiDeviceServer$Stub;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
+    invoke-virtual {p0, p0, v0}, Landroid/os/Binder;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
 
     .line 14
     return-void

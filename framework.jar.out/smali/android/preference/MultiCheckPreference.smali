@@ -342,7 +342,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Landroid/preference/MultiCheckPreference;->callChangeListener(Ljava/lang/Object;)Z
+    invoke-virtual {p0, v0}, Landroid/preference/Preference;->callChangeListener(Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -455,7 +455,7 @@
 
     const-class v2, Landroid/preference/MultiCheckPreference$SavedState;
 
-    invoke-virtual {v1, v2}, Ljava/lang/Class;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v1, v2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -468,7 +468,7 @@
 
     .line 303
     .local v0, "myState":Landroid/preference/MultiCheckPreference$SavedState;
-    invoke-virtual {v0}, Landroid/preference/MultiCheckPreference$SavedState;->getSuperState()Landroid/os/Parcelable;
+    invoke-virtual {v0}, Landroid/view/AbsSavedState;->getSuperState()Landroid/os/Parcelable;
 
     move-result-object v1
 
@@ -502,7 +502,7 @@
 
     .line 284
     .local v1, "superState":Landroid/os/Parcelable;
-    invoke-virtual {p0}, Landroid/preference/MultiCheckPreference;->isPersistent()Z
+    invoke-virtual {p0}, Landroid/preference/Preference;->isPersistent()Z
 
     move-result v2
 
@@ -545,7 +545,7 @@
 
     .prologue
     .line 101
-    invoke-virtual {p0}, Landroid/preference/MultiCheckPreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/preference/Preference;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -595,7 +595,7 @@
 
     .prologue
     .line 131
-    invoke-virtual {p0}, Landroid/preference/MultiCheckPreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/preference/Preference;->getContext()Landroid/content/Context;
 
     move-result-object v0
 

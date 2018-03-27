@@ -646,7 +646,7 @@
     iput-boolean v6, p0, Lcom/android/server/GestureLauncherService;->mRegistered:Z
 
     .line 214
-    const v4, 0x10400cf
+    const v4, 0x10400d1
 
     .line 213
     invoke-virtual {p1, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
@@ -936,7 +936,7 @@
     iput-boolean v2, p0, Lcom/android/server/GestureLauncherService;->mIsEmergencyOnPowerKeyTapEnabled:Z
 
     .line 286
-    const v2, 0x10400d9
+    const v2, 0x10400db
 
     .line 285
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;

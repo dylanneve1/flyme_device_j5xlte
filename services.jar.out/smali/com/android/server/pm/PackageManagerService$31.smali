@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/server/pm/PackageManagerService;->deletePackageIfUnusedLPr(Ljava/lang/String;)V
+    value = Lcom/android/server/pm/PackageManagerService;->removeUnusedPackagesLPw(Lcom/android/server/pm/UserManagerService;I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -22,18 +22,23 @@
 
 .field final synthetic val$packageName:Ljava/lang/String;
 
+.field final synthetic val$userHandle:I
+
 
 # direct methods
-.method constructor <init>(Lcom/android/server/pm/PackageManagerService;Ljava/lang/String;)V
+.method constructor <init>(Lcom/android/server/pm/PackageManagerService;Ljava/lang/String;I)V
     .locals 0
     .param p1, "this$0"    # Lcom/android/server/pm/PackageManagerService;
     .param p2, "val$packageName"    # Ljava/lang/String;
+    .param p3, "val$userHandle"    # I
 
     .prologue
-    .line 21061
+    .line 20804
     iput-object p1, p0, Lcom/android/server/pm/PackageManagerService$31;->this$0:Lcom/android/server/pm/PackageManagerService;
 
     iput-object p2, p0, Lcom/android/server/pm/PackageManagerService$31;->val$packageName:Ljava/lang/String;
+
+    iput p3, p0, Lcom/android/server/pm/PackageManagerService$31;->val$userHandle:I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -46,17 +51,17 @@
     .locals 4
 
     .prologue
-    .line 21063
+    .line 20806
     iget-object v0, p0, Lcom/android/server/pm/PackageManagerService$31;->this$0:Lcom/android/server/pm/PackageManagerService;
 
     iget-object v1, p0, Lcom/android/server/pm/PackageManagerService$31;->val$packageName:Ljava/lang/String;
 
-    const/4 v2, 0x0
+    iget v2, p0, Lcom/android/server/pm/PackageManagerService$31;->val$userHandle:I
 
-    const/4 v3, 0x2
+    const/4 v3, 0x0
 
-    invoke-static {v0, v1, v2, v3}, Lcom/android/server/pm/PackageManagerService;->-wrap12(Lcom/android/server/pm/PackageManagerService;Ljava/lang/String;II)I
+    invoke-static {v0, v1, v2, v3}, Lcom/android/server/pm/PackageManagerService;->-wrap11(Lcom/android/server/pm/PackageManagerService;Ljava/lang/String;II)I
 
-    .line 21062
+    .line 20805
     return-void
 .end method

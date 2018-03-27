@@ -75,7 +75,7 @@
     move-result-object v0
 
     .line 2859
-    iget-object v1, p0, Landroid/accounts/AccountManager$21;->mResponse:Landroid/accounts/IAccountManagerResponse;
+    iget-object v1, p0, Landroid/accounts/AccountManager$AmsTask;->mResponse:Landroid/accounts/IAccountManagerResponse;
 
     .line 2860
     iget-object v2, p0, Landroid/accounts/AccountManager$21;->val$account:Landroid/accounts/Account;

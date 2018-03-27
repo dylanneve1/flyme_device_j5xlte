@@ -35,7 +35,7 @@
     .param p4, "val$packageName"    # Ljava/lang/String;
 
     .prologue
-    .line 9331
+    .line 9346
     .local p2, "val$packageActiveAdmins":Ljava/util/List;, "Ljava/util/List<Landroid/content/ComponentName;>;"
     iput-object p1, p0, Lcom/android/server/devicepolicy/DevicePolicyManagerService$11;->this$0:Lcom/android/server/devicepolicy/DevicePolicyManagerService;
 
@@ -56,7 +56,7 @@
     .locals 5
 
     .prologue
-    .line 9334
+    .line 9349
     iget-object v2, p0, Lcom/android/server/devicepolicy/DevicePolicyManagerService$11;->val$packageActiveAdmins:Ljava/util/List;
 
     invoke-interface {v2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
@@ -77,7 +77,7 @@
 
     check-cast v0, Landroid/content/ComponentName;
 
-    .line 9335
+    .line 9350
     .local v0, "activeAdmin":Landroid/content/ComponentName;
     iget-object v2, p0, Lcom/android/server/devicepolicy/DevicePolicyManagerService$11;->this$0:Lcom/android/server/devicepolicy/DevicePolicyManagerService;
 
@@ -87,7 +87,7 @@
 
     goto :goto_0
 
-    .line 9337
+    .line 9352
     .end local v0    # "activeAdmin":Landroid/content/ComponentName;
     :cond_0
     iget-object v2, p0, Lcom/android/server/devicepolicy/DevicePolicyManagerService$11;->this$0:Lcom/android/server/devicepolicy/DevicePolicyManagerService;
@@ -98,6 +98,6 @@
 
     invoke-static {v2, v3, v4}, Lcom/android/server/devicepolicy/DevicePolicyManagerService;->-wrap22(Lcom/android/server/devicepolicy/DevicePolicyManagerService;Ljava/lang/String;I)V
 
-    .line 9333
+    .line 9348
     return-void
 .end method

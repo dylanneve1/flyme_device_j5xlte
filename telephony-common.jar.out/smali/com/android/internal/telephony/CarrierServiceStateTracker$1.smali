@@ -62,7 +62,7 @@
 
     const-string/jumbo v3, "network_notification_delay_int"
 
-    invoke-virtual {v0, v3}, Landroid/os/PersistableBundle;->getInt(Ljava/lang/String;)I
+    invoke-virtual {v0, v3}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;)I
 
     move-result v3
 

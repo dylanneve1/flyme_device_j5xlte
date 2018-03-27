@@ -36,13 +36,13 @@
 
 .field static final TRANSACTION_exitIdle:I = 0x11
 
-.field static final TRANSACTION_getAppIdTempWhitelist_10:I = 0xb
+.field static final TRANSACTION_getAppIdTempWhitelist:I = 0xb
 
-.field static final TRANSACTION_getAppIdUserWhitelist_9:I = 0xa
+.field static final TRANSACTION_getAppIdUserWhitelist:I = 0xa
 
-.field static final TRANSACTION_getAppIdWhitelistExceptIdle_7:I = 0x8
+.field static final TRANSACTION_getAppIdWhitelist:I = 0x9
 
-.field static final TRANSACTION_getAppIdWhitelist_8:I = 0x9
+.field static final TRANSACTION_getAppIdWhitelistExceptIdle:I = 0x8
 
 .field static final TRANSACTION_getFullPowerWhitelist:I = 0x7
 
@@ -60,7 +60,7 @@
 
 .field static final TRANSACTION_isPowerSaveWhitelistApp:I = 0xd
 
-.field static final TRANSACTION_isPowerSaveWhitelistExceptIdleApp_11:I = 0xc
+.field static final TRANSACTION_isPowerSaveWhitelistExceptIdleApp:I = 0xc
 
 .field static final TRANSACTION_registerMaintenanceActivityListener:I = 0x12
 

@@ -436,7 +436,7 @@
 
     aget-object v4, v4, p2
 
-    invoke-virtual {v2, v4}, Landroid/media/midi/MidiOutputPort;->connect(Landroid/media/midi/MidiReceiver;)V
+    invoke-virtual {v2, v4}, Landroid/media/midi/MidiSender;->connect(Landroid/media/midi/MidiReceiver;)V
 
     .line 187
     new-instance v0, Landroid/media/midi/MidiDeviceServer$InputPortClient;

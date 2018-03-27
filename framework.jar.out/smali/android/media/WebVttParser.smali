@@ -262,7 +262,7 @@
 
     .prologue
     .line 969
-    invoke-virtual {p0}, Landroid/media/WebVttParser;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v0
 
@@ -313,7 +313,7 @@
 
     .prologue
     .line 964
-    invoke-virtual {p0}, Landroid/media/WebVttParser;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v0
 
@@ -389,7 +389,7 @@
 
     .prologue
     .line 958
-    invoke-virtual {p0}, Landroid/media/WebVttParser;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v0
 

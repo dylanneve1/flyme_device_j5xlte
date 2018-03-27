@@ -61,7 +61,7 @@
 
     iget-object v1, p0, Lcom/android/internal/widget/SwipeDismissLayout$1;->mRunnable:Ljava/lang/Runnable;
 
-    invoke-virtual {v0, v1}, Lcom/android/internal/widget/SwipeDismissLayout;->post(Ljava/lang/Runnable;)Z
+    invoke-virtual {v0, v1}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
 
     .line 103
     return-void

@@ -82,7 +82,7 @@
     invoke-virtual {p1, v2, v0}, Landroid/security/keymaster/KeymasterArguments;->addEnum(II)V
 
     .line 467
-    invoke-virtual {p0}, Landroid/security/keystore/AndroidKeyStoreRSACipherSpi;->getKeymasterPurposeOverride()I
+    invoke-virtual {p0}, Landroid/security/keystore/AndroidKeyStoreCipherSpiBase;->getKeymasterPurposeOverride()I
 
     move-result v1
 
@@ -296,7 +296,9 @@
     move-object v7, p2
 
     .line 367
-    check-cast v7, Landroid/security/keystore/AndroidKeyStoreKey;
+    nop
+
+    nop
 
     .line 374
     .local v7, "keystoreKey":Landroid/security/keystore/AndroidKeyStoreKey;
@@ -345,7 +347,9 @@
     move-object v7, p2
 
     .line 369
-    check-cast v7, Landroid/security/keystore/AndroidKeyStoreKey;
+    nop
+
+    nop
 
     .restart local v7    # "keystoreKey":Landroid/security/keystore/AndroidKeyStoreKey;
     goto :goto_0
@@ -549,7 +553,7 @@
 
     .line 417
     .local v5, "keyCharacteristics":Landroid/security/keymaster/KeyCharacteristics;
-    invoke-virtual {p0}, Landroid/security/keystore/AndroidKeyStoreRSACipherSpi;->getKeyStore()Landroid/security/KeyStore;
+    invoke-virtual {p0}, Landroid/security/keystore/AndroidKeyStoreCipherSpiBase;->getKeyStore()Landroid/security/KeyStore;
 
     move-result-object v0
 
@@ -576,7 +580,7 @@
     if-eq v6, v0, :cond_6
 
     .line 420
-    invoke-virtual {p0}, Landroid/security/keystore/AndroidKeyStoreRSACipherSpi;->getKeyStore()Landroid/security/KeyStore;
+    invoke-virtual {p0}, Landroid/security/keystore/AndroidKeyStoreCipherSpiBase;->getKeyStore()Landroid/security/KeyStore;
 
     move-result-object v0
 
@@ -673,7 +677,7 @@
     iput v0, p0, Landroid/security/keystore/AndroidKeyStoreRSACipherSpi;->mModulusSizeBytes:I
 
     .line 431
-    invoke-virtual {p0, v7}, Landroid/security/keystore/AndroidKeyStoreRSACipherSpi;->setKey(Landroid/security/keystore/AndroidKeyStoreKey;)V
+    invoke-virtual {p0, v7}, Landroid/security/keystore/AndroidKeyStoreCipherSpiBase;->setKey(Landroid/security/keystore/AndroidKeyStoreKey;)V
 
     .line 357
     return-void

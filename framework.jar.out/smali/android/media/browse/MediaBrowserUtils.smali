@@ -39,7 +39,7 @@
     .line 29
     const-string/jumbo v2, "android.media.browse.extra.PAGE"
 
-    invoke-virtual {p1, v2, v4}, Landroid/os/Bundle;->getInt(Ljava/lang/String;I)I
+    invoke-virtual {p1, v2, v4}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;I)I
 
     move-result v2
 
@@ -48,7 +48,7 @@
     .line 30
     const-string/jumbo v2, "android.media.browse.extra.PAGE_SIZE"
 
-    invoke-virtual {p1, v2, v4}, Landroid/os/Bundle;->getInt(Ljava/lang/String;I)I
+    invoke-virtual {p1, v2, v4}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;I)I
 
     move-result v2
 
@@ -77,7 +77,7 @@
     .line 32
     const-string/jumbo v2, "android.media.browse.extra.PAGE"
 
-    invoke-virtual {p0, v2, v4}, Landroid/os/Bundle;->getInt(Ljava/lang/String;I)I
+    invoke-virtual {p0, v2, v4}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;I)I
 
     move-result v2
 
@@ -86,7 +86,7 @@
     .line 33
     const-string/jumbo v2, "android.media.browse.extra.PAGE_SIZE"
 
-    invoke-virtual {p0, v2, v4}, Landroid/os/Bundle;->getInt(Ljava/lang/String;I)I
+    invoke-virtual {p0, v2, v4}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;I)I
 
     move-result v2
 
@@ -102,14 +102,14 @@
     :cond_5
     const-string/jumbo v2, "android.media.browse.extra.PAGE"
 
-    invoke-virtual {p0, v2, v4}, Landroid/os/Bundle;->getInt(Ljava/lang/String;I)I
+    invoke-virtual {p0, v2, v4}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;I)I
 
     move-result v2
 
     .line 36
     const-string/jumbo v3, "android.media.browse.extra.PAGE"
 
-    invoke-virtual {p1, v3, v4}, Landroid/os/Bundle;->getInt(Ljava/lang/String;I)I
+    invoke-virtual {p1, v3, v4}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;I)I
 
     move-result v3
 
@@ -119,14 +119,14 @@
     .line 37
     const-string/jumbo v2, "android.media.browse.extra.PAGE_SIZE"
 
-    invoke-virtual {p0, v2, v4}, Landroid/os/Bundle;->getInt(Ljava/lang/String;I)I
+    invoke-virtual {p0, v2, v4}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;I)I
 
     move-result v2
 
     .line 38
     const-string/jumbo v3, "android.media.browse.extra.PAGE_SIZE"
 
-    invoke-virtual {p1, v3, v4}, Landroid/os/Bundle;->getInt(Ljava/lang/String;I)I
+    invoke-virtual {p1, v3, v4}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;I)I
 
     move-result v3
 
@@ -228,7 +228,7 @@
     :cond_2
     const-string/jumbo v8, "android.media.browse.extra.PAGE"
 
-    invoke-virtual {p0, v8, v9}, Landroid/os/Bundle;->getInt(Ljava/lang/String;I)I
+    invoke-virtual {p0, v8, v9}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;I)I
 
     move-result v2
 
@@ -239,7 +239,7 @@
     :cond_3
     const-string/jumbo v8, "android.media.browse.extra.PAGE"
 
-    invoke-virtual {p1, v8, v9}, Landroid/os/Bundle;->getInt(Ljava/lang/String;I)I
+    invoke-virtual {p1, v8, v9}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;I)I
 
     move-result v3
 
@@ -250,7 +250,7 @@
     :cond_4
     const-string/jumbo v8, "android.media.browse.extra.PAGE_SIZE"
 
-    invoke-virtual {p0, v8, v9}, Landroid/os/Bundle;->getInt(Ljava/lang/String;I)I
+    invoke-virtual {p0, v8, v9}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;I)I
 
     move-result v4
 
@@ -261,7 +261,7 @@
     :cond_5
     const-string/jumbo v8, "android.media.browse.extra.PAGE_SIZE"
 
-    invoke-virtual {p1, v8, v9}, Landroid/os/Bundle;->getInt(Ljava/lang/String;I)I
+    invoke-virtual {p1, v8, v9}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;I)I
 
     move-result v5
 

@@ -76,7 +76,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0, v1}, Landroid/preference/CheckBoxPreference;->setSummaryOn(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v1}, Landroid/preference/TwoStatePreference;->setSummaryOn(Ljava/lang/CharSequence;)V
 
     .line 48
     const/4 v1, 0x1
@@ -85,7 +85,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0, v1}, Landroid/preference/CheckBoxPreference;->setSummaryOff(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v1}, Landroid/preference/TwoStatePreference;->setSummaryOff(Ljava/lang/CharSequence;)V
 
     .line 50
     const/4 v1, 0x2
@@ -95,7 +95,7 @@
 
     move-result v1
 
-    invoke-virtual {p0, v1}, Landroid/preference/CheckBoxPreference;->setDisableDependentsState(Z)V
+    invoke-virtual {p0, v1}, Landroid/preference/TwoStatePreference;->setDisableDependentsState(Z)V
 
     .line 51
     invoke-virtual {v0}, Landroid/content/res/TypedArray;->recycle()V
@@ -133,13 +133,13 @@
     check-cast v0, Landroid/widget/Checkable;
 
     .end local v0    # "checkboxView":Landroid/view/View;
-    iget-boolean v1, p0, Landroid/preference/CheckBoxPreference;->mChecked:Z
+    iget-boolean v1, p0, Landroid/preference/TwoStatePreference;->mChecked:Z
 
     invoke-interface {v0, v1}, Landroid/widget/Checkable;->setChecked(Z)V
 
     .line 71
     :cond_0
-    invoke-virtual {p0, p1}, Landroid/preference/CheckBoxPreference;->syncSummaryView(Landroid/view/View;)V
+    invoke-virtual {p0, p1}, Landroid/preference/TwoStatePreference;->syncSummaryView(Landroid/view/View;)V
 
     .line 63
     return-void

@@ -123,6 +123,8 @@
     <string name="tethered_notification_no_device_message">接続しているデバイスはありません</string>
     <string name="tethered_notification_one_device_message">%1$s台のデバイスが接続しています</string>
     <string name="tethered_notification_multi_device_message">%1$s台のデバイスが接続しています</string>
+    <string name="silent_mode_priority">優先順位</string>
+    <string name="silent_mode_none">なし</string>
     <string name="month_day_year" formatted="false">%Y年%-m月%-e日</string>
     <string name="time_of_day" formatted="false">%-k:%M:%S</string>
     <string name="date_and_time" formatted="false">%Y/%m/%d %-k:%M:%S</string>

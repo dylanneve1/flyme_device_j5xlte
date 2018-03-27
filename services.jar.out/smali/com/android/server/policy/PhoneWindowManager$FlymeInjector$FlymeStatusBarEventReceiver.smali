@@ -24,13 +24,13 @@
     .param p1, "pwm"    # Lcom/android/server/policy/PhoneWindowManager;
 
     .prologue
-    .line 8711
+    .line 8637
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
-    .line 8712
+    .line 8638
     iput-object p1, p0, Lcom/android/server/policy/PhoneWindowManager$FlymeInjector$FlymeStatusBarEventReceiver;->mPwm:Lcom/android/server/policy/PhoneWindowManager;
 
-    .line 8711
+    .line 8637
     return-void
 .end method
 
@@ -42,12 +42,12 @@
     .param p2, "intent"    # Landroid/content/Intent;
 
     .prologue
-    .line 8717
+    .line 8643
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 8718
+    .line 8644
     .local v0, "action":Ljava/lang/String;
     const-string/jumbo v1, "meizu.intent.action.REQUEST_TRANSIENT_STATUSBAR"
 
@@ -57,14 +57,14 @@
 
     if-eqz v1, :cond_0
 
-    .line 8719
+    .line 8645
     iget-object v1, p0, Lcom/android/server/policy/PhoneWindowManager$FlymeInjector$FlymeStatusBarEventReceiver;->mPwm:Lcom/android/server/policy/PhoneWindowManager;
 
     iget-object v1, v1, Lcom/android/server/policy/PhoneWindowManager;->mStatusBar:Landroid/view/WindowManagerPolicy$WindowState;
 
     if-eqz v1, :cond_0
 
-    .line 8720
+    .line 8646
     iget-object v1, p0, Lcom/android/server/policy/PhoneWindowManager$FlymeInjector$FlymeStatusBarEventReceiver;->mPwm:Lcom/android/server/policy/PhoneWindowManager;
 
     iget-object v2, p0, Lcom/android/server/policy/PhoneWindowManager$FlymeInjector$FlymeStatusBarEventReceiver;->mPwm:Lcom/android/server/policy/PhoneWindowManager;
@@ -73,7 +73,7 @@
 
     invoke-virtual {v1, v2}, Lcom/android/server/policy/PhoneWindowManager;->flymeInvokeMethodRequestTransientBars(Landroid/view/WindowManagerPolicy$WindowState;)V
 
-    .line 8716
+    .line 8642
     :cond_0
     return-void
 .end method

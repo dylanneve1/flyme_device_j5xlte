@@ -34,7 +34,7 @@
 
 .field static final TRANSACTION_startConfirmation:I = 0x1
 
-.field static final TRANSACTION_startPickOption_1:I = 0x2
+.field static final TRANSACTION_startPickOption:I = 0x2
 
 .field static final TRANSACTION_supportsCommands:I = 0x6
 

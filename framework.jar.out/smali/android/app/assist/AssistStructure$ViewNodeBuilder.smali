@@ -241,7 +241,7 @@
     :cond_1
     iget-object v0, p0, Landroid/app/assist/AssistStructure$ViewNodeBuilder;->mAssist:Landroid/app/assist/AssistStructure;
 
-    invoke-virtual {v0}, Landroid/app/assist/AssistStructure;->notifyAll()V
+    invoke-virtual {v0}, Ljava/lang/Object;->notifyAll()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 

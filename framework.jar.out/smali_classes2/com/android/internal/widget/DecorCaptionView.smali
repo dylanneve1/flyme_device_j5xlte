@@ -258,11 +258,11 @@
     const/4 v0, 0x0
 
     .line 335
-    invoke-virtual {p0}, Lcom/android/internal/widget/DecorCaptionView;->getWindowSystemUiVisibility()I
+    invoke-virtual {p0}, Landroid/view/View;->getWindowSystemUiVisibility()I
 
     move-result v1
 
-    invoke-virtual {p0}, Lcom/android/internal/widget/DecorCaptionView;->getSystemUiVisibility()I
+    invoke-virtual {p0}, Landroid/view/View;->getSystemUiVisibility()I
 
     move-result v2
 
@@ -285,7 +285,7 @@
     .line 354
     iget-object v2, p0, Lcom/android/internal/widget/DecorCaptionView;->mOwner:Lcom/android/internal/policy/PhoneWindow;
 
-    invoke-virtual {v2}, Lcom/android/internal/policy/PhoneWindow;->getWindowControllerCallback()Landroid/view/Window$WindowControllerCallback;
+    invoke-virtual {v2}, Landroid/view/Window;->getWindowControllerCallback()Landroid/view/Window$WindowControllerCallback;
 
     move-result-object v0
 
@@ -467,7 +467,7 @@
     :cond_0
     if-ge p2, v1, :cond_1
 
-    invoke-virtual {p0}, Lcom/android/internal/widget/DecorCaptionView;->getChildCount()I
+    invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
     move-result v0
 
@@ -581,7 +581,7 @@
     .line 385
     new-instance v0, Landroid/view/ViewGroup$MarginLayoutParams;
 
-    invoke-virtual {p0}, Lcom/android/internal/widget/DecorCaptionView;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -683,7 +683,7 @@
     .line 133
     const/4 v0, 0x0
 
-    invoke-virtual {p0, v0}, Lcom/android/internal/widget/DecorCaptionView;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -908,7 +908,7 @@
     move-result v5
 
     .line 327
-    invoke-virtual {v1, v2, v3, v4, v5}, Lcom/android/internal/policy/PhoneWindow;->notifyRestrictedCaptionAreaCallback(IIII)V
+    invoke-virtual {v1, v2, v3, v4, v5}, Landroid/view/Window;->notifyRestrictedCaptionAreaCallback(IIII)V
 
     .line 304
     return-void
@@ -995,7 +995,7 @@
 
     move v5, v3
 
-    invoke-virtual/range {v0 .. v5}, Lcom/android/internal/widget/DecorCaptionView;->measureChildWithMargins(Landroid/view/View;IIII)V
+    invoke-virtual/range {v0 .. v5}, Landroid/view/ViewGroup;->measureChildWithMargins(Landroid/view/View;IIII)V
 
     .line 286
     iget-object v0, p0, Lcom/android/internal/widget/DecorCaptionView;->mCaption:Landroid/view/View;
@@ -1027,7 +1027,7 @@
 
     move v5, v3
 
-    invoke-virtual/range {v0 .. v5}, Lcom/android/internal/widget/DecorCaptionView;->measureChildWithMargins(Landroid/view/View;IIII)V
+    invoke-virtual/range {v0 .. v5}, Landroid/view/ViewGroup;->measureChildWithMargins(Landroid/view/View;IIII)V
 
     .line 299
     .end local v5    # "captionHeight":I
@@ -1043,7 +1043,7 @@
     move-result v1
 
     .line 299
-    invoke-virtual {p0, v0, v1}, Lcom/android/internal/widget/DecorCaptionView;->setMeasuredDimension(II)V
+    invoke-virtual {p0, v0, v1}, Landroid/view/View;->setMeasuredDimension(II)V
 
     .line 282
     return-void
@@ -1065,7 +1065,7 @@
 
     move v4, p2
 
-    invoke-virtual/range {v0 .. v5}, Lcom/android/internal/widget/DecorCaptionView;->measureChildWithMargins(Landroid/view/View;IIII)V
+    invoke-virtual/range {v0 .. v5}, Landroid/view/ViewGroup;->measureChildWithMargins(Landroid/view/View;IIII)V
 
     goto :goto_1
 .end method
@@ -1130,7 +1130,7 @@
     const/4 v1, 0x0
 
     .line 419
-    invoke-virtual {v0, v2, v1}, Lcom/android/internal/policy/PhoneWindow;->dispatchOnWindowDismissed(ZZ)V
+    invoke-virtual {v0, v2, v1}, Landroid/view/Window;->dispatchOnWindowDismissed(ZZ)V
 
     goto :goto_0
 .end method
@@ -1258,7 +1258,7 @@
 
     move-result v4
 
-    invoke-virtual {p0, v2, v4}, Lcom/android/internal/widget/DecorCaptionView;->startMovingTask(FF)Z
+    invoke-virtual {p0, v2, v4}, Landroid/view/View;->startMovingTask(FF)Z
 
     goto :goto_0
 
@@ -1393,7 +1393,7 @@
     .line 374
     iget-object v0, p0, Lcom/android/internal/widget/DecorCaptionView;->mContent:Landroid/view/View;
 
-    invoke-virtual {p0, v0}, Lcom/android/internal/widget/DecorCaptionView;->removeView(Landroid/view/View;)V
+    invoke-virtual {p0, v0}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
 
     .line 375
     iput-object v1, p0, Lcom/android/internal/widget/DecorCaptionView;->mContent:Landroid/view/View;
@@ -1416,7 +1416,7 @@
     iput-boolean p2, p0, Lcom/android/internal/widget/DecorCaptionView;->mShow:Z
 
     .line 139
-    invoke-virtual {p1}, Lcom/android/internal/policy/PhoneWindow;->isOverlayWithDecorCaptionEnabled()Z
+    invoke-virtual {p1}, Landroid/view/Window;->isOverlayWithDecorCaptionEnabled()Z
 
     move-result v0
 
@@ -1452,7 +1452,7 @@
     .line 149
     const v0, 0x1020364
 
-    invoke-virtual {p0, v0}, Lcom/android/internal/widget/DecorCaptionView;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -1461,7 +1461,7 @@
     .line 150
     const v0, 0x1020365
 
-    invoke-virtual {p0, v0}, Lcom/android/internal/widget/DecorCaptionView;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 

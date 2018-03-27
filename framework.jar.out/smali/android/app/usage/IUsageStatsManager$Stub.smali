@@ -32,11 +32,11 @@
 
 .field static final TRANSACTION_queryConfigurationStats:I = 0x2
 
-.field static final TRANSACTION_queryEvents_2:I = 0x3
+.field static final TRANSACTION_queryEvents:I = 0x3
 
 .field static final TRANSACTION_queryUsageStats:I = 0x1
 
-.field static final TRANSACTION_setAppInactive_3:I = 0x4
+.field static final TRANSACTION_setAppInactive:I = 0x4
 
 .field static final TRANSACTION_whitelistAppTemporarily:I = 0x6
 

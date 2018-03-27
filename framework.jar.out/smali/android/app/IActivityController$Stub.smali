@@ -30,11 +30,11 @@
 
 .field static final TRANSACTION_activityStarting_0:I = 0x1
 
-.field static final TRANSACTION_appCrashed_2:I = 0x3
+.field static final TRANSACTION_appCrashed:I = 0x3
 
-.field static final TRANSACTION_appEarlyNotResponding_3:I = 0x4
+.field static final TRANSACTION_appEarlyNotResponding:I = 0x4
 
-.field static final TRANSACTION_appNotResponding_4:I = 0x5
+.field static final TRANSACTION_appNotResponding:I = 0x5
 
 .field static final TRANSACTION_systemNotResponding_5:I = 0x6
 
@@ -50,7 +50,7 @@
     .line 20
     const-string/jumbo v0, "android.app.IActivityController"
 
-    invoke-virtual {p0, p0, v0}, Landroid/app/IActivityController$Stub;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
+    invoke-virtual {p0, p0, v0}, Landroid/os/Binder;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
 
     .line 18
     return-void

@@ -38,15 +38,15 @@
 
 .field static final TRANSACTION_setClient:I = 0x1
 
-.field static final TRANSACTION_startPrinterDiscovery_4:I = 0x5
+.field static final TRANSACTION_startPrinterDiscovery:I = 0x5
 
-.field static final TRANSACTION_startPrinterStateTracking_7:I = 0x8
+.field static final TRANSACTION_startPrinterStateTracking:I = 0x8
 
-.field static final TRANSACTION_stopPrinterDiscovery_5:I = 0x6
+.field static final TRANSACTION_stopPrinterDiscovery:I = 0x6
 
 .field static final TRANSACTION_stopPrinterStateTracking:I = 0xa
 
-.field static final TRANSACTION_validatePrinters_6:I = 0x7
+.field static final TRANSACTION_validatePrinters:I = 0x7
 
 
 # direct methods
@@ -60,7 +60,7 @@
     .line 20
     const-string/jumbo v0, "android.printservice.IPrintService"
 
-    invoke-virtual {p0, p0, v0}, Landroid/printservice/IPrintService$Stub;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
+    invoke-virtual {p0, p0, v0}, Landroid/os/Binder;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
 
     .line 18
     return-void

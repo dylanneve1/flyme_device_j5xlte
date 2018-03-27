@@ -337,7 +337,9 @@
 
     .line 995
     :cond_0
-    check-cast v1, Ljava/lang/String;
+    nop
+
+    nop
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 

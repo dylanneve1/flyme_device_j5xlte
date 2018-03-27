@@ -264,7 +264,7 @@
 
     check-cast v0, Landroid/filterfw/GraphEnvironment$GraphHandle;
 
-    invoke-virtual {p0}, Landroid/filterfw/GraphEnvironment;->getContext()Landroid/filterfw/core/FilterContext;
+    invoke-virtual {p0}, Landroid/filterfw/MffEnvironment;->getContext()Landroid/filterfw/core/FilterContext;
 
     move-result-object v1
 
@@ -284,7 +284,7 @@
 
     check-cast v0, Landroid/filterfw/GraphEnvironment$GraphHandle;
 
-    invoke-virtual {p0}, Landroid/filterfw/GraphEnvironment;->getContext()Landroid/filterfw/core/FilterContext;
+    invoke-virtual {p0}, Landroid/filterfw/MffEnvironment;->getContext()Landroid/filterfw/core/FilterContext;
 
     move-result-object v1
 
@@ -351,7 +351,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v0}, Landroid/filterfw/io/GraphIOException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v4
 

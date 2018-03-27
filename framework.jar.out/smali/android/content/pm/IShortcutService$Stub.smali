@@ -26,7 +26,7 @@
 # static fields
 .field private static final DESCRIPTOR:Ljava/lang/String; = "android.content.pm.IShortcutService"
 
-.field static final TRANSACTION_addDynamicShortcuts_3:I = 0x4
+.field static final TRANSACTION_addDynamicShortcuts:I = 0x4
 
 .field static final TRANSACTION_applyRestore:I = 0x13
 
@@ -52,9 +52,9 @@
 
 .field static final TRANSACTION_onApplicationActive:I = 0x11
 
-.field static final TRANSACTION_removeAllDynamicShortcuts_5:I = 0x6
+.field static final TRANSACTION_removeAllDynamicShortcuts:I = 0x6
 
-.field static final TRANSACTION_removeDynamicShortcuts_4:I = 0x5
+.field static final TRANSACTION_removeDynamicShortcuts:I = 0x5
 
 .field static final TRANSACTION_reportShortcutUsed:I = 0xf
 

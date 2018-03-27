@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/server/policy/PhoneWindowManager;
 
     .prologue
-    .line 9208
+    .line 9209
     iput-object p1, p0, Lcom/android/server/policy/PhoneWindowManager$TorchModeCallback;->this$0:Lcom/android/server/policy/PhoneWindowManager;
 
     invoke-direct {p0}, Landroid/hardware/camera2/CameraManager$TorchCallback;-><init>()V
@@ -50,7 +50,7 @@
     .param p2, "enabled"    # Z
 
     .prologue
-    .line 9211
+    .line 9212
     iget-object v0, p0, Lcom/android/server/policy/PhoneWindowManager$TorchModeCallback;->this$0:Lcom/android/server/policy/PhoneWindowManager;
 
     invoke-static {v0}, Lcom/android/server/policy/PhoneWindowManager;->-get5(Lcom/android/server/policy/PhoneWindowManager;)Ljava/lang/String;
@@ -65,13 +65,13 @@
 
     return-void
 
-    .line 9212
+    .line 9213
     :cond_0
     iget-object v0, p0, Lcom/android/server/policy/PhoneWindowManager$TorchModeCallback;->this$0:Lcom/android/server/policy/PhoneWindowManager;
 
     invoke-static {v0, p2}, Lcom/android/server/policy/PhoneWindowManager;->-set1(Lcom/android/server/policy/PhoneWindowManager;Z)Z
 
-    .line 9213
+    .line 9214
     iget-object v0, p0, Lcom/android/server/policy/PhoneWindowManager$TorchModeCallback;->this$0:Lcom/android/server/policy/PhoneWindowManager;
 
     invoke-static {v0}, Lcom/android/server/policy/PhoneWindowManager;->-get6(Lcom/android/server/policy/PhoneWindowManager;)Z
@@ -80,12 +80,12 @@
 
     if-nez v0, :cond_1
 
-    .line 9214
+    .line 9215
     iget-object v0, p0, Lcom/android/server/policy/PhoneWindowManager$TorchModeCallback;->this$0:Lcom/android/server/policy/PhoneWindowManager;
 
     invoke-static {v0}, Lcom/android/server/policy/PhoneWindowManager;->-wrap7(Lcom/android/server/policy/PhoneWindowManager;)V
 
-    .line 9210
+    .line 9211
     :cond_1
     return-void
 .end method
@@ -95,7 +95,7 @@
     .param p1, "cameraId"    # Ljava/lang/String;
 
     .prologue
-    .line 9220
+    .line 9221
     iget-object v0, p0, Lcom/android/server/policy/PhoneWindowManager$TorchModeCallback;->this$0:Lcom/android/server/policy/PhoneWindowManager;
 
     invoke-static {v0}, Lcom/android/server/policy/PhoneWindowManager;->-get5(Lcom/android/server/policy/PhoneWindowManager;)Ljava/lang/String;
@@ -110,7 +110,7 @@
 
     return-void
 
-    .line 9221
+    .line 9222
     :cond_0
     iget-object v0, p0, Lcom/android/server/policy/PhoneWindowManager$TorchModeCallback;->this$0:Lcom/android/server/policy/PhoneWindowManager;
 
@@ -118,11 +118,11 @@
 
     invoke-static {v0, v1}, Lcom/android/server/policy/PhoneWindowManager;->-set1(Lcom/android/server/policy/PhoneWindowManager;Z)Z
 
-    .line 9222
+    .line 9223
     iget-object v0, p0, Lcom/android/server/policy/PhoneWindowManager$TorchModeCallback;->this$0:Lcom/android/server/policy/PhoneWindowManager;
 
     invoke-static {v0}, Lcom/android/server/policy/PhoneWindowManager;->-wrap7(Lcom/android/server/policy/PhoneWindowManager;)V
 
-    .line 9219
+    .line 9220
     return-void
 .end method

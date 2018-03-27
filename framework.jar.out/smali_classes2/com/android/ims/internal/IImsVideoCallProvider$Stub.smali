@@ -34,19 +34,19 @@
 
 .field static final TRANSACTION_sendSessionModifyResponse:I = 0x8
 
-.field static final TRANSACTION_setCallback_0:I = 0x1
+.field static final TRANSACTION_setCallback:I = 0x1
 
-.field static final TRANSACTION_setCamera_1:I = 0x2
+.field static final TRANSACTION_setCamera:I = 0x2
 
-.field static final TRANSACTION_setDeviceOrientation_4:I = 0x5
+.field static final TRANSACTION_setDeviceOrientation:I = 0x5
 
-.field static final TRANSACTION_setDisplaySurface_3:I = 0x4
+.field static final TRANSACTION_setDisplaySurface:I = 0x4
 
 .field static final TRANSACTION_setPauseImage:I = 0xb
 
 .field static final TRANSACTION_setPreviewSurface_2:I = 0x3
 
-.field static final TRANSACTION_setZoom_5:I = 0x6
+.field static final TRANSACTION_setZoom:I = 0x6
 
 
 # direct methods
@@ -60,7 +60,7 @@
     .line 33
     const-string/jumbo v0, "com.android.ims.internal.IImsVideoCallProvider"
 
-    invoke-virtual {p0, p0, v0}, Lcom/android/ims/internal/IImsVideoCallProvider$Stub;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
+    invoke-virtual {p0, p0, v0}, Landroid/os/Binder;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
 
     .line 31
     return-void

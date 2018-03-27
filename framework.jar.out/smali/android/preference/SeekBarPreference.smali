@@ -126,7 +126,7 @@
     invoke-virtual {v0}, Landroid/content/res/TypedArray;->recycle()V
 
     .line 55
-    invoke-virtual {p0, v1}, Landroid/preference/SeekBarPreference;->setLayoutResource(I)V
+    invoke-virtual {p0, v1}, Landroid/preference/Preference;->setLayoutResource(I)V
 
     .line 40
     return-void
@@ -163,13 +163,13 @@
     iput p1, p0, Landroid/preference/SeekBarPreference;->mProgress:I
 
     .line 130
-    invoke-virtual {p0, p1}, Landroid/preference/SeekBarPreference;->persistInt(I)Z
+    invoke-virtual {p0, p1}, Landroid/preference/Preference;->persistInt(I)Z
 
     .line 131
     if-eqz p2, :cond_2
 
     .line 132
-    invoke-virtual {p0}, Landroid/preference/SeekBarPreference;->notifyChanged()V
+    invoke-virtual {p0}, Landroid/preference/Preference;->notifyChanged()V
 
     .line 121
     :cond_2
@@ -207,7 +207,7 @@
     invoke-super {p0, p1}, Landroid/preference/Preference;->onBindView(Landroid/view/View;)V
 
     .line 74
-    const v1, 0x10203d8
+    const v1, 0x10203d7
 
     .line 73
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -223,19 +223,19 @@
     .line 76
     iget v1, p0, Landroid/preference/SeekBarPreference;->mMax:I
 
-    invoke-virtual {v0, v1}, Landroid/widget/SeekBar;->setMax(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/AbsSeekBar;->setMax(I)V
 
     .line 77
     iget v1, p0, Landroid/preference/SeekBarPreference;->mProgress:I
 
-    invoke-virtual {v0, v1}, Landroid/widget/SeekBar;->setProgress(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/ProgressBar;->setProgress(I)V
 
     .line 78
-    invoke-virtual {p0}, Landroid/preference/SeekBarPreference;->isEnabled()Z
+    invoke-virtual {p0}, Landroid/preference/Preference;->isEnabled()Z
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Landroid/widget/SeekBar;->setEnabled(Z)V
+    invoke-virtual {v0, v1}, Landroid/view/View;->setEnabled(Z)V
 
     .line 71
     return-void
@@ -282,7 +282,7 @@
 
     .line 103
     :cond_0
-    const v1, 0x10203d8
+    const v1, 0x10203d7
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -299,7 +299,7 @@
 
     .line 107
     :cond_1
-    invoke-virtual {v0, p2, p3}, Landroid/widget/SeekBar;->onKeyDown(ILandroid/view/KeyEvent;)Z
+    invoke-virtual {v0, p2, p3}, Landroid/widget/AbsSeekBar;->onKeyDown(ILandroid/view/KeyEvent;)Z
 
     move-result v1
 
@@ -344,7 +344,7 @@
 
     const-class v2, Landroid/preference/SeekBarPreference$SavedState;
 
-    invoke-virtual {v1, v2}, Ljava/lang/Class;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v1, v2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -364,7 +364,7 @@
 
     .line 208
     .local v0, "myState":Landroid/preference/SeekBarPreference$SavedState;
-    invoke-virtual {v0}, Landroid/preference/SeekBarPreference$SavedState;->getSuperState()Landroid/os/Parcelable;
+    invoke-virtual {v0}, Landroid/view/AbsSavedState;->getSuperState()Landroid/os/Parcelable;
 
     move-result-object v1
 
@@ -381,7 +381,7 @@
     iput v1, p0, Landroid/preference/SeekBarPreference;->mMax:I
 
     .line 211
-    invoke-virtual {p0}, Landroid/preference/SeekBarPreference;->notifyChanged()V
+    invoke-virtual {p0}, Landroid/preference/Preference;->notifyChanged()V
 
     .line 199
     return-void
@@ -398,7 +398,7 @@
 
     .line 186
     .local v1, "superState":Landroid/os/Parcelable;
-    invoke-virtual {p0}, Landroid/preference/SeekBarPreference;->isPersistent()Z
+    invoke-virtual {p0}, Landroid/preference/Preference;->isPersistent()Z
 
     move-result v2
 
@@ -439,7 +439,7 @@
 
     iget v0, p0, Landroid/preference/SeekBarPreference;->mProgress:I
 
-    invoke-virtual {p0, v0}, Landroid/preference/SeekBarPreference;->getPersistedInt(I)I
+    invoke-virtual {p0, v0}, Landroid/preference/Preference;->getPersistedInt(I)I
 
     move-result v0
 
@@ -488,7 +488,7 @@
     iput-boolean v0, p0, Landroid/preference/SeekBarPreference;->mTrackingTouch:Z
 
     .line 172
-    invoke-virtual {p1}, Landroid/widget/SeekBar;->getProgress()I
+    invoke-virtual {p1}, Landroid/widget/ProgressBar;->getProgress()I
 
     move-result v0
 
@@ -518,7 +518,7 @@
     iput p1, p0, Landroid/preference/SeekBarPreference;->mMax:I
 
     .line 113
-    invoke-virtual {p0}, Landroid/preference/SeekBarPreference;->notifyChanged()V
+    invoke-virtual {p0}, Landroid/preference/Preference;->notifyChanged()V
 
     .line 110
     :cond_0
@@ -545,7 +545,7 @@
 
     .prologue
     .line 146
-    invoke-virtual {p1}, Landroid/widget/SeekBar;->getProgress()I
+    invoke-virtual {p1}, Landroid/widget/ProgressBar;->getProgress()I
 
     move-result v0
 
@@ -560,7 +560,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0, v1}, Landroid/preference/SeekBarPreference;->callChangeListener(Ljava/lang/Object;)Z
+    invoke-virtual {p0, v1}, Landroid/preference/Preference;->callChangeListener(Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -580,7 +580,7 @@
     :cond_1
     iget v1, p0, Landroid/preference/SeekBarPreference;->mProgress:I
 
-    invoke-virtual {p1, v1}, Landroid/widget/SeekBar;->setProgress(I)V
+    invoke-virtual {p1, v1}, Landroid/widget/ProgressBar;->setProgress(I)V
 
     goto :goto_0
 .end method

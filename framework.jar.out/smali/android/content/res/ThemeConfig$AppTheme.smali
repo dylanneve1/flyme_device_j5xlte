@@ -176,7 +176,9 @@
     move-object v6, p1
 
     .line 332
-    check-cast v6, Landroid/content/res/ThemeConfig$AppTheme;
+    nop
+
+    nop
 
     .line 333
     .local v6, "o":Landroid/content/res/ThemeConfig$AppTheme;

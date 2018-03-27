@@ -226,7 +226,7 @@
     :cond_3
     const-class v6, Landroid/security/keystore/KeyInfo;
 
-    invoke-virtual {v6, p2}, Ljava/lang/Class;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v6, p2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result v6
 
@@ -284,11 +284,13 @@
     move-object v3, p1
 
     .line 65
-    check-cast v3, Landroid/security/keystore/AndroidKeyStorePrivateKey;
+    nop
+
+    nop
 
     .line 66
     .local v3, "keystorePrivateKey":Landroid/security/keystore/AndroidKeyStorePrivateKey;
-    invoke-virtual {v3}, Landroid/security/keystore/AndroidKeyStorePrivateKey;->getAlias()Ljava/lang/String;
+    invoke-virtual {v3}, Landroid/security/keystore/AndroidKeyStoreKey;->getAlias()Ljava/lang/String;
 
     move-result-object v2
 
@@ -317,7 +319,7 @@
     .local v1, "entryAlias":Ljava/lang/String;
     iget-object v6, p0, Landroid/security/keystore/AndroidKeyStoreKeyFactorySpi;->mKeyStore:Landroid/security/KeyStore;
 
-    invoke-virtual {v3}, Landroid/security/keystore/AndroidKeyStorePrivateKey;->getUid()I
+    invoke-virtual {v3}, Landroid/security/keystore/AndroidKeyStoreKey;->getUid()I
 
     move-result v7
 
@@ -364,7 +366,7 @@
     :cond_6
     const-class v6, Ljava/security/spec/X509EncodedKeySpec;
 
-    invoke-virtual {v6, p2}, Ljava/lang/Class;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v6, p2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result v6
 
@@ -430,7 +432,9 @@
     :cond_7
     new-instance v4, Ljava/security/spec/X509EncodedKeySpec;
 
-    check-cast p1, Landroid/security/keystore/AndroidKeyStorePublicKey;
+    nop
+
+    nop
 
     .end local p1    # "key":Ljava/security/Key;
     invoke-virtual {p1}, Landroid/security/keystore/AndroidKeyStorePublicKey;->getEncoded()[B
@@ -449,7 +453,7 @@
     :cond_8
     const-class v6, Ljava/security/spec/PKCS8EncodedKeySpec;
 
-    invoke-virtual {v6, p2}, Ljava/lang/Class;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v6, p2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result v6
 
@@ -487,7 +491,7 @@
     :cond_a
     const-class v6, Ljava/security/spec/RSAPublicKeySpec;
 
-    invoke-virtual {v6, p2}, Ljava/lang/Class;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v6, p2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result v6
 
@@ -501,7 +505,9 @@
     move-object v5, p1
 
     .line 98
-    check-cast v5, Landroid/security/keystore/AndroidKeyStoreRSAPublicKey;
+    nop
+
+    nop
 
     .line 101
     .local v5, "rsaKey":Landroid/security/keystore/AndroidKeyStoreRSAPublicKey;
@@ -592,7 +598,7 @@
     :cond_d
     const-class v6, Ljava/security/spec/ECPublicKeySpec;
 
-    invoke-virtual {v6, p2}, Ljava/lang/Class;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v6, p2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result v6
 
@@ -606,7 +612,9 @@
     move-object v0, p1
 
     .line 111
-    check-cast v0, Landroid/security/keystore/AndroidKeyStoreECPublicKey;
+    nop
+
+    nop
 
     .line 113
     .local v0, "ecKey":Landroid/security/keystore/AndroidKeyStoreECPublicKey;

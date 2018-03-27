@@ -220,7 +220,9 @@
     if-eqz v1, :cond_2
 
     .line 87
-    check-cast p1, Landroid/widget/Chronometer;
+    nop
+
+    nop
 
     .end local p1    # "child":Landroid/view/View;
     iput-object p1, p0, Lcom/android/internal/widget/TextProgressBar;->mChronometer:Landroid/widget/Chronometer;
@@ -245,7 +247,7 @@
     .line 92
     iget-object v1, p0, Lcom/android/internal/widget/TextProgressBar;->mChronometer:Landroid/widget/Chronometer;
 
-    invoke-virtual {v1}, Landroid/widget/Chronometer;->getGravity()I
+    invoke-virtual {v1}, Landroid/widget/TextView;->getGravity()I
 
     move-result v1
 
@@ -280,7 +282,9 @@
     if-eqz v1, :cond_0
 
     .line 96
-    check-cast p1, Landroid/widget/ProgressBar;
+    nop
+
+    nop
 
     .end local p1    # "child":Landroid/view/View;
     iput-object p1, p0, Lcom/android/internal/widget/TextProgressBar;->mProgressBar:Landroid/widget/ProgressBar;
@@ -354,7 +358,7 @@
     .line 153
     iget-object v9, p0, Lcom/android/internal/widget/TextProgressBar;->mProgressBar:Landroid/widget/ProgressBar;
 
-    invoke-virtual {v9}, Landroid/widget/ProgressBar;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    invoke-virtual {v9}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v3
 
@@ -364,13 +368,13 @@
     .local v3, "params":Landroid/widget/RelativeLayout$LayoutParams;
     iget-object v9, p0, Lcom/android/internal/widget/TextProgressBar;->mProgressBar:Landroid/widget/ProgressBar;
 
-    invoke-virtual {v9}, Landroid/widget/ProgressBar;->getWidth()I
+    invoke-virtual {v9}, Landroid/view/View;->getWidth()I
 
     move-result v9
 
-    iget v10, v3, Landroid/widget/RelativeLayout$LayoutParams;->leftMargin:I
+    iget v10, v3, Landroid/view/ViewGroup$MarginLayoutParams;->leftMargin:I
 
-    iget v11, v3, Landroid/widget/RelativeLayout$LayoutParams;->rightMargin:I
+    iget v11, v3, Landroid/view/ViewGroup$MarginLayoutParams;->rightMargin:I
 
     add-int/2addr v10, v11
 
@@ -397,7 +401,7 @@
     div-int/2addr v9, v10
 
     .line 156
-    iget v10, v3, Landroid/widget/RelativeLayout$LayoutParams;->leftMargin:I
+    iget v10, v3, Landroid/view/ViewGroup$MarginLayoutParams;->leftMargin:I
 
     .line 155
     add-int v2, v9, v10
@@ -410,7 +414,7 @@
     .local v0, "adjustLeft":I
     iget-object v9, p0, Lcom/android/internal/widget/TextProgressBar;->mChronometer:Landroid/widget/Chronometer;
 
-    invoke-virtual {v9}, Landroid/widget/Chronometer;->getWidth()I
+    invoke-virtual {v9}, Landroid/view/View;->getWidth()I
 
     move-result v8
 
@@ -431,7 +435,7 @@
     add-int/2addr v2, v0
 
     .line 169
-    iget v9, v3, Landroid/widget/RelativeLayout$LayoutParams;->rightMargin:I
+    iget v9, v3, Landroid/view/ViewGroup$MarginLayoutParams;->rightMargin:I
 
     sub-int v9, v1, v9
 
@@ -439,19 +443,19 @@
 
     .line 170
     .local v7, "rightLimit":I
-    iget v9, v3, Landroid/widget/RelativeLayout$LayoutParams;->leftMargin:I
+    iget v9, v3, Landroid/view/ViewGroup$MarginLayoutParams;->leftMargin:I
 
     if-ge v2, v9, :cond_6
 
     .line 171
-    iget v2, v3, Landroid/widget/RelativeLayout$LayoutParams;->leftMargin:I
+    iget v2, v3, Landroid/view/ViewGroup$MarginLayoutParams;->leftMargin:I
 
     .line 176
     :cond_3
     :goto_1
     iget-object v9, p0, Lcom/android/internal/widget/TextProgressBar;->mChronometer:Landroid/widget/Chronometer;
 
-    invoke-virtual {v9}, Landroid/widget/Chronometer;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    invoke-virtual {v9}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v3
 
@@ -460,12 +464,12 @@
 
     .line 177
     .restart local v3    # "params":Landroid/widget/RelativeLayout$LayoutParams;
-    iput v2, v3, Landroid/widget/RelativeLayout$LayoutParams;->leftMargin:I
+    iput v2, v3, Landroid/view/ViewGroup$MarginLayoutParams;->leftMargin:I
 
     .line 180
     iget-object v9, p0, Lcom/android/internal/widget/TextProgressBar;->mChronometer:Landroid/widget/Chronometer;
 
-    invoke-virtual {v9}, Landroid/widget/Chronometer;->requestLayout()V
+    invoke-virtual {v9}, Landroid/view/View;->requestLayout()V
 
     .line 132
     .end local v0    # "adjustLeft":I

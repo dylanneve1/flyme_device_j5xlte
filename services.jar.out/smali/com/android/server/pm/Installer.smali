@@ -73,7 +73,7 @@
     .end annotation
 
     .prologue
-    .line 247
+    .line 240
     sget-object v2, Landroid/os/Build;->SUPPORTED_ABIS:[Ljava/lang/String;
 
     const/4 v1, 0x0
@@ -85,7 +85,7 @@
 
     aget-object v0, v2, v1
 
-    .line 248
+    .line 241
     .local v0, "abi":Ljava/lang/String;
     invoke-static {v0}, Ldalvik/system/VMRuntime;->getInstructionSet(Ljava/lang/String;)Ljava/lang/String;
 
@@ -97,16 +97,16 @@
 
     if-eqz v4, :cond_0
 
-    .line 249
+    .line 242
     return-void
 
-    .line 247
+    .line 240
     :cond_0
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 252
+    .line 245
     .end local v0    # "abi":Ljava/lang/String;
     :cond_1
     new-instance v1, Lcom/android/internal/os/InstallerConnection$InstallerException;
@@ -207,7 +207,7 @@
     .end annotation
 
     .prologue
-    .line 190
+    .line 183
     iget-object v0, p0, Lcom/android/server/pm/Installer;->mInstaller:Lcom/android/internal/os/InstallerConnection;
 
     const-string/jumbo v1, "clear_app_profiles"
@@ -222,7 +222,7 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/android/internal/os/InstallerConnection;->execute(Ljava/lang/String;[Ljava/lang/Object;)[Ljava/lang/String;
 
-    .line 189
+    .line 182
     return-void
 .end method
 
@@ -314,7 +314,7 @@
     .end annotation
 
     .prologue
-    .line 227
+    .line 220
     iget-object v0, p0, Lcom/android/server/pm/Installer;->mInstaller:Lcom/android/internal/os/InstallerConnection;
 
     const-string/jumbo v1, "createoatdir"
@@ -333,7 +333,7 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/android/internal/os/InstallerConnection;->execute(Ljava/lang/String;[Ljava/lang/Object;)[Ljava/lang/String;
 
-    .line 226
+    .line 219
     return-void
 .end method
 
@@ -350,7 +350,7 @@
     .end annotation
 
     .prologue
-    .line 199
+    .line 192
     iget-object v0, p0, Lcom/android/server/pm/Installer;->mInstaller:Lcom/android/internal/os/InstallerConnection;
 
     const-string/jumbo v1, "create_user_data"
@@ -389,7 +389,7 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/android/internal/os/InstallerConnection;->execute(Ljava/lang/String;[Ljava/lang/Object;)[Ljava/lang/String;
 
-    .line 198
+    .line 191
     return-void
 .end method
 
@@ -405,7 +405,7 @@
     .end annotation
 
     .prologue
-    .line 242
+    .line 235
     iget-object v0, p0, Lcom/android/server/pm/Installer;->mInstaller:Lcom/android/internal/os/InstallerConnection;
 
     const-string/jumbo v1, "delete_odex"
@@ -428,7 +428,7 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/android/internal/os/InstallerConnection;->execute(Ljava/lang/String;[Ljava/lang/Object;)[Ljava/lang/String;
 
-    .line 241
+    .line 234
     return-void
 .end method
 
@@ -503,7 +503,7 @@
     .end annotation
 
     .prologue
-    .line 194
+    .line 187
     iget-object v0, p0, Lcom/android/server/pm/Installer;->mInstaller:Lcom/android/internal/os/InstallerConnection;
 
     const-string/jumbo v1, "destroy_app_profiles"
@@ -518,7 +518,7 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/android/internal/os/InstallerConnection;->execute(Ljava/lang/String;[Ljava/lang/Object;)[Ljava/lang/String;
 
-    .line 193
+    .line 186
     return-void
 .end method
 
@@ -534,7 +534,7 @@
     .end annotation
 
     .prologue
-    .line 203
+    .line 196
     iget-object v0, p0, Lcom/android/server/pm/Installer;->mInstaller:Lcom/android/internal/os/InstallerConnection;
 
     const-string/jumbo v1, "destroy_user_data"
@@ -565,7 +565,7 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/android/internal/os/InstallerConnection;->execute(Ljava/lang/String;[Ljava/lang/Object;)[Ljava/lang/String;
 
-    .line 202
+    .line 195
     return-void
 .end method
 
@@ -698,7 +698,7 @@
     .end annotation
 
     .prologue
-    .line 212
+    .line 205
     iget-object v0, p0, Lcom/android/server/pm/Installer;->mInstaller:Lcom/android/internal/os/InstallerConnection;
 
     const-string/jumbo v1, "freecache"
@@ -721,7 +721,7 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/android/internal/os/InstallerConnection;->execute(Ljava/lang/String;[Ljava/lang/Object;)[Ljava/lang/String;
 
-    .line 211
+    .line 204
     return-void
 .end method
 
@@ -1036,7 +1036,7 @@
     .end annotation
 
     .prologue
-    .line 232
+    .line 225
     iget-object v0, p0, Lcom/android/server/pm/Installer;->mInstaller:Lcom/android/internal/os/InstallerConnection;
 
     const-string/jumbo v1, "linkfile"
@@ -1059,7 +1059,7 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/android/internal/os/InstallerConnection;->execute(Ljava/lang/String;[Ljava/lang/Object;)[Ljava/lang/String;
 
-    .line 231
+    .line 224
     return-void
 .end method
 
@@ -1076,7 +1076,7 @@
     .end annotation
 
     .prologue
-    .line 222
+    .line 215
     iget-object v0, p0, Lcom/android/server/pm/Installer;->mInstaller:Lcom/android/internal/os/InstallerConnection;
 
     const-string/jumbo v1, "linklib"
@@ -1107,7 +1107,7 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/android/internal/os/InstallerConnection;->execute(Ljava/lang/String;[Ljava/lang/Object;)[Ljava/lang/String;
 
-    .line 221
+    .line 214
     return-void
 .end method
 
@@ -1121,10 +1121,10 @@
     .end annotation
 
     .prologue
-    .line 207
+    .line 200
     invoke-static {p1}, Lcom/android/server/pm/Installer;->assertValidInstructionSet(Ljava/lang/String;)V
 
-    .line 208
+    .line 201
     iget-object v0, p0, Lcom/android/server/pm/Installer;->mInstaller:Lcom/android/internal/os/InstallerConnection;
 
     const-string/jumbo v1, "markbootcomplete"
@@ -1139,7 +1139,7 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/android/internal/os/InstallerConnection;->execute(Ljava/lang/String;[Ljava/lang/Object;)[Ljava/lang/String;
 
-    .line 206
+    .line 199
     return-void
 .end method
 
@@ -1228,7 +1228,7 @@
     .end annotation
 
     .prologue
-    .line 237
+    .line 230
     iget-object v0, p0, Lcom/android/server/pm/Installer;->mInstaller:Lcom/android/internal/os/InstallerConnection;
 
     const-string/jumbo v1, "move_ab"
@@ -1251,7 +1251,7 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/android/internal/os/InstallerConnection;->execute(Ljava/lang/String;[Ljava/lang/Object;)[Ljava/lang/String;
 
-    .line 236
+    .line 229
     return-void
 .end method
 
@@ -1344,49 +1344,6 @@
     return-void
 .end method
 
-.method public removeIdmap(Ljava/lang/String;)V
-    .locals 4
-    .param p1, "overlayApkPath"    # Ljava/lang/String;
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Lcom/android/internal/os/InstallerConnection$InstallerException;
-        }
-    .end annotation
-
-    .prologue
-    .line 174
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    const-string/jumbo v1, "rmidmap"
-
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 175
-    .local v0, "builder":Ljava/lang/StringBuilder;
-    const/16 v1, 0x20
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    .line 176
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 177
-    iget-object v1, p0, Lcom/android/server/pm/Installer;->mInstaller:Lcom/android/internal/os/InstallerConnection;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    const/4 v3, 0x0
-
-    new-array v3, v3, [Ljava/lang/Object;
-
-    invoke-virtual {v1, v2, v3}, Lcom/android/internal/os/InstallerConnection;->execute(Ljava/lang/String;[Ljava/lang/Object;)[Ljava/lang/String;
-
-    .line 173
-    return-void
-.end method
-
 .method public restoreconAppData(Ljava/lang/String;Ljava/lang/String;IIILjava/lang/String;)V
     .locals 5
     .param p1, "uuid"    # Ljava/lang/String;
@@ -1465,7 +1422,7 @@
     .end annotation
 
     .prologue
-    .line 186
+    .line 179
     iget-object v0, p0, Lcom/android/server/pm/Installer;->mInstaller:Lcom/android/internal/os/InstallerConnection;
 
     const-string/jumbo v1, "rmpackagedir"
@@ -1480,7 +1437,7 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/android/internal/os/InstallerConnection;->execute(Ljava/lang/String;[Ljava/lang/Object;)[Ljava/lang/String;
 
-    .line 185
+    .line 178
     return-void
 .end method
 
@@ -1495,10 +1452,10 @@
     .end annotation
 
     .prologue
-    .line 181
+    .line 174
     invoke-static {p2}, Lcom/android/server/pm/Installer;->assertValidInstructionSet(Ljava/lang/String;)V
 
-    .line 182
+    .line 175
     iget-object v0, p0, Lcom/android/server/pm/Installer;->mInstaller:Lcom/android/internal/os/InstallerConnection;
 
     const-string/jumbo v1, "rmdex"
@@ -1517,7 +1474,7 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/android/internal/os/InstallerConnection;->execute(Ljava/lang/String;[Ljava/lang/Object;)[Ljava/lang/String;
 
-    .line 180
+    .line 173
     return-void
 .end method
 

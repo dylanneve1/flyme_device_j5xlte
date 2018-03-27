@@ -89,19 +89,19 @@
 
     .prologue
     .line 1284
-    invoke-virtual {p0}, Landroid/media/Cea708CCWidget$ScaledLayout;->getPaddingLeft()I
+    invoke-virtual {p0}, Landroid/view/View;->getPaddingLeft()I
 
     move-result v5
 
     .line 1285
     .local v5, "paddingLeft":I
-    invoke-virtual {p0}, Landroid/media/Cea708CCWidget$ScaledLayout;->getPaddingTop()I
+    invoke-virtual {p0}, Landroid/view/View;->getPaddingTop()I
 
     move-result v6
 
     .line 1286
     .local v6, "paddingTop":I
-    invoke-virtual {p0}, Landroid/media/Cea708CCWidget$ScaledLayout;->getChildCount()I
+    invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
     move-result v3
 
@@ -114,7 +114,7 @@
     if-ge v4, v3, :cond_0
 
     .line 1288
-    invoke-virtual {p0, v4}, Landroid/media/Cea708CCWidget$ScaledLayout;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {p0, v4}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -199,7 +199,7 @@
     .line 1135
     new-instance v0, Landroid/media/Cea708CCWidget$ScaledLayout$ScaledLayoutParams;
 
-    invoke-virtual {p0}, Landroid/media/Cea708CCWidget$ScaledLayout;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -218,19 +218,19 @@
 
     .prologue
     .line 1262
-    invoke-virtual {p0}, Landroid/media/Cea708CCWidget$ScaledLayout;->getPaddingLeft()I
+    invoke-virtual {p0}, Landroid/view/View;->getPaddingLeft()I
 
     move-result v7
 
     .line 1263
     .local v7, "paddingLeft":I
-    invoke-virtual {p0}, Landroid/media/Cea708CCWidget$ScaledLayout;->getPaddingTop()I
+    invoke-virtual {p0}, Landroid/view/View;->getPaddingTop()I
 
     move-result v8
 
     .line 1264
     .local v8, "paddingTop":I
-    invoke-virtual {p0}, Landroid/media/Cea708CCWidget$ScaledLayout;->getChildCount()I
+    invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
     move-result v5
 
@@ -243,7 +243,7 @@
     if-ge v6, v5, :cond_1
 
     .line 1266
-    invoke-virtual {p0, v6}, Landroid/media/Cea708CCWidget$ScaledLayout;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {p0, v6}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -335,13 +335,13 @@
 
     .line 1147
     .local v9, "heightSpecSize":I
-    invoke-virtual/range {p0 .. p0}, Landroid/media/Cea708CCWidget$ScaledLayout;->getPaddingLeft()I
+    invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getPaddingLeft()I
 
     move-result v23
 
     sub-int v23, v22, v23
 
-    invoke-virtual/range {p0 .. p0}, Landroid/media/Cea708CCWidget$ScaledLayout;->getPaddingRight()I
+    invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getPaddingRight()I
 
     move-result v24
 
@@ -349,13 +349,13 @@
 
     .line 1148
     .local v21, "width":I
-    invoke-virtual/range {p0 .. p0}, Landroid/media/Cea708CCWidget$ScaledLayout;->getPaddingTop()I
+    invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getPaddingTop()I
 
     move-result v23
 
     sub-int v23, v9, v23
 
-    invoke-virtual/range {p0 .. p0}, Landroid/media/Cea708CCWidget$ScaledLayout;->getPaddingBottom()I
+    invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getPaddingBottom()I
 
     move-result v24
 
@@ -363,7 +363,7 @@
 
     .line 1152
     .local v8, "height":I
-    invoke-virtual/range {p0 .. p0}, Landroid/media/Cea708CCWidget$ScaledLayout;->getChildCount()I
+    invoke-virtual/range {p0 .. p0}, Landroid/view/ViewGroup;->getChildCount()I
 
     move-result v7
 
@@ -389,7 +389,7 @@
     .line 1155
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v10}, Landroid/media/Cea708CCWidget$ScaledLayout;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {v0, v10}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v4
 
@@ -961,7 +961,7 @@
     .line 1222
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v10}, Landroid/media/Cea708CCWidget$ScaledLayout;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {v0, v10}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v23
 
@@ -1222,7 +1222,7 @@
 
     move/from16 v1, v22
 
-    invoke-virtual {v0, v1, v9}, Landroid/media/Cea708CCWidget$ScaledLayout;->setMeasuredDimension(II)V
+    invoke-virtual {v0, v1, v9}, Landroid/view/View;->setMeasuredDimension(II)V
 
     .line 1144
     return-void

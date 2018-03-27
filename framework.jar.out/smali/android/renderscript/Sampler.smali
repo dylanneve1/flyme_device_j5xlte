@@ -37,7 +37,7 @@
     invoke-direct {p0, p1, p2, p3}, Landroid/renderscript/BaseObj;-><init>(JLandroid/renderscript/RenderScript;)V
 
     .line 54
-    iget-object v0, p0, Landroid/renderscript/Sampler;->guard:Ldalvik/system/CloseGuard;
+    iget-object v0, p0, Landroid/renderscript/BaseObj;->guard:Ldalvik/system/CloseGuard;
 
     const-string/jumbo v1, "destroy"
 

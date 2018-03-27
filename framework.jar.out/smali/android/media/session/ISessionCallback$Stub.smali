@@ -50,13 +50,13 @@
 
 .field static final TRANSACTION_onPlayFromUri:I = 0xa
 
-.field static final TRANSACTION_onPrepareFromMediaId_3:I = 0x4
+.field static final TRANSACTION_onPrepare:I = 0x3
 
-.field static final TRANSACTION_onPrepareFromSearch_4:I = 0x5
+.field static final TRANSACTION_onPrepareFromMediaId:I = 0x4
+
+.field static final TRANSACTION_onPrepareFromSearch:I = 0x5
 
 .field static final TRANSACTION_onPrepareFromUri:I = 0x6
-
-.field static final TRANSACTION_onPrepare_2:I = 0x3
 
 .field static final TRANSACTION_onPrevious:I = 0xf
 

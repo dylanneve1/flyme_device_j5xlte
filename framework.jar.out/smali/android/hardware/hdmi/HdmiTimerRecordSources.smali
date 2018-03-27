@@ -580,16 +580,16 @@
 
     .line 282
     :cond_3
-    iget v0, p2, Landroid/hardware/hdmi/HdmiTimerRecordSources$Time;->mHour:I
+    iget v0, p2, Landroid/hardware/hdmi/HdmiTimerRecordSources$TimeUnit;->mHour:I
 
-    iget v1, p2, Landroid/hardware/hdmi/HdmiTimerRecordSources$Time;->mMinute:I
+    iget v1, p2, Landroid/hardware/hdmi/HdmiTimerRecordSources$TimeUnit;->mMinute:I
 
     invoke-static {v0, v1}, Landroid/hardware/hdmi/HdmiTimerRecordSources;->checkTimeValue(II)V
 
     .line 283
-    iget v0, p3, Landroid/hardware/hdmi/HdmiTimerRecordSources$Duration;->mHour:I
+    iget v0, p3, Landroid/hardware/hdmi/HdmiTimerRecordSources$TimeUnit;->mHour:I
 
-    iget v1, p3, Landroid/hardware/hdmi/HdmiTimerRecordSources$Duration;->mMinute:I
+    iget v1, p3, Landroid/hardware/hdmi/HdmiTimerRecordSources$TimeUnit;->mMinute:I
 
     invoke-static {v0, v1}, Landroid/hardware/hdmi/HdmiTimerRecordSources;->checkDurationValue(II)V
 

@@ -161,7 +161,7 @@
     iput-object v1, p0, Landroid/widget/TextView$Marquee;->mRestartCallback:Landroid/view/Choreographer$FrameCallback;
 
     .line 10224
-    invoke-virtual {p1}, Landroid/widget/TextView;->getContext()Landroid/content/Context;
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -213,7 +213,7 @@
     .line 10292
     iget-object v1, p0, Landroid/widget/TextView$Marquee;->mView:Ljava/lang/ref/WeakReference;
 
-    invoke-virtual {v1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+    invoke-virtual {v1}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -223,7 +223,7 @@
     .local v0, "textView":Landroid/widget/TextView;
     if-eqz v0, :cond_0
 
-    invoke-virtual {v0}, Landroid/widget/TextView;->invalidate()V
+    invoke-virtual {v0}, Landroid/view/View;->invalidate()V
 
     .line 10290
     :cond_0
@@ -375,7 +375,7 @@
     .line 10302
     iget-object v4, p0, Landroid/widget/TextView$Marquee;->mView:Ljava/lang/ref/WeakReference;
 
-    invoke-virtual {v4}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+    invoke-virtual {v4}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     move-result-object v2
 
@@ -402,7 +402,7 @@
     iput v4, p0, Landroid/widget/TextView$Marquee;->mScroll:F
 
     .line 10306
-    invoke-virtual {v2}, Landroid/widget/TextView;->getWidth()I
+    invoke-virtual {v2}, Landroid/view/View;->getWidth()I
 
     move-result v4
 
@@ -483,7 +483,7 @@
     iput v4, p0, Landroid/widget/TextView$Marquee;->mMaxFadeScroll:F
 
     .line 10316
-    invoke-virtual {v2}, Landroid/widget/TextView;->invalidate()V
+    invoke-virtual {v2}, Landroid/view/View;->invalidate()V
 
     .line 10317
     iget-object v4, p0, Landroid/widget/TextView$Marquee;->mChoreographer:Landroid/view/Choreographer;
@@ -562,7 +562,7 @@
     .line 10265
     iget-object v6, p0, Landroid/widget/TextView$Marquee;->mView:Ljava/lang/ref/WeakReference;
 
-    invoke-virtual {v6}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+    invoke-virtual {v6}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     move-result-object v5
 
@@ -572,13 +572,13 @@
     .local v5, "textView":Landroid/widget/TextView;
     if-eqz v5, :cond_2
 
-    invoke-virtual {v5}, Landroid/widget/TextView;->isFocused()Z
+    invoke-virtual {v5}, Landroid/view/View;->isFocused()Z
 
     move-result v6
 
     if-nez v6, :cond_1
 
-    invoke-virtual {v5}, Landroid/widget/TextView;->isSelected()Z
+    invoke-virtual {v5}, Landroid/view/View;->isSelected()Z
 
     move-result v6
 
@@ -646,7 +646,7 @@
 
     .line 10278
     :goto_0
-    invoke-virtual {v5}, Landroid/widget/TextView;->invalidate()V
+    invoke-virtual {v5}, Landroid/view/View;->invalidate()V
 
     .line 10258
     .end local v0    # "currentMs":J

@@ -52,7 +52,7 @@
     .local v2, "startSharedElementTransition":Z
     iget-object v4, p0, Landroid/app/EnterTransitionCoordinator$11;->this$0:Landroid/app/EnterTransitionCoordinator;
 
-    invoke-virtual {v4}, Landroid/app/EnterTransitionCoordinator;->getDecor()Landroid/view/ViewGroup;
+    invoke-virtual {v4}, Landroid/app/ActivityTransitionCoordinator;->getDecor()Landroid/view/ViewGroup;
 
     move-result-object v0
 

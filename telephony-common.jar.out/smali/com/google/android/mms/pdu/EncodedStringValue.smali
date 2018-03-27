@@ -392,10 +392,10 @@
     :try_start_0
     iget-object v2, p0, Lcom/google/android/mms/pdu/EncodedStringValue;->mData:[B
 
-    invoke-virtual {v1, v2}, Ljava/io/ByteArrayOutputStream;->write([B)V
+    invoke-virtual {v1, v2}, Ljava/io/OutputStream;->write([B)V
 
     .line 174
-    invoke-virtual {v1, p1}, Ljava/io/ByteArrayOutputStream;->write([B)V
+    invoke-virtual {v1, p1}, Ljava/io/OutputStream;->write([B)V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -414,7 +414,7 @@
 
     .line 176
     .local v0, "e":Ljava/io/IOException;
-    invoke-virtual {v0}, Ljava/io/IOException;->printStackTrace()V
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     .line 177
     new-instance v2, Ljava/lang/NullPointerException;
@@ -498,12 +498,12 @@
     invoke-static {v3, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 200
-    invoke-virtual {v1}, Ljava/lang/Exception;->printStackTrace()V
+    invoke-virtual {v1}, Ljava/lang/Throwable;->printStackTrace()V
 
     .line 201
     new-instance v3, Ljava/lang/CloneNotSupportedException;
 
-    invoke-virtual {v1}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v4
 

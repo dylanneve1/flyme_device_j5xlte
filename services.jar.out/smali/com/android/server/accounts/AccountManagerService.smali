@@ -221,7 +221,7 @@
     .param p2, "uid"    # I
 
     .prologue
-    .line 5675
+    .line 5679
     invoke-interface {p0, p1, p2}, Landroid/accounts/AccountManagerInternal$OnAppPermissionChangeListener;->onAppPermissionChanged(Landroid/accounts/Account;I)V
 
     .line 0
@@ -235,7 +235,7 @@
     .param p2, "uid"    # I
 
     .prologue
-    .line 5717
+    .line 5721
     invoke-interface {p0, p1, p2}, Landroid/accounts/AccountManagerInternal$OnAppPermissionChangeListener;->onAppPermissionChanged(Landroid/accounts/Account;I)V
 
     .line 0
@@ -1978,17 +1978,17 @@
     .prologue
     const/4 v2, 0x1
 
-    .line 5585
+    .line 5589
     invoke-direct {p0, p2}, Lcom/android/server/accounts/AccountManagerService;->isProfileOwner(I)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 5586
+    .line 5590
     return v2
 
-    .line 5588
+    .line 5592
     :cond_0
     invoke-direct {p0}, Lcom/android/server/accounts/AccountManagerService;->getUserManager()Landroid/os/UserManager;
 
@@ -2002,22 +2002,22 @@
 
     move-result-object v0
 
-    .line 5589
+    .line 5593
     const-string/jumbo v1, "no_modify_accounts"
 
-    .line 5588
+    .line 5592
     invoke-virtual {v0, v1}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 5590
+    .line 5594
     const/4 v0, 0x0
 
     return v0
 
-    .line 5592
+    .line 5596
     :cond_1
     return v2
 .end method
@@ -2033,44 +2033,44 @@
 
     const/4 v7, 0x1
 
-    .line 5597
+    .line 5601
     invoke-direct {p0, p3}, Lcom/android/server/accounts/AccountManagerService;->isProfileOwner(I)Z
 
     move-result v3
 
     if-eqz v3, :cond_0
 
-    .line 5598
+    .line 5602
     return v7
 
-    .line 5600
+    .line 5604
     :cond_0
     iget-object v3, p0, Lcom/android/server/accounts/AccountManagerService;->mContext:Landroid/content/Context;
 
-    .line 5601
+    .line 5605
     const-string/jumbo v5, "device_policy"
 
-    .line 5600
+    .line 5604
     invoke-virtual {v3, v5}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/app/admin/DevicePolicyManager;
 
-    .line 5602
+    .line 5606
     .local v0, "dpm":Landroid/app/admin/DevicePolicyManager;
     invoke-virtual {v0, p1}, Landroid/app/admin/DevicePolicyManager;->getAccountTypesWithManagementDisabledAsUser(I)[Ljava/lang/String;
 
     move-result-object v2
 
-    .line 5603
+    .line 5607
     .local v2, "typesArray":[Ljava/lang/String;
     if-nez v2, :cond_1
 
-    .line 5604
+    .line 5608
     return v7
 
-    .line 5606
+    .line 5610
     :cond_1
     array-length v5, v2
 
@@ -2081,7 +2081,7 @@
 
     aget-object v1, v2, v3
 
-    .line 5607
+    .line 5611
     .local v1, "forbiddenType":Ljava/lang/String;
     invoke-virtual {v1, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -2089,16 +2089,16 @@
 
     if-eqz v6, :cond_2
 
-    .line 5608
+    .line 5612
     return v4
 
-    .line 5606
+    .line 5610
     :cond_2
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_0
 
-    .line 5611
+    .line 5615
     .end local v1    # "forbiddenType":Ljava/lang/String;
     :cond_3
     return v7
@@ -2296,37 +2296,37 @@
 
     const/4 v2, -0x1
 
-    .line 5497
+    .line 5501
     const-string/jumbo v0, "android.permission.MANAGE_USERS"
 
-    .line 5498
+    .line 5502
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
     move-result v1
-
-    .line 5497
-    invoke-static {v0, v1, v2, v3}, Landroid/app/ActivityManager;->checkComponentPermission(Ljava/lang/String;IIZ)I
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 5499
-    const-string/jumbo v0, "android.permission.CREATE_USERS"
-
-    .line 5500
-    invoke-static {}, Landroid/os/Binder;->getCallingUid()I
-
-    move-result v1
-
-    .line 5499
-    invoke-static {v0, v1, v2, v3}, Landroid/app/ActivityManager;->checkComponentPermission(Ljava/lang/String;IIZ)I
-
-    move-result v0
-
-    if-eqz v0, :cond_0
 
     .line 5501
+    invoke-static {v0, v1, v2, v3}, Landroid/app/ActivityManager;->checkComponentPermission(Ljava/lang/String;IIZ)I
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 5503
+    const-string/jumbo v0, "android.permission.CREATE_USERS"
+
+    .line 5504
+    invoke-static {}, Landroid/os/Binder;->getCallingUid()I
+
+    move-result v1
+
+    .line 5503
+    invoke-static {v0, v1, v2, v3}, Landroid/app/ActivityManager;->checkComponentPermission(Ljava/lang/String;IIZ)I
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 5505
     new-instance v0, Ljava/lang/SecurityException;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -2351,7 +2351,7 @@
 
     throw v0
 
-    .line 5496
+    .line 5500
     :cond_0
     return-void
 .end method
@@ -2361,7 +2361,7 @@
     .param p0, "message"    # Ljava/lang/String;
 
     .prologue
-    .line 5490
+    .line 5494
     const-string/jumbo v0, "android.permission.MANAGE_USERS"
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
@@ -2372,14 +2372,14 @@
 
     const/4 v3, 0x1
 
-    .line 5489
+    .line 5493
     invoke-static {v0, v1, v2, v3}, Landroid/app/ActivityManager;->checkComponentPermission(Ljava/lang/String;IIZ)I
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 5492
+    .line 5496
     new-instance v0, Ljava/lang/SecurityException;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -2404,7 +2404,7 @@
 
     throw v0
 
-    .line 5488
+    .line 5492
     :cond_0
     return-void
 .end method
@@ -2417,22 +2417,22 @@
     .param p4, "opPackageName"    # Ljava/lang/String;
 
     .prologue
-    .line 5573
+    .line 5577
     invoke-direct {p0, p2, p1, p3, p4}, Lcom/android/server/accounts/AccountManagerService;->isAccountVisibleToCaller(Ljava/lang/String;IILjava/lang/String;)Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    .line 5575
+    .line 5579
     const-string/jumbo v1, "caller uid %s cannot access %s accounts"
 
-    .line 5574
+    .line 5578
     const/4 v2, 0x2
 
     new-array v2, v2, [Ljava/lang/Object;
 
-    .line 5576
+    .line 5580
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v3
@@ -2441,17 +2441,17 @@
 
     aput-object v3, v2, v4
 
-    .line 5577
+    .line 5581
     const/4 v3, 0x1
 
     aput-object p2, v2, v3
 
-    .line 5574
+    .line 5578
     invoke-static {v1, v2}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 5578
+    .line 5582
     .local v0, "msg":Ljava/lang/String;
     const-string/jumbo v1, "AccountManagerService"
 
@@ -2475,14 +2475,14 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 5579
+    .line 5583
     new-instance v1, Ljava/lang/SecurityException;
 
     invoke-direct {v1, v0}, Ljava/lang/SecurityException;-><init>(Ljava/lang/String;)V
 
     throw v1
 
-    .line 5572
+    .line 5576
     .end local v0    # "msg":Ljava/lang/String;
     :cond_0
     return-void
@@ -2596,7 +2596,7 @@
     .param p2, "userAccount"    # Lcom/android/server/accounts/AccountManagerService$UserAccounts;
 
     .prologue
-    .line 4664
+    .line 4668
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -2615,10 +2615,10 @@
 
     move-result-object v1
 
-    .line 4665
+    .line 4669
     const-string/jumbo v2, " VALUES (?,?,?,?,?,?)"
 
-    .line 4664
+    .line 4668
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
@@ -2627,7 +2627,7 @@
 
     move-result-object v0
 
-    .line 4666
+    .line 4670
     .local v0, "sql":Ljava/lang/String;
     invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->compileStatement(Ljava/lang/String;)Landroid/database/sqlite/SQLiteStatement;
 
@@ -2635,7 +2635,7 @@
 
     invoke-static {p2, v1}, Lcom/android/server/accounts/AccountManagerService$UserAccounts;->-set1(Lcom/android/server/accounts/AccountManagerService$UserAccounts;Landroid/database/sqlite/SQLiteStatement;)Landroid/database/sqlite/SQLiteStatement;
 
-    .line 4663
+    .line 4667
     return-void
 .end method
 
@@ -2987,12 +2987,12 @@
     .param p6, "userId"    # I
 
     .prologue
-    .line 5261
+    .line 5265
     invoke-static {}, Lcom/android/server/accounts/AccountManagerService;->clearCallingIdentity()J
 
     move-result-wide v14
 
-    .line 5263
+    .line 5267
     .local v14, "identityToken":J
     :try_start_0
     const-string/jumbo v6, "AccountManagerService"
@@ -3005,7 +3005,7 @@
 
     if-eqz v6, :cond_0
 
-    .line 5264
+    .line 5268
     const-string/jumbo v6, "AccountManagerService"
 
     new-instance v7, Ljava/lang/StringBuilder;
@@ -3042,7 +3042,7 @@
 
     invoke-static {v6, v7}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 5267
+    .line 5271
     :cond_0
     invoke-virtual/range {p4 .. p4}, Landroid/content/Intent;->getComponent()Landroid/content/ComponentName;
 
@@ -3050,14 +3050,14 @@
 
     if-eqz v6, :cond_1
 
-    .line 5268
+    .line 5272
     const-class v6, Landroid/accounts/GrantCredentialsPermissionActivity;
 
     invoke-virtual {v6}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v6
 
-    .line 5269
+    .line 5273
     invoke-virtual/range {p4 .. p4}, Landroid/content/Intent;->getComponent()Landroid/content/ComponentName;
 
     move-result-object v7
@@ -3066,15 +3066,15 @@
 
     move-result-object v7
 
-    .line 5268
+    .line 5272
     invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v6
 
-    .line 5267
+    .line 5271
     if-eqz v6, :cond_1
 
-    .line 5270
+    .line 5274
     move-object/from16 v0, p0
 
     move-object/from16 v1, p2
@@ -3089,14 +3089,14 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 5292
+    .line 5296
     :goto_0
     invoke-static {v14, v15}, Lcom/android/server/accounts/AccountManagerService;->restoreCallingIdentity(J)V
 
-    .line 5260
+    .line 5264
     return-void
 
-    .line 5272
+    .line 5276
     :cond_1
     :try_start_1
     new-instance v6, Landroid/os/UserHandle;
@@ -3111,13 +3111,13 @@
 
     move-result-object v12
 
-    .line 5273
+    .line 5277
     .local v12, "contextForUser":Landroid/content/Context;
     invoke-direct/range {p0 .. p2}, Lcom/android/server/accounts/AccountManagerService;->getSigninRequiredNotificationId(Lcom/android/server/accounts/AccountManagerService$UserAccounts;Landroid/accounts/Account;)Ljava/lang/Integer;
 
     move-result-object v16
 
-    .line 5274
+    .line 5278
     .local v16, "notificationId":Ljava/lang/Integer;
     invoke-static/range {v16 .. v16}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
@@ -3127,8 +3127,8 @@
 
     invoke-virtual {v0, v6}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 5277
-    const v6, 0x1040179
+    .line 5281
+    const v6, 0x104017b
 
     invoke-virtual {v12, v6}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -3138,42 +3138,42 @@
 
     move-result-object v17
 
-    .line 5278
+    .line 5282
     .local v17, "notificationTitleFormat":Ljava/lang/String;
     new-instance v6, Landroid/app/Notification$Builder;
 
     invoke-direct {v6, v12}, Landroid/app/Notification$Builder;-><init>(Landroid/content/Context;)V
 
-    .line 5279
+    .line 5283
     const-wide/16 v8, 0x0
 
-    .line 5278
+    .line 5282
     invoke-virtual {v6, v8, v9}, Landroid/app/Notification$Builder;->setWhen(J)Landroid/app/Notification$Builder;
 
     move-result-object v6
 
-    .line 5280
+    .line 5284
     const v7, 0x108008a
 
-    .line 5278
+    .line 5282
     invoke-virtual {v6, v7}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;
 
     move-result-object v6
 
-    .line 5282
+    .line 5286
     const v7, 0x106005b
 
-    .line 5281
+    .line 5285
     invoke-virtual {v12, v7}, Landroid/content/Context;->getColor(I)I
 
     move-result v7
 
-    .line 5278
+    .line 5282
     invoke-virtual {v6, v7}, Landroid/app/Notification$Builder;->setColor(I)Landroid/app/Notification$Builder;
 
     move-result-object v6
 
-    .line 5283
+    .line 5287
     const/4 v7, 0x1
 
     new-array v7, v7, [Ljava/lang/Object;
@@ -3192,7 +3192,7 @@
 
     move-result-object v7
 
-    .line 5278
+    .line 5282
     invoke-virtual {v6, v7}, Landroid/app/Notification$Builder;->setContentTitle(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;
 
     move-result-object v6
@@ -3203,34 +3203,34 @@
 
     move-result-object v18
 
-    .line 5286
+    .line 5290
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/android/server/accounts/AccountManagerService;->mContext:Landroid/content/Context;
 
-    .line 5287
+    .line 5291
     new-instance v11, Landroid/os/UserHandle;
 
     move/from16 v0, p6
 
     invoke-direct {v11, v0}, Landroid/os/UserHandle;-><init>(I)V
 
-    .line 5286
+    .line 5290
     const/4 v7, 0x0
 
     const/high16 v9, 0x10000000
 
-    .line 5287
+    .line 5291
     const/4 v10, 0x0
 
     move-object/from16 v8, p4
 
-    .line 5285
+    .line 5289
     invoke-static/range {v6 .. v11}, Landroid/app/PendingIntent;->getActivityAsUser(Landroid/content/Context;ILandroid/content/Intent;ILandroid/os/Bundle;Landroid/os/UserHandle;)Landroid/app/PendingIntent;
 
     move-result-object v6
 
-    .line 5278
+    .line 5282
     move-object/from16 v0, v18
 
     invoke-virtual {v0, v6}, Landroid/app/Notification$Builder;->setContentIntent(Landroid/app/PendingIntent;)Landroid/app/Notification$Builder;
@@ -3241,7 +3241,7 @@
 
     move-result-object v13
 
-    .line 5289
+    .line 5293
     .local v13, "n":Landroid/app/Notification;
     invoke-virtual/range {v16 .. v16}, Ljava/lang/Integer;->intValue()I
 
@@ -3259,7 +3259,7 @@
 
     goto/16 :goto_0
 
-    .line 5291
+    .line 5295
     .end local v12    # "contextForUser":Landroid/content/Context;
     .end local v13    # "n":Landroid/app/Notification;
     .end local v16    # "notificationId":Ljava/lang/Integer;
@@ -3267,10 +3267,10 @@
     :catchall_0
     move-exception v6
 
-    .line 5292
+    .line 5296
     invoke-static {v14, v15}, Lcom/android/server/accounts/AccountManagerService;->restoreCallingIdentity(J)V
 
-    .line 5291
+    .line 5295
     throw v6
 .end method
 
@@ -3283,7 +3283,7 @@
     .param p5, "isCheckinRequest"    # Z
 
     .prologue
-    .line 5202
+    .line 5206
     move-object/from16 v0, p1
 
     iget-object v0, v0, Lcom/android/server/accounts/AccountManagerService$UserAccounts;->cacheLock:Ljava/lang/Object;
@@ -3292,7 +3292,7 @@
 
     monitor-enter v19
 
-    .line 5203
+    .line 5207
     :try_start_0
     move-object/from16 v0, p1
 
@@ -3302,16 +3302,16 @@
 
     move-result-object v4
 
-    .line 5205
+    .line 5209
     .local v4, "db":Landroid/database/sqlite/SQLiteDatabase;
     if-eqz p5, :cond_3
 
-    .line 5207
+    .line 5211
     const-string/jumbo v5, "accounts"
 
     sget-object v6, Lcom/android/server/accounts/AccountManagerService;->ACCOUNT_TYPE_COUNT_PROJECTION:[Ljava/lang/String;
 
-    .line 5208
+    .line 5212
     const-string/jumbo v9, "type"
 
     const/4 v7, 0x0
@@ -3322,14 +3322,14 @@
 
     const/4 v11, 0x0
 
-    .line 5207
+    .line 5211
     invoke-virtual/range {v4 .. v11}, Landroid/database/sqlite/SQLiteDatabase;->query(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
     move-result-object v14
 
-    .line 5210
+    .line 5214
     .local v14, "cursor":Landroid/database/Cursor;
     :goto_0
     :try_start_1
@@ -3339,7 +3339,7 @@
 
     if-eqz v5, :cond_1
 
-    .line 5212
+    .line 5216
     new-instance v5, Ljava/lang/StringBuilder;
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
@@ -3382,24 +3382,24 @@
 
     goto :goto_0
 
-    .line 5214
+    .line 5218
     :catchall_0
     move-exception v5
 
-    .line 5215
+    .line 5219
     if-eqz v14, :cond_0
 
-    .line 5216
+    .line 5220
     :try_start_2
     invoke-interface {v14}, Landroid/database/Cursor;->close()V
 
-    .line 5214
+    .line 5218
     :cond_0
     throw v5
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    .line 5202
+    .line 5206
     .end local v4    # "db":Landroid/database/sqlite/SQLiteDatabase;
     .end local v14    # "cursor":Landroid/database/Cursor;
     :catchall_1
@@ -3409,13 +3409,13 @@
 
     throw v5
 
-    .line 5215
+    .line 5219
     .restart local v4    # "db":Landroid/database/sqlite/SQLiteDatabase;
     .restart local v14    # "cursor":Landroid/database/Cursor;
     :cond_1
     if-eqz v14, :cond_2
 
-    .line 5216
+    .line 5220
     :try_start_3
     invoke-interface {v14}, Landroid/database/Cursor;->close()V
     :try_end_3
@@ -3425,10 +3425,10 @@
     :goto_1
     monitor-exit v19
 
-    .line 5201
+    .line 5205
     return-void
 
-    .line 5221
+    .line 5225
     .end local v14    # "cursor":Landroid/database/Cursor;
     :cond_3
     :try_start_4
@@ -3436,13 +3436,13 @@
 
     move-result v5
 
-    .line 5220
+    .line 5224
     const/4 v6, 0x0
 
-    .line 5221
+    .line 5225
     const/4 v7, 0x0
 
-    .line 5220
+    .line 5224
     move-object/from16 v0, p0
 
     move-object/from16 v1, p1
@@ -3451,7 +3451,7 @@
 
     move-result-object v13
 
-    .line 5222
+    .line 5226
     .local v13, "accounts":[Landroid/accounts/Account;
     new-instance v5, Ljava/lang/StringBuilder;
 
@@ -3477,7 +3477,7 @@
 
     invoke-virtual {v0, v5}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 5223
+    .line 5227
     const/4 v5, 0x0
 
     array-length v6, v13
@@ -3487,7 +3487,7 @@
 
     aget-object v12, v13, v5
 
-    .line 5224
+    .line 5228
     .local v12, "account":Landroid/accounts/Account;
     new-instance v7, Ljava/lang/StringBuilder;
 
@@ -3511,30 +3511,30 @@
 
     invoke-virtual {v0, v7}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 5223
+    .line 5227
     add-int/lit8 v5, v5, 0x1
 
     goto :goto_2
 
-    .line 5228
+    .line 5232
     .end local v12    # "account":Landroid/accounts/Account;
     :cond_4
     invoke-virtual/range {p3 .. p3}, Ljava/io/PrintWriter;->println()V
 
-    .line 5229
+    .line 5233
     invoke-static {}, Lcom/android/server/accounts/AccountManagerService$DebugDbHelper;->-get15()Ljava/lang/String;
 
     move-result-object v5
 
-    .line 5230
+    .line 5234
     invoke-static {}, Lcom/android/server/accounts/AccountManagerService$DebugDbHelper;->-get17()Ljava/lang/String;
 
     move-result-object v11
 
-    .line 5229
+    .line 5233
     const/4 v6, 0x0
 
-    .line 5230
+    .line 5234
     const/4 v7, 0x0
 
     const/4 v8, 0x0
@@ -3543,12 +3543,12 @@
 
     const/4 v10, 0x0
 
-    .line 5229
+    .line 5233
     invoke-virtual/range {v4 .. v11}, Landroid/database/sqlite/SQLiteDatabase;->query(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
 
     move-result-object v14
 
-    .line 5231
+    .line 5235
     .restart local v14    # "cursor":Landroid/database/Cursor;
     const-string/jumbo v5, "AccountId, Action_Type, timestamp, UID, TableName, Key"
 
@@ -3556,7 +3556,7 @@
 
     invoke-virtual {v0, v5}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 5232
+    .line 5236
     const-string/jumbo v5, "Accounts History"
 
     move-object/from16 v0, p3
@@ -3565,7 +3565,7 @@
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_1
 
-    .line 5234
+    .line 5238
     :goto_3
     :try_start_5
     invoke-interface {v14}, Landroid/database/Cursor;->moveToNext()Z
@@ -3574,7 +3574,7 @@
 
     if-eqz v5, :cond_5
 
-    .line 5236
+    .line 5240
     new-instance v5, Ljava/lang/StringBuilder;
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
@@ -3611,74 +3611,74 @@
 
     move-result-object v5
 
-    .line 5237
+    .line 5241
     const/4 v6, 0x2
 
     invoke-interface {v14, v6}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v6
 
-    .line 5236
+    .line 5240
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v5
 
-    .line 5237
+    .line 5241
     const-string/jumbo v6, ","
 
-    .line 5236
+    .line 5240
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v5
 
-    .line 5237
+    .line 5241
     const/4 v6, 0x3
 
     invoke-interface {v14, v6}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v6
 
-    .line 5236
+    .line 5240
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v5
 
-    .line 5237
+    .line 5241
     const-string/jumbo v6, ","
 
-    .line 5236
+    .line 5240
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v5
 
-    .line 5238
+    .line 5242
     const/4 v6, 0x4
 
     invoke-interface {v14, v6}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v6
 
-    .line 5236
+    .line 5240
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v5
 
-    .line 5238
+    .line 5242
     const-string/jumbo v6, ","
 
-    .line 5236
+    .line 5240
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v5
 
-    .line 5238
+    .line 5242
     const/4 v6, 0x5
 
     invoke-interface {v14, v6}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v6
 
-    .line 5236
+    .line 5240
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v5
@@ -3695,25 +3695,25 @@
 
     goto :goto_3
 
-    .line 5240
+    .line 5244
     :catchall_2
     move-exception v5
 
-    .line 5241
+    .line 5245
     :try_start_6
     invoke-interface {v14}, Landroid/database/Cursor;->close()V
 
-    .line 5240
+    .line 5244
     throw v5
 
-    .line 5241
+    .line 5245
     :cond_5
     invoke-interface {v14}, Landroid/database/Cursor;->close()V
 
-    .line 5244
+    .line 5248
     invoke-virtual/range {p3 .. p3}, Ljava/io/PrintWriter;->println()V
 
-    .line 5245
+    .line 5249
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/android/server/accounts/AccountManagerService;->mSessions:Ljava/util/LinkedHashMap;
@@ -3722,13 +3722,13 @@
     :try_end_6
     .catchall {:try_start_6 .. :try_end_6} :catchall_1
 
-    .line 5246
+    .line 5250
     :try_start_7
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v16
 
-    .line 5247
+    .line 5251
     .local v16, "now":J
     new-instance v5, Ljava/lang/StringBuilder;
 
@@ -3760,7 +3760,7 @@
 
     invoke-virtual {v0, v5}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 5248
+    .line 5252
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/server/accounts/AccountManagerService;->mSessions:Ljava/util/LinkedHashMap;
@@ -3787,7 +3787,7 @@
 
     check-cast v15, Lcom/android/server/accounts/AccountManagerService$Session;
 
-    .line 5249
+    .line 5253
     .local v15, "session":Lcom/android/server/accounts/AccountManagerService$Session;
     new-instance v5, Ljava/lang/StringBuilder;
 
@@ -3819,7 +3819,7 @@
 
     goto :goto_4
 
-    .line 5245
+    .line 5249
     .end local v15    # "session":Lcom/android/server/accounts/AccountManagerService$Session;
     .end local v16    # "now":J
     .end local v18    # "session$iterator":Ljava/util/Iterator;
@@ -3836,10 +3836,10 @@
     :cond_6
     monitor-exit v6
 
-    .line 5253
+    .line 5257
     invoke-virtual/range {p3 .. p3}, Ljava/io/PrintWriter;->println()V
 
-    .line 5254
+    .line 5258
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/server/accounts/AccountManagerService;->mAuthenticatorCache:Lcom/android/server/accounts/IAccountAuthenticatorCache;
@@ -3869,7 +3869,7 @@
     .param p4, "callingPackage"    # Ljava/lang/String;
 
     .prologue
-    .line 5769
+    .line 5773
     invoke-direct/range {p0 .. p0}, Lcom/android/server/accounts/AccountManagerService;->getUserManager()Landroid/os/UserManager;
 
     move-result-object v15
@@ -3878,11 +3878,11 @@
 
     if-nez p1, :cond_1
 
-    .line 5771
+    .line 5775
     :cond_0
     return-object p2
 
-    .line 5769
+    .line 5773
     :cond_1
     invoke-static/range {p1 .. p1}, Lcom/android/server/accounts/AccountManagerService$UserAccounts;->-get8(Lcom/android/server/accounts/AccountManagerService$UserAccounts;)I
 
@@ -3890,7 +3890,7 @@
 
     if-ltz v15, :cond_0
 
-    .line 5770
+    .line 5774
     invoke-static {}, Landroid/os/Process;->myUid()I
 
     move-result v15
@@ -3899,7 +3899,7 @@
 
     if-eq v0, v15, :cond_0
 
-    .line 5773
+    .line 5777
     invoke-direct/range {p0 .. p0}, Lcom/android/server/accounts/AccountManagerService;->getUserManager()Landroid/os/UserManager;
 
     move-result-object v15
@@ -3912,7 +3912,7 @@
 
     move-result-object v13
 
-    .line 5774
+    .line 5778
     .local v13, "user":Landroid/content/pm/UserInfo;
     if-eqz v13, :cond_e
 
@@ -3922,7 +3922,7 @@
 
     if-eqz v15, :cond_e
 
-    .line 5775
+    .line 5779
     move-object/from16 v0, p0
 
     iget-object v15, v0, Lcom/android/server/accounts/AccountManagerService;->mPackageManager:Landroid/content/pm/PackageManager;
@@ -3933,7 +3933,7 @@
 
     move-result-object v8
 
-    .line 5779
+    .line 5783
     .local v8, "packages":[Ljava/lang/String;
     move-object/from16 v0, p0
 
@@ -3943,15 +3943,15 @@
 
     move-result-object v15
 
-    .line 5780
-    const v16, 0x10400c8
+    .line 5784
+    const v16, 0x10400ca
 
-    .line 5779
+    .line 5783
     invoke-virtual/range {v15 .. v16}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v14
 
-    .line 5781
+    .line 5785
     .local v14, "whiteList":Ljava/lang/String;
     const/4 v15, 0x0
 
@@ -3966,7 +3966,7 @@
 
     aget-object v7, v8, v15
 
-    .line 5782
+    .line 5786
     .local v7, "packageName":Ljava/lang/String;
     new-instance v17, Ljava/lang/StringBuilder;
 
@@ -4002,23 +4002,23 @@
 
     if-eqz v17, :cond_2
 
-    .line 5783
+    .line 5787
     return-object p2
 
-    .line 5781
+    .line 5785
     :cond_2
     add-int/lit8 v15, v15, 0x1
 
     goto :goto_0
 
-    .line 5786
+    .line 5790
     .end local v7    # "packageName":Ljava/lang/String;
     :cond_3
     new-instance v3, Ljava/util/ArrayList;
 
     invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
 
-    .line 5787
+    .line 5791
     .local v3, "allowed":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Landroid/accounts/Account;>;"
     invoke-static/range {p1 .. p1}, Lcom/android/server/accounts/AccountManagerService$UserAccounts;->-get8(Lcom/android/server/accounts/AccountManagerService$UserAccounts;)I
 
@@ -4030,7 +4030,7 @@
 
     move-result-object v12
 
-    .line 5788
+    .line 5792
     .local v12, "sharedAccounts":[Landroid/accounts/Account;
     if-eqz v12, :cond_4
 
@@ -4041,15 +4041,15 @@
     :cond_4
     return-object p2
 
-    .line 5789
+    .line 5793
     :cond_5
     const-string/jumbo v10, ""
 
-    .line 5793
+    .line 5797
     .local v10, "requiredAccountType":Ljava/lang/String;
     if-eqz p4, :cond_8
 
-    .line 5794
+    .line 5798
     :try_start_0
     move-object/from16 v0, p0
 
@@ -4065,7 +4065,7 @@
 
     move-result-object v9
 
-    .line 5795
+    .line 5799
     .local v9, "pi":Landroid/content/pm/PackageInfo;
     if-eqz v9, :cond_6
 
@@ -4073,12 +4073,12 @@
 
     if-eqz v15, :cond_6
 
-    .line 5796
+    .line 5800
     iget-object v10, v9, Landroid/content/pm/PackageInfo;->restrictedAccountType:Ljava/lang/String;
     :try_end_0
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 5810
+    .line 5814
     .end local v9    # "pi":Landroid/content/pm/PackageInfo;
     :cond_6
     :goto_1
@@ -4101,7 +4101,7 @@
 
     aget-object v2, p2, v16
 
-    .line 5811
+    .line 5815
     .local v2, "account":Landroid/accounts/Account;
     iget-object v15, v2, Landroid/accounts/Account;->type:Ljava/lang/String;
 
@@ -4111,10 +4111,10 @@
 
     if-eqz v15, :cond_a
 
-    .line 5812
+    .line 5816
     invoke-virtual {v3, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 5810
+    .line 5814
     :cond_7
     :goto_3
     add-int/lit8 v15, v16, 0x1
@@ -4123,7 +4123,7 @@
 
     goto :goto_2
 
-    .line 5800
+    .line 5804
     .end local v2    # "account":Landroid/accounts/Account;
     :cond_8
     const/4 v15, 0x0
@@ -4140,7 +4140,7 @@
 
     aget-object v7, v8, v15
 
-    .line 5801
+    .line 5805
     .restart local v7    # "packageName":Ljava/lang/String;
     move-object/from16 v0, p0
 
@@ -4158,7 +4158,7 @@
 
     move-result-object v9
 
-    .line 5802
+    .line 5806
     .restart local v9    # "pi":Landroid/content/pm/PackageInfo;
     if-eqz v9, :cond_9
 
@@ -4168,27 +4168,27 @@
 
     if-eqz v17, :cond_9
 
-    .line 5803
+    .line 5807
     iget-object v10, v9, Landroid/content/pm/PackageInfo;->restrictedAccountType:Ljava/lang/String;
     :try_end_1
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_1 .. :try_end_1} :catch_0
 
     goto :goto_1
 
-    .line 5800
+    .line 5804
     :cond_9
     add-int/lit8 v15, v15, 0x1
 
     goto :goto_4
 
-    .line 5814
+    .line 5818
     .end local v7    # "packageName":Ljava/lang/String;
     .end local v9    # "pi":Landroid/content/pm/PackageInfo;
     .restart local v2    # "account":Landroid/accounts/Account;
     :cond_a
     const/4 v5, 0x0
 
-    .line 5815
+    .line 5819
     .local v5, "found":Z
     const/4 v15, 0x0
 
@@ -4203,7 +4203,7 @@
 
     aget-object v11, v12, v15
 
-    .line 5816
+    .line 5820
     .local v11, "shared":Landroid/accounts/Account;
     invoke-virtual {v11, v2}, Landroid/accounts/Account;->equals(Ljava/lang/Object;)Z
 
@@ -4211,27 +4211,27 @@
 
     if-eqz v19, :cond_c
 
-    .line 5817
+    .line 5821
     const/4 v5, 0x1
 
-    .line 5821
+    .line 5825
     .end local v11    # "shared":Landroid/accounts/Account;
     :cond_b
     if-nez v5, :cond_7
 
-    .line 5822
+    .line 5826
     invoke-virtual {v3, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_3
 
-    .line 5815
+    .line 5819
     .restart local v11    # "shared":Landroid/accounts/Account;
     :cond_c
     add-int/lit8 v15, v15, 0x1
 
     goto :goto_5
 
-    .line 5826
+    .line 5830
     .end local v2    # "account":Landroid/accounts/Account;
     .end local v5    # "found":Z
     .end local v11    # "shared":Landroid/accounts/Account;
@@ -4242,14 +4242,14 @@
 
     new-array v4, v15, [Landroid/accounts/Account;
 
-    .line 5827
+    .line 5831
     .local v4, "filtered":[Landroid/accounts/Account;
     invoke-virtual {v3, v4}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
-    .line 5828
+    .line 5832
     return-object v4
 
-    .line 5830
+    .line 5834
     .end local v3    # "allowed":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Landroid/accounts/Account;>;"
     .end local v4    # "filtered":[Landroid/accounts/Account;
     .end local v8    # "packages":[Ljava/lang/String;
@@ -4259,7 +4259,7 @@
     :cond_e
     return-object p2
 
-    .line 5808
+    .line 5812
     .restart local v3    # "allowed":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Landroid/accounts/Account;>;"
     .restart local v8    # "packages":[Ljava/lang/String;
     .restart local v10    # "requiredAccountType":Ljava/lang/String;
@@ -5152,7 +5152,7 @@
     .param p1, "user"    # Landroid/os/UserHandle;
 
     .prologue
-    .line 5975
+    .line 5979
     :try_start_0
     iget-object v1, p0, Lcom/android/server/accounts/AccountManagerService;->mContext:Landroid/content/Context;
 
@@ -5172,11 +5172,11 @@
 
     return-object v1
 
-    .line 5976
+    .line 5980
     :catch_0
     move-exception v0
 
-    .line 5978
+    .line 5982
     .local v0, "e":Landroid/content/pm/PackageManager$NameNotFoundException;
     iget-object v1, p0, Lcom/android/server/accounts/AccountManagerService;->mContext:Landroid/content/Context;
 
@@ -5281,87 +5281,87 @@
     .param p1, "db"    # Landroid/database/sqlite/SQLiteDatabase;
 
     .prologue
-    .line 4681
+    .line 4685
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 4682
+    .line 4686
     const-string/jumbo v2, "SELECT "
 
-    .line 4681
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    .line 4682
-    invoke-static {}, Lcom/android/server/accounts/AccountManagerService$DebugDbHelper;->-get14()Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 4681
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    .line 4683
-    const-string/jumbo v2, " FROM "
-
-    .line 4681
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    .line 4683
-    invoke-static {}, Lcom/android/server/accounts/AccountManagerService$DebugDbHelper;->-get15()Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 4681
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    .line 4684
-    const-string/jumbo v2, " ORDER BY "
-
-    .line 4681
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
     .line 4685
-    invoke-static {}, Lcom/android/server/accounts/AccountManagerService$DebugDbHelper;->-get17()Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 4681
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    .line 4685
-    const-string/jumbo v2, ","
-
-    .line 4681
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    .line 4685
-    invoke-static {}, Lcom/android/server/accounts/AccountManagerService$DebugDbHelper;->-get14()Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 4681
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
     .line 4686
+    invoke-static {}, Lcom/android/server/accounts/AccountManagerService$DebugDbHelper;->-get14()Ljava/lang/String;
+
+    move-result-object v2
+
+    .line 4685
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    .line 4687
+    const-string/jumbo v2, " FROM "
+
+    .line 4685
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    .line 4687
+    invoke-static {}, Lcom/android/server/accounts/AccountManagerService$DebugDbHelper;->-get15()Ljava/lang/String;
+
+    move-result-object v2
+
+    .line 4685
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    .line 4688
+    const-string/jumbo v2, " ORDER BY "
+
+    .line 4685
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    .line 4689
+    invoke-static {}, Lcom/android/server/accounts/AccountManagerService$DebugDbHelper;->-get17()Ljava/lang/String;
+
+    move-result-object v2
+
+    .line 4685
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    .line 4689
+    const-string/jumbo v2, ","
+
+    .line 4685
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    .line 4689
+    invoke-static {}, Lcom/android/server/accounts/AccountManagerService$DebugDbHelper;->-get14()Ljava/lang/String;
+
+    move-result-object v2
+
+    .line 4685
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    .line 4690
     const-string/jumbo v2, " LIMIT 1"
 
-    .line 4681
+    .line 4685
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
@@ -5370,7 +5370,7 @@
 
     move-result-object v0
 
-    .line 4688
+    .line 4692
     .local v0, "queryCountDebugDbRows":Ljava/lang/String;
     const/4 v1, 0x0
 
@@ -5386,7 +5386,7 @@
     .param p1, "db"    # Landroid/database/sqlite/SQLiteDatabase;
 
     .prologue
-    .line 4670
+    .line 4674
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -5409,7 +5409,7 @@
 
     move-result-object v0
 
-    .line 4671
+    .line 4675
     .local v0, "queryCountDebugDbRows":Ljava/lang/String;
     const/4 v1, 0x0
 
@@ -5637,18 +5637,18 @@
     .end annotation
 
     .prologue
-    .line 5459
+    .line 5463
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
-    .line 5460
+    .line 5464
     .local v2, "managedAccountTypes":Ljava/util/List;, "Ljava/util/List<Ljava/lang/String;>;"
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
     move-result-wide v0
 
-    .line 5463
+    .line 5467
     .local v0, "identityToken":J
     :try_start_0
     iget-object v7, p0, Lcom/android/server/accounts/AccountManagerService;->mAuthenticatorCache:Lcom/android/server/accounts/IAccountAuthenticatorCache;
@@ -5659,11 +5659,11 @@
 
     move-result-object v5
 
-    .line 5465
+    .line 5469
     .local v5, "serviceInfos":Ljava/util/Collection;, "Ljava/util/Collection<Landroid/content/pm/RegisteredServicesCache$ServiceInfo<Landroid/accounts/AuthenticatorDescription;>;>;"
     invoke-static {v0, v1}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
-    .line 5467
+    .line 5471
     invoke-interface {v5}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v4
@@ -5683,7 +5683,7 @@
 
     check-cast v3, Landroid/content/pm/RegisteredServicesCache$ServiceInfo;
 
-    .line 5469
+    .line 5473
     .local v3, "serviceInfo":Landroid/content/pm/RegisteredServicesCache$ServiceInfo;, "Landroid/content/pm/RegisteredServicesCache$ServiceInfo<Landroid/accounts/AuthenticatorDescription;>;"
     iget-object v7, p0, Lcom/android/server/accounts/AccountManagerService;->mPackageManager:Landroid/content/pm/PackageManager;
 
@@ -5693,13 +5693,13 @@
 
     move-result v6
 
-    .line 5470
+    .line 5474
     .local v6, "sigChk":I
     if-nez p3, :cond_1
 
     if-nez v6, :cond_0
 
-    .line 5471
+    .line 5475
     :cond_1
     iget-object v7, v3, Landroid/content/pm/RegisteredServicesCache$ServiceInfo;->type:Ljava/lang/Object;
 
@@ -5711,7 +5711,7 @@
 
     goto :goto_0
 
-    .line 5464
+    .line 5468
     .end local v3    # "serviceInfo":Landroid/content/pm/RegisteredServicesCache$ServiceInfo;, "Landroid/content/pm/RegisteredServicesCache$ServiceInfo<Landroid/accounts/AuthenticatorDescription;>;"
     .end local v4    # "serviceInfo$iterator":Ljava/util/Iterator;
     .end local v5    # "serviceInfos":Ljava/util/Collection;, "Ljava/util/Collection<Landroid/content/pm/RegisteredServicesCache$ServiceInfo<Landroid/accounts/AuthenticatorDescription;>;>;"
@@ -5719,13 +5719,13 @@
     :catchall_0
     move-exception v7
 
-    .line 5465
+    .line 5469
     invoke-static {v0, v1}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
-    .line 5464
+    .line 5468
     throw v7
 
-    .line 5474
+    .line 5478
     .restart local v4    # "serviceInfo$iterator":Ljava/util/Iterator;
     .restart local v5    # "serviceInfos":Ljava/util/Collection;, "Ljava/util/Collection<Landroid/content/pm/RegisteredServicesCache$ServiceInfo<Landroid/accounts/AuthenticatorDescription;>;>;"
     :cond_2
@@ -5747,7 +5747,7 @@
     .end annotation
 
     .prologue
-    .line 5454
+    .line 5458
     const/4 v0, 0x0
 
     invoke-direct {p0, p1, p2, v0}, Lcom/android/server/accounts/AccountManagerService;->getTypesForCaller(IIZ)Ljava/util/List;
@@ -5775,7 +5775,7 @@
     .end annotation
 
     .prologue
-    .line 5448
+    .line 5452
     const/4 v1, 0x2
 
     new-array v1, v1, [Ljava/lang/String;
@@ -5786,19 +5786,19 @@
 
     aput-object v2, v1, v3
 
-    .line 5449
+    .line 5453
     const-string/jumbo v2, "android.permission.GET_ACCOUNTS_PRIVILEGED"
 
     const/4 v3, 0x1
 
     aput-object v2, v1, v3
 
-    .line 5448
+    .line 5452
     invoke-direct {p0, p3, p1, v1}, Lcom/android/server/accounts/AccountManagerService;->isPermitted(Ljava/lang/String;I[Ljava/lang/String;)Z
 
     move-result v0
 
-    .line 5450
+    .line 5454
     .local v0, "isPermitted":Z
     invoke-direct {p0, p1, p2, v0}, Lcom/android/server/accounts/AccountManagerService;->getTypesForCaller(IIZ)Ljava/util/List;
 
@@ -5934,13 +5934,13 @@
     .param p1, "userId"    # I
 
     .prologue
-    .line 5354
+    .line 5358
     :try_start_0
     invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
 
     move-result-object v0
 
-    .line 5355
+    .line 5359
     invoke-static {}, Landroid/os/Binder;->getCallingPid()I
 
     move-result v1
@@ -5959,7 +5959,7 @@
 
     move v3, p1
 
-    .line 5354
+    .line 5358
     invoke-interface/range {v0 .. v7}, Landroid/app/IActivityManager;->handleIncomingUser(IIIZZLjava/lang/String;Ljava/lang/String;)I
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
@@ -5968,11 +5968,11 @@
 
     return v0
 
-    .line 5356
+    .line 5360
     :catch_0
     move-exception v8
 
-    .line 5359
+    .line 5363
     .local v8, "re":Landroid/os/RemoteException;
     return p1
 .end method
@@ -6064,7 +6064,7 @@
 
     const/4 v5, 0x1
 
-    .line 5508
+    .line 5512
     invoke-static {p3}, Landroid/os/UserHandle;->getAppId(I)I
 
     move-result v6
@@ -6073,10 +6073,10 @@
 
     if-ne v6, v7, :cond_0
 
-    .line 5509
+    .line 5513
     return v5
 
-    .line 5511
+    .line 5515
     :cond_0
     invoke-static {p3}, Landroid/os/UserHandle;->getUserId(I)I
 
@@ -6086,13 +6086,13 @@
 
     move-result-object v0
 
-    .line 5512
+    .line 5516
     .local v0, "accounts":Lcom/android/server/accounts/AccountManagerService$UserAccounts;
     iget-object v6, v0, Lcom/android/server/accounts/AccountManagerService$UserAccounts;->cacheLock:Ljava/lang/Object;
 
     monitor-enter v6
 
-    .line 5513
+    .line 5517
     :try_start_0
     iget-object v7, v0, Lcom/android/server/accounts/AccountManagerService$UserAccounts;->openHelper:Lcom/android/server/accounts/AccountManagerService$DeDatabaseHelper;
 
@@ -6100,14 +6100,14 @@
 
     move-result-object v2
 
-    .line 5518
+    .line 5522
     .local v2, "db":Landroid/database/sqlite/SQLiteDatabase;
     if-eqz p2, :cond_2
 
-    .line 5519
+    .line 5523
     const-string/jumbo v4, "SELECT COUNT(*) FROM grants, accounts WHERE accounts_id=_id AND uid=? AND auth_token_type=? AND name=? AND type=?"
 
-    .line 5520
+    .line 5524
     .local v4, "query":Ljava/lang/String;
     const/4 v7, 0x4
 
@@ -6125,7 +6125,7 @@
 
     aput-object p2, v1, v7
 
-    .line 5521
+    .line 5525
     iget-object v7, p1, Landroid/accounts/Account;->name:Ljava/lang/String;
 
     const/4 v8, 0x2
@@ -6138,7 +6138,7 @@
 
     aput-object v7, v1, v8
 
-    .line 5527
+    .line 5531
     .local v1, "args":[Ljava/lang/String;
     :goto_0
     invoke-static {v2, v4, v1}, Landroid/database/DatabaseUtils;->longForQuery(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;[Ljava/lang/String;)J
@@ -6153,7 +6153,7 @@
 
     move v3, v5
 
-    .line 5528
+    .line 5532
     .local v3, "permissionGranted":Z
     :cond_1
     if-nez v3, :cond_3
@@ -6164,7 +6164,7 @@
 
     if-eqz v7, :cond_3
 
-    .line 5531
+    .line 5535
     const-string/jumbo v7, "AccountManagerService"
 
     new-instance v8, Ljava/lang/StringBuilder;
@@ -6191,10 +6191,10 @@
 
     move-result-object v8
 
-    .line 5532
+    .line 5536
     const-string/jumbo v9, " by uid "
 
-    .line 5531
+    .line 5535
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v8
@@ -6203,10 +6203,10 @@
 
     move-result-object v8
 
-    .line 5533
+    .line 5537
     const-string/jumbo v9, " but ignoring since device is in test harness."
 
-    .line 5531
+    .line 5535
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v8
@@ -6221,10 +6221,10 @@
 
     monitor-exit v6
 
-    .line 5534
+    .line 5538
     return v5
 
-    .line 5523
+    .line 5527
     .end local v1    # "args":[Ljava/lang/String;
     .end local v3    # "permissionGranted":Z
     .end local v4    # "query":Ljava/lang/String;
@@ -6232,7 +6232,7 @@
     :try_start_1
     const-string/jumbo v4, "SELECT COUNT(*) FROM grants, accounts WHERE accounts_id=_id AND uid=? AND name=? AND type=?"
 
-    .line 5524
+    .line 5528
     .restart local v4    # "query":Ljava/lang/String;
     const/4 v7, 0x3
 
@@ -6252,7 +6252,7 @@
 
     aput-object v7, v1, v8
 
-    .line 5525
+    .line 5529
     iget-object v7, p1, Landroid/accounts/Account;->type:Ljava/lang/String;
 
     const/4 v8, 0x2
@@ -6261,7 +6261,7 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 5524
+    .line 5528
     .restart local v1    # "args":[Ljava/lang/String;
     goto :goto_0
 
@@ -6269,10 +6269,10 @@
     :cond_3
     monitor-exit v6
 
-    .line 5536
+    .line 5540
     return v3
 
-    .line 5512
+    .line 5516
     .end local v1    # "args":[Ljava/lang/String;
     .end local v2    # "db":Landroid/database/sqlite/SQLiteDatabase;
     .end local v3    # "permissionGranted":Z
@@ -6291,20 +6291,20 @@
     .param p2, "userAccount"    # Lcom/android/server/accounts/AccountManagerService$UserAccounts;
 
     .prologue
-    .line 4653
+    .line 4657
     invoke-direct {p0, p1}, Lcom/android/server/accounts/AccountManagerService;->getDebugTableRowCount(Landroid/database/sqlite/SQLiteDatabase;)J
 
     move-result-wide v2
 
     long-to-int v0, v2
 
-    .line 4654
+    .line 4658
     .local v0, "size":I
     const/16 v1, 0x40
 
     if-lt v0, v1, :cond_0
 
-    .line 4656
+    .line 4660
     invoke-direct {p0, p1}, Lcom/android/server/accounts/AccountManagerService;->getDebugTableInsertionPoint(Landroid/database/sqlite/SQLiteDatabase;)J
 
     move-result-wide v2
@@ -6313,14 +6313,14 @@
 
     invoke-static {p2, v1}, Lcom/android/server/accounts/AccountManagerService$UserAccounts;->-set0(Lcom/android/server/accounts/AccountManagerService$UserAccounts;I)I
 
-    .line 4660
+    .line 4664
     :goto_0
     invoke-direct {p0, p1, p2}, Lcom/android/server/accounts/AccountManagerService;->compileSqlStatementForLogging(Landroid/database/sqlite/SQLiteDatabase;Lcom/android/server/accounts/AccountManagerService$UserAccounts;)V
 
-    .line 4651
+    .line 4655
     return-void
 
-    .line 4658
+    .line 4662
     :cond_0
     invoke-static {p2, v0}, Lcom/android/server/accounts/AccountManagerService$UserAccounts;->-set0(Lcom/android/server/accounts/AccountManagerService$UserAccounts;I)I
 
@@ -6335,7 +6335,7 @@
     .prologue
     const/4 v4, 0x0
 
-    .line 5754
+    .line 5758
     iget-object v5, p1, Lcom/android/server/accounts/AccountManagerService$UserAccounts;->accountCache:Ljava/util/HashMap;
 
     iget-object v6, p2, Landroid/accounts/Account;->type:Ljava/lang/String;
@@ -6346,27 +6346,27 @@
 
     check-cast v0, [Landroid/accounts/Account;
 
-    .line 5755
+    .line 5759
     .local v0, "accountsForType":[Landroid/accounts/Account;
     if-eqz v0, :cond_1
 
     array-length v2, v0
 
-    .line 5756
+    .line 5760
     .local v2, "oldLength":I
     :goto_0
     add-int/lit8 v5, v2, 0x1
 
     new-array v1, v5, [Landroid/accounts/Account;
 
-    .line 5757
+    .line 5761
     .local v1, "newAccountsForType":[Landroid/accounts/Account;
     if-eqz v0, :cond_0
 
-    .line 5758
+    .line 5762
     invoke-static {v0, v4, v1, v4, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 5760
+    .line 5764
     :cond_0
     invoke-virtual {p2}, Landroid/accounts/Account;->getAccessId()Ljava/lang/String;
 
@@ -6378,7 +6378,7 @@
 
     move-result-object v3
 
-    .line 5762
+    .line 5766
     .local v3, "token":Ljava/lang/String;
     :goto_1
     new-instance v4, Landroid/accounts/Account;
@@ -6387,14 +6387,14 @@
 
     aput-object v4, v1, v2
 
-    .line 5763
+    .line 5767
     iget-object v4, p1, Lcom/android/server/accounts/AccountManagerService$UserAccounts;->accountCache:Ljava/util/HashMap;
 
     iget-object v5, p2, Landroid/accounts/Account;->type:Ljava/lang/String;
 
     invoke-virtual {v4, v5, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 5764
+    .line 5768
     aget-object v4, v1, v2
 
     return-object v4
@@ -6405,10 +6405,10 @@
     :cond_1
     move v2, v4
 
-    .line 5755
+    .line 5759
     goto :goto_0
 
-    .line 5761
+    .line 5765
     .restart local v1    # "newAccountsForType":[Landroid/accounts/Account;
     .restart local v2    # "oldLength":I
     :cond_2
@@ -6477,12 +6477,12 @@
     .param p4, "userId"    # I
 
     .prologue
-    .line 5304
+    .line 5308
     invoke-static {}, Lcom/android/server/accounts/AccountManagerService;->clearCallingIdentity()J
 
     move-result-wide v10
 
-    .line 5306
+    .line 5310
     .local v10, "token":J
     :try_start_0
     invoke-static {}, Landroid/app/NotificationManager;->getService()Landroid/app/INotificationManager;
@@ -6491,14 +6491,14 @@
 
     move-result-object v0
 
-    .line 5309
+    .line 5313
     .local v0, "notificationManager":Landroid/app/INotificationManager;
     const/4 v1, 0x1
 
     :try_start_1
     new-array v6, v1, [I
 
-    .line 5308
+    .line 5312
     const/4 v3, 0x0
 
     move-object v1, p3
@@ -6516,25 +6516,25 @@
     .catch Landroid/os/RemoteException; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 5314
+    .line 5318
     :goto_0
     invoke-static {v10, v11}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
-    .line 5303
+    .line 5307
     return-void
 
-    .line 5313
+    .line 5317
     .end local v0    # "notificationManager":Landroid/app/INotificationManager;
     :catchall_0
     move-exception v1
 
-    .line 5314
+    .line 5318
     invoke-static {v10, v11}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
-    .line 5313
+    .line 5317
     throw v1
 
-    .line 5310
+    .line 5314
     .restart local v0    # "notificationManager":Landroid/app/INotificationManager;
     :catch_0
     move-exception v8
@@ -6718,15 +6718,15 @@
     .param p3, "userId"    # I
 
     .prologue
-    .line 5438
+    .line 5442
     if-nez p1, :cond_0
 
-    .line 5439
+    .line 5443
     const/4 v0, 0x0
 
     return v0
 
-    .line 5441
+    .line 5445
     :cond_0
     invoke-direct {p0, p2, p3}, Lcom/android/server/accounts/AccountManagerService;->getTypesManagedByCaller(II)Ljava/util/List;
 
@@ -6747,7 +6747,7 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 5478
+    .line 5482
     invoke-direct {p0}, Lcom/android/server/accounts/AccountManagerService;->getUserAccountsForCaller()Lcom/android/server/accounts/AccountManagerService$UserAccounts;
 
     move-result-object v1
@@ -6760,7 +6760,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 5479
+    .line 5483
     invoke-direct {p0}, Lcom/android/server/accounts/AccountManagerService;->getUserAccountsForCaller()Lcom/android/server/accounts/AccountManagerService$UserAccounts;
 
     move-result-object v1
@@ -6782,7 +6782,7 @@
 
     aget-object v0, v1, v2
 
-    .line 5480
+    .line 5484
     .local v0, "account":Landroid/accounts/Account;
     iget-object v5, v0, Landroid/accounts/Account;->name:Ljava/lang/String;
 
@@ -6792,18 +6792,18 @@
 
     if-eqz v5, :cond_0
 
-    .line 5481
+    .line 5485
     const/4 v1, 0x1
 
     return v1
 
-    .line 5479
+    .line 5483
     :cond_0
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
-    .line 5485
+    .line 5489
     .end local v0    # "account":Landroid/accounts/Account;
     :cond_1
     return v3
@@ -6817,15 +6817,15 @@
     .param p4, "opPackageName"    # Ljava/lang/String;
 
     .prologue
-    .line 5429
+    .line 5433
     if-nez p1, :cond_0
 
-    .line 5430
+    .line 5434
     const/4 v0, 0x0
 
     return v0
 
-    .line 5432
+    .line 5436
     :cond_0
     invoke-direct {p0, p2, p3, p4}, Lcom/android/server/accounts/AccountManagerService;->getTypesVisibleToCaller(IILjava/lang/String;)Ljava/util/List;
 
@@ -6922,7 +6922,7 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 5337
+    .line 5341
     array-length v4, p3
 
     move v2, v3
@@ -6932,7 +6932,7 @@
 
     aget-object v1, p3, v2
 
-    .line 5338
+    .line 5342
     .local v1, "perm":Ljava/lang/String;
     iget-object v5, p0, Lcom/android/server/accounts/AccountManagerService;->mContext:Landroid/content/Context;
 
@@ -6942,7 +6942,7 @@
 
     if-nez v5, :cond_2
 
-    .line 5339
+    .line 5343
     const-string/jumbo v5, "AccountManagerService"
 
     const/4 v6, 0x2
@@ -6953,7 +6953,7 @@
 
     if-eqz v5, :cond_0
 
-    .line 5340
+    .line 5344
     const-string/jumbo v5, "AccountManagerService"
 
     new-instance v6, Ljava/lang/StringBuilder;
@@ -6986,13 +6986,13 @@
 
     invoke-static {v5, v6}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 5342
+    .line 5346
     :cond_0
     invoke-static {v1}, Landroid/app/AppOpsManager;->permissionToOpCode(Ljava/lang/String;)I
 
     move-result v0
 
-    .line 5343
+    .line 5347
     .local v0, "opCode":I
     const/4 v5, -0x1
 
@@ -7006,20 +7006,20 @@
 
     if-nez v5, :cond_2
 
-    .line 5345
+    .line 5349
     :cond_1
     const/4 v2, 0x1
 
     return v2
 
-    .line 5337
+    .line 5341
     .end local v0    # "opCode":I
     :cond_2
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
-    .line 5349
+    .line 5353
     .end local v1    # "perm":Ljava/lang/String;
     :cond_3
     return v3
@@ -7032,17 +7032,17 @@
     .prologue
     const/4 v7, 0x0
 
-    .line 5363
+    .line 5367
     invoke-static {p1}, Landroid/os/UserHandle;->getUserId(I)I
 
     move-result v0
 
-    .line 5367
+    .line 5371
     .local v0, "callingUserId":I
     :try_start_0
     iget-object v6, p0, Lcom/android/server/accounts/AccountManagerService;->mContext:Landroid/content/Context;
 
-    .line 5368
+    .line 5372
     const-string/jumbo v8, "android"
 
     new-instance v9, Landroid/os/UserHandle;
@@ -7051,7 +7051,7 @@
 
     const/4 v10, 0x0
 
-    .line 5367
+    .line 5371
     invoke-virtual {v6, v8, v10, v9}, Landroid/content/Context;->createPackageContextAsUser(Ljava/lang/String;ILandroid/os/UserHandle;)Landroid/content/Context;
 
     move-result-object v6
@@ -7062,13 +7062,13 @@
 
     move-result-object v5
 
-    .line 5373
+    .line 5377
     .local v5, "userPackageManager":Landroid/content/pm/PackageManager;
     invoke-virtual {v5, p1}, Landroid/content/pm/PackageManager;->getPackagesForUid(I)[Ljava/lang/String;
 
     move-result-object v4
 
-    .line 5374
+    .line 5378
     .local v4, "packages":[Ljava/lang/String;
     array-length v8, v4
 
@@ -7079,7 +7079,7 @@
 
     aget-object v2, v4, v6
 
-    .line 5376
+    .line 5380
     .local v2, "name":Ljava/lang/String;
     const/4 v9, 0x0
 
@@ -7088,11 +7088,11 @@
 
     move-result-object v3
 
-    .line 5377
+    .line 5381
     .local v3, "packageInfo":Landroid/content/pm/PackageInfo;
     if-eqz v3, :cond_0
 
-    .line 5378
+    .line 5382
     iget-object v9, v3, Landroid/content/pm/PackageInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
     iget v9, v9, Landroid/content/pm/ApplicationInfo;->privateFlags:I
@@ -7103,12 +7103,12 @@
 
     if-eqz v9, :cond_0
 
-    .line 5380
+    .line 5384
     const/4 v6, 0x1
 
     return v6
 
-    .line 5369
+    .line 5373
     .end local v2    # "name":Ljava/lang/String;
     .end local v3    # "packageInfo":Landroid/content/pm/PackageInfo;
     .end local v4    # "packages":[Ljava/lang/String;
@@ -7116,11 +7116,11 @@
     :catch_0
     move-exception v1
 
-    .line 5370
+    .line 5374
     .local v1, "e":Landroid/content/pm/PackageManager$NameNotFoundException;
     return v7
 
-    .line 5382
+    .line 5386
     .end local v1    # "e":Landroid/content/pm/PackageManager$NameNotFoundException;
     .restart local v2    # "name":Ljava/lang/String;
     .restart local v4    # "packages":[Ljava/lang/String;
@@ -7128,11 +7128,11 @@
     :catch_1
     move-exception v1
 
-    .line 5383
+    .line 5387
     .restart local v1    # "e":Landroid/content/pm/PackageManager$NameNotFoundException;
     return v7
 
-    .line 5374
+    .line 5378
     .end local v1    # "e":Landroid/content/pm/PackageManager$NameNotFoundException;
     .restart local v3    # "packageInfo":Landroid/content/pm/PackageInfo;
     :cond_0
@@ -7140,7 +7140,7 @@
 
     goto :goto_0
 
-    .line 5386
+    .line 5390
     .end local v2    # "name":Ljava/lang/String;
     .end local v3    # "packageInfo":Landroid/content/pm/PackageInfo;
     :cond_1
@@ -7152,7 +7152,7 @@
     .param p1, "uid"    # I
 
     .prologue
-    .line 5616
+    .line 5620
     const-class v1, Landroid/app/admin/DevicePolicyManagerInternal;
 
     invoke-static {v1}, Lcom/android/server/LocalServices;->getService(Ljava/lang/Class;)Ljava/lang/Object;
@@ -7161,18 +7161,18 @@
 
     check-cast v0, Landroid/app/admin/DevicePolicyManagerInternal;
 
-    .line 5617
+    .line 5621
     .local v0, "dpmi":Landroid/app/admin/DevicePolicyManagerInternal;
     if-eqz v0, :cond_0
 
-    .line 5618
+    .line 5622
     const/4 v1, -0x1
 
     invoke-virtual {v0, p1, v1}, Landroid/app/admin/DevicePolicyManagerInternal;->isActiveAdminWithPolicy(II)Z
 
     move-result v1
 
-    .line 5617
+    .line 5621
     :goto_0
     return v1
 
@@ -7191,16 +7191,16 @@
 
     const/4 v7, 0x0
 
-    .line 5541
+    .line 5545
     const/4 v5, 0x0
 
-    .line 5542
+    .line 5546
     .local v5, "packages":[Ljava/lang/String;
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
     move-result-wide v2
 
-    .line 5544
+    .line 5548
     .local v2, "ident":J
     :try_start_0
     iget-object v6, p0, Lcom/android/server/accounts/AccountManagerService;->mPackageManager:Landroid/content/pm/PackageManager;
@@ -7211,14 +7211,14 @@
 
     move-result-object v5
 
-    .line 5546
+    .line 5550
     .local v5, "packages":[Ljava/lang/String;
     invoke-static {v2, v3}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
-    .line 5548
+    .line 5552
     if-eqz v5, :cond_1
 
-    .line 5549
+    .line 5553
     array-length v8, v5
 
     move v6, v7
@@ -7228,7 +7228,7 @@
 
     aget-object v1, v5, v6
 
-    .line 5551
+    .line 5555
     .local v1, "name":Ljava/lang/String;
     :try_start_1
     iget-object v9, p0, Lcom/android/server/accounts/AccountManagerService;->mPackageManager:Landroid/content/pm/PackageManager;
@@ -7239,11 +7239,11 @@
 
     move-result-object v4
 
-    .line 5552
+    .line 5556
     .local v4, "packageInfo":Landroid/content/pm/PackageInfo;
     if-eqz v4, :cond_0
 
-    .line 5553
+    .line 5557
     iget-object v9, v4, Landroid/content/pm/PackageInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
     iget v9, v9, Landroid/content/pm/ApplicationInfo;->flags:I
@@ -7254,29 +7254,29 @@
 
     if-eqz v9, :cond_0
 
-    .line 5555
+    .line 5559
     return v12
 
-    .line 5545
+    .line 5549
     .end local v1    # "name":Ljava/lang/String;
     .end local v4    # "packageInfo":Landroid/content/pm/PackageInfo;
     .local v5, "packages":[Ljava/lang/String;
     :catchall_0
     move-exception v6
 
-    .line 5546
+    .line 5550
     invoke-static {v2, v3}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
-    .line 5545
+    .line 5549
     throw v6
 
-    .line 5557
+    .line 5561
     .restart local v1    # "name":Ljava/lang/String;
     .local v5, "packages":[Ljava/lang/String;
     :catch_0
     move-exception v0
 
-    .line 5558
+    .line 5562
     .local v0, "e":Landroid/content/pm/PackageManager$NameNotFoundException;
     const-string/jumbo v9, "AccountManagerService"
 
@@ -7292,14 +7292,14 @@
 
     invoke-static {v9, v10, v0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 5549
+    .line 5553
     .end local v0    # "e":Landroid/content/pm/PackageManager$NameNotFoundException;
     :cond_0
     add-int/lit8 v6, v6, 0x1
 
     goto :goto_0
 
-    .line 5562
+    .line 5566
     .end local v1    # "name":Ljava/lang/String;
     :cond_1
     const-string/jumbo v6, "AccountManagerService"
@@ -7324,7 +7324,7 @@
 
     invoke-static {v6, v8}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 5564
+    .line 5568
     :cond_2
     return v7
 .end method
@@ -7338,7 +7338,7 @@
     .param p6, "userAccount"    # Lcom/android/server/accounts/AccountManagerService$UserAccounts;
 
     .prologue
-    .line 4625
+    .line 4629
     invoke-static {}, Lcom/android/server/accounts/AccountManagerService;->getCallingUid()I
 
     move-result v7
@@ -7357,7 +7357,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/android/server/accounts/AccountManagerService;->logRecord(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;JLcom/android/server/accounts/AccountManagerService$UserAccounts;I)V
 
-    .line 4624
+    .line 4628
     return-void
 .end method
 
@@ -7371,23 +7371,23 @@
     .param p7, "callingUid"    # I
 
     .prologue
-    .line 4633
+    .line 4637
     invoke-static {p6}, Lcom/android/server/accounts/AccountManagerService$UserAccounts;->-get6(Lcom/android/server/accounts/AccountManagerService$UserAccounts;)Landroid/database/sqlite/SQLiteStatement;
 
     move-result-object v0
 
-    .line 4634
+    .line 4638
     .local v0, "logStatement":Landroid/database/sqlite/SQLiteStatement;
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1, p4, p5}, Landroid/database/sqlite/SQLiteStatement;->bindLong(IJ)V
 
-    .line 4635
+    .line 4639
     const/4 v1, 0x2
 
     invoke-virtual {v0, v1, p2}, Landroid/database/sqlite/SQLiteStatement;->bindString(ILjava/lang/String;)V
 
-    .line 4636
+    .line 4640
     invoke-static {}, Lcom/android/server/accounts/AccountManagerService$DebugDbHelper;->-get18()Ljava/text/SimpleDateFormat;
 
     move-result-object v1
@@ -7404,19 +7404,19 @@
 
     invoke-virtual {v0, v2, v1}, Landroid/database/sqlite/SQLiteStatement;->bindString(ILjava/lang/String;)V
 
-    .line 4637
+    .line 4641
     int-to-long v2, p7
 
     const/4 v1, 0x4
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/database/sqlite/SQLiteStatement;->bindLong(IJ)V
 
-    .line 4638
+    .line 4642
     const/4 v1, 0x5
 
     invoke-virtual {v0, v1, p3}, Landroid/database/sqlite/SQLiteStatement;->bindString(ILjava/lang/String;)V
 
-    .line 4639
+    .line 4643
     invoke-static {p6}, Lcom/android/server/accounts/AccountManagerService$UserAccounts;->-get3(Lcom/android/server/accounts/AccountManagerService$UserAccounts;)I
 
     move-result v1
@@ -7427,13 +7427,13 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/database/sqlite/SQLiteStatement;->bindLong(IJ)V
 
-    .line 4640
+    .line 4644
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteStatement;->execute()V
 
-    .line 4641
+    .line 4645
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteStatement;->clearBindings()V
 
-    .line 4642
+    .line 4646
     invoke-static {p6}, Lcom/android/server/accounts/AccountManagerService$UserAccounts;->-get3(Lcom/android/server/accounts/AccountManagerService$UserAccounts;)I
 
     move-result v1
@@ -7444,7 +7444,7 @@
 
     invoke-static {p6, v1}, Lcom/android/server/accounts/AccountManagerService$UserAccounts;->-set0(Lcom/android/server/accounts/AccountManagerService$UserAccounts;I)I
 
-    .line 4632
+    .line 4636
     return-void
 .end method
 
@@ -7455,14 +7455,14 @@
     .param p3, "tableName"    # Ljava/lang/String;
 
     .prologue
-    .line 4611
+    .line 4615
     iget-object v0, p1, Lcom/android/server/accounts/AccountManagerService$UserAccounts;->openHelper:Lcom/android/server/accounts/AccountManagerService$DeDatabaseHelper;
 
     invoke-virtual {v0}, Lcom/android/server/accounts/AccountManagerService$DeDatabaseHelper;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v1
 
-    .line 4612
+    .line 4616
     .local v1, "db":Landroid/database/sqlite/SQLiteDatabase;
     const-wide/16 v4, -0x1
 
@@ -7476,7 +7476,7 @@
 
     invoke-direct/range {v0 .. v6}, Lcom/android/server/accounts/AccountManagerService;->logRecord(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;JLcom/android/server/accounts/AccountManagerService$UserAccounts;)V
 
-    .line 4610
+    .line 4614
     return-void
 .end method
 
@@ -7488,14 +7488,14 @@
     .param p4, "uid"    # I
 
     .prologue
-    .line 4616
+    .line 4620
     iget-object v0, p1, Lcom/android/server/accounts/AccountManagerService$UserAccounts;->openHelper:Lcom/android/server/accounts/AccountManagerService$DeDatabaseHelper;
 
     invoke-virtual {v0}, Lcom/android/server/accounts/AccountManagerService$DeDatabaseHelper;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v1
 
-    .line 4617
+    .line 4621
     .local v1, "db":Landroid/database/sqlite/SQLiteDatabase;
     const-wide/16 v4, -0x1
 
@@ -7511,7 +7511,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/android/server/accounts/AccountManagerService;->logRecord(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;JLcom/android/server/accounts/AccountManagerService$UserAccounts;I)V
 
-    .line 4615
+    .line 4619
     return-void
 .end method
 
@@ -7949,7 +7949,7 @@
 
     const/4 v2, 0x2
 
-    .line 5391
+    .line 5395
     invoke-static {p3}, Landroid/os/UserHandle;->getAppId(I)I
 
     move-result v0
@@ -7958,7 +7958,7 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 5392
+    .line 5396
     const-string/jumbo v0, "AccountManagerService"
 
     invoke-static {v0, v2}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
@@ -7967,7 +7967,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 5393
+    .line 5397
     const-string/jumbo v0, "AccountManagerService"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -7996,11 +7996,11 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 5395
+    .line 5399
     :cond_0
     return v3
 
-    .line 5398
+    .line 5402
     :cond_1
     invoke-direct {p0, p3}, Lcom/android/server/accounts/AccountManagerService;->isPrivileged(I)Z
 
@@ -8008,7 +8008,7 @@
 
     if-eqz v0, :cond_3
 
-    .line 5399
+    .line 5403
     const-string/jumbo v0, "AccountManagerService"
 
     invoke-static {v0, v2}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
@@ -8017,7 +8017,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 5400
+    .line 5404
     const-string/jumbo v0, "AccountManagerService"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -8044,10 +8044,10 @@
 
     move-result-object v1
 
-    .line 5401
+    .line 5405
     const-string/jumbo v2, " privileged"
 
-    .line 5400
+    .line 5404
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
@@ -8058,11 +8058,11 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 5403
+    .line 5407
     :cond_2
     return v3
 
-    .line 5405
+    .line 5409
     :cond_3
     if-eqz p1, :cond_5
 
@@ -8074,7 +8074,7 @@
 
     if-eqz v0, :cond_5
 
-    .line 5406
+    .line 5410
     const-string/jumbo v0, "AccountManagerService"
 
     invoke-static {v0, v2}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
@@ -8083,7 +8083,7 @@
 
     if-eqz v0, :cond_4
 
-    .line 5407
+    .line 5411
     const-string/jumbo v0, "AccountManagerService"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -8110,10 +8110,10 @@
 
     move-result-object v1
 
-    .line 5408
+    .line 5412
     const-string/jumbo v2, " manages the account"
 
-    .line 5407
+    .line 5411
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
@@ -8124,11 +8124,11 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 5410
+    .line 5414
     :cond_4
     return v3
 
-    .line 5412
+    .line 5416
     :cond_5
     if-eqz p1, :cond_7
 
@@ -8138,7 +8138,7 @@
 
     if-eqz v0, :cond_7
 
-    .line 5413
+    .line 5417
     const-string/jumbo v0, "AccountManagerService"
 
     invoke-static {v0, v2}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
@@ -8147,7 +8147,7 @@
 
     if-eqz v0, :cond_6
 
-    .line 5414
+    .line 5418
     const-string/jumbo v0, "AccountManagerService"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -8174,10 +8174,10 @@
 
     move-result-object v1
 
-    .line 5415
+    .line 5419
     const-string/jumbo v2, " user granted access"
 
-    .line 5414
+    .line 5418
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
@@ -8188,11 +8188,11 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 5417
+    .line 5421
     :cond_6
     return v3
 
-    .line 5420
+    .line 5424
     :cond_7
     const-string/jumbo v0, "AccountManagerService"
 
@@ -8202,7 +8202,7 @@
 
     if-eqz v0, :cond_8
 
-    .line 5421
+    .line 5425
     const-string/jumbo v0, "AccountManagerService"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -8235,7 +8235,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 5424
+    .line 5428
     :cond_8
     const/4 v0, 0x0
 
@@ -8815,7 +8815,7 @@
     .param p2, "account"    # Landroid/accounts/Account;
 
     .prologue
-    .line 5726
+    .line 5730
     iget-object v4, p1, Lcom/android/server/accounts/AccountManagerService$UserAccounts;->accountCache:Ljava/util/HashMap;
 
     iget-object v5, p2, Landroid/accounts/Account;->type:Ljava/lang/String;
@@ -8826,16 +8826,16 @@
 
     check-cast v3, [Landroid/accounts/Account;
 
-    .line 5727
+    .line 5731
     .local v3, "oldAccountsForType":[Landroid/accounts/Account;
     if-eqz v3, :cond_2
 
-    .line 5728
+    .line 5732
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
-    .line 5729
+    .line 5733
     .local v2, "newAccountsList":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Landroid/accounts/Account;>;"
     const/4 v4, 0x0
 
@@ -8846,7 +8846,7 @@
 
     aget-object v0, v3, v4
 
-    .line 5730
+    .line 5734
     .local v0, "curAccount":Landroid/accounts/Account;
     invoke-virtual {v0, p2}, Landroid/accounts/Account;->equals(Ljava/lang/Object;)Z
 
@@ -8854,16 +8854,16 @@
 
     if-nez v6, :cond_0
 
-    .line 5731
+    .line 5735
     invoke-virtual {v2, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 5729
+    .line 5733
     :cond_0
     add-int/lit8 v4, v4, 0x1
 
     goto :goto_0
 
-    .line 5734
+    .line 5738
     .end local v0    # "curAccount":Landroid/accounts/Account;
     :cond_1
     invoke-virtual {v2}, Ljava/util/ArrayList;->isEmpty()Z
@@ -8872,14 +8872,14 @@
 
     if-eqz v4, :cond_3
 
-    .line 5735
+    .line 5739
     iget-object v4, p1, Lcom/android/server/accounts/AccountManagerService$UserAccounts;->accountCache:Ljava/util/HashMap;
 
     iget-object v5, p2, Landroid/accounts/Account;->type:Ljava/lang/String;
 
     invoke-virtual {v4, v5}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 5742
+    .line 5746
     .end local v2    # "newAccountsList":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Landroid/accounts/Account;>;"
     :cond_2
     :goto_1
@@ -8889,24 +8889,24 @@
 
     invoke-virtual {v4, p2}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 5743
+    .line 5747
     invoke-static {p1}, Lcom/android/server/accounts/AccountManagerService$UserAccounts;->-get1(Lcom/android/server/accounts/AccountManagerService$UserAccounts;)Ljava/util/HashMap;
 
     move-result-object v4
 
     invoke-virtual {v4, p2}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 5744
+    .line 5748
     invoke-static {p1}, Lcom/android/server/accounts/AccountManagerService$UserAccounts;->-get4(Lcom/android/server/accounts/AccountManagerService$UserAccounts;)Ljava/util/HashMap;
 
     move-result-object v4
 
     invoke-virtual {v4, p2}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 5725
+    .line 5729
     return-void
 
-    .line 5737
+    .line 5741
     .restart local v2    # "newAccountsList":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Landroid/accounts/Account;>;"
     :cond_3
     invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
@@ -8915,7 +8915,7 @@
 
     new-array v1, v4, [Landroid/accounts/Account;
 
-    .line 5738
+    .line 5742
     .local v1, "newAccountsForType":[Landroid/accounts/Account;
     invoke-virtual {v2, v1}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
@@ -8924,7 +8924,7 @@
     .end local v1    # "newAccountsForType":[Landroid/accounts/Account;
     check-cast v1, [Landroid/accounts/Account;
 
-    .line 5739
+    .line 5743
     .restart local v1    # "newAccountsForType":[Landroid/accounts/Account;
     iget-object v4, p1, Lcom/android/server/accounts/AccountManagerService$UserAccounts;->accountCache:Ljava/util/HashMap;
 
@@ -10068,12 +10068,12 @@
     .param p3, "uid"    # I
 
     .prologue
-    .line 5688
+    .line 5692
     if-eqz p1, :cond_0
 
     if-nez p2, :cond_1
 
-    .line 5689
+    .line 5693
     :cond_0
     const-string/jumbo v6, "AccountManagerService"
 
@@ -10085,10 +10085,10 @@
 
     invoke-static {v6, v7, v8}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 5690
+    .line 5694
     return-void
 
-    .line 5692
+    .line 5696
     :cond_1
     invoke-static {p3}, Landroid/os/UserHandle;->getUserId(I)I
 
@@ -10098,13 +10098,13 @@
 
     move-result-object v2
 
-    .line 5693
+    .line 5697
     .local v2, "accounts":Lcom/android/server/accounts/AccountManagerService$UserAccounts;
     iget-object v7, v2, Lcom/android/server/accounts/AccountManagerService$UserAccounts;->cacheLock:Ljava/lang/Object;
 
     monitor-enter v7
 
-    .line 5694
+    .line 5698
     :try_start_0
     iget-object v6, v2, Lcom/android/server/accounts/AccountManagerService$UserAccounts;->openHelper:Lcom/android/server/accounts/AccountManagerService$DeDatabaseHelper;
 
@@ -10112,19 +10112,19 @@
 
     move-result-object v3
 
-    .line 5695
+    .line 5699
     .local v3, "db":Landroid/database/sqlite/SQLiteDatabase;
     invoke-virtual {v3}, Landroid/database/sqlite/SQLiteDatabase;->beginTransaction()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 5697
+    .line 5701
     :try_start_1
     invoke-direct {p0, v3, p1}, Lcom/android/server/accounts/AccountManagerService;->getAccountIdLocked(Landroid/database/sqlite/SQLiteDatabase;Landroid/accounts/Account;)J
 
     move-result-wide v0
 
-    .line 5698
+    .line 5702
     .local v0, "accountId":J
     const-wide/16 v8, 0x0
 
@@ -10132,13 +10132,13 @@
 
     if-ltz v6, :cond_2
 
-    .line 5699
+    .line 5703
     const-string/jumbo v6, "grants"
 
-    .line 5700
+    .line 5704
     const-string/jumbo v8, "accounts_id=? AND auth_token_type=? AND uid=?"
 
-    .line 5702
+    .line 5706
     const/4 v9, 0x3
 
     new-array v9, v9, [Ljava/lang/String;
@@ -10155,7 +10155,7 @@
 
     aput-object p2, v9, v10
 
-    .line 5703
+    .line 5707
     invoke-static {p3}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
     move-result-object v10
@@ -10164,20 +10164,20 @@
 
     aput-object v10, v9, v11
 
-    .line 5699
+    .line 5703
     invoke-virtual {v3, v6, v8, v9}, Landroid/database/sqlite/SQLiteDatabase;->delete(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)I
 
-    .line 5704
+    .line 5708
     invoke-virtual {v3}, Landroid/database/sqlite/SQLiteDatabase;->setTransactionSuccessful()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 5707
+    .line 5711
     :cond_2
     :try_start_2
     invoke-virtual {v3}, Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V
 
-    .line 5710
+    .line 5714
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/accounts/AccountManagerService;->getCredentialPermissionNotificationId(Landroid/accounts/Account;Ljava/lang/String;I)Ljava/lang/Integer;
 
     move-result-object v6
@@ -10186,7 +10186,7 @@
 
     move-result v6
 
-    .line 5711
+    .line 5715
     new-instance v8, Landroid/os/UserHandle;
 
     invoke-static {v2}, Lcom/android/server/accounts/AccountManagerService$UserAccounts;->-get8(Lcom/android/server/accounts/AccountManagerService$UserAccounts;)I
@@ -10195,17 +10195,17 @@
 
     invoke-direct {v8, v9}, Landroid/os/UserHandle;-><init>(I)V
 
-    .line 5710
+    .line 5714
     invoke-virtual {p0, v6, v8}, Lcom/android/server/accounts/AccountManagerService;->cancelNotification(ILandroid/os/UserHandle;)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
     monitor-exit v7
 
-    .line 5716
+    .line 5720
     iget-object v6, p0, Lcom/android/server/accounts/AccountManagerService;->mAppPermissionChangeListeners:Ljava/util/concurrent/CopyOnWriteArrayList;
 
-    .line 5715
+    .line 5719
     invoke-interface {v6}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v5
@@ -10224,7 +10224,7 @@
 
     check-cast v4, Landroid/accounts/AccountManagerInternal$OnAppPermissionChangeListener;
 
-    .line 5717
+    .line 5721
     .local v4, "listener":Landroid/accounts/AccountManagerInternal$OnAppPermissionChangeListener;
     iget-object v6, p0, Lcom/android/server/accounts/AccountManagerService;->mMessageHandler:Lcom/android/server/accounts/AccountManagerService$MessageHandler;
 
@@ -10236,23 +10236,23 @@
 
     goto :goto_0
 
-    .line 5706
+    .line 5710
     .end local v0    # "accountId":J
     .end local v4    # "listener":Landroid/accounts/AccountManagerInternal$OnAppPermissionChangeListener;
     .end local v5    # "listener$iterator":Ljava/util/Iterator;
     :catchall_0
     move-exception v6
 
-    .line 5707
+    .line 5711
     :try_start_3
     invoke-virtual {v3}, Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V
 
-    .line 5706
+    .line 5710
     throw v6
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
-    .line 5693
+    .line 5697
     .end local v3    # "db":Landroid/database/sqlite/SQLiteDatabase;
     :catchall_1
     move-exception v6
@@ -10261,7 +10261,7 @@
 
     throw v6
 
-    .line 5687
+    .line 5691
     .restart local v0    # "accountId":J
     .restart local v3    # "db":Landroid/database/sqlite/SQLiteDatabase;
     .restart local v5    # "listener$iterator":Ljava/util/Iterator;
@@ -10618,10 +10618,10 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 5168
+    .line 5172
     if-eqz p0, :cond_1
 
-    .line 5169
+    .line 5173
     array-length v3, p0
 
     move v1, v2
@@ -10631,7 +10631,7 @@
 
     aget-object v0, p0, v1
 
-    .line 5170
+    .line 5174
     .local v0, "arg":Ljava/lang/String;
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -10639,18 +10639,18 @@
 
     if-eqz v4, :cond_0
 
-    .line 5171
+    .line 5175
     const/4 v1, 0x1
 
     return v1
 
-    .line 5169
+    .line 5173
     :cond_0
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 5175
+    .line 5179
     .end local v0    # "arg":Ljava/lang/String;
     :cond_1
     return v2
@@ -10714,22 +10714,22 @@
     .param p3, "errorMessage"    # Ljava/lang/String;
 
     .prologue
-    .line 5997
+    .line 6001
     :try_start_0
     invoke-interface {p1, p2, p3}, Landroid/accounts/IAccountManagerResponse;->onError(ILjava/lang/String;)V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 5995
+    .line 5999
     :cond_0
     :goto_0
     return-void
 
-    .line 5998
+    .line 6002
     :catch_0
     move-exception v0
 
-    .line 6001
+    .line 6005
     .local v0, "e":Landroid/os/RemoteException;
     const-string/jumbo v1, "AccountManagerService"
 
@@ -10741,7 +10741,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 6002
+    .line 6006
     const-string/jumbo v1, "AccountManagerService"
 
     const-string/jumbo v2, "failure while notifying response"
@@ -10757,22 +10757,22 @@
     .param p2, "result"    # Landroid/os/Bundle;
 
     .prologue
-    .line 5984
+    .line 5988
     :try_start_0
     invoke-interface {p1, p2}, Landroid/accounts/IAccountManagerResponse;->onResult(Landroid/os/Bundle;)V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 5982
+    .line 5986
     :cond_0
     :goto_0
     return-void
 
-    .line 5985
+    .line 5989
     :catch_0
     move-exception v0
 
-    .line 5988
+    .line 5992
     .local v0, "e":Landroid/os/RemoteException;
     const-string/jumbo v1, "AccountManagerService"
 
@@ -10784,7 +10784,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 5989
+    .line 5993
     const-string/jumbo v1, "AccountManagerService"
 
     const-string/jumbo v2, "failure while notifying response"
@@ -11275,7 +11275,7 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 5722
+    .line 5726
     if-eqz p0, :cond_0
 
     new-instance v0, Ljava/lang/StringBuilder;
@@ -14276,7 +14276,7 @@
     .param p2, "user"    # Landroid/os/UserHandle;
 
     .prologue
-    .line 5320
+    .line 5324
     iget-object v0, p0, Lcom/android/server/accounts/AccountManagerService;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
@@ -14285,7 +14285,7 @@
 
     invoke-virtual {p0, p1, v0, p2}, Lcom/android/server/accounts/AccountManagerService;->cancelNotification(ILjava/lang/String;Landroid/os/UserHandle;)V
 
-    .line 5319
+    .line 5323
     return-void
 .end method
 
@@ -14296,12 +14296,12 @@
     .param p3, "user"    # Landroid/os/UserHandle;
 
     .prologue
-    .line 5324
+    .line 5328
     invoke-static {}, Lcom/android/server/accounts/AccountManagerService;->clearCallingIdentity()J
 
     move-result-wide v2
 
-    .line 5327
+    .line 5331
     .local v2, "identityToken":J
     :try_start_0
     const-string/jumbo v4, "notification"
@@ -14310,12 +14310,12 @@
 
     move-result-object v4
 
-    .line 5326
+    .line 5330
     invoke-static {v4}, Landroid/app/INotificationManager$Stub;->asInterface(Landroid/os/IBinder;)Landroid/app/INotificationManager;
 
     move-result-object v1
 
-    .line 5328
+    .line 5332
     .local v1, "service":Landroid/app/INotificationManager;
     invoke-virtual {p3}, Landroid/os/UserHandle;->getIdentifier()I
 
@@ -14328,33 +14328,33 @@
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 5332
+    .line 5336
     invoke-static {v2, v3}, Lcom/android/server/accounts/AccountManagerService;->restoreCallingIdentity(J)V
 
-    .line 5323
+    .line 5327
     .end local v1    # "service":Landroid/app/INotificationManager;
     :goto_0
     return-void
 
-    .line 5329
+    .line 5333
     :catch_0
     move-exception v0
 
-    .line 5332
+    .line 5336
     .local v0, "e":Landroid/os/RemoteException;
     invoke-static {v2, v3}, Lcom/android/server/accounts/AccountManagerService;->restoreCallingIdentity(J)V
 
     goto :goto_0
 
-    .line 5331
+    .line 5335
     .end local v0    # "e":Landroid/os/RemoteException;
     :catchall_0
     move-exception v4
 
-    .line 5332
+    .line 5336
     invoke-static {v2, v3}, Lcom/android/server/accounts/AccountManagerService;->restoreCallingIdentity(J)V
 
-    .line 5331
+    .line 5335
     throw v4
 .end method
 
@@ -15237,7 +15237,7 @@
     .param p3, "args"    # [Ljava/lang/String;
 
     .prologue
-    .line 5180
+    .line 5184
     iget-object v0, p0, Lcom/android/server/accounts/AccountManagerService;->mContext:Landroid/content/Context;
 
     const-string/jumbo v1, "android.permission.DUMP"
@@ -15248,7 +15248,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 5182
+    .line 5186
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -15259,46 +15259,46 @@
 
     move-result-object v0
 
-    .line 5183
+    .line 5187
     invoke-static {}, Landroid/os/Binder;->getCallingPid()I
 
     move-result v1
 
-    .line 5182
+    .line 5186
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 5183
+    .line 5187
     const-string/jumbo v1, ", uid="
 
-    .line 5182
+    .line 5186
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 5183
+    .line 5187
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
     move-result v1
 
-    .line 5182
+    .line 5186
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 5184
+    .line 5188
     const-string/jumbo v1, " without permission "
 
-    .line 5182
+    .line 5186
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 5184
+    .line 5188
     const-string/jumbo v1, "android.permission.DUMP"
 
-    .line 5182
+    .line 5186
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
@@ -15309,10 +15309,10 @@
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 5185
+    .line 5189
     return-void
 
-    .line 5187
+    .line 5191
     :cond_0
     const-string/jumbo v0, "--checkin"
 
@@ -15328,7 +15328,7 @@
 
     move-result v5
 
-    .line 5188
+    .line 5192
     :goto_0
     new-instance v3, Lcom/android/internal/util/IndentingPrintWriter;
 
@@ -15336,7 +15336,7 @@
 
     invoke-direct {v3, p2, v0}, Lcom/android/internal/util/IndentingPrintWriter;-><init>(Ljava/io/Writer;Ljava/lang/String;)V
 
-    .line 5190
+    .line 5194
     .local v3, "ipw":Lcom/android/internal/util/IndentingPrintWriter;
     invoke-direct {p0}, Lcom/android/server/accounts/AccountManagerService;->getUserManager()Landroid/os/UserManager;
 
@@ -15346,7 +15346,7 @@
 
     move-result-object v8
 
-    .line 5191
+    .line 5195
     .local v8, "users":Ljava/util/List;, "Ljava/util/List<Landroid/content/pm/UserInfo;>;"
     invoke-interface {v8}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
@@ -15366,7 +15366,7 @@
 
     check-cast v6, Landroid/content/pm/UserInfo;
 
-    .line 5192
+    .line 5196
     .local v6, "user":Landroid/content/pm/UserInfo;
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -15394,10 +15394,10 @@
 
     invoke-virtual {v3, v0}, Lcom/android/internal/util/IndentingPrintWriter;->println(Ljava/lang/String;)V
 
-    .line 5193
+    .line 5197
     invoke-virtual {v3}, Lcom/android/internal/util/IndentingPrintWriter;->increaseIndent()V
 
-    .line 5194
+    .line 5198
     iget v0, v6, Landroid/content/pm/UserInfo;->id:I
 
     invoke-virtual {p0, v0}, Lcom/android/server/accounts/AccountManagerService;->getUserAccounts(I)Lcom/android/server/accounts/AccountManagerService$UserAccounts;
@@ -15412,15 +15412,15 @@
 
     invoke-direct/range {v0 .. v5}, Lcom/android/server/accounts/AccountManagerService;->dumpUser(Lcom/android/server/accounts/AccountManagerService$UserAccounts;Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;Z)V
 
-    .line 5195
+    .line 5199
     invoke-virtual {v3}, Lcom/android/internal/util/IndentingPrintWriter;->println()V
 
-    .line 5196
+    .line 5200
     invoke-virtual {v3}, Lcom/android/internal/util/IndentingPrintWriter;->decreaseIndent()V
 
     goto :goto_1
 
-    .line 5187
+    .line 5191
     .end local v3    # "ipw":Lcom/android/internal/util/IndentingPrintWriter;
     .end local v6    # "user":Landroid/content/pm/UserInfo;
     .end local v7    # "user$iterator":Ljava/util/Iterator;
@@ -15431,7 +15431,7 @@
     .local v5, "isCheckinRequest":Z
     goto :goto_0
 
-    .line 5179
+    .line 5183
     .end local v5    # "isCheckinRequest":Z
     .restart local v3    # "ipw":Lcom/android/internal/util/IndentingPrintWriter;
     .restart local v7    # "user$iterator":Ljava/util/Iterator;
@@ -16917,10 +16917,10 @@
     .prologue
     const/4 v6, 0x0
 
-    .line 5840
+    .line 5844
     if-eqz p2, :cond_1
 
-    .line 5841
+    .line 5845
     iget-object v5, p1, Lcom/android/server/accounts/AccountManagerService$UserAccounts;->accountCache:Ljava/util/HashMap;
 
     invoke-virtual {v5, p2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -16929,16 +16929,16 @@
 
     check-cast v0, [Landroid/accounts/Account;
 
-    .line 5842
+    .line 5846
     .local v0, "accounts":[Landroid/accounts/Account;
     if-nez v0, :cond_0
 
-    .line 5843
+    .line 5847
     sget-object v5, Lcom/android/server/accounts/AccountManagerService;->EMPTY_ACCOUNT_ARRAY:[Landroid/accounts/Account;
 
     return-object v5
 
-    .line 5845
+    .line 5849
     :cond_0
     array-length v5, v0
 
@@ -16954,12 +16954,12 @@
 
     return-object v5
 
-    .line 5849
+    .line 5853
     .end local v0    # "accounts":[Landroid/accounts/Account;
     :cond_1
     const/4 v4, 0x0
 
-    .line 5850
+    .line 5854
     .local v4, "totalLength":I
     iget-object v5, p1, Lcom/android/server/accounts/AccountManagerService$UserAccounts;->accountCache:Ljava/util/HashMap;
 
@@ -16985,7 +16985,7 @@
 
     check-cast v0, [Landroid/accounts/Account;
 
-    .line 5851
+    .line 5855
     .restart local v0    # "accounts":[Landroid/accounts/Account;
     array-length v5, v0
 
@@ -16993,25 +16993,25 @@
 
     goto :goto_0
 
-    .line 5853
+    .line 5857
     .end local v0    # "accounts":[Landroid/accounts/Account;
     :cond_2
     if-nez v4, :cond_3
 
-    .line 5854
+    .line 5858
     sget-object v5, Lcom/android/server/accounts/AccountManagerService;->EMPTY_ACCOUNT_ARRAY:[Landroid/accounts/Account;
 
     return-object v5
 
-    .line 5856
+    .line 5860
     :cond_3
     new-array v0, v4, [Landroid/accounts/Account;
 
-    .line 5857
+    .line 5861
     .restart local v0    # "accounts":[Landroid/accounts/Account;
     const/4 v4, 0x0
 
-    .line 5858
+    .line 5862
     iget-object v5, p1, Lcom/android/server/accounts/AccountManagerService$UserAccounts;->accountCache:Ljava/util/HashMap;
 
     invoke-virtual {v5}, Ljava/util/HashMap;->values()Ljava/util/Collection;
@@ -17036,21 +17036,21 @@
 
     check-cast v2, [Landroid/accounts/Account;
 
-    .line 5860
+    .line 5864
     .local v2, "accountsOfType":[Landroid/accounts/Account;
     array-length v5, v2
 
-    .line 5859
+    .line 5863
     invoke-static {v2, v6, v0, v4, v5}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 5861
+    .line 5865
     array-length v5, v2
 
     add-int/2addr v4, v5
 
     goto :goto_1
 
-    .line 5863
+    .line 5867
     .end local v2    # "accountsOfType":[Landroid/accounts/Account;
     :cond_4
     invoke-direct {p0, p1, v0, p3, p4}, Lcom/android/server/accounts/AccountManagerService;->filterSharedAccounts(Lcom/android/server/accounts/AccountManagerService$UserAccounts;[Landroid/accounts/Account;ILjava/lang/String;)[Landroid/accounts/Account;
@@ -18175,20 +18175,20 @@
     .param p1, "userId"    # I
 
     .prologue
-    .line 4552
+    .line 4556
     new-instance v0, Ljava/io/File;
 
     invoke-static {p1}, Landroid/os/Environment;->getDataSystemCeDirectory(I)Ljava/io/File;
 
     move-result-object v1
 
-    .line 4553
+    .line 4557
     const-string/jumbo v2, "accounts_ce.db"
 
-    .line 4552
+    .line 4556
     invoke-direct {v0, v1, v2}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 4554
+    .line 4558
     .local v0, "databaseFile":Ljava/io/File;
     invoke-virtual {v0}, Ljava/io/File;->getPath()Ljava/lang/String;
 
@@ -18202,20 +18202,20 @@
     .param p1, "userId"    # I
 
     .prologue
-    .line 4545
+    .line 4549
     new-instance v0, Ljava/io/File;
 
     invoke-static {p1}, Landroid/os/Environment;->getDataSystemDeDirectory(I)Ljava/io/File;
 
     move-result-object v1
 
-    .line 4546
+    .line 4550
     const-string/jumbo v2, "accounts_de.db"
 
-    .line 4545
+    .line 4549
     invoke-direct {v0, v1, v2}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 4547
+    .line 4551
     .local v0, "databaseFile":Ljava/io/File;
     invoke-virtual {v0}, Ljava/io/File;->getPath()Ljava/lang/String;
 
@@ -18418,12 +18418,12 @@
     .param p1, "userId"    # I
 
     .prologue
-    .line 4518
+    .line 4522
     invoke-static {}, Landroid/os/Environment;->getDataSystemDirectory()Ljava/io/File;
 
     move-result-object v2
 
-    .line 4519
+    .line 4523
     .local v2, "systemDir":Ljava/io/File;
     new-instance v0, Ljava/io/File;
 
@@ -18431,24 +18431,24 @@
 
     move-result-object v4
 
-    .line 4520
+    .line 4524
     const-string/jumbo v5, "accounts.db"
 
-    .line 4519
+    .line 4523
     invoke-direct {v0, v4, v5}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 4521
+    .line 4525
     .local v0, "databaseFile":Ljava/io/File;
     if-nez p1, :cond_0
 
-    .line 4526
+    .line 4530
     new-instance v1, Ljava/io/File;
 
     const-string/jumbo v4, "accounts.db"
 
     invoke-direct {v1, v2, v4}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 4527
+    .line 4531
     .local v1, "oldFile":Ljava/io/File;
     invoke-virtual {v1}, Ljava/io/File;->exists()Z
 
@@ -18462,7 +18462,7 @@
 
     if-eqz v4, :cond_1
 
-    .line 4540
+    .line 4544
     .end local v1    # "oldFile":Ljava/io/File;
     :cond_0
     invoke-virtual {v0}, Ljava/io/File;->getPath()Ljava/lang/String;
@@ -18471,14 +18471,14 @@
 
     return-object v4
 
-    .line 4529
+    .line 4533
     .restart local v1    # "oldFile":Ljava/io/File;
     :cond_1
     invoke-static {p1}, Landroid/os/Environment;->getUserSystemDirectory(I)Ljava/io/File;
 
     move-result-object v3
 
-    .line 4530
+    .line 4534
     .local v3, "userDir":Ljava/io/File;
     invoke-virtual {v3}, Ljava/io/File;->exists()Z
 
@@ -18486,14 +18486,14 @@
 
     if-nez v4, :cond_2
 
-    .line 4531
+    .line 4535
     invoke-virtual {v3}, Ljava/io/File;->mkdirs()Z
 
     move-result v4
 
     if-nez v4, :cond_2
 
-    .line 4532
+    .line 4536
     new-instance v4, Ljava/lang/IllegalStateException;
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -18518,7 +18518,7 @@
 
     throw v4
 
-    .line 4535
+    .line 4539
     :cond_2
     invoke-virtual {v1, v0}, Ljava/io/File;->renameTo(Ljava/io/File;)Z
 
@@ -18526,7 +18526,7 @@
 
     if-nez v4, :cond_0
 
-    .line 4536
+    .line 4540
     new-instance v4, Ljava/lang/IllegalStateException;
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -19394,12 +19394,12 @@
     .param p3, "uid"    # I
 
     .prologue
-    .line 5645
+    .line 5649
     if-eqz p1, :cond_0
 
     if-nez p2, :cond_1
 
-    .line 5646
+    .line 5650
     :cond_0
     const-string/jumbo v7, "AccountManagerService"
 
@@ -19411,10 +19411,10 @@
 
     invoke-static {v7, v8, v9}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 5647
+    .line 5651
     return-void
 
-    .line 5649
+    .line 5653
     :cond_1
     invoke-static {p3}, Landroid/os/UserHandle;->getUserId(I)I
 
@@ -19424,13 +19424,13 @@
 
     move-result-object v2
 
-    .line 5650
+    .line 5654
     .local v2, "accounts":Lcom/android/server/accounts/AccountManagerService$UserAccounts;
     iget-object v8, v2, Lcom/android/server/accounts/AccountManagerService$UserAccounts;->cacheLock:Ljava/lang/Object;
 
     monitor-enter v8
 
-    .line 5651
+    .line 5655
     :try_start_0
     iget-object v7, v2, Lcom/android/server/accounts/AccountManagerService$UserAccounts;->openHelper:Lcom/android/server/accounts/AccountManagerService$DeDatabaseHelper;
 
@@ -19438,19 +19438,19 @@
 
     move-result-object v3
 
-    .line 5652
+    .line 5656
     .local v3, "db":Landroid/database/sqlite/SQLiteDatabase;
     invoke-virtual {v3}, Landroid/database/sqlite/SQLiteDatabase;->beginTransaction()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 5654
+    .line 5658
     :try_start_1
     invoke-direct {p0, v3, p1}, Lcom/android/server/accounts/AccountManagerService;->getAccountIdLocked(Landroid/database/sqlite/SQLiteDatabase;Landroid/accounts/Account;)J
 
     move-result-wide v0
 
-    .line 5655
+    .line 5659
     .local v0, "accountId":J
     const-wide/16 v10, 0x0
 
@@ -19458,12 +19458,12 @@
 
     if-ltz v7, :cond_2
 
-    .line 5656
+    .line 5660
     new-instance v6, Landroid/content/ContentValues;
 
     invoke-direct {v6}, Landroid/content/ContentValues;-><init>()V
 
-    .line 5657
+    .line 5661
     .local v6, "values":Landroid/content/ContentValues;
     const-string/jumbo v7, "accounts_id"
 
@@ -19473,12 +19473,12 @@
 
     invoke-virtual {v6, v7, v9}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
 
-    .line 5658
+    .line 5662
     const-string/jumbo v7, "auth_token_type"
 
     invoke-virtual {v6, v7, p2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 5659
+    .line 5663
     const-string/jumbo v7, "uid"
 
     invoke-static {p3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -19487,25 +19487,25 @@
 
     invoke-virtual {v6, v7, v9}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 5660
+    .line 5664
     const-string/jumbo v7, "grants"
 
     const-string/jumbo v9, "accounts_id"
 
     invoke-virtual {v3, v7, v9, v6}, Landroid/database/sqlite/SQLiteDatabase;->insert(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;)J
 
-    .line 5661
+    .line 5665
     invoke-virtual {v3}, Landroid/database/sqlite/SQLiteDatabase;->setTransactionSuccessful()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 5664
+    .line 5668
     .end local v6    # "values":Landroid/content/ContentValues;
     :cond_2
     :try_start_2
     invoke-virtual {v3}, Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V
 
-    .line 5666
+    .line 5670
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/accounts/AccountManagerService;->getCredentialPermissionNotificationId(Landroid/accounts/Account;Ljava/lang/String;I)Ljava/lang/Integer;
 
     move-result-object v7
@@ -19514,7 +19514,7 @@
 
     move-result v7
 
-    .line 5667
+    .line 5671
     invoke-static {v2}, Lcom/android/server/accounts/AccountManagerService$UserAccounts;->-get8(Lcom/android/server/accounts/AccountManagerService$UserAccounts;)I
 
     move-result v9
@@ -19523,10 +19523,10 @@
 
     move-result-object v9
 
-    .line 5666
+    .line 5670
     invoke-virtual {p0, v7, v9}, Lcom/android/server/accounts/AccountManagerService;->cancelNotification(ILandroid/os/UserHandle;)V
 
-    .line 5669
+    .line 5673
     const/4 v7, 0x1
 
     invoke-direct {p0, p1, p3, v7}, Lcom/android/server/accounts/AccountManagerService;->cancelAccountAccessRequestNotificationIfNeeded(Landroid/accounts/Account;IZ)V
@@ -19535,10 +19535,10 @@
 
     monitor-exit v8
 
-    .line 5674
+    .line 5678
     iget-object v7, p0, Lcom/android/server/accounts/AccountManagerService;->mAppPermissionChangeListeners:Ljava/util/concurrent/CopyOnWriteArrayList;
 
-    .line 5673
+    .line 5677
     invoke-interface {v7}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v5
@@ -19557,7 +19557,7 @@
 
     check-cast v4, Landroid/accounts/AccountManagerInternal$OnAppPermissionChangeListener;
 
-    .line 5675
+    .line 5679
     .local v4, "listener":Landroid/accounts/AccountManagerInternal$OnAppPermissionChangeListener;
     iget-object v7, p0, Lcom/android/server/accounts/AccountManagerService;->mMessageHandler:Lcom/android/server/accounts/AccountManagerService$MessageHandler;
 
@@ -19569,23 +19569,23 @@
 
     goto :goto_0
 
-    .line 5663
+    .line 5667
     .end local v0    # "accountId":J
     .end local v4    # "listener":Landroid/accounts/AccountManagerInternal$OnAppPermissionChangeListener;
     .end local v5    # "listener$iterator":Ljava/util/Iterator;
     :catchall_0
     move-exception v7
 
-    .line 5664
+    .line 5668
     :try_start_3
     invoke-virtual {v3}, Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V
 
-    .line 5663
+    .line 5667
     throw v7
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
-    .line 5650
+    .line 5654
     .end local v3    # "db":Landroid/database/sqlite/SQLiteDatabase;
     :catchall_1
     move-exception v7
@@ -19594,7 +19594,7 @@
 
     throw v7
 
-    .line 5644
+    .line 5648
     .restart local v0    # "accountId":J
     .restart local v3    # "db":Landroid/database/sqlite/SQLiteDatabase;
     .restart local v5    # "listener$iterator":Ljava/util/Iterator;
@@ -19901,7 +19901,7 @@
     .param p3, "user"    # Landroid/os/UserHandle;
 
     .prologue
-    .line 5299
+    .line 5303
     const-string/jumbo v0, "android"
 
     invoke-virtual {p3}, Landroid/os/UserHandle;->getIdentifier()I
@@ -19910,7 +19910,7 @@
 
     invoke-direct {p0, p1, p2, v0, v1}, Lcom/android/server/accounts/AccountManagerService;->installNotification(ILandroid/app/Notification;Ljava/lang/String;I)V
 
-    .line 5298
+    .line 5302
     return-void
 .end method
 
@@ -20512,7 +20512,7 @@
     .param p1, "intent"    # Landroid/content/Intent;
 
     .prologue
-    .line 5158
+    .line 5162
     invoke-virtual {p0}, Lcom/android/server/accounts/AccountManagerService;->asBinder()Landroid/os/IBinder;
 
     move-result-object v0
@@ -20957,12 +20957,12 @@
     .param p3, "authTokenType"    # Ljava/lang/String;
 
     .prologue
-    .line 5909
+    .line 5913
     iget-object v3, p1, Lcom/android/server/accounts/AccountManagerService$UserAccounts;->cacheLock:Ljava/lang/Object;
 
     monitor-enter v3
 
-    .line 5910
+    .line 5914
     :try_start_0
     invoke-static {p1}, Lcom/android/server/accounts/AccountManagerService$UserAccounts;->-get1(Lcom/android/server/accounts/AccountManagerService$UserAccounts;)Ljava/util/HashMap;
 
@@ -20974,31 +20974,31 @@
 
     check-cast v0, Ljava/util/HashMap;
 
-    .line 5911
+    .line 5915
     .local v0, "authTokensForAccount":Ljava/util/HashMap;, "Ljava/util/HashMap<Ljava/lang/String;Ljava/lang/String;>;"
     if-nez v0, :cond_0
 
-    .line 5913
+    .line 5917
     iget-object v2, p1, Lcom/android/server/accounts/AccountManagerService$UserAccounts;->openHelper:Lcom/android/server/accounts/AccountManagerService$DeDatabaseHelper;
 
     invoke-virtual {v2}, Lcom/android/server/accounts/AccountManagerService$DeDatabaseHelper;->getReadableDatabaseUserIsUnlocked()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v1
 
-    .line 5914
+    .line 5918
     .local v1, "db":Landroid/database/sqlite/SQLiteDatabase;
     invoke-virtual {p0, v1, p2}, Lcom/android/server/accounts/AccountManagerService;->readAuthTokensForAccountFromDatabaseLocked(Landroid/database/sqlite/SQLiteDatabase;Landroid/accounts/Account;)Ljava/util/HashMap;
 
     move-result-object v0
 
-    .line 5915
+    .line 5919
     invoke-static {p1}, Lcom/android/server/accounts/AccountManagerService$UserAccounts;->-get1(Lcom/android/server/accounts/AccountManagerService$UserAccounts;)Ljava/util/HashMap;
 
     move-result-object v2
 
     invoke-virtual {v2, p2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 5917
+    .line 5921
     .end local v1    # "db":Landroid/database/sqlite/SQLiteDatabase;
     :cond_0
     invoke-virtual {v0, p3}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -21013,7 +21013,7 @@
 
     return-object v2
 
-    .line 5909
+    .line 5913
     .end local v0    # "authTokensForAccount":Ljava/util/HashMap;, "Ljava/util/HashMap<Ljava/lang/String;Ljava/lang/String;>;"
     :catchall_0
     move-exception v2
@@ -21048,22 +21048,22 @@
 
     const/4 v5, 0x0
 
-    .line 5955
+    .line 5959
     new-instance v9, Ljava/util/HashMap;
 
     invoke-direct {v9}, Ljava/util/HashMap;-><init>()V
 
-    .line 5956
+    .line 5960
     .local v9, "authTokensForAccount":Ljava/util/HashMap;, "Ljava/util/HashMap<Ljava/lang/String;Ljava/lang/String;>;"
     const-string/jumbo v1, "ceDb.authtokens"
 
-    .line 5957
+    .line 5961
     sget-object v2, Lcom/android/server/accounts/AccountManagerService;->COLUMNS_AUTHTOKENS_TYPE_AND_AUTHTOKEN:[Ljava/lang/String;
 
-    .line 5958
+    .line 5962
     const-string/jumbo v3, "accounts_id=(select _id FROM accounts WHERE name=? AND type=?)"
 
-    .line 5959
+    .line 5963
     const/4 v0, 0x2
 
     new-array v4, v0, [Ljava/lang/String;
@@ -21082,12 +21082,12 @@
 
     move-object v7, v5
 
-    .line 5956
+    .line 5960
     invoke-virtual/range {v0 .. v7}, Landroid/database/sqlite/SQLiteDatabase;->query(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
 
     move-result-object v10
 
-    .line 5962
+    .line 5966
     .local v10, "cursor":Landroid/database/Cursor;
     :goto_0
     :try_start_0
@@ -21097,14 +21097,14 @@
 
     if-eqz v0, :cond_0
 
-    .line 5963
+    .line 5967
     const/4 v0, 0x0
 
     invoke-interface {v10, v0}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v11
 
-    .line 5964
+    .line 5968
     .local v11, "type":Ljava/lang/String;
     const/4 v0, 0x1
 
@@ -21112,7 +21112,7 @@
 
     move-result-object v8
 
-    .line 5965
+    .line 5969
     .local v8, "authToken":Ljava/lang/String;
     invoke-virtual {v9, v11, v8}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
@@ -21120,23 +21120,23 @@
 
     goto :goto_0
 
-    .line 5967
+    .line 5971
     .end local v8    # "authToken":Ljava/lang/String;
     .end local v11    # "type":Ljava/lang/String;
     :catchall_0
     move-exception v0
 
-    .line 5968
+    .line 5972
     invoke-interface {v10}, Landroid/database/Cursor;->close()V
 
-    .line 5967
+    .line 5971
     throw v0
 
-    .line 5968
+    .line 5972
     :cond_0
     invoke-interface {v10}, Landroid/database/Cursor;->close()V
 
-    .line 5970
+    .line 5974
     return-object v9
 .end method
 
@@ -21149,12 +21149,12 @@
     .param p5, "pkgSigDigest"    # [B
 
     .prologue
-    .line 5887
+    .line 5891
     iget-object v1, p1, Lcom/android/server/accounts/AccountManagerService$UserAccounts;->cacheLock:Ljava/lang/Object;
 
     monitor-enter v1
 
-    .line 5888
+    .line 5892
     :try_start_0
     invoke-static {p1}, Lcom/android/server/accounts/AccountManagerService$UserAccounts;->-get0(Lcom/android/server/accounts/AccountManagerService$UserAccounts;)Lcom/android/server/accounts/TokenCache;
 
@@ -21170,7 +21170,7 @@
 
     return-object v0
 
-    .line 5887
+    .line 5891
     :catchall_0
     move-exception v0
 
@@ -21204,22 +21204,22 @@
 
     const/4 v5, 0x0
 
-    .line 5935
+    .line 5939
     new-instance v10, Ljava/util/HashMap;
 
     invoke-direct {v10}, Ljava/util/HashMap;-><init>()V
 
-    .line 5936
+    .line 5940
     .local v10, "userDataForAccount":Ljava/util/HashMap;, "Ljava/util/HashMap<Ljava/lang/String;Ljava/lang/String;>;"
     const-string/jumbo v1, "ceDb.extras"
 
-    .line 5937
+    .line 5941
     sget-object v2, Lcom/android/server/accounts/AccountManagerService;->COLUMNS_EXTRAS_KEY_AND_VALUE:[Ljava/lang/String;
 
-    .line 5938
+    .line 5942
     const-string/jumbo v3, "accounts_id=(select _id FROM accounts WHERE name=? AND type=?)"
 
-    .line 5939
+    .line 5943
     const/4 v0, 0x2
 
     new-array v4, v0, [Ljava/lang/String;
@@ -21238,12 +21238,12 @@
 
     move-object v7, v5
 
-    .line 5936
+    .line 5940
     invoke-virtual/range {v0 .. v7}, Landroid/database/sqlite/SQLiteDatabase;->query(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
 
     move-result-object v8
 
-    .line 5942
+    .line 5946
     .local v8, "cursor":Landroid/database/Cursor;
     :goto_0
     :try_start_0
@@ -21253,14 +21253,14 @@
 
     if-eqz v0, :cond_0
 
-    .line 5943
+    .line 5947
     const/4 v0, 0x0
 
     invoke-interface {v8, v0}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v9
 
-    .line 5944
+    .line 5948
     .local v9, "tmpkey":Ljava/lang/String;
     const/4 v0, 0x1
 
@@ -21268,7 +21268,7 @@
 
     move-result-object v11
 
-    .line 5945
+    .line 5949
     .local v11, "value":Ljava/lang/String;
     invoke-virtual {v10, v9, v11}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
@@ -21276,23 +21276,23 @@
 
     goto :goto_0
 
-    .line 5947
+    .line 5951
     .end local v9    # "tmpkey":Ljava/lang/String;
     .end local v11    # "value":Ljava/lang/String;
     :catchall_0
     move-exception v0
 
-    .line 5948
+    .line 5952
     invoke-interface {v8}, Landroid/database/Cursor;->close()V
 
-    .line 5947
+    .line 5951
     throw v0
 
-    .line 5948
+    .line 5952
     :cond_0
     invoke-interface {v8}, Landroid/database/Cursor;->close()V
 
-    .line 5950
+    .line 5954
     return-object v10
 .end method
 
@@ -21303,7 +21303,7 @@
     .param p3, "key"    # Ljava/lang/String;
 
     .prologue
-    .line 5923
+    .line 5927
     invoke-static {p1}, Lcom/android/server/accounts/AccountManagerService$UserAccounts;->-get7(Lcom/android/server/accounts/AccountManagerService$UserAccounts;)Ljava/util/HashMap;
 
     move-result-object v2
@@ -21314,31 +21314,31 @@
 
     check-cast v1, Ljava/util/HashMap;
 
-    .line 5924
+    .line 5928
     .local v1, "userDataForAccount":Ljava/util/HashMap;, "Ljava/util/HashMap<Ljava/lang/String;Ljava/lang/String;>;"
     if-nez v1, :cond_0
 
-    .line 5926
+    .line 5930
     iget-object v2, p1, Lcom/android/server/accounts/AccountManagerService$UserAccounts;->openHelper:Lcom/android/server/accounts/AccountManagerService$DeDatabaseHelper;
 
     invoke-virtual {v2}, Lcom/android/server/accounts/AccountManagerService$DeDatabaseHelper;->getReadableDatabaseUserIsUnlocked()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v0
 
-    .line 5927
+    .line 5931
     .local v0, "db":Landroid/database/sqlite/SQLiteDatabase;
     invoke-virtual {p0, v0, p2}, Lcom/android/server/accounts/AccountManagerService;->readUserDataForAccountFromDatabaseLocked(Landroid/database/sqlite/SQLiteDatabase;Landroid/accounts/Account;)Ljava/util/HashMap;
 
     move-result-object v1
 
-    .line 5928
+    .line 5932
     invoke-static {p1}, Lcom/android/server/accounts/AccountManagerService$UserAccounts;->-get7(Lcom/android/server/accounts/AccountManagerService$UserAccounts;)Ljava/util/HashMap;
 
     move-result-object v2
 
     invoke-virtual {v2, p2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 5930
+    .line 5934
     .end local v0    # "db":Landroid/database/sqlite/SQLiteDatabase;
     :cond_0
     invoke-virtual {v1, p3}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -24127,12 +24127,12 @@
     .end annotation
 
     .prologue
-    .line 5624
+    .line 5628
     invoke-static {}, Lcom/android/server/accounts/AccountManagerService;->getCallingUid()I
 
     move-result v0
 
-    .line 5626
+    .line 5630
     .local v0, "callingUid":I
     invoke-static {v0}, Landroid/os/UserHandle;->getAppId(I)I
 
@@ -24142,25 +24142,25 @@
 
     if-eq v1, v2, :cond_0
 
-    .line 5627
+    .line 5631
     new-instance v1, Ljava/lang/SecurityException;
 
     invoke-direct {v1}, Ljava/lang/SecurityException;-><init>()V
 
     throw v1
 
-    .line 5630
+    .line 5634
     :cond_0
     if-eqz p4, :cond_1
 
-    .line 5631
+    .line 5635
     invoke-virtual {p0, p1, p2, p3}, Lcom/android/server/accounts/AccountManagerService;->grantAppPermission(Landroid/accounts/Account;Ljava/lang/String;I)V
 
-    .line 5623
+    .line 5627
     :goto_0
     return-void
 
-    .line 5633
+    .line 5637
     :cond_1
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/accounts/AccountManagerService;->revokeAppPermission(Landroid/accounts/Account;Ljava/lang/String;I)V
 
@@ -24432,7 +24432,7 @@
     .param p5, "value"    # Ljava/lang/String;
 
     .prologue
-    .line 5895
+    .line 5899
     invoke-static {p1}, Lcom/android/server/accounts/AccountManagerService$UserAccounts;->-get1(Lcom/android/server/accounts/AccountManagerService$UserAccounts;)Ljava/util/HashMap;
 
     move-result-object v1
@@ -24443,34 +24443,34 @@
 
     check-cast v0, Ljava/util/HashMap;
 
-    .line 5896
+    .line 5900
     .local v0, "authTokensForAccount":Ljava/util/HashMap;, "Ljava/util/HashMap<Ljava/lang/String;Ljava/lang/String;>;"
     if-nez v0, :cond_0
 
-    .line 5897
+    .line 5901
     invoke-virtual {p0, p2, p3}, Lcom/android/server/accounts/AccountManagerService;->readAuthTokensForAccountFromDatabaseLocked(Landroid/database/sqlite/SQLiteDatabase;Landroid/accounts/Account;)Ljava/util/HashMap;
 
     move-result-object v0
 
-    .line 5898
+    .line 5902
     invoke-static {p1}, Lcom/android/server/accounts/AccountManagerService$UserAccounts;->-get1(Lcom/android/server/accounts/AccountManagerService$UserAccounts;)Ljava/util/HashMap;
 
     move-result-object v1
 
     invoke-virtual {v1, p3, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 5900
+    .line 5904
     :cond_0
     if-nez p5, :cond_1
 
-    .line 5901
+    .line 5905
     invoke-virtual {v0, p4}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 5894
+    .line 5898
     :goto_0
     return-void
 
-    .line 5903
+    .line 5907
     :cond_1
     invoke-virtual {v0, p4, p5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -24486,7 +24486,7 @@
     .param p5, "value"    # Ljava/lang/String;
 
     .prologue
-    .line 5869
+    .line 5873
     invoke-static {p1}, Lcom/android/server/accounts/AccountManagerService$UserAccounts;->-get7(Lcom/android/server/accounts/AccountManagerService$UserAccounts;)Ljava/util/HashMap;
 
     move-result-object v1
@@ -24497,34 +24497,34 @@
 
     check-cast v0, Ljava/util/HashMap;
 
-    .line 5870
+    .line 5874
     .local v0, "userDataForAccount":Ljava/util/HashMap;, "Ljava/util/HashMap<Ljava/lang/String;Ljava/lang/String;>;"
     if-nez v0, :cond_0
 
-    .line 5871
+    .line 5875
     invoke-virtual {p0, p2, p3}, Lcom/android/server/accounts/AccountManagerService;->readUserDataForAccountFromDatabaseLocked(Landroid/database/sqlite/SQLiteDatabase;Landroid/accounts/Account;)Ljava/util/HashMap;
 
     move-result-object v0
 
-    .line 5872
+    .line 5876
     invoke-static {p1}, Lcom/android/server/accounts/AccountManagerService$UserAccounts;->-get7(Lcom/android/server/accounts/AccountManagerService$UserAccounts;)Ljava/util/HashMap;
 
     move-result-object v1
 
     invoke-virtual {v1, p3, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 5874
+    .line 5878
     :cond_0
     if-nez p5, :cond_1
 
-    .line 5875
+    .line 5879
     invoke-virtual {v0, p4}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 5868
+    .line 5872
     :goto_0
     return-void
 
-    .line 5877
+    .line 5881
     :cond_1
     invoke-virtual {v0, p4, p5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 

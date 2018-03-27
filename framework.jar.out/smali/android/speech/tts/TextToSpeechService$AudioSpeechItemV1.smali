@@ -41,7 +41,7 @@
     .line 1084
     new-instance v0, Landroid/speech/tts/AudioPlaybackQueueItem;
 
-    invoke-virtual {p0}, Landroid/speech/tts/TextToSpeechService$AudioSpeechItemV1;->getCallerIdentity()Ljava/lang/Object;
+    invoke-virtual {p0}, Landroid/speech/tts/TextToSpeechService$SpeechItem;->getCallerIdentity()Ljava/lang/Object;
 
     move-result-object v2
 
@@ -72,7 +72,7 @@
 
     .prologue
     .line 1110
-    iget-object v0, p0, Landroid/speech/tts/TextToSpeechService$AudioSpeechItemV1;->mParams:Landroid/os/Bundle;
+    iget-object v0, p0, Landroid/speech/tts/TextToSpeechService$SpeechItemV1;->mParams:Landroid/os/Bundle;
 
     const/4 v1, 0x0
 
@@ -88,13 +88,13 @@
 
     .prologue
     .line 1105
-    iget-object v0, p0, Landroid/speech/tts/TextToSpeechService$AudioSpeechItemV1;->mParams:Landroid/os/Bundle;
+    iget-object v0, p0, Landroid/speech/tts/TextToSpeechService$SpeechItemV1;->mParams:Landroid/os/Bundle;
 
     const-string/jumbo v1, "utteranceId"
 
     const/4 v2, 0x0
 
-    invoke-virtual {p0, v0, v1, v2}, Landroid/speech/tts/TextToSpeechService$AudioSpeechItemV1;->getStringParam(Landroid/os/Bundle;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v0, v1, v2}, Landroid/speech/tts/TextToSpeechService$UtteranceSpeechItem;->getStringParam(Landroid/os/Bundle;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

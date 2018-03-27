@@ -27,15 +27,15 @@
     .param p2, "styleValue"    # F
 
     .prologue
-    .line 50
+    .line 47
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 51
+    .line 48
     iput p1, p0, Landroid/graphics/FontListParser$Axis;->tag:I
 
-    .line 52
+    .line 49
     iput p2, p0, Landroid/graphics/FontListParser$Axis;->styleValue:F
 
-    .line 50
+    .line 47
     return-void
 .end method

@@ -999,7 +999,7 @@
 
     .line 370
     .local v8, "res":Landroid/content/res/Resources;
-    const v10, 0x104009f
+    const v10, 0x10400a1
 
     .line 369
     invoke-virtual {v8, v10}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;

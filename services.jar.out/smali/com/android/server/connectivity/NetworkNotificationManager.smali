@@ -126,7 +126,7 @@
     if-ne p0, v0, :cond_0
 
     .line 101
-    const v0, 0x10806e6
+    const v0, 0x10806e8
 
     .line 100
     :goto_0
@@ -134,7 +134,7 @@
 
     .line 102
     :cond_0
-    const v0, 0x10806e2
+    const v0, 0x10806e4
 
     goto :goto_0
 .end method

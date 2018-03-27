@@ -51,7 +51,7 @@
     .line 49
     iget-object v0, p0, Lcom/android/internal/midi/MidiEventScheduler$SchedulingReceiver;->this$0:Lcom/android/internal/midi/MidiEventScheduler;
 
-    invoke-virtual {v0}, Lcom/android/internal/midi/MidiEventScheduler;->flush()V
+    invoke-virtual {v0}, Lcom/android/internal/midi/EventScheduler;->flush()V
 
     .line 48
     return-void
@@ -92,7 +92,7 @@
     .line 43
     iget-object v0, p0, Lcom/android/internal/midi/MidiEventScheduler$SchedulingReceiver;->this$0:Lcom/android/internal/midi/MidiEventScheduler;
 
-    invoke-virtual {v0, v6}, Lcom/android/internal/midi/MidiEventScheduler;->add(Lcom/android/internal/midi/EventScheduler$SchedulableEvent;)V
+    invoke-virtual {v0, v6}, Lcom/android/internal/midi/EventScheduler;->add(Lcom/android/internal/midi/EventScheduler$SchedulableEvent;)V
 
     .line 40
     :cond_0

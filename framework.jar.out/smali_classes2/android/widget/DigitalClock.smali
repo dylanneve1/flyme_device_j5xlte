@@ -128,7 +128,7 @@
 
     .prologue
     .line 103
-    invoke-virtual {p0}, Landroid/widget/DigitalClock;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -178,7 +178,7 @@
     iput-object v0, p0, Landroid/widget/DigitalClock;->mFormatChangeObserver:Landroid/widget/DigitalClock$FormatChangeObserver;
 
     .line 71
-    invoke-virtual {p0}, Landroid/widget/DigitalClock;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -235,7 +235,7 @@
     iput-boolean v0, p0, Landroid/widget/DigitalClock;->mTickerStopped:Z
 
     .line 98
-    invoke-virtual {p0}, Landroid/widget/DigitalClock;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
 

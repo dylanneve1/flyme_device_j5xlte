@@ -38,7 +38,7 @@
 
 .field static final TRANSACTION_clearTestProviderStatus:I = 0x1f
 
-.field static final TRANSACTION_geocoderIsPresent_7:I = 0x8
+.field static final TRANSACTION_geocoderIsPresent:I = 0x8
 
 .field static final TRANSACTION_getAllProviders:I = 0x11
 
@@ -50,7 +50,7 @@
 
 .field static final TRANSACTION_getGnssYearOfHardware:I = 0x10
 
-.field static final TRANSACTION_getLastLocation_4:I = 0x5
+.field static final TRANSACTION_getLastLocation:I = 0x5
 
 .field static final TRANSACTION_getNetworkProviderPackage:I = 0x16
 
@@ -64,9 +64,9 @@
 
 .field static final TRANSACTION_providerMeetsCriteria:I = 0x14
 
-.field static final TRANSACTION_registerGnssStatusCallback_5:I = 0x6
+.field static final TRANSACTION_registerGnssStatusCallback:I = 0x6
 
-.field static final TRANSACTION_removeGeofence_3:I = 0x4
+.field static final TRANSACTION_removeGeofence:I = 0x4
 
 .field static final TRANSACTION_removeGnssMeasurementsListener:I = 0xd
 
@@ -74,13 +74,13 @@
 
 .field static final TRANSACTION_removeTestProvider:I = 0x19
 
-.field static final TRANSACTION_removeUpdates:I = 0x2
+.field static final TRANSACTION_removeUpdates_1:I = 0x2
 
 .field static final TRANSACTION_reportLocation:I = 0x21
 
 .field static final TRANSACTION_requestGeofence_2:I = 0x3
 
-.field static final TRANSACTION_requestLocationUpdates:I = 0x1
+.field static final TRANSACTION_requestLocationUpdates_0:I = 0x1
 
 .field static final TRANSACTION_sendExtraCommand:I = 0x20
 
@@ -92,7 +92,7 @@
 
 .field static final TRANSACTION_setTestProviderStatus:I = 0x1e
 
-.field static final TRANSACTION_unregisterGnssStatusCallback_6:I = 0x7
+.field static final TRANSACTION_unregisterGnssStatusCallback:I = 0x7
 
 
 # direct methods

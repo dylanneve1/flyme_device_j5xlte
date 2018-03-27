@@ -34,22 +34,22 @@
 
     .prologue
     .line 64
-    iget-object v8, p0, Landroid/renderscript/ProgramFragment$Builder;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v8, p0, Landroid/renderscript/Program$BaseProgramBuilder;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-virtual {v8}, Landroid/renderscript/RenderScript;->validate()V
 
     .line 65
-    iget v8, p0, Landroid/renderscript/ProgramFragment$Builder;->mInputCount:I
+    iget v8, p0, Landroid/renderscript/Program$BaseProgramBuilder;->mInputCount:I
 
-    iget v9, p0, Landroid/renderscript/ProgramFragment$Builder;->mOutputCount:I
-
-    add-int/2addr v8, v9
-
-    iget v9, p0, Landroid/renderscript/ProgramFragment$Builder;->mConstantCount:I
+    iget v9, p0, Landroid/renderscript/Program$BaseProgramBuilder;->mOutputCount:I
 
     add-int/2addr v8, v9
 
-    iget v9, p0, Landroid/renderscript/ProgramFragment$Builder;->mTextureCount:I
+    iget v9, p0, Landroid/renderscript/Program$BaseProgramBuilder;->mConstantCount:I
+
+    add-int/2addr v8, v9
+
+    iget v9, p0, Landroid/renderscript/Program$BaseProgramBuilder;->mTextureCount:I
 
     add-int/2addr v8, v9
 
@@ -59,7 +59,7 @@
 
     .line 66
     .local v7, "tmp":[J
-    iget v8, p0, Landroid/renderscript/ProgramFragment$Builder;->mTextureCount:I
+    iget v8, p0, Landroid/renderscript/Program$BaseProgramBuilder;->mTextureCount:I
 
     new-array v6, v8, [Ljava/lang/String;
 
@@ -73,7 +73,7 @@
 
     .local v0, "i":I
     :goto_0
-    iget v8, p0, Landroid/renderscript/ProgramFragment$Builder;->mInputCount:I
+    iget v8, p0, Landroid/renderscript/Program$BaseProgramBuilder;->mInputCount:I
 
     if-ge v0, v8, :cond_0
 
@@ -95,13 +95,13 @@
 
     .end local v4    # "idx":I
     .restart local v1    # "idx":I
-    iget-object v8, p0, Landroid/renderscript/ProgramFragment$Builder;->mInputs:[Landroid/renderscript/Element;
+    iget-object v8, p0, Landroid/renderscript/Program$BaseProgramBuilder;->mInputs:[Landroid/renderscript/Element;
 
     aget-object v8, v8, v0
 
-    iget-object v9, p0, Landroid/renderscript/ProgramFragment$Builder;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v9, p0, Landroid/renderscript/Program$BaseProgramBuilder;->mRS:Landroid/renderscript/RenderScript;
 
-    invoke-virtual {v8, v9}, Landroid/renderscript/Element;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v8, v9}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v8
 
@@ -117,7 +117,7 @@
     const/4 v0, 0x0
 
     :goto_1
-    iget v8, p0, Landroid/renderscript/ProgramFragment$Builder;->mOutputCount:I
+    iget v8, p0, Landroid/renderscript/Program$BaseProgramBuilder;->mOutputCount:I
 
     if-ge v0, v8, :cond_1
 
@@ -139,13 +139,13 @@
 
     .end local v4    # "idx":I
     .restart local v1    # "idx":I
-    iget-object v8, p0, Landroid/renderscript/ProgramFragment$Builder;->mOutputs:[Landroid/renderscript/Element;
+    iget-object v8, p0, Landroid/renderscript/Program$BaseProgramBuilder;->mOutputs:[Landroid/renderscript/Element;
 
     aget-object v8, v8, v0
 
-    iget-object v9, p0, Landroid/renderscript/ProgramFragment$Builder;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v9, p0, Landroid/renderscript/Program$BaseProgramBuilder;->mRS:Landroid/renderscript/RenderScript;
 
-    invoke-virtual {v8, v9}, Landroid/renderscript/Element;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v8, v9}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v8
 
@@ -161,7 +161,7 @@
     const/4 v0, 0x0
 
     :goto_2
-    iget v8, p0, Landroid/renderscript/ProgramFragment$Builder;->mConstantCount:I
+    iget v8, p0, Landroid/renderscript/Program$BaseProgramBuilder;->mConstantCount:I
 
     if-ge v0, v8, :cond_2
 
@@ -183,13 +183,13 @@
 
     .end local v4    # "idx":I
     .restart local v1    # "idx":I
-    iget-object v8, p0, Landroid/renderscript/ProgramFragment$Builder;->mConstants:[Landroid/renderscript/Type;
+    iget-object v8, p0, Landroid/renderscript/Program$BaseProgramBuilder;->mConstants:[Landroid/renderscript/Type;
 
     aget-object v8, v8, v0
 
-    iget-object v9, p0, Landroid/renderscript/ProgramFragment$Builder;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v9, p0, Landroid/renderscript/Program$BaseProgramBuilder;->mRS:Landroid/renderscript/RenderScript;
 
-    invoke-virtual {v8, v9}, Landroid/renderscript/Type;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v8, v9}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v8
 
@@ -205,7 +205,7 @@
     const/4 v0, 0x0
 
     :goto_3
-    iget v8, p0, Landroid/renderscript/ProgramFragment$Builder;->mTextureCount:I
+    iget v8, p0, Landroid/renderscript/Program$BaseProgramBuilder;->mTextureCount:I
 
     if-ge v0, v8, :cond_3
 
@@ -227,7 +227,7 @@
 
     .end local v4    # "idx":I
     .restart local v1    # "idx":I
-    iget-object v8, p0, Landroid/renderscript/ProgramFragment$Builder;->mTextureTypes:[Landroid/renderscript/Program$TextureType;
+    iget-object v8, p0, Landroid/renderscript/Program$BaseProgramBuilder;->mTextureTypes:[Landroid/renderscript/Program$TextureType;
 
     aget-object v8, v8, v0
 
@@ -238,7 +238,7 @@
     aput-wide v8, v7, v4
 
     .line 84
-    iget-object v8, p0, Landroid/renderscript/ProgramFragment$Builder;->mTextureNames:[Ljava/lang/String;
+    iget-object v8, p0, Landroid/renderscript/Program$BaseProgramBuilder;->mTextureNames:[Ljava/lang/String;
 
     aget-object v8, v8, v0
 
@@ -251,9 +251,9 @@
 
     .line 87
     :cond_3
-    iget-object v8, p0, Landroid/renderscript/ProgramFragment$Builder;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v8, p0, Landroid/renderscript/Program$BaseProgramBuilder;->mRS:Landroid/renderscript/RenderScript;
 
-    iget-object v9, p0, Landroid/renderscript/ProgramFragment$Builder;->mShader:Ljava/lang/String;
+    iget-object v9, p0, Landroid/renderscript/Program$BaseProgramBuilder;->mShader:Ljava/lang/String;
 
     invoke-virtual {v8, v9, v6, v7}, Landroid/renderscript/RenderScript;->nProgramFragmentCreate(Ljava/lang/String;[Ljava/lang/String;[J)J
 
@@ -263,13 +263,13 @@
     .local v2, "id":J
     new-instance v5, Landroid/renderscript/ProgramFragment;
 
-    iget-object v8, p0, Landroid/renderscript/ProgramFragment$Builder;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v8, p0, Landroid/renderscript/Program$BaseProgramBuilder;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-direct {v5, v2, v3, v8}, Landroid/renderscript/ProgramFragment;-><init>(JLandroid/renderscript/RenderScript;)V
 
     .line 89
     .local v5, "pf":Landroid/renderscript/ProgramFragment;
-    invoke-virtual {p0, v5}, Landroid/renderscript/ProgramFragment$Builder;->initProgram(Landroid/renderscript/Program;)V
+    invoke-virtual {p0, v5}, Landroid/renderscript/Program$BaseProgramBuilder;->initProgram(Landroid/renderscript/Program;)V
 
     .line 90
     return-object v5

@@ -136,10 +136,12 @@
     .line 91
     const/4 v0, 0x0
 
-    check-cast v0, [Ljava/lang/Void;
+    nop
+
+    nop
 
     .line 90
-    invoke-virtual {v1, v2, v0}, Landroid/print/PrintFileDocumentAdapter$WriteFileAsyncTask;->executeOnExecutor(Ljava/util/concurrent/Executor;[Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-virtual {v1, v2, v0}, Landroid/os/AsyncTask;->executeOnExecutor(Ljava/util/concurrent/Executor;[Ljava/lang/Object;)Landroid/os/AsyncTask;
 
     .line 88
     return-void

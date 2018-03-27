@@ -2156,7 +2156,7 @@
     move-result-object v2
 
     .line 3252
-    const v3, 0x104017c
+    const v3, 0x104017e
 
     .line 3251
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
@@ -2180,7 +2180,7 @@
     invoke-direct {v2, v9}, Landroid/app/Notification$Builder;-><init>(Landroid/content/Context;)V
 
     .line 3256
-    const v3, 0x10806e5
+    const v3, 0x10806e7
 
     .line 3255
     invoke-virtual {v2, v3}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;
@@ -2196,7 +2196,7 @@
 
     move-result-object v3
 
-    const v5, 0x104017a
+    const v5, 0x104017c
 
     invoke-virtual {v3, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2231,7 +2231,7 @@
     move-result-object v2
 
     .line 3262
-    const v3, 0x104017b
+    const v3, 0x104017d
 
     .line 3261
     invoke-virtual {v9, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;

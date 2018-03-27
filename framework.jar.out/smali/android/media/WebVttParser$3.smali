@@ -349,7 +349,7 @@
     .line 732
     const-string/jumbo v5, "has invalid value"
 
-    invoke-virtual/range {v21 .. v21}, Ljava/lang/NumberFormatException;->getMessage()Ljava/lang/String;
+    invoke-virtual/range {v21 .. v21}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v6
 
@@ -577,7 +577,7 @@
     .line 761
     const-string/jumbo v11, "has invalid x component"
 
-    invoke-virtual/range {v21 .. v21}, Ljava/lang/NumberFormatException;->getMessage()Ljava/lang/String;
+    invoke-virtual/range {v21 .. v21}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v12
 
@@ -605,7 +605,7 @@
     .line 768
     const-string/jumbo v17, "has invalid y component"
 
-    invoke-virtual/range {v21 .. v21}, Ljava/lang/NumberFormatException;->getMessage()Ljava/lang/String;
+    invoke-virtual/range {v21 .. v21}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v18
 

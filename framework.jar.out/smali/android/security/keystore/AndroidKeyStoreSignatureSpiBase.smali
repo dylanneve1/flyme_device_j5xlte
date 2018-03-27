@@ -348,7 +348,9 @@
     .line 92
     move-object v0, p1
 
-    check-cast v0, Landroid/security/keystore/AndroidKeyStoreKey;
+    nop
+
+    nop
 
     move-object v1, v0
 
@@ -362,7 +364,7 @@
     invoke-virtual {p0, v1}, Landroid/security/keystore/AndroidKeyStoreSignatureSpiBase;->initKey(Landroid/security/keystore/AndroidKeyStoreKey;)V
 
     .line 98
-    iput-object p2, p0, Landroid/security/keystore/AndroidKeyStoreSignatureSpiBase;->appRandom:Ljava/security/SecureRandom;
+    iput-object p2, p0, Ljava/security/SignatureSpi;->appRandom:Ljava/security/SecureRandom;
 
     .line 99
     invoke-direct {p0}, Landroid/security/keystore/AndroidKeyStoreSignatureSpiBase;->ensureKeystoreOperationInitialized()V
@@ -469,7 +471,9 @@
     .line 119
     move-object v0, p1
 
-    check-cast v0, Landroid/security/keystore/AndroidKeyStorePublicKey;
+    nop
+
+    nop
 
     move-object v1, v0
 
@@ -485,7 +489,7 @@
     .line 125
     const/4 v3, 0x0
 
-    iput-object v3, p0, Landroid/security/keystore/AndroidKeyStoreSignatureSpiBase;->appRandom:Ljava/security/SecureRandom;
+    iput-object v3, p0, Ljava/security/SignatureSpi;->appRandom:Ljava/security/SecureRandom;
 
     .line 126
     invoke-direct {p0}, Landroid/security/keystore/AndroidKeyStoreSignatureSpiBase;->ensureKeystoreOperationInitialized()V
@@ -607,7 +611,7 @@
     invoke-direct {p0}, Landroid/security/keystore/AndroidKeyStoreSignatureSpiBase;->ensureKeystoreOperationInitialized()V
 
     .line 327
-    iget-object v0, p0, Landroid/security/keystore/AndroidKeyStoreSignatureSpiBase;->appRandom:Ljava/security/SecureRandom;
+    iget-object v0, p0, Ljava/security/SignatureSpi;->appRandom:Ljava/security/SecureRandom;
 
     invoke-virtual {p0}, Landroid/security/keystore/AndroidKeyStoreSignatureSpiBase;->getAdditionalEntropyAmountForSign()I
 
@@ -693,7 +697,7 @@
 
     .prologue
     .line 291
-    invoke-virtual {p1}, Ljava/nio/ByteBuffer;->remaining()I
+    invoke-virtual {p1}, Ljava/nio/Buffer;->remaining()I
 
     move-result v2
 
@@ -716,7 +720,7 @@
 
     move-result v4
 
-    invoke-virtual {p1}, Ljava/nio/ByteBuffer;->position()I
+    invoke-virtual {p1}, Ljava/nio/Buffer;->position()I
 
     move-result v5
 
@@ -724,11 +728,11 @@
 
     .line 295
     .local v3, "off":I
-    invoke-virtual {p1}, Ljava/nio/ByteBuffer;->limit()I
+    invoke-virtual {p1}, Ljava/nio/Buffer;->limit()I
 
     move-result v4
 
-    invoke-virtual {p1, v4}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
+    invoke-virtual {p1, v4}, Ljava/nio/Buffer;->position(I)Ljava/nio/Buffer;
 
     .line 303
     :goto_0
@@ -1159,7 +1163,7 @@
     iput-object v4, p0, Landroid/security/keystore/AndroidKeyStoreSignatureSpiBase;->mKey:Landroid/security/keystore/AndroidKeyStoreKey;
 
     .line 161
-    iput-object v4, p0, Landroid/security/keystore/AndroidKeyStoreSignatureSpiBase;->appRandom:Ljava/security/SecureRandom;
+    iput-object v4, p0, Ljava/security/SignatureSpi;->appRandom:Ljava/security/SecureRandom;
 
     .line 162
     iput-object v4, p0, Landroid/security/keystore/AndroidKeyStoreSignatureSpiBase;->mOperationToken:Landroid/os/IBinder;

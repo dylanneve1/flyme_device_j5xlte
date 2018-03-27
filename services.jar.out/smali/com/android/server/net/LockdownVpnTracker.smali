@@ -584,7 +584,7 @@
     .line 157
     const v20, 0x10404fc
 
-    const v21, 0x10807df
+    const v21, 0x10807e1
 
     move-object/from16 v0, p0
 
@@ -706,7 +706,7 @@
     .line 163
     const v20, 0x10404f9
 
-    const v21, 0x10807df
+    const v21, 0x10807e1
 
     move-object/from16 v0, p0
 
@@ -785,7 +785,7 @@
     .line 173
     const v20, 0x10404fc
 
-    const v21, 0x10807df
+    const v21, 0x10807e1
 
     move-object/from16 v0, p0
 
@@ -809,7 +809,7 @@
     .line 177
     const v20, 0x10404fc
 
-    const v21, 0x10807df
+    const v21, 0x10807e1
 
     move-object/from16 v0, p0
 
@@ -875,7 +875,7 @@
     .line 192
     const v20, 0x10404fa
 
-    const v21, 0x10807de
+    const v21, 0x10807e0
 
     move-object/from16 v0, p0
 
@@ -1310,7 +1310,7 @@
     iget-object v3, p0, Lcom/android/server/net/LockdownVpnTracker;->mResetIntent:Landroid/app/PendingIntent;
 
     .line 341
-    const v4, 0x10803f9
+    const v4, 0x10803fe
 
     .line 333
     invoke-virtual {v1, v4, v2, v3}, Landroid/app/Notification$Builder;->addAction(ILjava/lang/CharSequence;Landroid/app/PendingIntent;)Landroid/app/Notification$Builder;

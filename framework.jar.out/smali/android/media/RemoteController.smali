@@ -1378,23 +1378,23 @@
 
     invoke-direct {v1}, Landroid/os/Bundle;-><init>()V
 
-    iput-object v1, v0, Landroid/media/RemoteController$MetadataEditor;->mEditorMetadata:Landroid/os/Bundle;
+    iput-object v1, v0, Landroid/media/MediaMetadataEditor;->mEditorMetadata:Landroid/os/Bundle;
 
     .line 469
     const/4 v1, 0x0
 
-    iput-object v1, v0, Landroid/media/RemoteController$MetadataEditor;->mEditorArtwork:Landroid/graphics/Bitmap;
+    iput-object v1, v0, Landroid/media/MediaMetadataEditor;->mEditorArtwork:Landroid/graphics/Bitmap;
 
     .line 470
-    iput-boolean v2, v0, Landroid/media/RemoteController$MetadataEditor;->mMetadataChanged:Z
+    iput-boolean v2, v0, Landroid/media/MediaMetadataEditor;->mMetadataChanged:Z
 
     .line 471
-    iput-boolean v2, v0, Landroid/media/RemoteController$MetadataEditor;->mArtworkChanged:Z
+    iput-boolean v2, v0, Landroid/media/MediaMetadataEditor;->mArtworkChanged:Z
 
     .line 472
     const-wide/16 v2, 0x0
 
-    iput-wide v2, v0, Landroid/media/RemoteController$MetadataEditor;->mEditableKeys:J
+    iput-wide v2, v0, Landroid/media/MediaMetadataEditor;->mEditableKeys:J
 
     .line 473
     return-object v0

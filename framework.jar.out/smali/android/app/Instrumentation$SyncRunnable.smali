@@ -60,7 +60,7 @@
     iput-boolean v0, p0, Landroid/app/Instrumentation$SyncRunnable;->mComplete:Z
 
     .line 1962
-    invoke-virtual {p0}, Landroid/app/Instrumentation$SyncRunnable;->notifyAll()V
+    invoke-virtual {p0}, Ljava/lang/Object;->notifyAll()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -96,7 +96,7 @@
 
     .line 1970
     :try_start_1
-    invoke-virtual {p0}, Landroid/app/Instrumentation$SyncRunnable;->wait()V
+    invoke-virtual {p0}, Ljava/lang/Object;->wait()V
     :try_end_1
     .catch Ljava/lang/InterruptedException; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_0

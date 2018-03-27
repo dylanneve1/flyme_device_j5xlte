@@ -69,7 +69,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Landroid/accounts/AccountManager$17;->mResponse:Landroid/accounts/IAccountManagerResponse;
+    iget-object v2, p0, Landroid/accounts/AccountManager$AmsTask;->mResponse:Landroid/accounts/IAccountManagerResponse;
 
     iget-object v3, p0, Landroid/accounts/AccountManager$17;->val$accountType:Ljava/lang/String;
 

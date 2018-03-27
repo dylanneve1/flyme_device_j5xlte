@@ -45,7 +45,7 @@
     .line 756
     iget-object v2, p0, Lcom/android/internal/telephony/sip/SipPhone$SipConnection$1;->this$1:Lcom/android/internal/telephony/sip/SipPhone$SipConnection;
 
-    invoke-virtual {v2}, Lcom/android/internal/telephony/sip/SipPhone$SipConnection;->getDisconnectCause()I
+    invoke-virtual {v2}, Lcom/android/internal/telephony/Connection;->getDisconnectCause()I
 
     move-result v2
 
@@ -56,7 +56,7 @@
     .line 757
     iget-object v2, p0, Lcom/android/internal/telephony/sip/SipPhone$SipConnection$1;->this$1:Lcom/android/internal/telephony/sip/SipPhone$SipConnection;
 
-    invoke-virtual {v2, p1}, Lcom/android/internal/telephony/sip/SipPhone$SipConnection;->setDisconnectCause(I)V
+    invoke-virtual {v2, p1}, Lcom/android/internal/telephony/sip/SipConnectionBase;->setDisconnectCause(I)V
 
     .line 759
     :cond_0
@@ -151,7 +151,7 @@
     .line 769
     iget-object v5, p0, Lcom/android/internal/telephony/sip/SipPhone$SipConnection$1;->this$1:Lcom/android/internal/telephony/sip/SipPhone$SipConnection;
 
-    invoke-virtual {v5}, Lcom/android/internal/telephony/sip/SipPhone$SipConnection;->getDisconnectCause()I
+    invoke-virtual {v5}, Lcom/android/internal/telephony/Connection;->getDisconnectCause()I
 
     move-result v5
 
@@ -358,7 +358,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v4}, Lcom/android/internal/telephony/sip/SipPhone$SipCall;->getState()Lcom/android/internal/telephony/Call$State;
+    invoke-virtual {v4}, Lcom/android/internal/telephony/Call;->getState()Lcom/android/internal/telephony/Call$State;
 
     move-result-object v4
 
@@ -486,7 +486,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lcom/android/internal/telephony/sip/SipPhone$SipCall;->getState()Lcom/android/internal/telephony/Call$State;
+    invoke-virtual {v2}, Lcom/android/internal/telephony/Call;->getState()Lcom/android/internal/telephony/Call$State;
 
     move-result-object v2
 

@@ -401,7 +401,7 @@
     if-nez v5, :cond_0
 
     .line 132
-    invoke-virtual {p3}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
+    invoke-virtual {p3}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v5
 
@@ -477,7 +477,7 @@
 
     move-result-object v5
 
-    invoke-virtual {v3, v5}, Landroid/widget/TextView;->setContentDescription(Ljava/lang/CharSequence;)V
+    invoke-virtual {v3, v5}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
     .line 167
     iget-boolean v5, p0, Lcom/android/internal/app/SuggestedLocaleAdapter;->mCountryMode:Z
@@ -507,7 +507,7 @@
 
     .line 171
     :goto_0
-    invoke-virtual {v3, v5}, Landroid/widget/TextView;->setTextDirection(I)V
+    invoke-virtual {v3, v5}, Landroid/view/View;->setTextDirection(I)V
 
     .line 176
     .end local v0    # "item":Lcom/android/internal/app/LocaleStore$LocaleInfo;

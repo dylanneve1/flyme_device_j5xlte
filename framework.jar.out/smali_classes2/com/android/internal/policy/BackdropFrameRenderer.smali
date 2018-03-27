@@ -132,7 +132,7 @@
     .line 82
     const-string/jumbo v1, "ResizeFrame"
 
-    invoke-virtual {p0, v1}, Lcom/android/internal/policy/BackdropFrameRenderer;->setName(Ljava/lang/String;)V
+    invoke-virtual {p0, v1}, Ljava/lang/Thread;->setName(Ljava/lang/String;)V
 
     .line 84
     iput-object p2, p0, Lcom/android/internal/policy/BackdropFrameRenderer;->mRenderer:Landroid/view/ThreadedRenderer;
@@ -223,7 +223,7 @@
     iput v0, p0, Lcom/android/internal/policy/BackdropFrameRenderer;->mResizeMode:I
 
     .line 105
-    invoke-virtual {p0}, Lcom/android/internal/policy/BackdropFrameRenderer;->start()V
+    invoke-virtual {p0}, Ljava/lang/Thread;->start()V
 
     .line 81
     return-void
@@ -483,7 +483,7 @@
 
     const/4 v10, 0x0
 
-    invoke-virtual {v7, v9, v10, v8, v6}, Landroid/graphics/drawable/ColorDrawable;->setBounds(IIII)V
+    invoke-virtual {v7, v9, v10, v8, v6}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
     .line 381
     iget-object v7, p0, Lcom/android/internal/policy/BackdropFrameRenderer;->mStatusBarColor:Landroid/graphics/drawable/ColorDrawable;
@@ -518,7 +518,7 @@
 
     const/4 v9, 0x0
 
-    invoke-virtual {v7, v8, v9, p3, p4}, Landroid/graphics/drawable/ColorDrawable;->setBounds(IIII)V
+    invoke-virtual {v7, v8, v9, p3, p4}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
     .line 396
     :goto_0
@@ -559,7 +559,7 @@
 
     const/4 v9, 0x0
 
-    invoke-virtual {v7, v8, v9, v5, p4}, Landroid/graphics/drawable/ColorDrawable;->setBounds(IIII)V
+    invoke-virtual {v7, v8, v9, v5, p4}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
     goto :goto_0
 
@@ -571,7 +571,7 @@
 
     const/4 v9, 0x0
 
-    invoke-virtual {v7, v9, v8, p3, p4}, Landroid/graphics/drawable/ColorDrawable;->setBounds(IIII)V
+    invoke-virtual {v7, v9, v8, p3, p4}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
     goto :goto_0
 .end method
@@ -805,7 +805,7 @@
     .line 405
     iget-object v0, p0, Lcom/android/internal/policy/BackdropFrameRenderer;->mDecorView:Lcom/android/internal/policy/DecorView;
 
-    invoke-virtual {v0}, Lcom/android/internal/policy/DecorView;->isAttachedToWindow()Z
+    invoke-virtual {v0}, Landroid/view/View;->isAttachedToWindow()Z
 
     move-result v0
 
@@ -814,7 +814,7 @@
     .line 406
     iget-object v0, p0, Lcom/android/internal/policy/BackdropFrameRenderer;->mDecorView:Lcom/android/internal/policy/DecorView;
 
-    invoke-virtual {v0}, Lcom/android/internal/policy/DecorView;->getViewRootImpl()Landroid/view/ViewRootImpl;
+    invoke-virtual {v0}, Landroid/view/View;->getViewRootImpl()Landroid/view/ViewRootImpl;
 
     move-result-object v0
 

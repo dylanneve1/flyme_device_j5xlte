@@ -36,7 +36,7 @@
 
 .field static final TRANSACTION_onError:I = 0x4
 
-.field static final TRANSACTION_onRemoved_4:I = 0x5
+.field static final TRANSACTION_onRemoved:I = 0x5
 
 
 # direct methods

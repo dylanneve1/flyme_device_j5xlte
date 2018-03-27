@@ -254,7 +254,7 @@
     .line 784
     const-string/jumbo v8, "android.net.wifi.p2p.EXTRA_HANDOVER_MESSAGE"
 
-    invoke-virtual {v2, v8}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v2, v8}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 

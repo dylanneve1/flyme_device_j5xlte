@@ -481,7 +481,9 @@
     move-object v1, p2
 
     .line 109
-    check-cast v1, Landroid/filterfw/core/GLFrame;
+    nop
+
+    nop
 
     .line 115
     .local v1, "glOutput":Landroid/filterfw/core/GLFrame;

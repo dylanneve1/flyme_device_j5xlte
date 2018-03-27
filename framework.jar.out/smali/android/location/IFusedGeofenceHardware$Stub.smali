@@ -32,7 +32,7 @@
 
 .field static final TRANSACTION_modifyGeofenceOptions_5:I = 0x6
 
-.field static final TRANSACTION_pauseMonitoringGeofence_3:I = 0x4
+.field static final TRANSACTION_pauseMonitoringGeofence:I = 0x4
 
 .field static final TRANSACTION_removeGeofences_2:I = 0x3
 

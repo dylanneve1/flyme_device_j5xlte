@@ -293,7 +293,7 @@
     .line 274
     iget-object v2, p0, Lcom/android/internal/app/SuggestedLocaleAdapter$FilterByNativeAndUiNames;->this$0:Lcom/android/internal/app/SuggestedLocaleAdapter;
 
-    invoke-virtual {v2}, Lcom/android/internal/app/SuggestedLocaleAdapter;->notifyDataSetChanged()V
+    invoke-virtual {v2}, Landroid/widget/BaseAdapter;->notifyDataSetChanged()V
 
     .line 263
     :goto_1
@@ -303,7 +303,7 @@
     :cond_2
     iget-object v2, p0, Lcom/android/internal/app/SuggestedLocaleAdapter$FilterByNativeAndUiNames;->this$0:Lcom/android/internal/app/SuggestedLocaleAdapter;
 
-    invoke-virtual {v2}, Lcom/android/internal/app/SuggestedLocaleAdapter;->notifyDataSetInvalidated()V
+    invoke-virtual {v2}, Landroid/widget/BaseAdapter;->notifyDataSetInvalidated()V
 
     goto :goto_1
 .end method

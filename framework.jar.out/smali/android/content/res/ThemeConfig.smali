@@ -472,7 +472,9 @@
     move-object v2, p1
 
     .line 158
-    check-cast v2, Landroid/content/res/ThemeConfig;
+    nop
+
+    nop
 
     .line 160
     .local v2, "o":Landroid/content/res/ThemeConfig;

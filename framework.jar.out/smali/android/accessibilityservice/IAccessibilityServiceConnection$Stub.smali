@@ -28,7 +28,7 @@
 
 .field static final TRANSACTION_disableSelf:I = 0xc
 
-.field static final TRANSACTION_findAccessibilityNodeInfoByAccessibilityId_1:I = 0x2
+.field static final TRANSACTION_findAccessibilityNodeInfoByAccessibilityId:I = 0x2
 
 .field static final TRANSACTION_findAccessibilityNodeInfosByText:I = 0x3
 
@@ -66,7 +66,7 @@
 
 .field static final TRANSACTION_setOnKeyEventResult:I = 0xd
 
-.field static final TRANSACTION_setServiceInfo_0:I = 0x1
+.field static final TRANSACTION_setServiceInfo:I = 0x1
 
 .field static final TRANSACTION_setSoftKeyboardCallbackEnabled:I = 0x16
 

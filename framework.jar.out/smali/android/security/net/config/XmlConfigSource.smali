@@ -2266,10 +2266,10 @@
     .local v7, "sdf":Ljava/text/SimpleDateFormat;
     const/4 v9, 0x0
 
-    invoke-virtual {v7, v9}, Ljava/text/SimpleDateFormat;->setLenient(Z)V
+    invoke-virtual {v7, v9}, Ljava/text/DateFormat;->setLenient(Z)V
 
     .line 141
-    invoke-virtual {v7, v2}, Ljava/text/SimpleDateFormat;->parse(Ljava/lang/String;)Ljava/util/Date;
+    invoke-virtual {v7, v2}, Ljava/text/DateFormat;->parse(Ljava/lang/String;)Ljava/util/Date;
 
     move-result-object v0
 

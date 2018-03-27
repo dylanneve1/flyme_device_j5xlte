@@ -104,7 +104,7 @@
     <string name="app_ops_scan_wifi">eskaneatu Wi-Fi sareak</string>
     <string name="app_ops_change_wallpaper">aldatu horma-irudia</string>
     <string name="app_ops_assist_structure">estruktura lagungarria erabili</string>
-    <string name="app_ops_assist_screenshot">egin pantaila-argazkia</string>
+    <string name="app_ops_assist_screenshot">atera pantaila-argazki bat</string>
     <string name="app_ops_use_body_sensors">erabili gorputz sentsoreak</string>
     <string name="app_ops_read_cell_broadcasts">irakurri difusio zelularrak</string>
     <string name="app_ops_mock_location">kokapena faltsutu</string>
@@ -123,6 +123,8 @@
     <string name="tethered_notification_no_device_message">Ez da gailurik konektatu</string>
     <string name="tethered_notification_one_device_message">gailu %1$s konektatuta</string>
     <string name="tethered_notification_multi_device_message">%1$s gailu konektatuta</string>
+    <string name="silent_mode_priority">Lehentasuna</string>
+    <string name="silent_mode_none">Bat ere ez</string>
     <string name="byteShort">B</string>
     <string name="kilobyteShort">KB</string>
     <string name="megabyteShort">MB</string>

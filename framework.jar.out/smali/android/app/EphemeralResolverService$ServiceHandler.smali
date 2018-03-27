@@ -96,7 +96,7 @@
 
     const-string/jumbo v7, "android.app.PREFIX"
 
-    invoke-virtual {v6, v7}, Landroid/os/Bundle;->getIntArray(Ljava/lang/String;)[I
+    invoke-virtual {v6, v7}, Landroid/os/BaseBundle;->getIntArray(Ljava/lang/String;)[I
 
     move-result-object v3
 
@@ -122,7 +122,7 @@
 
     iget v7, p1, Landroid/os/Message;->arg2:I
 
-    invoke-virtual {v2, v6, v7}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
+    invoke-virtual {v2, v6, v7}, Landroid/os/BaseBundle;->putInt(Ljava/lang/String;I)V
 
     .line 97
     const-string/jumbo v6, "android.app.extra.RESOLVE_INFO"

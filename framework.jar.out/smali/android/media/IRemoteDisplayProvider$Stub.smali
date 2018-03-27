@@ -26,7 +26,7 @@
 # static fields
 .field private static final DESCRIPTOR:Ljava/lang/String; = "android.media.IRemoteDisplayProvider"
 
-.field static final TRANSACTION_adjustVolume_5:I = 0x6
+.field static final TRANSACTION_adjustVolume:I = 0x6
 
 .field static final TRANSACTION_connect:I = 0x3
 
@@ -50,7 +50,7 @@
     .line 18
     const-string/jumbo v0, "android.media.IRemoteDisplayProvider"
 
-    invoke-virtual {p0, p0, v0}, Landroid/media/IRemoteDisplayProvider$Stub;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
+    invoke-virtual {p0, p0, v0}, Landroid/os/Binder;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
 
     .line 16
     return-void

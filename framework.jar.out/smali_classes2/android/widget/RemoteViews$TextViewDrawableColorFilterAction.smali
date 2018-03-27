@@ -49,7 +49,7 @@
     invoke-direct {p0, v0}, Landroid/widget/RemoteViews$Action;-><init>(Landroid/widget/RemoteViews$Action;)V
 
     .line 1945
-    iput p2, p0, Landroid/widget/RemoteViews$TextViewDrawableColorFilterAction;->viewId:I
+    iput p2, p0, Landroid/widget/RemoteViews$Action;->viewId:I
 
     .line 1946
     iput-boolean p3, p0, Landroid/widget/RemoteViews$TextViewDrawableColorFilterAction;->isRelative:Z
@@ -87,7 +87,7 @@
 
     move-result v1
 
-    iput v1, p0, Landroid/widget/RemoteViews$TextViewDrawableColorFilterAction;->viewId:I
+    iput v1, p0, Landroid/widget/RemoteViews$Action;->viewId:I
 
     .line 1954
     invoke-virtual {p2}, Landroid/os/Parcel;->readInt()I
@@ -174,7 +174,7 @@
 
     .prologue
     .line 1980
-    iget v3, p0, Landroid/widget/RemoteViews$TextViewDrawableColorFilterAction;->viewId:I
+    iget v3, p0, Landroid/widget/RemoteViews$Action;->viewId:I
 
     invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -279,7 +279,7 @@
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 1971
-    iget v0, p0, Landroid/widget/RemoteViews$TextViewDrawableColorFilterAction;->viewId:I
+    iget v0, p0, Landroid/widget/RemoteViews$Action;->viewId:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
@@ -306,7 +306,7 @@
     .line 1975
     iget-object v0, p0, Landroid/widget/RemoteViews$TextViewDrawableColorFilterAction;->mode:Landroid/graphics/PorterDuff$Mode;
 
-    invoke-virtual {v0}, Landroid/graphics/PorterDuff$Mode;->ordinal()I
+    invoke-virtual {v0}, Ljava/lang/Enum;->ordinal()I
 
     move-result v0
 

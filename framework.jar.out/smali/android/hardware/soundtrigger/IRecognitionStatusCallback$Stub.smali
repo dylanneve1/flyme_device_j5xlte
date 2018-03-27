@@ -32,9 +32,9 @@
 
 .field static final TRANSACTION_onKeyphraseDetected_0:I = 0x1
 
-.field static final TRANSACTION_onRecognitionPaused_3:I = 0x4
+.field static final TRANSACTION_onRecognitionPaused:I = 0x4
 
-.field static final TRANSACTION_onRecognitionResumed_4:I = 0x5
+.field static final TRANSACTION_onRecognitionResumed:I = 0x5
 
 
 # direct methods

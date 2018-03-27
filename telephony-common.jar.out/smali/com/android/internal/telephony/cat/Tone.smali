@@ -809,7 +809,7 @@
 
     .prologue
     .line 175
-    invoke-virtual {p0}, Lcom/android/internal/telephony/cat/Tone;->ordinal()I
+    invoke-virtual {p0}, Ljava/lang/Enum;->ordinal()I
 
     move-result v0
 

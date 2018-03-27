@@ -232,7 +232,7 @@
 
     .line 503
     .local v5, "binderCounts":Landroid/os/Bundle;
-    invoke-virtual {v5}, Landroid/os/Bundle;->keySet()Ljava/util/Set;
+    invoke-virtual {v5}, Landroid/os/BaseBundle;->keySet()Ljava/util/Set;
 
     move-result-object v22
 
@@ -262,7 +262,7 @@
 
     move-object/from16 v22, v0
 
-    invoke-virtual {v5, v12}, Landroid/os/Bundle;->getLong(Ljava/lang/String;)J
+    invoke-virtual {v5, v12}, Landroid/os/BaseBundle;->getLong(Ljava/lang/String;)J
 
     move-result-wide v24
 
@@ -270,7 +270,7 @@
 
     move-wide/from16 v1, v24
 
-    invoke-virtual {v0, v12, v1, v2}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
+    invoke-virtual {v0, v12, v1, v2}, Landroid/os/BaseBundle;->putLong(Ljava/lang/String;J)V
 
     goto :goto_0
 
@@ -283,7 +283,7 @@
 
     .line 509
     .local v4, "allocCounts":Landroid/os/Bundle;
-    invoke-virtual {v4}, Landroid/os/Bundle;->keySet()Ljava/util/Set;
+    invoke-virtual {v4}, Landroid/os/BaseBundle;->keySet()Ljava/util/Set;
 
     move-result-object v22
 
@@ -312,7 +312,7 @@
 
     move-object/from16 v22, v0
 
-    invoke-virtual {v4, v12}, Landroid/os/Bundle;->getLong(Ljava/lang/String;)J
+    invoke-virtual {v4, v12}, Landroid/os/BaseBundle;->getLong(Ljava/lang/String;)J
 
     move-result-wide v24
 
@@ -320,7 +320,7 @@
 
     move-wide/from16 v1, v24
 
-    invoke-virtual {v0, v12, v1, v2}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
+    invoke-virtual {v0, v12, v1, v2}, Landroid/os/BaseBundle;->putLong(Ljava/lang/String;J)V
 
     goto :goto_1
 
@@ -341,7 +341,7 @@
 
     move-wide/from16 v24, v0
 
-    invoke-virtual/range {v22 .. v25}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
+    invoke-virtual/range {v22 .. v25}, Landroid/os/BaseBundle;->putLong(Ljava/lang/String;J)V
 
     .line 514
     move-object/from16 v0, p0
@@ -358,7 +358,7 @@
 
     move-wide/from16 v24, v0
 
-    invoke-virtual/range {v22 .. v25}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
+    invoke-virtual/range {v22 .. v25}, Landroid/os/BaseBundle;->putLong(Ljava/lang/String;J)V
 
     .line 516
     move-object/from16 v0, p0
@@ -375,7 +375,7 @@
 
     move-wide/from16 v2, v20
 
-    invoke-virtual {v0, v1, v2, v3}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
+    invoke-virtual {v0, v1, v2, v3}, Landroid/os/BaseBundle;->putLong(Ljava/lang/String;J)V
 
     .line 517
     move-object/from16 v0, p0
@@ -392,7 +392,7 @@
 
     move-wide/from16 v2, v16
 
-    invoke-virtual {v0, v1, v2, v3}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
+    invoke-virtual {v0, v1, v2, v3}, Landroid/os/BaseBundle;->putLong(Ljava/lang/String;J)V
 
     .line 518
     move-object/from16 v0, p0
@@ -409,7 +409,7 @@
 
     move-wide/from16 v2, v18
 
-    invoke-virtual {v0, v1, v2, v3}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
+    invoke-virtual {v0, v1, v2, v3}, Landroid/os/BaseBundle;->putLong(Ljava/lang/String;J)V
 
     .line 519
     move-object/from16 v0, p0
@@ -430,7 +430,7 @@
 
     move-wide/from16 v24, v0
 
-    invoke-virtual/range {v22 .. v25}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
+    invoke-virtual/range {v22 .. v25}, Landroid/os/BaseBundle;->putLong(Ljava/lang/String;J)V
 
     .line 520
     move-object/from16 v0, p0
@@ -451,7 +451,7 @@
 
     move-wide/from16 v24, v0
 
-    invoke-virtual/range {v22 .. v25}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
+    invoke-virtual/range {v22 .. v25}, Landroid/os/BaseBundle;->putLong(Ljava/lang/String;J)V
 
     .line 521
     move-object/from16 v0, p0
@@ -472,7 +472,7 @@
 
     move-wide/from16 v24, v0
 
-    invoke-virtual/range {v22 .. v25}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
+    invoke-virtual/range {v22 .. v25}, Landroid/os/BaseBundle;->putLong(Ljava/lang/String;J)V
 
     .line 523
     move-object/from16 v0, p0
@@ -487,7 +487,7 @@
 
     move-object/from16 v1, v23
 
-    invoke-virtual {v0, v1, v10, v11}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
+    invoke-virtual {v0, v1, v10, v11}, Landroid/os/BaseBundle;->putLong(Ljava/lang/String;J)V
 
     .line 524
     move-object/from16 v0, p0
@@ -502,7 +502,7 @@
 
     move-object/from16 v1, v23
 
-    invoke-virtual {v0, v1, v6, v7}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
+    invoke-virtual {v0, v1, v6, v7}, Landroid/os/BaseBundle;->putLong(Ljava/lang/String;J)V
 
     .line 525
     move-object/from16 v0, p0
@@ -517,7 +517,7 @@
 
     move-object/from16 v1, v23
 
-    invoke-virtual {v0, v1, v8, v9}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
+    invoke-virtual {v0, v1, v8, v9}, Landroid/os/BaseBundle;->putLong(Ljava/lang/String;J)V
 
     .line 526
     move-object/from16 v0, p0
@@ -538,7 +538,7 @@
 
     move-wide/from16 v24, v0
 
-    invoke-virtual/range {v22 .. v25}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
+    invoke-virtual/range {v22 .. v25}, Landroid/os/BaseBundle;->putLong(Ljava/lang/String;J)V
 
     .line 527
     move-object/from16 v0, p0
@@ -559,7 +559,7 @@
 
     move-wide/from16 v24, v0
 
-    invoke-virtual/range {v22 .. v25}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
+    invoke-virtual/range {v22 .. v25}, Landroid/os/BaseBundle;->putLong(Ljava/lang/String;J)V
 
     .line 528
     move-object/from16 v0, p0
@@ -580,7 +580,7 @@
 
     move-wide/from16 v24, v0
 
-    invoke-virtual/range {v22 .. v25}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
+    invoke-virtual/range {v22 .. v25}, Landroid/os/BaseBundle;->putLong(Ljava/lang/String;J)V
 
     .line 530
     move-object/from16 v0, p0
@@ -601,7 +601,7 @@
 
     move-wide/from16 v24, v0
 
-    invoke-virtual/range {v22 .. v25}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
+    invoke-virtual/range {v22 .. v25}, Landroid/os/BaseBundle;->putLong(Ljava/lang/String;J)V
 
     .line 531
     move-object/from16 v0, p0
@@ -622,7 +622,7 @@
 
     move-wide/from16 v24, v0
 
-    invoke-virtual/range {v22 .. v25}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
+    invoke-virtual/range {v22 .. v25}, Landroid/os/BaseBundle;->putLong(Ljava/lang/String;J)V
 
     .line 532
     move-object/from16 v0, p0
@@ -643,7 +643,7 @@
 
     move-wide/from16 v24, v0
 
-    invoke-virtual/range {v22 .. v25}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
+    invoke-virtual/range {v22 .. v25}, Landroid/os/BaseBundle;->putLong(Ljava/lang/String;J)V
 
     .line 480
     return-void
@@ -668,7 +668,7 @@
 
     int-to-long v2, v2
 
-    invoke-virtual {v0, v1, v2, v3}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
+    invoke-virtual {v0, v1, v2, v3}, Landroid/os/BaseBundle;->putLong(Ljava/lang/String;J)V
 
     .line 569
     const-string/jumbo v1, "global_alloc_size"
@@ -679,7 +679,7 @@
 
     int-to-long v2, v2
 
-    invoke-virtual {v0, v1, v2, v3}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
+    invoke-virtual {v0, v1, v2, v3}, Landroid/os/BaseBundle;->putLong(Ljava/lang/String;J)V
 
     .line 570
     const-string/jumbo v1, "global_freed_count"
@@ -690,7 +690,7 @@
 
     int-to-long v2, v2
 
-    invoke-virtual {v0, v1, v2, v3}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
+    invoke-virtual {v0, v1, v2, v3}, Landroid/os/BaseBundle;->putLong(Ljava/lang/String;J)V
 
     .line 571
     const-string/jumbo v1, "global_freed_size"
@@ -701,7 +701,7 @@
 
     int-to-long v2, v2
 
-    invoke-virtual {v0, v1, v2, v3}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
+    invoke-virtual {v0, v1, v2, v3}, Landroid/os/BaseBundle;->putLong(Ljava/lang/String;J)V
 
     .line 572
     const-string/jumbo v1, "gc_invocation_count"
@@ -712,7 +712,7 @@
 
     int-to-long v2, v2
 
-    invoke-virtual {v0, v1, v2, v3}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
+    invoke-virtual {v0, v1, v2, v3}, Landroid/os/BaseBundle;->putLong(Ljava/lang/String;J)V
 
     .line 573
     return-object v0
@@ -737,7 +737,7 @@
 
     int-to-long v2, v2
 
-    invoke-virtual {v0, v1, v2, v3}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
+    invoke-virtual {v0, v1, v2, v3}, Landroid/os/BaseBundle;->putLong(Ljava/lang/String;J)V
 
     .line 584
     const-string/jumbo v1, "received_transactions"
@@ -748,7 +748,7 @@
 
     int-to-long v2, v2
 
-    invoke-virtual {v0, v1, v2, v3}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
+    invoke-virtual {v0, v1, v2, v3}, Landroid/os/BaseBundle;->putLong(Ljava/lang/String;J)V
 
     .line 585
     return-object v0
@@ -807,7 +807,7 @@
 
     .line 460
     .local v0, "binderCounts":Landroid/os/Bundle;
-    invoke-virtual {v0}, Landroid/os/Bundle;->keySet()Ljava/util/Set;
+    invoke-virtual {v0}, Landroid/os/BaseBundle;->keySet()Ljava/util/Set;
 
     move-result-object v3
 
@@ -851,11 +851,11 @@
 
     move-result-object v4
 
-    invoke-virtual {v0, v1}, Landroid/os/Bundle;->getLong(Ljava/lang/String;)J
+    invoke-virtual {v0, v1}, Landroid/os/BaseBundle;->getLong(Ljava/lang/String;)J
 
     move-result-wide v6
 
-    invoke-virtual {v3, v4, v6, v7}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
+    invoke-virtual {v3, v4, v6, v7}, Landroid/os/BaseBundle;->putLong(Ljava/lang/String;J)V
 
     goto :goto_0
 
@@ -952,21 +952,21 @@
     .local v0, "iteration":Landroid/os/Bundle;
     const-string/jumbo v1, "label"
 
-    invoke-virtual {v0, v1, p1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, p1}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 393
     const-string/jumbo v1, "execution_time"
 
     iget-wide v2, p0, Landroid/os/PerformanceCollector;->mExecTime:J
 
-    invoke-virtual {v0, v1, v2, v3}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
+    invoke-virtual {v0, v1, v2, v3}, Landroid/os/BaseBundle;->putLong(Ljava/lang/String;J)V
 
     .line 394
     const-string/jumbo v1, "cpu_time"
 
     iget-wide v2, p0, Landroid/os/PerformanceCollector;->mCpuTime:J
 
-    invoke-virtual {v0, v1, v2, v3}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
+    invoke-virtual {v0, v1, v2, v3}, Landroid/os/BaseBundle;->putLong(Ljava/lang/String;J)V
 
     .line 395
     iget-object v1, p0, Landroid/os/PerformanceCollector;->mPerfMeasurement:Landroid/os/Bundle;

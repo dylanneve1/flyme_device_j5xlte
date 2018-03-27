@@ -40,15 +40,15 @@
 
 .field static final TRANSACTION_setCamera:I = 0x3
 
-.field static final TRANSACTION_setDeviceOrientation_5:I = 0x6
+.field static final TRANSACTION_setDeviceOrientation:I = 0x6
 
-.field static final TRANSACTION_setDisplaySurface_4:I = 0x5
+.field static final TRANSACTION_setDisplaySurface:I = 0x5
 
 .field static final TRANSACTION_setPauseImage:I = 0xc
 
 .field static final TRANSACTION_setPreviewSurface:I = 0x4
 
-.field static final TRANSACTION_setZoom_6:I = 0x7
+.field static final TRANSACTION_setZoom:I = 0x7
 
 
 # direct methods

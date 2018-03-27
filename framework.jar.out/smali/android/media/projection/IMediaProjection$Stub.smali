@@ -34,13 +34,13 @@
 
 .field static final TRANSACTION_canProjectVideo:I = 0x4
 
-.field static final TRANSACTION_registerCallback_6:I = 0x7
+.field static final TRANSACTION_registerCallback:I = 0x7
 
 .field static final TRANSACTION_start:I = 0x1
 
 .field static final TRANSACTION_stop:I = 0x2
 
-.field static final TRANSACTION_unregisterCallback_7:I = 0x8
+.field static final TRANSACTION_unregisterCallback:I = 0x8
 
 
 # direct methods
@@ -54,7 +54,7 @@
     .line 16
     const-string/jumbo v0, "android.media.projection.IMediaProjection"
 
-    invoke-virtual {p0, p0, v0}, Landroid/media/projection/IMediaProjection$Stub;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
+    invoke-virtual {p0, p0, v0}, Landroid/os/Binder;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
 
     .line 14
     return-void

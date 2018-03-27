@@ -34,11 +34,11 @@
 
 .field static final TRANSACTION_handleScreenshot:I = 0x4
 
-.field static final TRANSACTION_hide_1:I = 0x2
+.field static final TRANSACTION_hide:I = 0x2
 
 .field static final TRANSACTION_onLockscreenShown:I = 0x8
 
-.field static final TRANSACTION_show_0:I = 0x1
+.field static final TRANSACTION_show:I = 0x1
 
 .field static final TRANSACTION_taskFinished:I = 0x6
 
@@ -56,7 +56,7 @@
     .line 18
     const-string/jumbo v0, "android.service.voice.IVoiceInteractionSession"
 
-    invoke-virtual {p0, p0, v0}, Landroid/service/voice/IVoiceInteractionSession$Stub;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
+    invoke-virtual {p0, p0, v0}, Landroid/os/Binder;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
 
     .line 16
     return-void

@@ -32,11 +32,11 @@
 
 .field static final TRANSACTION_utConfigurationCallWaitingQueried:I = 0x7
 
-.field static final TRANSACTION_utConfigurationQueried_2:I = 0x3
+.field static final TRANSACTION_utConfigurationQueried:I = 0x3
 
 .field static final TRANSACTION_utConfigurationQueryFailed:I = 0x4
 
-.field static final TRANSACTION_utConfigurationUpdateFailed_1:I = 0x2
+.field static final TRANSACTION_utConfigurationUpdateFailed:I = 0x2
 
 .field static final TRANSACTION_utConfigurationUpdated:I = 0x1
 

@@ -28,11 +28,11 @@
 
 .field static final TRANSACTION_onGeofenceAdd:I = 0x2
 
-.field static final TRANSACTION_onGeofencePause_3:I = 0x4
+.field static final TRANSACTION_onGeofencePause:I = 0x4
 
 .field static final TRANSACTION_onGeofenceRemove:I = 0x3
 
-.field static final TRANSACTION_onGeofenceResume_4:I = 0x5
+.field static final TRANSACTION_onGeofenceResume:I = 0x5
 
 .field static final TRANSACTION_onGeofenceTransition:I = 0x1
 
@@ -48,7 +48,7 @@
     .line 16
     const-string/jumbo v0, "android.hardware.location.IGeofenceHardwareCallback"
 
-    invoke-virtual {p0, p0, v0}, Landroid/hardware/location/IGeofenceHardwareCallback$Stub;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
+    invoke-virtual {p0, p0, v0}, Landroid/os/Binder;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
 
     .line 14
     return-void

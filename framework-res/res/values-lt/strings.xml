@@ -94,6 +94,8 @@
     <string name="tethered_notification_no_device_message">Nėra prijungto įrenginio</string>
     <string name="tethered_notification_one_device_message">%1$s prijungtas įrenginys</string>
     <string name="tethered_notification_multi_device_message">%1$s prijungti įrenginiai</string>
+    <string name="silent_mode_priority">Prioritetas</string>
+    <string name="silent_mode_none">Joks</string>
     <string name="month_day_year" formatted="false">%Y m. %B %-e d.</string>
     <string name="time_of_day" formatted="false">%H:%M:%S</string>
     <string name="date_and_time" formatted="false">%H:%M:%S %Y.%m.%d</string>

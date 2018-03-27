@@ -40,7 +40,7 @@
 
 .field static final TRANSACTION_enumerate:I = 0xd
 
-.field static final TRANSACTION_getAuthenticatorId_6:I = 0x7
+.field static final TRANSACTION_getAuthenticatorId:I = 0x7
 
 .field static final TRANSACTION_init:I = 0xb
 
@@ -50,9 +50,9 @@
 
 .field static final TRANSACTION_preEnroll:I = 0x5
 
-.field static final TRANSACTION_remove_5:I = 0x6
+.field static final TRANSACTION_remove:I = 0x6
 
-.field static final TRANSACTION_setActiveGroup_7:I = 0x8
+.field static final TRANSACTION_setActiveGroup:I = 0x8
 
 
 # direct methods

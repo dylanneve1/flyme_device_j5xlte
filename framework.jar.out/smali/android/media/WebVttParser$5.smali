@@ -199,7 +199,7 @@
 
     move-result-wide v14
 
-    iput-wide v14, v12, Landroid/media/TextTrackCue;->mStartTimeMs:J
+    iput-wide v14, v12, Landroid/media/SubtitleTrack$Cue;->mStartTimeMs:J
 
     .line 858
     move-object/from16 v0, p0
@@ -214,7 +214,7 @@
 
     move-result-wide v14
 
-    iput-wide v14, v12, Landroid/media/TextTrackCue;->mEndTimeMs:J
+    iput-wide v14, v12, Landroid/media/SubtitleTrack$Cue;->mEndTimeMs:J
 
     .line 859
     const-string/jumbo v12, " +"

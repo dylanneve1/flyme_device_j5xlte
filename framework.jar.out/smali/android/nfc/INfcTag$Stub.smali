@@ -48,7 +48,7 @@
 
 .field static final TRANSACTION_ndefMakeReadOnly:I = 0x9
 
-.field static final TRANSACTION_ndefRead_6:I = 0x7
+.field static final TRANSACTION_ndefRead:I = 0x7
 
 .field static final TRANSACTION_ndefWrite:I = 0x8
 
@@ -60,7 +60,7 @@
 
 .field static final TRANSACTION_setTimeout:I = 0xd
 
-.field static final TRANSACTION_transceive_5:I = 0x6
+.field static final TRANSACTION_transceive:I = 0x6
 
 
 # direct methods

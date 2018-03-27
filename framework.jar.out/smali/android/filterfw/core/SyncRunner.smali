@@ -132,10 +132,10 @@
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 73
-    iput-object p1, p0, Landroid/filterfw/core/SyncRunner;->mFilterContext:Landroid/filterfw/core/FilterContext;
+    iput-object p1, p0, Landroid/filterfw/core/GraphRunner;->mFilterContext:Landroid/filterfw/core/FilterContext;
 
     .line 74
-    iget-object v6, p0, Landroid/filterfw/core/SyncRunner;->mFilterContext:Landroid/filterfw/core/FilterContext;
+    iget-object v6, p0, Landroid/filterfw/core/GraphRunner;->mFilterContext:Landroid/filterfw/core/FilterContext;
 
     invoke-virtual {v6, p2}, Landroid/filterfw/core/FilterContext;->addGraph(Landroid/filterfw/core/FilterGraph;)V
 
@@ -334,7 +334,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Landroid/filterfw/core/SyncRunner;->mFilterContext:Landroid/filterfw/core/FilterContext;
+    iget-object v1, p0, Landroid/filterfw/core/GraphRunner;->mFilterContext:Landroid/filterfw/core/FilterContext;
 
     invoke-virtual {v0, v1}, Landroid/filterfw/core/FilterGraph;->closeFilters(Landroid/filterfw/core/FilterContext;)V
 
@@ -541,7 +541,7 @@
 
     .line 164
     :cond_0
-    iget-object v0, p0, Landroid/filterfw/core/SyncRunner;->mFilterContext:Landroid/filterfw/core/FilterContext;
+    iget-object v0, p0, Landroid/filterfw/core/GraphRunner;->mFilterContext:Landroid/filterfw/core/FilterContext;
 
     invoke-virtual {p1, v0}, Landroid/filterfw/core/Filter;->performProcess(Landroid/filterfw/core/FilterContext;)V
 
@@ -642,7 +642,7 @@
     invoke-virtual {p0}, Landroid/filterfw/core/SyncRunner;->beginProcessing()V
 
     .line 117
-    invoke-virtual {p0}, Landroid/filterfw/core/SyncRunner;->activateGlContext()Z
+    invoke-virtual {p0}, Landroid/filterfw/core/GraphRunner;->activateGlContext()Z
 
     move-result v0
 
@@ -668,7 +668,7 @@
     if-eqz v0, :cond_2
 
     .line 127
-    invoke-virtual {p0}, Landroid/filterfw/core/SyncRunner;->deactivateGlContext()V
+    invoke-virtual {p0}, Landroid/filterfw/core/GraphRunner;->deactivateGlContext()V
 
     .line 131
     :cond_2

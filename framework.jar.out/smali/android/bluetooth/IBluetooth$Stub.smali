@@ -40,11 +40,11 @@
 
 .field static final TRANSACTION_createSocketChannel:I = 0x30
 
-.field static final TRANSACTION_disable_4:I = 0x5
+.field static final TRANSACTION_disable:I = 0x5
 
-.field static final TRANSACTION_enableNoAutoConnect_3:I = 0x4
+.field static final TRANSACTION_enable:I = 0x3
 
-.field static final TRANSACTION_enable_2:I = 0x3
+.field static final TRANSACTION_enableNoAutoConnect:I = 0x4
 
 .field static final TRANSACTION_factoryReset:I = 0x32
 

@@ -40,7 +40,7 @@
 
     .prologue
     .line 85
-    invoke-virtual {p0}, Lcom/android/internal/app/ConfirmUserCreationActivity;->getCallingPackage()Ljava/lang/String;
+    invoke-virtual {p0}, Landroid/app/Activity;->getCallingPackage()Ljava/lang/String;
 
     move-result-object v4
 
@@ -62,7 +62,7 @@
     .line 92
     :cond_0
     :try_start_0
-    invoke-virtual {p0}, Lcom/android/internal/app/ConfirmUserCreationActivity;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v9
 
@@ -161,11 +161,11 @@
     iput-boolean v9, p0, Lcom/android/internal/app/ConfirmUserCreationActivity;->mCanProceed:Z
 
     .line 109
-    invoke-virtual {p0}, Lcom/android/internal/app/ConfirmUserCreationActivity;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v9
 
-    invoke-virtual {v2, v9}, Landroid/content/pm/ApplicationInfo;->loadLabel(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;
+    invoke-virtual {v2, v9}, Landroid/content/pm/PackageItemInfo;->loadLabel(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;
 
     move-result-object v9
 
@@ -180,7 +180,7 @@
     .line 111
     const/4 v9, 0x1
 
-    invoke-virtual {p0, v9}, Lcom/android/internal/app/ConfirmUserCreationActivity;->setResult(I)V
+    invoke-virtual {p0, v9}, Landroid/app/Activity;->setResult(I)V
 
     .line 112
     const/4 v9, 0x0
@@ -249,7 +249,7 @@
     .line 114
     const/4 v9, 0x2
 
-    invoke-virtual {p0, v9}, Lcom/android/internal/app/ConfirmUserCreationActivity;->setResult(I)V
+    invoke-virtual {p0, v9}, Landroid/app/Activity;->setResult(I)V
 
     .line 115
     const/4 v9, 0x0
@@ -277,7 +277,7 @@
 
     const v10, 0x104065b
 
-    invoke-virtual {p0, v10, v9}, Lcom/android/internal/app/ConfirmUserCreationActivity;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v10, v9}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v7
 
@@ -305,7 +305,7 @@
 
     const v10, 0x104065c
 
-    invoke-virtual {p0, v10, v9}, Lcom/android/internal/app/ConfirmUserCreationActivity;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v10, v9}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v7
 
@@ -326,7 +326,7 @@
     const/4 v6, -0x1
 
     .line 126
-    invoke-virtual {p0, v3}, Lcom/android/internal/app/ConfirmUserCreationActivity;->setResult(I)V
+    invoke-virtual {p0, v3}, Landroid/app/Activity;->setResult(I)V
 
     .line 127
     if-ne p2, v6, :cond_1
@@ -363,7 +363,7 @@
     invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 132
-    invoke-virtual {p0}, Lcom/android/internal/app/ConfirmUserCreationActivity;->finish()V
+    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
 
     .line 133
     return-void
@@ -383,12 +383,12 @@
     invoke-virtual {v1, v2, v3, v4, v5}, Landroid/os/UserManager;->setSeedAccountData(ILjava/lang/String;Ljava/lang/String;Landroid/os/PersistableBundle;)V
 
     .line 136
-    invoke-virtual {p0, v6}, Lcom/android/internal/app/ConfirmUserCreationActivity;->setResult(I)V
+    invoke-virtual {p0, v6}, Landroid/app/Activity;->setResult(I)V
 
     .line 138
     .end local v0    # "user":Landroid/content/pm/UserInfo;
     :cond_1
-    invoke-virtual {p0}, Lcom/android/internal/app/ConfirmUserCreationActivity;->finish()V
+    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
 
     .line 125
     return-void
@@ -403,7 +403,7 @@
     invoke-super {p0, p1}, Lcom/android/internal/app/AlertActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 56
-    invoke-virtual {p0}, Lcom/android/internal/app/ConfirmUserCreationActivity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
@@ -450,7 +450,7 @@
     .line 63
     const-class v3, Landroid/os/UserManager;
 
-    invoke-virtual {p0, v3}, Lcom/android/internal/app/ConfirmUserCreationActivity;->getSystemService(Ljava/lang/Class;)Ljava/lang/Object;
+    invoke-virtual {p0, v3}, Landroid/content/Context;->getSystemService(Ljava/lang/Class;)Ljava/lang/Object;
 
     move-result-object v3
 
@@ -468,14 +468,14 @@
     if-nez v2, :cond_0
 
     .line 68
-    invoke-virtual {p0}, Lcom/android/internal/app/ConfirmUserCreationActivity;->finish()V
+    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
 
     .line 69
     return-void
 
     .line 71
     :cond_0
-    iget-object v0, p0, Lcom/android/internal/app/ConfirmUserCreationActivity;->mAlertParams:Lcom/android/internal/app/AlertController$AlertParams;
+    iget-object v0, p0, Lcom/android/internal/app/AlertActivity;->mAlertParams:Lcom/android/internal/app/AlertController$AlertParams;
 
     .line 72
     .local v0, "ap":Lcom/android/internal/app/AlertController$AlertParams;
@@ -484,7 +484,7 @@
     .line 73
     const v3, 0x104000a
 
-    invoke-virtual {p0, v3}, Lcom/android/internal/app/ConfirmUserCreationActivity;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
@@ -501,7 +501,7 @@
     .line 78
     const/high16 v3, 0x1040000
 
-    invoke-virtual {p0, v3}, Lcom/android/internal/app/ConfirmUserCreationActivity;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
@@ -512,7 +512,7 @@
 
     .line 81
     :cond_1
-    invoke-virtual {p0}, Lcom/android/internal/app/ConfirmUserCreationActivity;->setupAlert()V
+    invoke-virtual {p0}, Lcom/android/internal/app/AlertActivity;->setupAlert()V
 
     .line 53
     return-void

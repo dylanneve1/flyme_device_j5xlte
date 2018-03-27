@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/server/ConnectivityService;
 
     .prologue
-    .line 4030
+    .line 4032
     iput-object p1, p0, Lcom/android/server/ConnectivityService$3;->this$0:Lcom/android/server/ConnectivityService;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -42,12 +42,12 @@
     .prologue
     const/16 v3, -0x2710
 
-    .line 4033
+    .line 4035
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 4034
+    .line 4036
     .local v0, "action":Ljava/lang/String;
     const-string/jumbo v2, "android.intent.extra.user_handle"
 
@@ -55,13 +55,13 @@
 
     move-result v1
 
-    .line 4035
+    .line 4037
     .local v1, "userId":I
     if-ne v1, v3, :cond_0
 
     return-void
 
-    .line 4037
+    .line 4039
     :cond_0
     const-string/jumbo v2, "android.intent.action.USER_STARTED"
 
@@ -71,17 +71,17 @@
 
     if-eqz v2, :cond_2
 
-    .line 4038
+    .line 4040
     iget-object v2, p0, Lcom/android/server/ConnectivityService$3;->this$0:Lcom/android/server/ConnectivityService;
 
     invoke-static {v2, v1}, Lcom/android/server/ConnectivityService;->-wrap27(Lcom/android/server/ConnectivityService;I)V
 
-    .line 4032
+    .line 4034
     :cond_1
     :goto_0
     return-void
 
-    .line 4039
+    .line 4041
     :cond_2
     const-string/jumbo v2, "android.intent.action.USER_STOPPED"
 
@@ -91,14 +91,14 @@
 
     if-eqz v2, :cond_3
 
-    .line 4040
+    .line 4042
     iget-object v2, p0, Lcom/android/server/ConnectivityService$3;->this$0:Lcom/android/server/ConnectivityService;
 
     invoke-static {v2, v1}, Lcom/android/server/ConnectivityService;->-wrap28(Lcom/android/server/ConnectivityService;I)V
 
     goto :goto_0
 
-    .line 4041
+    .line 4043
     :cond_3
     const-string/jumbo v2, "android.intent.action.USER_ADDED"
 
@@ -108,14 +108,14 @@
 
     if-eqz v2, :cond_4
 
-    .line 4042
+    .line 4044
     iget-object v2, p0, Lcom/android/server/ConnectivityService$3;->this$0:Lcom/android/server/ConnectivityService;
 
     invoke-static {v2, v1}, Lcom/android/server/ConnectivityService;->-wrap25(Lcom/android/server/ConnectivityService;I)V
 
     goto :goto_0
 
-    .line 4043
+    .line 4045
     :cond_4
     const-string/jumbo v2, "android.intent.action.USER_REMOVED"
 
@@ -125,14 +125,14 @@
 
     if-eqz v2, :cond_5
 
-    .line 4044
+    .line 4046
     iget-object v2, p0, Lcom/android/server/ConnectivityService$3;->this$0:Lcom/android/server/ConnectivityService;
 
     invoke-static {v2, v1}, Lcom/android/server/ConnectivityService;->-wrap26(Lcom/android/server/ConnectivityService;I)V
 
     goto :goto_0
 
-    .line 4045
+    .line 4047
     :cond_5
     const-string/jumbo v2, "android.intent.action.USER_UNLOCKED"
 
@@ -142,7 +142,7 @@
 
     if-eqz v2, :cond_1
 
-    .line 4046
+    .line 4048
     iget-object v2, p0, Lcom/android/server/ConnectivityService$3;->this$0:Lcom/android/server/ConnectivityService;
 
     invoke-static {v2, v1}, Lcom/android/server/ConnectivityService;->-wrap29(Lcom/android/server/ConnectivityService;I)V

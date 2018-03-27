@@ -42,31 +42,31 @@
     .param p7, "minHeight"    # I
 
     .prologue
-    .line 1009
+    .line 1004
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1011
+    .line 1006
     iput p1, p0, Landroid/content/pm/ActivityInfo$WindowLayout;->width:I
 
-    .line 1012
+    .line 1007
     iput p2, p0, Landroid/content/pm/ActivityInfo$WindowLayout;->widthFraction:F
 
-    .line 1013
+    .line 1008
     iput p3, p0, Landroid/content/pm/ActivityInfo$WindowLayout;->height:I
 
-    .line 1014
+    .line 1009
     iput p4, p0, Landroid/content/pm/ActivityInfo$WindowLayout;->heightFraction:F
 
-    .line 1015
+    .line 1010
     iput p5, p0, Landroid/content/pm/ActivityInfo$WindowLayout;->gravity:I
 
-    .line 1016
+    .line 1011
     iput p6, p0, Landroid/content/pm/ActivityInfo$WindowLayout;->minWidth:I
 
-    .line 1017
+    .line 1012
     iput p7, p0, Landroid/content/pm/ActivityInfo$WindowLayout;->minHeight:I
 
-    .line 1010
+    .line 1005
     return-void
 .end method
 
@@ -75,58 +75,58 @@
     .param p1, "source"    # Landroid/os/Parcel;
 
     .prologue
-    .line 1020
+    .line 1015
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1021
+    .line 1016
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
     iput v0, p0, Landroid/content/pm/ActivityInfo$WindowLayout;->width:I
 
-    .line 1022
+    .line 1017
     invoke-virtual {p1}, Landroid/os/Parcel;->readFloat()F
 
     move-result v0
 
     iput v0, p0, Landroid/content/pm/ActivityInfo$WindowLayout;->widthFraction:F
 
-    .line 1023
+    .line 1018
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
     iput v0, p0, Landroid/content/pm/ActivityInfo$WindowLayout;->height:I
 
-    .line 1024
+    .line 1019
     invoke-virtual {p1}, Landroid/os/Parcel;->readFloat()F
 
     move-result v0
 
     iput v0, p0, Landroid/content/pm/ActivityInfo$WindowLayout;->heightFraction:F
 
-    .line 1025
+    .line 1020
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
     iput v0, p0, Landroid/content/pm/ActivityInfo$WindowLayout;->gravity:I
 
-    .line 1026
+    .line 1021
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
     iput v0, p0, Landroid/content/pm/ActivityInfo$WindowLayout;->minWidth:I
 
-    .line 1027
+    .line 1022
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
     iput v0, p0, Landroid/content/pm/ActivityInfo$WindowLayout;->minHeight:I
 
-    .line 1020
+    .line 1015
     return-void
 .end method

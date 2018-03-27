@@ -30,13 +30,13 @@
 
 .field static final TRANSACTION_queryCFForServiceClass:I = 0x12
 
-.field static final TRANSACTION_queryCLIP_5:I = 0x6
+.field static final TRANSACTION_queryCLIP:I = 0x6
 
 .field static final TRANSACTION_queryCLIR:I = 0x5
 
-.field static final TRANSACTION_queryCOLP_7:I = 0x8
+.field static final TRANSACTION_queryCOLP:I = 0x8
 
-.field static final TRANSACTION_queryCOLR_6:I = 0x7
+.field static final TRANSACTION_queryCOLR:I = 0x7
 
 .field static final TRANSACTION_queryCallBarring:I = 0x2
 
@@ -46,7 +46,7 @@
 
 .field static final TRANSACTION_setListener:I = 0x11
 
-.field static final TRANSACTION_transact_8:I = 0x9
+.field static final TRANSACTION_transact:I = 0x9
 
 .field static final TRANSACTION_updateCLIP:I = 0xe
 
@@ -56,7 +56,7 @@
 
 .field static final TRANSACTION_updateCOLR:I = 0xf
 
-.field static final TRANSACTION_updateCallBarring_9:I = 0xa
+.field static final TRANSACTION_updateCallBarring:I = 0xa
 
 .field static final TRANSACTION_updateCallForward:I = 0xb
 

@@ -26,9 +26,9 @@
 # static fields
 .field private static final DESCRIPTOR:Ljava/lang/String; = "android.bluetooth.IBluetoothHealth"
 
-.field static final TRANSACTION_connectChannelToSink_3:I = 0x4
+.field static final TRANSACTION_connectChannelToSink:I = 0x4
 
-.field static final TRANSACTION_connectChannelToSource_2:I = 0x3
+.field static final TRANSACTION_connectChannelToSource:I = 0x3
 
 .field static final TRANSACTION_disconnectChannel:I = 0x5
 

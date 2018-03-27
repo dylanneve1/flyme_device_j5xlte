@@ -192,7 +192,7 @@
     :goto_0
     if-ge v2, v0, :cond_1
 
-    invoke-virtual {p0}, Landroid/widget/RemoteViews$AsyncApplyTask;->isCancelled()Z
+    invoke-virtual {p0}, Landroid/os/AsyncTask;->isCancelled()Z
 
     move-result v3
 
@@ -289,7 +289,7 @@
     .line 3349
     const/4 v0, 0x1
 
-    invoke-virtual {p0, v0}, Landroid/widget/RemoteViews$AsyncApplyTask;->cancel(Z)Z
+    invoke-virtual {p0, v0}, Landroid/os/AsyncTask;->cancel(Z)Z
 
     .line 3348
     return-void

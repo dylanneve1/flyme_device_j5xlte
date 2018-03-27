@@ -173,7 +173,7 @@
     if-eqz v6, :cond_5
 
     .line 114
-    invoke-virtual {p0}, Landroid/app/AliasActivity;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
 
     move-result-object v6
 
@@ -219,12 +219,12 @@
     .line 58
     .local v5, "parser":Landroid/content/res/XmlResourceParser;
     :try_start_0
-    invoke-virtual {p0}, Landroid/app/AliasActivity;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v6
 
     .line 59
-    invoke-virtual {p0}, Landroid/app/AliasActivity;->getComponentName()Landroid/content/ComponentName;
+    invoke-virtual {p0}, Landroid/app/Activity;->getComponentName()Landroid/content/ComponentName;
 
     move-result-object v7
 
@@ -237,7 +237,7 @@
 
     .line 60
     .local v0, "ai":Landroid/content/pm/ActivityInfo;
-    invoke-virtual {p0}, Landroid/app/AliasActivity;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v6
 
@@ -245,7 +245,7 @@
     const-string/jumbo v7, "android.app.alias"
 
     .line 60
-    invoke-virtual {v0, v6, v7}, Landroid/content/pm/ActivityInfo;->loadXmlMetaData(Landroid/content/pm/PackageManager;Ljava/lang/String;)Landroid/content/res/XmlResourceParser;
+    invoke-virtual {v0, v6, v7}, Landroid/content/pm/PackageItemInfo;->loadXmlMetaData(Landroid/content/pm/PackageManager;Ljava/lang/String;)Landroid/content/res/XmlResourceParser;
 
     move-result-object v5
 
@@ -356,10 +356,10 @@
     .restart local v5    # "parser":Landroid/content/res/XmlResourceParser;
     :cond_2
     :try_start_4
-    invoke-virtual {p0, v4}, Landroid/app/AliasActivity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v4}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
 
     .line 74
-    invoke-virtual {p0}, Landroid/app/AliasActivity;->finish()V
+    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
     :try_end_4
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_4 .. :try_end_4} :catch_0
     .catch Lorg/xmlpull/v1/XmlPullParserException; {:try_start_4 .. :try_end_4} :catch_1

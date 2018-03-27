@@ -40,24 +40,24 @@
     .line 936
     new-instance v0, Landroid/hardware/radio/RadioManager$BandDescriptor;
 
-    invoke-virtual {p1}, Landroid/hardware/radio/RadioManager$FmBandConfig;->getRegion()I
+    invoke-virtual {p1}, Landroid/hardware/radio/RadioManager$BandConfig;->getRegion()I
 
     move-result v1
 
-    invoke-virtual {p1}, Landroid/hardware/radio/RadioManager$FmBandConfig;->getType()I
+    invoke-virtual {p1}, Landroid/hardware/radio/RadioManager$BandConfig;->getType()I
 
     move-result v2
 
     .line 937
-    invoke-virtual {p1}, Landroid/hardware/radio/RadioManager$FmBandConfig;->getLowerLimit()I
+    invoke-virtual {p1}, Landroid/hardware/radio/RadioManager$BandConfig;->getLowerLimit()I
 
     move-result v3
 
-    invoke-virtual {p1}, Landroid/hardware/radio/RadioManager$FmBandConfig;->getUpperLimit()I
+    invoke-virtual {p1}, Landroid/hardware/radio/RadioManager$BandConfig;->getUpperLimit()I
 
     move-result v4
 
-    invoke-virtual {p1}, Landroid/hardware/radio/RadioManager$FmBandConfig;->getSpacing()I
+    invoke-virtual {p1}, Landroid/hardware/radio/RadioManager$BandConfig;->getSpacing()I
 
     move-result v5
 
@@ -116,25 +116,25 @@
     .line 921
     new-instance v0, Landroid/hardware/radio/RadioManager$BandDescriptor;
 
-    invoke-virtual {p1}, Landroid/hardware/radio/RadioManager$FmBandDescriptor;->getRegion()I
+    invoke-virtual {p1}, Landroid/hardware/radio/RadioManager$BandDescriptor;->getRegion()I
 
     move-result v1
 
-    invoke-virtual {p1}, Landroid/hardware/radio/RadioManager$FmBandDescriptor;->getType()I
+    invoke-virtual {p1}, Landroid/hardware/radio/RadioManager$BandDescriptor;->getType()I
 
     move-result v2
 
     .line 922
-    invoke-virtual {p1}, Landroid/hardware/radio/RadioManager$FmBandDescriptor;->getLowerLimit()I
+    invoke-virtual {p1}, Landroid/hardware/radio/RadioManager$BandDescriptor;->getLowerLimit()I
 
     move-result v3
 
-    invoke-virtual {p1}, Landroid/hardware/radio/RadioManager$FmBandDescriptor;->getUpperLimit()I
+    invoke-virtual {p1}, Landroid/hardware/radio/RadioManager$BandDescriptor;->getUpperLimit()I
 
     move-result v4
 
     .line 923
-    invoke-virtual {p1}, Landroid/hardware/radio/RadioManager$FmBandDescriptor;->getSpacing()I
+    invoke-virtual {p1}, Landroid/hardware/radio/RadioManager$BandDescriptor;->getSpacing()I
 
     move-result v5
 

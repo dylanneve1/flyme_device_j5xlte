@@ -34,7 +34,7 @@
 
 .field static final TRANSACTION_getNfcFServices:I = 0x8
 
-.field static final TRANSACTION_getNfcid2ForService_3:I = 0x4
+.field static final TRANSACTION_getNfcid2ForService:I = 0x4
 
 .field static final TRANSACTION_getSystemCodeForService:I = 0x1
 
@@ -42,7 +42,7 @@
 
 .field static final TRANSACTION_removeSystemCodeForService:I = 0x3
 
-.field static final TRANSACTION_setNfcid2ForService_4:I = 0x5
+.field static final TRANSACTION_setNfcid2ForService:I = 0x5
 
 
 # direct methods

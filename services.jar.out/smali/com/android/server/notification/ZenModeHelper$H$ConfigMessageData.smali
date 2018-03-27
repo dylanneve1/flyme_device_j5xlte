@@ -33,20 +33,20 @@
     .param p4, "setRingerMode"    # Z
 
     .prologue
-    .line 1156
+    .line 1158
     iput-object p1, p0, Lcom/android/server/notification/ZenModeHelper$H$ConfigMessageData;->this$1:Lcom/android/server/notification/ZenModeHelper$H;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1157
+    .line 1159
     iput-object p2, p0, Lcom/android/server/notification/ZenModeHelper$H$ConfigMessageData;->config:Landroid/service/notification/ZenModeConfig;
 
-    .line 1158
+    .line 1160
     iput-object p3, p0, Lcom/android/server/notification/ZenModeHelper$H$ConfigMessageData;->reason:Ljava/lang/String;
 
-    .line 1159
+    .line 1161
     iput-boolean p4, p0, Lcom/android/server/notification/ZenModeHelper$H$ConfigMessageData;->setRingerMode:Z
 
-    .line 1156
+    .line 1158
     return-void
 .end method

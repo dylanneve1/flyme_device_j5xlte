@@ -36,7 +36,7 @@
 
 .field static final TRANSACTION_playAsync:I = 0x5
 
-.field static final TRANSACTION_setPlaybackProperties_3:I = 0x4
+.field static final TRANSACTION_setPlaybackProperties:I = 0x4
 
 .field static final TRANSACTION_stop:I = 0x2
 

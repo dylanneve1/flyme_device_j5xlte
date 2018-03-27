@@ -34,9 +34,9 @@
 
 .field static final TRANSACTION_getEnabledKeyboardLayoutsForInputDevice:I = 0xd
 
-.field static final TRANSACTION_getInputDeviceIds_1:I = 0x2
+.field static final TRANSACTION_getInputDevice:I = 0x1
 
-.field static final TRANSACTION_getInputDevice_0:I = 0x1
+.field static final TRANSACTION_getInputDeviceIds:I = 0x2
 
 .field static final TRANSACTION_getKeyboardLayout:I = 0xa
 
@@ -48,7 +48,7 @@
 
 .field static final TRANSACTION_getTouchCalibrationForInputDevice:I = 0x6
 
-.field static final TRANSACTION_hasKeys_2:I = 0x3
+.field static final TRANSACTION_hasKeys:I = 0x3
 
 .field static final TRANSACTION_injectInputEvent:I = 0x5
 
@@ -70,7 +70,7 @@
 
 .field static final TRANSACTION_setTouchCalibrationForInputDevice:I = 0x7
 
-.field static final TRANSACTION_tryPointerSpeed_3:I = 0x4
+.field static final TRANSACTION_tryPointerSpeed:I = 0x4
 
 .field static final TRANSACTION_vibrate:I = 0x15
 

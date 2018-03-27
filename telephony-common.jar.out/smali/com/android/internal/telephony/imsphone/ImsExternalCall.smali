@@ -21,7 +21,7 @@
     iput-object p1, p0, Lcom/android/internal/telephony/imsphone/ImsExternalCall;->mPhone:Lcom/android/internal/telephony/Phone;
 
     .line 36
-    iget-object v0, p0, Lcom/android/internal/telephony/imsphone/ImsExternalCall;->mConnections:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/internal/telephony/Call;->mConnections:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -45,7 +45,7 @@
 
     .prologue
     .line 41
-    iget-object v0, p0, Lcom/android/internal/telephony/imsphone/ImsExternalCall;->mConnections:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/internal/telephony/Call;->mConnections:Ljava/util/ArrayList;
 
     return-object v0
 .end method
@@ -90,7 +90,7 @@
     .line 63
     sget-object v0, Lcom/android/internal/telephony/Call$State;->ACTIVE:Lcom/android/internal/telephony/Call$State;
 
-    invoke-virtual {p0, v0}, Lcom/android/internal/telephony/imsphone/ImsExternalCall;->setState(Lcom/android/internal/telephony/Call$State;)V
+    invoke-virtual {p0, v0}, Lcom/android/internal/telephony/Call;->setState(Lcom/android/internal/telephony/Call$State;)V
 
     .line 62
     return-void
@@ -103,7 +103,7 @@
     .line 70
     sget-object v0, Lcom/android/internal/telephony/Call$State;->DISCONNECTED:Lcom/android/internal/telephony/Call$State;
 
-    invoke-virtual {p0, v0}, Lcom/android/internal/telephony/imsphone/ImsExternalCall;->setState(Lcom/android/internal/telephony/Call$State;)V
+    invoke-virtual {p0, v0}, Lcom/android/internal/telephony/Call;->setState(Lcom/android/internal/telephony/Call$State;)V
 
     .line 69
     return-void

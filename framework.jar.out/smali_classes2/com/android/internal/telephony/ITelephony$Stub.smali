@@ -42,7 +42,7 @@
 
 .field static final TRANSACTION_checkCarrierPrivilegesForPackage_101:I = 0x66
 
-.field static final TRANSACTION_dial_0:I = 0x1
+.field static final TRANSACTION_dial:I = 0x1
 
 .field static final TRANSACTION_disableDataConnectivity:I = 0x26
 
@@ -160,7 +160,7 @@
 
 .field static final TRANSACTION_getRadioAccessFamily:I = 0x73
 
-.field static final TRANSACTION_getServiceStateForSubscriber_133:I = 0x86
+.field static final TRANSACTION_getServiceStateForSubscriber:I = 0x86
 
 .field static final TRANSACTION_getSubIdForPhoneAccount:I = 0x82
 

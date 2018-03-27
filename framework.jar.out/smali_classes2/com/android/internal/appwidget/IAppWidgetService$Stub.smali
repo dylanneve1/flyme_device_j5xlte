@@ -26,7 +26,7 @@
 # static fields
 .field private static final DESCRIPTOR:Ljava/lang/String; = "com.android.internal.appwidget.IAppWidgetService"
 
-.field static final TRANSACTION_allocateAppWidgetId_2:I = 0x3
+.field static final TRANSACTION_allocateAppWidgetId:I = 0x3
 
 .field static final TRANSACTION_bindAppWidgetId:I = 0x14
 
@@ -62,9 +62,9 @@
 
 .field static final TRANSACTION_setBindAppWidgetPermission:I = 0x13
 
-.field static final TRANSACTION_startListening_0:I = 0x1
+.field static final TRANSACTION_startListening:I = 0x1
 
-.field static final TRANSACTION_stopListening_1:I = 0x2
+.field static final TRANSACTION_stopListening:I = 0x2
 
 .field static final TRANSACTION_unbindRemoteViewsService:I = 0x16
 

@@ -693,7 +693,7 @@
     iput-object p1, p0, Landroid/widget/DayPickerPagerAdapter;->mCalendarTextColor:Landroid/content/res/ColorStateList;
 
     .line 150
-    invoke-virtual {p0}, Landroid/widget/DayPickerPagerAdapter;->notifyDataSetChanged()V
+    invoke-virtual {p0}, Lcom/android/internal/widget/PagerAdapter;->notifyDataSetChanged()V
 
     .line 148
     return-void
@@ -708,7 +708,7 @@
     iput p1, p0, Landroid/widget/DayPickerPagerAdapter;->mDayOfWeekTextAppearance:I
 
     .line 165
-    invoke-virtual {p0}, Landroid/widget/DayPickerPagerAdapter;->notifyDataSetChanged()V
+    invoke-virtual {p0}, Lcom/android/internal/widget/PagerAdapter;->notifyDataSetChanged()V
 
     .line 163
     return-void
@@ -723,7 +723,7 @@
     iput-object p1, p0, Landroid/widget/DayPickerPagerAdapter;->mDaySelectorColor:Landroid/content/res/ColorStateList;
 
     .line 155
-    invoke-virtual {p0}, Landroid/widget/DayPickerPagerAdapter;->notifyDataSetChanged()V
+    invoke-virtual {p0}, Lcom/android/internal/widget/PagerAdapter;->notifyDataSetChanged()V
 
     .line 153
     return-void
@@ -738,7 +738,7 @@
     iput p1, p0, Landroid/widget/DayPickerPagerAdapter;->mDayTextAppearance:I
 
     .line 174
-    invoke-virtual {p0}, Landroid/widget/DayPickerPagerAdapter;->notifyDataSetChanged()V
+    invoke-virtual {p0}, Lcom/android/internal/widget/PagerAdapter;->notifyDataSetChanged()V
 
     .line 172
     return-void
@@ -802,7 +802,7 @@
     iput p1, p0, Landroid/widget/DayPickerPagerAdapter;->mMonthTextAppearance:I
 
     .line 160
-    invoke-virtual {p0}, Landroid/widget/DayPickerPagerAdapter;->notifyDataSetChanged()V
+    invoke-virtual {p0}, Lcom/android/internal/widget/PagerAdapter;->notifyDataSetChanged()V
 
     .line 158
     return-void
@@ -890,7 +890,7 @@
     iput v2, p0, Landroid/widget/DayPickerPagerAdapter;->mCount:I
 
     .line 86
-    invoke-virtual {p0}, Landroid/widget/DayPickerPagerAdapter;->notifyDataSetChanged()V
+    invoke-virtual {p0}, Lcom/android/internal/widget/PagerAdapter;->notifyDataSetChanged()V
 
     .line 77
     return-void

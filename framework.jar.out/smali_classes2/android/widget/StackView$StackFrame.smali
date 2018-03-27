@@ -65,7 +65,7 @@
     .line 508
     iget-object v1, p0, Landroid/widget/StackView$StackFrame;->sliderAnimator:Ljava/lang/ref/WeakReference;
 
-    invoke-virtual {v1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+    invoke-virtual {v1}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -76,7 +76,7 @@
     if-eqz v0, :cond_0
 
     .line 510
-    invoke-virtual {v0}, Landroid/animation/ObjectAnimator;->cancel()V
+    invoke-virtual {v0}, Landroid/animation/ValueAnimator;->cancel()V
 
     .line 511
     const/4 v1, 0x1
@@ -103,7 +103,7 @@
     .line 497
     iget-object v1, p0, Landroid/widget/StackView$StackFrame;->transformAnimator:Ljava/lang/ref/WeakReference;
 
-    invoke-virtual {v1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+    invoke-virtual {v1}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -114,7 +114,7 @@
     if-eqz v0, :cond_0
 
     .line 499
-    invoke-virtual {v0}, Landroid/animation/ObjectAnimator;->cancel()V
+    invoke-virtual {v0}, Landroid/animation/ValueAnimator;->cancel()V
 
     .line 500
     const/4 v1, 0x1

@@ -95,7 +95,7 @@
     .local v0, "bundle":Landroid/os/Bundle;
     const-string/jumbo v4, "enabled"
 
-    invoke-virtual {v0, v4, p2}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
+    invoke-virtual {v0, v4, p2}, Landroid/os/BaseBundle;->putBoolean(Ljava/lang/String;Z)V
 
     .line 175
     invoke-virtual {v2, v0}, Landroid/os/Message;->setData(Landroid/os/Bundle;)V
@@ -263,7 +263,7 @@
     invoke-direct {p0, p1}, Landroid/location/SettingInjectorService;->onHandleIntent(Landroid/content/Intent;)V
 
     .line 148
-    invoke-virtual {p0, p3}, Landroid/location/SettingInjectorService;->stopSelf(I)V
+    invoke-virtual {p0, p3}, Landroid/app/Service;->stopSelf(I)V
 
     .line 149
     const/4 v0, 0x2

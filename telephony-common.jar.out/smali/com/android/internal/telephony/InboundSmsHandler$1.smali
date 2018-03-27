@@ -47,7 +47,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/internal/telephony/InboundSmsHandler$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 127
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -58,7 +58,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/internal/telephony/InboundSmsHandler$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 128
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -69,7 +69,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/internal/telephony/InboundSmsHandler$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 129
     const/16 v0, 0x9
@@ -84,7 +84,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/internal/telephony/InboundSmsHandler$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 125
     return-void

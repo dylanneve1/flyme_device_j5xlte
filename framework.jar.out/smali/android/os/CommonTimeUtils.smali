@@ -1070,7 +1070,9 @@
     .line 260
     move-object v0, v1
 
-    check-cast v0, Ljava/net/Inet6Address;
+    nop
+
+    nop
 
     move-object v11, v0
 

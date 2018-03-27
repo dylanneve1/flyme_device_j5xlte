@@ -315,30 +315,30 @@
     invoke-virtual {v0, v1}, Landroid/widget/MenuPopupWindow;->setHoverListener(Landroid/widget/MenuItemHoverListener;)V
 
     .line 229
-    invoke-virtual {v0, p0}, Landroid/widget/MenuPopupWindow;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
+    invoke-virtual {v0, p0}, Landroid/widget/ListPopupWindow;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
     .line 230
-    invoke-virtual {v0, p0}, Landroid/widget/MenuPopupWindow;->setOnDismissListener(Landroid/widget/PopupWindow$OnDismissListener;)V
+    invoke-virtual {v0, p0}, Landroid/widget/ListPopupWindow;->setOnDismissListener(Landroid/widget/PopupWindow$OnDismissListener;)V
 
     .line 231
     iget-object v1, p0, Lcom/android/internal/view/menu/CascadingMenuPopup;->mAnchorView:Landroid/view/View;
 
-    invoke-virtual {v0, v1}, Landroid/widget/MenuPopupWindow;->setAnchorView(Landroid/view/View;)V
+    invoke-virtual {v0, v1}, Landroid/widget/ListPopupWindow;->setAnchorView(Landroid/view/View;)V
 
     .line 232
     iget v1, p0, Lcom/android/internal/view/menu/CascadingMenuPopup;->mDropDownGravity:I
 
-    invoke-virtual {v0, v1}, Landroid/widget/MenuPopupWindow;->setDropDownGravity(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/ListPopupWindow;->setDropDownGravity(I)V
 
     .line 233
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Landroid/widget/MenuPopupWindow;->setModal(Z)V
+    invoke-virtual {v0, v1}, Landroid/widget/ListPopupWindow;->setModal(Z)V
 
     .line 234
     const/4 v1, 0x2
 
-    invoke-virtual {v0, v1}, Landroid/widget/MenuPopupWindow;->setInputMethodMode(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/ListPopupWindow;->setInputMethodMode(I)V
 
     .line 235
     return-object v0
@@ -492,7 +492,9 @@
     move-object v1, v4
 
     .line 496
-    check-cast v1, Landroid/widget/HeaderViewListAdapter;
+    nop
+
+    nop
 
     .line 497
     .local v1, "headerAdapter":Landroid/widget/HeaderViewListAdapter;
@@ -578,7 +580,7 @@
     add-int/2addr v8, v2
 
     .line 521
-    invoke-virtual {v5}, Landroid/widget/ListView;->getFirstVisiblePosition()I
+    invoke-virtual {v5}, Landroid/widget/AdapterView;->getFirstVisiblePosition()I
 
     move-result v10
 
@@ -588,7 +590,7 @@
     .local v9, "ownerViewPosition":I
     if-ltz v9, :cond_5
 
-    invoke-virtual {v5}, Landroid/widget/ListView;->getChildCount()I
+    invoke-virtual {v5}, Landroid/view/ViewGroup;->getChildCount()I
 
     move-result v10
 
@@ -600,7 +602,7 @@
 
     .line 527
     :cond_6
-    invoke-virtual {v5, v9}, Landroid/widget/ListView;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {v5, v9}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v10
 
@@ -668,7 +670,7 @@
 
     .line 313
     .local v4, "screenLocation":[I
-    invoke-virtual {v1, v4}, Landroid/widget/ListView;->getLocationOnScreen([I)V
+    invoke-virtual {v1, v4}, Landroid/view/View;->getLocationOnScreen([I)V
 
     .line 315
     new-instance v0, Landroid/graphics/Rect;
@@ -689,7 +691,7 @@
     .line 319
     aget v5, v4, v7
 
-    invoke-virtual {v1}, Landroid/widget/ListView;->getWidth()I
+    invoke-virtual {v1}, Landroid/view/View;->getWidth()I
 
     move-result v6
 
@@ -819,10 +821,10 @@
 
     .line 368
     .local v14, "popupWindow":Landroid/widget/MenuPopupWindow;
-    invoke-virtual {v14, v3}, Landroid/widget/MenuPopupWindow;->setAdapter(Landroid/widget/ListAdapter;)V
+    invoke-virtual {v14, v3}, Landroid/widget/ListPopupWindow;->setAdapter(Landroid/widget/ListAdapter;)V
 
     .line 369
-    invoke-virtual {v14, v8}, Landroid/widget/MenuPopupWindow;->setContentWidth(I)V
+    invoke-virtual {v14, v8}, Landroid/widget/ListPopupWindow;->setContentWidth(I)V
 
     .line 370
     move-object/from16 v0, p0
@@ -833,7 +835,7 @@
 
     move/from16 v0, v21
 
-    invoke-virtual {v14, v0}, Landroid/widget/MenuPopupWindow;->setDropDownGravity(I)V
+    invoke-virtual {v14, v0}, Landroid/widget/ListPopupWindow;->setDropDownGravity(I)V
 
     .line 374
     move-object/from16 v0, p0
@@ -946,7 +948,7 @@
 
     move-object/from16 v21, v0
 
-    invoke-virtual/range {v21 .. v21}, Landroid/widget/MenuPopupWindow;->getHorizontalOffset()I
+    invoke-virtual/range {v21 .. v21}, Landroid/widget/ListPopupWindow;->getHorizontalOffset()I
 
     move-result v21
 
@@ -962,7 +964,7 @@
 
     move-object/from16 v21, v0
 
-    invoke-virtual/range {v21 .. v21}, Landroid/widget/MenuPopupWindow;->getVerticalOffset()I
+    invoke-virtual/range {v21 .. v21}, Landroid/widget/ListPopupWindow;->getVerticalOffset()I
 
     move-result v21
 
@@ -1001,14 +1003,14 @@
     :goto_3
     move/from16 v0, v19
 
-    invoke-virtual {v14, v0}, Landroid/widget/MenuPopupWindow;->setHorizontalOffset(I)V
+    invoke-virtual {v14, v0}, Landroid/widget/ListPopupWindow;->setHorizontalOffset(I)V
 
     .line 418
     move/from16 v20, v12
 
     .line 419
     .local v20, "y":I
-    invoke-virtual {v14, v12}, Landroid/widget/MenuPopupWindow;->setVerticalOffset(I)V
+    invoke-virtual {v14, v12}, Landroid/widget/ListPopupWindow;->setVerticalOffset(I)V
 
     .line 432
     .end local v9    # "nextMenuPosition":I
@@ -1046,7 +1048,7 @@
     invoke-interface {v0, v7}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 435
-    invoke-virtual {v14}, Landroid/widget/MenuPopupWindow;->show()V
+    invoke-virtual {v14}, Landroid/widget/ListPopupWindow;->show()V
 
     .line 438
     if-nez v10, :cond_1
@@ -1066,7 +1068,7 @@
     if-eqz v21, :cond_1
 
     .line 439
-    invoke-virtual {v14}, Landroid/widget/MenuPopupWindow;->getListView()Landroid/widget/ListView;
+    invoke-virtual {v14}, Landroid/widget/ListPopupWindow;->getListView()Landroid/widget/ListView;
 
     move-result-object v6
 
@@ -1095,7 +1097,7 @@
 
     move/from16 v1, v21
 
-    invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v18
 
@@ -1109,7 +1111,7 @@
 
     move/from16 v1, v21
 
-    invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->setEnabled(Z)V
+    invoke-virtual {v0, v1}, Landroid/view/View;->setEnabled(Z)V
 
     .line 444
     invoke-virtual/range {p1 .. p1}, Lcom/android/internal/view/menu/MenuBuilder;->getHeaderTitle()Ljava/lang/CharSequence;
@@ -1136,7 +1138,7 @@
     invoke-virtual {v6, v0, v1, v2}, Landroid/widget/ListView;->addHeaderView(Landroid/view/View;Ljava/lang/Object;Z)V
 
     .line 448
-    invoke-virtual {v14}, Landroid/widget/MenuPopupWindow;->show()V
+    invoke-virtual {v14}, Landroid/widget/ListPopupWindow;->show()V
 
     .line 349
     .end local v6    # "listView":Landroid/widget/ListView;
@@ -1252,7 +1254,7 @@
 
     move/from16 v0, v21
 
-    invoke-virtual {v14, v0}, Landroid/widget/MenuPopupWindow;->setHorizontalOffset(I)V
+    invoke-virtual {v14, v0}, Landroid/widget/ListPopupWindow;->setHorizontalOffset(I)V
 
     .line 424
     :cond_9
@@ -1273,17 +1275,17 @@
 
     move/from16 v0, v21
 
-    invoke-virtual {v14, v0}, Landroid/widget/MenuPopupWindow;->setVerticalOffset(I)V
+    invoke-virtual {v14, v0}, Landroid/widget/ListPopupWindow;->setVerticalOffset(I)V
 
     .line 427
     :cond_a
-    invoke-virtual/range {p0 .. p0}, Lcom/android/internal/view/menu/CascadingMenuPopup;->getEpicenterBounds()Landroid/graphics/Rect;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/internal/view/menu/MenuPopup;->getEpicenterBounds()Landroid/graphics/Rect;
 
     move-result-object v4
 
     .line 428
     .local v4, "epicenterBounds":Landroid/graphics/Rect;
-    invoke-virtual {v14, v4}, Landroid/widget/MenuPopupWindow;->setEpicenterBounds(Landroid/graphics/Rect;)V
+    invoke-virtual {v14, v4}, Landroid/widget/ListPopupWindow;->setEpicenterBounds(Landroid/graphics/Rect;)V
 
     goto/16 :goto_4
 .end method
@@ -1364,7 +1366,7 @@
     .local v2, "info":Lcom/android/internal/view/menu/CascadingMenuPopup$CascadingMenuInfo;
     iget-object v4, v2, Lcom/android/internal/view/menu/CascadingMenuPopup$CascadingMenuInfo;->window:Landroid/widget/MenuPopupWindow;
 
-    invoke-virtual {v4}, Landroid/widget/MenuPopupWindow;->isShowing()Z
+    invoke-virtual {v4}, Landroid/widget/ListPopupWindow;->isShowing()Z
 
     move-result v4
 
@@ -1373,7 +1375,7 @@
     .line 275
     iget-object v4, v2, Lcom/android/internal/view/menu/CascadingMenuPopup$CascadingMenuInfo;->window:Landroid/widget/MenuPopupWindow;
 
-    invoke-virtual {v4}, Landroid/widget/MenuPopupWindow;->dismiss()V
+    invoke-virtual {v4}, Landroid/widget/ListPopupWindow;->dismiss()V
 
     .line 272
     :cond_0
@@ -1466,7 +1468,7 @@
 
     iget-object v0, v0, Lcom/android/internal/view/menu/CascadingMenuPopup$CascadingMenuInfo;->window:Landroid/widget/MenuPopupWindow;
 
-    invoke-virtual {v0}, Landroid/widget/MenuPopupWindow;->isShowing()Z
+    invoke-virtual {v0}, Landroid/widget/ListPopupWindow;->isShowing()Z
 
     move-result v0
 
@@ -1555,13 +1557,13 @@
     .line 632
     iget-object v6, v2, Lcom/android/internal/view/menu/CascadingMenuPopup$CascadingMenuInfo;->window:Landroid/widget/MenuPopupWindow;
 
-    invoke-virtual {v6, v8}, Landroid/widget/MenuPopupWindow;->setAnimationStyle(I)V
+    invoke-virtual {v6, v8}, Landroid/widget/ListPopupWindow;->setAnimationStyle(I)V
 
     .line 634
     :cond_2
     iget-object v6, v2, Lcom/android/internal/view/menu/CascadingMenuPopup$CascadingMenuInfo;->window:Landroid/widget/MenuPopupWindow;
 
-    invoke-virtual {v6}, Landroid/widget/MenuPopupWindow;->dismiss()V
+    invoke-virtual {v6}, Landroid/widget/ListPopupWindow;->dismiss()V
 
     .line 636
     iget-object v6, p0, Lcom/android/internal/view/menu/CascadingMenuPopup;->mShowingMenus:Ljava/util/List;
@@ -1719,7 +1721,7 @@
     .local v3, "info":Lcom/android/internal/view/menu/CascadingMenuPopup$CascadingMenuInfo;
     iget-object v4, v3, Lcom/android/internal/view/menu/CascadingMenuPopup$CascadingMenuInfo;->window:Landroid/widget/MenuPopupWindow;
 
-    invoke-virtual {v4}, Landroid/widget/MenuPopupWindow;->isShowing()Z
+    invoke-virtual {v4}, Landroid/widget/ListPopupWindow;->isShowing()Z
 
     move-result v4
 
@@ -1845,7 +1847,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Landroid/widget/ListView;->requestFocus()Z
+    invoke-virtual {v2}, Landroid/view/View;->requestFocus()Z
 
     .line 580
     return v3
@@ -1853,7 +1855,7 @@
     .line 584
     .end local v0    # "info":Lcom/android/internal/view/menu/CascadingMenuPopup$CascadingMenuInfo;
     :cond_1
-    invoke-virtual {p1}, Lcom/android/internal/view/menu/SubMenuBuilder;->hasVisibleItems()Z
+    invoke-virtual {p1}, Lcom/android/internal/view/menu/MenuBuilder;->hasVisibleItems()Z
 
     move-result v2
 

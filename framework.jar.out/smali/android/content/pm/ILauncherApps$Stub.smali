@@ -26,7 +26,7 @@
 # static fields
 .field private static final DESCRIPTOR:Ljava/lang/String; = "android.content.pm.ILauncherApps"
 
-.field static final TRANSACTION_addOnAppsChangedListener:I = 0x1
+.field static final TRANSACTION_addOnAppsChangedListener_0:I = 0x1
 
 .field static final TRANSACTION_getApplicationInfo:I = 0x9
 
@@ -46,7 +46,7 @@
 
 .field static final TRANSACTION_pinShortcuts:I = 0xb
 
-.field static final TRANSACTION_removeOnAppsChangedListener:I = 0x2
+.field static final TRANSACTION_removeOnAppsChangedListener_1:I = 0x2
 
 .field static final TRANSACTION_resolveActivity:I = 0x4
 

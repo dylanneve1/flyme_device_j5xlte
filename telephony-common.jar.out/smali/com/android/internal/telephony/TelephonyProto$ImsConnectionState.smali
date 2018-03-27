@@ -169,7 +169,7 @@
     iput-object v1, p0, Lcom/android/internal/telephony/TelephonyProto$ImsConnectionState;->reasonInfo:Lcom/android/internal/telephony/TelephonyProto$ImsReasonInfo;
 
     .line 2187
-    iput-object v1, p0, Lcom/android/internal/telephony/TelephonyProto$ImsConnectionState;->unknownFieldData:Lcom/android/framework/protobuf/nano/FieldArray;
+    iput-object v1, p0, Lcom/android/framework/protobuf/nano/ExtendableMessageNano;->unknownFieldData:Lcom/android/framework/protobuf/nano/FieldArray;
 
     .line 2188
     const/4 v0, -0x1
@@ -354,7 +354,7 @@
     invoke-virtual {p1, v0}, Lcom/android/framework/protobuf/nano/CodedInputByteBufferNano;->rewindToPosition(I)V
 
     .line 2248
-    invoke-virtual {p0, p1, v1}, Lcom/android/internal/telephony/TelephonyProto$ImsConnectionState;->storeUnknownField(Lcom/android/framework/protobuf/nano/CodedInputByteBufferNano;I)Z
+    invoke-virtual {p0, p1, v1}, Lcom/android/framework/protobuf/nano/ExtendableMessageNano;->storeUnknownField(Lcom/android/framework/protobuf/nano/CodedInputByteBufferNano;I)Z
 
     goto :goto_0
 

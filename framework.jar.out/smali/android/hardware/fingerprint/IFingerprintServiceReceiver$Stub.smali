@@ -28,9 +28,9 @@
 
 .field static final TRANSACTION_onAcquired:I = 0x2
 
-.field static final TRANSACTION_onAuthenticationFailed_3:I = 0x4
+.field static final TRANSACTION_onAuthenticationFailed:I = 0x4
 
-.field static final TRANSACTION_onAuthenticationSucceeded_2:I = 0x3
+.field static final TRANSACTION_onAuthenticationSucceeded:I = 0x3
 
 .field static final TRANSACTION_onEnrollResult:I = 0x1
 

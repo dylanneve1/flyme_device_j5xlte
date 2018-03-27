@@ -89,7 +89,9 @@
     move-object v2, v1
 
     .line 79
-    check-cast v2, Landroid/app/assist/AssistStructure$ParcelTransferWriter;
+    nop
+
+    nop
 
     .line 80
     .local v2, "xfer":Landroid/app/assist/AssistStructure$ParcelTransferWriter;

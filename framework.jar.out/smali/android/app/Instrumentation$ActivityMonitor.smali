@@ -214,7 +214,7 @@
     if-eqz p2, :cond_4
 
     .line 594
-    invoke-virtual {p2}, Landroid/app/Activity;->getClass()Ljava/lang/Class;
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v1
 
@@ -244,7 +244,7 @@
     iput-object p2, p0, Landroid/app/Instrumentation$ActivityMonitor;->mLastActivity:Landroid/app/Activity;
 
     .line 604
-    invoke-virtual {p0}, Landroid/app/Instrumentation$ActivityMonitor;->notifyAll()V
+    invoke-virtual {p0}, Ljava/lang/Object;->notifyAll()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -312,7 +312,7 @@
 
     .line 545
     :try_start_1
-    invoke-virtual {p0}, Landroid/app/Instrumentation$ActivityMonitor;->wait()V
+    invoke-virtual {p0}, Ljava/lang/Object;->wait()V
     :try_end_1
     .catch Ljava/lang/InterruptedException; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
@@ -375,7 +375,7 @@
 
     .line 568
     :try_start_1
-    invoke-virtual {p0, p1, p2}, Landroid/app/Instrumentation$ActivityMonitor;->wait(J)V
+    invoke-virtual {p0, p1, p2}, Ljava/lang/Object;->wait(J)V
     :try_end_1
     .catch Ljava/lang/InterruptedException; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_0

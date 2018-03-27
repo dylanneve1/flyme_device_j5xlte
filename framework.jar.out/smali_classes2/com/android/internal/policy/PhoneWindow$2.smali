@@ -45,7 +45,7 @@
     .line 2993
     iget-object v0, p0, Lcom/android/internal/policy/PhoneWindow$2;->this$0:Lcom/android/internal/policy/PhoneWindow;
 
-    invoke-virtual {v0}, Lcom/android/internal/policy/PhoneWindow;->dispatchOnWindowSwipeDismissed()V
+    invoke-virtual {v0}, Landroid/view/Window;->dispatchOnWindowSwipeDismissed()V
 
     .line 2994
     iget-object v0, p0, Lcom/android/internal/policy/PhoneWindow$2;->this$0:Lcom/android/internal/policy/PhoneWindow;
@@ -54,7 +54,7 @@
 
     const/4 v2, 0x1
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/internal/policy/PhoneWindow;->dispatchOnWindowDismissed(ZZ)V
+    invoke-virtual {v0, v1, v2}, Landroid/view/Window;->dispatchOnWindowDismissed(ZZ)V
 
     .line 2992
     return-void

@@ -170,7 +170,9 @@
     move-object v5, p1
 
     .line 840
-    check-cast v5, Landroid/view/ViewGroup;
+    nop
+
+    nop
 
     .line 841
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getX()F

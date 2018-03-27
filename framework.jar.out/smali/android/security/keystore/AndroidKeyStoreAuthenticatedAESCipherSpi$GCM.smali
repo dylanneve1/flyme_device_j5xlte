@@ -118,7 +118,7 @@
 
     .line 180
     .local v0, "streamer":Landroid/security/keystore/KeyStoreCryptoOperationStreamer;
-    invoke-virtual {p0}, Landroid/security/keystore/AndroidKeyStoreAuthenticatedAESCipherSpi$GCM;->isEncrypting()Z
+    invoke-virtual {p0}, Landroid/security/keystore/AndroidKeyStoreCipherSpiBase;->isEncrypting()Z
 
     move-result v1
 
@@ -145,7 +145,7 @@
     const/4 v5, 0x0
 
     .line 156
-    invoke-virtual {p0}, Landroid/security/keystore/AndroidKeyStoreAuthenticatedAESCipherSpi$GCM;->getIv()[B
+    invoke-virtual {p0}, Landroid/security/keystore/AndroidKeyStoreAuthenticatedAESCipherSpi;->getIv()[B
 
     move-result-object v2
 
@@ -226,13 +226,13 @@
 
     .prologue
     .line 199
-    invoke-virtual {p0}, Landroid/security/keystore/AndroidKeyStoreAuthenticatedAESCipherSpi$GCM;->getIv()[B
+    invoke-virtual {p0}, Landroid/security/keystore/AndroidKeyStoreAuthenticatedAESCipherSpi;->getIv()[B
 
     move-result-object v0
 
     if-nez v0, :cond_0
 
-    invoke-virtual {p0}, Landroid/security/keystore/AndroidKeyStoreAuthenticatedAESCipherSpi$GCM;->isEncrypting()Z
+    invoke-virtual {p0}, Landroid/security/keystore/AndroidKeyStoreCipherSpiBase;->isEncrypting()Z
 
     move-result v0
 
@@ -280,7 +280,7 @@
 
     .prologue
     .line 78
-    invoke-virtual {p0}, Landroid/security/keystore/AndroidKeyStoreAuthenticatedAESCipherSpi$GCM;->isEncrypting()Z
+    invoke-virtual {p0}, Landroid/security/keystore/AndroidKeyStoreCipherSpiBase;->isEncrypting()Z
 
     move-result v0
 
@@ -316,7 +316,7 @@
     if-nez p1, :cond_1
 
     .line 124
-    invoke-virtual {p0}, Landroid/security/keystore/AndroidKeyStoreAuthenticatedAESCipherSpi$GCM;->isEncrypting()Z
+    invoke-virtual {p0}, Landroid/security/keystore/AndroidKeyStoreCipherSpiBase;->isEncrypting()Z
 
     move-result v2
 
@@ -415,7 +415,7 @@
 
     .line 142
     .local v0, "e":Ljava/security/spec/InvalidParameterSpecException;
-    invoke-virtual {p0}, Landroid/security/keystore/AndroidKeyStoreAuthenticatedAESCipherSpi$GCM;->isEncrypting()Z
+    invoke-virtual {p0}, Landroid/security/keystore/AndroidKeyStoreCipherSpiBase;->isEncrypting()Z
 
     move-result v2
 
@@ -448,7 +448,7 @@
 
     .line 147
     :cond_3
-    invoke-virtual {p0, v4}, Landroid/security/keystore/AndroidKeyStoreAuthenticatedAESCipherSpi$GCM;->setIv([B)V
+    invoke-virtual {p0, v4}, Landroid/security/keystore/AndroidKeyStoreAuthenticatedAESCipherSpi;->setIv([B)V
 
     .line 148
     return-void
@@ -470,7 +470,7 @@
     if-nez p1, :cond_1
 
     .line 89
-    invoke-virtual {p0}, Landroid/security/keystore/AndroidKeyStoreAuthenticatedAESCipherSpi$GCM;->isEncrypting()Z
+    invoke-virtual {p0}, Landroid/security/keystore/AndroidKeyStoreCipherSpiBase;->isEncrypting()Z
 
     move-result v3
 
@@ -510,7 +510,9 @@
     move-object v1, p1
 
     .line 99
-    check-cast v1, Ljavax/crypto/spec/GCMParameterSpec;
+    nop
+
+    nop
 
     .line 100
     .local v1, "spec":Ljavax/crypto/spec/GCMParameterSpec;
@@ -652,7 +654,7 @@
     if-nez v3, :cond_5
 
     .line 116
-    invoke-virtual {p0, v0}, Landroid/security/keystore/AndroidKeyStoreAuthenticatedAESCipherSpi$GCM;->setIv([B)V
+    invoke-virtual {p0, v0}, Landroid/security/keystore/AndroidKeyStoreAuthenticatedAESCipherSpi;->setIv([B)V
 
     .line 117
     iput v2, p0, Landroid/security/keystore/AndroidKeyStoreAuthenticatedAESCipherSpi$GCM;->mTagLengthBits:I

@@ -70,11 +70,11 @@
 
 .field static final TRANSACTION_getDnsForwarders:I = 0x1b
 
-.field static final TRANSACTION_getInterfaceConfig_4:I = 0x5
+.field static final TRANSACTION_getInterfaceConfig:I = 0x5
 
 .field static final TRANSACTION_getIpForwardingEnabled:I = 0x12
 
-.field static final TRANSACTION_getNetdService_2:I = 0x3
+.field static final TRANSACTION_getNetdService:I = 0x3
 
 .field static final TRANSACTION_getNetworkStatsDetail_42:I = 0x2b
 
@@ -96,7 +96,7 @@
 
 .field static final TRANSACTION_isTetheringStarted:I = 0x16
 
-.field static final TRANSACTION_listInterfaces_3:I = 0x4
+.field static final TRANSACTION_listInterfaces:I = 0x4
 
 .field static final TRANSACTION_listTetheredInterfaces:I = 0x19
 
@@ -104,7 +104,7 @@
 
 .field static final TRANSACTION_registerNetworkActivityListener:I = 0x49
 
-.field static final TRANSACTION_registerObserver_0:I = 0x1
+.field static final TRANSACTION_registerObserver:I = 0x1
 
 .field static final TRANSACTION_removeIdleTimer:I = 0x39
 
@@ -160,7 +160,7 @@
 
 .field static final TRANSACTION_setInterfaceAlert:I = 0x30
 
-.field static final TRANSACTION_setInterfaceConfig_5:I = 0x6
+.field static final TRANSACTION_setInterfaceConfig:I = 0x6
 
 .field static final TRANSACTION_setInterfaceDown:I = 0x8
 
@@ -212,7 +212,7 @@
 
 .field static final TRANSACTION_unregisterNetworkActivityListener:I = 0x4a
 
-.field static final TRANSACTION_unregisterObserver_1:I = 0x2
+.field static final TRANSACTION_unregisterObserver:I = 0x2
 
 .field static final TRANSACTION_untetherInterface:I = 0x18
 

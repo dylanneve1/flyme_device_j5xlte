@@ -35,7 +35,9 @@
     if-eqz v0, :cond_0
 
     .line 1520
-    check-cast p1, Landroid/media/AudioRecord;
+    nop
+
+    nop
 
     .end local p1    # "router":Landroid/media/AudioRouting;
     invoke-interface {p0, p1}, Landroid/media/AudioRecord$OnRoutingChangedListener;->onRoutingChanged(Landroid/media/AudioRecord;)V

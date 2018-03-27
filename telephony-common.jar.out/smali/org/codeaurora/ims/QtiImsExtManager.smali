@@ -3,6 +3,14 @@
 .source "QtiImsExtManager.java"
 
 
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lorg/codeaurora/ims/QtiImsExtManager$-org_codeaurora_ims_internal_IQtiImsExt_obtainBinder__LambdaImpl0;
+    }
+.end annotation
+
+
 # static fields
 .field public static final SERVICE_ID:Ljava/lang/String; = "qti.ims.ext"
 
@@ -48,7 +56,7 @@
 .end method
 
 .method private obtainBinder()Lorg/codeaurora/ims/internal/IQtiImsExt;
-    .locals 3
+    .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/codeaurora/ims/QtiImsException;
@@ -57,14 +65,14 @@
 
     .prologue
     .line 237
-    iget-object v1, p0, Lorg/codeaurora/ims/QtiImsExtManager;->mQtiImsExt:Lorg/codeaurora/ims/internal/IQtiImsExt;
+    iget-object v2, p0, Lorg/codeaurora/ims/QtiImsExtManager;->mQtiImsExt:Lorg/codeaurora/ims/internal/IQtiImsExt;
 
-    if-nez v1, :cond_1
+    if-nez v2, :cond_1
 
     .line 238
-    const-string/jumbo v1, "qti.ims.ext"
+    const-string/jumbo v2, "qti.ims.ext"
 
-    invoke-static {v1}, Landroid/os/ServiceManager;->getService(Ljava/lang/String;)Landroid/os/IBinder;
+    invoke-static {v2}, Landroid/os/ServiceManager;->getService(Ljava/lang/String;)Landroid/os/IBinder;
 
     move-result-object v0
 
@@ -72,40 +80,73 @@
     .local v0, "b":Landroid/os/IBinder;
     invoke-static {v0}, Lorg/codeaurora/ims/internal/IQtiImsExt$Stub;->asInterface(Landroid/os/IBinder;)Lorg/codeaurora/ims/internal/IQtiImsExt;
 
-    move-result-object v1
+    move-result-object v2
 
-    iput-object v1, p0, Lorg/codeaurora/ims/QtiImsExtManager;->mQtiImsExt:Lorg/codeaurora/ims/internal/IQtiImsExt;
+    iput-object v2, p0, Lorg/codeaurora/ims/QtiImsExtManager;->mQtiImsExt:Lorg/codeaurora/ims/internal/IQtiImsExt;
 
     .line 241
-    iget-object v1, p0, Lorg/codeaurora/ims/QtiImsExtManager;->mQtiImsExt:Lorg/codeaurora/ims/internal/IQtiImsExt;
+    iget-object v2, p0, Lorg/codeaurora/ims/QtiImsExtManager;->mQtiImsExt:Lorg/codeaurora/ims/internal/IQtiImsExt;
 
-    if-nez v1, :cond_0
+    if-nez v2, :cond_0
 
     .line 242
-    new-instance v1, Lorg/codeaurora/ims/QtiImsException;
+    new-instance v2, Lorg/codeaurora/ims/QtiImsException;
 
-    const-string/jumbo v2, "ImsService is not running"
+    const-string/jumbo v3, "ImsService is not running"
 
-    invoke-direct {v1, v2}, Lorg/codeaurora/ims/QtiImsException;-><init>(Ljava/lang/String;)V
+    invoke-direct {v2, v3}, Lorg/codeaurora/ims/QtiImsException;-><init>(Ljava/lang/String;)V
 
-    throw v1
-
-    .line 244
-    :cond_0
-    iget-object v1, p0, Lorg/codeaurora/ims/QtiImsExtManager;->mQtiImsExt:Lorg/codeaurora/ims/internal/IQtiImsExt;
-
-    return-object v1
+    throw v2
 
     .line 246
+    :cond_0
+    :try_start_0
+    new-instance v2, Lorg/codeaurora/ims/QtiImsExtManager$-org_codeaurora_ims_internal_IQtiImsExt_obtainBinder__LambdaImpl0;
+
+    invoke-direct {v2, p0}, Lorg/codeaurora/ims/QtiImsExtManager$-org_codeaurora_ims_internal_IQtiImsExt_obtainBinder__LambdaImpl0;-><init>(Lorg/codeaurora/ims/QtiImsExtManager;)V
+
+    const/4 v3, 0x0
+
+    invoke-interface {v0, v2, v3}, Landroid/os/IBinder;->linkToDeath(Landroid/os/IBinder$DeathRecipient;I)V
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 250
+    :goto_0
+    iget-object v2, p0, Lorg/codeaurora/ims/QtiImsExtManager;->mQtiImsExt:Lorg/codeaurora/ims/internal/IQtiImsExt;
+
+    return-object v2
+
+    .line 252
     .end local v0    # "b":Landroid/os/IBinder;
     :cond_1
-    iget-object v1, p0, Lorg/codeaurora/ims/QtiImsExtManager;->mQtiImsExt:Lorg/codeaurora/ims/internal/IQtiImsExt;
+    iget-object v2, p0, Lorg/codeaurora/ims/QtiImsExtManager;->mQtiImsExt:Lorg/codeaurora/ims/internal/IQtiImsExt;
 
-    return-object v1
+    return-object v2
+
+    .line 247
+    .restart local v0    # "b":Landroid/os/IBinder;
+    :catch_0
+    move-exception v1
+
+    .local v1, "e":Landroid/os/RemoteException;
+    goto :goto_0
 .end method
 
 
 # virtual methods
+.method synthetic -org_codeaurora_ims_QtiImsExtManager_lambda$1()V
+    .locals 1
+
+    .prologue
+    .line 246
+    const/4 v0, 0x0
+
+    iput-object v0, p0, Lorg/codeaurora/ims/QtiImsExtManager;->mQtiImsExt:Lorg/codeaurora/ims/internal/IQtiImsExt;
+
+    return-void
+.end method
+
 .method public getCallForwardUncondTimer(IILorg/codeaurora/ims/internal/IQtiImsExtListener;)V
     .locals 4
     .param p1, "reason"    # I

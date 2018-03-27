@@ -178,7 +178,7 @@
     .line 285
     iget-object v0, p0, Lcom/android/internal/widget/PagerAdapter;->mObservable:Landroid/database/DataSetObservable;
 
-    invoke-virtual {v0, p1}, Landroid/database/DataSetObservable;->registerObserver(Ljava/lang/Object;)V
+    invoke-virtual {v0, p1}, Landroid/database/Observable;->registerObserver(Ljava/lang/Object;)V
 
     .line 284
     return-void
@@ -258,7 +258,7 @@
     .line 294
     iget-object v0, p0, Lcom/android/internal/widget/PagerAdapter;->mObservable:Landroid/database/DataSetObservable;
 
-    invoke-virtual {v0, p1}, Landroid/database/DataSetObservable;->unregisterObserver(Ljava/lang/Object;)V
+    invoke-virtual {v0, p1}, Landroid/database/Observable;->unregisterObserver(Ljava/lang/Object;)V
 
     .line 293
     return-void

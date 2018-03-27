@@ -49,7 +49,7 @@
     .line 3018
     iget-object v1, p0, Lcom/android/internal/policy/PhoneWindow$3;->this$0:Lcom/android/internal/policy/PhoneWindow;
 
-    invoke-virtual {v1}, Lcom/android/internal/policy/PhoneWindow;->getAttributes()Landroid/view/WindowManager$LayoutParams;
+    invoke-virtual {v1}, Landroid/view/Window;->getAttributes()Landroid/view/WindowManager$LayoutParams;
 
     move-result-object v0
 
@@ -84,7 +84,7 @@
 
     const/16 v3, 0x600
 
-    invoke-virtual {v1, v2, v3}, Lcom/android/internal/policy/PhoneWindow;->setFlags(II)V
+    invoke-virtual {v1, v2, v3}, Landroid/view/Window;->setFlags(II)V
 
     .line 3017
     :cond_1
@@ -101,7 +101,7 @@
     .line 3002
     iget-object v2, p0, Lcom/android/internal/policy/PhoneWindow$3;->this$0:Lcom/android/internal/policy/PhoneWindow;
 
-    invoke-virtual {v2}, Lcom/android/internal/policy/PhoneWindow;->getAttributes()Landroid/view/WindowManager$LayoutParams;
+    invoke-virtual {v2}, Landroid/view/Window;->getAttributes()Landroid/view/WindowManager$LayoutParams;
 
     move-result-object v1
 
@@ -137,7 +137,7 @@
 
     const/16 v3, 0x600
 
-    invoke-virtual {v2, v0, v3}, Lcom/android/internal/policy/PhoneWindow;->setFlags(II)V
+    invoke-virtual {v2, v0, v3}, Landroid/view/Window;->setFlags(II)V
 
     .line 3001
     return-void

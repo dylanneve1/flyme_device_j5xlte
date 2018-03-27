@@ -28,7 +28,7 @@
     .locals 0
 
     .prologue
-    .line 672
+    .line 665
     invoke-direct {p0}, Ljava/lang/ThreadLocal;-><init>()V
 
     return-void
@@ -40,7 +40,7 @@
     .locals 2
 
     .prologue
-    .line 674
+    .line 667
     new-instance v0, Lcom/android/server/am/ActivityManagerService$PriorityState;
 
     const/4 v1, 0x0
@@ -54,7 +54,7 @@
     .locals 1
 
     .prologue
-    .line 673
+    .line 666
     invoke-virtual {p0}, Lcom/android/server/am/ActivityManagerService$1;->initialValue()Lcom/android/server/am/ActivityManagerService$PriorityState;
 
     move-result-object v0

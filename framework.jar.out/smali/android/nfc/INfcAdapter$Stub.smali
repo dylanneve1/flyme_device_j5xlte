@@ -42,11 +42,11 @@
 
 .field static final TRANSACTION_getNfcAdapterVendorInterface:I = 0x5
 
-.field static final TRANSACTION_getNfcCardEmulationInterface_1:I = 0x2
+.field static final TRANSACTION_getNfcCardEmulationInterface:I = 0x2
 
-.field static final TRANSACTION_getNfcFCardEmulationInterface_2:I = 0x3
+.field static final TRANSACTION_getNfcFCardEmulationInterface:I = 0x3
 
-.field static final TRANSACTION_getNfcTagInterface_0:I = 0x1
+.field static final TRANSACTION_getNfcTagInterface:I = 0x1
 
 .field static final TRANSACTION_getState:I = 0x6
 

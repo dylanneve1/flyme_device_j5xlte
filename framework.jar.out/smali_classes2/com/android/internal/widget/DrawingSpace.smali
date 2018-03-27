@@ -133,7 +133,7 @@
 
     .prologue
     .line 73
-    invoke-virtual {p0}, Lcom/android/internal/widget/DrawingSpace;->getSuggestedMinimumWidth()I
+    invoke-virtual {p0}, Landroid/view/View;->getSuggestedMinimumWidth()I
 
     move-result v0
 
@@ -142,7 +142,7 @@
     move-result v0
 
     .line 74
-    invoke-virtual {p0}, Lcom/android/internal/widget/DrawingSpace;->getSuggestedMinimumHeight()I
+    invoke-virtual {p0}, Landroid/view/View;->getSuggestedMinimumHeight()I
 
     move-result v1
 
@@ -151,7 +151,7 @@
     move-result v1
 
     .line 72
-    invoke-virtual {p0, v0, v1}, Lcom/android/internal/widget/DrawingSpace;->setMeasuredDimension(II)V
+    invoke-virtual {p0, v0, v1}, Landroid/view/View;->setMeasuredDimension(II)V
 
     .line 71
     return-void

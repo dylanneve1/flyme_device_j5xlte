@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/server/am/ActivityManagerService;
 
     .prologue
-    .line 22294
+    .line 22199
     iput-object p1, p0, Lcom/android/server/am/ActivityManagerService$LocalService;->this$0:Lcom/android/server/am/ActivityManagerService;
 
     invoke-direct {p0}, Landroid/app/ActivityManagerInternal;-><init>()V
@@ -49,10 +49,10 @@
     .param p1, "tag"    # Ljava/lang/String;
 
     .prologue
-    .line 22323
+    .line 22228
     invoke-static {p1}, Lcom/android/internal/util/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 22325
+    .line 22230
     iget-object v2, p0, Lcom/android/server/am/ActivityManagerService$LocalService;->this$0:Lcom/android/server/am/ActivityManagerService;
 
     monitor-enter v2
@@ -60,14 +60,14 @@
     :try_start_0
     invoke-static {}, Lcom/android/server/am/ActivityManagerService;->boostPriorityForLockedSection()V
 
-    .line 22326
+    .line 22231
     new-instance v0, Lcom/android/server/am/ActivityManagerService$SleepTokenImpl;
 
     iget-object v1, p0, Lcom/android/server/am/ActivityManagerService$LocalService;->this$0:Lcom/android/server/am/ActivityManagerService;
 
     invoke-direct {v0, v1, p1}, Lcom/android/server/am/ActivityManagerService$SleepTokenImpl;-><init>(Lcom/android/server/am/ActivityManagerService;Ljava/lang/String;)V
 
-    .line 22327
+    .line 22232
     .local v0, "token":Lcom/android/server/am/ActivityManagerService$SleepTokenImpl;
     iget-object v1, p0, Lcom/android/server/am/ActivityManagerService$LocalService;->this$0:Lcom/android/server/am/ActivityManagerService;
 
@@ -75,7 +75,7 @@
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 22328
+    .line 22233
     iget-object v1, p0, Lcom/android/server/am/ActivityManagerService$LocalService;->this$0:Lcom/android/server/am/ActivityManagerService;
 
     invoke-virtual {v1}, Lcom/android/server/am/ActivityManagerService;->updateSleepIfNeededLocked()V
@@ -84,13 +84,13 @@
 
     monitor-exit v2
 
-    .line 22325
+    .line 22230
     invoke-static {}, Lcom/android/server/am/ActivityManagerService;->resetPriorityAfterLockedSection()V
 
-    .line 22329
+    .line 22234
     return-object v0
 
-    .line 22325
+    .line 22230
     .end local v0    # "token":Lcom/android/server/am/ActivityManagerService$SleepTokenImpl;
     :catchall_0
     move-exception v1
@@ -108,7 +108,7 @@
     .param p2, "userId"    # I
 
     .prologue
-    .line 22306
+    .line 22211
     iget-object v0, p0, Lcom/android/server/am/ActivityManagerService$LocalService;->this$0:Lcom/android/server/am/ActivityManagerService;
 
     invoke-virtual {v0, p1, p2}, Lcom/android/server/am/ActivityManagerService;->checkContentProviderAccess(Ljava/lang/String;I)Ljava/lang/String;
@@ -125,7 +125,7 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 22335
+    .line 22240
     iget-object v2, p0, Lcom/android/server/am/ActivityManagerService$LocalService;->this$0:Lcom/android/server/am/ActivityManagerService;
 
     monitor-enter v2
@@ -133,7 +133,7 @@
     :try_start_0
     invoke-static {}, Lcom/android/server/am/ActivityManagerService;->boostPriorityForLockedSection()V
 
-    .line 22336
+    .line 22241
     iget-object v3, p0, Lcom/android/server/am/ActivityManagerService$LocalService;->this$0:Lcom/android/server/am/ActivityManagerService;
 
     iget-object v3, v3, Lcom/android/server/am/ActivityManagerService;->mStackSupervisor:Lcom/android/server/am/ActivityStackSupervisor;
@@ -144,17 +144,17 @@
 
     move-result-object v0
 
-    .line 22337
+    .line 22242
     .local v0, "homeActivity":Lcom/android/server/am/ActivityRecord;
     if-nez v0, :cond_0
 
     :goto_0
     monitor-exit v2
 
-    .line 22335
+    .line 22240
     invoke-static {}, Lcom/android/server/am/ActivityManagerService;->resetPriorityAfterLockedSection()V
 
-    .line 22337
+    .line 22242
     return-object v1
 
     :cond_0
@@ -165,7 +165,7 @@
 
     goto :goto_0
 
-    .line 22335
+    .line 22240
     .end local v0    # "homeActivity":Lcom/android/server/am/ActivityRecord;
     :catchall_0
     move-exception v1
@@ -190,7 +190,7 @@
     .end annotation
 
     .prologue
-    .line 22387
+    .line 22292
     iget-object v1, p0, Lcom/android/server/am/ActivityManagerService$LocalService;->this$0:Lcom/android/server/am/ActivityManagerService;
 
     monitor-enter v1
@@ -198,7 +198,7 @@
     :try_start_0
     invoke-static {}, Lcom/android/server/am/ActivityManagerService;->boostPriorityForLockedSection()V
 
-    .line 22388
+    .line 22293
     iget-object v0, p0, Lcom/android/server/am/ActivityManagerService$LocalService;->this$0:Lcom/android/server/am/ActivityManagerService;
 
     iget-object v0, v0, Lcom/android/server/am/ActivityManagerService;->mStackSupervisor:Lcom/android/server/am/ActivityStackSupervisor;
@@ -211,13 +211,13 @@
 
     monitor-exit v1
 
-    .line 22387
+    .line 22292
     invoke-static {}, Lcom/android/server/am/ActivityManagerService;->resetPriorityAfterLockedSection()V
 
-    .line 22388
+    .line 22293
     return-object v0
 
-    .line 22387
+    .line 22292
     :catchall_0
     move-exception v0
 
@@ -233,7 +233,7 @@
     .param p1, "uid"    # I
 
     .prologue
-    .line 22477
+    .line 22382
     iget-object v0, p0, Lcom/android/server/am/ActivityManagerService$LocalService;->this$0:Lcom/android/server/am/ActivityManagerService;
 
     invoke-virtual {v0, p1}, Lcom/android/server/am/ActivityManagerService;->getUidState(I)I
@@ -251,7 +251,7 @@
     .param p4, "targetUserId"    # I
 
     .prologue
-    .line 22298
+    .line 22203
     iget-object v6, p0, Lcom/android/server/am/ActivityManagerService$LocalService;->this$0:Lcom/android/server/am/ActivityManagerService;
 
     monitor-enter v6
@@ -259,10 +259,10 @@
     :try_start_0
     invoke-static {}, Lcom/android/server/am/ActivityManagerService;->boostPriorityForLockedSection()V
 
-    .line 22299
+    .line 22204
     iget-object v0, p0, Lcom/android/server/am/ActivityManagerService$LocalService;->this$0:Lcom/android/server/am/ActivityManagerService;
 
-    .line 22300
+    .line 22205
     const/4 v4, 0x0
 
     move v1, p1
@@ -273,20 +273,20 @@
 
     move v5, p4
 
-    .line 22299
+    .line 22204
     invoke-virtual/range {v0 .. v5}, Lcom/android/server/am/ActivityManagerService;->grantUriPermissionFromIntentLocked(ILjava/lang/String;Landroid/content/Intent;Lcom/android/server/am/UriPermissionOwner;I)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     monitor-exit v6
 
-    .line 22298
+    .line 22203
     invoke-static {}, Lcom/android/server/am/ActivityManagerService;->resetPriorityAfterLockedSection()V
 
-    .line 22297
+    .line 22202
     return-void
 
-    .line 22298
+    .line 22203
     :catchall_0
     move-exception v0
 
@@ -302,7 +302,7 @@
     .param p1, "userHandle"    # I
 
     .prologue
-    .line 22401
+    .line 22306
     move-object/from16 v0, p0
 
     iget-object v11, v0, Lcom/android/server/am/ActivityManagerService$LocalService;->this$0:Lcom/android/server/am/ActivityManagerService;
@@ -312,12 +312,12 @@
     :try_start_0
     invoke-static {}, Lcom/android/server/am/ActivityManagerService;->boostPriorityForLockedSection()V
 
-    .line 22402
+    .line 22307
     new-instance v9, Ljava/util/ArrayList;
 
     invoke-direct {v9}, Ljava/util/ArrayList;-><init>()V
 
-    .line 22403
+    .line 22308
     .local v9, "procs":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/server/am/ProcessRecord;>;"
     move-object/from16 v0, p0
 
@@ -333,7 +333,7 @@
 
     move-result v3
 
-    .line 22404
+    .line 22309
     .local v3, "NP":I
     const/4 v8, 0x0
 
@@ -341,7 +341,7 @@
     :goto_0
     if-ge v8, v3, :cond_4
 
-    .line 22405
+    .line 22310
     move-object/from16 v0, p0
 
     iget-object v10, v0, Lcom/android/server/am/ActivityManagerService$LocalService;->this$0:Lcom/android/server/am/ActivityManagerService;
@@ -358,13 +358,13 @@
 
     check-cast v5, Landroid/util/SparseArray;
 
-    .line 22406
+    .line 22311
     .local v5, "apps":Landroid/util/SparseArray;, "Landroid/util/SparseArray<Lcom/android/server/am/ProcessRecord;>;"
     invoke-virtual {v5}, Landroid/util/SparseArray;->size()I
 
     move-result v2
 
-    .line 22407
+    .line 22312
     .local v2, "NA":I
     const/4 v7, 0x0
 
@@ -372,40 +372,40 @@
     :goto_1
     if-ge v7, v2, :cond_3
 
-    .line 22408
+    .line 22313
     invoke-virtual {v5, v7}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
 
     move-result-object v4
 
     check-cast v4, Lcom/android/server/am/ProcessRecord;
 
-    .line 22409
+    .line 22314
     .local v4, "app":Lcom/android/server/am/ProcessRecord;
     iget-boolean v10, v4, Lcom/android/server/am/ProcessRecord;->persistent:Z
 
     if-eqz v10, :cond_1
 
-    .line 22407
+    .line 22312
     :cond_0
     :goto_2
     add-int/lit8 v7, v7, 0x1
 
     goto :goto_1
 
-    .line 22413
+    .line 22318
     :cond_1
     iget-boolean v10, v4, Lcom/android/server/am/ProcessRecord;->removed:Z
 
     if-eqz v10, :cond_2
 
-    .line 22414
+    .line 22319
     invoke-virtual {v9, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     goto :goto_2
 
-    .line 22401
+    .line 22306
     .end local v2    # "NA":I
     .end local v3    # "NP":I
     .end local v4    # "app":Lcom/android/server/am/ProcessRecord;
@@ -422,7 +422,7 @@
 
     throw v10
 
-    .line 22415
+    .line 22320
     .restart local v2    # "NA":I
     .restart local v3    # "NP":I
     .restart local v4    # "app":Lcom/android/server/am/ProcessRecord;
@@ -442,24 +442,24 @@
 
     if-eqz v10, :cond_0
 
-    .line 22416
+    .line 22321
     const/4 v10, 0x1
 
     iput-boolean v10, v4, Lcom/android/server/am/ProcessRecord;->removed:Z
 
-    .line 22417
+    .line 22322
     invoke-virtual {v9, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_2
 
-    .line 22404
+    .line 22309
     .end local v4    # "app":Lcom/android/server/am/ProcessRecord;
     :cond_3
     add-int/lit8 v8, v8, 0x1
 
     goto :goto_0
 
-    .line 22422
+    .line 22327
     .end local v2    # "NA":I
     .end local v5    # "apps":Landroid/util/SparseArray;, "Landroid/util/SparseArray<Lcom/android/server/am/ProcessRecord;>;"
     .end local v7    # "ia":I
@@ -468,7 +468,7 @@
 
     move-result v1
 
-    .line 22423
+    .line 22328
     .local v1, "N":I
     const/4 v6, 0x0
 
@@ -476,7 +476,7 @@
     :goto_3
     if-ge v6, v1, :cond_5
 
-    .line 22424
+    .line 22329
     move-object/from16 v0, p0
 
     iget-object v12, v0, Lcom/android/server/am/ActivityManagerService$LocalService;->this$0:Lcom/android/server/am/ActivityManagerService;
@@ -497,7 +497,7 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 22423
+    .line 22328
     add-int/lit8 v6, v6, 0x1
 
     goto :goto_3
@@ -505,10 +505,10 @@
     :cond_5
     monitor-exit v11
 
-    .line 22401
+    .line 22306
     invoke-static {}, Lcom/android/server/am/ActivityManagerService;->resetPriorityAfterLockedSection()V
 
-    .line 22400
+    .line 22305
     return-void
 .end method
 
@@ -516,7 +516,7 @@
     .locals 2
 
     .prologue
-    .line 22380
+    .line 22285
     iget-object v1, p0, Lcom/android/server/am/ActivityManagerService$LocalService;->this$0:Lcom/android/server/am/ActivityManagerService;
 
     monitor-enter v1
@@ -524,7 +524,7 @@
     :try_start_0
     invoke-static {}, Lcom/android/server/am/ActivityManagerService;->boostPriorityForLockedSection()V
 
-    .line 22381
+    .line 22286
     iget-object v0, p0, Lcom/android/server/am/ActivityManagerService$LocalService;->this$0:Lcom/android/server/am/ActivityManagerService;
 
     iget-object v0, v0, Lcom/android/server/am/ActivityManagerService;->mStackSupervisor:Lcom/android/server/am/ActivityStackSupervisor;
@@ -535,13 +535,13 @@
 
     monitor-exit v1
 
-    .line 22380
+    .line 22285
     invoke-static {}, Lcom/android/server/am/ActivityManagerService;->resetPriorityAfterLockedSection()V
 
-    .line 22379
+    .line 22284
     return-void
 
-    .line 22380
+    .line 22285
     :catchall_0
     move-exception v0
 
@@ -556,7 +556,7 @@
     .locals 2
 
     .prologue
-    .line 22373
+    .line 22278
     iget-object v1, p0, Lcom/android/server/am/ActivityManagerService$LocalService;->this$0:Lcom/android/server/am/ActivityManagerService;
 
     monitor-enter v1
@@ -564,7 +564,7 @@
     :try_start_0
     invoke-static {}, Lcom/android/server/am/ActivityManagerService;->boostPriorityForLockedSection()V
 
-    .line 22374
+    .line 22279
     iget-object v0, p0, Lcom/android/server/am/ActivityManagerService$LocalService;->this$0:Lcom/android/server/am/ActivityManagerService;
 
     iget-object v0, v0, Lcom/android/server/am/ActivityManagerService;->mStackSupervisor:Lcom/android/server/am/ActivityStackSupervisor;
@@ -575,13 +575,13 @@
 
     monitor-exit v1
 
-    .line 22373
+    .line 22278
     invoke-static {}, Lcom/android/server/am/ActivityManagerService;->resetPriorityAfterLockedSection()V
 
-    .line 22372
+    .line 22277
     return-void
 
-    .line 22373
+    .line 22278
     :catchall_0
     move-exception v0
 
@@ -597,7 +597,7 @@
     .param p1, "reason"    # I
 
     .prologue
-    .line 22366
+    .line 22271
     iget-object v1, p0, Lcom/android/server/am/ActivityManagerService$LocalService;->this$0:Lcom/android/server/am/ActivityManagerService;
 
     monitor-enter v1
@@ -605,7 +605,7 @@
     :try_start_0
     invoke-static {}, Lcom/android/server/am/ActivityManagerService;->boostPriorityForLockedSection()V
 
-    .line 22367
+    .line 22272
     iget-object v0, p0, Lcom/android/server/am/ActivityManagerService$LocalService;->this$0:Lcom/android/server/am/ActivityManagerService;
 
     iget-object v0, v0, Lcom/android/server/am/ActivityManagerService;->mStackSupervisor:Lcom/android/server/am/ActivityStackSupervisor;
@@ -618,13 +618,13 @@
 
     monitor-exit v1
 
-    .line 22366
+    .line 22271
     invoke-static {}, Lcom/android/server/am/ActivityManagerService;->resetPriorityAfterLockedSection()V
 
-    .line 22365
+    .line 22270
     return-void
 
-    .line 22366
+    .line 22271
     :catchall_0
     move-exception v0
 
@@ -640,7 +640,7 @@
     .param p1, "minimized"    # Z
 
     .prologue
-    .line 22394
+    .line 22299
     iget-object v1, p0, Lcom/android/server/am/ActivityManagerService$LocalService;->this$0:Lcom/android/server/am/ActivityManagerService;
 
     monitor-enter v1
@@ -648,7 +648,7 @@
     :try_start_0
     invoke-static {}, Lcom/android/server/am/ActivityManagerService;->boostPriorityForLockedSection()V
 
-    .line 22395
+    .line 22300
     iget-object v0, p0, Lcom/android/server/am/ActivityManagerService$LocalService;->this$0:Lcom/android/server/am/ActivityManagerService;
 
     iget-object v0, v0, Lcom/android/server/am/ActivityManagerService;->mStackSupervisor:Lcom/android/server/am/ActivityStackSupervisor;
@@ -659,13 +659,13 @@
 
     monitor-exit v1
 
-    .line 22394
+    .line 22299
     invoke-static {}, Lcom/android/server/am/ActivityManagerService;->resetPriorityAfterLockedSection()V
 
-    .line 22393
+    .line 22298
     return-void
 
-    .line 22394
+    .line 22299
     :catchall_0
     move-exception v0
 
@@ -680,7 +680,7 @@
     .locals 2
 
     .prologue
-    .line 22359
+    .line 22264
     iget-object v1, p0, Lcom/android/server/am/ActivityManagerService$LocalService;->this$0:Lcom/android/server/am/ActivityManagerService;
 
     monitor-enter v1
@@ -688,7 +688,7 @@
     :try_start_0
     invoke-static {}, Lcom/android/server/am/ActivityManagerService;->boostPriorityForLockedSection()V
 
-    .line 22360
+    .line 22265
     iget-object v0, p0, Lcom/android/server/am/ActivityManagerService$LocalService;->this$0:Lcom/android/server/am/ActivityManagerService;
 
     iget-object v0, v0, Lcom/android/server/am/ActivityManagerService;->mStackSupervisor:Lcom/android/server/am/ActivityStackSupervisor;
@@ -701,13 +701,13 @@
 
     monitor-exit v1
 
-    .line 22359
+    .line 22264
     invoke-static {}, Lcom/android/server/am/ActivityManagerService;->resetPriorityAfterLockedSection()V
 
-    .line 22358
+    .line 22263
     return-void
 
-    .line 22359
+    .line 22264
     :catchall_0
     move-exception v0
 
@@ -725,7 +725,7 @@
     .param p3, "voiceInteractor"    # Lcom/android/internal/app/IVoiceInteractor;
 
     .prologue
-    .line 22351
+    .line 22256
     iget-object v1, p0, Lcom/android/server/am/ActivityManagerService$LocalService;->this$0:Lcom/android/server/am/ActivityManagerService;
 
     monitor-enter v1
@@ -733,7 +733,7 @@
     :try_start_0
     invoke-static {}, Lcom/android/server/am/ActivityManagerService;->boostPriorityForLockedSection()V
 
-    .line 22352
+    .line 22257
     iget-object v0, p0, Lcom/android/server/am/ActivityManagerService$LocalService;->this$0:Lcom/android/server/am/ActivityManagerService;
 
     invoke-virtual {v0, p1, p2, p3}, Lcom/android/server/am/ActivityManagerService;->onLocalVoiceInteractionStartedLocked(Landroid/os/IBinder;Landroid/service/voice/IVoiceInteractionSession;Lcom/android/internal/app/IVoiceInteractor;)V
@@ -742,13 +742,13 @@
 
     monitor-exit v1
 
-    .line 22351
+    .line 22256
     invoke-static {}, Lcom/android/server/am/ActivityManagerService;->resetPriorityAfterLockedSection()V
 
-    .line 22350
+    .line 22255
     return-void
 
-    .line 22351
+    .line 22256
     :catchall_0
     move-exception v0
 
@@ -764,7 +764,7 @@
     .param p1, "userId"    # I
 
     .prologue
-    .line 22343
+    .line 22248
     iget-object v1, p0, Lcom/android/server/am/ActivityManagerService$LocalService;->this$0:Lcom/android/server/am/ActivityManagerService;
 
     monitor-enter v1
@@ -772,7 +772,7 @@
     :try_start_0
     invoke-static {}, Lcom/android/server/am/ActivityManagerService;->boostPriorityForLockedSection()V
 
-    .line 22344
+    .line 22249
     iget-object v0, p0, Lcom/android/server/am/ActivityManagerService$LocalService;->this$0:Lcom/android/server/am/ActivityManagerService;
 
     invoke-virtual {v0, p1}, Lcom/android/server/am/ActivityManagerService;->onUserStoppedLocked(I)V
@@ -781,13 +781,13 @@
 
     monitor-exit v1
 
-    .line 22343
+    .line 22248
     invoke-static {}, Lcom/android/server/am/ActivityManagerService;->resetPriorityAfterLockedSection()V
 
-    .line 22342
+    .line 22247
     return-void
 
-    .line 22343
+    .line 22248
     :catchall_0
     move-exception v0
 
@@ -803,12 +803,12 @@
     .param p1, "wakefulness"    # I
 
     .prologue
-    .line 22311
+    .line 22216
     iget-object v0, p0, Lcom/android/server/am/ActivityManagerService$LocalService;->this$0:Lcom/android/server/am/ActivityManagerService;
 
     invoke-virtual {v0, p1}, Lcom/android/server/am/ActivityManagerService;->onWakefulnessChanged(I)V
 
-    .line 22310
+    .line 22215
     return-void
 .end method
 
@@ -818,12 +818,12 @@
     .param p2, "duration"    # J
 
     .prologue
-    .line 22431
+    .line 22336
     instance-of v0, p1, Lcom/android/server/am/PendingIntentRecord;
 
     if-nez v0, :cond_0
 
-    .line 22432
+    .line 22337
     invoke-static {}, Lcom/android/server/am/ActivityManagerService;->-get0()Ljava/lang/String;
 
     move-result-object v0
@@ -848,17 +848,17 @@
 
     invoke-static {v0, v1}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 22433
+    .line 22338
     return-void
 
-    .line 22435
+    .line 22340
     :cond_0
     check-cast p1, Lcom/android/server/am/PendingIntentRecord;
 
     .end local p1    # "target":Landroid/content/IIntentSender;
     invoke-virtual {p1, p2, p3}, Lcom/android/server/am/PendingIntentRecord;->setWhitelistDuration(J)V
 
-    .line 22430
+    .line 22335
     return-void
 .end method
 
@@ -870,17 +870,17 @@
     .param p4, "bOptions"    # Landroid/os/Bundle;
 
     .prologue
-    .line 22452
+    .line 22357
     const-string/jumbo v0, "intents"
 
     invoke-static {p3, v0}, Lcom/android/internal/util/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 22453
+    .line 22358
     array-length v0, p3
 
     new-array v4, v0, [Ljava/lang/String;
 
-    .line 22454
+    .line 22359
     .local v4, "resolvedTypes":[Ljava/lang/String;
     const/4 v9, 0x0
 
@@ -890,7 +890,7 @@
 
     if-ge v9, v0, :cond_0
 
-    .line 22455
+    .line 22360
     aget-object v0, p3, v9
 
     iget-object v2, p0, Lcom/android/server/am/ActivityManagerService$LocalService;->this$0:Lcom/android/server/am/ActivityManagerService;
@@ -907,33 +907,33 @@
 
     aput-object v0, v4, v9
 
-    .line 22454
+    .line 22359
     add-int/lit8 v9, v9, 0x1
 
     goto :goto_0
 
-    .line 22461
+    .line 22366
     :cond_0
     const/4 v1, 0x0
 
-    .line 22463
+    .line 22368
     .local v1, "packageUid":I
     :try_start_0
     invoke-static {}, Landroid/app/AppGlobals;->getPackageManager()Landroid/content/pm/IPackageManager;
 
     move-result-object v0
 
-    .line 22464
+    .line 22369
     const/high16 v2, 0x10000000
 
-    .line 22463
+    .line 22368
     invoke-interface {v0, p1, v2, p2}, Landroid/content/pm/IPackageManager;->getPackageUid(Ljava/lang/String;II)I
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
     move-result v1
 
-    .line 22469
+    .line 22374
     :goto_1
     iget-object v10, p0, Lcom/android/server/am/ActivityManagerService$LocalService;->this$0:Lcom/android/server/am/ActivityManagerService;
 
@@ -942,10 +942,10 @@
     :try_start_1
     invoke-static {}, Lcom/android/server/am/ActivityManagerService;->boostPriorityForLockedSection()V
 
-    .line 22470
+    .line 22375
     iget-object v0, p0, Lcom/android/server/am/ActivityManagerService$LocalService;->this$0:Lcom/android/server/am/ActivityManagerService;
 
-    .line 22471
+    .line 22376
     const/4 v5, 0x0
 
     move-object v2, p1
@@ -956,7 +956,7 @@
 
     move v7, p2
 
-    .line 22470
+    .line 22375
     invoke-virtual/range {v0 .. v7}, Lcom/android/server/am/ActivityManagerService;->startActivitiesInPackage(ILjava/lang/String;[Landroid/content/Intent;[Ljava/lang/String;Landroid/os/IBinder;Landroid/os/Bundle;I)I
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
@@ -965,13 +965,13 @@
 
     monitor-exit v10
 
-    .line 22469
+    .line 22374
     invoke-static {}, Lcom/android/server/am/ActivityManagerService;->resetPriorityAfterLockedSection()V
 
-    .line 22470
+    .line 22375
     return v0
 
-    .line 22469
+    .line 22374
     :catchall_0
     move-exception v0
 
@@ -981,7 +981,7 @@
 
     throw v0
 
-    .line 22465
+    .line 22370
     :catch_0
     move-exception v8
 
@@ -999,7 +999,7 @@
     .param p6, "crashHandler"    # Ljava/lang/Runnable;
 
     .prologue
-    .line 22317
+    .line 22222
     iget-object v0, p0, Lcom/android/server/am/ActivityManagerService$LocalService;->this$0:Lcom/android/server/am/ActivityManagerService;
 
     move-object v1, p1
@@ -1027,12 +1027,12 @@
     .param p2, "userId"    # I
 
     .prologue
-    .line 22441
+    .line 22346
     const-string/jumbo v0, "Configuration must not be null"
 
     invoke-static {p1, v0}, Lcom/android/internal/util/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 22442
+    .line 22347
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -1059,7 +1059,7 @@
 
     invoke-static {p2, v0}, Lcom/android/internal/util/Preconditions;->checkArgumentNonnegative(ILjava/lang/String;)I
 
-    .line 22443
+    .line 22348
     iget-object v7, p0, Lcom/android/server/am/ActivityManagerService$LocalService;->this$0:Lcom/android/server/am/ActivityManagerService;
 
     monitor-enter v7
@@ -1067,7 +1067,7 @@
     :try_start_0
     invoke-static {}, Lcom/android/server/am/ActivityManagerService;->boostPriorityForLockedSection()V
 
-    .line 22444
+    .line 22349
     iget-object v0, p0, Lcom/android/server/am/ActivityManagerService$LocalService;->this$0:Lcom/android/server/am/ActivityManagerService;
 
     const/4 v2, 0x0
@@ -1076,27 +1076,27 @@
 
     const/4 v4, 0x1
 
-    .line 22445
+    .line 22350
     const/4 v6, 0x0
 
     move-object v1, p1
 
     move v5, p2
 
-    .line 22444
+    .line 22349
     invoke-static/range {v0 .. v6}, Lcom/android/server/am/ActivityManagerService;->-wrap4(Lcom/android/server/am/ActivityManagerService;Landroid/content/res/Configuration;Lcom/android/server/am/ActivityRecord;ZZIZ)Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     monitor-exit v7
 
-    .line 22443
+    .line 22348
     invoke-static {}, Lcom/android/server/am/ActivityManagerService;->resetPriorityAfterLockedSection()V
 
-    .line 22440
+    .line 22345
     return-void
 
-    .line 22443
+    .line 22348
     :catchall_0
     move-exception v0
 

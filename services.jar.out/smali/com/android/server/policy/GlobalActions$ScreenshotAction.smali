@@ -27,19 +27,19 @@
     .param p1, "this$0"    # Lcom/android/server/policy/GlobalActions;
 
     .prologue
-    .line 512
+    .line 517
     iput-object p1, p0, Lcom/android/server/policy/GlobalActions$ScreenshotAction;->this$0:Lcom/android/server/policy/GlobalActions;
 
-    .line 513
-    const v0, 0x108037a
+    .line 518
+    const v0, 0x108037f
 
-    .line 514
+    .line 519
     const v1, 0x104001a
 
-    .line 513
+    .line 518
     invoke-direct {p0, v0, v1}, Lcom/android/server/policy/GlobalActions$SinglePressAction;-><init>(II)V
 
-    .line 516
+    .line 521
     invoke-static {p1}, Lcom/android/server/policy/GlobalActions;->-get5(Lcom/android/server/policy/GlobalActions;)Landroid/content/Context;
 
     move-result-object v0
@@ -52,7 +52,7 @@
 
     invoke-virtual {p0, v0}, Lcom/android/server/policy/GlobalActions$ScreenshotAction;->setStatus(Ljava/lang/CharSequence;)V
 
-    .line 512
+    .line 517
     return-void
 .end method
 
@@ -74,7 +74,7 @@
     .prologue
     const/4 v2, 0x1
 
-    .line 527
+    .line 532
     iget-object v0, p0, Lcom/android/server/policy/GlobalActions$ScreenshotAction;->this$0:Lcom/android/server/policy/GlobalActions;
 
     invoke-static {v0}, Lcom/android/server/policy/GlobalActions;->-get9(Lcom/android/server/policy/GlobalActions;)Landroid/os/Handler;
@@ -85,12 +85,12 @@
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
-    .line 528
+    .line 533
     iget-object v0, p0, Lcom/android/server/policy/GlobalActions$ScreenshotAction;->this$0:Lcom/android/server/policy/GlobalActions;
 
     invoke-static {v0, v2}, Lcom/android/server/policy/GlobalActions;->-wrap5(Lcom/android/server/policy/GlobalActions;Z)V
 
-    .line 529
+    .line 534
     return v2
 .end method
 
@@ -98,14 +98,14 @@
     .locals 2
 
     .prologue
-    .line 521
+    .line 526
     iget-object v0, p0, Lcom/android/server/policy/GlobalActions$ScreenshotAction;->this$0:Lcom/android/server/policy/GlobalActions;
 
     const/4 v1, 0x0
 
     invoke-static {v0, v1}, Lcom/android/server/policy/GlobalActions;->-wrap5(Lcom/android/server/policy/GlobalActions;Z)V
 
-    .line 520
+    .line 525
     return-void
 .end method
 
@@ -113,7 +113,7 @@
     .locals 1
 
     .prologue
-    .line 539
+    .line 544
     const/4 v0, 0x1
 
     return v0
@@ -123,7 +123,7 @@
     .locals 1
 
     .prologue
-    .line 534
+    .line 539
     const/4 v0, 0x1
 
     return v0

@@ -95,7 +95,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/android/internal/telephony/WapPushOverSms$BindServiceThread;-><init>(Lcom/android/internal/telephony/WapPushOverSms;Landroid/content/Context;Lcom/android/internal/telephony/WapPushOverSms$BindServiceThread;)V
 
-    invoke-virtual {v0}, Lcom/android/internal/telephony/WapPushOverSms$BindServiceThread;->start()V
+    invoke-virtual {v0}, Ljava/lang/Thread;->start()V
 
     .line 86
     :cond_0

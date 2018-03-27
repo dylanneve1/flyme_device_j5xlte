@@ -36,7 +36,7 @@
 
 .field static final TRANSACTION_getDevicesMatchingConnectionStates:I = 0x4
 
-.field static final TRANSACTION_getPriority_6:I = 0x7
+.field static final TRANSACTION_getPriority:I = 0x7
 
 .field static final TRANSACTION_setPriority:I = 0x6
 

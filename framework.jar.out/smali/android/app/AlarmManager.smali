@@ -257,7 +257,7 @@
 
     .line 1107
     .local v1, "e1":Ljava/lang/Exception;
-    invoke-virtual {v1}, Ljava/lang/Exception;->printStackTrace()V
+    invoke-virtual {v1}, Ljava/lang/Throwable;->printStackTrace()V
 
     goto :goto_0
 
@@ -274,7 +274,7 @@
     .local v0, "e":Ljava/lang/Exception;
     :goto_2
     :try_start_3
-    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
@@ -295,7 +295,7 @@
 
     .line 1107
     .restart local v1    # "e1":Ljava/lang/Exception;
-    invoke-virtual {v1}, Ljava/lang/Exception;->printStackTrace()V
+    invoke-virtual {v1}, Ljava/lang/Throwable;->printStackTrace()V
 
     goto :goto_1
 
@@ -326,7 +326,7 @@
 
     .line 1107
     .restart local v1    # "e1":Ljava/lang/Exception;
-    invoke-virtual {v1}, Ljava/lang/Exception;->printStackTrace()V
+    invoke-virtual {v1}, Ljava/lang/Throwable;->printStackTrace()V
 
     goto :goto_4
 
@@ -586,10 +586,10 @@
     .end local v2    # "writer":Ljava/io/FileWriter;
     .local v3, "writer":Ljava/io/FileWriter;
     :try_start_1
-    invoke-virtual {v3, p1}, Ljava/io/FileWriter;->write(Ljava/lang/String;)V
+    invoke-virtual {v3, p1}, Ljava/io/Writer;->write(Ljava/lang/String;)V
 
     .line 1125
-    invoke-virtual {v3}, Ljava/io/FileWriter;->flush()V
+    invoke-virtual {v3}, Ljava/io/OutputStreamWriter;->flush()V
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_4
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
@@ -599,7 +599,7 @@
 
     .line 1131
     :try_start_2
-    invoke-virtual {v3}, Ljava/io/FileWriter;->close()V
+    invoke-virtual {v3}, Ljava/io/OutputStreamWriter;->close()V
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
 
@@ -636,7 +636,7 @@
 
     .line 1131
     :try_start_3
-    invoke-virtual {v2}, Ljava/io/FileWriter;->close()V
+    invoke-virtual {v2}, Ljava/io/OutputStreamWriter;->close()V
     :try_end_3
     .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_2
 
@@ -663,7 +663,7 @@
 
     .line 1131
     :try_start_4
-    invoke-virtual {v2}, Ljava/io/FileWriter;->close()V
+    invoke-virtual {v2}, Ljava/io/OutputStreamWriter;->close()V
     :try_end_4
     .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_3
 

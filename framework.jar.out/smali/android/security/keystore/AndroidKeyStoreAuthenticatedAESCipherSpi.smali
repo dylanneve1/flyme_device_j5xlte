@@ -55,7 +55,7 @@
 
     .prologue
     .line 290
-    invoke-virtual {p0}, Landroid/security/keystore/AndroidKeyStoreAuthenticatedAESCipherSpi;->isEncrypting()Z
+    invoke-virtual {p0}, Landroid/security/keystore/AndroidKeyStoreCipherSpiBase;->isEncrypting()Z
 
     move-result v0
 
@@ -278,10 +278,12 @@
 
     .line 284
     :cond_2
-    check-cast p2, Landroid/security/keystore/AndroidKeyStoreSecretKey;
+    nop
+
+    nop
 
     .end local p2    # "key":Ljava/security/Key;
-    invoke-virtual {p0, p2}, Landroid/security/keystore/AndroidKeyStoreAuthenticatedAESCipherSpi;->setKey(Landroid/security/keystore/AndroidKeyStoreKey;)V
+    invoke-virtual {p0, p2}, Landroid/security/keystore/AndroidKeyStoreCipherSpiBase;->setKey(Landroid/security/keystore/AndroidKeyStoreKey;)V
 
     .line 274
     return-void

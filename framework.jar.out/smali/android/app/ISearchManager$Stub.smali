@@ -28,15 +28,15 @@
 
 .field static final TRANSACTION_getGlobalSearchActivities:I = 0x3
 
-.field static final TRANSACTION_getGlobalSearchActivity_3:I = 0x4
+.field static final TRANSACTION_getGlobalSearchActivity:I = 0x4
 
 .field static final TRANSACTION_getSearchableInfo:I = 0x1
 
 .field static final TRANSACTION_getSearchablesInGlobalSearch:I = 0x2
 
-.field static final TRANSACTION_getWebSearchActivity_4:I = 0x5
+.field static final TRANSACTION_getWebSearchActivity:I = 0x5
 
-.field static final TRANSACTION_launchAssist_5:I = 0x6
+.field static final TRANSACTION_launchAssist:I = 0x6
 
 .field static final TRANSACTION_launchLegacyAssist:I = 0x7
 

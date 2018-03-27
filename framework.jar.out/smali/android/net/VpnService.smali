@@ -337,7 +337,7 @@
 
     .prologue
     .line 360
-    invoke-virtual {p0}, Landroid/net/VpnService;->stopSelf()V
+    invoke-virtual {p0}, Landroid/app/Service;->stopSelf()V
 
     .line 359
     return-void

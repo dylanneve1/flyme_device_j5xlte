@@ -34,11 +34,11 @@
 
 .field static final TRANSACTION_getActiveSubIdList:I = 0x1b
 
-.field static final TRANSACTION_getActiveSubInfoCount:I = 0x7
+.field static final TRANSACTION_getActiveSubInfoCountMax:I = 0x8
 
-.field static final TRANSACTION_getActiveSubInfoCountMax_7:I = 0x8
+.field static final TRANSACTION_getActiveSubInfoCount_6:I = 0x7
 
-.field static final TRANSACTION_getActiveSubscriptionInfoForIccId_3:I = 0x4
+.field static final TRANSACTION_getActiveSubscriptionInfoForIccId:I = 0x4
 
 .field static final TRANSACTION_getActiveSubscriptionInfoForSimSlotIndex_4:I = 0x5
 

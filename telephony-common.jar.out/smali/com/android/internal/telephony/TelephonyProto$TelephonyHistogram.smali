@@ -202,7 +202,7 @@
     .line 722
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/internal/telephony/TelephonyProto$TelephonyHistogram;->unknownFieldData:Lcom/android/framework/protobuf/nano/FieldArray;
+    iput-object v0, p0, Lcom/android/framework/protobuf/nano/ExtendableMessageNano;->unknownFieldData:Lcom/android/framework/protobuf/nano/FieldArray;
 
     .line 723
     const/4 v0, -0x1

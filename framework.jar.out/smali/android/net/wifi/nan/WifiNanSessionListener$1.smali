@@ -52,7 +52,7 @@
     .local v0, "data":Landroid/os/Bundle;
     const-string/jumbo v2, "peer_id"
 
-    invoke-virtual {v0, v2, p1}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
+    invoke-virtual {v0, v2, p1}, Landroid/os/BaseBundle;->putInt(Ljava/lang/String;I)V
 
     .line 393
     const-string/jumbo v2, "message"

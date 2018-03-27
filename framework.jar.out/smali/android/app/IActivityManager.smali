@@ -550,8 +550,6 @@
 
 .field public static final UNSTABLE_PROVIDER_DIED_TRANSACTION:I = 0x97
 
-.field public static final UPDATE_ASSETS_TRANSACTION:I = 0x17e
-
 .field public static final UPDATE_CONFIGURATION_TRANSACTION:I = 0x2f
 
 .field public static final UPDATE_DEVICE_OWNER_TRANSACTION:I = 0x128
@@ -2815,24 +2813,6 @@
 .end method
 
 .method public abstract unstableProviderDied(Landroid/os/IBinder;)V
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
-.end method
-
-.method public abstract updateAssets(ILjava/util/List;)V
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(I",
-            "Ljava/util/List",
-            "<",
-            "Ljava/lang/String;",
-            ">;)V"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

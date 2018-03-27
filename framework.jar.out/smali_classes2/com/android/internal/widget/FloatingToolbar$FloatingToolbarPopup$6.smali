@@ -107,7 +107,7 @@
 
     iget v2, p0, Lcom/android/internal/widget/FloatingToolbar$FloatingToolbarPopup$6;->val$left:F
 
-    invoke-virtual {v1, v2}, Landroid/view/ViewGroup;->setX(F)V
+    invoke-virtual {v1, v2}, Landroid/view/View;->setX(F)V
 
     .line 744
     iget-object v1, p0, Lcom/android/internal/widget/FloatingToolbar$FloatingToolbarPopup$6;->this$1:Lcom/android/internal/widget/FloatingToolbar$FloatingToolbarPopup;
@@ -116,7 +116,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1, v3}, Landroid/view/ViewGroup;->setX(F)V
+    invoke-virtual {v1, v3}, Landroid/view/View;->setX(F)V
 
     .line 745
     iget-object v1, p0, Lcom/android/internal/widget/FloatingToolbar$FloatingToolbarPopup$6;->this$1:Lcom/android/internal/widget/FloatingToolbar$FloatingToolbarPopup;
@@ -125,7 +125,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1, v3}, Lcom/android/internal/widget/FloatingToolbar$FloatingToolbarPopup$OverflowPanel;->setX(F)V
+    invoke-virtual {v1, v3}, Landroid/view/View;->setX(F)V
 
     .line 737
     :goto_0
@@ -147,7 +147,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v3}, Landroid/view/ViewGroup;->getWidth()I
+    invoke-virtual {v3}, Landroid/view/View;->getWidth()I
 
     move-result v3
 
@@ -155,7 +155,7 @@
 
     sub-float/2addr v2, v3
 
-    invoke-virtual {v1, v2}, Landroid/view/ViewGroup;->setX(F)V
+    invoke-virtual {v1, v2}, Landroid/view/View;->setX(F)V
 
     .line 751
     iget-object v1, p0, Lcom/android/internal/widget/FloatingToolbar$FloatingToolbarPopup$6;->this$1:Lcom/android/internal/widget/FloatingToolbar$FloatingToolbarPopup;
@@ -170,7 +170,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Landroid/view/ViewGroup;->getWidth()I
+    invoke-virtual {v2}, Landroid/view/View;->getWidth()I
 
     move-result v2
 
@@ -180,7 +180,7 @@
 
     int-to-float v2, v2
 
-    invoke-virtual {v1, v2}, Landroid/view/ViewGroup;->setX(F)V
+    invoke-virtual {v1, v2}, Landroid/view/View;->setX(F)V
 
     .line 752
     iget-object v1, p0, Lcom/android/internal/widget/FloatingToolbar$FloatingToolbarPopup$6;->this$1:Lcom/android/internal/widget/FloatingToolbar$FloatingToolbarPopup;
@@ -195,7 +195,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Landroid/view/ViewGroup;->getWidth()I
+    invoke-virtual {v2}, Landroid/view/View;->getWidth()I
 
     move-result v2
 
@@ -205,7 +205,7 @@
 
     int-to-float v2, v2
 
-    invoke-virtual {v1, v2}, Lcom/android/internal/widget/FloatingToolbar$FloatingToolbarPopup$OverflowPanel;->setX(F)V
+    invoke-virtual {v1, v2}, Landroid/view/View;->setX(F)V
 
     goto :goto_0
 .end method

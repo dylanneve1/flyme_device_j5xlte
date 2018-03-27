@@ -145,7 +145,7 @@
     :try_start_0
     sget-object v1, Lcom/android/internal/telephony/Call$State;->ACTIVE:Lcom/android/internal/telephony/Call$State;
 
-    invoke-virtual {v1}, Lcom/android/internal/telephony/Call$State;->ordinal()I
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
     move-result v1
 
@@ -159,7 +159,7 @@
     :try_start_1
     sget-object v1, Lcom/android/internal/telephony/Call$State;->ALERTING:Lcom/android/internal/telephony/Call$State;
 
-    invoke-virtual {v1}, Lcom/android/internal/telephony/Call$State;->ordinal()I
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
     move-result v1
 
@@ -173,7 +173,7 @@
     :try_start_2
     sget-object v1, Lcom/android/internal/telephony/Call$State;->DIALING:Lcom/android/internal/telephony/Call$State;
 
-    invoke-virtual {v1}, Lcom/android/internal/telephony/Call$State;->ordinal()I
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
     move-result v1
 
@@ -187,7 +187,7 @@
     :try_start_3
     sget-object v1, Lcom/android/internal/telephony/Call$State;->DISCONNECTED:Lcom/android/internal/telephony/Call$State;
 
-    invoke-virtual {v1}, Lcom/android/internal/telephony/Call$State;->ordinal()I
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
     move-result v1
 
@@ -201,7 +201,7 @@
     :try_start_4
     sget-object v1, Lcom/android/internal/telephony/Call$State;->DISCONNECTING:Lcom/android/internal/telephony/Call$State;
 
-    invoke-virtual {v1}, Lcom/android/internal/telephony/Call$State;->ordinal()I
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
     move-result v1
 
@@ -215,7 +215,7 @@
     :try_start_5
     sget-object v1, Lcom/android/internal/telephony/Call$State;->HOLDING:Lcom/android/internal/telephony/Call$State;
 
-    invoke-virtual {v1}, Lcom/android/internal/telephony/Call$State;->ordinal()I
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
     move-result v1
 
@@ -229,7 +229,7 @@
     :try_start_6
     sget-object v1, Lcom/android/internal/telephony/Call$State;->IDLE:Lcom/android/internal/telephony/Call$State;
 
-    invoke-virtual {v1}, Lcom/android/internal/telephony/Call$State;->ordinal()I
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
     move-result v1
 
@@ -243,7 +243,7 @@
     :try_start_7
     sget-object v1, Lcom/android/internal/telephony/Call$State;->INCOMING:Lcom/android/internal/telephony/Call$State;
 
-    invoke-virtual {v1}, Lcom/android/internal/telephony/Call$State;->ordinal()I
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
     move-result v1
 
@@ -257,7 +257,7 @@
     :try_start_8
     sget-object v1, Lcom/android/internal/telephony/Call$State;->WAITING:Lcom/android/internal/telephony/Call$State;
 
-    invoke-virtual {v1}, Lcom/android/internal/telephony/Call$State;->ordinal()I
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
     move-result v1
 
@@ -341,7 +341,7 @@
     :try_start_0
     sget-object v1, Lcom/android/internal/telephony/PhoneConstants$State;->IDLE:Lcom/android/internal/telephony/PhoneConstants$State;
 
-    invoke-virtual {v1}, Lcom/android/internal/telephony/PhoneConstants$State;->ordinal()I
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
     move-result v1
 
@@ -355,7 +355,7 @@
     :try_start_1
     sget-object v1, Lcom/android/internal/telephony/PhoneConstants$State;->OFFHOOK:Lcom/android/internal/telephony/PhoneConstants$State;
 
-    invoke-virtual {v1}, Lcom/android/internal/telephony/PhoneConstants$State;->ordinal()I
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
     move-result v1
 
@@ -369,7 +369,7 @@
     :try_start_2
     sget-object v1, Lcom/android/internal/telephony/PhoneConstants$State;->RINGING:Lcom/android/internal/telephony/PhoneConstants$State;
 
-    invoke-virtual {v1}, Lcom/android/internal/telephony/PhoneConstants$State;->ordinal()I
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
     move-result v1
 
@@ -1070,7 +1070,7 @@
     const/4 v2, 0x1
 
     .line 1056
-    invoke-virtual {p1}, Lcom/android/internal/telephony/GsmCdmaConnection;->isIncoming()Z
+    invoke-virtual {p1}, Lcom/android/internal/telephony/Connection;->isIncoming()Z
 
     move-result v0
 
@@ -1089,7 +1089,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/android/internal/telephony/Call$State;->ordinal()I
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
     move-result v1
 
@@ -1104,7 +1104,7 @@
 
     .line 1093
     :goto_1
-    invoke-virtual {p1}, Lcom/android/internal/telephony/GsmCdmaConnection;->getDisconnectCause()I
+    invoke-virtual {p1}, Lcom/android/internal/telephony/Connection;->getDisconnectCause()I
 
     move-result v0
 
@@ -1589,17 +1589,17 @@
     .local v9, "pw":Lcom/android/internal/util/IndentingPrintWriter;
     const-string/jumbo v12, "Telephony metrics proto:"
 
-    invoke-virtual {v9, v12}, Lcom/android/internal/util/IndentingPrintWriter;->println(Ljava/lang/String;)V
+    invoke-virtual {v9, v12}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
     .line 325
     const-string/jumbo v12, "------------------------------------------"
 
-    invoke-virtual {v9, v12}, Lcom/android/internal/util/IndentingPrintWriter;->println(Ljava/lang/String;)V
+    invoke-virtual {v9, v12}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
     .line 326
     const-string/jumbo v12, "Telephony events:"
 
-    invoke-virtual {v9, v12}, Lcom/android/internal/util/IndentingPrintWriter;->println(Ljava/lang/String;)V
+    invoke-virtual {v9, v12}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
     .line 327
     invoke-virtual {v9}, Lcom/android/internal/util/IndentingPrintWriter;->increaseIndent()V
@@ -1641,12 +1641,12 @@
 
     move-result-wide v12
 
-    invoke-virtual {v9, v12, v13}, Lcom/android/internal/util/IndentingPrintWriter;->print(J)V
+    invoke-virtual {v9, v12, v13}, Ljava/io/PrintWriter;->print(J)V
 
     .line 331
     const-string/jumbo v12, " ["
 
-    invoke-virtual {v9, v12}, Lcom/android/internal/util/IndentingPrintWriter;->print(Ljava/lang/String;)V
+    invoke-virtual {v9, v12}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     .line 332
     invoke-virtual {v7}, Lcom/android/internal/telephony/TelephonyProto$TelephonyEvent;->hasPhoneId()Z
@@ -1659,13 +1659,13 @@
 
     move-result v12
 
-    invoke-virtual {v9, v12}, Lcom/android/internal/util/IndentingPrintWriter;->print(I)V
+    invoke-virtual {v9, v12}, Ljava/io/PrintWriter;->print(I)V
 
     .line 333
     :cond_1
     const-string/jumbo v12, "] "
 
-    invoke-virtual {v9, v12}, Lcom/android/internal/util/IndentingPrintWriter;->print(Ljava/lang/String;)V
+    invoke-virtual {v9, v12}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     .line 335
     invoke-virtual {v7}, Lcom/android/internal/telephony/TelephonyProto$TelephonyEvent;->hasType()Z
@@ -1677,7 +1677,7 @@
     .line 336
     const-string/jumbo v12, "T="
 
-    invoke-virtual {v9, v12}, Lcom/android/internal/util/IndentingPrintWriter;->print(Ljava/lang/String;)V
+    invoke-virtual {v9, v12}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     .line 337
     invoke-virtual {v7}, Lcom/android/internal/telephony/TelephonyProto$TelephonyEvent;->getType()I
@@ -1737,14 +1737,14 @@
 
     move-result-object v12
 
-    invoke-virtual {v9, v12}, Lcom/android/internal/util/IndentingPrintWriter;->print(Ljava/lang/String;)V
+    invoke-virtual {v9, v12}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     .line 344
     :cond_2
     :goto_1
     const-string/jumbo v12, ""
 
-    invoke-virtual {v9, v12}, Lcom/android/internal/util/IndentingPrintWriter;->println(Ljava/lang/String;)V
+    invoke-virtual {v9, v12}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -1774,7 +1774,7 @@
 
     move-result-object v12
 
-    invoke-virtual {v9, v12}, Lcom/android/internal/util/IndentingPrintWriter;->print(Ljava/lang/String;)V
+    invoke-virtual {v9, v12}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     goto :goto_1
 
@@ -1786,7 +1786,7 @@
     .line 349
     const-string/jumbo v12, "Call sessions:"
 
-    invoke-virtual {v9, v12}, Lcom/android/internal/util/IndentingPrintWriter;->println(Ljava/lang/String;)V
+    invoke-virtual {v9, v12}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
     .line 350
     invoke-virtual {v9}, Lcom/android/internal/util/IndentingPrintWriter;->increaseIndent()V
@@ -1845,7 +1845,7 @@
 
     move-result-object v12
 
-    invoke-virtual {v9, v12}, Lcom/android/internal/util/IndentingPrintWriter;->println(Ljava/lang/String;)V
+    invoke-virtual {v9, v12}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
     .line 356
     :cond_5
@@ -1878,13 +1878,13 @@
 
     move-result-object v12
 
-    invoke-virtual {v9, v12}, Lcom/android/internal/util/IndentingPrintWriter;->println(Ljava/lang/String;)V
+    invoke-virtual {v9, v12}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
     .line 359
     :cond_6
     const-string/jumbo v12, "Events: "
 
-    invoke-virtual {v9, v12}, Lcom/android/internal/util/IndentingPrintWriter;->println(Ljava/lang/String;)V
+    invoke-virtual {v9, v12}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
     .line 360
     invoke-virtual {v9}, Lcom/android/internal/util/IndentingPrintWriter;->increaseIndent()V
@@ -1907,12 +1907,12 @@
 
     move-result v15
 
-    invoke-virtual {v9, v15}, Lcom/android/internal/util/IndentingPrintWriter;->print(I)V
+    invoke-virtual {v9, v15}, Ljava/io/PrintWriter;->print(I)V
 
     .line 363
     const-string/jumbo v15, " T="
 
-    invoke-virtual {v9, v15}, Lcom/android/internal/util/IndentingPrintWriter;->print(Ljava/lang/String;)V
+    invoke-virtual {v9, v15}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     .line 364
     invoke-virtual {v6}, Lcom/android/internal/telephony/TelephonyProto$TelephonyCallSession$Event;->getType()I
@@ -1976,7 +1976,7 @@
 
     move-result-object v15
 
-    invoke-virtual {v9, v15}, Lcom/android/internal/util/IndentingPrintWriter;->println(Ljava/lang/String;)V
+    invoke-virtual {v9, v15}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
     .line 361
     :goto_4
@@ -1994,7 +1994,7 @@
 
     move-result-object v15
 
-    invoke-virtual {v9, v15}, Lcom/android/internal/util/IndentingPrintWriter;->println(Ljava/lang/String;)V
+    invoke-virtual {v9, v15}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
     goto :goto_4
 
@@ -2013,7 +2013,7 @@
     .line 375
     const-string/jumbo v12, "Sms sessions:"
 
-    invoke-virtual {v9, v12}, Lcom/android/internal/util/IndentingPrintWriter;->println(Ljava/lang/String;)V
+    invoke-virtual {v9, v12}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
     .line 376
     invoke-virtual {v9}, Lcom/android/internal/util/IndentingPrintWriter;->increaseIndent()V
@@ -2091,7 +2091,7 @@
 
     move-result-object v12
 
-    invoke-virtual {v9, v12}, Lcom/android/internal/util/IndentingPrintWriter;->print(Ljava/lang/String;)V
+    invoke-virtual {v9, v12}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     .line 385
     :cond_a
@@ -2124,13 +2124,13 @@
 
     move-result-object v12
 
-    invoke-virtual {v9, v12}, Lcom/android/internal/util/IndentingPrintWriter;->println(Ljava/lang/String;)V
+    invoke-virtual {v9, v12}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
     .line 388
     :cond_b
     const-string/jumbo v12, "Events: "
 
-    invoke-virtual {v9, v12}, Lcom/android/internal/util/IndentingPrintWriter;->println(Ljava/lang/String;)V
+    invoke-virtual {v9, v12}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
     .line 389
     invoke-virtual {v9}, Lcom/android/internal/util/IndentingPrintWriter;->increaseIndent()V
@@ -2153,12 +2153,12 @@
 
     move-result v15
 
-    invoke-virtual {v9, v15}, Lcom/android/internal/util/IndentingPrintWriter;->print(I)V
+    invoke-virtual {v9, v15}, Ljava/io/PrintWriter;->print(I)V
 
     .line 392
     const-string/jumbo v15, " T="
 
-    invoke-virtual {v9, v15}, Lcom/android/internal/util/IndentingPrintWriter;->print(Ljava/lang/String;)V
+    invoke-virtual {v9, v15}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     .line 393
     invoke-virtual {v5}, Lcom/android/internal/telephony/TelephonyProto$SmsSession$Event;->getType()I
@@ -2169,7 +2169,7 @@
 
     move-result-object v15
 
-    invoke-virtual {v9, v15}, Lcom/android/internal/util/IndentingPrintWriter;->println(Ljava/lang/String;)V
+    invoke-virtual {v9, v15}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
     .line 390
     add-int/lit8 v12, v12, 0x1
@@ -3969,7 +3969,7 @@
 
     move-result-object v2
 
-    invoke-virtual {p3}, Lcom/android/internal/telephony/Call$State;->ordinal()I
+    invoke-virtual {p3}, Ljava/lang/Enum;->ordinal()I
 
     move-result v3
 
@@ -5053,7 +5053,7 @@
 
     move-result-object v2
 
-    invoke-virtual {p2}, Lcom/android/internal/telephony/PhoneConstants$State;->ordinal()I
+    invoke-virtual {p2}, Ljava/lang/Enum;->ordinal()I
 
     move-result v3
 

@@ -26,21 +26,21 @@
 # static fields
 .field private static final DESCRIPTOR:Ljava/lang/String; = "android.app.IWallpaperManager"
 
-.field static final TRANSACTION_clearWallpaper_6:I = 0x7
+.field static final TRANSACTION_clearWallpaper:I = 0x7
 
 .field static final TRANSACTION_getHeightHint:I = 0xb
 
 .field static final TRANSACTION_getName:I = 0xd
 
-.field static final TRANSACTION_getWallpaperIdForUser_4:I = 0x5
+.field static final TRANSACTION_getWallpaper:I = 0x4
 
-.field static final TRANSACTION_getWallpaperInfo_5:I = 0x6
+.field static final TRANSACTION_getWallpaperIdForUser:I = 0x5
 
-.field static final TRANSACTION_getWallpaper_3:I = 0x4
+.field static final TRANSACTION_getWallpaperInfo:I = 0x6
 
 .field static final TRANSACTION_getWidthHint:I = 0xa
 
-.field static final TRANSACTION_hasNamedWallpaper_7:I = 0x8
+.field static final TRANSACTION_hasNamedWallpaper:I = 0x8
 
 .field static final TRANSACTION_isSetWallpaperAllowed:I = 0x10
 
@@ -54,11 +54,11 @@
 
 .field static final TRANSACTION_setLockWallpaperCallback_17:I = 0x12
 
-.field static final TRANSACTION_setWallpaper:I = 0x1
+.field static final TRANSACTION_setWallpaperComponentChecked_1:I = 0x2
 
-.field static final TRANSACTION_setWallpaperComponent:I = 0x3
+.field static final TRANSACTION_setWallpaperComponent_2:I = 0x3
 
-.field static final TRANSACTION_setWallpaperComponentChecked:I = 0x2
+.field static final TRANSACTION_setWallpaper_0:I = 0x1
 
 .field static final TRANSACTION_settingsRestored:I = 0xe
 

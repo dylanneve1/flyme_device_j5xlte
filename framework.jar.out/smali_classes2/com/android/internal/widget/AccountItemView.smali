@@ -57,7 +57,7 @@
 
     .line 57
     .local v1, "view":Landroid/view/View;
-    invoke-virtual {p0, v1}, Lcom/android/internal/widget/AccountItemView;->addView(Landroid/view/View;)V
+    invoke-virtual {p0, v1}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
     .line 58
     invoke-direct {p0, v1}, Lcom/android/internal/widget/AccountItemView;->initViewItem(Landroid/view/View;)V
@@ -124,7 +124,7 @@
     .line 96
     const/16 v0, 0x8
 
-    invoke-virtual {p1, v0}, Landroid/widget/TextView;->setVisibility(I)V
+    invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
 
     .line 94
     :goto_0
@@ -137,7 +137,7 @@
     .line 99
     const/4 v0, 0x0
 
-    invoke-virtual {p1, v0}, Landroid/widget/TextView;->setVisibility(I)V
+    invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
 
     goto :goto_0
 .end method
@@ -166,7 +166,7 @@
     .line 83
     iget-object v0, p0, Lcom/android/internal/widget/AccountItemView;->mAccountIcon:Landroid/widget/ImageView;
 
-    invoke-virtual {v0, p1}, Landroid/widget/ImageView;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {v0, p1}, Landroid/view/View;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 82
     return-void

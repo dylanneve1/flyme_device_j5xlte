@@ -53,7 +53,7 @@
     .locals 0
 
     .prologue
-    .line 14245
+    .line 14339
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -64,10 +64,10 @@
     .param p1, "returnMsg"    # Ljava/lang/String;
 
     .prologue
-    .line 14285
+    .line 14379
     iput-object p1, p0, Lcom/android/server/pm/PackageManagerService$PackageInstalledInfo;->returnMsg:Ljava/lang/String;
 
-    .line 14286
+    .line 14380
     iget-object v2, p0, Lcom/android/server/pm/PackageManagerService$PackageInstalledInfo;->addedChildPackages:Landroid/util/ArrayMap;
 
     if-eqz v2, :cond_0
@@ -78,7 +78,7 @@
 
     move-result v0
 
-    .line 14287
+    .line 14381
     .local v0, "childCount":I
     :goto_0
     const/4 v1, 0x0
@@ -87,7 +87,7 @@
     :goto_1
     if-ge v1, v0, :cond_1
 
-    .line 14288
+    .line 14382
     iget-object v2, p0, Lcom/android/server/pm/PackageManagerService$PackageInstalledInfo;->addedChildPackages:Landroid/util/ArrayMap;
 
     invoke-virtual {v2, v1}, Landroid/util/ArrayMap;->valueAt(I)Ljava/lang/Object;
@@ -98,12 +98,12 @@
 
     iput-object p1, v2, Lcom/android/server/pm/PackageManagerService$PackageInstalledInfo;->returnMsg:Ljava/lang/String;
 
-    .line 14287
+    .line 14381
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_1
 
-    .line 14286
+    .line 14380
     .end local v0    # "childCount":I
     .end local v1    # "i":I
     :cond_0
@@ -112,7 +112,7 @@
     .restart local v0    # "childCount":I
     goto :goto_0
 
-    .line 14284
+    .line 14378
     .restart local v1    # "i":I
     :cond_1
     return-void
@@ -126,18 +126,18 @@
     .param p2, "msg"    # Ljava/lang/String;
 
     .prologue
-    .line 14259
+    .line 14353
     invoke-virtual {p0, p1}, Lcom/android/server/pm/PackageManagerService$PackageInstalledInfo;->setReturnCode(I)V
 
-    .line 14260
+    .line 14354
     invoke-direct {p0, p2}, Lcom/android/server/pm/PackageManagerService$PackageInstalledInfo;->setReturnMessage(Ljava/lang/String;)V
 
-    .line 14261
+    .line 14355
     const-string/jumbo v0, "PackageManager"
 
     invoke-static {v0, p2}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 14258
+    .line 14352
     return-void
 .end method
 
@@ -147,24 +147,24 @@
     .param p2, "e"    # Landroid/content/pm/PackageParser$PackageParserException;
 
     .prologue
-    .line 14265
+    .line 14359
     iget v0, p2, Landroid/content/pm/PackageParser$PackageParserException;->error:I
 
     invoke-virtual {p0, v0}, Lcom/android/server/pm/PackageManagerService$PackageInstalledInfo;->setReturnCode(I)V
 
-    .line 14266
+    .line 14360
     invoke-static {p1, p2}, Landroid/util/ExceptionUtils;->getCompleteMessage(Ljava/lang/String;Ljava/lang/Throwable;)Ljava/lang/String;
 
     move-result-object v0
 
     invoke-direct {p0, v0}, Lcom/android/server/pm/PackageManagerService$PackageInstalledInfo;->setReturnMessage(Ljava/lang/String;)V
 
-    .line 14267
+    .line 14361
     const-string/jumbo v0, "PackageManager"
 
     invoke-static {v0, p1, p2}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 14264
+    .line 14358
     return-void
 .end method
 
@@ -174,24 +174,24 @@
     .param p2, "e"    # Lcom/android/server/pm/PackageManagerException;
 
     .prologue
-    .line 14271
+    .line 14365
     iget v0, p2, Lcom/android/server/pm/PackageManagerException;->error:I
 
     iput v0, p0, Lcom/android/server/pm/PackageManagerService$PackageInstalledInfo;->returnCode:I
 
-    .line 14272
+    .line 14366
     invoke-static {p1, p2}, Landroid/util/ExceptionUtils;->getCompleteMessage(Ljava/lang/String;Ljava/lang/Throwable;)Ljava/lang/String;
 
     move-result-object v0
 
     invoke-direct {p0, v0}, Lcom/android/server/pm/PackageManagerService$PackageInstalledInfo;->setReturnMessage(Ljava/lang/String;)V
 
-    .line 14273
+    .line 14367
     const-string/jumbo v0, "PackageManager"
 
     invoke-static {v0, p1, p2}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 14270
+    .line 14364
     return-void
 .end method
 
@@ -200,10 +200,10 @@
     .param p1, "returnCode"    # I
 
     .prologue
-    .line 14277
+    .line 14371
     iput p1, p0, Lcom/android/server/pm/PackageManagerService$PackageInstalledInfo;->returnCode:I
 
-    .line 14278
+    .line 14372
     iget-object v2, p0, Lcom/android/server/pm/PackageManagerService$PackageInstalledInfo;->addedChildPackages:Landroid/util/ArrayMap;
 
     if-eqz v2, :cond_0
@@ -214,7 +214,7 @@
 
     move-result v0
 
-    .line 14279
+    .line 14373
     .local v0, "childCount":I
     :goto_0
     const/4 v1, 0x0
@@ -223,7 +223,7 @@
     :goto_1
     if-ge v1, v0, :cond_1
 
-    .line 14280
+    .line 14374
     iget-object v2, p0, Lcom/android/server/pm/PackageManagerService$PackageInstalledInfo;->addedChildPackages:Landroid/util/ArrayMap;
 
     invoke-virtual {v2, v1}, Landroid/util/ArrayMap;->valueAt(I)Ljava/lang/Object;
@@ -234,12 +234,12 @@
 
     iput p1, v2, Lcom/android/server/pm/PackageManagerService$PackageInstalledInfo;->returnCode:I
 
-    .line 14279
+    .line 14373
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_1
 
-    .line 14278
+    .line 14372
     .end local v0    # "childCount":I
     .end local v1    # "i":I
     :cond_0
@@ -248,7 +248,7 @@
     .restart local v0    # "childCount":I
     goto :goto_0
 
-    .line 14276
+    .line 14370
     .restart local v1    # "i":I
     :cond_1
     return-void

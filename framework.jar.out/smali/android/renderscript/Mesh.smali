@@ -33,7 +33,7 @@
     invoke-direct {p0, p1, p2, p3}, Landroid/renderscript/BaseObj;-><init>(JLandroid/renderscript/RenderScript;)V
 
     .line 94
-    iget-object v0, p0, Landroid/renderscript/Mesh;->guard:Ldalvik/system/CloseGuard;
+    iget-object v0, p0, Landroid/renderscript/BaseObj;->guard:Ldalvik/system/CloseGuard;
 
     const-string/jumbo v1, "destroy"
 
@@ -138,11 +138,11 @@
     invoke-super {p0}, Landroid/renderscript/BaseObj;->updateFromNative()V
 
     .line 153
-    iget-object v1, p0, Landroid/renderscript/Mesh;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v1, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
-    iget-object v2, p0, Landroid/renderscript/Mesh;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
-    invoke-virtual {p0, v2}, Landroid/renderscript/Mesh;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {p0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v2
 
@@ -152,11 +152,11 @@
 
     .line 154
     .local v13, "vtxCount":I
-    iget-object v1, p0, Landroid/renderscript/Mesh;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v1, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
-    iget-object v2, p0, Landroid/renderscript/Mesh;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
-    invoke-virtual {p0, v2}, Landroid/renderscript/Mesh;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {p0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v2
 
@@ -178,22 +178,22 @@
 
     .line 160
     .local v5, "primitives":[I
-    iget-object v1, p0, Landroid/renderscript/Mesh;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v1, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
-    iget-object v2, p0, Landroid/renderscript/Mesh;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
-    invoke-virtual {p0, v2}, Landroid/renderscript/Mesh;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {p0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v2
 
     invoke-virtual {v1, v2, v3, v14, v13}, Landroid/renderscript/RenderScript;->nMeshGetVertices(J[JI)V
 
     .line 161
-    iget-object v1, p0, Landroid/renderscript/Mesh;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v1, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
-    iget-object v2, p0, Landroid/renderscript/Mesh;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
-    invoke-virtual {p0, v2}, Landroid/renderscript/Mesh;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {p0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v2
 
@@ -237,7 +237,7 @@
 
     aget-wide v8, v14, v0
 
-    iget-object v10, p0, Landroid/renderscript/Mesh;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v10, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     const/4 v11, 0x0
 
@@ -283,7 +283,7 @@
 
     aget-wide v8, v4, v0
 
-    iget-object v10, p0, Landroid/renderscript/Mesh;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v10, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     const/4 v11, 0x0
 

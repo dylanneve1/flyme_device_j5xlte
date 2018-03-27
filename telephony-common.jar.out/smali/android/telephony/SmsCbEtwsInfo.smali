@@ -218,7 +218,9 @@
     move-object v0, p1
 
     .line 211
-    check-cast v0, Landroid/telephony/SmsCbEtwsInfo;
+    nop
+
+    nop
 
     .line 212
     .local v0, "other":Landroid/telephony/SmsCbEtwsInfo;

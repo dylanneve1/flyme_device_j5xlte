@@ -76,7 +76,7 @@
 
     const/4 v2, 0x0
 
-    invoke-virtual {p0, v1, v2}, Landroid/media/TtmlRenderingWidget;->setLayerType(ILandroid/graphics/Paint;)V
+    invoke-virtual {p0, v1, v2}, Landroid/view/View;->setLayerType(ILandroid/graphics/Paint;)V
 
     .line 693
     const-string/jumbo v1, "captioning"
@@ -110,7 +110,7 @@
     .line 696
     iget-object v1, p0, Landroid/media/TtmlRenderingWidget;->mTextView:Landroid/widget/TextView;
 
-    invoke-virtual {p0, v1, v3, v3}, Landroid/media/TtmlRenderingWidget;->addView(Landroid/view/View;II)V
+    invoke-virtual {p0, v1, v3, v3}, Landroid/view/ViewGroup;->addView(Landroid/view/View;II)V
 
     .line 697
     iget-object v1, p0, Landroid/media/TtmlRenderingWidget;->mTextView:Landroid/widget/TextView;
@@ -273,10 +273,10 @@
 
     .line 710
     .local v0, "heightSpec":I
-    invoke-virtual {p0, v1, v0}, Landroid/media/TtmlRenderingWidget;->measure(II)V
+    invoke-virtual {p0, v1, v0}, Landroid/view/View;->measure(II)V
 
     .line 711
-    invoke-virtual {p0, v2, v2, p1, p2}, Landroid/media/TtmlRenderingWidget;->layout(IIII)V
+    invoke-virtual {p0, v2, v2, p1, p2}, Landroid/view/ViewGroup;->layout(IIII)V
 
     .line 706
     return-void
@@ -293,7 +293,7 @@
     .line 717
     const/4 v0, 0x0
 
-    invoke-virtual {p0, v0}, Landroid/media/TtmlRenderingWidget;->setVisibility(I)V
+    invoke-virtual {p0, v0}, Landroid/view/View;->setVisibility(I)V
 
     .line 715
     :goto_0
@@ -303,7 +303,7 @@
     :cond_0
     const/16 v0, 0x8
 
-    invoke-virtual {p0, v0}, Landroid/media/TtmlRenderingWidget;->setVisibility(I)V
+    invoke-virtual {p0, v0}, Landroid/view/View;->setVisibility(I)V
 
     goto :goto_0
 .end method

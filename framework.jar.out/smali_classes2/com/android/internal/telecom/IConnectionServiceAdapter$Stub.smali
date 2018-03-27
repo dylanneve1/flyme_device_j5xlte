@@ -30,7 +30,7 @@
 
 .field static final TRANSACTION_addExistingConnection:I = 0x19
 
-.field static final TRANSACTION_handleCreateConnectionComplete:I = 0x1
+.field static final TRANSACTION_handleCreateConnectionComplete_0:I = 0x1
 
 .field static final TRANSACTION_onConnectionEvent:I = 0x1c
 
@@ -46,7 +46,7 @@
 
 .field static final TRANSACTION_removeExtras:I = 0x1b
 
-.field static final TRANSACTION_setActive:I = 0x2
+.field static final TRANSACTION_setActive_1:I = 0x2
 
 .field static final TRANSACTION_setAddress:I = 0x16
 
@@ -74,7 +74,7 @@
 
 .field static final TRANSACTION_setRingbackRequested:I = 0x8
 
-.field static final TRANSACTION_setRinging:I = 0x3
+.field static final TRANSACTION_setRinging_2:I = 0x3
 
 .field static final TRANSACTION_setStatusHints:I = 0x15
 

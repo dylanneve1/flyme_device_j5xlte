@@ -54,7 +54,7 @@
 
     .line 757
     .local v0, "array":Landroid/appwidget/AppWidgetHostView$ParcelableSparseArray;
-    invoke-virtual {v0}, Landroid/appwidget/AppWidgetHostView$ParcelableSparseArray;->getClass()Ljava/lang/Class;
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v4
 
@@ -85,7 +85,7 @@
 
     move-result-object v5
 
-    invoke-virtual {v0, v4, v5}, Landroid/appwidget/AppWidgetHostView$ParcelableSparseArray;->put(ILjava/lang/Object;)V
+    invoke-virtual {v0, v4, v5}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
     .line 759
     add-int/lit8 v2, v2, 0x1

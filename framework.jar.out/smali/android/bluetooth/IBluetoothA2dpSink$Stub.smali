@@ -30,7 +30,7 @@
 
 .field static final TRANSACTION_disconnect:I = 0x2
 
-.field static final TRANSACTION_getAudioConfig_5:I = 0x6
+.field static final TRANSACTION_getAudioConfig:I = 0x6
 
 .field static final TRANSACTION_getConnectedDevices:I = 0x3
 
@@ -38,11 +38,11 @@
 
 .field static final TRANSACTION_getDevicesMatchingConnectionStates:I = 0x4
 
-.field static final TRANSACTION_getPriority_7:I = 0x8
+.field static final TRANSACTION_getPriority:I = 0x8
 
 .field static final TRANSACTION_isA2dpPlaying:I = 0x9
 
-.field static final TRANSACTION_setPriority_6:I = 0x7
+.field static final TRANSACTION_setPriority:I = 0x7
 
 
 # direct methods

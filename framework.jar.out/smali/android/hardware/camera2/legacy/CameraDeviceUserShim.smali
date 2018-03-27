@@ -204,7 +204,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v6}, Ljava/lang/RuntimeException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v6}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v11
 

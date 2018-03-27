@@ -26,7 +26,7 @@
 # static fields
 .field private static final DESCRIPTOR:Ljava/lang/String; = "android.net.wifi.nan.IWifiNanManager"
 
-.field static final TRANSACTION_connect_0:I = 0x1
+.field static final TRANSACTION_connect:I = 0x1
 
 .field static final TRANSACTION_createSession:I = 0x4
 
@@ -56,7 +56,7 @@
     .line 20
     const-string/jumbo v0, "android.net.wifi.nan.IWifiNanManager"
 
-    invoke-virtual {p0, p0, v0}, Landroid/net/wifi/nan/IWifiNanManager$Stub;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
+    invoke-virtual {p0, p0, v0}, Landroid/os/Binder;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
 
     .line 18
     return-void

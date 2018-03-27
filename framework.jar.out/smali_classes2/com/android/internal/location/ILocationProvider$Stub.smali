@@ -26,11 +26,11 @@
 # static fields
 .field private static final DESCRIPTOR:Ljava/lang/String; = "com.android.internal.location.ILocationProvider"
 
-.field static final TRANSACTION_disable_1:I = 0x2
+.field static final TRANSACTION_disable:I = 0x2
 
 .field static final TRANSACTION_enable_0:I = 0x1
 
-.field static final TRANSACTION_getProperties_3:I = 0x4
+.field static final TRANSACTION_getProperties:I = 0x4
 
 .field static final TRANSACTION_getStatus:I = 0x5
 
@@ -38,7 +38,7 @@
 
 .field static final TRANSACTION_sendExtraCommand:I = 0x7
 
-.field static final TRANSACTION_setRequest_2:I = 0x3
+.field static final TRANSACTION_setRequest:I = 0x3
 
 
 # direct methods

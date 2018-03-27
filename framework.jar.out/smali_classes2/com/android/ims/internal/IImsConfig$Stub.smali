@@ -26,7 +26,7 @@
 # static fields
 .field private static final DESCRIPTOR:Ljava/lang/String; = "com.android.ims.internal.IImsConfig"
 
-.field static final TRANSACTION_getFeatureValue_4:I = 0x5
+.field static final TRANSACTION_getFeatureValue:I = 0x5
 
 .field static final TRANSACTION_getProvisionedStringValue_1:I = 0x2
 
@@ -42,7 +42,7 @@
 
 .field static final TRANSACTION_setProvisionedValue_2:I = 0x3
 
-.field static final TRANSACTION_setVideoQuality:I = 0x9
+.field static final TRANSACTION_setVideoQuality_8:I = 0x9
 
 
 # direct methods

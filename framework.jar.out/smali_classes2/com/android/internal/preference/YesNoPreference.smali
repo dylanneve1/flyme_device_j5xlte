@@ -101,7 +101,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/android/internal/preference/YesNoPreference;->callChangeListener(Ljava/lang/Object;)Z
+    invoke-virtual {p0, v0}, Landroid/preference/Preference;->callChangeListener(Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -147,7 +147,7 @@
 
     const-class v2, Lcom/android/internal/preference/YesNoPreference$SavedState;
 
-    invoke-virtual {v1, v2}, Ljava/lang/Class;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v1, v2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -167,7 +167,7 @@
 
     .line 121
     .local v0, "myState":Lcom/android/internal/preference/YesNoPreference$SavedState;
-    invoke-virtual {v0}, Lcom/android/internal/preference/YesNoPreference$SavedState;->getSuperState()Landroid/os/Parcelable;
+    invoke-virtual {v0}, Landroid/view/AbsSavedState;->getSuperState()Landroid/os/Parcelable;
 
     move-result-object v1
 
@@ -193,7 +193,7 @@
 
     .line 102
     .local v1, "superState":Landroid/os/Parcelable;
-    invoke-virtual {p0}, Lcom/android/internal/preference/YesNoPreference;->isPersistent()Z
+    invoke-virtual {p0}, Landroid/preference/Preference;->isPersistent()Z
 
     move-result v2
 
@@ -231,7 +231,7 @@
 
     iget-boolean v0, p0, Lcom/android/internal/preference/YesNoPreference;->mWasPositiveResult:Z
 
-    invoke-virtual {p0, v0}, Lcom/android/internal/preference/YesNoPreference;->getPersistedBoolean(Z)Z
+    invoke-virtual {p0, v0}, Landroid/preference/Preference;->getPersistedBoolean(Z)Z
 
     move-result v0
 
@@ -264,7 +264,7 @@
     iput-boolean p1, p0, Lcom/android/internal/preference/YesNoPreference;->mWasPositiveResult:Z
 
     .line 69
-    invoke-virtual {p0, p1}, Lcom/android/internal/preference/YesNoPreference;->persistBoolean(Z)Z
+    invoke-virtual {p0, p1}, Landroid/preference/Preference;->persistBoolean(Z)Z
 
     .line 71
     if-eqz p1, :cond_0
@@ -272,7 +272,7 @@
     const/4 v0, 0x0
 
     :goto_0
-    invoke-virtual {p0, v0}, Lcom/android/internal/preference/YesNoPreference;->notifyDependencyChange(Z)V
+    invoke-virtual {p0, v0}, Landroid/preference/Preference;->notifyDependencyChange(Z)V
 
     .line 66
     return-void

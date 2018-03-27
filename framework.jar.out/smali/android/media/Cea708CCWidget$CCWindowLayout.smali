@@ -183,7 +183,7 @@
     .local v1, "params":Landroid/widget/RelativeLayout$LayoutParams;
     iget-object v2, p0, Landroid/media/Cea708CCWidget$CCWindowLayout;->mCCView:Landroid/media/Cea708CCWidget$CCView;
 
-    invoke-virtual {p0, v2, v1}, Landroid/media/Cea708CCWidget$CCWindowLayout;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {p0, v2, v1}, Landroid/view/ViewGroup;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 1717
     const-string/jumbo v2, "captioning"
@@ -214,7 +214,7 @@
 
     const-string/jumbo v3, ""
 
-    invoke-virtual {v2, v3}, Landroid/media/Cea708CCWidget$CCView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v2, v3}, Lcom/android/internal/widget/SubtitleView;->setText(Ljava/lang/CharSequence;)V
 
     .line 1721
     invoke-direct {p0}, Landroid/media/Cea708CCWidget$CCWindowLayout;->updateWidestChar()V
@@ -443,7 +443,7 @@
 
     iget-object v10, p0, Landroid/media/Cea708CCWidget$CCWindowLayout;->mBuilder:Landroid/text/SpannableStringBuilder;
 
-    invoke-virtual {v9, v10}, Landroid/media/Cea708CCWidget$CCView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v9, v10}, Lcom/android/internal/widget/SubtitleView;->setText(Ljava/lang/CharSequence;)V
 
     .line 2066
     :goto_3
@@ -484,7 +484,7 @@
     :cond_6
     iget-object v9, p0, Landroid/media/Cea708CCWidget$CCWindowLayout;->mCCView:Landroid/media/Cea708CCWidget$CCView;
 
-    invoke-virtual {v9, v7}, Landroid/media/Cea708CCWidget$CCView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v9, v7}, Lcom/android/internal/widget/SubtitleView;->setText(Ljava/lang/CharSequence;)V
 
     goto :goto_3
 .end method
@@ -588,7 +588,7 @@
     .local v8, "width":F
     iget-object v9, p0, Landroid/media/Cea708CCWidget$CCWindowLayout;->mCCLayout:Landroid/media/Cea708CCWidget$CCLayout;
 
-    invoke-virtual {v9}, Landroid/media/Cea708CCWidget$CCLayout;->getWidth()I
+    invoke-virtual {v9}, Landroid/view/View;->getWidth()I
 
     move-result v9
 
@@ -628,7 +628,7 @@
 
     iget v10, p0, Landroid/media/Cea708CCWidget$CCWindowLayout;->mTextSize:F
 
-    invoke-virtual {v9, v10}, Landroid/media/Cea708CCWidget$CCView;->setTextSize(F)V
+    invoke-virtual {v9, v10}, Lcom/android/internal/widget/SubtitleView;->setTextSize(F)V
 
     .line 2012
     return-void
@@ -767,7 +767,7 @@
 
     const-string/jumbo v1, ""
 
-    invoke-virtual {v0, v1}, Landroid/media/Cea708CCWidget$CCView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, v1}, Lcom/android/internal/widget/SubtitleView;->setText(Ljava/lang/CharSequence;)V
 
     .line 2061
     return-void
@@ -790,10 +790,10 @@
     .line 1753
     const/4 v0, 0x4
 
-    invoke-virtual {p0, v0}, Landroid/media/Cea708CCWidget$CCWindowLayout;->setVisibility(I)V
+    invoke-virtual {p0, v0}, Landroid/view/View;->setVisibility(I)V
 
     .line 1754
-    invoke-virtual {p0}, Landroid/media/Cea708CCWidget$CCWindowLayout;->requestLayout()V
+    invoke-virtual {p0}, Landroid/widget/RelativeLayout;->requestLayout()V
 
     .line 1752
     return-void
@@ -838,7 +838,7 @@
 
     move-object/from16 v1, p0
 
-    invoke-virtual {v0, v1}, Landroid/media/Cea708CCWidget$CCLayout;->removeOnLayoutChangeListener(Landroid/view/View$OnLayoutChangeListener;)V
+    invoke-virtual {v0, v1}, Landroid/view/View;->removeOnLayoutChangeListener(Landroid/view/View$OnLayoutChangeListener;)V
 
     .line 1869
     :cond_0
@@ -859,7 +859,7 @@
 
     move-object/from16 v1, p0
 
-    invoke-virtual {v0, v1}, Landroid/media/Cea708CCWidget$CCLayout;->addOnLayoutChangeListener(Landroid/view/View$OnLayoutChangeListener;)V
+    invoke-virtual {v0, v1}, Landroid/view/View;->addOnLayoutChangeListener(Landroid/view/View$OnLayoutChangeListener;)V
 
     .line 1871
     invoke-direct/range {p0 .. p0}, Landroid/media/Cea708CCWidget$CCWindowLayout;->updateWidestChar()V
@@ -1147,7 +1147,7 @@
     .line 1976
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v5}, Landroid/media/Cea708CCWidget$CCWindowLayout;->setGravity(I)V
+    invoke-virtual {v0, v5}, Landroid/widget/RelativeLayout;->setGravity(I)V
 
     .line 1977
     move-object/from16 v0, p2
@@ -1208,7 +1208,7 @@
 
     sget-object v20, Landroid/text/Layout$Alignment;->ALIGN_NORMAL:Landroid/text/Layout$Alignment;
 
-    invoke-virtual/range {v19 .. v20}, Landroid/media/Cea708CCWidget$CCView;->setAlignment(Landroid/text/Layout$Alignment;)V
+    invoke-virtual/range {v19 .. v20}, Lcom/android/internal/widget/SubtitleView;->setAlignment(Landroid/text/Layout$Alignment;)V
 
     .line 1907
     move v15, v11
@@ -1329,7 +1329,7 @@
 
     move-object/from16 v19, v0
 
-    invoke-virtual/range {v19 .. v19}, Landroid/media/Cea708CCWidget$CCLayout;->getWidth()I
+    invoke-virtual/range {v19 .. v19}, Landroid/view/View;->getWidth()I
 
     move-result v19
 
@@ -1346,7 +1346,7 @@
 
     move-object/from16 v20, v0
 
-    invoke-virtual/range {v20 .. v20}, Landroid/media/Cea708CCWidget$CCLayout;->getWidth()I
+    invoke-virtual/range {v20 .. v20}, Landroid/view/View;->getWidth()I
 
     move-result v20
 
@@ -1387,7 +1387,7 @@
 
     sget-object v20, Landroid/text/Layout$Alignment;->ALIGN_NORMAL:Landroid/text/Layout$Alignment;
 
-    invoke-virtual/range {v19 .. v20}, Landroid/media/Cea708CCWidget$CCView;->setAlignment(Landroid/text/Layout$Alignment;)V
+    invoke-virtual/range {v19 .. v20}, Lcom/android/internal/widget/SubtitleView;->setAlignment(Landroid/text/Layout$Alignment;)V
 
     .line 1932
     sub-float v15, v11, v6
@@ -1419,7 +1419,7 @@
 
     sget-object v20, Landroid/text/Layout$Alignment;->ALIGN_CENTER:Landroid/text/Layout$Alignment;
 
-    invoke-virtual/range {v19 .. v20}, Landroid/media/Cea708CCWidget$CCView;->setAlignment(Landroid/text/Layout$Alignment;)V
+    invoke-virtual/range {v19 .. v20}, Lcom/android/internal/widget/SubtitleView;->setAlignment(Landroid/text/Layout$Alignment;)V
 
     .line 1944
     sub-float v15, v11, v4
@@ -1449,7 +1449,7 @@
 
     sget-object v20, Landroid/text/Layout$Alignment;->ALIGN_RIGHT:Landroid/text/Layout$Alignment;
 
-    invoke-virtual/range {v19 .. v20}, Landroid/media/Cea708CCWidget$CCView;->setAlignment(Landroid/text/Layout$Alignment;)V
+    invoke-virtual/range {v19 .. v20}, Lcom/android/internal/widget/SubtitleView;->setAlignment(Landroid/text/Layout$Alignment;)V
 
     .line 1951
     move v12, v11
@@ -1592,7 +1592,7 @@
     .line 2048
     iget-object v0, p0, Landroid/media/Cea708CCWidget$CCWindowLayout;->mCCLayout:Landroid/media/Cea708CCWidget$CCLayout;
 
-    invoke-virtual {v0, p0}, Landroid/media/Cea708CCWidget$CCLayout;->removeOnLayoutChangeListener(Landroid/view/View$OnLayoutChangeListener;)V
+    invoke-virtual {v0, p0}, Landroid/view/View;->removeOnLayoutChangeListener(Landroid/view/View$OnLayoutChangeListener;)V
 
     .line 2049
     iput-object v1, p0, Landroid/media/Cea708CCWidget$CCWindowLayout;->mCCLayout:Landroid/media/Cea708CCWidget$CCLayout;
@@ -1898,10 +1898,10 @@
     .line 1748
     const/4 v0, 0x0
 
-    invoke-virtual {p0, v0}, Landroid/media/Cea708CCWidget$CCWindowLayout;->setVisibility(I)V
+    invoke-virtual {p0, v0}, Landroid/view/View;->setVisibility(I)V
 
     .line 1749
-    invoke-virtual {p0}, Landroid/media/Cea708CCWidget$CCWindowLayout;->requestLayout()V
+    invoke-virtual {p0}, Landroid/widget/RelativeLayout;->requestLayout()V
 
     .line 1747
     return-void

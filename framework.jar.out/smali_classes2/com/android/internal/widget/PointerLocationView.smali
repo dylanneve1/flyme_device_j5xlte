@@ -156,7 +156,7 @@
     iput-object v2, p0, Lcom/android/internal/widget/PointerLocationView;->mReusableOvalRect:Landroid/graphics/RectF;
 
     .line 138
-    invoke-virtual {p0, v7}, Lcom/android/internal/widget/PointerLocationView;->setFocusableInTouchMode(Z)V
+    invoke-virtual {p0, v7}, Landroid/view/View;->setFocusableInTouchMode(Z)V
 
     .line 140
     const-class v2, Landroid/hardware/input/InputManager;
@@ -192,7 +192,7 @@
     iget-object v2, p0, Lcom/android/internal/widget/PointerLocationView;->mTextPaint:Landroid/graphics/Paint;
 
     .line 146
-    invoke-virtual {p0}, Lcom/android/internal/widget/PointerLocationView;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
 
@@ -1493,7 +1493,7 @@
     .line 724
     iget-object v0, p0, Lcom/android/internal/widget/PointerLocationView;->mIm:Landroid/hardware/input/InputManager;
 
-    invoke-virtual {p0}, Lcom/android/internal/widget/PointerLocationView;->getHandler()Landroid/os/Handler;
+    invoke-virtual {p0}, Landroid/view/View;->getHandler()Landroid/os/Handler;
 
     move-result-object v1
 
@@ -1528,7 +1528,7 @@
 
     .prologue
     .line 223
-    invoke-virtual/range {p0 .. p0}, Lcom/android/internal/widget/PointerLocationView;->getWidth()I
+    invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getWidth()I
 
     move-result v36
 
@@ -3063,7 +3063,7 @@
 
     iget v12, v2, Landroid/view/MotionEvent$PointerCoords;->y:F
 
-    invoke-virtual/range {p0 .. p0}, Lcom/android/internal/widget/PointerLocationView;->getWidth()I
+    invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getWidth()I
 
     move-result v2
 
@@ -3098,7 +3098,7 @@
 
     iget v13, v2, Landroid/view/MotionEvent$PointerCoords;->x:F
 
-    invoke-virtual/range {p0 .. p0}, Lcom/android/internal/widget/PointerLocationView;->getHeight()I
+    invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getHeight()I
 
     move-result v2
 
@@ -4692,7 +4692,7 @@
     .end local v15    # "ps":Lcom/android/internal/widget/PointerLocationView$PointerState;
     :cond_18
     :goto_c
-    invoke-virtual/range {p0 .. p0}, Lcom/android/internal/widget/PointerLocationView;->invalidate()V
+    invoke-virtual/range {p0 .. p0}, Landroid/view/View;->invalidate()V
 
     .line 526
     return-void
@@ -4779,7 +4779,7 @@
 
     if-nez v0, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/internal/widget/PointerLocationView;->isFocused()Z
+    invoke-virtual {p0}, Landroid/view/View;->isFocused()Z
 
     move-result v0
 
@@ -4794,7 +4794,7 @@
 
     .line 657
     :cond_1
-    invoke-virtual {p0}, Lcom/android/internal/widget/PointerLocationView;->requestFocus()Z
+    invoke-virtual {p0}, Landroid/view/View;->requestFocus()Z
 
     goto :goto_0
 .end method

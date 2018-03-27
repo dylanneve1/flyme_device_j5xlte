@@ -159,7 +159,7 @@
     .line 88
     iget-object v0, p0, Landroid/app/ActivityGroup;->mLocalActivityManager:Landroid/app/LocalActivityManager;
 
-    invoke-virtual {p0}, Landroid/app/ActivityGroup;->isFinishing()Z
+    invoke-virtual {p0}, Landroid/app/Activity;->isFinishing()Z
 
     move-result v1
 
@@ -179,7 +179,7 @@
     .line 76
     iget-object v0, p0, Landroid/app/ActivityGroup;->mLocalActivityManager:Landroid/app/LocalActivityManager;
 
-    invoke-virtual {p0}, Landroid/app/ActivityGroup;->isFinishing()Z
+    invoke-virtual {p0}, Landroid/app/Activity;->isFinishing()Z
 
     move-result v1
 

@@ -26,7 +26,7 @@
 # static fields
 .field private static final DESCRIPTOR:Ljava/lang/String; = "com.android.internal.view.IInputMethod"
 
-.field static final TRANSACTION_attachToken_0:I = 0x1
+.field static final TRANSACTION_attachToken:I = 0x1
 
 .field static final TRANSACTION_bindInput:I = 0x2
 

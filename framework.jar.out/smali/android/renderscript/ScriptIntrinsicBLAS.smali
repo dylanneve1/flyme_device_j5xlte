@@ -337,7 +337,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2, p0}, Landroid/renderscript/Element;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v2, p0}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v2
 
@@ -4153,7 +4153,7 @@
     .line 3290
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v1, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v1}, Landroid/renderscript/Element;->U8(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -4253,45 +4253,45 @@
     .line 3304
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v1, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v2
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v7, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p1
 
-    invoke-virtual {v0, v7}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v7}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v7
 
     move-object/from16 v0, p0
 
-    iget-object v9, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v9, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p3
 
-    invoke-virtual {v0, v9}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v9}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v10
 
     move-object/from16 v0, p0
 
-    iget-object v9, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v9, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v9}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v9}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v13
 
@@ -4326,7 +4326,7 @@
     .line 489
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F32_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -4385,15 +4385,15 @@
     .local v12, "N":I
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v3}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v3
 
@@ -4407,21 +4407,21 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v16
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p6
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
@@ -4439,11 +4439,11 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p9
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v22
 
@@ -4495,7 +4495,7 @@
     .line 2417
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F32_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -4571,15 +4571,15 @@
     :goto_1
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v3}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v3
 
@@ -4593,21 +4593,21 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v16
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
@@ -4626,11 +4626,11 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p7
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v22
 
@@ -4711,7 +4711,7 @@
     .line 365
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F32_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -4754,15 +4754,15 @@
     .local v12, "N":I
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v3}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v3
 
@@ -4776,21 +4776,21 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p3
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v16
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
@@ -4808,11 +4808,11 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p7
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v22
 
@@ -4857,7 +4857,7 @@
     .line 1941
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F32_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -4898,15 +4898,15 @@
     .local v12, "N":I
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v3}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v3
 
@@ -4920,21 +4920,21 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p2
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v16
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
@@ -4944,11 +4944,11 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p6
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v22
 
@@ -4993,7 +4993,7 @@
     .line 1920
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F32_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -5034,15 +5034,15 @@
     .local v12, "N":I
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v3}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v3
 
@@ -5056,21 +5056,21 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p2
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v16
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
@@ -5080,11 +5080,11 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p6
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v22
 
@@ -5132,7 +5132,7 @@
     .line 1870
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F32_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -5171,15 +5171,15 @@
     :cond_0
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v3}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v3
 
@@ -5193,21 +5193,21 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v16
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
@@ -5225,11 +5225,11 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p8
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v22
 
@@ -5280,7 +5280,7 @@
     .line 3095
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v4}, Landroid/renderscript/Element;->F32_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -5299,15 +5299,15 @@
     .line 3096
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v5
 
@@ -5342,21 +5342,21 @@
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v7, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v7}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v7}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v7, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v7}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v7}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v20
 
@@ -5374,11 +5374,11 @@
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v7, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p7
 
-    invoke-virtual {v0, v7}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v7}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v24
 
@@ -5428,7 +5428,7 @@
     .line 1841
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F32_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -5454,15 +5454,15 @@
     .local v12, "N":I
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v3}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v3
 
@@ -5476,21 +5476,21 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p3
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v16
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
@@ -5508,11 +5508,11 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p7
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v22
 
@@ -5558,7 +5558,7 @@
     .line 1961
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v4}, Landroid/renderscript/Element;->F32_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -5580,15 +5580,15 @@
     .local v14, "N":I
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v5
 
@@ -5596,11 +5596,11 @@
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v7, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p3
 
-    invoke-virtual {v0, v7}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v7}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
@@ -5612,11 +5612,11 @@
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v7, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v7}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v7}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v24
 
@@ -5666,7 +5666,7 @@
     .line 2007
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F32_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -5692,15 +5692,15 @@
     .local v12, "N":I
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v3}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v3
 
@@ -5714,21 +5714,21 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p3
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v16
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
@@ -5738,11 +5738,11 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p7
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v22
 
@@ -5793,7 +5793,7 @@
     .line 3235
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v4}, Landroid/renderscript/Element;->F32_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -5833,15 +5833,15 @@
     :goto_0
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v5
 
@@ -5868,21 +5868,21 @@
     .line 3243
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v7, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v7}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v7}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v7, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v7}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v7}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v20
 
@@ -5890,11 +5890,11 @@
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v7, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p7
 
-    invoke-virtual {v0, v7}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v7}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v24
 
@@ -5959,7 +5959,7 @@
     .line 3157
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v4}, Landroid/renderscript/Element;->F32_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -5997,15 +5997,15 @@
     :goto_0
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v5
 
@@ -6022,11 +6022,11 @@
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v7, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v7}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v7}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
@@ -6036,11 +6036,11 @@
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v7, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p6
 
-    invoke-virtual {v0, v7}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v7}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v24
 
@@ -6106,7 +6106,7 @@
     .line 1902
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F32_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -6132,15 +6132,15 @@
     .local v12, "N":I
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v3}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v3
 
@@ -6154,21 +6154,21 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p3
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v16
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
@@ -6186,11 +6186,11 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p7
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v22
 
@@ -6236,7 +6236,7 @@
     .line 1987
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v4}, Landroid/renderscript/Element;->F32_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -6258,15 +6258,15 @@
     .local v14, "N":I
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v5
 
@@ -6274,11 +6274,11 @@
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v7, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p3
 
-    invoke-virtual {v0, v7}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v7}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
@@ -6290,11 +6290,11 @@
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v7, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v7}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v7}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v24
 
@@ -6344,7 +6344,7 @@
     .line 2035
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F32_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -6370,15 +6370,15 @@
     .local v12, "N":I
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v3}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v3
 
@@ -6392,21 +6392,21 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p3
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v16
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
@@ -6416,11 +6416,11 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p7
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v22
 
@@ -6503,7 +6503,7 @@
     :cond_0
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F32_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -6526,15 +6526,15 @@
     .line 2546
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v3}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v3
 
@@ -6564,21 +6564,21 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v16
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
@@ -6597,11 +6597,11 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p7
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v22
 
@@ -6653,7 +6653,7 @@
     .line 2777
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v4}, Landroid/renderscript/Element;->F32_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -6693,15 +6693,15 @@
     :goto_0
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v5
 
@@ -6727,21 +6727,21 @@
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v7, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v7}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v7}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v7, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v7}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v7}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v20
 
@@ -6759,11 +6759,11 @@
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v7, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p7
 
-    invoke-virtual {v0, v7}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v7}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v24
 
@@ -6826,7 +6826,7 @@
     .line 2645
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F32_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -6870,15 +6870,15 @@
     :goto_0
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v3}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v3
 
@@ -6900,11 +6900,11 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v16
 
@@ -6925,11 +6925,11 @@
     .line 2653
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p6
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v22
 
@@ -7003,7 +7003,7 @@
     :cond_0
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F32_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -7036,15 +7036,15 @@
     .local v12, "N":I
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v3}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v3
 
@@ -7054,21 +7054,21 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v16
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p6
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
@@ -7122,7 +7122,7 @@
     .line 1063
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F32_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -7168,15 +7168,15 @@
     :cond_0
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v3}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v3
 
@@ -7186,21 +7186,21 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v16
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p6
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
@@ -7253,7 +7253,7 @@
     .line 864
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F32_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -7279,15 +7279,15 @@
     .local v12, "N":I
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v3}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v3
 
@@ -7297,21 +7297,21 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v16
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
@@ -7364,7 +7364,7 @@
     .line 1179
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F32_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -7390,15 +7390,15 @@
     .local v12, "N":I
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v3}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v3
 
@@ -7408,21 +7408,21 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v16
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
@@ -7482,7 +7482,7 @@
     .line 2905
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v4}, Landroid/renderscript/Element;->F32_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -7501,15 +7501,15 @@
     .line 2906
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v5
 
@@ -7544,21 +7544,21 @@
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v7, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p6
 
-    invoke-virtual {v0, v7}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v7}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v7, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p7
 
-    invoke-virtual {v0, v7}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v7}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v20
 
@@ -7612,7 +7612,7 @@
     .line 642
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F32_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -7645,15 +7645,15 @@
     .local v12, "N":I
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v3}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v3
 
@@ -7663,21 +7663,21 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v16
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
@@ -7737,7 +7737,7 @@
     .line 3027
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v4}, Landroid/renderscript/Element;->F32_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -7756,15 +7756,15 @@
     .line 3028
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v5
 
@@ -7799,21 +7799,21 @@
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v7, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p6
 
-    invoke-virtual {v0, v7}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v7}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v7, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p7
 
-    invoke-virtual {v0, v7}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v7}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v20
 
@@ -7867,7 +7867,7 @@
     .line 951
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F32_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -7900,15 +7900,15 @@
     .local v12, "N":I
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v3}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v3
 
@@ -7918,21 +7918,21 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v16
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
@@ -7989,7 +7989,7 @@
     .line 454
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F64(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -8048,45 +8048,45 @@
     .local v12, "N":I
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v3}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v3
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p6
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v16
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p7
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p11
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v22
 
@@ -8142,7 +8142,7 @@
     .line 2381
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F64(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -8218,46 +8218,46 @@
     :goto_1
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v3}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v3
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v16
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p6
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
     .line 2396
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p9
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v22
 
@@ -8342,7 +8342,7 @@
     .line 343
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F64(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -8385,45 +8385,45 @@
     .local v12, "N":I
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v3}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v3
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v16
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p9
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v22
 
@@ -8492,7 +8492,7 @@
     .local v12, "N":I
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F64(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -8513,35 +8513,35 @@
     .line 1702
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v3}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v3
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p3
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v16
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
@@ -8549,11 +8549,11 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p7
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v22
 
@@ -8616,7 +8616,7 @@
     :cond_0
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F64(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -8642,45 +8642,45 @@
     .local v12, "N":I
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v3}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v3
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v16
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p6
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p10
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v22
 
@@ -8733,7 +8733,7 @@
     .line 1681
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F64(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -8759,45 +8759,45 @@
     .local v12, "N":I
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v3}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v3
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v16
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p9
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v22
 
@@ -8847,7 +8847,7 @@
     .line 1743
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v4}, Landroid/renderscript/Element;->F64(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -8869,35 +8869,35 @@
     .local v14, "N":I
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v5
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v7, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v7}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v7}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v7, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p6
 
-    invoke-virtual {v0, v7}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v7}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v20
 
@@ -8951,7 +8951,7 @@
     .line 1789
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F64(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -8977,35 +8977,35 @@
     .local v12, "N":I
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v3}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v3
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v16
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p6
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
@@ -9013,11 +9013,11 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p8
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v22
 
@@ -9102,7 +9102,7 @@
     :cond_0
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F64(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -9125,15 +9125,15 @@
     .line 2520
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v3}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v3
 
@@ -9155,32 +9155,32 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v16
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p6
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
     .line 2521
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p9
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v22
 
@@ -9234,7 +9234,7 @@
     .line 1621
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F64(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -9260,45 +9260,45 @@
     .local v12, "N":I
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v3}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v3
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v16
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p9
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v22
 
@@ -9348,7 +9348,7 @@
     .line 1718
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v4}, Landroid/renderscript/Element;->F64(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -9370,35 +9370,35 @@
     .local v14, "N":I
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v5
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v7, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v7}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v7}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v7, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p6
 
-    invoke-virtual {v0, v7}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v7}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v20
 
@@ -9452,7 +9452,7 @@
     .line 1762
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F64(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -9478,35 +9478,35 @@
     .local v12, "N":I
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v3}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v3
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v16
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p6
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
@@ -9514,11 +9514,11 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p8
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v22
 
@@ -9571,7 +9571,7 @@
     .line 2751
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v4}, Landroid/renderscript/Element;->F64(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -9611,15 +9611,15 @@
     :goto_0
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v5
 
@@ -9633,31 +9633,31 @@
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v7, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v7}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v7}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v7, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p6
 
-    invoke-virtual {v0, v7}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v7}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v20
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v7, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p9
 
-    invoke-virtual {v0, v7}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v7}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v24
 
@@ -9724,7 +9724,7 @@
     .line 2619
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F64(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -9768,15 +9768,15 @@
     :goto_0
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v3}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v3
 
@@ -9790,11 +9790,11 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v16
 
@@ -9802,11 +9802,11 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p8
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v22
 
@@ -9881,7 +9881,7 @@
     :cond_0
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F64(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -9914,15 +9914,15 @@
     .local v12, "N":I
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v3}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v3
 
@@ -9930,21 +9930,21 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v16
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p6
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
@@ -9996,7 +9996,7 @@
     .line 1032
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F64(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -10042,15 +10042,15 @@
     :cond_0
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v3}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v3
 
@@ -10058,21 +10058,21 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v16
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p6
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
@@ -10123,7 +10123,7 @@
     .line 838
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F64(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -10149,15 +10149,15 @@
     .local v12, "N":I
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v3}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v3
 
@@ -10165,21 +10165,21 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v16
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
@@ -10230,7 +10230,7 @@
     .line 1152
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F64(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -10256,15 +10256,15 @@
     .local v12, "N":I
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v3}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v3
 
@@ -10272,21 +10272,21 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v16
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
@@ -10344,7 +10344,7 @@
     .line 2882
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v4}, Landroid/renderscript/Element;->F64(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -10363,15 +10363,15 @@
     .line 2883
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v5
 
@@ -10394,21 +10394,21 @@
     .line 2884
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v7, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p7
 
-    invoke-virtual {v0, v7}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v7}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v7, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p8
 
-    invoke-virtual {v0, v7}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v7}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v20
 
@@ -10462,7 +10462,7 @@
     .line 623
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F64(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -10495,15 +10495,15 @@
     .local v12, "N":I
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v3}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v3
 
@@ -10511,21 +10511,21 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v16
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
@@ -10583,7 +10583,7 @@
     .line 3004
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v4}, Landroid/renderscript/Element;->F64(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -10602,15 +10602,15 @@
     .line 3005
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v5
 
@@ -10633,21 +10633,21 @@
     .line 3006
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v7, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p7
 
-    invoke-virtual {v0, v7}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v7}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v7, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p8
 
-    invoke-virtual {v0, v7}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v7}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v20
 
@@ -10701,7 +10701,7 @@
     .line 930
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F64(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -10734,15 +10734,15 @@
     .local v12, "N":I
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v3}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v3
 
@@ -10750,21 +10750,21 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v16
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
@@ -10819,7 +10819,7 @@
     .line 419
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F32(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -10878,45 +10878,45 @@
     .local v13, "N":I
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v4
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v16
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p6
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p9
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v21
 
@@ -10972,7 +10972,7 @@
     .line 2344
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F32(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -11048,46 +11048,46 @@
     :goto_1
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v4
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v16
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
     .line 2360
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p7
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v21
 
@@ -11172,7 +11172,7 @@
     .line 321
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F32(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -11215,45 +11215,45 @@
     .local v13, "N":I
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v4
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p3
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v16
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p7
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v21
 
@@ -11322,7 +11322,7 @@
     .local v13, "N":I
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F32(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -11343,45 +11343,45 @@
     .line 1514
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v4
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p2
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v16
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p6
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v21
 
@@ -11446,7 +11446,7 @@
     :cond_0
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F32(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -11472,45 +11472,45 @@
     .local v13, "N":I
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v4
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v16
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p8
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v21
 
@@ -11563,7 +11563,7 @@
     .line 1493
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F32(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -11589,45 +11589,45 @@
     .local v13, "N":I
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v4
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p3
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v16
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p7
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v21
 
@@ -11677,7 +11677,7 @@
     .line 1555
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v4}, Landroid/renderscript/Element;->F32(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -11699,35 +11699,35 @@
     .local v15, "N":I
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v4}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v4}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v6
 
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p3
 
-    invoke-virtual {v0, v4}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v4}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v4}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v4}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v20
 
@@ -11781,7 +11781,7 @@
     .line 1601
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F32(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -11807,35 +11807,35 @@
     .local v13, "N":I
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v4
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p3
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v16
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
@@ -11843,11 +11843,11 @@
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p7
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v21
 
@@ -11932,7 +11932,7 @@
     :cond_0
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F32(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -11955,15 +11955,15 @@
     .line 2494
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v4
 
@@ -11985,32 +11985,32 @@
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v16
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
     .line 2495
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p7
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v21
 
@@ -12064,7 +12064,7 @@
     .line 1433
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F32(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -12090,45 +12090,45 @@
     .local v13, "N":I
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v4
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p3
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v16
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p7
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v21
 
@@ -12178,7 +12178,7 @@
     .line 1530
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v4}, Landroid/renderscript/Element;->F32(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -12200,35 +12200,35 @@
     .local v15, "N":I
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v4}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v4}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v6
 
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p3
 
-    invoke-virtual {v0, v4}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v4}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v4}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v4}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v20
 
@@ -12282,7 +12282,7 @@
     .line 1574
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F32(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -12308,35 +12308,35 @@
     .local v13, "N":I
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v4
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p3
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v16
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
@@ -12344,11 +12344,11 @@
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p7
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v21
 
@@ -12401,7 +12401,7 @@
     .line 2725
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v4}, Landroid/renderscript/Element;->F32(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -12441,15 +12441,15 @@
     :goto_0
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v4}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v4}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v6
 
@@ -12463,31 +12463,31 @@
 
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v4}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v4}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v4}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v4}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v20
 
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p7
 
-    invoke-virtual {v0, v4}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v4}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v23
 
@@ -12554,7 +12554,7 @@
     .line 2592
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F32(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -12598,15 +12598,15 @@
     :goto_0
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v4
 
@@ -12620,11 +12620,11 @@
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v16
 
@@ -12632,11 +12632,11 @@
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p6
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v21
 
@@ -12711,7 +12711,7 @@
     :cond_0
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F32(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -12744,15 +12744,15 @@
     .local v13, "N":I
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v4
 
@@ -12760,21 +12760,21 @@
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v16
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p6
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
@@ -12826,7 +12826,7 @@
     .line 1001
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F32(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -12872,15 +12872,15 @@
     :cond_0
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v4
 
@@ -12888,21 +12888,21 @@
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v16
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p6
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
@@ -12953,7 +12953,7 @@
     .line 812
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F32(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -12979,15 +12979,15 @@
     .local v13, "N":I
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v4
 
@@ -12995,21 +12995,21 @@
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v16
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
@@ -13060,7 +13060,7 @@
     .line 1125
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F32(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -13086,15 +13086,15 @@
     .local v13, "N":I
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v4
 
@@ -13102,21 +13102,21 @@
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v16
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
@@ -13174,7 +13174,7 @@
     .line 2859
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v4}, Landroid/renderscript/Element;->F32(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -13193,15 +13193,15 @@
     .line 2860
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v4}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v4}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v6
 
@@ -13224,21 +13224,21 @@
     .line 2861
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p6
 
-    invoke-virtual {v0, v4}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v4}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p7
 
-    invoke-virtual {v0, v4}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v4}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v20
 
@@ -13292,7 +13292,7 @@
     .line 604
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F32(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -13325,15 +13325,15 @@
     .local v13, "N":I
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v4
 
@@ -13341,21 +13341,21 @@
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v16
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
@@ -13413,7 +13413,7 @@
     .line 2981
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v4}, Landroid/renderscript/Element;->F32(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -13432,15 +13432,15 @@
     .line 2982
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v4}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v4}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v6
 
@@ -13463,21 +13463,21 @@
     .line 2983
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p6
 
-    invoke-virtual {v0, v4}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v4}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p7
 
-    invoke-virtual {v0, v4}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v4}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v20
 
@@ -13531,7 +13531,7 @@
     .line 909
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F32(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -13564,15 +13564,15 @@
     .local v13, "N":I
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v4
 
@@ -13580,21 +13580,21 @@
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v16
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
@@ -13649,7 +13649,7 @@
     .line 524
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F64_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -13708,15 +13708,15 @@
     .local v12, "N":I
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v3}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v3
 
@@ -13732,21 +13732,21 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p6
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v20
 
@@ -13764,11 +13764,11 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p9
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v26
 
@@ -13820,7 +13820,7 @@
     .line 2453
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F64_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -13896,15 +13896,15 @@
     :goto_1
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v3}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v3
 
@@ -13920,21 +13920,21 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v20
 
@@ -13953,11 +13953,11 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p7
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v26
 
@@ -14038,7 +14038,7 @@
     .line 387
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F64_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -14081,15 +14081,15 @@
     .local v12, "N":I
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v3}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v3
 
@@ -14105,21 +14105,21 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p3
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v20
 
@@ -14137,11 +14137,11 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p7
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v26
 
@@ -14186,7 +14186,7 @@
     .line 2156
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F64_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -14227,15 +14227,15 @@
     .local v12, "N":I
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v3}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v3
 
@@ -14251,21 +14251,21 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p2
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v20
 
@@ -14275,11 +14275,11 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p6
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v26
 
@@ -14324,7 +14324,7 @@
     .line 2135
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F64_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -14365,15 +14365,15 @@
     .local v12, "N":I
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v3}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v3
 
@@ -14389,21 +14389,21 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p2
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v20
 
@@ -14413,11 +14413,11 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p6
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v26
 
@@ -14465,7 +14465,7 @@
     .line 2085
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F64_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -14504,15 +14504,15 @@
     :cond_0
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v3}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v3
 
@@ -14528,21 +14528,21 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v20
 
@@ -14560,11 +14560,11 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p8
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v26
 
@@ -14615,7 +14615,7 @@
     .line 3116
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v4}, Landroid/renderscript/Element;->F64_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -14634,15 +14634,15 @@
     .line 3117
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v5
 
@@ -14677,21 +14677,21 @@
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v7, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v7}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v7}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v20
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v7, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v7}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v7}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v22
 
@@ -14709,11 +14709,11 @@
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v7, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p7
 
-    invoke-virtual {v0, v7}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v7}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v28
 
@@ -14763,7 +14763,7 @@
     .line 2056
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F64_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -14789,15 +14789,15 @@
     .local v12, "N":I
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v3}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v3
 
@@ -14813,21 +14813,21 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p3
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v20
 
@@ -14845,11 +14845,11 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p7
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v26
 
@@ -14895,7 +14895,7 @@
     .line 2176
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v4}, Landroid/renderscript/Element;->F64_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -14917,15 +14917,15 @@
     .local v14, "N":I
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v5
 
@@ -14933,11 +14933,11 @@
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v7, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v7}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v7}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v20
 
@@ -14949,11 +14949,11 @@
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v7, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p6
 
-    invoke-virtual {v0, v7}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v7}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v28
 
@@ -15003,7 +15003,7 @@
     .line 2222
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F64_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -15029,15 +15029,15 @@
     .local v12, "N":I
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v3}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v3
 
@@ -15053,21 +15053,21 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p3
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v20
 
@@ -15077,11 +15077,11 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p7
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v26
 
@@ -15132,7 +15132,7 @@
     .line 3262
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v4}, Landroid/renderscript/Element;->F64_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -15172,15 +15172,15 @@
     :goto_0
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v5
 
@@ -15207,21 +15207,21 @@
     .line 3270
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v7, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v7}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v7}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v20
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v7, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v7}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v7}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v22
 
@@ -15229,11 +15229,11 @@
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v7, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p8
 
-    invoke-virtual {v0, v7}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v7}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v28
 
@@ -15298,7 +15298,7 @@
     .line 3183
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v4}, Landroid/renderscript/Element;->F64_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -15336,15 +15336,15 @@
     :goto_0
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v5
 
@@ -15361,11 +15361,11 @@
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v7, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v7}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v7}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v20
 
@@ -15375,11 +15375,11 @@
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v7, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p8
 
-    invoke-virtual {v0, v7}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v7}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v28
 
@@ -15445,7 +15445,7 @@
     .line 2117
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F64_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -15471,15 +15471,15 @@
     .local v12, "N":I
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v3}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v3
 
@@ -15495,21 +15495,21 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p3
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v20
 
@@ -15527,11 +15527,11 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p7
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v26
 
@@ -15577,7 +15577,7 @@
     .line 2202
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v4}, Landroid/renderscript/Element;->F64_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -15599,15 +15599,15 @@
     .local v14, "N":I
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v5
 
@@ -15615,11 +15615,11 @@
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v7, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v7}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v7}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v20
 
@@ -15631,11 +15631,11 @@
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v7, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p6
 
-    invoke-virtual {v0, v7}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v7}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v28
 
@@ -15685,7 +15685,7 @@
     .line 2250
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F64_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -15711,15 +15711,15 @@
     .local v12, "N":I
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v3}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v3
 
@@ -15735,21 +15735,21 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p3
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v20
 
@@ -15759,11 +15759,11 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p7
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v26
 
@@ -15846,7 +15846,7 @@
     :cond_0
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F64_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -15869,15 +15869,15 @@
     .line 2572
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v3}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v3
 
@@ -15909,21 +15909,21 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v20
 
@@ -15942,11 +15942,11 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p7
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v26
 
@@ -15998,7 +15998,7 @@
     .line 2803
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v4}, Landroid/renderscript/Element;->F64_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -16038,15 +16038,15 @@
     :goto_0
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v5
 
@@ -16072,21 +16072,21 @@
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v7, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v7}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v7}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v20
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v7, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v7}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v7}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v22
 
@@ -16104,11 +16104,11 @@
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v7, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p7
 
-    invoke-virtual {v0, v7}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v7}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v28
 
@@ -16171,7 +16171,7 @@
     .line 2672
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F64_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -16215,15 +16215,15 @@
     :goto_0
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v3}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v3
 
@@ -16247,11 +16247,11 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
@@ -16272,11 +16272,11 @@
     .line 2680
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p6
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v26
 
@@ -16350,7 +16350,7 @@
     :cond_0
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F64_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -16383,15 +16383,15 @@
     .local v12, "N":I
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v3}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v3
 
@@ -16401,21 +16401,21 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p6
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v20
 
@@ -16469,7 +16469,7 @@
     .line 1094
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F64_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -16515,15 +16515,15 @@
     :cond_0
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v3}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v3
 
@@ -16533,21 +16533,21 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p6
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v20
 
@@ -16600,7 +16600,7 @@
     .line 890
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F64_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -16626,15 +16626,15 @@
     .local v12, "N":I
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v3}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v3
 
@@ -16644,21 +16644,21 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v20
 
@@ -16711,7 +16711,7 @@
     .line 1206
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F64_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -16737,15 +16737,15 @@
     .local v12, "N":I
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v3}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v3
 
@@ -16755,21 +16755,21 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v20
 
@@ -16829,7 +16829,7 @@
     .line 2928
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v4}, Landroid/renderscript/Element;->F64_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -16848,15 +16848,15 @@
     .line 2929
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v5
 
@@ -16891,21 +16891,21 @@
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v7, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p6
 
-    invoke-virtual {v0, v7}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v7}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v20
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v7, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p7
 
-    invoke-virtual {v0, v7}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v7}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v22
 
@@ -16959,7 +16959,7 @@
     .line 661
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F64_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -16992,15 +16992,15 @@
     .local v12, "N":I
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v3}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v3
 
@@ -17010,21 +17010,21 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v20
 
@@ -17084,7 +17084,7 @@
     .line 3050
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v4}, Landroid/renderscript/Element;->F64_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -17103,15 +17103,15 @@
     .line 3051
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v4, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v5
 
@@ -17146,21 +17146,21 @@
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v7, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p6
 
-    invoke-virtual {v0, v7}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v7}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v20
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v7, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p7
 
-    invoke-virtual {v0, v7}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v7}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v22
 
@@ -17214,7 +17214,7 @@
     .line 972
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     invoke-static {v2}, Landroid/renderscript/Element;->F64_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -17247,15 +17247,15 @@
     .local v12, "N":I
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v2, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v3, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/renderscript/ScriptIntrinsicBLAS;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v3}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v3
 
@@ -17265,21 +17265,21 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p4
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v18
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/renderscript/ScriptIntrinsicBLAS;->mRS:Landroid/renderscript/RenderScript;
+    iget-object v5, v0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
     move-object/from16 v0, p5
 
-    invoke-virtual {v0, v5}, Landroid/renderscript/Allocation;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v5}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v20
 

@@ -83,7 +83,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/widget/TextView;->getContext()Landroid/content/Context;
+    invoke-virtual {v0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -285,7 +285,7 @@
 
     .line 4897
     .local v0, "anotherHandleHoriz":F
-    iget v7, p0, Landroid/widget/Editor$SelectionHandleView;->mPreviousOffset:I
+    iget v7, p0, Landroid/widget/Editor$HandleView;->mPreviousOffset:I
 
     invoke-virtual {p0, v5, v7}, Landroid/widget/Editor$SelectionHandleView;->getHorizontal(Landroid/text/Layout;I)F
 
@@ -469,7 +469,7 @@
 
     iget-object v4, p0, Landroid/widget/Editor$SelectionHandleView;->mTextViewLocation:[I
 
-    invoke-virtual {v3, v4}, Landroid/widget/TextView;->getLocationOnScreen([I)V
+    invoke-virtual {v3, v4}, Landroid/view/View;->getLocationOnScreen([I)V
 
     .line 4924
     invoke-direct {p0}, Landroid/widget/Editor$SelectionHandleView;->isStartHandle()Z
@@ -489,7 +489,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v4}, Landroid/widget/TextView;->getWidth()I
+    invoke-virtual {v4}, Landroid/view/View;->getWidth()I
 
     move-result v4
 
@@ -502,7 +502,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v4}, Landroid/widget/TextView;->getPaddingRight()I
+    invoke-virtual {v4}, Landroid/view/View;->getPaddingRight()I
 
     move-result v4
 
@@ -552,7 +552,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v4}, Landroid/widget/TextView;->getPaddingLeft()I
+    invoke-virtual {v4}, Landroid/view/View;->getPaddingLeft()I
 
     move-result v4
 
@@ -1018,7 +1018,7 @@
     :cond_0
     move-object/from16 v0, p0
 
-    iget v0, v0, Landroid/widget/Editor$SelectionHandleView;->mPreviousLineTouched:I
+    iget v0, v0, Landroid/widget/Editor$HandleView;->mPreviousLineTouched:I
 
     move/from16 v24, v0
 
@@ -1053,7 +1053,7 @@
 
     move-object/from16 v1, p0
 
-    iput v0, v1, Landroid/widget/Editor$SelectionHandleView;->mPreviousLineTouched:I
+    iput v0, v1, Landroid/widget/Editor$HandleView;->mPreviousLineTouched:I
 
     .line 4710
     :cond_1
@@ -1092,7 +1092,7 @@
 
     move-object/from16 v0, p0
 
-    iget v0, v0, Landroid/widget/Editor$SelectionHandleView;->mPreviousLineTouched:I
+    iget v0, v0, Landroid/widget/Editor$HandleView;->mPreviousLineTouched:I
 
     move/from16 v25, v0
 
@@ -1345,7 +1345,7 @@
     .line 4759
     move-object/from16 v0, p0
 
-    iget v0, v0, Landroid/widget/Editor$SelectionHandleView;->mPreviousLineTouched:I
+    iget v0, v0, Landroid/widget/Editor$HandleView;->mPreviousLineTouched:I
 
     move/from16 v24, v0
 
@@ -1425,7 +1425,7 @@
 
     move-result-object v24
 
-    invoke-virtual/range {v24 .. v24}, Landroid/widget/TextView;->getScrollX()I
+    invoke-virtual/range {v24 .. v24}, Landroid/view/View;->getScrollX()I
 
     move-result v24
 
@@ -1465,7 +1465,7 @@
     .line 4782
     move-object/from16 v0, p0
 
-    iget v0, v0, Landroid/widget/Editor$SelectionHandleView;->mPreviousOffset:I
+    iget v0, v0, Landroid/widget/Editor$HandleView;->mPreviousOffset:I
 
     move/from16 v24, v0
 
@@ -1528,7 +1528,7 @@
     :cond_e
     move-object/from16 v0, p0
 
-    iget v0, v0, Landroid/widget/Editor$SelectionHandleView;->mPreviousLineTouched:I
+    iget v0, v0, Landroid/widget/Editor$HandleView;->mPreviousLineTouched:I
 
     move/from16 v24, v0
 
@@ -1605,7 +1605,7 @@
 
     move/from16 v1, v24
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->canScrollHorizontally(I)Z
+    invoke-virtual {v0, v1}, Landroid/view/View;->canScrollHorizontally(I)Z
 
     move-result v24
 
@@ -1646,7 +1646,7 @@
 
     move-object/from16 v0, p0
 
-    iget v0, v0, Landroid/widget/Editor$SelectionHandleView;->mPrevLine:I
+    iget v0, v0, Landroid/widget/Editor$HandleView;->mPrevLine:I
 
     move/from16 v24, v0
 
@@ -1731,7 +1731,7 @@
 
     move-object/from16 v0, p0
 
-    iget v0, v0, Landroid/widget/Editor$SelectionHandleView;->mPrevLine:I
+    iget v0, v0, Landroid/widget/Editor$HandleView;->mPrevLine:I
 
     move/from16 v24, v0
 
@@ -1807,7 +1807,7 @@
     .line 4862
     move-object/from16 v0, p0
 
-    iput v7, v0, Landroid/widget/Editor$SelectionHandleView;->mPreviousLineTouched:I
+    iput v7, v0, Landroid/widget/Editor$HandleView;->mPreviousLineTouched:I
 
     .line 4863
     move-object/from16 v0, p0
@@ -1851,7 +1851,7 @@
     :cond_1f
     move-object/from16 v0, p0
 
-    iget v0, v0, Landroid/widget/Editor$SelectionHandleView;->mPreviousOffset:I
+    iget v0, v0, Landroid/widget/Editor$HandleView;->mPreviousOffset:I
 
     move/from16 v24, v0
 
@@ -1874,7 +1874,7 @@
     :cond_21
     move-object/from16 v0, p0
 
-    iget v0, v0, Landroid/widget/Editor$SelectionHandleView;->mPrevLine:I
+    iget v0, v0, Landroid/widget/Editor$HandleView;->mPrevLine:I
 
     move/from16 v24, v0
 
@@ -1927,7 +1927,7 @@
 
     move-object/from16 v0, p0
 
-    iget v0, v0, Landroid/widget/Editor$SelectionHandleView;->mPrevLine:I
+    iget v0, v0, Landroid/widget/Editor$HandleView;->mPrevLine:I
 
     move/from16 v24, v0
 
@@ -1946,7 +1946,7 @@
     :cond_28
     move-object/from16 v0, p0
 
-    iget v14, v0, Landroid/widget/Editor$SelectionHandleView;->mPreviousOffset:I
+    iget v14, v0, Landroid/widget/Editor$HandleView;->mPreviousOffset:I
 
     goto/16 :goto_e
 
@@ -2004,7 +2004,7 @@
     .line 4833
     move-object/from16 v0, p0
 
-    iget v0, v0, Landroid/widget/Editor$SelectionHandleView;->mPreviousOffset:I
+    iget v0, v0, Landroid/widget/Editor$HandleView;->mPreviousOffset:I
 
     move/from16 v24, v0
 
@@ -2014,7 +2014,7 @@
 
     move-object/from16 v0, p0
 
-    iget v0, v0, Landroid/widget/Editor$SelectionHandleView;->mPrevLine:I
+    iget v0, v0, Landroid/widget/Editor$HandleView;->mPrevLine:I
 
     move/from16 v24, v0
 
@@ -2033,7 +2033,7 @@
     .line 4837
     move-object/from16 v0, p0
 
-    iget v0, v0, Landroid/widget/Editor$SelectionHandleView;->mPrevLine:I
+    iget v0, v0, Landroid/widget/Editor$HandleView;->mPrevLine:I
 
     move/from16 v24, v0
 
@@ -2115,7 +2115,7 @@
     :cond_2f
     move-object/from16 v0, p0
 
-    iget v0, v0, Landroid/widget/Editor$SelectionHandleView;->mPreviousOffset:I
+    iget v0, v0, Landroid/widget/Editor$HandleView;->mPreviousOffset:I
 
     move/from16 v24, v0
 
@@ -2125,7 +2125,7 @@
 
     move-object/from16 v0, p0
 
-    iget v0, v0, Landroid/widget/Editor$SelectionHandleView;->mPrevLine:I
+    iget v0, v0, Landroid/widget/Editor$HandleView;->mPrevLine:I
 
     move/from16 v24, v0
 
@@ -2188,7 +2188,7 @@
 
     move-object/from16 v0, p0
 
-    iget v0, v0, Landroid/widget/Editor$SelectionHandleView;->mPreviousOffset:I
+    iget v0, v0, Landroid/widget/Editor$HandleView;->mPreviousOffset:I
 
     move/from16 v24, v0
 
@@ -2219,7 +2219,7 @@
     .line 4857
     move-object/from16 v0, p0
 
-    iget v0, v0, Landroid/widget/Editor$SelectionHandleView;->mPreviousOffset:I
+    iget v0, v0, Landroid/widget/Editor$HandleView;->mPreviousOffset:I
 
     move/from16 v25, v0
 
@@ -2252,7 +2252,7 @@
 
     move-object/from16 v0, p0
 
-    iget v0, v0, Landroid/widget/Editor$SelectionHandleView;->mPreviousOffset:I
+    iget v0, v0, Landroid/widget/Editor$HandleView;->mPreviousOffset:I
 
     move/from16 v24, v0
 
@@ -2304,7 +2304,7 @@
 
     .line 4690
     :goto_0
-    invoke-virtual {p0}, Landroid/widget/Editor$SelectionHandleView;->updateDrawable()V
+    invoke-virtual {p0}, Landroid/widget/Editor$HandleView;->updateDrawable()V
 
     .line 4691
     iget-object v0, p0, Landroid/widget/Editor$SelectionHandleView;->this$0:Landroid/widget/Editor;

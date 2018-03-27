@@ -63,7 +63,7 @@
 
     .line 733
     .local v0, "commitCallback":Ljava/lang/Runnable;
-    invoke-virtual {p1}, Lcom/android/internal/widget/NumericTextView;->isFocused()Z
+    invoke-virtual {p1}, Landroid/view/View;->isFocused()Z
 
     move-result v2
 
@@ -77,7 +77,7 @@
 
     .line 741
     :goto_0
-    invoke-virtual {p1, v0}, Lcom/android/internal/widget/NumericTextView;->removeCallbacks(Ljava/lang/Runnable;)Z
+    invoke-virtual {p1, v0}, Landroid/view/View;->removeCallbacks(Ljava/lang/Runnable;)Z
 
     .line 743
     if-eqz p3, :cond_0
@@ -143,7 +143,7 @@
     :cond_4
     const-wide/16 v2, 0x7d0
 
-    invoke-virtual {p1, v0, v2, v3}, Lcom/android/internal/widget/NumericTextView;->postDelayed(Ljava/lang/Runnable;J)Z
+    invoke-virtual {p1, v0, v2, v3}, Landroid/view/View;->postDelayed(Ljava/lang/Runnable;J)Z
 
     goto :goto_1
 .end method

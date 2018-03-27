@@ -28,7 +28,7 @@
 
 .field static final TRANSACTION_notifyParticipantStatusInfo_10:I = 0xb
 
-.field static final TRANSACTION_notifyRefreshViceInfo_9:I = 0xa
+.field static final TRANSACTION_notifyRefreshViceInfo:I = 0xa
 
 .field static final TRANSACTION_notifySsacStatus_8:I = 0x9
 
@@ -44,9 +44,9 @@
 
 .field static final TRANSACTION_onSetCallForwardUncondTimer_0:I = 0x1
 
-.field static final TRANSACTION_onSetHandoverConfig:I = 0xe
+.field static final TRANSACTION_onSetHandoverConfig_13:I = 0xe
 
-.field static final TRANSACTION_onUTReqFailed_2:I = 0x3
+.field static final TRANSACTION_onUTReqFailed:I = 0x3
 
 .field static final TRANSACTION_onVoltePreferenceQueried_12:I = 0xd
 
@@ -68,7 +68,7 @@
     .line 20
     const-string/jumbo v0, "org.codeaurora.ims.internal.IQtiImsExtListener"
 
-    invoke-virtual {p0, p0, v0}, Lorg/codeaurora/ims/internal/IQtiImsExtListener$Stub;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
+    invoke-virtual {p0, p0, v0}, Landroid/os/Binder;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
 
     .line 18
     return-void

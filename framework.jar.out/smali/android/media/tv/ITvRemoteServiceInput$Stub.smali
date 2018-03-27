@@ -32,9 +32,9 @@
 
 .field static final TRANSACTION_openInputBridge:I = 0x1
 
-.field static final TRANSACTION_sendKeyDown_4:I = 0x5
+.field static final TRANSACTION_sendKeyDown:I = 0x5
 
-.field static final TRANSACTION_sendKeyUp_5:I = 0x6
+.field static final TRANSACTION_sendKeyUp:I = 0x6
 
 .field static final TRANSACTION_sendPointerDown:I = 0x7
 
@@ -56,7 +56,7 @@
     .line 18
     const-string/jumbo v0, "android.media.tv.ITvRemoteServiceInput"
 
-    invoke-virtual {p0, p0, v0}, Landroid/media/tv/ITvRemoteServiceInput$Stub;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
+    invoke-virtual {p0, p0, v0}, Landroid/os/Binder;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
 
     .line 16
     return-void

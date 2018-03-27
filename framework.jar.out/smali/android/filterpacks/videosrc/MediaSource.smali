@@ -1043,7 +1043,7 @@
     if-eqz v0, :cond_3
 
     .line 381
-    invoke-virtual {p0}, Landroid/filterpacks/videosrc/MediaSource;->isOpen()Z
+    invoke-virtual {p0}, Landroid/filterfw/core/Filter;->isOpen()Z
 
     move-result v0
 
@@ -1087,7 +1087,7 @@
     if-eqz v0, :cond_5
 
     .line 388
-    invoke-virtual {p0}, Landroid/filterpacks/videosrc/MediaSource;->isOpen()Z
+    invoke-virtual {p0}, Landroid/filterfw/core/Filter;->isOpen()Z
 
     move-result v0
 
@@ -1128,7 +1128,7 @@
     if-eqz v0, :cond_6
 
     .line 395
-    invoke-virtual {p0}, Landroid/filterpacks/videosrc/MediaSource;->isOpen()Z
+    invoke-virtual {p0}, Landroid/filterfw/core/Filter;->isOpen()Z
 
     move-result v0
 
@@ -1154,7 +1154,7 @@
     if-eqz v0, :cond_9
 
     .line 399
-    invoke-virtual {p0}, Landroid/filterpacks/videosrc/MediaSource;->isOpen()Z
+    invoke-virtual {p0}, Landroid/filterfw/core/Filter;->isOpen()Z
 
     move-result v0
 
@@ -1210,7 +1210,7 @@
     if-eqz v0, :cond_a
 
     .line 408
-    invoke-virtual {p0}, Landroid/filterpacks/videosrc/MediaSource;->isOpen()Z
+    invoke-virtual {p0}, Landroid/filterfw/core/Filter;->isOpen()Z
 
     move-result v0
 
@@ -1410,7 +1410,7 @@
 
     .line 422
     :try_start_0
-    invoke-virtual {p0}, Landroid/filterpacks/videosrc/MediaSource;->isOpen()Z
+    invoke-virtual {p0}, Landroid/filterfw/core/Filter;->isOpen()Z
 
     move-result v0
 
@@ -1559,7 +1559,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/filterpacks/videosrc/MediaSource;->closeOutputPort(Ljava/lang/String;)V
+    invoke-virtual {v0, v3}, Landroid/filterfw/core/Filter;->closeOutputPort(Ljava/lang/String;)V
 
     .line 231
     return-void
@@ -1920,7 +1920,7 @@
 
     iget-object v5, v0, Landroid/filterpacks/videosrc/MediaSource;->mMediaFrame:Landroid/filterfw/core/GLFrame;
 
-    invoke-virtual {v3, v5, v15}, Landroid/filterfw/core/ShaderProgram;->process(Landroid/filterfw/core/Frame;Landroid/filterfw/core/Frame;)V
+    invoke-virtual {v3, v5, v15}, Landroid/filterfw/core/Program;->process(Landroid/filterfw/core/Frame;Landroid/filterfw/core/Frame;)V
 
     .line 335
     move-object/from16 v0, p0
@@ -1986,7 +1986,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3, v15}, Landroid/filterpacks/videosrc/MediaSource;->pushOutput(Ljava/lang/String;Landroid/filterfw/core/Frame;)V
+    invoke-virtual {v0, v3, v15}, Landroid/filterfw/core/Filter;->pushOutput(Ljava/lang/String;Landroid/filterfw/core/Frame;)V
 
     .line 340
     invoke-virtual {v15}, Landroid/filterfw/core/Frame;->release()Landroid/filterfw/core/Frame;
@@ -2011,7 +2011,7 @@
     :try_start_0
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v6, v7}, Landroid/filterpacks/videosrc/MediaSource;->wait(J)V
+    invoke-virtual {v0, v6, v7}, Ljava/lang/Object;->wait(J)V
     :try_end_0
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -2028,7 +2028,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/filterpacks/videosrc/MediaSource;->closeOutputPort(Ljava/lang/String;)V
+    invoke-virtual {v0, v3}, Landroid/filterfw/core/Filter;->closeOutputPort(Ljava/lang/String;)V
 
     .line 246
     return-void
@@ -2122,7 +2122,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/filterpacks/videosrc/MediaSource;->closeOutputPort(Ljava/lang/String;)V
+    invoke-virtual {v0, v3}, Landroid/filterfw/core/Filter;->closeOutputPort(Ljava/lang/String;)V
 
     .line 270
     return-void
@@ -2144,7 +2144,7 @@
     :try_start_1
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v6, v7}, Landroid/filterpacks/videosrc/MediaSource;->wait(J)V
+    invoke-virtual {v0, v6, v7}, Ljava/lang/Object;->wait(J)V
     :try_end_1
     .catch Ljava/lang/InterruptedException; {:try_start_1 .. :try_end_1} :catch_1
 
@@ -2294,7 +2294,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0, v0, v1}, Landroid/filterpacks/videosrc/MediaSource;->addOutputPort(Ljava/lang/String;Landroid/filterfw/core/FrameFormat;)V
+    invoke-virtual {p0, v0, v1}, Landroid/filterfw/core/Filter;->addOutputPort(Ljava/lang/String;Landroid/filterfw/core/FrameFormat;)V
 
     .line 172
     return-void
@@ -2313,7 +2313,7 @@
     .line 367
     iget-object v0, p0, Landroid/filterpacks/videosrc/MediaSource;->mMediaFrame:Landroid/filterfw/core/GLFrame;
 
-    invoke-virtual {v0}, Landroid/filterfw/core/GLFrame;->release()Landroid/filterfw/core/Frame;
+    invoke-virtual {v0}, Landroid/filterfw/core/Frame;->release()Landroid/filterfw/core/Frame;
 
     .line 365
     :cond_0

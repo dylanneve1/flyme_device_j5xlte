@@ -26,7 +26,7 @@
 # static fields
 .field private static final DESCRIPTOR:Ljava/lang/String; = "android.bluetooth.IBluetoothA2dp"
 
-.field static final TRANSACTION_adjustAvrcpAbsoluteVolume_8:I = 0x9
+.field static final TRANSACTION_adjustAvrcpAbsoluteVolume:I = 0x9
 
 .field static final TRANSACTION_connect_0:I = 0x1
 
@@ -38,11 +38,11 @@
 
 .field static final TRANSACTION_getDevicesMatchingConnectionStates:I = 0x4
 
-.field static final TRANSACTION_getPriority_6:I = 0x7
+.field static final TRANSACTION_getPriority:I = 0x7
 
 .field static final TRANSACTION_isA2dpPlaying:I = 0xb
 
-.field static final TRANSACTION_isAvrcpAbsoluteVolumeSupported_7:I = 0x8
+.field static final TRANSACTION_isAvrcpAbsoluteVolumeSupported:I = 0x8
 
 .field static final TRANSACTION_setAvrcpAbsoluteVolume:I = 0xa
 

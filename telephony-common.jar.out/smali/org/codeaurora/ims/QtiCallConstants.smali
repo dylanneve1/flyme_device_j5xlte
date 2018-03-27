@@ -36,6 +36,8 @@
 
 .field public static final CAPABILITY_SUPPORTS_DOWNGRADE_TO_VOICE_REMOTE:I = 0x1000000
 
+.field public static final CAUSE_CODE_SESSION_MODIFY_DOWNGRADE_GENERIC:I = 0xc8
+
 .field public static final CAUSE_CODE_SESSION_MODIFY_DOWNGRADE_GENERIC_ERROR:I = 0xb
 
 .field public static final CAUSE_CODE_SESSION_MODIFY_DOWNGRADE_LIPSYNC:I = 0xa
@@ -59,6 +61,8 @@
 .field public static final CAUSE_CODE_SESSION_MODIFY_UPGRADE_REMOTE_REQ:I = 0x2
 
 .field public static final CAUSE_CODE_UNSPECIFIED:I = 0x0
+
+.field public static final CONF_SUPPORT_IND_EXTRA_KEY:Ljava/lang/String; = "ConfSupportInd"
 
 .field public static final DISCONNECT_CAUSE_UNSPECIFIED:I = -0x1
 

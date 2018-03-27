@@ -553,7 +553,7 @@
 
     .line 486
     .end local v2    # "jsonWriter":Landroid/util/JsonWriter;
-    invoke-virtual {v5}, Ljava/io/Writer;->toString()Ljava/lang/String;
+    invoke-virtual {v5}, Ljava/io/StringWriter;->toString()Ljava/lang/String;
     :try_end_2
     .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_2

@@ -315,7 +315,7 @@
 
     .line 446
     :cond_1
-    invoke-virtual {p0}, Landroid/printservice/PrintJob;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v1
 

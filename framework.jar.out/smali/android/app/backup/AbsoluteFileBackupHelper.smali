@@ -72,7 +72,7 @@
     .local v1, "key":Ljava/lang/String;
     iget-object v2, p0, Landroid/app/backup/AbsoluteFileBackupHelper;->mFiles:[Ljava/lang/String;
 
-    invoke-virtual {p0, v1, v2}, Landroid/app/backup/AbsoluteFileBackupHelper;->isKeyInList(Ljava/lang/String;[Ljava/lang/String;)Z
+    invoke-virtual {p0, v1, v2}, Landroid/app/backup/FileBackupHelperBase;->isKeyInList(Ljava/lang/String;[Ljava/lang/String;)Z
 
     move-result v2
 
@@ -85,7 +85,7 @@
 
     .line 71
     .local v0, "f":Ljava/io/File;
-    invoke-virtual {p0, v0, p1}, Landroid/app/backup/AbsoluteFileBackupHelper;->writeFile(Ljava/io/File;Landroid/app/backup/BackupDataInputStream;)Z
+    invoke-virtual {p0, v0, p1}, Landroid/app/backup/FileBackupHelperBase;->writeFile(Ljava/io/File;Landroid/app/backup/BackupDataInputStream;)Z
 
     .line 66
     .end local v0    # "f":Ljava/io/File;

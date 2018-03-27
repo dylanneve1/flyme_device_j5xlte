@@ -600,7 +600,7 @@
     if-eqz p1, :cond_1
 
     .line 454
-    invoke-virtual {p1}, Landroid/os/Bundle;->keySet()Ljava/util/Set;
+    invoke-virtual {p1}, Landroid/os/BaseBundle;->keySet()Ljava/util/Set;
 
     move-result-object v5
 
@@ -1409,11 +1409,11 @@
     if-eq v0, v6, :cond_8
 
     .line 309
-    iget-object v6, v0, Landroid/content/pm/ActivityInfo;->name:Ljava/lang/String;
+    iget-object v6, v0, Landroid/content/pm/PackageItemInfo;->name:Ljava/lang/String;
 
     iget-object v7, v4, Landroid/app/LocalActivityManager$LocalActivityRecord;->activityInfo:Landroid/content/pm/ActivityInfo;
 
-    iget-object v7, v7, Landroid/content/pm/ActivityInfo;->name:Ljava/lang/String;
+    iget-object v7, v7, Landroid/content/pm/PackageItemInfo;->name:Ljava/lang/String;
 
     invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -1422,11 +1422,11 @@
     if-eqz v6, :cond_d
 
     .line 310
-    iget-object v6, v0, Landroid/content/pm/ActivityInfo;->packageName:Ljava/lang/String;
+    iget-object v6, v0, Landroid/content/pm/PackageItemInfo;->packageName:Ljava/lang/String;
 
     iget-object v7, v4, Landroid/app/LocalActivityManager$LocalActivityRecord;->activityInfo:Landroid/content/pm/ActivityInfo;
 
-    iget-object v7, v7, Landroid/content/pm/ActivityInfo;->packageName:Ljava/lang/String;
+    iget-object v7, v7, Landroid/content/pm/PackageItemInfo;->packageName:Ljava/lang/String;
 
     invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -1464,7 +1464,7 @@
 
     iget-object v7, p0, Landroid/app/LocalActivityManager;->mParent:Landroid/app/Activity;
 
-    invoke-virtual {v7}, Landroid/app/Activity;->getPackageName()Ljava/lang/String;
+    invoke-virtual {v7}, Landroid/content/ContextWrapper;->getPackageName()Ljava/lang/String;
 
     move-result-object v7
 

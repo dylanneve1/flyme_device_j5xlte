@@ -193,7 +193,7 @@
     :goto_2
     if-nez v1, :cond_0
 
-    invoke-virtual {v3}, Landroid/widget/TextView;->isActivated()Z
+    invoke-virtual {v3}, Landroid/view/View;->isActivated()Z
 
     move-result v5
 
@@ -212,7 +212,7 @@
     invoke-virtual {v3, v2}, Landroid/widget/TextView;->setTextAppearance(I)V
 
     .line 193
-    invoke-virtual {v3, v0}, Landroid/widget/TextView;->setActivated(Z)V
+    invoke-virtual {v3, v0}, Landroid/view/View;->setActivated(Z)V
 
     .line 196
     .end local v2    # "textAppearanceResId":I
@@ -357,7 +357,7 @@
     iput v0, p0, Landroid/widget/YearPickerView$YearAdapter;->mCount:I
 
     .line 131
-    invoke-virtual {p0}, Landroid/widget/YearPickerView$YearAdapter;->notifyDataSetInvalidated()V
+    invoke-virtual {p0}, Landroid/widget/BaseAdapter;->notifyDataSetInvalidated()V
 
     .line 124
     :cond_1
@@ -378,7 +378,7 @@
     iput p1, p0, Landroid/widget/YearPickerView$YearAdapter;->mActivatedYear:I
 
     .line 138
-    invoke-virtual {p0}, Landroid/widget/YearPickerView$YearAdapter;->notifyDataSetChanged()V
+    invoke-virtual {p0}, Landroid/widget/BaseAdapter;->notifyDataSetChanged()V
 
     .line 139
     const/4 v0, 0x1

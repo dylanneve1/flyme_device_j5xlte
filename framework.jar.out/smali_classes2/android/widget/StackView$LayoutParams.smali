@@ -83,10 +83,10 @@
     iput v1, p0, Landroid/widget/StackView$LayoutParams;->verticalOffset:I
 
     .line 1294
-    iput v1, p0, Landroid/widget/StackView$LayoutParams;->width:I
+    iput v1, p0, Landroid/view/ViewGroup$LayoutParams;->width:I
 
     .line 1295
-    iput v1, p0, Landroid/widget/StackView$LayoutParams;->height:I
+    iput v1, p0, Landroid/view/ViewGroup$LayoutParams;->height:I
 
     .line 1290
     return-void
@@ -135,10 +135,10 @@
     iput-object v0, p0, Landroid/widget/StackView$LayoutParams;->globalInvalidateRect:Landroid/graphics/Rect;
 
     .line 1283
-    iput v1, p0, Landroid/widget/StackView$LayoutParams;->width:I
+    iput v1, p0, Landroid/view/ViewGroup$LayoutParams;->width:I
 
     .line 1284
-    iput v1, p0, Landroid/widget/StackView$LayoutParams;->height:I
+    iput v1, p0, Landroid/view/ViewGroup$LayoutParams;->height:I
 
     .line 1285
     iput v1, p0, Landroid/widget/StackView$LayoutParams;->horizontalOffset:I
@@ -183,13 +183,13 @@
 
     iget-object v4, p0, Landroid/widget/StackView$LayoutParams;->this$0:Landroid/widget/StackView;
 
-    invoke-virtual {v4}, Landroid/widget/StackView;->getWidth()I
+    invoke-virtual {v4}, Landroid/view/View;->getWidth()I
 
     move-result v4
 
     iget-object v5, p0, Landroid/widget/StackView$LayoutParams;->this$0:Landroid/widget/StackView;
 
-    invoke-virtual {v5}, Landroid/widget/StackView;->getHeight()I
+    invoke-virtual {v5}, Landroid/view/View;->getHeight()I
 
     move-result v5
 

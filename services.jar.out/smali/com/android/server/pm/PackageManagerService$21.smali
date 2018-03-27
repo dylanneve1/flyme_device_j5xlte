@@ -3,12 +3,12 @@
 .source "PackageManagerService.java"
 
 # interfaces
-.implements Landroid/os/storage/MountServiceInternal$ExternalStorageMountPolicy;
+.implements Lcom/android/server/pm/PackageManagerService$BlobXmlRestorer;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/server/pm/PackageManagerService;->systemReady()V
+    value = Lcom/android/server/pm/PackageManagerService;->restorePermissionGrants([BI)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/android/server/pm/PackageManagerService;
 
     .prologue
-    .line 18377
+    .line 17776
     iput-object p1, p0, Lcom/android/server/pm/PackageManagerService$21;->this$0:Lcom/android/server/pm/PackageManagerService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -37,90 +37,43 @@
 
 
 # virtual methods
-.method public getMountMode(ILjava/lang/String;)I
-    .locals 4
-    .param p1, "uid"    # I
-    .param p2, "packageName"    # Ljava/lang/String;
+.method public apply(Lorg/xmlpull/v1/XmlPullParser;I)V
+    .locals 2
+    .param p1, "parser"    # Lorg/xmlpull/v1/XmlPullParser;
+    .param p2, "userId"    # I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lorg/xmlpull/v1/XmlPullParserException;,
+            Ljava/io/IOException;
+        }
+    .end annotation
 
     .prologue
-    const/4 v3, 0x1
-
-    const/4 v1, 0x0
-
-    const/4 v2, -0x1
-
-    .line 18380
-    invoke-static {p1}, Landroid/os/Process;->isIsolated(I)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 18381
-    return v1
-
-    .line 18383
-    :cond_0
+    .line 17780
     iget-object v0, p0, Lcom/android/server/pm/PackageManagerService$21;->this$0:Lcom/android/server/pm/PackageManagerService;
 
-    const-string/jumbo v1, "android.permission.WRITE_MEDIA_STORAGE"
+    iget-object v1, v0, Lcom/android/server/pm/PackageManagerService;->mPackages:Landroid/util/ArrayMap;
 
-    invoke-virtual {v0, v1, p1}, Lcom/android/server/pm/PackageManagerService;->checkUidPermission(Ljava/lang/String;I)I
+    monitor-enter v1
 
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    .line 18384
-    return v3
-
-    .line 18386
-    :cond_1
+    .line 17781
+    :try_start_0
     iget-object v0, p0, Lcom/android/server/pm/PackageManagerService$21;->this$0:Lcom/android/server/pm/PackageManagerService;
 
-    const-string/jumbo v1, "android.permission.READ_EXTERNAL_STORAGE"
+    invoke-static {v0, p1, p2}, Lcom/android/server/pm/PackageManagerService;->-wrap34(Lcom/android/server/pm/PackageManagerService;Lorg/xmlpull/v1/XmlPullParser;I)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    invoke-virtual {v0, v1, p1}, Lcom/android/server/pm/PackageManagerService;->checkUidPermission(Ljava/lang/String;I)I
+    monitor-exit v1
 
-    move-result v0
+    .line 17779
+    return-void
 
-    if-ne v0, v2, :cond_2
+    .line 17780
+    :catchall_0
+    move-exception v0
 
-    .line 18387
-    return v3
+    monitor-exit v1
 
-    .line 18389
-    :cond_2
-    iget-object v0, p0, Lcom/android/server/pm/PackageManagerService$21;->this$0:Lcom/android/server/pm/PackageManagerService;
-
-    const-string/jumbo v1, "android.permission.WRITE_EXTERNAL_STORAGE"
-
-    invoke-virtual {v0, v1, p1}, Lcom/android/server/pm/PackageManagerService;->checkUidPermission(Ljava/lang/String;I)I
-
-    move-result v0
-
-    if-ne v0, v2, :cond_3
-
-    .line 18390
-    const/4 v0, 0x2
-
-    return v0
-
-    .line 18392
-    :cond_3
-    const/4 v0, 0x3
-
-    return v0
-.end method
-
-.method public hasExternalStorage(ILjava/lang/String;)Z
-    .locals 1
-    .param p1, "uid"    # I
-    .param p2, "packageName"    # Ljava/lang/String;
-
-    .prologue
-    .line 18397
-    const/4 v0, 0x1
-
-    return v0
+    throw v0
 .end method

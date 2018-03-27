@@ -80,10 +80,10 @@
 
     move-object/from16 v0, p0
 
-    iput-boolean v13, v0, Landroid/media/MediaCodec$MediaImage;->mIsImageValid:Z
+    iput-boolean v13, v0, Landroid/media/Image;->mIsImageValid:Z
 
     .line 3494
-    invoke-virtual/range {p1 .. p1}, Ljava/nio/ByteBuffer;->isReadOnly()Z
+    invoke-virtual/range {p1 .. p1}, Ljava/nio/Buffer;->isReadOnly()Z
 
     move-result v13
 
@@ -122,7 +122,7 @@
     iput-object v0, v1, Landroid/media/MediaCodec$MediaImage;->mInfo:Ljava/nio/ByteBuffer;
 
     .line 3503
-    invoke-virtual/range {p2 .. p2}, Ljava/nio/ByteBuffer;->remaining()I
+    invoke-virtual/range {p2 .. p2}, Ljava/nio/Buffer;->remaining()I
 
     move-result v13
 
@@ -534,14 +534,14 @@
 
     .line 3543
     :cond_a
-    invoke-virtual/range {p1 .. p1}, Ljava/nio/ByteBuffer;->clear()Ljava/nio/Buffer;
+    invoke-virtual/range {p1 .. p1}, Ljava/nio/Buffer;->clear()Ljava/nio/Buffer;
 
     .line 3544
     move-object/from16 v0, p0
 
     iget-object v13, v0, Landroid/media/MediaCodec$MediaImage;->mBuffer:Ljava/nio/ByteBuffer;
 
-    invoke-virtual {v13}, Ljava/nio/ByteBuffer;->position()I
+    invoke-virtual {v13}, Ljava/nio/Buffer;->position()I
 
     move-result v13
 
@@ -565,10 +565,10 @@
 
     move-object/from16 v0, p1
 
-    invoke-virtual {v0, v13}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
+    invoke-virtual {v0, v13}, Ljava/nio/Buffer;->position(I)Ljava/nio/Buffer;
 
     .line 3546
-    invoke-virtual/range {p1 .. p1}, Ljava/nio/ByteBuffer;->position()I
+    invoke-virtual/range {p1 .. p1}, Ljava/nio/Buffer;->position()I
 
     move-result v13
 
@@ -610,7 +610,7 @@
 
     move-object/from16 v0, p1
 
-    invoke-virtual {v0, v13}, Ljava/nio/ByteBuffer;->limit(I)Ljava/nio/Buffer;
+    invoke-virtual {v0, v13}, Ljava/nio/Buffer;->limit(I)Ljava/nio/Buffer;
 
     .line 3548
     move-object/from16 v0, p0
@@ -659,7 +659,7 @@
 
     move-result-object v14
 
-    invoke-virtual/range {p2 .. p2}, Ljava/nio/ByteBuffer;->remaining()I
+    invoke-virtual/range {p2 .. p2}, Ljava/nio/Buffer;->remaining()I
 
     move-result v15
 
@@ -740,7 +740,7 @@
 
     .prologue
     .line 3467
-    iget-boolean v0, p0, Landroid/media/MediaCodec$MediaImage;->mIsImageValid:Z
+    iget-boolean v0, p0, Landroid/media/Image;->mIsImageValid:Z
 
     if-eqz v0, :cond_0
 
@@ -752,7 +752,7 @@
     .line 3469
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Landroid/media/MediaCodec$MediaImage;->mIsImageValid:Z
+    iput-boolean v0, p0, Landroid/media/Image;->mIsImageValid:Z
 
     .line 3466
     :cond_0
@@ -764,7 +764,7 @@
 
     .prologue
     .line 3436
-    invoke-virtual {p0}, Landroid/media/MediaCodec$MediaImage;->throwISEIfImageIsInvalid()V
+    invoke-virtual {p0}, Landroid/media/Image;->throwISEIfImageIsInvalid()V
 
     .line 3437
     iget v0, p0, Landroid/media/MediaCodec$MediaImage;->mFormat:I
@@ -777,7 +777,7 @@
 
     .prologue
     .line 3442
-    invoke-virtual {p0}, Landroid/media/MediaCodec$MediaImage;->throwISEIfImageIsInvalid()V
+    invoke-virtual {p0}, Landroid/media/Image;->throwISEIfImageIsInvalid()V
 
     .line 3443
     iget v0, p0, Landroid/media/MediaCodec$MediaImage;->mHeight:I
@@ -790,7 +790,7 @@
 
     .prologue
     .line 3461
-    invoke-virtual {p0}, Landroid/media/MediaCodec$MediaImage;->throwISEIfImageIsInvalid()V
+    invoke-virtual {p0}, Landroid/media/Image;->throwISEIfImageIsInvalid()V
 
     .line 3462
     iget-object v0, p0, Landroid/media/MediaCodec$MediaImage;->mPlanes:[Landroid/media/Image$Plane;
@@ -813,7 +813,7 @@
 
     .prologue
     .line 3454
-    invoke-virtual {p0}, Landroid/media/MediaCodec$MediaImage;->throwISEIfImageIsInvalid()V
+    invoke-virtual {p0}, Landroid/media/Image;->throwISEIfImageIsInvalid()V
 
     .line 3455
     iget-wide v0, p0, Landroid/media/MediaCodec$MediaImage;->mTimestamp:J
@@ -826,7 +826,7 @@
 
     .prologue
     .line 3448
-    invoke-virtual {p0}, Landroid/media/MediaCodec$MediaImage;->throwISEIfImageIsInvalid()V
+    invoke-virtual {p0}, Landroid/media/Image;->throwISEIfImageIsInvalid()V
 
     .line 3449
     iget v0, p0, Landroid/media/MediaCodec$MediaImage;->mWidth:I

@@ -32,11 +32,11 @@
 
 .field static final TRANSACTION_clearSeedAccountData:I = 0x2b
 
-.field static final TRANSACTION_createProfileForUser_2:I = 0x3
+.field static final TRANSACTION_createProfileForUser:I = 0x3
 
-.field static final TRANSACTION_createRestrictedProfile_3:I = 0x4
+.field static final TRANSACTION_createRestrictedProfile:I = 0x4
 
-.field static final TRANSACTION_createUser_1:I = 0x2
+.field static final TRANSACTION_createUser:I = 0x2
 
 .field static final TRANSACTION_getApplicationRestrictions:I = 0x1f
 
@@ -100,7 +100,7 @@
 
 .field static final TRANSACTION_markGuestForDeletion:I = 0x23
 
-.field static final TRANSACTION_removeUser_5:I = 0x6
+.field static final TRANSACTION_removeUser:I = 0x6
 
 .field static final TRANSACTION_setApplicationRestrictions:I = 0x1e
 
@@ -112,11 +112,11 @@
 
 .field static final TRANSACTION_setUserAccount:I = 0x13
 
-.field static final TRANSACTION_setUserEnabled_4:I = 0x5
+.field static final TRANSACTION_setUserEnabled:I = 0x5
 
-.field static final TRANSACTION_setUserIcon_7:I = 0x8
+.field static final TRANSACTION_setUserIcon:I = 0x8
 
-.field static final TRANSACTION_setUserName_6:I = 0x7
+.field static final TRANSACTION_setUserName:I = 0x7
 
 .field static final TRANSACTION_setUserRestriction:I = 0x1d
 

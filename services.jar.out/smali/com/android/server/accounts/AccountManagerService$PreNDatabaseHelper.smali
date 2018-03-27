@@ -28,20 +28,20 @@
     .param p3, "preNDatabaseName"    # Ljava/lang/String;
 
     .prologue
-    .line 4696
+    .line 4700
     const/4 v0, 0x0
 
     const/16 v1, 0x9
 
     invoke-direct {p0, p1, p3, v0, v1}, Landroid/database/sqlite/SQLiteOpenHelper;-><init>(Landroid/content/Context;Ljava/lang/String;Landroid/database/sqlite/SQLiteDatabase$CursorFactory;I)V
 
-    .line 4697
+    .line 4701
     iput-object p1, p0, Lcom/android/server/accounts/AccountManagerService$PreNDatabaseHelper;->mContext:Landroid/content/Context;
 
-    .line 4698
+    .line 4702
     iput p2, p0, Lcom/android/server/accounts/AccountManagerService$PreNDatabaseHelper;->mUserId:I
 
-    .line 4695
+    .line 4699
     return-void
 .end method
 
@@ -50,10 +50,10 @@
     .param p1, "db"    # Landroid/database/sqlite/SQLiteDatabase;
 
     .prologue
-    .line 4725
+    .line 4729
     invoke-static {p1}, Lcom/android/server/accounts/AccountManagerService$DebugDbHelper;->-wrap0(Landroid/database/sqlite/SQLiteDatabase;)V
 
-    .line 4724
+    .line 4728
     return-void
 .end method
 
@@ -62,12 +62,12 @@
     .param p1, "db"    # Landroid/database/sqlite/SQLiteDatabase;
 
     .prologue
-    .line 4716
+    .line 4720
     const-string/jumbo v0, "ALTER TABLE accounts ADD COLUMN last_password_entry_time_millis_epoch DEFAULT 0"
 
     invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
-    .line 4715
+    .line 4719
     return-void
 .end method
 
@@ -76,12 +76,12 @@
     .param p1, "db"    # Landroid/database/sqlite/SQLiteDatabase;
 
     .prologue
-    .line 4721
+    .line 4725
     const-string/jumbo v0, "ALTER TABLE accounts ADD COLUMN previous_name"
 
     invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
-    .line 4720
+    .line 4724
     return-void
 .end method
 
@@ -90,12 +90,12 @@
     .param p1, "db"    # Landroid/database/sqlite/SQLiteDatabase;
 
     .prologue
-    .line 4729
+    .line 4733
     const-string/jumbo v0, " CREATE TRIGGER accountsDelete DELETE ON accounts BEGIN   DELETE FROM authtokens     WHERE accounts_id=OLD._id ;   DELETE FROM extras     WHERE accounts_id=OLD._id ;   DELETE FROM grants     WHERE accounts_id=OLD._id ; END"
 
     invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
-    .line 4728
+    .line 4732
     return-void
 .end method
 
@@ -104,12 +104,12 @@
     .param p1, "db"    # Landroid/database/sqlite/SQLiteDatabase;
 
     .prologue
-    .line 4742
+    .line 4746
     const-string/jumbo v0, "CREATE TABLE grants (  accounts_id INTEGER NOT NULL, auth_token_type STRING NOT NULL,  uid INTEGER NOT NULL,  UNIQUE (accounts_id,auth_token_type,uid))"
 
     invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
-    .line 4741
+    .line 4745
     return-void
 .end method
 
@@ -118,12 +118,12 @@
     .param p1, "db"    # Landroid/database/sqlite/SQLiteDatabase;
 
     .prologue
-    .line 4708
+    .line 4712
     const-string/jumbo v0, "CREATE TABLE shared_accounts ( _id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT NOT NULL, type TEXT NOT NULL, UNIQUE(name,type))"
 
     invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
-    .line 4707
+    .line 4711
     return-void
 .end method
 
@@ -143,7 +143,7 @@
     .end annotation
 
     .prologue
-    .line 4753
+    .line 4757
     .local p2, "authTypeAndUIDMap":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Integer;>;"
     invoke-interface {p2}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
@@ -153,7 +153,7 @@
 
     move-result-object v1
 
-    .line 4754
+    .line 4758
     .local v1, "iterator":Ljava/util/Iterator;, "Ljava/util/Iterator<Ljava/util/Map$Entry<Ljava/lang/String;Ljava/lang/Integer;>;>;"
     :goto_0
     invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
@@ -162,24 +162,24 @@
 
     if-eqz v3, :cond_0
 
-    .line 4755
+    .line 4759
     invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Ljava/util/Map$Entry;
 
-    .line 4756
+    .line 4760
     .local v0, "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<Ljava/lang/String;Ljava/lang/Integer;>;"
     new-instance v2, Landroid/content/ContentValues;
 
     invoke-direct {v2}, Landroid/content/ContentValues;-><init>()V
 
-    .line 4757
+    .line 4761
     .local v2, "values":Landroid/content/ContentValues;
     const-string/jumbo v4, "key"
 
-    .line 4758
+    .line 4762
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -204,10 +204,10 @@
 
     move-result-object v3
 
-    .line 4757
+    .line 4761
     invoke-virtual {v2, v4, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 4759
+    .line 4763
     const-string/jumbo v4, "value"
 
     invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
@@ -218,7 +218,7 @@
 
     invoke-virtual {v2, v4, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 4760
+    .line 4764
     const-string/jumbo v3, "meta"
 
     const/4 v4, 0x0
@@ -227,7 +227,7 @@
 
     goto :goto_0
 
-    .line 4752
+    .line 4756
     .end local v0    # "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<Ljava/lang/String;Ljava/lang/Integer;>;"
     .end local v2    # "values":Landroid/content/ContentValues;
     :cond_0
@@ -241,7 +241,7 @@
     .param p1, "db"    # Landroid/database/sqlite/SQLiteDatabase;
 
     .prologue
-    .line 4704
+    .line 4708
     new-instance v0, Ljava/lang/IllegalStateException;
 
     const-string/jumbo v1, "Legacy database cannot be created - only upgraded!"
@@ -256,7 +256,7 @@
     .param p1, "db"    # Landroid/database/sqlite/SQLiteDatabase;
 
     .prologue
-    .line 4824
+    .line 4828
     const-string/jumbo v0, "AccountManagerService"
 
     const/4 v1, 0x2
@@ -273,7 +273,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 4823
+    .line 4827
     :cond_0
     return-void
 .end method
@@ -285,7 +285,7 @@
     .param p3, "newVersion"    # I
 
     .prologue
-    .line 4769
+    .line 4773
     const-string/jumbo v0, "AccountManagerService"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -318,103 +318,103 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 4771
+    .line 4775
     const/4 v0, 0x1
 
     if-ne p2, v0, :cond_0
 
-    .line 4774
+    .line 4778
     add-int/lit8 p2, p2, 0x1
 
-    .line 4777
+    .line 4781
     :cond_0
     const/4 v0, 0x2
 
     if-ne p2, v0, :cond_1
 
-    .line 4778
+    .line 4782
     invoke-direct {p0, p1}, Lcom/android/server/accounts/AccountManagerService$PreNDatabaseHelper;->createGrantsTable(Landroid/database/sqlite/SQLiteDatabase;)V
 
-    .line 4779
+    .line 4783
     const-string/jumbo v0, "DROP TRIGGER accountsDelete"
 
     invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
-    .line 4780
+    .line 4784
     invoke-direct {p0, p1}, Lcom/android/server/accounts/AccountManagerService$PreNDatabaseHelper;->createAccountsDeletionTrigger(Landroid/database/sqlite/SQLiteDatabase;)V
 
-    .line 4781
+    .line 4785
     add-int/lit8 p2, p2, 0x1
 
-    .line 4784
+    .line 4788
     :cond_1
     const/4 v0, 0x3
 
     if-ne p2, v0, :cond_2
 
-    .line 4785
+    .line 4789
     const-string/jumbo v0, "UPDATE accounts SET type = \'com.google\' WHERE type == \'com.google.GAIA\'"
 
     invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
-    .line 4787
+    .line 4791
     add-int/lit8 p2, p2, 0x1
 
-    .line 4790
+    .line 4794
     :cond_2
     const/4 v0, 0x4
 
     if-ne p2, v0, :cond_3
 
-    .line 4791
+    .line 4795
     invoke-direct {p0, p1}, Lcom/android/server/accounts/AccountManagerService$PreNDatabaseHelper;->createSharedAccountsTable(Landroid/database/sqlite/SQLiteDatabase;)V
 
-    .line 4792
+    .line 4796
     add-int/lit8 p2, p2, 0x1
 
-    .line 4795
+    .line 4799
     :cond_3
     const/4 v0, 0x5
 
     if-ne p2, v0, :cond_4
 
-    .line 4796
+    .line 4800
     invoke-direct {p0, p1}, Lcom/android/server/accounts/AccountManagerService$PreNDatabaseHelper;->addOldAccountNameColumn(Landroid/database/sqlite/SQLiteDatabase;)V
 
-    .line 4797
+    .line 4801
     add-int/lit8 p2, p2, 0x1
 
-    .line 4800
+    .line 4804
     :cond_4
     const/4 v0, 0x6
 
     if-ne p2, v0, :cond_5
 
-    .line 4801
+    .line 4805
     invoke-direct {p0, p1}, Lcom/android/server/accounts/AccountManagerService$PreNDatabaseHelper;->addLastSuccessfullAuthenticatedTimeColumn(Landroid/database/sqlite/SQLiteDatabase;)V
 
-    .line 4802
+    .line 4806
     add-int/lit8 p2, p2, 0x1
 
-    .line 4805
+    .line 4809
     :cond_5
     const/4 v0, 0x7
 
     if-ne p2, v0, :cond_6
 
-    .line 4806
+    .line 4810
     invoke-direct {p0, p1}, Lcom/android/server/accounts/AccountManagerService$PreNDatabaseHelper;->addDebugTable(Landroid/database/sqlite/SQLiteDatabase;)V
 
-    .line 4807
+    .line 4811
     add-int/lit8 p2, p2, 0x1
 
-    .line 4810
+    .line 4814
     :cond_6
     const/16 v0, 0x8
 
     if-ne p2, v0, :cond_7
 
-    .line 4813
+    .line 4817
     iget-object v0, p0, Lcom/android/server/accounts/AccountManagerService$PreNDatabaseHelper;->mContext:Landroid/content/Context;
 
     iget v1, p0, Lcom/android/server/accounts/AccountManagerService$PreNDatabaseHelper;->mUserId:I
@@ -423,17 +423,17 @@
 
     move-result-object v0
 
-    .line 4811
+    .line 4815
     invoke-direct {p0, p1, v0}, Lcom/android/server/accounts/AccountManagerService$PreNDatabaseHelper;->populateMetaTableWithAuthTypeAndUID(Landroid/database/sqlite/SQLiteDatabase;Ljava/util/Map;)V
 
-    .line 4814
+    .line 4818
     add-int/lit8 p2, p2, 0x1
 
-    .line 4817
+    .line 4821
     :cond_7
     if-eq p2, p3, :cond_8
 
-    .line 4818
+    .line 4822
     const-string/jumbo v0, "AccountManagerService"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -466,7 +466,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 4768
+    .line 4772
     :cond_8
     return-void
 .end method

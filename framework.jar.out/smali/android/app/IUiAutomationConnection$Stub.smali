@@ -30,9 +30,9 @@
 
 .field static final TRANSACTION_clearWindowContentFrameStats:I = 0x6
 
-.field static final TRANSACTION_connect_0:I = 0x1
+.field static final TRANSACTION_connect:I = 0x1
 
-.field static final TRANSACTION_disconnect_1:I = 0x2
+.field static final TRANSACTION_disconnect:I = 0x2
 
 .field static final TRANSACTION_executeShellCommand:I = 0xa
 
@@ -42,11 +42,11 @@
 
 .field static final TRANSACTION_grantRuntimePermission:I = 0xb
 
-.field static final TRANSACTION_injectInputEvent_2:I = 0x3
+.field static final TRANSACTION_injectInputEvent:I = 0x3
 
 .field static final TRANSACTION_revokeRuntimePermission:I = 0xc
 
-.field static final TRANSACTION_setRotation_3:I = 0x4
+.field static final TRANSACTION_setRotation:I = 0x4
 
 .field static final TRANSACTION_shutdown:I = 0xd
 

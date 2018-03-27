@@ -123,6 +123,8 @@
     <string name="tethered_notification_no_device_message">Нема повезаних уређаја</string>
     <string name="tethered_notification_one_device_message">%1$s повезани уређај</string>
     <string name="tethered_notification_multi_device_message">Повезаних уређаја: %1$s</string>
+    <string name="silent_mode_priority">Приоритет</string>
+    <string name="silent_mode_none">Ниједан</string>
     <string name="month_day_year" formatted="false">%d. %B %Y.</string>
     <string name="time_of_day" formatted="false">%H.%M.%S</string>
     <string name="date_and_time" formatted="false">%H.%M.%S %d.%m.%Y.</string>

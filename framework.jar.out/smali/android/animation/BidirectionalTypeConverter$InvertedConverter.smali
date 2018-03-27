@@ -52,11 +52,11 @@
     .line 59
     .local p0, "this":Landroid/animation/BidirectionalTypeConverter$InvertedConverter;, "Landroid/animation/BidirectionalTypeConverter<TT;TV;>.InvertedConverter<TFrom;TTo;>;"
     .local p1, "converter":Landroid/animation/BidirectionalTypeConverter;, "Landroid/animation/BidirectionalTypeConverter<TTo;TFrom;>;"
-    invoke-virtual {p1}, Landroid/animation/BidirectionalTypeConverter;->getTargetType()Ljava/lang/Class;
+    invoke-virtual {p1}, Landroid/animation/TypeConverter;->getTargetType()Ljava/lang/Class;
 
     move-result-object v0
 
-    invoke-virtual {p1}, Landroid/animation/BidirectionalTypeConverter;->getSourceType()Ljava/lang/Class;
+    invoke-virtual {p1}, Landroid/animation/TypeConverter;->getSourceType()Ljava/lang/Class;
 
     move-result-object v1
 
@@ -106,7 +106,7 @@
     .local p1, "value":Ljava/lang/Object;, "TTo;"
     iget-object v0, p0, Landroid/animation/BidirectionalTypeConverter$InvertedConverter;->mConverter:Landroid/animation/BidirectionalTypeConverter;
 
-    invoke-virtual {v0, p1}, Landroid/animation/BidirectionalTypeConverter;->convert(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1}, Landroid/animation/TypeConverter;->convert(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 

@@ -114,7 +114,7 @@
 
 .field static final TRANSACTION_noteStartGps:I = 0x22
 
-.field static final TRANSACTION_noteStartSensor_0:I = 0x1
+.field static final TRANSACTION_noteStartSensor:I = 0x1
 
 .field static final TRANSACTION_noteStartVideo:I = 0x3
 
@@ -128,7 +128,7 @@
 
 .field static final TRANSACTION_noteStopGps:I = 0x23
 
-.field static final TRANSACTION_noteStopSensor_1:I = 0x2
+.field static final TRANSACTION_noteStopSensor:I = 0x2
 
 .field static final TRANSACTION_noteStopVideo:I = 0x4
 

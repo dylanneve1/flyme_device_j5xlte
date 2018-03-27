@@ -238,7 +238,7 @@
     iput-boolean v1, p0, Landroid/widget/AdapterViewFlipper;->mAutoStart:Z
 
     .line 78
-    iput-boolean v3, p0, Landroid/widget/AdapterViewFlipper;->mLoopViews:Z
+    iput-boolean v3, p0, Landroid/widget/AdapterViewAnimator;->mLoopViews:Z
 
     .line 80
     invoke-virtual {v0}, Landroid/content/res/TypedArray;->recycle()V
@@ -283,7 +283,7 @@
     if-eqz v1, :cond_2
 
     .line 237
-    iget-object v1, p0, Landroid/widget/AdapterViewFlipper;->mAdapter:Landroid/widget/Adapter;
+    iget-object v1, p0, Landroid/widget/AdapterViewAnimator;->mAdapter:Landroid/widget/Adapter;
 
     if-eqz v1, :cond_1
 
@@ -300,9 +300,9 @@
     if-eqz v0, :cond_3
 
     .line 240
-    iget v1, p0, Landroid/widget/AdapterViewFlipper;->mWhichChild:I
+    iget v1, p0, Landroid/widget/AdapterViewAnimator;->mWhichChild:I
 
-    invoke-virtual {p0, v1, p1}, Landroid/widget/AdapterViewFlipper;->showOnly(IZ)V
+    invoke-virtual {p0, v1, p1}, Landroid/widget/AdapterViewAnimator;->showOnly(IZ)V
 
     .line 241
     iget-object v1, p0, Landroid/widget/AdapterViewFlipper;->mFlipRunnable:Ljava/lang/Runnable;
@@ -311,7 +311,7 @@
 
     int-to-long v2, v2
 
-    invoke-virtual {p0, v1, v2, v3}, Landroid/widget/AdapterViewFlipper;->postDelayed(Ljava/lang/Runnable;J)Z
+    invoke-virtual {p0, v1, v2, v3}, Landroid/view/View;->postDelayed(Ljava/lang/Runnable;J)Z
 
     .line 245
     :goto_1
@@ -341,7 +341,7 @@
     :cond_3
     iget-object v1, p0, Landroid/widget/AdapterViewFlipper;->mFlipRunnable:Ljava/lang/Runnable;
 
-    invoke-virtual {p0, v1}, Landroid/widget/AdapterViewFlipper;->removeCallbacks(Ljava/lang/Runnable;)Z
+    invoke-virtual {p0, v1}, Landroid/view/View;->removeCallbacks(Ljava/lang/Runnable;)Z
 
     goto :goto_1
 .end method
@@ -434,7 +434,7 @@
     invoke-virtual {v3, v0}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     .line 113
-    invoke-virtual {p0}, Landroid/widget/AdapterViewFlipper;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -445,7 +445,7 @@
     move-result-object v2
 
     .line 114
-    invoke-virtual {p0}, Landroid/widget/AdapterViewFlipper;->getHandler()Landroid/os/Handler;
+    invoke-virtual {p0}, Landroid/view/View;->getHandler()Landroid/os/Handler;
 
     move-result-object v5
 
@@ -480,7 +480,7 @@
     iput-boolean v0, p0, Landroid/widget/AdapterViewFlipper;->mVisible:Z
 
     .line 128
-    invoke-virtual {p0}, Landroid/widget/AdapterViewFlipper;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -579,7 +579,7 @@
     .line 196
     iget-object v0, p0, Landroid/widget/AdapterViewFlipper;->mFlipRunnable:Ljava/lang/Runnable;
 
-    invoke-virtual {p0, v0}, Landroid/widget/AdapterViewFlipper;->removeCallbacks(Ljava/lang/Runnable;)Z
+    invoke-virtual {p0, v0}, Landroid/view/View;->removeCallbacks(Ljava/lang/Runnable;)Z
 
     .line 197
     iget-object v0, p0, Landroid/widget/AdapterViewFlipper;->mFlipRunnable:Ljava/lang/Runnable;
@@ -588,7 +588,7 @@
 
     int-to-long v2, v1
 
-    invoke-virtual {p0, v0, v2, v3}, Landroid/widget/AdapterViewFlipper;->postDelayed(Ljava/lang/Runnable;J)Z
+    invoke-virtual {p0, v0, v2, v3}, Landroid/view/View;->postDelayed(Ljava/lang/Runnable;J)Z
 
     .line 199
     :cond_0
@@ -612,7 +612,7 @@
     .line 211
     iget-object v0, p0, Landroid/widget/AdapterViewFlipper;->mFlipRunnable:Ljava/lang/Runnable;
 
-    invoke-virtual {p0, v0}, Landroid/widget/AdapterViewFlipper;->removeCallbacks(Ljava/lang/Runnable;)Z
+    invoke-virtual {p0, v0}, Landroid/view/View;->removeCallbacks(Ljava/lang/Runnable;)Z
 
     .line 212
     iget-object v0, p0, Landroid/widget/AdapterViewFlipper;->mFlipRunnable:Ljava/lang/Runnable;
@@ -621,7 +621,7 @@
 
     int-to-long v2, v1
 
-    invoke-virtual {p0, v0, v2, v3}, Landroid/widget/AdapterViewFlipper;->postDelayed(Ljava/lang/Runnable;J)Z
+    invoke-virtual {p0, v0, v2, v3}, Landroid/view/View;->postDelayed(Ljava/lang/Runnable;J)Z
 
     .line 214
     :cond_0

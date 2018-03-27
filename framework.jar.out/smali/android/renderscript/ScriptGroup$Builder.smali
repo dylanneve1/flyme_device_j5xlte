@@ -300,7 +300,7 @@
 
     .line 577
     .local v2, "tn":Landroid/renderscript/ScriptGroup$Node;
-    invoke-virtual {v2, p2}, Landroid/renderscript/ScriptGroup$Node;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v2, p2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result v3
 
@@ -337,7 +337,7 @@
 
     .line 584
     .restart local v2    # "tn":Landroid/renderscript/ScriptGroup$Node;
-    invoke-virtual {v2, p2}, Landroid/renderscript/ScriptGroup$Node;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v2, p2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result v3
 
@@ -1003,7 +1003,7 @@
 
     move-object/from16 v0, v19
 
-    invoke-virtual {v0, v2}, Landroid/renderscript/Script$KernelID;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v24
 
@@ -1258,7 +1258,7 @@
 
     move-object/from16 v0, v23
 
-    invoke-virtual {v2, v0}, Landroid/renderscript/Script$KernelID;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v2, v0}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v24
 
@@ -1280,7 +1280,7 @@
 
     move-object/from16 v0, v23
 
-    invoke-virtual {v2, v0}, Landroid/renderscript/Script$KernelID;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v2, v0}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v24
 
@@ -1303,7 +1303,7 @@
 
     move-object/from16 v0, v23
 
-    invoke-virtual {v2, v0}, Landroid/renderscript/Script$FieldID;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v2, v0}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v24
 
@@ -1321,7 +1321,7 @@
 
     move-object/from16 v0, v23
 
-    invoke-virtual {v2, v0}, Landroid/renderscript/Type;->getID(Landroid/renderscript/RenderScript;)J
+    invoke-virtual {v2, v0}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)J
 
     move-result-wide v24
 

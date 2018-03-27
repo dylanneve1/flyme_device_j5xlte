@@ -48,7 +48,7 @@
 
     .prologue
     .line 142
-    iget-object v3, p0, Landroid/media/midi/MidiDeviceServer$OutputPortClient;->mToken:Landroid/os/IBinder;
+    iget-object v3, p0, Landroid/media/midi/MidiDeviceServer$PortClient;->mToken:Landroid/os/IBinder;
 
     const/4 v4, 0x0
 

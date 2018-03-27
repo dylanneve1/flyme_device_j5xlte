@@ -46,17 +46,17 @@
     .locals 1
 
     .prologue
-    .line 11433
+    .line 11527
     invoke-direct {p0}, Lcom/android/server/IntentResolver;-><init>()V
 
-    .line 11446
+    .line 11540
     new-instance v0, Landroid/util/ArrayMap;
 
     invoke-direct {v0}, Landroid/util/ArrayMap;-><init>()V
 
     iput-object v0, p0, Lcom/android/server/pm/PackageManagerService$EphemeralIntentResolver;->mOrderResult:Landroid/util/ArrayMap;
 
-    .line 11433
+    .line 11527
     return-void
 .end method
 
@@ -84,7 +84,7 @@
     .end annotation
 
     .prologue
-    .line 11483
+    .line 11577
     .local p1, "results":Ljava/util/List;, "Ljava/util/List<Landroid/content/pm/EphemeralResolveInfo;>;"
     iget-object v5, p0, Lcom/android/server/pm/PackageManagerService$EphemeralIntentResolver;->mOrderResult:Landroid/util/ArrayMap;
 
@@ -94,16 +94,16 @@
 
     if-nez v5, :cond_0
 
-    .line 11484
+    .line 11578
     return-void
 
-    .line 11486
+    .line 11580
     :cond_0
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result v3
 
-    .line 11487
+    .line 11581
     .local v3, "resultSize":I
     const/4 v0, 0x0
 
@@ -111,20 +111,20 @@
     :goto_0
     if-ge v0, v3, :cond_3
 
-    .line 11488
+    .line 11582
     invoke-interface {p1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Landroid/content/pm/EphemeralResolveInfo;
 
-    .line 11489
+    .line 11583
     .local v1, "info":Landroid/content/pm/EphemeralResolveInfo;
     invoke-virtual {v1}, Landroid/content/pm/EphemeralResolveInfo;->getPackageName()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 11490
+    .line 11584
     .local v2, "packageName":Ljava/lang/String;
     iget-object v5, p0, Lcom/android/server/pm/PackageManagerService$EphemeralIntentResolver;->mOrderResult:Landroid/util/ArrayMap;
 
@@ -134,29 +134,29 @@
 
     check-cast v4, Landroid/util/Pair;
 
-    .line 11491
+    .line 11585
     .local v4, "savedInfo":Landroid/util/Pair;, "Landroid/util/Pair<Ljava/lang/Integer;Landroid/content/pm/EphemeralResolveInfo;>;"
     if-nez v4, :cond_2
 
-    .line 11487
+    .line 11581
     :cond_1
     :goto_1
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 11495
+    .line 11589
     :cond_2
     iget-object v5, v4, Landroid/util/Pair;->second:Ljava/lang/Object;
 
     if-ne v5, v1, :cond_4
 
-    .line 11497
+    .line 11591
     iget-object v5, p0, Lcom/android/server/pm/PackageManagerService$EphemeralIntentResolver;->mOrderResult:Landroid/util/ArrayMap;
 
     invoke-virtual {v5, v4}, Landroid/util/ArrayMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 11498
+    .line 11592
     iget-object v5, p0, Lcom/android/server/pm/PackageManagerService$EphemeralIntentResolver;->mOrderResult:Landroid/util/ArrayMap;
 
     invoke-virtual {v5}, Landroid/util/ArrayMap;->size()I
@@ -165,24 +165,24 @@
 
     if-nez v5, :cond_1
 
-    .line 11481
+    .line 11575
     .end local v1    # "info":Landroid/content/pm/EphemeralResolveInfo;
     .end local v2    # "packageName":Ljava/lang/String;
     .end local v4    # "savedInfo":Landroid/util/Pair;, "Landroid/util/Pair<Ljava/lang/Integer;Landroid/content/pm/EphemeralResolveInfo;>;"
     :cond_3
     return-void
 
-    .line 11505
+    .line 11599
     .restart local v1    # "info":Landroid/content/pm/EphemeralResolveInfo;
     .restart local v2    # "packageName":Ljava/lang/String;
     .restart local v4    # "savedInfo":Landroid/util/Pair;, "Landroid/util/Pair<Ljava/lang/Integer;Landroid/content/pm/EphemeralResolveInfo;>;"
     :cond_4
     invoke-interface {p1, v0}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
-    .line 11506
+    .line 11600
     add-int/lit8 v3, v3, -0x1
 
-    .line 11507
+    .line 11601
     add-int/lit8 v0, v0, -0x1
 
     goto :goto_1
@@ -194,7 +194,7 @@
     .param p2, "info"    # Landroid/content/IntentFilter;
 
     .prologue
-    .line 11454
+    .line 11548
     check-cast p2, Landroid/content/pm/EphemeralResolveInfo$EphemeralResolveIntentInfo;
 
     .end local p2    # "info":Landroid/content/IntentFilter;
@@ -211,7 +211,7 @@
     .param p2, "info"    # Landroid/content/pm/EphemeralResolveInfo$EphemeralResolveIntentInfo;
 
     .prologue
-    .line 11455
+    .line 11549
     const/4 v0, 0x1
 
     return v0
@@ -222,7 +222,7 @@
     .param p1, "size"    # I
 
     .prologue
-    .line 11449
+    .line 11543
     invoke-virtual {p0, p1}, Lcom/android/server/pm/PackageManagerService$EphemeralIntentResolver;->newArray(I)[Landroid/content/pm/EphemeralResolveInfo$EphemeralResolveIntentInfo;
 
     move-result-object v0
@@ -235,7 +235,7 @@
     .param p1, "size"    # I
 
     .prologue
-    .line 11450
+    .line 11544
     new-array v0, p1, [Landroid/content/pm/EphemeralResolveInfo$EphemeralResolveIntentInfo;
 
     return-object v0
@@ -250,7 +250,7 @@
     .prologue
     const/4 v6, 0x0
 
-    .line 11461
+    .line 11555
     sget-object v4, Lcom/android/server/pm/PackageManagerService;->sUserManager:Lcom/android/server/pm/UserManagerService;
 
     invoke-virtual {v4, p3}, Lcom/android/server/pm/UserManagerService;->exists(I)Z
@@ -259,10 +259,10 @@
 
     if-nez v4, :cond_0
 
-    .line 11462
+    .line 11556
     return-object v6
 
-    .line 11464
+    .line 11558
     :cond_0
     invoke-virtual {p1}, Landroid/content/pm/EphemeralResolveInfo$EphemeralResolveIntentInfo;->getEphemeralResolveInfo()Landroid/content/pm/EphemeralResolveInfo;
 
@@ -272,7 +272,7 @@
 
     move-result-object v2
 
-    .line 11465
+    .line 11559
     .local v2, "packageName":Ljava/lang/String;
     invoke-virtual {p1}, Landroid/content/pm/EphemeralResolveInfo$EphemeralResolveIntentInfo;->getOrder()I
 
@@ -282,7 +282,7 @@
 
     move-result-object v1
 
-    .line 11467
+    .line 11561
     .local v1, "order":Ljava/lang/Integer;
     iget-object v4, p0, Lcom/android/server/pm/PackageManagerService$EphemeralIntentResolver;->mOrderResult:Landroid/util/ArrayMap;
 
@@ -292,7 +292,7 @@
 
     check-cast v0, Landroid/util/Pair;
 
-    .line 11469
+    .line 11563
     .local v0, "lastOrderResult":Landroid/util/Pair;, "Landroid/util/Pair<Ljava/lang/Integer;Landroid/content/pm/EphemeralResolveInfo;>;"
     if-eqz v0, :cond_1
 
@@ -310,16 +310,16 @@
 
     if-lt v4, v5, :cond_1
 
-    .line 11470
+    .line 11564
     return-object v6
 
-    .line 11472
+    .line 11566
     :cond_1
     invoke-virtual {p1}, Landroid/content/pm/EphemeralResolveInfo$EphemeralResolveIntentInfo;->getEphemeralResolveInfo()Landroid/content/pm/EphemeralResolveInfo;
 
     move-result-object v3
 
-    .line 11473
+    .line 11567
     .local v3, "res":Landroid/content/pm/EphemeralResolveInfo;
     invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
 
@@ -327,7 +327,7 @@
 
     if-lez v4, :cond_2
 
-    .line 11475
+    .line 11569
     iget-object v4, p0, Lcom/android/server/pm/PackageManagerService$EphemeralIntentResolver;->mOrderResult:Landroid/util/ArrayMap;
 
     new-instance v5, Landroid/util/Pair;
@@ -336,7 +336,7 @@
 
     invoke-virtual {v4, v2, v5}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 11477
+    .line 11571
     :cond_2
     return-object v3
 .end method
@@ -348,7 +348,7 @@
     .param p3, "userId"    # I
 
     .prologue
-    .line 11459
+    .line 11553
     check-cast p1, Landroid/content/pm/EphemeralResolveInfo$EphemeralResolveIntentInfo;
 
     .end local p1    # "info":Landroid/content/IntentFilter;

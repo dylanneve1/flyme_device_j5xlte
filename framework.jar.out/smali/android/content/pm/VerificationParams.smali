@@ -216,7 +216,9 @@
     move-object v0, p1
 
     .line 114
-    check-cast v0, Landroid/content/pm/VerificationParams;
+    nop
+
+    nop
 
     .line 116
     .local v0, "other":Landroid/content/pm/VerificationParams;

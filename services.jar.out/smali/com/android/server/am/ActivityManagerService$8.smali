@@ -33,7 +33,7 @@
     .param p4, "val$observer"    # Landroid/content/pm/IPackageDataObserver;
 
     .prologue
-    .line 5740
+    .line 5723
     iput-object p1, p0, Lcom/android/server/am/ActivityManagerService$8;->this$0:Lcom/android/server/am/ActivityManagerService;
 
     iput p2, p0, Lcom/android/server/am/ActivityManagerService$8;->val$pkgUidF:I
@@ -60,7 +60,7 @@
     .end annotation
 
     .prologue
-    .line 5744
+    .line 5727
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/android/server/am/ActivityManagerService$8;->this$0:Lcom/android/server/am/ActivityManagerService;
@@ -70,7 +70,7 @@
     :try_start_0
     invoke-static {}, Lcom/android/server/am/ActivityManagerService;->boostPriorityForLockedSection()V
 
-    .line 5745
+    .line 5728
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/server/am/ActivityManagerService$8;->this$0:Lcom/android/server/am/ActivityManagerService;
@@ -87,15 +87,15 @@
 
     monitor-exit v3
 
-    .line 5744
+    .line 5727
     invoke-static {}, Lcom/android/server/am/ActivityManagerService;->resetPriorityAfterLockedSection()V
 
-    .line 5748
+    .line 5731
     new-instance v5, Landroid/content/Intent;
 
     const-string/jumbo v2, "android.intent.action.PACKAGE_DATA_CLEARED"
 
-    .line 5749
+    .line 5732
     const-string/jumbo v3, "package"
 
     const/4 v4, 0x0
@@ -106,10 +106,10 @@
 
     move-result-object v3
 
-    .line 5748
+    .line 5731
     invoke-direct {v5, v2, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
 
-    .line 5750
+    .line 5733
     .local v5, "intent":Landroid/content/Intent;
     const-string/jumbo v2, "android.intent.extra.UID"
 
@@ -119,7 +119,7 @@
 
     invoke-virtual {v5, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 5751
+    .line 5734
     const-string/jumbo v2, "android.intent.extra.user_handle"
 
     move-object/from16 v0, p0
@@ -132,22 +132,22 @@
 
     invoke-virtual {v5, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 5752
+    .line 5735
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/server/am/ActivityManagerService$8;->this$0:Lcom/android/server/am/ActivityManagerService;
 
     const-string/jumbo v3, "android"
 
-    .line 5753
+    .line 5736
     move-object/from16 v0, p0
 
     iget v15, v0, Lcom/android/server/am/ActivityManagerService$8;->val$userIdF:I
 
-    .line 5752
+    .line 5735
     const/16 v4, 0x3e8
 
-    .line 5753
+    .line 5736
     const/4 v6, 0x0
 
     const/4 v7, 0x0
@@ -166,17 +166,17 @@
 
     const/4 v14, 0x0
 
-    .line 5752
+    .line 5735
     invoke-virtual/range {v2 .. v15}, Lcom/android/server/am/ActivityManagerService;->broadcastIntentInPackage(Ljava/lang/String;ILandroid/content/Intent;Ljava/lang/String;Landroid/content/IIntentReceiver;ILjava/lang/String;Landroid/os/Bundle;Ljava/lang/String;Landroid/os/Bundle;ZZI)I
 
-    .line 5755
+    .line 5738
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/server/am/ActivityManagerService$8;->val$observer:Landroid/content/pm/IPackageDataObserver;
 
     if-eqz v2, :cond_0
 
-    .line 5756
+    .line 5739
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/server/am/ActivityManagerService$8;->val$observer:Landroid/content/pm/IPackageDataObserver;
@@ -187,11 +187,11 @@
 
     invoke-interface {v2, v0, v1}, Landroid/content/pm/IPackageDataObserver;->onRemoveCompleted(Ljava/lang/String;Z)V
 
-    .line 5743
+    .line 5726
     :cond_0
     return-void
 
-    .line 5744
+    .line 5727
     .end local v5    # "intent":Landroid/content/Intent;
     :catchall_0
     move-exception v2

@@ -123,6 +123,8 @@
     <string name="tethered_notification_no_device_message">Ei kytkettyä laitetta</string>
     <string name="tethered_notification_one_device_message">%1$s yhdistetty laite</string>
     <string name="tethered_notification_multi_device_message">%1$s yhdistettyä laitetta</string>
+    <string name="silent_mode_priority">Prioriteetti</string>
+    <string name="silent_mode_none">Ei mitään</string>
     <string name="month_day_year" formatted="false">%-e. %B %Y</string>
     <string name="time_of_day" formatted="false">%-k.%M.%S</string>
     <string name="date_and_time" formatted="false">%-k.%M.%S %-e.%-m.%Y</string>

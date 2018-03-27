@@ -197,7 +197,7 @@
     .local v24, "md":Ljava/security/MessageDigest;
     const/4 v5, 0x0
 
-    invoke-virtual {v14, v5}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
+    invoke-virtual {v14, v5}, Ljava/nio/Buffer;->position(I)Ljava/nio/Buffer;
 
     .line 1062
     move-object/from16 v0, v24

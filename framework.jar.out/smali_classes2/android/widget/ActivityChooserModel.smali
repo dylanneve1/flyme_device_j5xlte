@@ -342,7 +342,7 @@
     invoke-direct {p0}, Landroid/widget/ActivityChooserModel;->sortActivitiesIfNeeded()Z
 
     .line 758
-    invoke-virtual {p0}, Landroid/widget/ActivityChooserModel;->notifyChanged()V
+    invoke-virtual {p0}, Landroid/database/DataSetObservable;->notifyChanged()V
 
     .line 760
     :cond_0
@@ -376,7 +376,7 @@
     invoke-direct {p0}, Landroid/widget/ActivityChooserModel;->sortActivitiesIfNeeded()Z
 
     .line 679
-    invoke-virtual {p0}, Landroid/widget/ActivityChooserModel;->notifyChanged()V
+    invoke-virtual {p0}, Landroid/database/DataSetObservable;->notifyChanged()V
 
     .line 673
     :cond_0
@@ -510,12 +510,12 @@
 
     move-result v6
 
-    iget-object v7, v0, Landroid/content/pm/ActivityInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
+    iget-object v7, v0, Landroid/content/pm/ComponentInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
     iget v7, v7, Landroid/content/pm/ApplicationInfo;->uid:I
 
     .line 718
-    iget-boolean v8, v0, Landroid/content/pm/ActivityInfo;->exported:Z
+    iget-boolean v8, v0, Landroid/content/pm/ComponentInfo;->exported:Z
 
     .line 716
     invoke-static {v5, v6, v7, v8}, Landroid/app/ActivityManager;->checkComponentPermission(Ljava/lang/String;IIZ)I
@@ -626,7 +626,7 @@
     aput-object v3, v2, v4
 
     .line 588
-    invoke-virtual {v0, v1, v2}, Landroid/widget/ActivityChooserModel$PersistHistoryAsyncTask;->executeOnExecutor(Ljava/util/concurrent/Executor;[Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-virtual {v0, v1, v2}, Landroid/os/AsyncTask;->executeOnExecutor(Ljava/util/concurrent/Executor;[Ljava/lang/Object;)Landroid/os/AsyncTask;
 
     .line 579
     :cond_2
@@ -1264,14 +1264,14 @@
 
     iget-object v6, v6, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
 
-    iget-object v6, v6, Landroid/content/pm/ActivityInfo;->packageName:Ljava/lang/String;
+    iget-object v6, v6, Landroid/content/pm/PackageItemInfo;->packageName:Ljava/lang/String;
 
     .line 482
     iget-object v8, v2, Landroid/widget/ActivityChooserModel$ActivityResolveInfo;->resolveInfo:Landroid/content/pm/ResolveInfo;
 
     iget-object v8, v8, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
 
-    iget-object v8, v8, Landroid/content/pm/ActivityInfo;->name:Ljava/lang/String;
+    iget-object v8, v8, Landroid/content/pm/PackageItemInfo;->name:Ljava/lang/String;
 
     .line 480
     invoke-direct {v3, v6, v8}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
@@ -1717,7 +1717,7 @@
     if-eqz v0, :cond_1
 
     .line 607
-    invoke-virtual {p0}, Landroid/widget/ActivityChooserModel;->notifyChanged()V
+    invoke-virtual {p0}, Landroid/database/DataSetObservable;->notifyChanged()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -1798,14 +1798,14 @@
 
     iget-object v5, v5, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
 
-    iget-object v5, v5, Landroid/content/pm/ActivityInfo;->packageName:Ljava/lang/String;
+    iget-object v5, v5, Landroid/content/pm/PackageItemInfo;->packageName:Ljava/lang/String;
 
     .line 563
     iget-object v7, v2, Landroid/widget/ActivityChooserModel$ActivityResolveInfo;->resolveInfo:Landroid/content/pm/ResolveInfo;
 
     iget-object v7, v7, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
 
-    iget-object v7, v7, Landroid/content/pm/ActivityInfo;->name:Ljava/lang/String;
+    iget-object v7, v7, Landroid/content/pm/PackageItemInfo;->name:Ljava/lang/String;
 
     .line 561
     invoke-direct {v0, v5, v7}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
@@ -1894,7 +1894,7 @@
     if-eqz v0, :cond_1
 
     .line 633
-    invoke-virtual {p0}, Landroid/widget/ActivityChooserModel;->notifyChanged()V
+    invoke-virtual {p0}, Landroid/database/DataSetObservable;->notifyChanged()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 

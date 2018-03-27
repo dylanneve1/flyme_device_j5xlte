@@ -68,7 +68,7 @@
 
     .line 45
     :try_start_0
-    iget-boolean v5, p0, Landroid/filterfw/core/ProgramPort;->mValueWaiting:Z
+    iget-boolean v5, p0, Landroid/filterfw/core/FieldPort;->mValueWaiting:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -76,9 +76,9 @@
 
     .line 47
     :try_start_1
-    iget-object v5, p0, Landroid/filterfw/core/ProgramPort;->mField:Ljava/lang/reflect/Field;
+    iget-object v5, p0, Landroid/filterfw/core/FieldPort;->mField:Ljava/lang/reflect/Field;
 
-    iget-object v6, p0, Landroid/filterfw/core/ProgramPort;->mFilter:Landroid/filterfw/core/Filter;
+    iget-object v6, p0, Landroid/filterfw/core/FilterPort;->mFilter:Landroid/filterfw/core/Filter;
 
     invoke-virtual {v5, v6}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -99,14 +99,14 @@
     .local v4, "program":Landroid/filterfw/core/Program;
     iget-object v5, p0, Landroid/filterfw/core/ProgramPort;->mVarName:Ljava/lang/String;
 
-    iget-object v6, p0, Landroid/filterfw/core/ProgramPort;->mValue:Ljava/lang/Object;
+    iget-object v6, p0, Landroid/filterfw/core/FieldPort;->mValue:Ljava/lang/Object;
 
     invoke-virtual {v4, v5, v6}, Landroid/filterfw/core/Program;->setHostValue(Ljava/lang/String;Ljava/lang/Object;)V
 
     .line 51
     const/4 v5, 0x0
 
-    iput-boolean v5, p0, Landroid/filterfw/core/ProgramPort;->mValueWaiting:Z
+    iput-boolean v5, p0, Landroid/filterfw/core/FieldPort;->mValueWaiting:Z
     :try_end_1
     .catch Ljava/lang/IllegalAccessException; {:try_start_1 .. :try_end_1} :catch_1
     .catch Ljava/lang/ClassCastException; {:try_start_1 .. :try_end_1} :catch_0
@@ -139,7 +139,7 @@
 
     move-result-object v6
 
-    iget-object v7, p0, Landroid/filterfw/core/ProgramPort;->mField:Ljava/lang/reflect/Field;
+    iget-object v7, p0, Landroid/filterfw/core/FieldPort;->mField:Ljava/lang/reflect/Field;
 
     invoke-virtual {v7}, Ljava/lang/reflect/Field;->getName()Ljava/lang/String;
 
@@ -195,7 +195,7 @@
 
     move-result-object v6
 
-    iget-object v7, p0, Landroid/filterfw/core/ProgramPort;->mField:Ljava/lang/reflect/Field;
+    iget-object v7, p0, Landroid/filterfw/core/FieldPort;->mField:Ljava/lang/reflect/Field;
 
     invoke-virtual {v7}, Ljava/lang/reflect/Field;->getName()Ljava/lang/String;
 

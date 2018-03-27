@@ -28,9 +28,9 @@
 
 .field static final TRANSACTION_answerCall_0:I = 0x1
 
-.field static final TRANSACTION_cdmaSetSecondCallState_10:I = 0xb
+.field static final TRANSACTION_cdmaSetSecondCallState:I = 0xb
 
-.field static final TRANSACTION_cdmaSwapSecondCallState_9:I = 0xa
+.field static final TRANSACTION_cdmaSwapSecondCallState:I = 0xa
 
 .field static final TRANSACTION_getNetworkOperator:I = 0x5
 

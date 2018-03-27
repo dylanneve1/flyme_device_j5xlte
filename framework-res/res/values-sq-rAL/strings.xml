@@ -117,6 +117,8 @@
     <string name="tethered_notification_no_device_message">Asnjë pajisje e lidhur</string>
     <string name="tethered_notification_one_device_message">%1$s pajisje e lidhur</string>
     <string name="tethered_notification_multi_device_message">%1$s pajisje të lidhura</string>
+    <string name="silent_mode_priority">Prioritet</string>
+    <string name="silent_mode_none">Asnjë</string>
     <string name="byteShort">B</string>
     <string name="kilobyteShort">KB</string>
     <string name="megabyteShort">MB</string>

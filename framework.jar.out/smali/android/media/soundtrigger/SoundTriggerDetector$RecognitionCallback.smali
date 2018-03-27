@@ -125,16 +125,16 @@
     .line 299
     new-instance v0, Landroid/media/soundtrigger/SoundTriggerDetector$EventPayload;
 
-    iget-boolean v1, p1, Landroid/hardware/soundtrigger/SoundTrigger$GenericRecognitionEvent;->triggerInData:Z
+    iget-boolean v1, p1, Landroid/hardware/soundtrigger/SoundTrigger$RecognitionEvent;->triggerInData:Z
 
-    iget-boolean v2, p1, Landroid/hardware/soundtrigger/SoundTrigger$GenericRecognitionEvent;->captureAvailable:Z
+    iget-boolean v2, p1, Landroid/hardware/soundtrigger/SoundTrigger$RecognitionEvent;->captureAvailable:Z
 
     .line 300
-    iget-object v3, p1, Landroid/hardware/soundtrigger/SoundTrigger$GenericRecognitionEvent;->captureFormat:Landroid/media/AudioFormat;
+    iget-object v3, p1, Landroid/hardware/soundtrigger/SoundTrigger$RecognitionEvent;->captureFormat:Landroid/media/AudioFormat;
 
-    iget v4, p1, Landroid/hardware/soundtrigger/SoundTrigger$GenericRecognitionEvent;->captureSession:I
+    iget v4, p1, Landroid/hardware/soundtrigger/SoundTrigger$RecognitionEvent;->captureSession:I
 
-    iget-object v5, p1, Landroid/hardware/soundtrigger/SoundTrigger$GenericRecognitionEvent;->data:[B
+    iget-object v5, p1, Landroid/hardware/soundtrigger/SoundTrigger$RecognitionEvent;->data:[B
 
     .line 299
     const/4 v6, 0x0

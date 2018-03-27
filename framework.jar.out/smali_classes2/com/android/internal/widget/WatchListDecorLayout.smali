@@ -171,12 +171,12 @@
 
     .line 116
     .local v3, "lp":Landroid/view/ViewGroup$MarginLayoutParams;
-    iget v5, v3, Landroid/view/ViewGroup$MarginLayoutParams;->width:I
+    iget v5, v3, Landroid/view/ViewGroup$LayoutParams;->width:I
 
     if-ne v5, v7, :cond_0
 
     .line 117
-    invoke-virtual {p0}, Lcom/android/internal/widget/WatchListDecorLayout;->getMeasuredWidth()I
+    invoke-virtual {p0}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result v5
 
@@ -222,12 +222,12 @@
     .end local v4    # "width":I
     .local v1, "childWidthMeasureSpec":I
     :goto_0
-    iget v5, v3, Landroid/view/ViewGroup$MarginLayoutParams;->height:I
+    iget v5, v3, Landroid/view/ViewGroup$LayoutParams;->height:I
 
     if-ne v5, v7, :cond_1
 
     .line 131
-    invoke-virtual {p0}, Lcom/android/internal/widget/WatchListDecorLayout;->getMeasuredHeight()I
+    invoke-virtual {p0}, Landroid/view/View;->getMeasuredHeight()I
 
     move-result v5
 
@@ -305,7 +305,7 @@
     add-int/2addr v5, v6
 
     .line 126
-    iget v6, v3, Landroid/view/ViewGroup$MarginLayoutParams;->width:I
+    iget v6, v3, Landroid/view/ViewGroup$LayoutParams;->width:I
 
     .line 123
     invoke-static {p2, v5, v6}, Lcom/android/internal/widget/WatchListDecorLayout;->getChildMeasureSpec(III)I
@@ -340,7 +340,7 @@
     add-int/2addr v5, v6
 
     .line 140
-    iget v6, v3, Landroid/view/ViewGroup$MarginLayoutParams;->height:I
+    iget v6, v3, Landroid/view/ViewGroup$LayoutParams;->height:I
 
     .line 137
     invoke-static {p3, v5, v6}, Lcom/android/internal/widget/WatchListDecorLayout;->getChildMeasureSpec(III)I
@@ -356,13 +356,13 @@
 
     .prologue
     .line 280
-    invoke-virtual {p0}, Lcom/android/internal/widget/WatchListDecorLayout;->isForegroundInsidePadding()Z
+    invoke-virtual {p0}, Landroid/view/View;->isForegroundInsidePadding()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget v0, p0, Lcom/android/internal/widget/WatchListDecorLayout;->mPaddingBottom:I
+    iget v0, p0, Landroid/view/View;->mPaddingBottom:I
 
     iget v1, p0, Lcom/android/internal/widget/WatchListDecorLayout;->mForegroundPaddingBottom:I
 
@@ -375,7 +375,7 @@
 
     .line 281
     :cond_0
-    iget v0, p0, Lcom/android/internal/widget/WatchListDecorLayout;->mPaddingBottom:I
+    iget v0, p0, Landroid/view/View;->mPaddingBottom:I
 
     iget v1, p0, Lcom/android/internal/widget/WatchListDecorLayout;->mForegroundPaddingBottom:I
 
@@ -389,13 +389,13 @@
 
     .prologue
     .line 265
-    invoke-virtual {p0}, Lcom/android/internal/widget/WatchListDecorLayout;->isForegroundInsidePadding()Z
+    invoke-virtual {p0}, Landroid/view/View;->isForegroundInsidePadding()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget v0, p0, Lcom/android/internal/widget/WatchListDecorLayout;->mPaddingLeft:I
+    iget v0, p0, Landroid/view/View;->mPaddingLeft:I
 
     iget v1, p0, Lcom/android/internal/widget/WatchListDecorLayout;->mForegroundPaddingLeft:I
 
@@ -408,7 +408,7 @@
 
     .line 266
     :cond_0
-    iget v0, p0, Lcom/android/internal/widget/WatchListDecorLayout;->mPaddingLeft:I
+    iget v0, p0, Landroid/view/View;->mPaddingLeft:I
 
     iget v1, p0, Lcom/android/internal/widget/WatchListDecorLayout;->mForegroundPaddingLeft:I
 
@@ -422,13 +422,13 @@
 
     .prologue
     .line 270
-    invoke-virtual {p0}, Lcom/android/internal/widget/WatchListDecorLayout;->isForegroundInsidePadding()Z
+    invoke-virtual {p0}, Landroid/view/View;->isForegroundInsidePadding()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget v0, p0, Lcom/android/internal/widget/WatchListDecorLayout;->mPaddingRight:I
+    iget v0, p0, Landroid/view/View;->mPaddingRight:I
 
     iget v1, p0, Lcom/android/internal/widget/WatchListDecorLayout;->mForegroundPaddingRight:I
 
@@ -441,7 +441,7 @@
 
     .line 271
     :cond_0
-    iget v0, p0, Lcom/android/internal/widget/WatchListDecorLayout;->mPaddingRight:I
+    iget v0, p0, Landroid/view/View;->mPaddingRight:I
 
     iget v1, p0, Lcom/android/internal/widget/WatchListDecorLayout;->mForegroundPaddingRight:I
 
@@ -455,13 +455,13 @@
 
     .prologue
     .line 275
-    invoke-virtual {p0}, Lcom/android/internal/widget/WatchListDecorLayout;->isForegroundInsidePadding()Z
+    invoke-virtual {p0}, Landroid/view/View;->isForegroundInsidePadding()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget v0, p0, Lcom/android/internal/widget/WatchListDecorLayout;->mPaddingTop:I
+    iget v0, p0, Landroid/view/View;->mPaddingTop:I
 
     iget v1, p0, Lcom/android/internal/widget/WatchListDecorLayout;->mForegroundPaddingTop:I
 
@@ -474,7 +474,7 @@
 
     .line 276
     :cond_0
-    iget v0, p0, Lcom/android/internal/widget/WatchListDecorLayout;->mPaddingTop:I
+    iget v0, p0, Landroid/view/View;->mPaddingTop:I
 
     iget v1, p0, Lcom/android/internal/widget/WatchListDecorLayout;->mForegroundPaddingTop:I
 
@@ -516,7 +516,7 @@
 
     .line 151
     :cond_0
-    invoke-virtual {p0}, Lcom/android/internal/widget/WatchListDecorLayout;->getMeasureAllChildren()Z
+    invoke-virtual {p0}, Landroid/widget/FrameLayout;->getMeasureAllChildren()Z
 
     move-result v0
 
@@ -576,14 +576,14 @@
 
     .local v2, "i":I
     :goto_0
-    invoke-virtual {p0}, Lcom/android/internal/widget/WatchListDecorLayout;->getChildCount()I
+    invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
     move-result v3
 
     if-ge v2, v3, :cond_4
 
     .line 77
-    invoke-virtual {p0, v2}, Lcom/android/internal/widget/WatchListDecorLayout;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {p0, v2}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -609,7 +609,9 @@
 
     .line 82
     :cond_0
-    check-cast v0, Landroid/widget/ListView;
+    nop
+
+    nop
 
     .end local v0    # "child":Landroid/view/View;
     iput-object v0, p0, Lcom/android/internal/widget/WatchListDecorLayout;->mListView:Landroid/widget/ListView;
@@ -619,12 +621,12 @@
 
     const/4 v4, 0x1
 
-    invoke-virtual {v3, v4}, Landroid/widget/ListView;->setNestedScrollingEnabled(Z)V
+    invoke-virtual {v3, v4}, Landroid/view/View;->setNestedScrollingEnabled(Z)V
 
     .line 85
     iget-object v3, p0, Lcom/android/internal/widget/WatchListDecorLayout;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v3}, Landroid/widget/ListView;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
+    invoke-virtual {v3}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
 
     move-result-object v3
 
@@ -742,7 +744,7 @@
 
     .prologue
     .line 160
-    invoke-virtual/range {p0 .. p0}, Lcom/android/internal/widget/WatchListDecorLayout;->getChildCount()I
+    invoke-virtual/range {p0 .. p0}, Landroid/view/ViewGroup;->getChildCount()I
 
     move-result v10
 
@@ -798,13 +800,13 @@
     .line 172
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v12}, Lcom/android/internal/widget/WatchListDecorLayout;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {v0, v12}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v4
 
     .line 173
     .local v4, "child":Landroid/view/View;
-    invoke-virtual/range {p0 .. p0}, Lcom/android/internal/widget/WatchListDecorLayout;->getMeasureAllChildren()Z
+    invoke-virtual/range {p0 .. p0}, Landroid/widget/FrameLayout;->getMeasureAllChildren()Z
 
     move-result v3
 
@@ -830,7 +832,7 @@
 
     move/from16 v7, p2
 
-    invoke-virtual/range {v3 .. v8}, Lcom/android/internal/widget/WatchListDecorLayout;->measureChildWithMargins(Landroid/view/View;IIII)V
+    invoke-virtual/range {v3 .. v8}, Landroid/view/ViewGroup;->measureChildWithMargins(Landroid/view/View;IIII)V
 
     .line 175
     invoke-virtual {v4}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
@@ -845,11 +847,11 @@
 
     move-result v3
 
-    iget v5, v13, Landroid/widget/FrameLayout$LayoutParams;->leftMargin:I
+    iget v5, v13, Landroid/view/ViewGroup$MarginLayoutParams;->leftMargin:I
 
     add-int/2addr v3, v5
 
-    iget v5, v13, Landroid/widget/FrameLayout$LayoutParams;->rightMargin:I
+    iget v5, v13, Landroid/view/ViewGroup$MarginLayoutParams;->rightMargin:I
 
     add-int/2addr v3, v5
 
@@ -863,11 +865,11 @@
 
     move-result v3
 
-    iget v5, v13, Landroid/widget/FrameLayout$LayoutParams;->topMargin:I
+    iget v5, v13, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
 
     add-int/2addr v3, v5
 
-    iget v5, v13, Landroid/widget/FrameLayout$LayoutParams;->bottomMargin:I
+    iget v5, v13, Landroid/view/ViewGroup$MarginLayoutParams;->bottomMargin:I
 
     add-int/2addr v3, v5
 
@@ -889,14 +891,14 @@
     if-eqz v16, :cond_2
 
     .line 182
-    iget v3, v13, Landroid/widget/FrameLayout$LayoutParams;->width:I
+    iget v3, v13, Landroid/view/ViewGroup$LayoutParams;->width:I
 
     const/4 v5, -0x1
 
     if-eq v3, v5, :cond_1
 
     .line 183
-    iget v3, v13, Landroid/widget/FrameLayout$LayoutParams;->height:I
+    iget v3, v13, Landroid/view/ViewGroup$LayoutParams;->height:I
 
     const/4 v5, -0x1
 
@@ -970,7 +972,7 @@
     add-int/2addr v14, v3
 
     .line 195
-    invoke-virtual/range {p0 .. p0}, Lcom/android/internal/widget/WatchListDecorLayout;->getSuggestedMinimumHeight()I
+    invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getSuggestedMinimumHeight()I
 
     move-result v3
 
@@ -979,7 +981,7 @@
     move-result v14
 
     .line 196
-    invoke-virtual/range {p0 .. p0}, Lcom/android/internal/widget/WatchListDecorLayout;->getSuggestedMinimumWidth()I
+    invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getSuggestedMinimumWidth()I
 
     move-result v3
 
@@ -988,7 +990,7 @@
     move-result v15
 
     .line 199
-    invoke-virtual/range {p0 .. p0}, Lcom/android/internal/widget/WatchListDecorLayout;->getForeground()Landroid/graphics/drawable/Drawable;
+    invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getForeground()Landroid/graphics/drawable/Drawable;
 
     move-result-object v11
 
@@ -1035,7 +1037,7 @@
     .line 205
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3, v5}, Lcom/android/internal/widget/WatchListDecorLayout;->setMeasuredDimension(II)V
+    invoke-virtual {v0, v3, v5}, Landroid/view/View;->setMeasuredDimension(II)V
 
     .line 209
     move-object/from16 v0, p0
@@ -1060,7 +1062,7 @@
 
     iget v5, v0, Lcom/android/internal/widget/WatchListDecorLayout;->mPendingScroll:I
 
-    invoke-virtual {v3, v5}, Landroid/widget/ListView;->scrollListBy(I)V
+    invoke-virtual {v3, v5}, Landroid/widget/AbsListView;->scrollListBy(I)V
 
     .line 212
     const/4 v3, 0x0
@@ -1075,7 +1077,7 @@
 
     iget-object v3, v0, Lcom/android/internal/widget/WatchListDecorLayout;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v3}, Landroid/widget/ListView;->getPaddingTop()I
+    invoke-virtual {v3}, Landroid/view/View;->getPaddingTop()I
 
     move-result v3
 
@@ -1105,7 +1107,7 @@
 
     iget-object v3, v0, Lcom/android/internal/widget/WatchListDecorLayout;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v3}, Landroid/widget/ListView;->getPaddingBottom()I
+    invoke-virtual {v3}, Landroid/view/View;->getPaddingBottom()I
 
     move-result v3
 
@@ -1135,7 +1137,7 @@
 
     iget-object v3, v0, Lcom/android/internal/widget/WatchListDecorLayout;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v3}, Landroid/widget/ListView;->getPaddingTop()I
+    invoke-virtual {v3}, Landroid/view/View;->getPaddingTop()I
 
     move-result v3
 
@@ -1148,7 +1150,7 @@
 
     iget-object v3, v0, Lcom/android/internal/widget/WatchListDecorLayout;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v3}, Landroid/widget/ListView;->getPaddingBottom()I
+    invoke-virtual {v3}, Landroid/view/View;->getPaddingBottom()I
 
     move-result v3
 
@@ -1166,7 +1168,7 @@
 
     iget-object v5, v0, Lcom/android/internal/widget/WatchListDecorLayout;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v5}, Landroid/widget/ListView;->getPaddingTop()I
+    invoke-virtual {v5}, Landroid/view/View;->getPaddingTop()I
 
     move-result v5
 
@@ -1188,7 +1190,7 @@
 
     iget-object v5, v0, Lcom/android/internal/widget/WatchListDecorLayout;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v5}, Landroid/widget/ListView;->getPaddingLeft()I
+    invoke-virtual {v5}, Landroid/view/View;->getPaddingLeft()I
 
     move-result v5
 
@@ -1197,7 +1199,7 @@
 
     iget-object v6, v0, Lcom/android/internal/widget/WatchListDecorLayout;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v6}, Landroid/widget/ListView;->getPaddingRight()I
+    invoke-virtual {v6}, Landroid/view/View;->getPaddingRight()I
 
     move-result v6
 
@@ -1206,7 +1208,7 @@
 
     move/from16 v1, v17
 
-    invoke-virtual {v3, v5, v0, v6, v1}, Landroid/widget/ListView;->setPadding(IIII)V
+    invoke-virtual {v3, v5, v0, v6, v1}, Landroid/view/View;->setPadding(IIII)V
 
     .line 229
     .end local v17    # "paddingBottom":I
@@ -1309,7 +1311,7 @@
     .line 291
     iget-object v2, p0, Lcom/android/internal/widget/WatchListDecorLayout;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v2}, Landroid/widget/ListView;->getChildCount()I
+    invoke-virtual {v2}, Landroid/view/ViewGroup;->getChildCount()I
 
     move-result v2
 
@@ -1318,7 +1320,7 @@
     .line 292
     iget-object v2, p0, Lcom/android/internal/widget/WatchListDecorLayout;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v2}, Landroid/widget/ListView;->getFirstVisiblePosition()I
+    invoke-virtual {v2}, Landroid/widget/AdapterView;->getFirstVisiblePosition()I
 
     move-result v2
 
@@ -1327,7 +1329,7 @@
     .line 293
     iget-object v2, p0, Lcom/android/internal/widget/WatchListDecorLayout;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v2, v3}, Landroid/widget/ListView;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {v2, v3}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -1374,7 +1376,7 @@
     .line 306
     iget-object v2, p0, Lcom/android/internal/widget/WatchListDecorLayout;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v2}, Landroid/widget/ListView;->getChildCount()I
+    invoke-virtual {v2}, Landroid/view/ViewGroup;->getChildCount()I
 
     move-result v2
 
@@ -1383,13 +1385,13 @@
     .line 307
     iget-object v2, p0, Lcom/android/internal/widget/WatchListDecorLayout;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v2}, Landroid/widget/ListView;->getLastVisiblePosition()I
+    invoke-virtual {v2}, Landroid/widget/AdapterView;->getLastVisiblePosition()I
 
     move-result v2
 
     iget-object v3, p0, Lcom/android/internal/widget/WatchListDecorLayout;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v3}, Landroid/widget/ListView;->getCount()I
+    invoke-virtual {v3}, Landroid/widget/AdapterView;->getCount()I
 
     move-result v3
 
@@ -1402,13 +1404,13 @@
 
     iget-object v3, p0, Lcom/android/internal/widget/WatchListDecorLayout;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v3}, Landroid/widget/ListView;->getChildCount()I
+    invoke-virtual {v3}, Landroid/view/ViewGroup;->getChildCount()I
 
     move-result v3
 
     add-int/lit8 v3, v3, -0x1
 
-    invoke-virtual {v2, v3}, Landroid/widget/ListView;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {v2, v3}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v1
 
@@ -1511,7 +1513,7 @@
     const/4 v4, 0x0
 
     .line 242
-    invoke-virtual {p0}, Lcom/android/internal/widget/WatchListDecorLayout;->getForegroundGravity()I
+    invoke-virtual {p0}, Landroid/view/View;->getForegroundGravity()I
 
     move-result v2
 
@@ -1521,13 +1523,13 @@
     invoke-super {p0, p1}, Landroid/widget/FrameLayout;->setForegroundGravity(I)V
 
     .line 246
-    invoke-virtual {p0}, Lcom/android/internal/widget/WatchListDecorLayout;->getForeground()Landroid/graphics/drawable/Drawable;
+    invoke-virtual {p0}, Landroid/view/View;->getForeground()Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
     .line 247
     .local v0, "foreground":Landroid/graphics/drawable/Drawable;
-    invoke-virtual {p0}, Lcom/android/internal/widget/WatchListDecorLayout;->getForegroundGravity()I
+    invoke-virtual {p0}, Landroid/view/View;->getForegroundGravity()I
 
     move-result v2
 

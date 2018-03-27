@@ -75,7 +75,7 @@
     :cond_0
     iget-object v0, p0, Lcom/android/internal/app/NetInitiatedActivity$2;->this$0:Lcom/android/internal/app/NetInitiatedActivity;
 
-    invoke-virtual {v0}, Lcom/android/internal/app/NetInitiatedActivity;->finish()V
+    invoke-virtual {v0}, Landroid/app/Activity;->finish()V
 
     goto :goto_0
 

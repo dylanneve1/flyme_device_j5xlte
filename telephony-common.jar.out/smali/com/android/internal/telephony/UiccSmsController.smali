@@ -49,14 +49,14 @@
     .prologue
     const/4 v6, 0x0
 
-    .line 361
+    .line 365
     invoke-direct {p0, p1}, Lcom/android/internal/telephony/UiccSmsController;->isActiveSubId(I)Z
 
     move-result v3
 
     if-nez v3, :cond_0
 
-    .line 362
+    .line 366
     const-string/jumbo v3, "RIL_UiccSmsController"
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -85,10 +85,10 @@
 
     invoke-static {v3, v4}, Landroid/telephony/Rlog;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 363
+    .line 367
     return-object v6
 
-    .line 366
+    .line 370
     :cond_0
     invoke-static {}, Lcom/android/internal/telephony/SubscriptionController;->getInstance()Lcom/android/internal/telephony/SubscriptionController;
 
@@ -98,7 +98,7 @@
 
     move-result v2
 
-    .line 368
+    .line 372
     .local v2, "phoneId":I
     invoke-static {v2}, Landroid/telephony/SubscriptionManager;->isValidPhoneId(I)Z
 
@@ -106,16 +106,16 @@
 
     if-eqz v3, :cond_1
 
-    .line 369
+    .line 373
     const v3, 0x7fffffff
 
     if-ne v2, v3, :cond_2
 
-    .line 370
+    .line 374
     :cond_1
     const/4 v2, 0x0
 
-    .line 375
+    .line 379
     :cond_2
     :try_start_0
     iget-object v3, p0, Lcom/android/internal/telephony/UiccSmsController;->mPhone:[Lcom/android/internal/telephony/Phone;
@@ -129,14 +129,14 @@
 
     move-result-object v3
 
-    .line 374
+    .line 378
     return-object v3
 
-    .line 380
+    .line 384
     :catch_0
     move-exception v0
 
-    .line 381
+    .line 385
     .local v0, "e":Ljava/lang/ArrayIndexOutOfBoundsException;
     const-string/jumbo v3, "RIL_UiccSmsController"
 
@@ -174,18 +174,18 @@
 
     invoke-static {v3, v4}, Landroid/telephony/Rlog;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 382
+    .line 386
     invoke-virtual {v0}, Ljava/lang/ArrayIndexOutOfBoundsException;->printStackTrace()V
 
-    .line 383
+    .line 387
     return-object v6
 
-    .line 376
+    .line 380
     .end local v0    # "e":Ljava/lang/ArrayIndexOutOfBoundsException;
     :catch_1
     move-exception v1
 
-    .line 377
+    .line 381
     .local v1, "e":Ljava/lang/NullPointerException;
     const-string/jumbo v3, "RIL_UiccSmsController"
 
@@ -223,10 +223,10 @@
 
     invoke-static {v3, v4}, Landroid/telephony/Rlog;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 378
+    .line 382
     invoke-virtual {v1}, Ljava/lang/NullPointerException;->printStackTrace()V
 
-    .line 379
+    .line 383
     return-object v6
 .end method
 
@@ -235,7 +235,7 @@
     .param p1, "subId"    # I
 
     .prologue
-    .line 434
+    .line 438
     invoke-static {}, Lcom/android/internal/telephony/SubscriptionController;->getInstance()Lcom/android/internal/telephony/SubscriptionController;
 
     move-result-object v0
@@ -253,21 +253,21 @@
     .param p2, "errorCode"    # I
 
     .prologue
-    .line 438
+    .line 442
     if-eqz p1, :cond_0
 
-    .line 440
+    .line 444
     :try_start_0
     invoke-virtual {p1, p2}, Landroid/app/PendingIntent;->send(I)V
     :try_end_0
     .catch Landroid/app/PendingIntent$CanceledException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 437
+    .line 441
     :cond_0
     :goto_0
     return-void
 
-    .line 441
+    .line 445
     :catch_0
     move-exception v0
 
@@ -289,7 +289,7 @@
     .end annotation
 
     .prologue
-    .line 447
+    .line 451
     .local p1, "intents":Ljava/util/List;, "Ljava/util/List<Landroid/app/PendingIntent;>;"
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
@@ -309,13 +309,13 @@
 
     check-cast v0, Landroid/app/PendingIntent;
 
-    .line 448
+    .line 452
     .local v0, "intent":Landroid/app/PendingIntent;
     invoke-direct {p0, v0, p2}, Lcom/android/internal/telephony/UiccSmsController;->sendErrorInPendingIntent(Landroid/app/PendingIntent;I)V
 
     goto :goto_0
 
-    .line 446
+    .line 450
     .end local v0    # "intent":Landroid/app/PendingIntent;
     :cond_0
     return-void
@@ -617,23 +617,23 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 335
+    .line 339
     invoke-direct {p0, p1}, Lcom/android/internal/telephony/UiccSmsController;->getIccSmsInterfaceManager(I)Lcom/android/internal/telephony/IccSmsInterfaceManager;
 
     move-result-object v0
 
-    .line 336
+    .line 340
     .local v0, "iccSmsIntMgr":Lcom/android/internal/telephony/IccSmsInterfaceManager;
     if-eqz v0, :cond_0
 
-    .line 337
+    .line 341
     invoke-virtual {v0}, Lcom/android/internal/telephony/IccSmsInterfaceManager;->getImsSmsFormat()Ljava/lang/String;
 
     move-result-object v1
 
     return-object v1
 
-    .line 339
+    .line 343
     :cond_0
     const-string/jumbo v1, "RIL_UiccSmsController"
 
@@ -641,7 +641,7 @@
 
     invoke-static {v1, v2}, Landroid/telephony/Rlog;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 341
+    .line 345
     return-object v3
 .end method
 
@@ -649,7 +649,7 @@
     .locals 1
 
     .prologue
-    .line 391
+    .line 395
     invoke-static {}, Lcom/android/internal/telephony/SubscriptionController;->getInstance()Lcom/android/internal/telephony/SubscriptionController;
 
     move-result-object v0
@@ -724,23 +724,23 @@
     .end annotation
 
     .prologue
-    .line 458
+    .line 462
     invoke-direct {p0, p1}, Lcom/android/internal/telephony/UiccSmsController;->getIccSmsInterfaceManager(I)Lcom/android/internal/telephony/IccSmsInterfaceManager;
 
     move-result-object v0
 
-    .line 460
+    .line 464
     .local v0, "iccSmsIntMgr":Lcom/android/internal/telephony/IccSmsInterfaceManager;
     if-eqz v0, :cond_0
 
-    .line 461
+    .line 465
     invoke-virtual {v0}, Lcom/android/internal/telephony/IccSmsInterfaceManager;->getSmsCapacityOnIcc()I
 
     move-result v1
 
     return v1
 
-    .line 463
+    .line 467
     :cond_0
     const-string/jumbo v1, "RIL_UiccSmsController"
 
@@ -764,7 +764,7 @@
 
     invoke-static {v1, v2}, Landroid/telephony/Rlog;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 464
+    .line 468
     const/4 v1, -0x1
 
     return v1
@@ -778,23 +778,23 @@
     .param p4, "receivedIntent"    # Landroid/app/PendingIntent;
 
     .prologue
-    .line 347
+    .line 351
     invoke-direct {p0, p1}, Lcom/android/internal/telephony/UiccSmsController;->getIccSmsInterfaceManager(I)Lcom/android/internal/telephony/IccSmsInterfaceManager;
 
     move-result-object v0
 
-    .line 348
+    .line 352
     .local v0, "iccSmsIntMgr":Lcom/android/internal/telephony/IccSmsInterfaceManager;
     if-eqz v0, :cond_0
 
-    .line 349
+    .line 353
     invoke-virtual {v0, p2, p3, p4}, Lcom/android/internal/telephony/IccSmsInterfaceManager;->injectSmsPdu([BLjava/lang/String;Landroid/app/PendingIntent;)V
 
-    .line 346
+    .line 350
     :goto_0
     return-void
 
-    .line 351
+    .line 355
     :cond_0
     const-string/jumbo v1, "RIL_UiccSmsController"
 
@@ -802,7 +802,7 @@
 
     invoke-static {v1, v2}, Landroid/telephony/Rlog;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 353
+    .line 357
     const/4 v1, 0x2
 
     invoke-direct {p0, p4, v1}, Lcom/android/internal/telephony/UiccSmsController;->sendErrorInPendingIntent(Landroid/app/PendingIntent;I)V
@@ -849,7 +849,7 @@
     .locals 1
 
     .prologue
-    .line 399
+    .line 403
     invoke-static {}, Lcom/android/internal/telephony/PhoneFactory;->isSMSPromptEnabled()Z
 
     move-result v0
@@ -1012,6 +1012,13 @@
     .end local v2    # "i":I
     .end local v6    # "subInfoLength":I
     :cond_3
+    invoke-virtual {v8}, Landroid/telephony/TelephonyManager;->getSimCount()I
+
+    move-result v11
+
+    if-le v11, v10, :cond_5
+
+    .line 331
     if-eqz v0, :cond_4
 
     :goto_1
@@ -1021,6 +1028,10 @@
     move v9, v10
 
     goto :goto_1
+
+    .line 334
+    :cond_5
+    return v9
 .end method
 
 .method public sendDataForSubscriber(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;I[BLandroid/app/PendingIntent;Landroid/app/PendingIntent;)V
@@ -1456,14 +1467,14 @@
     .end annotation
 
     .prologue
-    .line 419
+    .line 423
     .local p5, "sentIntents":Ljava/util/List;, "Ljava/util/List<Landroid/app/PendingIntent;>;"
     .local p6, "deliveryIntents":Ljava/util/List;, "Ljava/util/List<Landroid/app/PendingIntent;>;"
     invoke-direct {p0, p1}, Lcom/android/internal/telephony/UiccSmsController;->getIccSmsInterfaceManager(I)Lcom/android/internal/telephony/IccSmsInterfaceManager;
 
     move-result-object v0
 
-    .line 420
+    .line 424
     .local v0, "iccSmsIntMgr":Lcom/android/internal/telephony/IccSmsInterfaceManager;
     if-eqz v0, :cond_0
 
@@ -1477,14 +1488,14 @@
 
     move-object v5, p6
 
-    .line 421
+    .line 425
     invoke-virtual/range {v0 .. v5}, Lcom/android/internal/telephony/IccSmsInterfaceManager;->sendStoredMultipartText(Ljava/lang/String;Landroid/net/Uri;Ljava/lang/String;Ljava/util/List;Ljava/util/List;)V
 
-    .line 418
+    .line 422
     :goto_0
     return-void
 
-    .line 424
+    .line 428
     :cond_0
     const-string/jumbo v1, "RIL_UiccSmsController"
 
@@ -1508,7 +1519,7 @@
 
     invoke-static {v1, v2}, Landroid/telephony/Rlog;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 426
+    .line 430
     const/4 v1, 0x1
 
     invoke-direct {p0, p5, v1}, Lcom/android/internal/telephony/UiccSmsController;->sendErrorInPendingIntents(Ljava/util/List;I)V
@@ -1531,12 +1542,12 @@
     .end annotation
 
     .prologue
-    .line 405
+    .line 409
     invoke-direct {p0, p1}, Lcom/android/internal/telephony/UiccSmsController;->getIccSmsInterfaceManager(I)Lcom/android/internal/telephony/IccSmsInterfaceManager;
 
     move-result-object v0
 
-    .line 406
+    .line 410
     .local v0, "iccSmsIntMgr":Lcom/android/internal/telephony/IccSmsInterfaceManager;
     if-eqz v0, :cond_0
 
@@ -1550,14 +1561,14 @@
 
     move-object v5, p6
 
-    .line 407
+    .line 411
     invoke-virtual/range {v0 .. v5}, Lcom/android/internal/telephony/IccSmsInterfaceManager;->sendStoredText(Ljava/lang/String;Landroid/net/Uri;Ljava/lang/String;Landroid/app/PendingIntent;Landroid/app/PendingIntent;)V
 
-    .line 404
+    .line 408
     :goto_0
     return-void
 
-    .line 410
+    .line 414
     :cond_0
     const-string/jumbo v1, "RIL_UiccSmsController"
 
@@ -1581,7 +1592,7 @@
 
     invoke-static {v1, v2}, Landroid/telephony/Rlog;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 411
+    .line 415
     const/4 v1, 0x1
 
     invoke-direct {p0, p5, v1}, Lcom/android/internal/telephony/UiccSmsController;->sendErrorInPendingIntent(Landroid/app/PendingIntent;I)V

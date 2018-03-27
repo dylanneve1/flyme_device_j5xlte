@@ -146,7 +146,7 @@
 
     .prologue
     .line 132
-    invoke-virtual {p0}, Landroid/nfc/tech/NfcF;->getMaxTransceiveLengthInternal()I
+    invoke-virtual {p0}, Landroid/nfc/tech/BasicTagTechnology;->getMaxTransceiveLengthInternal()I
 
     move-result v0
 
@@ -180,7 +180,7 @@
     .prologue
     .line 169
     :try_start_0
-    iget-object v1, p0, Landroid/nfc/tech/NfcF;->mTag:Landroid/nfc/Tag;
+    iget-object v1, p0, Landroid/nfc/tech/BasicTagTechnology;->mTag:Landroid/nfc/Tag;
 
     invoke-virtual {v1}, Landroid/nfc/Tag;->getTagService()Landroid/nfc/INfcTag;
 
@@ -241,7 +241,7 @@
     .prologue
     .line 151
     :try_start_0
-    iget-object v2, p0, Landroid/nfc/tech/NfcF;->mTag:Landroid/nfc/Tag;
+    iget-object v2, p0, Landroid/nfc/tech/BasicTagTechnology;->mTag:Landroid/nfc/Tag;
 
     invoke-virtual {v2}, Landroid/nfc/Tag;->getTagService()Landroid/nfc/INfcTag;
 
@@ -300,7 +300,7 @@
     .line 124
     const/4 v0, 0x1
 
-    invoke-virtual {p0, p1, v0}, Landroid/nfc/tech/NfcF;->transceive([BZ)[B
+    invoke-virtual {p0, p1, v0}, Landroid/nfc/tech/BasicTagTechnology;->transceive([BZ)[B
 
     move-result-object v0
 

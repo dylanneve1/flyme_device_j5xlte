@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/server/devicepolicy/DevicePolicyManagerService;
 
     .prologue
-    .line 387
+    .line 389
     iput-object p1, p0, Lcom/android/server/devicepolicy/DevicePolicyManagerService$3;->this$0:Lcom/android/server/devicepolicy/DevicePolicyManagerService;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -40,12 +40,12 @@
     .param p2, "intent"    # Landroid/content/Intent;
 
     .prologue
-    .line 391
+    .line 393
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 392
+    .line 394
     .local v0, "action":Ljava/lang/String;
     iget-object v1, p0, Lcom/android/server/devicepolicy/DevicePolicyManagerService$3;->this$0:Lcom/android/server/devicepolicy/DevicePolicyManagerService;
 
@@ -57,13 +57,13 @@
 
     const-string/jumbo v2, "DevicePolicyManagerService"
 
-    .line 393
+    .line 395
     const v3, 0x28700e57
 
-    .line 392
+    .line 394
     invoke-virtual {v1, v2, v3}, Landroid/app/NotificationManager;->cancel(Ljava/lang/String;I)V
 
-    .line 394
+    .line 396
     const-string/jumbo v1, "com.android.server.action.REMOTE_BUGREPORT_SHARING_ACCEPTED"
 
     invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -72,12 +72,12 @@
 
     if-eqz v1, :cond_1
 
-    .line 395
+    .line 397
     iget-object v1, p0, Lcom/android/server/devicepolicy/DevicePolicyManagerService$3;->this$0:Lcom/android/server/devicepolicy/DevicePolicyManagerService;
 
     invoke-static {v1}, Lcom/android/server/devicepolicy/DevicePolicyManagerService;->-wrap11(Lcom/android/server/devicepolicy/DevicePolicyManagerService;)V
 
-    .line 399
+    .line 401
     :cond_0
     :goto_0
     iget-object v1, p0, Lcom/android/server/devicepolicy/DevicePolicyManagerService$3;->this$0:Lcom/android/server/devicepolicy/DevicePolicyManagerService;
@@ -92,10 +92,10 @@
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
-    .line 390
+    .line 392
     return-void
 
-    .line 396
+    .line 398
     :cond_1
     const-string/jumbo v1, "com.android.server.action.REMOTE_BUGREPORT_SHARING_DECLINED"
 
@@ -105,7 +105,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 397
+    .line 399
     iget-object v1, p0, Lcom/android/server/devicepolicy/DevicePolicyManagerService$3;->this$0:Lcom/android/server/devicepolicy/DevicePolicyManagerService;
 
     invoke-static {v1}, Lcom/android/server/devicepolicy/DevicePolicyManagerService;->-wrap12(Lcom/android/server/devicepolicy/DevicePolicyManagerService;)V

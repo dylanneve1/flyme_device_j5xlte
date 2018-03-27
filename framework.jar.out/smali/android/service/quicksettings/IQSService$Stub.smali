@@ -28,15 +28,15 @@
 
 .field static final TRANSACTION_getTile:I = 0x1
 
-.field static final TRANSACTION_isLocked_5:I = 0x6
+.field static final TRANSACTION_isLocked:I = 0x6
 
 .field static final TRANSACTION_isSecure:I = 0x7
 
 .field static final TRANSACTION_onDialogHidden:I = 0x9
 
-.field static final TRANSACTION_onShowDialog_3:I = 0x4
+.field static final TRANSACTION_onShowDialog:I = 0x4
 
-.field static final TRANSACTION_onStartActivity_4:I = 0x5
+.field static final TRANSACTION_onStartActivity:I = 0x5
 
 .field static final TRANSACTION_onStartSuccessful:I = 0xa
 

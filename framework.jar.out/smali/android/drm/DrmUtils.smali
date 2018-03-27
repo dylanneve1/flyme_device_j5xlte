@@ -132,7 +132,7 @@
 
     .line 54
     .local v1, "data":[B
-    invoke-virtual {v0, v1}, Ljava/io/BufferedInputStream;->read([B)I
+    invoke-virtual {v0, v1}, Ljava/io/FilterInputStream;->read([B)I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 

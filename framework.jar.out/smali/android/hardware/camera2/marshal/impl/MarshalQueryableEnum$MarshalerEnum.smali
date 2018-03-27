@@ -75,7 +75,7 @@
     .prologue
     .line 97
     .local p0, "this":Landroid/hardware/camera2/marshal/impl/MarshalQueryableEnum$MarshalerEnum;, "Landroid/hardware/camera2/marshal/impl/MarshalQueryableEnum<TT;>.MarshalerEnum;"
-    iget v0, p0, Landroid/hardware/camera2/marshal/impl/MarshalQueryableEnum$MarshalerEnum;->mNativeType:I
+    iget v0, p0, Landroid/hardware/camera2/marshal/Marshaler;->mNativeType:I
 
     invoke-static {v0}, Landroid/hardware/camera2/marshal/MarshalHelpers;->getPrimitiveTypeSize(I)I
 
@@ -109,7 +109,7 @@
 
     .line 62
     .local v0, "enumValue":I
-    iget v1, p0, Landroid/hardware/camera2/marshal/impl/MarshalQueryableEnum$MarshalerEnum;->mNativeType:I
+    iget v1, p0, Landroid/hardware/camera2/marshal/Marshaler;->mNativeType:I
 
     if-ne v1, v3, :cond_0
 
@@ -122,7 +122,7 @@
 
     .line 64
     :cond_0
-    iget v1, p0, Landroid/hardware/camera2/marshal/impl/MarshalQueryableEnum$MarshalerEnum;->mNativeType:I
+    iget v1, p0, Landroid/hardware/camera2/marshal/Marshaler;->mNativeType:I
 
     if-nez v1, :cond_3
 
@@ -206,7 +206,7 @@
     .prologue
     .line 79
     .local p0, "this":Landroid/hardware/camera2/marshal/impl/MarshalQueryableEnum$MarshalerEnum;, "Landroid/hardware/camera2/marshal/impl/MarshalQueryableEnum<TT;>.MarshalerEnum;"
-    iget v1, p0, Landroid/hardware/camera2/marshal/impl/MarshalQueryableEnum$MarshalerEnum;->mNativeType:I
+    iget v1, p0, Landroid/hardware/camera2/marshal/Marshaler;->mNativeType:I
 
     packed-switch v1, :pswitch_data_0
 

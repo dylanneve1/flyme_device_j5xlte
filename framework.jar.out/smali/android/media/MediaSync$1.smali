@@ -118,7 +118,7 @@
     .local v0, "audioBuffer":Landroid/media/MediaSync$AudioBuffer;
     iget-object v6, v0, Landroid/media/MediaSync$AudioBuffer;->mByteBuffer:Ljava/nio/ByteBuffer;
 
-    invoke-virtual {v6}, Ljava/nio/ByteBuffer;->remaining()I
+    invoke-virtual {v6}, Ljava/nio/Buffer;->remaining()I
 
     move-result v4
 

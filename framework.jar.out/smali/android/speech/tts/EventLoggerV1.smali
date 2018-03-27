@@ -144,11 +144,11 @@
     if-eq p1, v0, :cond_0
 
     .line 39
-    iget-object v0, p0, Landroid/speech/tts/EventLoggerV1;->mServiceApp:Ljava/lang/String;
+    iget-object v0, p0, Landroid/speech/tts/AbstractEventLogger;->mServiceApp:Ljava/lang/String;
 
-    iget v1, p0, Landroid/speech/tts/EventLoggerV1;->mCallerUid:I
+    iget v1, p0, Landroid/speech/tts/AbstractEventLogger;->mCallerUid:I
 
-    iget v2, p0, Landroid/speech/tts/EventLoggerV1;->mCallerPid:I
+    iget v2, p0, Landroid/speech/tts/AbstractEventLogger;->mCallerPid:I
 
     .line 40
     invoke-direct {p0}, Landroid/speech/tts/EventLoggerV1;->getUtteranceLength()I
@@ -188,11 +188,11 @@
 
     .prologue
     .line 47
-    iget-object v1, p0, Landroid/speech/tts/EventLoggerV1;->mServiceApp:Ljava/lang/String;
+    iget-object v1, p0, Landroid/speech/tts/AbstractEventLogger;->mServiceApp:Ljava/lang/String;
 
-    iget v2, p0, Landroid/speech/tts/EventLoggerV1;->mCallerUid:I
+    iget v2, p0, Landroid/speech/tts/AbstractEventLogger;->mCallerUid:I
 
-    iget v3, p0, Landroid/speech/tts/EventLoggerV1;->mCallerPid:I
+    iget v3, p0, Landroid/speech/tts/AbstractEventLogger;->mCallerPid:I
 
     .line 48
     invoke-direct {p0}, Landroid/speech/tts/EventLoggerV1;->getUtteranceLength()I

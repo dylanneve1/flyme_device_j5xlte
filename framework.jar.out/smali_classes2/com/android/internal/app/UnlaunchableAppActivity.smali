@@ -331,7 +331,7 @@
 
     .line 89
     .local v5, "rootView":Landroid/view/View;
-    const v7, 0x1020456
+    const v7, 0x1020455
 
     invoke-virtual {v5, v7}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -341,7 +341,7 @@
 
     .line 90
     .local v6, "titleView":Landroid/widget/TextView;
-    const v7, 0x1020457
+    const v7, 0x1020456
 
     invoke-virtual {v5, v7}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

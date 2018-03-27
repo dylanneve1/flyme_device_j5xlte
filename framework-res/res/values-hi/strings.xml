@@ -94,6 +94,8 @@
     <string name="tethered_notification_no_device_message">कोई जुड़ा हुआ उपकरण नहीं है</string>
     <string name="tethered_notification_one_device_message">%1$s जुड़ा हुआ उपकरण</string>
     <string name="tethered_notification_multi_device_message">%1$s जुड़े हुए उपकरण</string>
+    <string name="silent_mode_priority">वरीयता</string>
+    <string name="silent_mode_none">कुछ नहीं</string>
     <string name="month_day_year" formatted="false">%-e %B %Y</string>
     <string name="time_of_day" formatted="false">%-l:%M:%S %p</string>
     <string name="date_and_time" formatted="false">%-l:%M:%S %p %d-%m-%Y</string>

@@ -50,9 +50,9 @@
 
 .field static final TRANSACTION_getAudioState:I = 0x19
 
-.field static final TRANSACTION_getConnectedDevices_4:I = 0x5
+.field static final TRANSACTION_getConnectedDevices:I = 0x5
 
-.field static final TRANSACTION_getConnectionState_6:I = 0x7
+.field static final TRANSACTION_getConnectionState:I = 0x7
 
 .field static final TRANSACTION_getCurrentAgEvents:I = 0xd
 
@@ -60,11 +60,11 @@
 
 .field static final TRANSACTION_getCurrentCalls:I = 0xc
 
-.field static final TRANSACTION_getDevicesMatchingConnectionStates_5:I = 0x6
+.field static final TRANSACTION_getDevicesMatchingConnectionStates:I = 0x6
 
 .field static final TRANSACTION_getLastVoiceTagNumber:I = 0x18
 
-.field static final TRANSACTION_getPriority_8:I = 0x9
+.field static final TRANSACTION_getPriority:I = 0x9
 
 .field static final TRANSACTION_holdCall:I = 0xf
 
@@ -78,7 +78,7 @@
 
 .field static final TRANSACTION_setAudioRouteAllowed:I = 0x1c
 
-.field static final TRANSACTION_setPriority_7:I = 0x8
+.field static final TRANSACTION_setPriority:I = 0x8
 
 .field static final TRANSACTION_startVoiceRecognition:I = 0xa
 

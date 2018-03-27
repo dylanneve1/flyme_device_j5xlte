@@ -125,7 +125,7 @@
     .local v0, "e":Ljava/lang/Exception;
     new-instance v4, Ljava/lang/RuntimeException;
 
-    invoke-virtual {v0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v5
 
@@ -232,7 +232,7 @@
     .local v0, "e":Ljava/lang/Exception;
     new-instance v4, Ljava/lang/RuntimeException;
 
-    invoke-virtual {v0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v5
 
@@ -333,7 +333,7 @@
     .local v0, "e":Ljava/lang/Exception;
     new-instance v4, Ljava/lang/RuntimeException;
 
-    invoke-virtual {v0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v5
 
@@ -509,7 +509,7 @@
     .local v0, "e":Ljava/lang/Exception;
     new-instance v4, Ljava/lang/RuntimeException;
 
-    invoke-virtual {v0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v5
 
@@ -610,7 +610,7 @@
     .local v0, "e":Ljava/lang/Exception;
     new-instance v4, Ljava/lang/RuntimeException;
 
-    invoke-virtual {v0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v5
 

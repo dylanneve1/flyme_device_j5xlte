@@ -91,7 +91,7 @@
 
     iget-object v3, v3, Lcom/android/internal/telephony/InboundSmsHandler;->mContext:Landroid/content/Context;
 
-    invoke-virtual {v2, v3}, Lcom/android/internal/telephony/InboundSmsHandler$CarrierSmsFilter;->disposeConnection(Landroid/content/Context;)V
+    invoke-virtual {v2, v3}, Landroid/telephony/CarrierMessagingServiceManager;->disposeConnection(Landroid/content/Context;)V
 
     .line 1497
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
@@ -262,7 +262,7 @@
 
     const/4 v3, 0x3
 
-    invoke-virtual {v2, v3}, Lcom/android/internal/telephony/InboundSmsHandler;->sendMessage(I)V
+    invoke-virtual {v2, v3}, Lcom/android/internal/util/StateMachine;->sendMessage(I)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 

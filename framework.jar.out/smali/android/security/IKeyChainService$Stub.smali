@@ -28,7 +28,7 @@
 
 .field static final TRANSACTION_containsCaAlias:I = 0xb
 
-.field static final TRANSACTION_deleteCaCertificate_6:I = 0x7
+.field static final TRANSACTION_deleteCaCertificate:I = 0x7
 
 .field static final TRANSACTION_getCaCertificateChainAliases:I = 0xd
 
@@ -46,13 +46,13 @@
 
 .field static final TRANSACTION_installCaCertificate:I = 0x4
 
-.field static final TRANSACTION_installKeyPair_4:I = 0x5
+.field static final TRANSACTION_installKeyPair:I = 0x5
 
-.field static final TRANSACTION_removeKeyPair_5:I = 0x6
+.field static final TRANSACTION_removeKeyPair:I = 0x6
 
 .field static final TRANSACTION_requestPrivateKey:I = 0x1
 
-.field static final TRANSACTION_reset_7:I = 0x8
+.field static final TRANSACTION_reset:I = 0x8
 
 .field static final TRANSACTION_setGrant:I = 0xe
 

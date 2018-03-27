@@ -165,7 +165,7 @@
 
     .line 165
     .local v0, "activityChooserView":Landroid/widget/ActivityChooserView;
-    invoke-virtual {v0}, Landroid/widget/ActivityChooserView;->isInEditMode()Z
+    invoke-virtual {v0}, Landroid/view/View;->isInEditMode()Z
 
     move-result v4
 

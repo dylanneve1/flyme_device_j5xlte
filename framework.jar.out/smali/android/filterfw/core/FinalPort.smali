@@ -31,13 +31,13 @@
 
     .line 33
     :try_start_0
-    invoke-virtual {p0}, Landroid/filterfw/core/FinalPort;->assertPortIsOpen()V
+    invoke-virtual {p0}, Landroid/filterfw/core/FilterPort;->assertPortIsOpen()V
 
     .line 34
-    invoke-virtual {p0, p1, p2}, Landroid/filterfw/core/FinalPort;->checkFrameType(Landroid/filterfw/core/Frame;Z)V
+    invoke-virtual {p0, p1, p2}, Landroid/filterfw/core/FilterPort;->checkFrameType(Landroid/filterfw/core/Frame;Z)V
 
     .line 35
-    iget-object v0, p0, Landroid/filterfw/core/FinalPort;->mFilter:Landroid/filterfw/core/Filter;
+    iget-object v0, p0, Landroid/filterfw/core/FilterPort;->mFilter:Landroid/filterfw/core/Filter;
 
     invoke-virtual {v0}, Landroid/filterfw/core/Filter;->getStatus()I
 

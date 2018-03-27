@@ -44,14 +44,14 @@
     .locals 1
 
     .prologue
-    .line 431
+    .line 370
     new-instance v0, Ljava/lang/ThreadLocal;
 
     invoke-direct {v0}, Ljava/lang/ThreadLocal;-><init>()V
 
     sput-object v0, Lcom/android/internal/util/NotificationColorUtil$ColorUtilsFromCompat;->TEMP_ARRAY:Ljava/lang/ThreadLocal;
 
-    .line 421
+    .line 360
     return-void
 .end method
 
@@ -59,7 +59,7 @@
     .locals 0
 
     .prologue
-    .line 433
+    .line 372
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -72,7 +72,7 @@
     .param p4, "b"    # D
 
     .prologue
-    .line 697
+    .line 636
     invoke-static {}, Lcom/android/internal/util/NotificationColorUtil$ColorUtilsFromCompat;->getTempDouble3Array()[D
 
     move-result-object v6
@@ -84,10 +84,10 @@
 
     move-wide v4, p4
 
-    .line 698
+    .line 637
     invoke-static/range {v0 .. v6}, Lcom/android/internal/util/NotificationColorUtil$ColorUtilsFromCompat;->LABToXYZ(DDD[D)V
 
-    .line 699
+    .line 638
     const/4 v0, 0x0
 
     aget-wide v0, v6, v0
@@ -115,7 +115,7 @@
     .param p6, "outXyz"    # [D
 
     .prologue
-    .line 640
+    .line 579
     const-wide/high16 v14, 0x4030000000000000L    # 16.0
 
     add-double v14, v14, p0
@@ -124,7 +124,7 @@
 
     div-double v2, v14, v16
 
-    .line 641
+    .line 580
     .local v2, "fy":D
     const-wide v14, 0x407f400000000000L    # 500.0
 
@@ -132,7 +132,7 @@
 
     add-double v0, v14, v2
 
-    .line 642
+    .line 581
     .local v0, "fx":D
     const-wide/high16 v14, 0x4069000000000000L    # 200.0
 
@@ -140,7 +140,7 @@
 
     sub-double v4, v2, v14
 
-    .line 644
+    .line 583
     .local v4, "fz":D
     const-wide/high16 v14, 0x4008000000000000L    # 3.0
 
@@ -148,7 +148,7 @@
 
     move-result-wide v6
 
-    .line 645
+    .line 584
     .local v6, "tmp":D
     const-wide v14, 0x3f82231832fcac8eL    # 0.008856
 
@@ -158,7 +158,7 @@
 
     move-wide v8, v6
 
-    .line 646
+    .line 585
     .local v8, "xr":D
     :goto_0
     const-wide v14, 0x401fff9da4c11507L    # 7.9996247999999985
@@ -173,7 +173,7 @@
 
     move-result-wide v10
 
-    .line 648
+    .line 587
     .local v10, "yr":D
     :goto_1
     const-wide/high16 v14, 0x4008000000000000L    # 3.0
@@ -182,7 +182,7 @@
 
     move-result-wide v6
 
-    .line 649
+    .line 588
     const-wide v14, 0x3f82231832fcac8eL    # 0.008856
 
     cmpl-double v14, v6, v14
@@ -191,7 +191,7 @@
 
     move-wide v12, v6
 
-    .line 651
+    .line 590
     .local v12, "zr":D
     :goto_2
     const-wide v14, 0x4057c3020c49ba5eL    # 95.047
@@ -202,7 +202,7 @@
 
     aput-wide v14, p6, v16
 
-    .line 652
+    .line 591
     const-wide/high16 v14, 0x4059000000000000L    # 100.0
 
     mul-double/2addr v14, v10
@@ -211,7 +211,7 @@
 
     aput-wide v14, p6, v16
 
-    .line 653
+    .line 592
     const-wide v14, 0x405b3883126e978dL    # 108.883
 
     mul-double/2addr v14, v12
@@ -220,10 +220,10 @@
 
     aput-wide v14, p6, v16
 
-    .line 639
+    .line 578
     return-void
 
-    .line 645
+    .line 584
     .end local v8    # "xr":D
     .end local v10    # "yr":D
     .end local v12    # "zr":D
@@ -243,7 +243,7 @@
     .restart local v8    # "xr":D
     goto :goto_0
 
-    .line 646
+    .line 585
     :cond_1
     const-wide v14, 0x408c3a6666666666L    # 903.3
 
@@ -252,7 +252,7 @@
     .restart local v10    # "yr":D
     goto :goto_1
 
-    .line 649
+    .line 588
     :cond_2
     const-wide/high16 v14, 0x405d000000000000L    # 116.0
 
@@ -278,10 +278,10 @@
     .param p3, "outLab"    # [D
 
     .prologue
-    .line 526
+    .line 465
     invoke-static {p0, p1, p2, p3}, Lcom/android/internal/util/NotificationColorUtil$ColorUtilsFromCompat;->RGBToXYZ(III[D)V
 
-    .line 528
+    .line 467
     const/4 v0, 0x0
 
     aget-wide v0, p3, v0
@@ -298,7 +298,7 @@
 
     invoke-static/range {v0 .. v6}, Lcom/android/internal/util/NotificationColorUtil$ColorUtilsFromCompat;->XYZToLAB(DDD[D)V
 
-    .line 524
+    .line 463
     return-void
 .end method
 
@@ -310,14 +310,14 @@
     .param p3, "outXyz"    # [D
 
     .prologue
-    .line 571
+    .line 510
     array-length v6, p3
 
     const/4 v7, 0x3
 
     if-eq v6, v7, :cond_0
 
-    .line 572
+    .line 511
     new-instance v6, Ljava/lang/IllegalArgumentException;
 
     const-string/jumbo v7, "outXyz must have a length of 3."
@@ -326,7 +326,7 @@
 
     throw v6
 
-    .line 575
+    .line 514
     :cond_0
     int-to-double v6, p0
 
@@ -334,7 +334,7 @@
 
     div-double v4, v6, v8
 
-    .line 576
+    .line 515
     .local v4, "sr":D
     const-wide v6, 0x3fa4b5dcc63f1412L    # 0.04045
 
@@ -346,7 +346,7 @@
 
     div-double/2addr v4, v6
 
-    .line 577
+    .line 516
     :goto_0
     int-to-double v6, p1
 
@@ -354,7 +354,7 @@
 
     div-double v2, v6, v8
 
-    .line 578
+    .line 517
     .local v2, "sg":D
     const-wide v6, 0x3fa4b5dcc63f1412L    # 0.04045
 
@@ -366,7 +366,7 @@
 
     div-double/2addr v2, v6
 
-    .line 579
+    .line 518
     :goto_1
     int-to-double v6, p2
 
@@ -374,7 +374,7 @@
 
     div-double v0, v6, v8
 
-    .line 580
+    .line 519
     .local v0, "sb":D
     const-wide v6, 0x3fa4b5dcc63f1412L    # 0.04045
 
@@ -386,7 +386,7 @@
 
     div-double/2addr v0, v6
 
-    .line 582
+    .line 521
     :goto_2
     const-wide v6, 0x3fda64c2f837b4a2L    # 0.4124
 
@@ -412,7 +412,7 @@
 
     aput-wide v6, p3, v8
 
-    .line 583
+    .line 522
     const-wide v6, 0x3fcb367a0f9096bcL    # 0.2126
 
     mul-double/2addr v6, v4
@@ -437,7 +437,7 @@
 
     aput-wide v6, p3, v8
 
-    .line 584
+    .line 523
     const-wide v6, 0x3f93c36113404ea5L    # 0.0193
 
     mul-double/2addr v6, v4
@@ -462,10 +462,10 @@
 
     aput-wide v6, p3, v8
 
-    .line 570
+    .line 509
     return-void
 
-    .line 576
+    .line 515
     .end local v0    # "sb":D
     .end local v2    # "sg":D
     :cond_1
@@ -485,7 +485,7 @@
 
     goto/16 :goto_0
 
-    .line 578
+    .line 517
     .restart local v2    # "sg":D
     :cond_2
     const-wide v6, 0x3fac28f5c28f5c29L    # 0.055
@@ -504,7 +504,7 @@
 
     goto/16 :goto_1
 
-    .line 580
+    .line 519
     .restart local v0    # "sb":D
     :cond_3
     const-wide v6, 0x3fac28f5c28f5c29L    # 0.055
@@ -531,7 +531,7 @@
     .param p4, "z"    # D
 
     .prologue
-    .line 671
+    .line 610
     const-wide v6, 0x4009ecbfb15b573fL    # 3.2406
 
     mul-double/2addr v6, p0
@@ -552,7 +552,7 @@
 
     div-double v4, v6, v8
 
-    .line 672
+    .line 611
     .local v4, "r":D
     const-wide v6, -0x4010fec56d5cfaadL    # -0.9689
 
@@ -574,7 +574,7 @@
 
     div-double v2, v6, v8
 
-    .line 673
+    .line 612
     .local v2, "g":D
     const-wide v6, 0x3fac84b5dcc63f14L    # 0.0557
 
@@ -596,7 +596,7 @@
 
     div-double v0, v6, v8
 
-    .line 675
+    .line 614
     .local v0, "b":D
     const-wide v6, 0x3f69a5c37387b719L    # 0.0031308
 
@@ -618,7 +618,7 @@
 
     sub-double v4, v6, v8
 
-    .line 676
+    .line 615
     :goto_0
     const-wide v6, 0x3f69a5c37387b719L    # 0.0031308
 
@@ -640,7 +640,7 @@
 
     sub-double v2, v6, v8
 
-    .line 677
+    .line 616
     :goto_1
     const-wide v6, 0x3f69a5c37387b719L    # 0.0031308
 
@@ -662,7 +662,7 @@
 
     sub-double v0, v6, v8
 
-    .line 680
+    .line 619
     :goto_2
     const-wide v6, 0x406fe00000000000L    # 255.0
 
@@ -682,7 +682,7 @@
 
     move-result v6
 
-    .line 681
+    .line 620
     const-wide v8, 0x406fe00000000000L    # 255.0
 
     mul-double/2addr v8, v2
@@ -701,7 +701,7 @@
 
     move-result v7
 
-    .line 682
+    .line 621
     const-wide v8, 0x406fe00000000000L    # 255.0
 
     mul-double/2addr v8, v0
@@ -720,14 +720,14 @@
 
     move-result v8
 
-    .line 679
+    .line 618
     invoke-static {v6, v7, v8}, Landroid/graphics/Color;->rgb(III)I
 
     move-result v6
 
     return v6
 
-    .line 675
+    .line 614
     :cond_0
     const-wide v6, 0x4029d70a3d70a3d7L    # 12.92
 
@@ -735,7 +735,7 @@
 
     goto :goto_0
 
-    .line 676
+    .line 615
     :cond_1
     const-wide v6, 0x4029d70a3d70a3d7L    # 12.92
 
@@ -743,7 +743,7 @@
 
     goto :goto_1
 
-    .line 677
+    .line 616
     :cond_2
     const-wide v6, 0x4029d70a3d70a3d7L    # 12.92
 
@@ -760,14 +760,14 @@
     .param p6, "outLab"    # [D
 
     .prologue
-    .line 608
+    .line 547
     array-length v0, p6
 
     const/4 v1, 0x3
 
     if-eq v0, v1, :cond_0
 
-    .line 609
+    .line 548
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     const-string/jumbo v1, "outLab must have a length of 3."
@@ -776,7 +776,7 @@
 
     throw v0
 
-    .line 611
+    .line 550
     :cond_0
     const-wide v0, 0x4057c3020c49ba5eL    # 95.047
 
@@ -786,7 +786,7 @@
 
     move-result-wide p0
 
-    .line 612
+    .line 551
     const-wide/high16 v0, 0x4059000000000000L    # 100.0
 
     div-double v0, p2, v0
@@ -795,7 +795,7 @@
 
     move-result-wide p2
 
-    .line 613
+    .line 552
     const-wide v0, 0x405b3883126e978dL    # 108.883
 
     div-double v0, p4, v0
@@ -804,7 +804,7 @@
 
     move-result-wide p4
 
-    .line 614
+    .line 553
     const-wide/16 v0, 0x0
 
     const-wide/high16 v2, 0x405d000000000000L    # 116.0
@@ -823,7 +823,7 @@
 
     aput-wide v0, p6, v2
 
-    .line 615
+    .line 554
     sub-double v0, p0, p2
 
     const-wide v2, 0x407f400000000000L    # 500.0
@@ -834,7 +834,7 @@
 
     aput-wide v0, p6, v2
 
-    .line 616
+    .line 555
     sub-double v0, p2, p4
 
     const-wide/high16 v2, 0x4069000000000000L    # 200.0
@@ -845,7 +845,7 @@
 
     aput-wide v0, p6, v2
 
-    .line 607
+    .line 546
     return-void
 .end method
 
@@ -859,14 +859,14 @@
 
     const-wide v6, 0x3fa999999999999aL    # 0.05
 
-    .line 482
+    .line 421
     invoke-static {p1}, Landroid/graphics/Color;->alpha(I)I
 
     move-result v4
 
     if-eq v4, v5, :cond_0
 
-    .line 483
+    .line 422
     new-instance v4, Ljava/lang/IllegalArgumentException;
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -879,12 +879,12 @@
 
     move-result-object v5
 
-    .line 484
+    .line 423
     invoke-static {p1}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
 
     move-result-object v6
 
-    .line 483
+    .line 422
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v5
@@ -897,7 +897,7 @@
 
     throw v4
 
-    .line 486
+    .line 425
     :cond_0
     invoke-static {p0}, Landroid/graphics/Color;->alpha(I)I
 
@@ -905,12 +905,12 @@
 
     if-ge v4, v5, :cond_1
 
-    .line 488
+    .line 427
     invoke-static {p0, p1}, Lcom/android/internal/util/NotificationColorUtil$ColorUtilsFromCompat;->compositeColors(II)I
 
     move-result p0
 
-    .line 491
+    .line 430
     :cond_1
     invoke-static {p0}, Lcom/android/internal/util/NotificationColorUtil$ColorUtilsFromCompat;->calculateLuminance(I)D
 
@@ -918,7 +918,7 @@
 
     add-double v0, v4, v6
 
-    .line 492
+    .line 431
     .local v0, "luminance1":D
     invoke-static {p1}, Lcom/android/internal/util/NotificationColorUtil$ColorUtilsFromCompat;->calculateLuminance(I)D
 
@@ -926,7 +926,7 @@
 
     add-double v2, v4, v6
 
-    .line 495
+    .line 434
     .local v2, "luminance2":D
     invoke-static {v0, v1, v2, v3}, Ljava/lang/Math;->max(DD)D
 
@@ -946,16 +946,16 @@
     .param p0, "color"    # I
 
     .prologue
-    .line 468
+    .line 407
     invoke-static {}, Lcom/android/internal/util/NotificationColorUtil$ColorUtilsFromCompat;->getTempDouble3Array()[D
 
     move-result-object v0
 
-    .line 469
+    .line 408
     .local v0, "result":[D
     invoke-static {p0, v0}, Lcom/android/internal/util/NotificationColorUtil$ColorUtilsFromCompat;->colorToXYZ(I[D)V
 
-    .line 471
+    .line 410
     const/4 v1, 0x1
 
     aget-wide v2, v0, v1
@@ -973,7 +973,7 @@
     .param p1, "outLab"    # [D
 
     .prologue
-    .line 505
+    .line 444
     invoke-static {p0}, Landroid/graphics/Color;->red(I)I
 
     move-result v0
@@ -988,7 +988,7 @@
 
     invoke-static {v0, v1, v2, p1}, Lcom/android/internal/util/NotificationColorUtil$ColorUtilsFromCompat;->RGBToLAB(III[D)V
 
-    .line 504
+    .line 443
     return-void
 .end method
 
@@ -998,7 +998,7 @@
     .param p1, "outXyz"    # [D
 
     .prologue
-    .line 548
+    .line 487
     invoke-static {p0}, Landroid/graphics/Color;->red(I)I
 
     move-result v0
@@ -1013,7 +1013,7 @@
 
     invoke-static {v0, v1, v2, p1}, Lcom/android/internal/util/NotificationColorUtil$ColorUtilsFromCompat;->RGBToXYZ(III[D)V
 
-    .line 547
+    .line 486
     return-void
 .end method
 
@@ -1023,7 +1023,7 @@
     .param p1, "backgroundAlpha"    # I
 
     .prologue
-    .line 454
+    .line 393
     rsub-int v0, p1, 0xff
 
     rsub-int v1, p0, 0xff
@@ -1043,72 +1043,72 @@
     .param p1, "background"    # I
 
     .prologue
-    .line 439
+    .line 378
     invoke-static {p1}, Landroid/graphics/Color;->alpha(I)I
 
     move-result v2
 
-    .line 440
+    .line 379
     .local v2, "bgAlpha":I
     invoke-static {p0}, Landroid/graphics/Color;->alpha(I)I
 
     move-result v3
 
-    .line 441
+    .line 380
     .local v3, "fgAlpha":I
     invoke-static {v3, v2}, Lcom/android/internal/util/NotificationColorUtil$ColorUtilsFromCompat;->compositeAlpha(II)I
 
     move-result v0
 
-    .line 443
+    .line 382
     .local v0, "a":I
     invoke-static {p0}, Landroid/graphics/Color;->red(I)I
 
     move-result v6
 
-    .line 444
+    .line 383
     invoke-static {p1}, Landroid/graphics/Color;->red(I)I
 
     move-result v7
 
-    .line 443
+    .line 382
     invoke-static {v6, v3, v7, v2, v0}, Lcom/android/internal/util/NotificationColorUtil$ColorUtilsFromCompat;->compositeComponent(IIIII)I
 
     move-result v5
 
-    .line 445
+    .line 384
     .local v5, "r":I
     invoke-static {p0}, Landroid/graphics/Color;->green(I)I
 
     move-result v6
 
-    .line 446
+    .line 385
     invoke-static {p1}, Landroid/graphics/Color;->green(I)I
 
     move-result v7
 
-    .line 445
+    .line 384
     invoke-static {v6, v3, v7, v2, v0}, Lcom/android/internal/util/NotificationColorUtil$ColorUtilsFromCompat;->compositeComponent(IIIII)I
 
     move-result v4
 
-    .line 447
+    .line 386
     .local v4, "g":I
     invoke-static {p0}, Landroid/graphics/Color;->blue(I)I
 
     move-result v6
 
-    .line 448
+    .line 387
     invoke-static {p1}, Landroid/graphics/Color;->blue(I)I
 
     move-result v7
 
-    .line 447
+    .line 386
     invoke-static {v6, v3, v7, v2, v0}, Lcom/android/internal/util/NotificationColorUtil$ColorUtilsFromCompat;->compositeComponent(IIIII)I
 
     move-result v1
 
-    .line 450
+    .line 389
     .local v1, "b":I
     invoke-static {v0, v5, v4, v1}, Landroid/graphics/Color;->argb(IIII)I
 
@@ -1128,12 +1128,12 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 458
+    .line 397
     if-nez p4, :cond_0
 
     return v0
 
-    .line 459
+    .line 398
     :cond_0
     mul-int/lit16 v0, p0, 0xff
 
@@ -1161,7 +1161,7 @@
     .param p2, "high"    # I
 
     .prologue
-    .line 703
+    .line 642
     if-ge p0, p1, :cond_0
 
     .end local p1    # "low":I
@@ -1186,7 +1186,7 @@
     .locals 2
 
     .prologue
-    .line 713
+    .line 652
     sget-object v1, Lcom/android/internal/util/NotificationColorUtil$ColorUtilsFromCompat;->TEMP_ARRAY:Ljava/lang/ThreadLocal;
 
     invoke-virtual {v1}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
@@ -1195,21 +1195,21 @@
 
     check-cast v0, [D
 
-    .line 714
+    .line 653
     .local v0, "result":[D
     if-nez v0, :cond_0
 
-    .line 715
+    .line 654
     const/4 v1, 0x3
 
     new-array v0, v1, [D
 
-    .line 716
+    .line 655
     sget-object v1, Lcom/android/internal/util/NotificationColorUtil$ColorUtilsFromCompat;->TEMP_ARRAY:Ljava/lang/ThreadLocal;
 
     invoke-virtual {v1, v0}, Ljava/lang/ThreadLocal;->set(Ljava/lang/Object;)V
 
-    .line 718
+    .line 657
     :cond_0
     return-object v0
 .end method
@@ -1219,25 +1219,25 @@
     .param p0, "component"    # D
 
     .prologue
-    .line 707
+    .line 646
     const-wide v0, 0x3f82231832fcac8eL    # 0.008856
 
     cmpl-double v0, p0, v0
 
     if-lez v0, :cond_0
 
-    .line 708
+    .line 647
     const-wide v0, 0x3fd5555555555555L    # 0.3333333333333333
 
     invoke-static {p0, p1, v0, v1}, Ljava/lang/Math;->pow(DD)D
 
     move-result-wide v0
 
-    .line 707
+    .line 646
     :goto_0
     return-wide v0
 
-    .line 709
+    .line 648
     :cond_0
     const-wide v0, 0x408c3a6666666666L    # 903.3
 

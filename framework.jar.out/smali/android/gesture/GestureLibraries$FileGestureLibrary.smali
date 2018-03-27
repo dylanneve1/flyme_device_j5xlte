@@ -87,7 +87,7 @@
 
     .line 96
     :try_start_0
-    iget-object v4, p0, Landroid/gesture/GestureLibraries$FileGestureLibrary;->mStore:Landroid/gesture/GestureStore;
+    iget-object v4, p0, Landroid/gesture/GestureLibrary;->mStore:Landroid/gesture/GestureStore;
 
     new-instance v5, Ljava/io/FileInputStream;
 
@@ -181,7 +181,7 @@
     const/4 v6, 0x1
 
     .line 65
-    iget-object v5, p0, Landroid/gesture/GestureLibraries$FileGestureLibrary;->mStore:Landroid/gesture/GestureStore;
+    iget-object v5, p0, Landroid/gesture/GestureLibrary;->mStore:Landroid/gesture/GestureStore;
 
     invoke-virtual {v5}, Landroid/gesture/GestureStore;->hasChanged()Z
 
@@ -231,7 +231,7 @@
     invoke-virtual {v2}, Ljava/io/File;->createNewFile()Z
 
     .line 80
-    iget-object v5, p0, Landroid/gesture/GestureLibraries$FileGestureLibrary;->mStore:Landroid/gesture/GestureStore;
+    iget-object v5, p0, Landroid/gesture/GestureLibrary;->mStore:Landroid/gesture/GestureStore;
 
     new-instance v6, Ljava/io/FileOutputStream;
 

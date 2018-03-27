@@ -313,7 +313,9 @@
     move-object v3, p1
 
     .line 144
-    check-cast v3, Landroid/app/Activity;
+    nop
+
+    nop
 
     iput-object v3, p0, Landroid/app/ActivityView;->mActivity:Landroid/app/Activity;
 
@@ -334,7 +336,9 @@
 
     .line 147
     :cond_1
-    check-cast p1, Landroid/content/ContextWrapper;
+    nop
+
+    nop
 
     .end local p1    # "context":Landroid/content/Context;
     invoke-virtual {p1}, Landroid/content/ContextWrapper;->getBaseContext()Landroid/content/Context;
@@ -396,7 +400,7 @@
     .line 164
     iget-object v3, p0, Landroid/app/ActivityView;->mTextureView:Landroid/view/TextureView;
 
-    invoke-virtual {p0, v3}, Landroid/app/ActivityView;->addView(Landroid/view/View;)V
+    invoke-virtual {p0, v3}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
     .line 166
     iget-object v3, p0, Landroid/app/ActivityView;->mActivity:Landroid/app/Activity;
@@ -429,7 +433,7 @@
     iput v3, p0, Landroid/app/ActivityView;->mDensityDpi:I
 
     .line 171
-    invoke-virtual {p0}, Landroid/app/ActivityView;->getVisibility()I
+    invoke-virtual {p0}, Landroid/view/View;->getVisibility()I
 
     move-result v3
 
@@ -576,7 +580,7 @@
     .line 204
     const/4 v0, 0x2
 
-    invoke-virtual {p1, v0}, Landroid/view/MotionEvent;->isFromSource(I)Z
+    invoke-virtual {p1, v0}, Landroid/view/InputEvent;->isFromSource(I)Z
 
     move-result v0
 
@@ -621,7 +625,7 @@
 
     sub-int v2, p5, p3
 
-    invoke-virtual {v0, v3, v3, v1, v2}, Landroid/view/TextureView;->layout(IIII)V
+    invoke-virtual {v0, v3, v3, v1, v2}, Landroid/view/View;->layout(IIII)V
 
     .line 177
     return-void

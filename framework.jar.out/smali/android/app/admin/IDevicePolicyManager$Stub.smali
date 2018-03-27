@@ -146,7 +146,7 @@
 
 .field static final TRANSACTION_getPasswordMinimumUpperCase:I = 0x6
 
-.field static final TRANSACTION_getPasswordQuality_1:I = 0x2
+.field static final TRANSACTION_getPasswordQuality:I = 0x2
 
 .field static final TRANSACTION_getPermissionGrantState:I = 0xa4
 
@@ -378,7 +378,7 @@
 
 .field static final TRANSACTION_setPasswordMinimumUpperCase:I = 0x5
 
-.field static final TRANSACTION_setPasswordQuality_0:I = 0x1
+.field static final TRANSACTION_setPasswordQuality:I = 0x1
 
 .field static final TRANSACTION_setPermissionGrantState:I = 0xa3
 
@@ -7793,7 +7793,7 @@
 
     .line 1762
     :goto_9a
-    invoke-virtual/range {p0 .. p0}, Landroid/app/admin/IDevicePolicyManager$Stub;->getClass()Ljava/lang/Class;
+    invoke-virtual/range {p0 .. p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v4
 
@@ -8079,7 +8079,7 @@
 
     .line 1824
     :goto_9f
-    invoke-virtual/range {p0 .. p0}, Landroid/app/admin/IDevicePolicyManager$Stub;->getClass()Ljava/lang/Class;
+    invoke-virtual/range {p0 .. p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v4
 

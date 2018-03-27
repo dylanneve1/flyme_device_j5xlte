@@ -98,7 +98,7 @@
 
     .line 217
     :cond_0
-    invoke-virtual {p0, p1}, Lcom/android/internal/app/MediaRouteChooserDialog$RouteAdapter;->getItem(I)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Landroid/widget/ArrayAdapter;->getItem(I)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -148,7 +148,7 @@
     .line 223
     const/16 v5, 0x8
 
-    invoke-virtual {v3, v5}, Landroid/widget/TextView;->setVisibility(I)V
+    invoke-virtual {v3, v5}, Landroid/view/View;->setVisibility(I)V
 
     .line 224
     const-string/jumbo v5, ""
@@ -168,7 +168,7 @@
 
     .line 226
     :cond_1
-    invoke-virtual {v3, v7}, Landroid/widget/TextView;->setVisibility(I)V
+    invoke-virtual {v3, v7}, Landroid/view/View;->setVisibility(I)V
 
     .line 227
     invoke-virtual {v3, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
@@ -182,7 +182,7 @@
 
     .prologue
     .line 208
-    invoke-virtual {p0, p1}, Lcom/android/internal/app/MediaRouteChooserDialog$RouteAdapter;->getItem(I)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Landroid/widget/ArrayAdapter;->getItem(I)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -213,7 +213,7 @@
     .prologue
     .line 235
     .local p1, "parent":Landroid/widget/AdapterView;, "Landroid/widget/AdapterView<*>;"
-    invoke-virtual {p0, p3}, Lcom/android/internal/app/MediaRouteChooserDialog$RouteAdapter;->getItem(I)Ljava/lang/Object;
+    invoke-virtual {p0, p3}, Landroid/widget/ArrayAdapter;->getItem(I)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -233,7 +233,7 @@
     .line 238
     iget-object v1, p0, Lcom/android/internal/app/MediaRouteChooserDialog$RouteAdapter;->this$0:Lcom/android/internal/app/MediaRouteChooserDialog;
 
-    invoke-virtual {v1}, Lcom/android/internal/app/MediaRouteChooserDialog;->dismiss()V
+    invoke-virtual {v1}, Landroid/app/Dialog;->dismiss()V
 
     .line 234
     :cond_0
@@ -245,7 +245,7 @@
 
     .prologue
     .line 189
-    invoke-virtual {p0}, Lcom/android/internal/app/MediaRouteChooserDialog$RouteAdapter;->clear()V
+    invoke-virtual {p0}, Landroid/widget/ArrayAdapter;->clear()V
 
     .line 190
     iget-object v3, p0, Lcom/android/internal/app/MediaRouteChooserDialog$RouteAdapter;->this$0:Lcom/android/internal/app/MediaRouteChooserDialog;
@@ -288,7 +288,7 @@
     if-eqz v3, :cond_0
 
     .line 194
-    invoke-virtual {p0, v2}, Lcom/android/internal/app/MediaRouteChooserDialog$RouteAdapter;->add(Ljava/lang/Object;)V
+    invoke-virtual {p0, v2}, Landroid/widget/ArrayAdapter;->add(Ljava/lang/Object;)V
 
     .line 191
     :cond_0
@@ -301,10 +301,10 @@
     :cond_1
     sget-object v3, Lcom/android/internal/app/MediaRouteChooserDialog$RouteComparator;->sInstance:Lcom/android/internal/app/MediaRouteChooserDialog$RouteComparator;
 
-    invoke-virtual {p0, v3}, Lcom/android/internal/app/MediaRouteChooserDialog$RouteAdapter;->sort(Ljava/util/Comparator;)V
+    invoke-virtual {p0, v3}, Landroid/widget/ArrayAdapter;->sort(Ljava/util/Comparator;)V
 
     .line 198
-    invoke-virtual {p0}, Lcom/android/internal/app/MediaRouteChooserDialog$RouteAdapter;->notifyDataSetChanged()V
+    invoke-virtual {p0}, Landroid/widget/ArrayAdapter;->notifyDataSetChanged()V
 
     .line 188
     return-void

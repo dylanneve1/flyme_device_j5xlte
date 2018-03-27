@@ -79,7 +79,7 @@
 
     iget-object v3, v3, Lcom/android/internal/view/menu/CascadingMenuPopup$CascadingMenuInfo;->window:Landroid/widget/MenuPopupWindow;
 
-    invoke-virtual {v3}, Landroid/widget/MenuPopupWindow;->isModal()Z
+    invoke-virtual {v3}, Landroid/widget/ListPopupWindow;->isModal()Z
 
     move-result v3
 
@@ -137,7 +137,7 @@
     .local v1, "info":Lcom/android/internal/view/menu/CascadingMenuPopup$CascadingMenuInfo;
     iget-object v3, v1, Lcom/android/internal/view/menu/CascadingMenuPopup$CascadingMenuInfo;->window:Landroid/widget/MenuPopupWindow;
 
-    invoke-virtual {v3}, Landroid/widget/MenuPopupWindow;->show()V
+    invoke-virtual {v3}, Landroid/widget/ListPopupWindow;->show()V
 
     goto :goto_1
 

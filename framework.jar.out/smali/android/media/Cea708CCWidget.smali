@@ -82,7 +82,7 @@
     .line 1043
     new-instance v1, Landroid/media/Cea708CCWidget$CCHandler;
 
-    iget-object v0, p0, Landroid/media/Cea708CCWidget;->mClosedCaptionLayout:Landroid/media/ClosedCaptionWidget$ClosedCaptionLayout;
+    iget-object v0, p0, Landroid/media/ClosedCaptionWidget;->mClosedCaptionLayout:Landroid/media/ClosedCaptionWidget$ClosedCaptionLayout;
 
     check-cast v0, Landroid/media/Cea708CCWidget$CCLayout;
 
@@ -120,23 +120,23 @@
     invoke-virtual {v0, p1}, Landroid/media/Cea708CCWidget$CCHandler;->processCaptionEvent(Landroid/media/Cea708CCParser$CaptionEvent;)V
 
     .line 1055
-    invoke-virtual {p0}, Landroid/media/Cea708CCWidget;->getWidth()I
+    invoke-virtual {p0}, Landroid/view/View;->getWidth()I
 
     move-result v0
 
-    invoke-virtual {p0}, Landroid/media/Cea708CCWidget;->getHeight()I
+    invoke-virtual {p0}, Landroid/view/View;->getHeight()I
 
     move-result v1
 
-    invoke-virtual {p0, v0, v1}, Landroid/media/Cea708CCWidget;->setSize(II)V
+    invoke-virtual {p0, v0, v1}, Landroid/media/ClosedCaptionWidget;->setSize(II)V
 
     .line 1057
-    iget-object v0, p0, Landroid/media/Cea708CCWidget;->mListener:Landroid/media/SubtitleTrack$RenderingWidget$OnChangedListener;
+    iget-object v0, p0, Landroid/media/ClosedCaptionWidget;->mListener:Landroid/media/SubtitleTrack$RenderingWidget$OnChangedListener;
 
     if-eqz v0, :cond_0
 
     .line 1058
-    iget-object v0, p0, Landroid/media/Cea708CCWidget;->mListener:Landroid/media/SubtitleTrack$RenderingWidget$OnChangedListener;
+    iget-object v0, p0, Landroid/media/ClosedCaptionWidget;->mListener:Landroid/media/SubtitleTrack$RenderingWidget$OnChangedListener;
 
     invoke-interface {v0, p0}, Landroid/media/SubtitleTrack$RenderingWidget$OnChangedListener;->onChanged(Landroid/media/SubtitleTrack$RenderingWidget;)V
 
@@ -154,11 +154,11 @@
     invoke-super {p0, p1}, Landroid/media/ClosedCaptionWidget;->onDraw(Landroid/graphics/Canvas;)V
 
     .line 1065
-    iget-object v0, p0, Landroid/media/Cea708CCWidget;->mClosedCaptionLayout:Landroid/media/ClosedCaptionWidget$ClosedCaptionLayout;
+    iget-object v0, p0, Landroid/media/ClosedCaptionWidget;->mClosedCaptionLayout:Landroid/media/ClosedCaptionWidget$ClosedCaptionLayout;
 
     check-cast v0, Landroid/view/ViewGroup;
 
-    invoke-virtual {v0, p1}, Landroid/view/ViewGroup;->draw(Landroid/graphics/Canvas;)V
+    invoke-virtual {v0, p1}, Landroid/view/View;->draw(Landroid/graphics/Canvas;)V
 
     .line 1063
     return-void

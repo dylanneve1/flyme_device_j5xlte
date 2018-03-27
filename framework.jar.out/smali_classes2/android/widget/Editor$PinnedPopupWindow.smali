@@ -83,7 +83,7 @@
     .local v0, "wrapContent":Landroid/view/ViewGroup$LayoutParams;
     iget-object v1, p0, Landroid/widget/Editor$PinnedPopupWindow;->mContentView:Landroid/view/ViewGroup;
 
-    invoke-virtual {v1, v0}, Landroid/view/ViewGroup;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {v1, v0}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 3031
     iget-object v1, p0, Landroid/widget/Editor$PinnedPopupWindow;->mPopupWindow:Landroid/widget/PopupWindow;
@@ -106,7 +106,7 @@
     .line 3058
     iget-object v3, p0, Landroid/widget/Editor$PinnedPopupWindow;->mContentView:Landroid/view/ViewGroup;
 
-    invoke-virtual {v3}, Landroid/view/ViewGroup;->getMeasuredWidth()I
+    invoke-virtual {v3}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result v2
 
@@ -237,7 +237,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v4}, Landroid/widget/TextView;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v4}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     move-result-object v4
 
@@ -249,7 +249,7 @@
     .local v0, "displayMetrics":Landroid/util/DisplayMetrics;
     iget-object v4, p0, Landroid/widget/Editor$PinnedPopupWindow;->mContentView:Landroid/view/ViewGroup;
 
-    invoke-virtual {v4}, Landroid/view/ViewGroup;->getMeasuredWidth()I
+    invoke-virtual {v4}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result v3
 
@@ -387,7 +387,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Landroid/widget/TextView;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v1}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -414,7 +414,7 @@
     move-result v3
 
     .line 3045
-    invoke-virtual {v1, v2, v3}, Landroid/view/ViewGroup;->measure(II)V
+    invoke-virtual {v1, v2, v3}, Landroid/view/View;->measure(II)V
 
     .line 3043
     return-void

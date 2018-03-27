@@ -107,7 +107,7 @@
 
     .prologue
     .line 156
-    invoke-virtual {p0}, Landroid/inputmethodservice/ExtractEditText;->isEnabled()Z
+    invoke-virtual {p0}, Landroid/view/View;->isEnabled()Z
 
     move-result v0
 
@@ -119,11 +119,11 @@
 
     .prologue
     .line 132
-    invoke-virtual {p0}, Landroid/inputmethodservice/ExtractEditText;->computeVerticalScrollRange()I
+    invoke-virtual {p0}, Landroid/widget/TextView;->computeVerticalScrollRange()I
 
     move-result v0
 
-    invoke-virtual {p0}, Landroid/inputmethodservice/ExtractEditText;->computeVerticalScrollExtent()I
+    invoke-virtual {p0}, Landroid/widget/TextView;->computeVerticalScrollExtent()I
 
     move-result v1
 
@@ -145,7 +145,7 @@
 
     .prologue
     .line 140
-    invoke-virtual {p0}, Landroid/inputmethodservice/ExtractEditText;->isEnabled()Z
+    invoke-virtual {p0}, Landroid/view/View;->isEnabled()Z
 
     move-result v0
 
@@ -157,7 +157,7 @@
 
     .prologue
     .line 148
-    invoke-virtual {p0}, Landroid/inputmethodservice/ExtractEditText;->isEnabled()Z
+    invoke-virtual {p0}, Landroid/view/View;->isEnabled()Z
 
     move-result v0
 
@@ -259,7 +259,7 @@
     if-ne p1, v0, :cond_3
 
     :cond_2
-    invoke-virtual {p0}, Landroid/inputmethodservice/ExtractEditText;->stopTextActionMode()V
+    invoke-virtual {p0}, Landroid/widget/TextView;->stopTextActionMode()V
 
     .line 115
     :cond_3

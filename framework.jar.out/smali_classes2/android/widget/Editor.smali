@@ -11139,27 +11139,7 @@
     :goto_1
     invoke-virtual {p0}, Landroid/widget/Editor;->hideCursorAndSpanControllers()V
 
-    invoke-virtual {p0}, Landroid/widget/Editor;->stopTextActionMode()V
-
-    iget-object v4, p0, Landroid/widget/Editor;->mTextView:Landroid/widget/TextView;
-
-    invoke-virtual {v4}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
-
-    move-result-object v3
-
-    .local v3, "text":Ljava/lang/CharSequence;
-    if-nez v2, :cond_4
-
-    invoke-interface {v3}, Ljava/lang/CharSequence;->length()I
-
-    move-result v4
-
-    if-nez v4, :cond_4
-
-    check-cast v3, Landroid/text/Spannable;
-
-    .end local v3    # "text":Ljava/lang/CharSequence;
-    invoke-direct {p0, v3, v5, v1}, Landroid/widget/Editor;->setSelectionOnTouchUpEvent(Landroid/text/Spannable;IZ)V
+    if-eqz v2, :cond_4
 
     return-void
 
@@ -11191,16 +11171,31 @@
     goto :goto_1
 
     .end local v1    # "optionVisibleBeforeTouch":Z
-    .restart local v3    # "text":Ljava/lang/CharSequence;
     :cond_4
-    if-nez v2, :cond_7
+    iget-object v4, p0, Landroid/widget/Editor;->mTextView:Landroid/widget/TextView;
 
+    invoke-virtual {v4}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
+
+    move-result-object v3
+
+    .local v3, "text":Ljava/lang/CharSequence;
     invoke-interface {v3}, Ljava/lang/CharSequence;->length()I
 
     move-result v4
 
-    if-lez v4, :cond_7
+    if-nez v4, :cond_6
 
+    check-cast v3, Landroid/text/Spannable;
+
+    .end local v3    # "text":Ljava/lang/CharSequence;
+    invoke-direct {p0, v3, v5, v1}, Landroid/widget/Editor;->setSelectionOnTouchUpEvent(Landroid/text/Spannable;IZ)V
+
+    :cond_5
+    :goto_2
+    return-void
+
+    .restart local v3    # "text":Ljava/lang/CharSequence;
+    :cond_6
     iget-object v4, p0, Landroid/widget/Editor;->mTextView:Landroid/widget/TextView;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
@@ -11223,36 +11218,25 @@
 
     iget-object v4, p0, Landroid/widget/Editor;->mSpellChecker:Landroid/widget/SpellChecker;
 
-    if-eqz v4, :cond_5
+    if-eqz v4, :cond_7
 
     iget-object v4, p0, Landroid/widget/Editor;->mSpellChecker:Landroid/widget/SpellChecker;
 
     invoke-virtual {v4}, Landroid/widget/SpellChecker;->onSelectionChanged()V
 
-    :cond_5
+    :cond_7
     invoke-virtual {p0}, Landroid/widget/Editor;->extractedTextModeWillBeStarted()Z
 
     move-result v4
 
-    if-nez v4, :cond_7
+    if-nez v4, :cond_5
 
     invoke-direct {p0}, Landroid/widget/Editor;->isCursorInsideEasyCorrectionSpan()Z
 
     move-result v4
 
-    if-eqz v4, :cond_8
+    if-eqz v4, :cond_5
 
-    iget-object v4, p0, Landroid/widget/Editor;->mInsertionActionModeRunnable:Ljava/lang/Runnable;
-
-    if-eqz v4, :cond_6
-
-    iget-object v4, p0, Landroid/widget/Editor;->mTextView:Landroid/widget/TextView;
-
-    iget-object v5, p0, Landroid/widget/Editor;->mInsertionActionModeRunnable:Ljava/lang/Runnable;
-
-    invoke-virtual {v4, v5}, Landroid/widget/TextView;->removeCallbacks(Ljava/lang/Runnable;)Z
-
-    :cond_6
     new-instance v4, Landroid/widget/Editor$FlymeShowSuggestionsRunnable;
 
     invoke-direct {v4, p0}, Landroid/widget/Editor$FlymeShowSuggestionsRunnable;-><init>(Landroid/widget/Editor;)V
@@ -11270,25 +11254,6 @@
     int-to-long v6, v6
 
     invoke-virtual {v4, v5, v6, v7}, Landroid/widget/TextView;->postDelayed(Ljava/lang/Runnable;J)Z
-
-    .end local v0    # "offset":I
-    :cond_7
-    :goto_2
-    return-void
-
-    .restart local v0    # "offset":I
-    :cond_8
-    invoke-virtual {p0}, Landroid/widget/Editor;->hasInsertionController()Z
-
-    move-result v4
-
-    if-eqz v4, :cond_7
-
-    invoke-virtual {p0}, Landroid/widget/Editor;->getInsertionController()Landroid/widget/Editor$InsertionPointCursorController;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Landroid/widget/Editor$InsertionPointCursorController;->show()V
 
     goto :goto_2
 .end method
@@ -11547,6 +11512,12 @@
     iget-boolean v0, p0, Landroid/widget/Editor;->mSelectionControllerEnabled:Z
 
     if-nez v0, :cond_0
+
+    const-string v0, "TextView"
+
+    const-string v1, "SelectionController is disabled."
+
+    invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     return v2
 

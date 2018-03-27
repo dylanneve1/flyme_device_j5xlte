@@ -118,7 +118,7 @@
     .line 824
     iget-object v1, p0, Lcom/android/internal/widget/LockPatternView$5;->this$0:Lcom/android/internal/widget/LockPatternView;
 
-    invoke-virtual {v1}, Lcom/android/internal/widget/LockPatternView;->invalidate()V
+    invoke-virtual {v1}, Landroid/view/View;->invalidate()V
 
     .line 820
     return-void

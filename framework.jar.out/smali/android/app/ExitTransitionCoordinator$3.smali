@@ -54,7 +54,7 @@
     .line 175
     iget-object v0, p0, Landroid/app/ExitTransitionCoordinator$3;->val$decorView:Landroid/view/ViewGroup;
 
-    invoke-virtual {v0}, Landroid/view/ViewGroup;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
+    invoke-virtual {v0}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
 
     move-result-object v0
 
@@ -71,7 +71,7 @@
 
     iget-object v2, p0, Landroid/app/ExitTransitionCoordinator$3;->val$sharedElementSnapshots:Ljava/util/ArrayList;
 
-    invoke-virtual {v0, v1, v2}, Landroid/app/ExitTransitionCoordinator;->setSharedElementState(Landroid/os/Bundle;Ljava/util/ArrayList;)Ljava/util/ArrayList;
+    invoke-virtual {v0, v1, v2}, Landroid/app/ActivityTransitionCoordinator;->setSharedElementState(Landroid/os/Bundle;Ljava/util/ArrayList;)Ljava/util/ArrayList;
 
     .line 177
     const/4 v0, 0x1

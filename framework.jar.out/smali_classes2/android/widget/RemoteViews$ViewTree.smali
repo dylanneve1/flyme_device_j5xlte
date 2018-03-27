@@ -126,7 +126,9 @@
     move-object v4, p1
 
     .line 3618
-    check-cast v4, Landroid/view/ViewGroup;
+    nop
+
+    nop
 
     .line 3619
     .local v4, "vg":Landroid/view/ViewGroup;

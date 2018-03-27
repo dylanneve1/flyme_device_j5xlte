@@ -32,17 +32,17 @@
 
 .field static final TRANSACTION_clickTile:I = 0x1a
 
-.field static final TRANSACTION_collapsePanels_1:I = 0x2
+.field static final TRANSACTION_collapsePanels:I = 0x2
+
+.field static final TRANSACTION_disable:I = 0x3
 
 .field static final TRANSACTION_disable2:I = 0x5
 
 .field static final TRANSACTION_disable2ForUser:I = 0x6
 
-.field static final TRANSACTION_disableForUser_3:I = 0x4
+.field static final TRANSACTION_disableForUser:I = 0x4
 
-.field static final TRANSACTION_disable_2:I = 0x3
-
-.field static final TRANSACTION_expandNotificationsPanel_0:I = 0x1
+.field static final TRANSACTION_expandNotificationsPanel:I = 0x1
 
 .field static final TRANSACTION_expandSettingsPanel:I = 0xb
 

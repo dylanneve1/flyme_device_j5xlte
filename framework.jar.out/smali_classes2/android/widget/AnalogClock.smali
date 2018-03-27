@@ -312,7 +312,7 @@
 
     .line 268
     .local v1, "flags":I
-    iget-object v2, p0, Landroid/widget/AnalogClock;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
     .line 269
     const/4 v3, 0x0
@@ -330,7 +330,7 @@
 
     .line 270
     .local v0, "contentDescription":Ljava/lang/String;
-    invoke-virtual {p0, v0}, Landroid/widget/AnalogClock;->setContentDescription(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
     .line 266
     return-void
@@ -377,7 +377,7 @@
     invoke-virtual {v3, v0}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     .line 122
-    invoke-virtual {p0}, Landroid/widget/AnalogClock;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -388,7 +388,7 @@
 
     move-result-object v2
 
-    invoke-virtual {p0}, Landroid/widget/AnalogClock;->getHandler()Landroid/os/Handler;
+    invoke-virtual {p0}, Landroid/view/View;->getHandler()Landroid/os/Handler;
 
     move-result-object v5
 
@@ -426,7 +426,7 @@
     if-eqz v0, :cond_0
 
     .line 140
-    invoke-virtual {p0}, Landroid/widget/AnalogClock;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -472,11 +472,11 @@
     :cond_0
     move-object/from16 v0, p0
 
-    iget v13, v0, Landroid/widget/AnalogClock;->mRight:I
+    iget v13, v0, Landroid/view/View;->mRight:I
 
     move-object/from16 v0, p0
 
-    iget v14, v0, Landroid/widget/AnalogClock;->mLeft:I
+    iget v14, v0, Landroid/view/View;->mLeft:I
 
     sub-int v2, v13, v14
 
@@ -484,11 +484,11 @@
     .local v2, "availableWidth":I
     move-object/from16 v0, p0
 
-    iget v13, v0, Landroid/widget/AnalogClock;->mBottom:I
+    iget v13, v0, Landroid/view/View;->mBottom:I
 
     move-object/from16 v0, p0
 
-    iget v14, v0, Landroid/widget/AnalogClock;->mTop:I
+    iget v14, v0, Landroid/view/View;->mTop:I
 
     sub-int v1, v13, v14
 
@@ -860,7 +860,7 @@
     move-result v8
 
     .line 166
-    invoke-virtual {p0, v7, v8}, Landroid/widget/AnalogClock;->setMeasuredDimension(II)V
+    invoke-virtual {p0, v7, v8}, Landroid/view/View;->setMeasuredDimension(II)V
 
     .line 146
     return-void

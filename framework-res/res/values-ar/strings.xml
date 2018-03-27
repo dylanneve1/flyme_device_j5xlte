@@ -113,6 +113,8 @@
     <string name="tethered_notification_no_device_message">لا يوجد جهاز متصل</string>
     <string name="tethered_notification_one_device_message">%1$s جهاز متصل</string>
     <string name="tethered_notification_multi_device_message">%1$s أجهزة متصلة</string>
+    <string name="silent_mode_priority">الأولوية</string>
+    <string name="silent_mode_none">بلا</string>
     <string name="month_day_year" formatted="false">%-e %B، %Y</string>
     <string name="time_of_day" formatted="false">%-l:%M:%S %p</string>
     <string name="date_and_time" formatted="false">%-l:%M:%S %p %d‏/%m‏/%Y</string>

@@ -123,6 +123,8 @@
     <string name="tethered_notification_no_device_message">没有已连接设备</string>
     <string name="tethered_notification_one_device_message">%1$s 个已连接的设备</string>
     <string name="tethered_notification_multi_device_message">%1$s 个已连接的设备</string>
+    <string name="silent_mode_priority">优先级</string>
+    <string name="silent_mode_none">无</string>
     <string name="month_day_year" formatted="false">%Y 年 %-m 月 %-e 日</string>
     <string name="time_of_day" formatted="false">%p %I:%M:%S</string>
     <string name="date_and_time" formatted="false">%Y 年 %-m 月 %-e 日%p %I:%M:%S</string>

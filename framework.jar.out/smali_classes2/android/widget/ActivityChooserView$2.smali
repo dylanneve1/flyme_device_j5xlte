@@ -53,7 +53,7 @@
     .line 140
     iget-object v0, p0, Landroid/widget/ActivityChooserView$2;->this$0:Landroid/widget/ActivityChooserView;
 
-    invoke-virtual {v0}, Landroid/widget/ActivityChooserView;->isShown()Z
+    invoke-virtual {v0}, Landroid/view/View;->isShown()Z
 
     move-result v0
 

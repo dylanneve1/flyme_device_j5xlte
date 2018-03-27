@@ -51,7 +51,7 @@
 
     .prologue
     .line 52
-    invoke-virtual {p0}, Landroid/widget/ImageSwitcher;->getNextView()Landroid/view/View;
+    invoke-virtual {p0}, Landroid/widget/ViewSwitcher;->getNextView()Landroid/view/View;
 
     move-result-object v0
 
@@ -62,7 +62,7 @@
     invoke-virtual {v0, p1}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 54
-    invoke-virtual {p0}, Landroid/widget/ImageSwitcher;->showNext()V
+    invoke-virtual {p0}, Landroid/widget/ViewAnimator;->showNext()V
 
     .line 50
     return-void
@@ -74,7 +74,7 @@
 
     .prologue
     .line 38
-    invoke-virtual {p0}, Landroid/widget/ImageSwitcher;->getNextView()Landroid/view/View;
+    invoke-virtual {p0}, Landroid/widget/ViewSwitcher;->getNextView()Landroid/view/View;
 
     move-result-object v0
 
@@ -85,7 +85,7 @@
     invoke-virtual {v0, p1}, Landroid/widget/ImageView;->setImageResource(I)V
 
     .line 40
-    invoke-virtual {p0}, Landroid/widget/ImageSwitcher;->showNext()V
+    invoke-virtual {p0}, Landroid/widget/ViewAnimator;->showNext()V
 
     .line 36
     return-void
@@ -97,7 +97,7 @@
 
     .prologue
     .line 45
-    invoke-virtual {p0}, Landroid/widget/ImageSwitcher;->getNextView()Landroid/view/View;
+    invoke-virtual {p0}, Landroid/widget/ViewSwitcher;->getNextView()Landroid/view/View;
 
     move-result-object v0
 
@@ -108,7 +108,7 @@
     invoke-virtual {v0, p1}, Landroid/widget/ImageView;->setImageURI(Landroid/net/Uri;)V
 
     .line 47
-    invoke-virtual {p0}, Landroid/widget/ImageSwitcher;->showNext()V
+    invoke-virtual {p0}, Landroid/widget/ViewAnimator;->showNext()V
 
     .line 43
     return-void

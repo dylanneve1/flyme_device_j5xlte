@@ -26,13 +26,13 @@
 # static fields
 .field private static final DESCRIPTOR:Ljava/lang/String; = "android.content.IRestrictionsManager"
 
-.field static final TRANSACTION_createLocalApprovalIntent_4:I = 0x5
+.field static final TRANSACTION_createLocalApprovalIntent:I = 0x5
 
 .field static final TRANSACTION_getApplicationRestrictions:I = 0x1
 
 .field static final TRANSACTION_hasRestrictionsProvider:I = 0x2
 
-.field static final TRANSACTION_notifyPermissionResponse_3:I = 0x4
+.field static final TRANSACTION_notifyPermissionResponse:I = 0x4
 
 .field static final TRANSACTION_requestPermission:I = 0x3
 

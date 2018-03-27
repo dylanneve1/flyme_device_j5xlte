@@ -45,7 +45,7 @@
     .line 164
     iget-object v0, p0, Landroid/app/ExitTransitionCoordinator$2;->this$0:Landroid/app/ExitTransitionCoordinator;
 
-    invoke-virtual {v0}, Landroid/app/ExitTransitionCoordinator;->isViewsTransitionComplete()Z
+    invoke-virtual {v0}, Landroid/app/ActivityTransitionCoordinator;->isViewsTransitionComplete()Z
 
     move-result v0
 

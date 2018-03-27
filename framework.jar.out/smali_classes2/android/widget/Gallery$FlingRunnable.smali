@@ -57,7 +57,7 @@
     .line 1463
     new-instance v0, Landroid/widget/Scroller;
 
-    invoke-virtual {p1}, Landroid/widget/Gallery;->getContext()Landroid/content/Context;
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -100,7 +100,7 @@
     .line 1468
     iget-object v0, p0, Landroid/widget/Gallery$FlingRunnable;->this$0:Landroid/widget/Gallery;
 
-    invoke-virtual {v0, p0}, Landroid/widget/Gallery;->removeCallbacks(Ljava/lang/Runnable;)Z
+    invoke-virtual {v0, p0}, Landroid/view/View;->removeCallbacks(Ljava/lang/Runnable;)Z
 
     .line 1466
     return-void
@@ -119,7 +119,7 @@
     .line 1511
     iget-object v5, p0, Landroid/widget/Gallery$FlingRunnable;->this$0:Landroid/widget/Gallery;
 
-    iget v5, v5, Landroid/widget/Gallery;->mItemCount:I
+    iget v5, v5, Landroid/widget/AdapterView;->mItemCount:I
 
     if-nez v5, :cond_0
 
@@ -173,11 +173,11 @@
 
     iget-object v5, p0, Landroid/widget/Gallery$FlingRunnable;->this$0:Landroid/widget/Gallery;
 
-    iget v5, v5, Landroid/widget/Gallery;->mFirstPosition:I
+    iget v5, v5, Landroid/widget/AdapterView;->mFirstPosition:I
 
     iget-object v7, p0, Landroid/widget/Gallery$FlingRunnable;->this$0:Landroid/widget/Gallery;
 
-    invoke-virtual {v7}, Landroid/widget/Gallery;->getChildCount()I
+    invoke-virtual {v7}, Landroid/view/ViewGroup;->getChildCount()I
 
     move-result v7
 
@@ -191,7 +191,7 @@
     .line 1533
     iget-object v5, p0, Landroid/widget/Gallery$FlingRunnable;->this$0:Landroid/widget/Gallery;
 
-    invoke-virtual {v5}, Landroid/widget/Gallery;->getWidth()I
+    invoke-virtual {v5}, Landroid/view/View;->getWidth()I
 
     move-result v5
 
@@ -246,7 +246,7 @@
     :cond_2
     iget-object v5, p0, Landroid/widget/Gallery$FlingRunnable;->this$0:Landroid/widget/Gallery;
 
-    iget v5, v5, Landroid/widget/Gallery;->mFirstPosition:I
+    iget v5, v5, Landroid/widget/AdapterView;->mFirstPosition:I
 
     goto :goto_0
 
@@ -254,7 +254,7 @@
     :cond_3
     iget-object v5, p0, Landroid/widget/Gallery$FlingRunnable;->this$0:Landroid/widget/Gallery;
 
-    invoke-virtual {v5}, Landroid/widget/Gallery;->getChildCount()I
+    invoke-virtual {v5}, Landroid/view/ViewGroup;->getChildCount()I
 
     move-result v5
 
@@ -274,7 +274,7 @@
 
     iget-object v5, p0, Landroid/widget/Gallery$FlingRunnable;->this$0:Landroid/widget/Gallery;
 
-    iget v5, v5, Landroid/widget/Gallery;->mFirstPosition:I
+    iget v5, v5, Landroid/widget/AdapterView;->mFirstPosition:I
 
     :goto_3
     invoke-static {v6, v5}, Landroid/widget/Gallery;->-set0(Landroid/widget/Gallery;I)I
@@ -282,7 +282,7 @@
     .line 1541
     iget-object v5, p0, Landroid/widget/Gallery$FlingRunnable;->this$0:Landroid/widget/Gallery;
 
-    invoke-virtual {v5}, Landroid/widget/Gallery;->getWidth()I
+    invoke-virtual {v5}, Landroid/view/View;->getWidth()I
 
     move-result v5
 
@@ -316,11 +316,11 @@
     :cond_4
     iget-object v5, p0, Landroid/widget/Gallery$FlingRunnable;->this$0:Landroid/widget/Gallery;
 
-    iget v5, v5, Landroid/widget/Gallery;->mFirstPosition:I
+    iget v5, v5, Landroid/widget/AdapterView;->mFirstPosition:I
 
     iget-object v7, p0, Landroid/widget/Gallery$FlingRunnable;->this$0:Landroid/widget/Gallery;
 
-    invoke-virtual {v7}, Landroid/widget/Gallery;->getChildCount()I
+    invoke-virtual {v7}, Landroid/view/ViewGroup;->getChildCount()I
 
     move-result v7
 
@@ -338,7 +338,7 @@
     .line 1548
     iget-object v5, p0, Landroid/widget/Gallery$FlingRunnable;->this$0:Landroid/widget/Gallery;
 
-    invoke-virtual {v5, p0}, Landroid/widget/Gallery;->post(Ljava/lang/Runnable;)Z
+    invoke-virtual {v5, p0}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
 
     goto :goto_2
 .end method
@@ -382,7 +382,7 @@
     .line 1490
     iget-object v0, p0, Landroid/widget/Gallery$FlingRunnable;->this$0:Landroid/widget/Gallery;
 
-    invoke-virtual {v0, p0}, Landroid/widget/Gallery;->post(Ljava/lang/Runnable;)Z
+    invoke-virtual {v0, p0}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
 
     .line 1483
     return-void
@@ -434,7 +434,7 @@
     .line 1480
     iget-object v0, p0, Landroid/widget/Gallery$FlingRunnable;->this$0:Landroid/widget/Gallery;
 
-    invoke-virtual {v0, p0}, Landroid/widget/Gallery;->post(Ljava/lang/Runnable;)Z
+    invoke-virtual {v0, p0}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
 
     .line 1471
     return-void
@@ -455,7 +455,7 @@
     .line 1494
     iget-object v0, p0, Landroid/widget/Gallery$FlingRunnable;->this$0:Landroid/widget/Gallery;
 
-    invoke-virtual {v0, p0}, Landroid/widget/Gallery;->removeCallbacks(Ljava/lang/Runnable;)Z
+    invoke-virtual {v0, p0}, Landroid/view/View;->removeCallbacks(Ljava/lang/Runnable;)Z
 
     .line 1495
     invoke-direct {p0, p1}, Landroid/widget/Gallery$FlingRunnable;->endFling(Z)V

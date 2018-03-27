@@ -19,46 +19,10 @@
     .locals 0
 
     .prologue
-    .line 2463
+    .line 2443
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
-.end method
-
-.method static calculateNavigationBarColor(Lcom/android/internal/policy/DecorView;)I
-    .locals 1
-    .param p0, "decorView"    # Lcom/android/internal/policy/DecorView;
-
-    .prologue
-    .line 2529
-    invoke-virtual {p0}, Lcom/android/internal/policy/DecorView;->getSystemUiVisibility()I
-
-    move-result v0
-
-    and-int/lit8 v0, v0, 0x1
-
-    if-eqz v0, :cond_0
-
-    .line 2530
-    invoke-virtual {p0}, Lcom/android/internal/policy/DecorView;->flymeGetFieldWindow()Lcom/android/internal/policy/PhoneWindow;
-
-    move-result-object v0
-
-    iget v0, v0, Lcom/android/internal/policy/PhoneWindow;->mNavigationBarColor:I
-
-    return v0
-
-    .line 2532
-    :cond_0
-    invoke-virtual {p0}, Lcom/android/internal/policy/DecorView;->flymeGetFieldWindow()Lcom/android/internal/policy/PhoneWindow;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/android/internal/policy/PhoneWindow;->getNavigationBarColor()I
-
-    move-result v0
-
-    return v0
 .end method
 
 .method static flymeDispatchKeyEvent(Lcom/android/internal/policy/DecorView;Landroid/view/KeyEvent;)Z
@@ -71,7 +35,7 @@
 
     const/4 v2, 0x0
 
-    .line 2482
+    .line 2462
     invoke-virtual {p1}, Landroid/view/KeyEvent;->getAction()I
 
     move-result v3
@@ -80,12 +44,12 @@
 
     move v0, v1
 
-    .line 2483
+    .line 2463
     .local v0, "isDown":Z
     :goto_0
     if-nez v0, :cond_1
 
-    .line 2484
+    .line 2464
     invoke-virtual {p1}, Landroid/view/KeyEvent;->getKeyCode()I
 
     move-result v3
@@ -94,27 +58,27 @@
 
     if-ne v3, v4, :cond_1
 
-    .line 2485
+    .line 2465
     invoke-virtual {p1}, Landroid/view/KeyEvent;->isCtrlPressed()Z
 
     move-result v3
 
     if-eqz v3, :cond_1
 
-    .line 2486
+    .line 2466
     invoke-virtual {p0}, Lcom/android/internal/policy/DecorView;->dispatchStatusBarTap()Z
 
-    .line 2487
+    .line 2467
     return v1
 
     .end local v0    # "isDown":Z
     :cond_0
     move v0, v2
 
-    .line 2482
+    .line 2462
     goto :goto_0
 
-    .line 2491
+    .line 2471
     .restart local v0    # "isDown":Z
     :cond_1
     return v2
@@ -126,21 +90,21 @@
     .param p1, "c"    # Landroid/graphics/Canvas;
 
     .prologue
-    .line 2495
+    .line 2475
     invoke-virtual {p0}, Lcom/android/internal/policy/DecorView;->flymeGetFieldWindow()Lcom/android/internal/policy/PhoneWindow;
 
     move-result-object v1
 
-    .line 2496
+    .line 2476
     .local v1, "window":Lcom/android/internal/policy/PhoneWindow;
     if-eqz v1, :cond_0
 
-    .line 2497
+    .line 2477
     invoke-virtual {v1}, Lcom/android/internal/policy/PhoneWindow;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
-    .line 2498
+    .line 2478
     .local v0, "context":Landroid/content/Context;
     if-eqz v0, :cond_0
 
@@ -148,13 +112,13 @@
 
     if-eqz v2, :cond_0
 
-    .line 2499
+    .line 2479
     check-cast v0, Landroid/app/Activity;
 
     .end local v0    # "context":Landroid/content/Context;
     invoke-virtual {v0, p1}, Landroid/app/Activity;->drawStatusBarBackground(Landroid/graphics/Canvas;)V
 
-    .line 2494
+    .line 2474
     :cond_0
     return-void
 .end method
@@ -168,14 +132,14 @@
     .param p4, "height"    # I
 
     .prologue
-    .line 2519
+    .line 2499
     invoke-virtual {p0}, Lcom/android/internal/policy/DecorView;->flymeGetFieldStatusColorViewState()Lcom/android/internal/policy/DecorView$ColorViewState;
 
     move-result-object v0
 
     if-ne p1, v0, :cond_1
 
-    .line 2520
+    .line 2500
     if-nez p4, :cond_0
 
     invoke-virtual {p0}, Lcom/android/internal/policy/DecorView;->flymeGetFieldWindow()Lcom/android/internal/policy/PhoneWindow;
@@ -196,7 +160,7 @@
 
     iget p4, p0, Lcom/android/internal/policy/DecorView;->mFlymeStableInsetTop:I
 
-    .line 2521
+    .line 2501
     :cond_0
     if-lez p4, :cond_2
 
@@ -222,12 +186,12 @@
 
     add-int/lit8 p4, v0, -0x1
 
-    .line 2524
+    .line 2504
     :cond_1
     :goto_0
     return p4
 
-    .line 2521
+    .line 2501
     :cond_2
     const/4 p4, 0x0
 
@@ -240,7 +204,7 @@
     .param p1, "color"    # I
 
     .prologue
-    .line 2505
+    .line 2485
     invoke-virtual {p0}, Lcom/android/internal/policy/PhoneWindow;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -249,7 +213,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 2506
+    .line 2486
     invoke-virtual {p0}, Lcom/android/internal/policy/PhoneWindow;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -262,7 +226,7 @@
 
     return v0
 
-    .line 2508
+    .line 2488
     :cond_0
     return p1
 .end method
@@ -277,12 +241,12 @@
 
     const/4 v3, 0x0
 
-    .line 2470
+    .line 2450
     invoke-virtual {p1}, Landroid/view/KeyEvent;->getAction()I
 
     move-result v0
 
-    .line 2471
+    .line 2451
     .local v0, "action":I
     if-ne v0, v4, :cond_0
 
@@ -292,11 +256,11 @@
 
     if-eqz v2, :cond_1
 
-    .line 2478
+    .line 2458
     :cond_0
     return v4
 
-    .line 2472
+    .line 2452
     :cond_1
     invoke-virtual {p0}, Lcom/android/internal/policy/DecorView;->flymeGetFieldActionMode()Landroid/view/ActionMode;
 
@@ -306,7 +270,7 @@
 
     move-result-object v1
 
-    .line 2473
+    .line 2453
     .local v1, "listener":Landroid/view/ActionMode$BackPressedListener;
     if-eqz v1, :cond_3
 
@@ -317,21 +281,21 @@
     :goto_0
     if-nez v2, :cond_2
 
-    .line 2474
+    .line 2454
     invoke-virtual {p0}, Lcom/android/internal/policy/DecorView;->flymeGetFieldActionMode()Landroid/view/ActionMode;
 
     move-result-object v2
 
     invoke-virtual {v2}, Landroid/view/ActionMode;->finish()V
 
-    .line 2476
+    .line 2456
     :cond_2
     return v3
 
     :cond_3
     move v2, v3
 
-    .line 2473
+    .line 2453
     goto :goto_0
 .end method
 
@@ -342,7 +306,7 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 2466
+    .line 2446
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
@@ -367,79 +331,13 @@
     .param p1, "insets"    # Landroid/view/WindowInsets;
 
     .prologue
-    .line 2513
+    .line 2493
     invoke-virtual {p1}, Landroid/view/WindowInsets;->getStableInsetTop()I
 
     move-result v0
 
     iput v0, p0, Lcom/android/internal/policy/DecorView;->mFlymeStableInsetTop:I
 
-    .line 2511
-    return-void
-.end method
-
-.method static updateNavigationBarIcon(Lcom/android/internal/policy/DecorView;Lcom/android/internal/policy/DecorView$ColorViewState;Z)V
-    .locals 1
-    .param p0, "decorView"    # Lcom/android/internal/policy/DecorView;
-    .param p1, "state"    # Lcom/android/internal/policy/DecorView$ColorViewState;
-    .param p2, "showView"    # Z
-
-    .prologue
-    .line 2546
-    invoke-virtual {p0}, Lcom/android/internal/policy/DecorView;->flymeGetFieldNavigationColorViewState()Lcom/android/internal/policy/DecorView$ColorViewState;
-
-    move-result-object v0
-
-    if-ne p1, v0, :cond_0
-
-    .line 2547
-    invoke-virtual {p0}, Lcom/android/internal/policy/DecorView;->flymeGetFieldWindow()Lcom/android/internal/policy/PhoneWindow;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p2}, Lcom/android/internal/policy/PhoneWindow;->updateNavigationBarIcon(Z)V
-
-    .line 2544
-    :cond_0
-    return-void
-.end method
-
-.method static updateNavigationGuardColorInner(Lcom/android/internal/policy/DecorView;)V
-    .locals 3
-    .param p0, "decorView"    # Lcom/android/internal/policy/DecorView;
-
-    .prologue
-    .line 2537
-    invoke-virtual {p0}, Lcom/android/internal/policy/DecorView;->flymeGetFieldNavigationGuard()Landroid/view/View;
-
-    move-result-object v1
-
-    if-eqz v1, :cond_0
-
-    .line 2538
-    invoke-static {p0}, Lcom/android/internal/policy/DecorView$FlymeInjector;->calculateNavigationBarColor(Lcom/android/internal/policy/DecorView;)I
-
-    move-result v0
-
-    .line 2539
-    .local v0, "color":I
-    invoke-virtual {p0}, Lcom/android/internal/policy/DecorView;->flymeGetFieldNavigationGuard()Landroid/view/View;
-
-    move-result-object v1
-
-    invoke-virtual {v1, v0}, Landroid/view/View;->setBackgroundColor(I)V
-
-    .line 2540
-    invoke-virtual {p0}, Lcom/android/internal/policy/DecorView;->flymeGetFieldWindow()Lcom/android/internal/policy/PhoneWindow;
-
-    move-result-object v1
-
-    const/4 v2, 0x1
-
-    invoke-virtual {v1, v2}, Lcom/android/internal/policy/PhoneWindow;->updateNavigationBarIcon(Z)V
-
-    .line 2536
-    .end local v0    # "color":I
-    :cond_0
+    .line 2491
     return-void
 .end method

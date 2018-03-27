@@ -32,7 +32,7 @@
 
 .field static final TRANSACTION_extendToConference_19:I = 0x14
 
-.field static final TRANSACTION_getCallId_1:I = 0x2
+.field static final TRANSACTION_getCallId:I = 0x2
 
 .field static final TRANSACTION_getCallProfile_2:I = 0x3
 
@@ -50,7 +50,7 @@
 
 .field static final TRANSACTION_inviteParticipants_20:I = 0x15
 
-.field static final TRANSACTION_isInCall_7:I = 0x8
+.field static final TRANSACTION_isInCall:I = 0x8
 
 .field static final TRANSACTION_isMultiparty_27:I = 0x1c
 
@@ -68,7 +68,7 @@
 
 .field static final TRANSACTION_setListener:I = 0x9
 
-.field static final TRANSACTION_setMute_9:I = 0xa
+.field static final TRANSACTION_setMute:I = 0xa
 
 .field static final TRANSACTION_startConference_11:I = 0xc
 

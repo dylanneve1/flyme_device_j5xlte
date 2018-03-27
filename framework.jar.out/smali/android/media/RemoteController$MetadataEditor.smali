@@ -49,10 +49,10 @@
     invoke-direct {p0}, Landroid/media/MediaMetadataEditor;-><init>()V
 
     .line 490
-    iput-object p2, p0, Landroid/media/RemoteController$MetadataEditor;->mEditorMetadata:Landroid/os/Bundle;
+    iput-object p2, p0, Landroid/media/MediaMetadataEditor;->mEditorMetadata:Landroid/os/Bundle;
 
     .line 491
-    iput-wide p3, p0, Landroid/media/RemoteController$MetadataEditor;->mEditableKeys:J
+    iput-wide p3, p0, Landroid/media/MediaMetadataEditor;->mEditableKeys:J
 
     .line 494
     invoke-static {v2}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
@@ -66,10 +66,10 @@
 
     check-cast v0, Landroid/graphics/Bitmap;
 
-    iput-object v0, p0, Landroid/media/RemoteController$MetadataEditor;->mEditorArtwork:Landroid/graphics/Bitmap;
+    iput-object v0, p0, Landroid/media/MediaMetadataEditor;->mEditorArtwork:Landroid/graphics/Bitmap;
 
     .line 495
-    iget-object v0, p0, Landroid/media/RemoteController$MetadataEditor;->mEditorArtwork:Landroid/graphics/Bitmap;
+    iget-object v0, p0, Landroid/media/MediaMetadataEditor;->mEditorArtwork:Landroid/graphics/Bitmap;
 
     if-eqz v0, :cond_0
 
@@ -78,15 +78,15 @@
 
     .line 499
     :cond_0
-    iput-boolean v1, p0, Landroid/media/RemoteController$MetadataEditor;->mMetadataChanged:Z
+    iput-boolean v1, p0, Landroid/media/MediaMetadataEditor;->mMetadataChanged:Z
 
     .line 500
-    iput-boolean v1, p0, Landroid/media/RemoteController$MetadataEditor;->mArtworkChanged:Z
+    iput-boolean v1, p0, Landroid/media/MediaMetadataEditor;->mArtworkChanged:Z
 
     .line 501
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Landroid/media/RemoteController$MetadataEditor;->mApplied:Z
+    iput-boolean v0, p0, Landroid/media/MediaMetadataEditor;->mApplied:Z
 
     .line 489
     return-void
@@ -111,7 +111,7 @@
     if-ne v0, v1, :cond_0
 
     .line 506
-    iget-object v0, p0, Landroid/media/RemoteController$MetadataEditor;->mEditorMetadata:Landroid/os/Bundle;
+    iget-object v0, p0, Landroid/media/MediaMetadataEditor;->mEditorMetadata:Landroid/os/Bundle;
 
     invoke-static {p1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
@@ -134,7 +134,7 @@
 
     .line 519
     :try_start_0
-    iget-boolean v1, p0, Landroid/media/RemoteController$MetadataEditor;->mMetadataChanged:Z
+    iget-boolean v1, p0, Landroid/media/MediaMetadataEditor;->mMetadataChanged:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
@@ -167,7 +167,7 @@
     if-eqz v1, :cond_1
 
     .line 524
-    iget-object v1, p0, Landroid/media/RemoteController$MetadataEditor;->mEditorMetadata:Landroid/os/Bundle;
+    iget-object v1, p0, Landroid/media/MediaMetadataEditor;->mEditorMetadata:Landroid/os/Bundle;
 
     .line 525
     const v3, 0x10000001
@@ -177,7 +177,7 @@
     move-result-object v3
 
     .line 524
-    invoke-virtual {v1, v3}, Landroid/os/Bundle;->containsKey(Ljava/lang/String;)Z
+    invoke-virtual {v1, v3}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -189,7 +189,7 @@
     const/4 v3, 0x0
 
     .line 526
-    invoke-virtual {p0, v1, v3}, Landroid/media/RemoteController$MetadataEditor;->getObject(ILjava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v1, v3}, Landroid/media/MediaMetadataEditor;->getObject(ILjava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -222,7 +222,7 @@
     .line 537
     const/4 v1, 0x0
 
-    iput-boolean v1, p0, Landroid/media/RemoteController$MetadataEditor;->mApplied:Z
+    iput-boolean v1, p0, Landroid/media/MediaMetadataEditor;->mApplied:Z
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 

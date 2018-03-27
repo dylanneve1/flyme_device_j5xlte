@@ -210,10 +210,10 @@
     invoke-virtual {v0}, Landroid/content/res/TypedArray;->recycle()V
 
     .line 100
-    invoke-virtual {p0, v4}, Landroid/app/MediaRouteButton;->setClickable(Z)V
+    invoke-virtual {p0, v4}, Landroid/view/View;->setClickable(Z)V
 
     .line 101
-    invoke-virtual {p0, v4}, Landroid/app/MediaRouteButton;->setLongClickable(Z)V
+    invoke-virtual {p0, v4}, Landroid/view/View;->setLongClickable(Z)V
 
     .line 103
     invoke-virtual {p0, v1}, Landroid/app/MediaRouteButton;->setRouteTypes(I)V
@@ -227,7 +227,7 @@
 
     .prologue
     .line 171
-    invoke-virtual {p0}, Landroid/app/MediaRouteButton;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -244,7 +244,9 @@
     if-eqz v1, :cond_0
 
     .line 174
-    check-cast v0, Landroid/app/Activity;
+    nop
+
+    nop
 
     .end local v0    # "context":Landroid/content/Context;
     return-object v0
@@ -252,7 +254,9 @@
     .line 176
     .restart local v0    # "context":Landroid/content/Context;
     :cond_0
-    check-cast v0, Landroid/content/ContextWrapper;
+    nop
+
+    nop
 
     .end local v0    # "context":Landroid/content/Context;
     invoke-virtual {v0}, Landroid/content/ContextWrapper;->getBaseContext()Landroid/content/Context;
@@ -345,7 +349,7 @@
     if-eqz v2, :cond_2
 
     .line 408
-    invoke-virtual {p0}, Landroid/app/MediaRouteButton;->refreshDrawableState()V
+    invoke-virtual {p0}, Landroid/view/View;->refreshDrawableState()V
 
     .line 411
     :cond_2
@@ -361,7 +365,7 @@
 
     move-result v4
 
-    invoke-virtual {p0, v4}, Landroid/app/MediaRouteButton;->setEnabled(Z)V
+    invoke-virtual {p0, v4}, Landroid/view/View;->setEnabled(Z)V
 
     .line 391
     .end local v1    # "isRemote":Z
@@ -408,7 +412,7 @@
     .line 270
     iget-object v0, p0, Landroid/app/MediaRouteButton;->mRemoteIndicator:Landroid/graphics/drawable/Drawable;
 
-    invoke-virtual {p0, v0}, Landroid/app/MediaRouteButton;->unscheduleDrawable(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {p0, v0}, Landroid/view/View;->unscheduleDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 272
     :cond_0
@@ -421,14 +425,14 @@
     invoke-virtual {p1, p0}, Landroid/graphics/drawable/Drawable;->setCallback(Landroid/graphics/drawable/Drawable$Callback;)V
 
     .line 275
-    invoke-virtual {p0}, Landroid/app/MediaRouteButton;->getDrawableState()[I
+    invoke-virtual {p0}, Landroid/view/View;->getDrawableState()[I
 
     move-result-object v0
 
     invoke-virtual {p1, v0}, Landroid/graphics/drawable/Drawable;->setState([I)Z
 
     .line 276
-    invoke-virtual {p0}, Landroid/app/MediaRouteButton;->getVisibility()I
+    invoke-virtual {p0}, Landroid/view/View;->getVisibility()I
 
     move-result v0
 
@@ -441,7 +445,7 @@
 
     .line 279
     :cond_1
-    invoke-virtual {p0}, Landroid/app/MediaRouteButton;->refreshDrawableState()V
+    invoke-virtual {p0}, Landroid/view/View;->refreshDrawableState()V
 
     .line 267
     return-void
@@ -476,7 +480,7 @@
     if-eqz v1, :cond_0
 
     .line 262
-    invoke-virtual {p0}, Landroid/app/MediaRouteButton;->getDrawableState()[I
+    invoke-virtual {p0}, Landroid/view/View;->getDrawableState()[I
 
     move-result-object v1
 
@@ -488,7 +492,7 @@
     if-eqz v1, :cond_0
 
     .line 263
-    invoke-virtual {p0, v0}, Landroid/app/MediaRouteButton;->invalidateDrawable(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {p0, v0}, Landroid/view/View;->invalidateDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 257
     :cond_0
@@ -653,17 +657,17 @@
 
     .line 376
     :cond_0
-    invoke-virtual {p0}, Landroid/app/MediaRouteButton;->getPaddingLeft()I
+    invoke-virtual {p0}, Landroid/view/View;->getPaddingLeft()I
 
     move-result v5
 
     .line 377
     .local v5, "left":I
-    invoke-virtual {p0}, Landroid/app/MediaRouteButton;->getWidth()I
+    invoke-virtual {p0}, Landroid/view/View;->getWidth()I
 
     move-result v8
 
-    invoke-virtual {p0}, Landroid/app/MediaRouteButton;->getPaddingRight()I
+    invoke-virtual {p0}, Landroid/view/View;->getPaddingRight()I
 
     move-result v9
 
@@ -671,17 +675,17 @@
 
     .line 378
     .local v6, "right":I
-    invoke-virtual {p0}, Landroid/app/MediaRouteButton;->getPaddingTop()I
+    invoke-virtual {p0}, Landroid/view/View;->getPaddingTop()I
 
     move-result v7
 
     .line 379
     .local v7, "top":I
-    invoke-virtual {p0}, Landroid/app/MediaRouteButton;->getHeight()I
+    invoke-virtual {p0}, Landroid/view/View;->getHeight()I
 
     move-result v8
 
-    invoke-virtual {p0}, Landroid/app/MediaRouteButton;->getPaddingBottom()I
+    invoke-virtual {p0}, Landroid/view/View;->getPaddingBottom()I
 
     move-result v9
 
@@ -790,13 +794,13 @@
 
     move-result v8
 
-    invoke-virtual {p0}, Landroid/app/MediaRouteButton;->getPaddingLeft()I
+    invoke-virtual {p0}, Landroid/view/View;->getPaddingLeft()I
 
     move-result v11
 
     add-int/2addr v8, v11
 
-    invoke-virtual {p0}, Landroid/app/MediaRouteButton;->getPaddingRight()I
+    invoke-virtual {p0}, Landroid/view/View;->getPaddingRight()I
 
     move-result v11
 
@@ -823,13 +827,13 @@
 
     move-result v9
 
-    invoke-virtual {p0}, Landroid/app/MediaRouteButton;->getPaddingTop()I
+    invoke-virtual {p0}, Landroid/view/View;->getPaddingTop()I
 
     move-result v10
 
     add-int/2addr v9, v10
 
-    invoke-virtual {p0}, Landroid/app/MediaRouteButton;->getPaddingBottom()I
+    invoke-virtual {p0}, Landroid/view/View;->getPaddingBottom()I
 
     move-result v10
 
@@ -861,7 +865,7 @@
     .line 367
     .local v3, "measuredHeight":I
     :goto_2
-    invoke-virtual {p0, v4, v3}, Landroid/app/MediaRouteButton;->setMeasuredDimension(II)V
+    invoke-virtual {p0, v4, v3}, Landroid/view/View;->setMeasuredDimension(II)V
 
     .line 328
     return-void
@@ -949,7 +953,7 @@
     .line 194
     const/4 v1, 0x0
 
-    invoke-virtual {p0, v1}, Landroid/app/MediaRouteButton;->playSoundEffect(I)V
+    invoke-virtual {p0, v1}, Landroid/view/View;->playSoundEffect(I)V
 
     .line 196
     :cond_0
@@ -999,7 +1003,7 @@
 
     .line 209
     :cond_1
-    invoke-virtual {p0}, Landroid/app/MediaRouteButton;->getContentDescription()Ljava/lang/CharSequence;
+    invoke-virtual {p0}, Landroid/view/View;->getContentDescription()Ljava/lang/CharSequence;
 
     move-result-object v1
 
@@ -1028,25 +1032,25 @@
 
     .line 217
     .local v3, "displayFrame":Landroid/graphics/Rect;
-    invoke-virtual {p0, v6}, Landroid/app/MediaRouteButton;->getLocationOnScreen([I)V
+    invoke-virtual {p0, v6}, Landroid/view/View;->getLocationOnScreen([I)V
 
     .line 218
-    invoke-virtual {p0, v3}, Landroid/app/MediaRouteButton;->getWindowVisibleDisplayFrame(Landroid/graphics/Rect;)V
+    invoke-virtual {p0, v3}, Landroid/view/View;->getWindowVisibleDisplayFrame(Landroid/graphics/Rect;)V
 
     .line 220
-    invoke-virtual {p0}, Landroid/app/MediaRouteButton;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v2
 
     .line 221
     .local v2, "context":Landroid/content/Context;
-    invoke-virtual {p0}, Landroid/app/MediaRouteButton;->getWidth()I
+    invoke-virtual {p0}, Landroid/view/View;->getWidth()I
 
     move-result v8
 
     .line 222
     .local v8, "width":I
-    invoke-virtual {p0}, Landroid/app/MediaRouteButton;->getHeight()I
+    invoke-virtual {p0}, Landroid/view/View;->getHeight()I
 
     move-result v4
 
@@ -1103,7 +1107,7 @@
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
     .line 236
-    invoke-virtual {p0, v11}, Landroid/app/MediaRouteButton;->performHapticFeedback(I)Z
+    invoke-virtual {p0, v11}, Landroid/view/View;->performHapticFeedback(I)Z
 
     .line 237
     return v12
@@ -1216,7 +1220,7 @@
     .line 301
     iget-object v2, p0, Landroid/app/MediaRouteButton;->mRemoteIndicator:Landroid/graphics/drawable/Drawable;
 
-    invoke-virtual {p0}, Landroid/app/MediaRouteButton;->getVisibility()I
+    invoke-virtual {p0}, Landroid/view/View;->getVisibility()I
 
     move-result v0
 

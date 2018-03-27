@@ -32,16 +32,16 @@
     .param p2, "event"    # [Landroid/view/MotionEvent;
 
     .prologue
-    .line 7824
+    .line 7897
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 7825
+    .line 7898
     iput-object p1, p0, Landroid/app/Activity$FlymeInjector$FlymeDecorView;->mActivity:Landroid/app/Activity;
 
-    .line 7826
+    .line 7899
     iput-object p2, p0, Landroid/app/Activity$FlymeInjector$FlymeDecorView;->mEvent:[Landroid/view/MotionEvent;
 
-    .line 7824
+    .line 7897
     return-void
 .end method
 
@@ -51,7 +51,7 @@
     .locals 4
 
     .prologue
-    .line 7831
+    .line 7904
     iget-object v3, p0, Landroid/app/Activity$FlymeInjector$FlymeDecorView;->mActivity:Landroid/app/Activity;
 
     invoke-virtual {v3}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
@@ -62,13 +62,13 @@
 
     move-result-object v0
 
-    .line 7832
+    .line 7905
     .local v0, "decorView":Landroid/view/View;
     iget-object v3, p0, Landroid/app/Activity$FlymeInjector$FlymeDecorView;->mEvent:[Landroid/view/MotionEvent;
 
     array-length v2, v3
 
-    .line 7833
+    .line 7906
     .local v2, "length":I
     const/4 v1, 0x0
 
@@ -76,19 +76,19 @@
     :goto_0
     if-ge v1, v2, :cond_0
 
-    .line 7834
+    .line 7907
     iget-object v3, p0, Landroid/app/Activity$FlymeInjector$FlymeDecorView;->mEvent:[Landroid/view/MotionEvent;
 
     aget-object v3, v3, v1
 
     invoke-virtual {v0, v3}, Landroid/view/View;->dispatchTouchEvent(Landroid/view/MotionEvent;)Z
 
-    .line 7833
+    .line 7906
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 7830
+    .line 7903
     :cond_0
     return-void
 .end method

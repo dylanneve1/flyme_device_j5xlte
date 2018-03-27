@@ -44,9 +44,9 @@
 
 .field static final TRANSACTION_importMultimediaMessage_4:I = 0x5
 
-.field static final TRANSACTION_importTextMessage_3:I = 0x4
+.field static final TRANSACTION_importTextMessage:I = 0x4
 
-.field static final TRANSACTION_sendMessage_0:I = 0x1
+.field static final TRANSACTION_sendMessage:I = 0x1
 
 .field static final TRANSACTION_sendStoredMessage_11:I = 0xc
 

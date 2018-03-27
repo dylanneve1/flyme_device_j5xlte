@@ -55,7 +55,7 @@
     .line 1257
     iget-object v0, p0, Landroid/widget/Spinner$DropdownPopup$2;->this$1:Landroid/widget/Spinner$DropdownPopup;
 
-    invoke-virtual {v0}, Landroid/widget/Spinner$DropdownPopup;->dismiss()V
+    invoke-virtual {v0}, Landroid/widget/ListPopupWindow;->dismiss()V
 
     .line 1255
     :goto_0

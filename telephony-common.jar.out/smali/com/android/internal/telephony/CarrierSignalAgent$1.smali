@@ -46,7 +46,7 @@
     const-string/jumbo v1, "signal_redirection_receiver_string_array"
 
     .line 57
-    invoke-virtual {p0, v0, v1}, Lcom/android/internal/telephony/CarrierSignalAgent$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 59
     const-string/jumbo v0, "android.intent.action.CARRIER_SIGNAL_PCO_VALUE"
@@ -55,7 +55,7 @@
     const-string/jumbo v1, "signal_pco_receiver_string_array"
 
     .line 59
-    invoke-virtual {p0, v0, v1}, Lcom/android/internal/telephony/CarrierSignalAgent$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 61
     const-string/jumbo v0, "android.intent.action.CARRIER_SIGNAL_REQUEST_NETWORK_FAILED"
@@ -64,7 +64,7 @@
     const-string/jumbo v1, "signal_dcfailure_receiver_string_array"
 
     .line 61
-    invoke-virtual {p0, v0, v1}, Lcom/android/internal/telephony/CarrierSignalAgent$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 56
     return-void

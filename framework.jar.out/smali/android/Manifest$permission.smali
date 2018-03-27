@@ -20,8 +20,6 @@
 
 .field public static final MEIZU_DATASAVE_MODE_CHANGED:Ljava/lang/String; = "flyme.permission.send.MEIZU_DATASAVE_MODE_CHANGED"
 
-.field public static final HIDE_NON_SYSTEM_OVERLAY_WINDOWS:Ljava/lang/String; = "android.permission.HIDE_NON_SYSTEM_OVERLAY_WINDOWS"
-
 .field public static final ACCESS_CACHE_FILESYSTEM:Ljava/lang/String; = "android.permission.ACCESS_CACHE_FILESYSTEM"
 
 .field public static final ACCESS_CHECKIN_PROPERTIES:Ljava/lang/String; = "android.permission.ACCESS_CHECKIN_PROPERTIES"
@@ -91,6 +89,8 @@
 .field public static final ASEC_RENAME:Ljava/lang/String; = "android.permission.ASEC_RENAME"
 
 .field public static final AUTHENTICATE_ACCOUNTS:Ljava/lang/String; = "android.permission.AUTHENTICATE_ACCOUNTS"
+
+.field public static final AUTHORIZE_OUTGOING_SMS:Ljava/lang/String; = "android.permission.AUTHORIZE_OUTGOING_SMS"
 
 .field public static final BACKUP:Ljava/lang/String; = "android.permission.BACKUP"
 
@@ -349,6 +349,8 @@
 
 .field public static final HDMI_CEC:Ljava/lang/String; = "android.permission.HDMI_CEC"
 
+.field public static final HIDE_NON_SYSTEM_OVERLAY_WINDOWS:Ljava/lang/String; = "android.permission.HIDE_NON_SYSTEM_OVERLAY_WINDOWS"
+
 .field public static final INJECT_EVENTS:Ljava/lang/String; = "android.permission.INJECT_EVENTS"
 
 .field public static final INSTALL_GRANT_RUNTIME_PERMISSIONS:Ljava/lang/String; = "android.permission.INSTALL_GRANT_RUNTIME_PERMISSIONS"
@@ -430,8 +432,6 @@
 .field public static final MODIFY_DAY_NIGHT_MODE:Ljava/lang/String; = "android.permission.MODIFY_DAY_NIGHT_MODE"
 
 .field public static final MODIFY_NETWORK_ACCOUNTING:Ljava/lang/String; = "android.permission.MODIFY_NETWORK_ACCOUNTING"
-
-.field public static final MODIFY_OVERLAYS:Ljava/lang/String; = "oms.permission.MODIFY_OVERLAYS"
 
 .field public static final MODIFY_PARENTAL_CONTROLS:Ljava/lang/String; = "android.permission.MODIFY_PARENTAL_CONTROLS"
 

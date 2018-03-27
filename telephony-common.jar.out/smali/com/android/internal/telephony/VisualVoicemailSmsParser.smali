@@ -373,7 +373,7 @@
 
     .line 110
     .local v5, "value":Ljava/lang/String;
-    invoke-virtual {v3, v2, v5}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v3, v2, v5}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_1
 

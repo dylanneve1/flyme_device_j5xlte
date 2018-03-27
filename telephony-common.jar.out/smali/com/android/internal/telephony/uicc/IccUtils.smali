@@ -379,7 +379,7 @@
 
     .line 301
     .local v5, "defaultCharset":Ljava/lang/String;
-    const v15, 0x10400af
+    const v15, 0x10400b1
 
     :try_start_1
     invoke-virtual {v10, v15}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;

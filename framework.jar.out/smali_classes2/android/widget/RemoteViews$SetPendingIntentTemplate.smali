@@ -40,7 +40,7 @@
     invoke-direct {p0, v0}, Landroid/widget/RemoteViews$Action;-><init>(Landroid/widget/RemoteViews$Action;)V
 
     .line 520
-    iput p2, p0, Landroid/widget/RemoteViews$SetPendingIntentTemplate;->viewId:I
+    iput p2, p0, Landroid/widget/RemoteViews$Action;->viewId:I
 
     .line 521
     iput-object p3, p0, Landroid/widget/RemoteViews$SetPendingIntentTemplate;->pendingIntentTemplate:Landroid/app/PendingIntent;
@@ -67,7 +67,7 @@
 
     move-result v0
 
-    iput v0, p0, Landroid/widget/RemoteViews$SetPendingIntentTemplate;->viewId:I
+    iput v0, p0, Landroid/widget/RemoteViews$Action;->viewId:I
 
     .line 526
     invoke-static {p2}, Landroid/app/PendingIntent;->readPendingIntentOrNullFromParcel(Landroid/os/Parcel;)Landroid/app/PendingIntent;
@@ -90,7 +90,7 @@
 
     .prologue
     .line 537
-    iget v3, p0, Landroid/widget/RemoteViews$SetPendingIntentTemplate;->viewId:I
+    iget v3, p0, Landroid/widget/RemoteViews$Action;->viewId:I
 
     invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -111,7 +111,9 @@
     move-object v0, v2
 
     .line 542
-    check-cast v0, Landroid/widget/AdapterView;
+    nop
+
+    nop
 
     .line 544
     .local v0, "av":Landroid/widget/AdapterView;, "Landroid/widget/AdapterView<*>;"
@@ -126,7 +128,7 @@
     .line 578
     iget-object v3, p0, Landroid/widget/RemoteViews$SetPendingIntentTemplate;->pendingIntentTemplate:Landroid/app/PendingIntent;
 
-    invoke-virtual {v0, v3}, Landroid/widget/AdapterView;->setTag(Ljava/lang/Object;)V
+    invoke-virtual {v0, v3}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 
     .line 536
     return-void
@@ -148,7 +150,7 @@
     move-result-object v4
 
     .line 581
-    iget v5, p0, Landroid/widget/RemoteViews$SetPendingIntentTemplate;->viewId:I
+    iget v5, p0, Landroid/widget/RemoteViews$Action;->viewId:I
 
     .line 580
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
@@ -195,7 +197,7 @@
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 531
-    iget v0, p0, Landroid/widget/RemoteViews$SetPendingIntentTemplate;->viewId:I
+    iget v0, p0, Landroid/widget/RemoteViews$Action;->viewId:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 

@@ -27,7 +27,7 @@
     .param p1, "this$1"    # Lcom/android/server/policy/GlobalActions$BugReportAction;
 
     .prologue
-    .line 559
+    .line 564
     iput-object p1, p0, Lcom/android/server/policy/GlobalActions$BugReportAction$1;->this$1:Lcom/android/server/policy/GlobalActions$BugReportAction;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 3
 
     .prologue
-    .line 564
+    .line 569
     :try_start_0
     iget-object v1, p0, Lcom/android/server/policy/GlobalActions$BugReportAction$1;->this$1:Lcom/android/server/policy/GlobalActions$BugReportAction;
 
@@ -51,30 +51,30 @@
 
     move-result-object v1
 
-    .line 565
+    .line 570
     const/16 v2, 0x124
 
-    .line 564
+    .line 569
     invoke-static {v1, v2}, Lcom/android/internal/logging/MetricsLogger;->action(Landroid/content/Context;I)V
 
-    .line 566
+    .line 571
     invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
 
     move-result-object v1
 
-    .line 567
+    .line 572
     const/4 v2, 0x1
 
-    .line 566
+    .line 571
     invoke-interface {v1, v2}, Landroid/app/IActivityManager;->requestBugReport(I)V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 561
+    .line 566
     :goto_0
     return-void
 
-    .line 568
+    .line 573
     :catch_0
     move-exception v0
 

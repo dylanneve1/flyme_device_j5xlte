@@ -221,7 +221,9 @@
     move-object v0, p1
 
     .line 101
-    check-cast v0, Landroid/net/wifi/WifiDevice;
+    nop
+
+    nop
 
     .line 103
     .local v0, "other":Landroid/net/wifi/WifiDevice;

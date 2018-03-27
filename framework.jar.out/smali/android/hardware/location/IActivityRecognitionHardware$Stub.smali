@@ -28,7 +28,7 @@
 
 .field static final TRANSACTION_disableActivityEvent:I = 0x6
 
-.field static final TRANSACTION_enableActivityEvent_4:I = 0x5
+.field static final TRANSACTION_enableActivityEvent:I = 0x5
 
 .field static final TRANSACTION_flush:I = 0x7
 
@@ -38,7 +38,7 @@
 
 .field static final TRANSACTION_registerSink:I = 0x3
 
-.field static final TRANSACTION_unregisterSink_3:I = 0x4
+.field static final TRANSACTION_unregisterSink:I = 0x4
 
 
 # direct methods

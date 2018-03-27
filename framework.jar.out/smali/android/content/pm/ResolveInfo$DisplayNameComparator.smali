@@ -108,7 +108,7 @@
 
     iget-object v2, p1, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
 
-    iget-object v0, v2, Landroid/content/pm/ActivityInfo;->name:Ljava/lang/String;
+    iget-object v0, v2, Landroid/content/pm/PackageItemInfo;->name:Ljava/lang/String;
 
     .line 456
     :cond_2
@@ -124,7 +124,7 @@
 
     iget-object v2, p2, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
 
-    iget-object v1, v2, Landroid/content/pm/ActivityInfo;->name:Ljava/lang/String;
+    iget-object v1, v2, Landroid/content/pm/PackageItemInfo;->name:Ljava/lang/String;
 
     .line 459
     :cond_3

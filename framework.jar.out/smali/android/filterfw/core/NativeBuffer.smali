@@ -268,7 +268,7 @@
     .line 47
     .local v2, "result":Landroid/filterfw/core/NativeBuffer;
     :try_start_0
-    invoke-virtual {p0}, Landroid/filterfw/core/NativeBuffer;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v1
 
@@ -319,7 +319,7 @@
 
     move-result-object v4
 
-    invoke-virtual {p0}, Landroid/filterfw/core/NativeBuffer;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v5
 

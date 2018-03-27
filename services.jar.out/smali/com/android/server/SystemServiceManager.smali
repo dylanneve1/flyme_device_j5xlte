@@ -34,25 +34,25 @@
     .param p1, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 46
+    .line 45
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 42
+    .line 41
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/android/server/SystemServiceManager;->mServices:Ljava/util/ArrayList;
 
-    .line 44
+    .line 43
     const/4 v0, -0x1
 
     iput v0, p0, Lcom/android/server/SystemServiceManager;->mCurrentPhase:I
 
-    .line 47
+    .line 46
     iput-object p1, p0, Lcom/android/server/SystemServiceManager;->mContext:Landroid/content/Context;
 
-    .line 46
+    .line 45
     return-void
 .end method
 
@@ -65,14 +65,14 @@
     .prologue
     const-wide/32 v8, 0x80000
 
-    .line 225
+    .line 221
     iget-object v4, p0, Lcom/android/server/SystemServiceManager;->mServices:Ljava/util/ArrayList;
 
     invoke-virtual {v4}, Ljava/util/ArrayList;->size()I
 
     move-result v3
 
-    .line 226
+    .line 222
     .local v3, "serviceLen":I
     const/4 v1, 0x0
 
@@ -80,7 +80,7 @@
     :goto_0
     if-ge v1, v3, :cond_0
 
-    .line 227
+    .line 223
     iget-object v4, p0, Lcom/android/server/SystemServiceManager;->mServices:Ljava/util/ArrayList;
 
     invoke-virtual {v4, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -89,7 +89,7 @@
 
     check-cast v2, Lcom/android/server/SystemService;
 
-    .line 228
+    .line 224
     .local v2, "service":Lcom/android/server/SystemService;
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -101,7 +101,7 @@
 
     move-result-object v4
 
-    .line 229
+    .line 225
     invoke-virtual {v2}, Lcom/android/server/SystemService;->getClass()Ljava/lang/Class;
 
     move-result-object v5
@@ -110,7 +110,7 @@
 
     move-result-object v5
 
-    .line 228
+    .line 224
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v4
@@ -121,26 +121,26 @@
 
     invoke-static {v8, v9, v4}, Landroid/os/Trace;->traceBegin(JLjava/lang/String;)V
 
-    .line 231
+    .line 227
     :try_start_0
     invoke-virtual {v2, p1}, Lcom/android/server/SystemService;->onCleanupUser(I)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 236
+    .line 232
     :goto_1
     invoke-static {v8, v9}, Landroid/os/Trace;->traceEnd(J)V
 
-    .line 226
+    .line 222
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 232
+    .line 228
     :catch_0
     move-exception v0
 
-    .line 233
+    .line 229
     .local v0, "ex":Ljava/lang/Exception;
     const-string/jumbo v4, "SystemServiceManager"
 
@@ -158,15 +158,15 @@
 
     move-result-object v5
 
-    .line 234
+    .line 230
     const-string/jumbo v6, " to service "
 
-    .line 233
+    .line 229
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v5
 
-    .line 234
+    .line 230
     invoke-virtual {v2}, Lcom/android/server/SystemService;->getClass()Ljava/lang/Class;
 
     move-result-object v6
@@ -175,7 +175,7 @@
 
     move-result-object v6
 
-    .line 233
+    .line 229
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v5
@@ -188,7 +188,7 @@
 
     goto :goto_1
 
-    .line 224
+    .line 220
     .end local v0    # "ex":Ljava/lang/Exception;
     .end local v2    # "service":Lcom/android/server/SystemService;
     :cond_0
@@ -199,12 +199,12 @@
     .locals 6
 
     .prologue
-    .line 268
+    .line 264
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 269
+    .line 265
     .local v0, "builder":Ljava/lang/StringBuilder;
     const-string/jumbo v4, "Current phase: "
 
@@ -222,19 +222,19 @@
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 270
+    .line 266
     const-string/jumbo v4, "Services:\n"
 
     invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 271
+    .line 267
     iget-object v4, p0, Lcom/android/server/SystemServiceManager;->mServices:Ljava/util/ArrayList;
 
     invoke-virtual {v4}, Ljava/util/ArrayList;->size()I
 
     move-result v3
 
-    .line 272
+    .line 268
     .local v3, "startedLen":I
     const/4 v1, 0x0
 
@@ -242,7 +242,7 @@
     :goto_0
     if-ge v1, v3, :cond_0
 
-    .line 273
+    .line 269
     iget-object v4, p0, Lcom/android/server/SystemServiceManager;->mServices:Ljava/util/ArrayList;
 
     invoke-virtual {v4, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -251,7 +251,7 @@
 
     check-cast v2, Lcom/android/server/SystemService;
 
-    .line 274
+    .line 270
     .local v2, "service":Lcom/android/server/SystemService;
     const-string/jumbo v4, "\t"
 
@@ -259,7 +259,7 @@
 
     move-result-object v4
 
-    .line 275
+    .line 271
     invoke-virtual {v2}, Lcom/android/server/SystemService;->getClass()Ljava/lang/Class;
 
     move-result-object v5
@@ -268,23 +268,23 @@
 
     move-result-object v5
 
-    .line 274
+    .line 270
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v4
 
-    .line 276
+    .line 272
     const-string/jumbo v5, "\n"
 
-    .line 274
+    .line 270
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 272
+    .line 268
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 279
+    .line 275
     .end local v2    # "service":Lcom/android/server/SystemService;
     :cond_0
     const-string/jumbo v4, "SystemServiceManager"
@@ -295,7 +295,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 267
+    .line 263
     return-void
 .end method
 
@@ -303,7 +303,7 @@
     .locals 1
 
     .prologue
-    .line 257
+    .line 253
     iget-boolean v0, p0, Lcom/android/server/SystemServiceManager;->mRuntimeRestarted:Z
 
     return v0
@@ -313,7 +313,7 @@
     .locals 1
 
     .prologue
-    .line 250
+    .line 246
     iget-boolean v0, p0, Lcom/android/server/SystemServiceManager;->mSafeMode:Z
 
     return v0
@@ -324,10 +324,10 @@
     .param p1, "runtimeRestarted"    # Z
 
     .prologue
-    .line 261
+    .line 257
     iput-boolean p1, p0, Lcom/android/server/SystemServiceManager;->mRuntimeRestarted:Z
 
-    .line 260
+    .line 256
     return-void
 .end method
 
@@ -336,10 +336,10 @@
     .param p1, "safeMode"    # Z
 
     .prologue
-    .line 242
+    .line 238
     iput-boolean p1, p0, Lcom/android/server/SystemServiceManager;->mSafeMode:Z
 
-    .line 241
+    .line 237
     return-void
 .end method
 
@@ -350,12 +350,12 @@
     .prologue
     const-wide/32 v8, 0x80000
 
-    .line 135
+    .line 131
     iget v4, p0, Lcom/android/server/SystemServiceManager;->mCurrentPhase:I
 
     if-gt p1, v4, :cond_0
 
-    .line 136
+    .line 132
     new-instance v4, Ljava/lang/IllegalArgumentException;
 
     const-string/jumbo v5, "Next phase must be larger than previous"
@@ -364,11 +364,11 @@
 
     throw v4
 
-    .line 138
+    .line 134
     :cond_0
     iput p1, p0, Lcom/android/server/SystemServiceManager;->mCurrentPhase:I
 
-    .line 140
+    .line 136
     const-string/jumbo v4, "SystemServiceManager"
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -393,7 +393,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 142
+    .line 138
     :try_start_0
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -417,14 +417,14 @@
 
     invoke-static {v6, v7, v4}, Landroid/os/Trace;->traceBegin(JLjava/lang/String;)V
 
-    .line 143
+    .line 139
     iget-object v4, p0, Lcom/android/server/SystemServiceManager;->mServices:Ljava/util/ArrayList;
 
     invoke-virtual {v4}, Ljava/util/ArrayList;->size()I
 
     move-result v3
 
-    .line 144
+    .line 140
     .local v3, "serviceLen":I
     const/4 v1, 0x0
 
@@ -432,7 +432,7 @@
     :goto_0
     if-ge v1, v3, :cond_1
 
-    .line 145
+    .line 141
     iget-object v4, p0, Lcom/android/server/SystemServiceManager;->mServices:Ljava/util/ArrayList;
 
     invoke-virtual {v4, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -443,7 +443,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 147
+    .line 143
     .local v2, "service":Lcom/android/server/SystemService;
     :try_start_1
     iget v4, p0, Lcom/android/server/SystemServiceManager;->mCurrentPhase:I
@@ -453,16 +453,16 @@
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 144
+    .line 140
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 148
+    .line 144
     :catch_0
     move-exception v0
 
-    .line 149
+    .line 145
     .local v0, "ex":Ljava/lang/Exception;
     :try_start_2
     new-instance v4, Ljava/lang/RuntimeException;
@@ -477,7 +477,7 @@
 
     move-result-object v5
 
-    .line 150
+    .line 146
     invoke-virtual {v2}, Lcom/android/server/SystemService;->getClass()Ljava/lang/Class;
 
     move-result-object v6
@@ -486,23 +486,23 @@
 
     move-result-object v6
 
-    .line 149
+    .line 145
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v5
 
-    .line 151
+    .line 147
     const-string/jumbo v6, ": onBootPhase threw an exception during phase "
 
-    .line 149
+    .line 145
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v5
 
-    .line 152
+    .line 148
     iget v6, p0, Lcom/android/server/SystemServiceManager;->mCurrentPhase:I
 
-    .line 149
+    .line 145
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v5
@@ -517,7 +517,7 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 155
+    .line 151
     .end local v0    # "ex":Ljava/lang/Exception;
     .end local v1    # "i":I
     .end local v2    # "service":Lcom/android/server/SystemService;
@@ -525,24 +525,24 @@
     :catchall_0
     move-exception v4
 
-    .line 156
+    .line 152
     invoke-static {v8, v9}, Landroid/os/Trace;->traceEnd(J)V
 
-    .line 155
+    .line 151
     throw v4
 
-    .line 156
+    .line 152
     .restart local v1    # "i":I
     .restart local v3    # "serviceLen":I
     :cond_1
     invoke-static {v8, v9}, Landroid/os/Trace;->traceEnd(J)V
 
-    .line 134
+    .line 130
     return-void
 .end method
 
 .method public startService(Ljava/lang/Class;)Lcom/android/server/SystemService;
-    .locals 12
+    .locals 14
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -555,29 +555,50 @@
 
     .prologue
     .local p1, "serviceClass":Ljava/lang/Class;, "Ljava/lang/Class<TT;>;"
-    const-wide/32 v10, 0x80000
+    const-wide/32 v12, 0x80000
 
-    .line 82
+    .line 81
     :try_start_0
     invoke-virtual {p1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
-    move-result-object v5
+    move-result-object v6
+
+    .line 82
+    .local v6, "name":Ljava/lang/String;
+    const-string/jumbo v8, "SystemServiceManager"
+
+    new-instance v9, Ljava/lang/StringBuilder;
+
+    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v10, "Starting "
+
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v9
+
+    invoke-virtual {v9, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v9
+
+    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v9
+
+    invoke-static {v8, v9}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 83
-    .local v5, "name":Ljava/lang/String;
-    const-string/jumbo v7, "SystemServiceManager"
-
     new-instance v8, Ljava/lang/StringBuilder;
 
     invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v9, "Starting "
+    const-string/jumbo v9, "StartService "
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v8
 
-    invoke-virtual {v8, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v8, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v8
 
@@ -585,133 +606,112 @@
 
     move-result-object v8
 
-    invoke-static {v7, v8}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
+    const-wide/32 v10, 0x80000
 
-    .line 84
-    new-instance v7, Ljava/lang/StringBuilder;
+    invoke-static {v10, v11, v8}, Landroid/os/Trace;->traceBegin(JLjava/lang/String;)V
 
-    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
+    .line 86
+    const-class v8, Lcom/android/server/SystemService;
 
-    const-string/jumbo v8, "StartService "
+    invoke-virtual {v8, p1}, Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
 
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result v8
 
-    move-result-object v7
-
-    invoke-virtual {v7, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v7
-
-    const-wide/32 v8, 0x80000
-
-    invoke-static {v8, v9, v7}, Landroid/os/Trace;->traceBegin(JLjava/lang/String;)V
+    if-nez v8, :cond_0
 
     .line 87
-    const-class v7, Lcom/android/server/SystemService;
+    new-instance v8, Ljava/lang/RuntimeException;
 
-    invoke-virtual {v7, p1}, Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
+    new-instance v9, Ljava/lang/StringBuilder;
 
-    move-result v7
+    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
 
-    if-nez v7, :cond_0
+    const-string/jumbo v10, "Failed to create "
 
-    .line 88
-    new-instance v7, Ljava/lang/RuntimeException;
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    new-instance v8, Ljava/lang/StringBuilder;
+    move-result-object v9
 
-    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v9, "Failed to create "
-
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v8
-
-    invoke-virtual {v8, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v8
-
-    .line 89
-    const-string/jumbo v9, ": service must extend "
-
-    .line 88
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v8
-
-    .line 89
-    const-class v9, Lcom/android/server/SystemService;
-
-    invoke-virtual {v9}, Ljava/lang/Class;->getName()Ljava/lang/String;
+    invoke-virtual {v9, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v9
 
     .line 88
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string/jumbo v10, ": service must extend "
 
-    move-result-object v8
+    .line 87
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v9
 
-    move-result-object v8
+    .line 88
+    const-class v10, Lcom/android/server/SystemService;
 
-    invoke-direct {v7, v8}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+    invoke-virtual {v10}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
-    throw v7
+    move-result-object v10
+
+    .line 87
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v9
+
+    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v9
+
+    invoke-direct {v8, v9}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+
+    throw v8
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 111
-    .end local v5    # "name":Ljava/lang/String;
+    .line 119
+    .end local v6    # "name":Ljava/lang/String;
     :catchall_0
-    move-exception v7
+    move-exception v8
 
-    .line 112
-    invoke-static {v10, v11}, Landroid/os/Trace;->traceEnd(J)V
+    .line 120
+    invoke-static {v12, v13}, Landroid/os/Trace;->traceEnd(J)V
 
-    .line 111
-    throw v7
+    .line 119
+    throw v8
 
-    .line 93
-    .restart local v5    # "name":Ljava/lang/String;
+    .line 92
+    .restart local v6    # "name":Ljava/lang/String;
     :cond_0
-    const/4 v7, 0x1
+    const/4 v8, 0x1
 
     :try_start_1
-    new-array v7, v7, [Ljava/lang/Class;
+    new-array v8, v8, [Ljava/lang/Class;
 
-    const-class v8, Landroid/content/Context;
+    const-class v9, Landroid/content/Context;
 
-    const/4 v9, 0x0
+    const/4 v10, 0x0
 
-    aput-object v8, v7, v9
+    aput-object v9, v8, v10
 
-    invoke-virtual {p1, v7}, Ljava/lang/Class;->getConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
+    invoke-virtual {p1, v8}, Ljava/lang/Class;->getConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
 
     move-result-object v0
 
-    .line 94
+    .line 93
     .local v0, "constructor":Ljava/lang/reflect/Constructor;, "Ljava/lang/reflect/Constructor<TT;>;"
-    const/4 v7, 0x1
+    const/4 v8, 0x1
 
-    new-array v7, v7, [Ljava/lang/Object;
+    new-array v8, v8, [Ljava/lang/Object;
 
-    iget-object v8, p0, Lcom/android/server/SystemServiceManager;->mContext:Landroid/content/Context;
+    iget-object v9, p0, Lcom/android/server/SystemServiceManager;->mContext:Landroid/content/Context;
 
-    const/4 v9, 0x0
+    const/4 v10, 0x0
 
-    aput-object v8, v7, v9
+    aput-object v9, v8, v10
 
-    invoke-virtual {v0, v7}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v8}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v6
+    move-result-object v7
 
-    check-cast v6, Lcom/android/server/SystemService;
+    check-cast v7, Lcom/android/server/SystemService;
     :try_end_1
     .catch Ljava/lang/InstantiationException; {:try_start_1 .. :try_end_1} :catch_3
     .catch Ljava/lang/IllegalAccessException; {:try_start_1 .. :try_end_1} :catch_2
@@ -720,177 +720,227 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 109
-    .local v6, "service":Lcom/android/server/SystemService;, "TT;"
+    .local v7, "service":Lcom/android/server/SystemService;, "TT;"
     :try_start_2
-    invoke-virtual {p0, v6}, Lcom/android/server/SystemServiceManager;->startService(Lcom/android/server/SystemService;)V
+    iget-object v8, p0, Lcom/android/server/SystemServiceManager;->mServices:Ljava/util/ArrayList;
+
+    invoke-virtual {v8, v7}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 112
-    invoke-static {v10, v11}, Landroid/os/Trace;->traceEnd(J)V
+    .line 113
+    :try_start_3
+    invoke-virtual {v7}, Lcom/android/server/SystemService;->onStart()V
+    :try_end_3
+    .catch Ljava/lang/RuntimeException; {:try_start_3 .. :try_end_3} :catch_4
+    .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
-    .line 110
-    return-object v6
+    .line 120
+    invoke-static {v12, v13}, Landroid/os/Trace;->traceEnd(J)V
+
+    .line 118
+    return-object v7
+
+    .line 103
+    .end local v0    # "constructor":Ljava/lang/reflect/Constructor;, "Ljava/lang/reflect/Constructor<TT;>;"
+    .end local v7    # "service":Lcom/android/server/SystemService;, "TT;"
+    :catch_0
+    move-exception v5
 
     .line 104
-    .end local v0    # "constructor":Ljava/lang/reflect/Constructor;, "Ljava/lang/reflect/Constructor<TT;>;"
-    .end local v6    # "service":Lcom/android/server/SystemService;, "TT;"
-    :catch_0
-    move-exception v4
+    .local v5, "ex":Ljava/lang/reflect/InvocationTargetException;
+    :try_start_4
+    new-instance v8, Ljava/lang/RuntimeException;
+
+    new-instance v9, Ljava/lang/StringBuilder;
+
+    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v10, "Failed to create service "
+
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v9
+
+    invoke-virtual {v9, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v9
 
     .line 105
-    .local v4, "ex":Ljava/lang/reflect/InvocationTargetException;
-    :try_start_3
-    new-instance v7, Ljava/lang/RuntimeException;
+    const-string/jumbo v10, ": service constructor threw an exception"
 
-    new-instance v8, Ljava/lang/StringBuilder;
+    .line 104
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
+    move-result-object v9
 
-    const-string/jumbo v9, "Failed to create service "
+    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v9
 
-    move-result-object v8
+    invoke-direct {v8, v9, v5}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    invoke-virtual {v8, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    throw v8
 
-    move-result-object v8
-
-    .line 106
-    const-string/jumbo v9, ": service constructor threw an exception"
-
-    .line 105
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v8
-
-    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v8
-
-    invoke-direct {v7, v8, v4}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    throw v7
-
-    .line 101
-    .end local v4    # "ex":Ljava/lang/reflect/InvocationTargetException;
+    .line 100
+    .end local v5    # "ex":Ljava/lang/reflect/InvocationTargetException;
     :catch_1
     move-exception v3
 
-    .line 102
+    .line 101
     .local v3, "ex":Ljava/lang/NoSuchMethodException;
-    new-instance v7, Ljava/lang/RuntimeException;
+    new-instance v8, Ljava/lang/RuntimeException;
 
-    new-instance v8, Ljava/lang/StringBuilder;
+    new-instance v9, Ljava/lang/StringBuilder;
 
-    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v9, "Failed to create service "
+    const-string/jumbo v10, "Failed to create service "
 
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v8
+    move-result-object v9
 
-    invoke-virtual {v8, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v8
-
-    .line 103
-    const-string/jumbo v9, ": service must have a public constructor with a Context argument"
+    move-result-object v9
 
     .line 102
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string/jumbo v10, ": service must have a public constructor with a Context argument"
 
-    move-result-object v8
+    .line 101
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v9
 
-    move-result-object v8
+    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    invoke-direct {v7, v8, v3}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+    move-result-object v9
 
-    throw v7
+    invoke-direct {v8, v9, v3}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    .line 98
+    throw v8
+
+    .line 97
     .end local v3    # "ex":Ljava/lang/NoSuchMethodException;
     :catch_2
     move-exception v1
 
-    .line 99
+    .line 98
     .local v1, "ex":Ljava/lang/IllegalAccessException;
-    new-instance v7, Ljava/lang/RuntimeException;
+    new-instance v8, Ljava/lang/RuntimeException;
 
-    new-instance v8, Ljava/lang/StringBuilder;
+    new-instance v9, Ljava/lang/StringBuilder;
 
-    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v9, "Failed to create service "
+    const-string/jumbo v10, "Failed to create service "
 
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v8
+    move-result-object v9
 
-    invoke-virtual {v8, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v8
-
-    .line 100
-    const-string/jumbo v9, ": service must have a public constructor with a Context argument"
+    move-result-object v9
 
     .line 99
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string/jumbo v10, ": service must have a public constructor with a Context argument"
 
-    move-result-object v8
+    .line 98
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v9
 
-    move-result-object v8
+    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    invoke-direct {v7, v8, v1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+    move-result-object v9
 
-    throw v7
+    invoke-direct {v8, v9, v1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    .line 95
+    throw v8
+
+    .line 94
     .end local v1    # "ex":Ljava/lang/IllegalAccessException;
     :catch_3
     move-exception v2
 
-    .line 96
+    .line 95
     .local v2, "ex":Ljava/lang/InstantiationException;
-    new-instance v7, Ljava/lang/RuntimeException;
+    new-instance v8, Ljava/lang/RuntimeException;
 
-    new-instance v8, Ljava/lang/StringBuilder;
+    new-instance v9, Ljava/lang/StringBuilder;
 
-    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v9, "Failed to create service "
+    const-string/jumbo v10, "Failed to create service "
 
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v8
+    move-result-object v9
 
-    invoke-virtual {v8, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v8
-
-    .line 97
-    const-string/jumbo v9, ": service could not be instantiated"
+    move-result-object v9
 
     .line 96
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string/jumbo v10, ": service could not be instantiated"
 
-    move-result-object v8
+    .line 95
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v9
 
-    move-result-object v8
+    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    invoke-direct {v7, v8, v2}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+    move-result-object v9
 
-    throw v7
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_0
+    invoke-direct {v8, v9, v2}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    throw v8
+
+    .line 114
+    .end local v2    # "ex":Ljava/lang/InstantiationException;
+    .restart local v0    # "constructor":Ljava/lang/reflect/Constructor;, "Ljava/lang/reflect/Constructor<TT;>;"
+    .restart local v7    # "service":Lcom/android/server/SystemService;, "TT;"
+    :catch_4
+    move-exception v4
+
+    .line 115
+    .local v4, "ex":Ljava/lang/RuntimeException;
+    new-instance v8, Ljava/lang/RuntimeException;
+
+    new-instance v9, Ljava/lang/StringBuilder;
+
+    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v10, "Failed to start service "
+
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v9
+
+    invoke-virtual {v9, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v9
+
+    .line 116
+    const-string/jumbo v10, ": onStart threw an exception"
+
+    .line 115
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v9
+
+    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v9
+
+    invoke-direct {v8, v9, v4}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    throw v8
+    :try_end_4
+    .catchall {:try_start_4 .. :try_end_4} :catchall_0
 .end method
 
 .method public startService(Ljava/lang/String;)Lcom/android/server/SystemService;
@@ -898,7 +948,7 @@
     .param p1, "className"    # Ljava/lang/String;
 
     .prologue
-    .line 59
+    .line 58
     :try_start_0
     invoke-static {p1}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
     :try_end_0
@@ -906,7 +956,7 @@
 
     move-result-object v1
 
-    .line 68
+    .line 67
     .local v1, "serviceClass":Ljava/lang/Class;, "Ljava/lang/Class<Lcom/android/server/SystemService;>;"
     invoke-virtual {p0, v1}, Lcom/android/server/SystemServiceManager;->startService(Ljava/lang/Class;)Lcom/android/server/SystemService;
 
@@ -914,12 +964,12 @@
 
     return-object v2
 
-    .line 60
+    .line 59
     .end local v1    # "serviceClass":Ljava/lang/Class;, "Ljava/lang/Class<Lcom/android/server/SystemService;>;"
     :catch_0
     move-exception v0
 
-    .line 61
+    .line 60
     .local v0, "ex":Ljava/lang/ClassNotFoundException;
     const-string/jumbo v2, "SystemServiceManager"
 
@@ -943,7 +993,7 @@
 
     invoke-static {v2, v3}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 62
+    .line 61
     new-instance v2, Ljava/lang/RuntimeException;
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -960,34 +1010,34 @@
 
     move-result-object v3
 
-    .line 63
+    .line 62
     const-string/jumbo v4, ": service class not found, usually indicates that the caller should "
 
-    .line 62
+    .line 61
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    .line 63
+    const-string/jumbo v4, "have called PackageManager.hasSystemFeature() to check whether the "
+
+    .line 61
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v3
 
     .line 64
-    const-string/jumbo v4, "have called PackageManager.hasSystemFeature() to check whether the "
+    const-string/jumbo v4, "feature is available on this device before trying to start the "
 
-    .line 62
+    .line 61
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v3
 
     .line 65
-    const-string/jumbo v4, "feature is available on this device before trying to start the "
-
-    .line 62
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    .line 66
     const-string/jumbo v4, "services that implement it"
 
-    .line 62
+    .line 61
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v3
@@ -1001,72 +1051,6 @@
     throw v2
 .end method
 
-.method public startService(Lcom/android/server/SystemService;)V
-    .locals 4
-    .param p1, "service"    # Lcom/android/server/SystemService;
-
-    .prologue
-    .line 118
-    iget-object v1, p0, Lcom/android/server/SystemServiceManager;->mServices:Ljava/util/ArrayList;
-
-    invoke-virtual {v1, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 121
-    :try_start_0
-    invoke-virtual {p1}, Lcom/android/server/SystemService;->onStart()V
-    :try_end_0
-    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 116
-    return-void
-
-    .line 122
-    :catch_0
-    move-exception v0
-
-    .line 123
-    .local v0, "ex":Ljava/lang/RuntimeException;
-    new-instance v1, Ljava/lang/RuntimeException;
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v3, "Failed to start service "
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {p1}, Lcom/android/server/SystemService;->getClass()Ljava/lang/Class;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Ljava/lang/Class;->getName()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    .line 124
-    const-string/jumbo v3, ": onStart threw an exception"
-
-    .line 123
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-direct {v1, v2, v0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    throw v1
-.end method
-
 .method public startUser(I)V
     .locals 10
     .param p1, "userHandle"    # I
@@ -1074,14 +1058,14 @@
     .prologue
     const-wide/32 v8, 0x80000
 
-    .line 161
+    .line 157
     iget-object v4, p0, Lcom/android/server/SystemServiceManager;->mServices:Ljava/util/ArrayList;
 
     invoke-virtual {v4}, Ljava/util/ArrayList;->size()I
 
     move-result v3
 
-    .line 162
+    .line 158
     .local v3, "serviceLen":I
     const/4 v1, 0x0
 
@@ -1089,7 +1073,7 @@
     :goto_0
     if-ge v1, v3, :cond_0
 
-    .line 163
+    .line 159
     iget-object v4, p0, Lcom/android/server/SystemServiceManager;->mServices:Ljava/util/ArrayList;
 
     invoke-virtual {v4, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -1098,7 +1082,7 @@
 
     check-cast v2, Lcom/android/server/SystemService;
 
-    .line 164
+    .line 160
     .local v2, "service":Lcom/android/server/SystemService;
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -1110,7 +1094,7 @@
 
     move-result-object v4
 
-    .line 165
+    .line 161
     invoke-virtual {v2}, Lcom/android/server/SystemService;->getClass()Ljava/lang/Class;
 
     move-result-object v5
@@ -1119,7 +1103,7 @@
 
     move-result-object v5
 
-    .line 164
+    .line 160
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v4
@@ -1130,26 +1114,26 @@
 
     invoke-static {v8, v9, v4}, Landroid/os/Trace;->traceBegin(JLjava/lang/String;)V
 
-    .line 167
+    .line 163
     :try_start_0
     invoke-virtual {v2, p1}, Lcom/android/server/SystemService;->onStartUser(I)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 172
+    .line 168
     :goto_1
     invoke-static {v8, v9}, Landroid/os/Trace;->traceEnd(J)V
 
-    .line 162
+    .line 158
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 168
+    .line 164
     :catch_0
     move-exception v0
 
-    .line 169
+    .line 165
     .local v0, "ex":Ljava/lang/Exception;
     const-string/jumbo v4, "SystemServiceManager"
 
@@ -1167,15 +1151,15 @@
 
     move-result-object v5
 
-    .line 170
+    .line 166
     const-string/jumbo v6, " to service "
 
-    .line 169
+    .line 165
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v5
 
-    .line 170
+    .line 166
     invoke-virtual {v2}, Lcom/android/server/SystemService;->getClass()Ljava/lang/Class;
 
     move-result-object v6
@@ -1184,7 +1168,7 @@
 
     move-result-object v6
 
-    .line 169
+    .line 165
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v5
@@ -1197,7 +1181,7 @@
 
     goto :goto_1
 
-    .line 160
+    .line 156
     .end local v0    # "ex":Ljava/lang/Exception;
     .end local v2    # "service":Lcom/android/server/SystemService;
     :cond_0
@@ -1211,14 +1195,14 @@
     .prologue
     const-wide/32 v8, 0x80000
 
-    .line 209
+    .line 205
     iget-object v4, p0, Lcom/android/server/SystemServiceManager;->mServices:Ljava/util/ArrayList;
 
     invoke-virtual {v4}, Ljava/util/ArrayList;->size()I
 
     move-result v3
 
-    .line 210
+    .line 206
     .local v3, "serviceLen":I
     const/4 v1, 0x0
 
@@ -1226,7 +1210,7 @@
     :goto_0
     if-ge v1, v3, :cond_0
 
-    .line 211
+    .line 207
     iget-object v4, p0, Lcom/android/server/SystemServiceManager;->mServices:Ljava/util/ArrayList;
 
     invoke-virtual {v4, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -1235,7 +1219,7 @@
 
     check-cast v2, Lcom/android/server/SystemService;
 
-    .line 212
+    .line 208
     .local v2, "service":Lcom/android/server/SystemService;
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -1247,7 +1231,7 @@
 
     move-result-object v4
 
-    .line 213
+    .line 209
     invoke-virtual {v2}, Lcom/android/server/SystemService;->getClass()Ljava/lang/Class;
 
     move-result-object v5
@@ -1256,7 +1240,7 @@
 
     move-result-object v5
 
-    .line 212
+    .line 208
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v4
@@ -1267,26 +1251,26 @@
 
     invoke-static {v8, v9, v4}, Landroid/os/Trace;->traceBegin(JLjava/lang/String;)V
 
-    .line 215
+    .line 211
     :try_start_0
     invoke-virtual {v2, p1}, Lcom/android/server/SystemService;->onStopUser(I)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 220
+    .line 216
     :goto_1
     invoke-static {v8, v9}, Landroid/os/Trace;->traceEnd(J)V
 
-    .line 210
+    .line 206
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 216
+    .line 212
     :catch_0
     move-exception v0
 
-    .line 217
+    .line 213
     .local v0, "ex":Ljava/lang/Exception;
     const-string/jumbo v4, "SystemServiceManager"
 
@@ -1304,15 +1288,15 @@
 
     move-result-object v5
 
-    .line 218
+    .line 214
     const-string/jumbo v6, " to service "
 
-    .line 217
+    .line 213
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v5
 
-    .line 218
+    .line 214
     invoke-virtual {v2}, Lcom/android/server/SystemService;->getClass()Ljava/lang/Class;
 
     move-result-object v6
@@ -1321,7 +1305,7 @@
 
     move-result-object v6
 
-    .line 217
+    .line 213
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v5
@@ -1334,7 +1318,7 @@
 
     goto :goto_1
 
-    .line 208
+    .line 204
     .end local v0    # "ex":Ljava/lang/Exception;
     .end local v2    # "service":Lcom/android/server/SystemService;
     :cond_0
@@ -1348,14 +1332,14 @@
     .prologue
     const-wide/32 v8, 0x80000
 
-    .line 193
+    .line 189
     iget-object v4, p0, Lcom/android/server/SystemServiceManager;->mServices:Ljava/util/ArrayList;
 
     invoke-virtual {v4}, Ljava/util/ArrayList;->size()I
 
     move-result v3
 
-    .line 194
+    .line 190
     .local v3, "serviceLen":I
     const/4 v1, 0x0
 
@@ -1363,7 +1347,7 @@
     :goto_0
     if-ge v1, v3, :cond_0
 
-    .line 195
+    .line 191
     iget-object v4, p0, Lcom/android/server/SystemServiceManager;->mServices:Ljava/util/ArrayList;
 
     invoke-virtual {v4, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -1372,7 +1356,7 @@
 
     check-cast v2, Lcom/android/server/SystemService;
 
-    .line 196
+    .line 192
     .local v2, "service":Lcom/android/server/SystemService;
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -1384,7 +1368,7 @@
 
     move-result-object v4
 
-    .line 197
+    .line 193
     invoke-virtual {v2}, Lcom/android/server/SystemService;->getClass()Ljava/lang/Class;
 
     move-result-object v5
@@ -1393,7 +1377,7 @@
 
     move-result-object v5
 
-    .line 196
+    .line 192
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v4
@@ -1404,26 +1388,26 @@
 
     invoke-static {v8, v9, v4}, Landroid/os/Trace;->traceBegin(JLjava/lang/String;)V
 
-    .line 199
+    .line 195
     :try_start_0
     invoke-virtual {v2, p1}, Lcom/android/server/SystemService;->onSwitchUser(I)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 204
+    .line 200
     :goto_1
     invoke-static {v8, v9}, Landroid/os/Trace;->traceEnd(J)V
 
-    .line 194
+    .line 190
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 200
+    .line 196
     :catch_0
     move-exception v0
 
-    .line 201
+    .line 197
     .local v0, "ex":Ljava/lang/Exception;
     const-string/jumbo v4, "SystemServiceManager"
 
@@ -1441,15 +1425,15 @@
 
     move-result-object v5
 
-    .line 202
+    .line 198
     const-string/jumbo v6, " to service "
 
-    .line 201
+    .line 197
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v5
 
-    .line 202
+    .line 198
     invoke-virtual {v2}, Lcom/android/server/SystemService;->getClass()Ljava/lang/Class;
 
     move-result-object v6
@@ -1458,7 +1442,7 @@
 
     move-result-object v6
 
-    .line 201
+    .line 197
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v5
@@ -1471,7 +1455,7 @@
 
     goto :goto_1
 
-    .line 192
+    .line 188
     .end local v0    # "ex":Ljava/lang/Exception;
     .end local v2    # "service":Lcom/android/server/SystemService;
     :cond_0
@@ -1485,14 +1469,14 @@
     .prologue
     const-wide/32 v8, 0x80000
 
-    .line 177
+    .line 173
     iget-object v4, p0, Lcom/android/server/SystemServiceManager;->mServices:Ljava/util/ArrayList;
 
     invoke-virtual {v4}, Ljava/util/ArrayList;->size()I
 
     move-result v3
 
-    .line 178
+    .line 174
     .local v3, "serviceLen":I
     const/4 v1, 0x0
 
@@ -1500,7 +1484,7 @@
     :goto_0
     if-ge v1, v3, :cond_0
 
-    .line 179
+    .line 175
     iget-object v4, p0, Lcom/android/server/SystemServiceManager;->mServices:Ljava/util/ArrayList;
 
     invoke-virtual {v4, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -1509,7 +1493,7 @@
 
     check-cast v2, Lcom/android/server/SystemService;
 
-    .line 180
+    .line 176
     .local v2, "service":Lcom/android/server/SystemService;
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -1521,7 +1505,7 @@
 
     move-result-object v4
 
-    .line 181
+    .line 177
     invoke-virtual {v2}, Lcom/android/server/SystemService;->getClass()Ljava/lang/Class;
 
     move-result-object v5
@@ -1530,7 +1514,7 @@
 
     move-result-object v5
 
-    .line 180
+    .line 176
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v4
@@ -1541,26 +1525,26 @@
 
     invoke-static {v8, v9, v4}, Landroid/os/Trace;->traceBegin(JLjava/lang/String;)V
 
-    .line 183
+    .line 179
     :try_start_0
     invoke-virtual {v2, p1}, Lcom/android/server/SystemService;->onUnlockUser(I)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 188
+    .line 184
     :goto_1
     invoke-static {v8, v9}, Landroid/os/Trace;->traceEnd(J)V
 
-    .line 178
+    .line 174
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 184
+    .line 180
     :catch_0
     move-exception v0
 
-    .line 185
+    .line 181
     .local v0, "ex":Ljava/lang/Exception;
     const-string/jumbo v4, "SystemServiceManager"
 
@@ -1578,15 +1562,15 @@
 
     move-result-object v5
 
-    .line 186
+    .line 182
     const-string/jumbo v6, " to service "
 
-    .line 185
+    .line 181
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v5
 
-    .line 186
+    .line 182
     invoke-virtual {v2}, Lcom/android/server/SystemService;->getClass()Ljava/lang/Class;
 
     move-result-object v6
@@ -1595,7 +1579,7 @@
 
     move-result-object v6
 
-    .line 185
+    .line 181
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v5
@@ -1608,7 +1592,7 @@
 
     goto :goto_1
 
-    .line 176
+    .line 172
     .end local v0    # "ex":Ljava/lang/Exception;
     .end local v2    # "service":Lcom/android/server/SystemService;
     :cond_0

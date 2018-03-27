@@ -125,7 +125,7 @@
 
     const/4 v1, 0x0
 
-    invoke-virtual {p0, v0, v1}, Landroid/media/ClosedCaptionWidget;->setLayerType(ILandroid/graphics/Paint;)V
+    invoke-virtual {p0, v0, v1}, Landroid/view/View;->setLayerType(ILandroid/graphics/Paint;)V
 
     .line 157
     const-string/jumbo v0, "captioning"
@@ -183,10 +183,10 @@
 
     check-cast v0, Landroid/view/ViewGroup;
 
-    invoke-virtual {p0, v0, v2, v2}, Landroid/media/ClosedCaptionWidget;->addView(Landroid/view/View;II)V
+    invoke-virtual {p0, v0, v2, v2}, Landroid/view/ViewGroup;->addView(Landroid/view/View;II)V
 
     .line 166
-    invoke-virtual {p0}, Landroid/media/ClosedCaptionWidget;->requestLayout()V
+    invoke-virtual {p0}, Landroid/view/View;->requestLayout()V
 
     .line 151
     return-void
@@ -197,13 +197,13 @@
 
     .prologue
     .line 238
-    invoke-virtual {p0}, Landroid/media/ClosedCaptionWidget;->isAttachedToWindow()Z
+    invoke-virtual {p0}, Landroid/view/View;->isAttachedToWindow()Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
-    invoke-virtual {p0}, Landroid/media/ClosedCaptionWidget;->getVisibility()I
+    invoke-virtual {p0}, Landroid/view/View;->getVisibility()I
 
     move-result v1
 
@@ -322,7 +322,7 @@
 
     check-cast v0, Landroid/view/ViewGroup;
 
-    invoke-virtual {v0, p1, p2}, Landroid/view/ViewGroup;->measure(II)V
+    invoke-virtual {v0, p1, p2}, Landroid/view/View;->measure(II)V
 
     .line 211
     return-void
@@ -363,10 +363,10 @@
 
     .line 181
     .local v0, "heightSpec":I
-    invoke-virtual {p0, v1, v0}, Landroid/media/ClosedCaptionWidget;->measure(II)V
+    invoke-virtual {p0, v1, v0}, Landroid/view/View;->measure(II)V
 
     .line 182
-    invoke-virtual {p0, v2, v2, p1, p2}, Landroid/media/ClosedCaptionWidget;->layout(IIII)V
+    invoke-virtual {p0, v2, v2, p1, p2}, Landroid/view/ViewGroup;->layout(IIII)V
 
     .line 177
     return-void
@@ -383,7 +383,7 @@
     .line 188
     const/4 v0, 0x0
 
-    invoke-virtual {p0, v0}, Landroid/media/ClosedCaptionWidget;->setVisibility(I)V
+    invoke-virtual {p0, v0}, Landroid/view/View;->setVisibility(I)V
 
     .line 193
     :goto_0
@@ -396,7 +396,7 @@
     :cond_0
     const/16 v0, 0x8
 
-    invoke-virtual {p0, v0}, Landroid/media/ClosedCaptionWidget;->setVisibility(I)V
+    invoke-virtual {p0, v0}, Landroid/view/View;->setVisibility(I)V
 
     goto :goto_0
 .end method

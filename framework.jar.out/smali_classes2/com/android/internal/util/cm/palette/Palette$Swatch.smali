@@ -293,7 +293,7 @@
     :cond_0
     if-eqz p1, :cond_1
 
-    invoke-virtual {p0}, Lcom/android/internal/util/cm/palette/Palette$Swatch;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v3
 
@@ -441,7 +441,7 @@
     .line 411
     new-instance v0, Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Lcom/android/internal/util/cm/palette/Palette$Swatch;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v1
 

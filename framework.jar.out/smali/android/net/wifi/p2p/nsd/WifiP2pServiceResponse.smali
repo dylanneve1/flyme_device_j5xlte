@@ -194,7 +194,7 @@
 
     .line 286
     .local v1, "e":Ljava/lang/Exception;
-    invoke-virtual {v1}, Ljava/lang/Exception;->printStackTrace()V
+    invoke-virtual {v1}, Ljava/lang/Throwable;->printStackTrace()V
 
     .line 287
     const/4 v4, 0x0
@@ -302,7 +302,7 @@
     :cond_2
     :goto_0
     :try_start_0
-    invoke-virtual {v10}, Ljava/io/DataInputStream;->available()I
+    invoke-virtual {v10}, Ljava/io/FilterInputStream;->available()I
 
     move-result v15
 
@@ -384,7 +384,7 @@
 
     .line 263
     .local v11, "e":Ljava/io/IOException;
-    invoke-virtual {v11}, Ljava/io/IOException;->printStackTrace()V
+    invoke-virtual {v11}, Ljava/lang/Throwable;->printStackTrace()V
 
     .line 266
     invoke-interface {v13}, Ljava/util/List;->size()I
@@ -415,7 +415,7 @@
 
     move-wide/from16 v0, v16
 
-    invoke-virtual {v10, v0, v1}, Ljava/io/DataInputStream;->skip(J)J
+    invoke-virtual {v10, v0, v1}, Ljava/io/FilterInputStream;->skip(J)J
 
     goto :goto_0
 
@@ -538,7 +538,9 @@
     move-object v0, p1
 
     .line 312
-    check-cast v0, Landroid/net/wifi/p2p/nsd/WifiP2pServiceResponse;
+    nop
+
+    nop
 
     .line 314
     .local v0, "req":Landroid/net/wifi/p2p/nsd/WifiP2pServiceResponse;

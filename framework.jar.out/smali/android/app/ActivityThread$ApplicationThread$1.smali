@@ -33,7 +33,7 @@
     .param p3, "val$args"    # [Ljava/lang/String;
 
     .prologue
-    .line 1227
+    .line 1218
     iput-object p1, p0, Landroid/app/ActivityThread$ApplicationThread$1;->this$1:Landroid/app/ActivityThread$ApplicationThread;
 
     iput-object p2, p0, Landroid/app/ActivityThread$ApplicationThread$1;->val$dup:Landroid/os/ParcelFileDescriptor;
@@ -51,7 +51,7 @@
     .locals 3
 
     .prologue
-    .line 1231
+    .line 1222
     :try_start_0
     iget-object v0, p0, Landroid/app/ActivityThread$ApplicationThread$1;->this$1:Landroid/app/ActivityThread$ApplicationThread;
 
@@ -67,23 +67,23 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 1233
+    .line 1224
     iget-object v0, p0, Landroid/app/ActivityThread$ApplicationThread$1;->val$dup:Landroid/os/ParcelFileDescriptor;
 
     invoke-static {v0}, Llibcore/io/IoUtils;->closeQuietly(Ljava/lang/AutoCloseable;)V
 
-    .line 1229
+    .line 1220
     return-void
 
-    .line 1232
+    .line 1223
     :catchall_0
     move-exception v0
 
-    .line 1233
+    .line 1224
     iget-object v1, p0, Landroid/app/ActivityThread$ApplicationThread$1;->val$dup:Landroid/os/ParcelFileDescriptor;
 
     invoke-static {v1}, Llibcore/io/IoUtils;->closeQuietly(Ljava/lang/AutoCloseable;)V
 
-    .line 1232
+    .line 1223
     throw v0
 .end method

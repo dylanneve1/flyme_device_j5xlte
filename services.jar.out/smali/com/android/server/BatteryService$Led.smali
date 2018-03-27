@@ -229,7 +229,7 @@
 
     move-result v2
 
-    if-ge v0, v2, :cond_5
+    if-gt v0, v2, :cond_5
 
     .line 986
     iget-object v2, p0, Lcom/android/server/BatteryService$Led;->mBatteryLight:Lcom/android/server/lights/Light;

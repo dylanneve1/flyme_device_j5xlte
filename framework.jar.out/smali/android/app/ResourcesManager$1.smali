@@ -34,7 +34,7 @@
     .locals 0
 
     .prologue
-    .line 64
+    .line 61
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -47,7 +47,7 @@
     .param p1, "weakRef"    # Ljava/lang/Object;
 
     .prologue
-    .line 66
+    .line 63
     check-cast p1, Ljava/lang/ref/WeakReference;
 
     .end local p1    # "weakRef":Ljava/lang/Object;
@@ -74,7 +74,7 @@
     .local p1, "weakRef":Ljava/lang/ref/WeakReference;, "Ljava/lang/ref/WeakReference<Landroid/content/res/Resources;>;"
     const/4 v0, 0x1
 
-    .line 67
+    .line 64
     if-eqz p1, :cond_0
 
     invoke-virtual {p1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;

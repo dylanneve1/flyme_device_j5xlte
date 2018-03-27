@@ -863,7 +863,7 @@
     .line 421
     iget-object v0, p0, Landroid/gesture/GestureOverlayView;->mFadingOut:Landroid/gesture/GestureOverlayView$FadeOutRunnable;
 
-    invoke-virtual {p0, v0}, Landroid/gesture/GestureOverlayView;->removeCallbacks(Ljava/lang/Runnable;)Z
+    invoke-virtual {p0, v0}, Landroid/view/View;->removeCallbacks(Ljava/lang/Runnable;)Z
 
     .line 422
     iput-boolean v1, p0, Landroid/gesture/GestureOverlayView;->mResetGesture:Z
@@ -910,7 +910,7 @@
 
     iget-wide v2, p0, Landroid/gesture/GestureOverlayView;->mFadeOffset:J
 
-    invoke-virtual {p0, v0, v2, v3}, Landroid/gesture/GestureOverlayView;->postDelayed(Ljava/lang/Runnable;J)Z
+    invoke-virtual {p0, v0, v2, v3}, Landroid/view/View;->postDelayed(Ljava/lang/Runnable;J)Z
 
     .line 419
     :goto_0
@@ -938,7 +938,7 @@
     invoke-virtual {v0}, Landroid/graphics/Path;->rewind()V
 
     .line 441
-    invoke-virtual {p0}, Landroid/gesture/GestureOverlayView;->invalidate()V
+    invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
     goto :goto_0
 
@@ -951,7 +951,7 @@
 
     iget-wide v2, p0, Landroid/gesture/GestureOverlayView;->mFadeOffset:J
 
-    invoke-virtual {p0, v0, v2, v3}, Landroid/gesture/GestureOverlayView;->postDelayed(Ljava/lang/Runnable;J)Z
+    invoke-virtual {p0, v0, v2, v3}, Landroid/view/View;->postDelayed(Ljava/lang/Runnable;J)Z
 
     goto :goto_0
 
@@ -971,7 +971,7 @@
 
     iget-wide v2, p0, Landroid/gesture/GestureOverlayView;->mFadeOffset:J
 
-    invoke-virtual {p0, v0, v2, v3}, Landroid/gesture/GestureOverlayView;->postDelayed(Ljava/lang/Runnable;J)Z
+    invoke-virtual {p0, v0, v2, v3}, Landroid/view/View;->postDelayed(Ljava/lang/Runnable;J)Z
 
     goto :goto_0
 
@@ -985,7 +985,7 @@
     invoke-virtual {v0}, Landroid/graphics/Path;->rewind()V
 
     .line 450
-    invoke-virtual {p0}, Landroid/gesture/GestureOverlayView;->invalidate()V
+    invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
     goto :goto_0
 .end method
@@ -1041,7 +1041,7 @@
     .line 181
     const/4 v1, 0x0
 
-    invoke-virtual {p0, v1}, Landroid/gesture/GestureOverlayView;->setWillNotDraw(Z)V
+    invoke-virtual {p0, v1}, Landroid/view/View;->setWillNotDraw(Z)V
 
     .line 183
     iget-object v0, p0, Landroid/gesture/GestureOverlayView;->mGesturePaint:Landroid/graphics/Paint;
@@ -1117,7 +1117,7 @@
     invoke-direct {p0, p1}, Landroid/gesture/GestureOverlayView;->touchDown(Landroid/view/MotionEvent;)V
 
     .line 526
-    invoke-virtual {p0}, Landroid/gesture/GestureOverlayView;->invalidate()V
+    invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
     .line 527
     return v2
@@ -1138,7 +1138,7 @@
     if-eqz v0, :cond_1
 
     .line 532
-    invoke-virtual {p0, v0}, Landroid/gesture/GestureOverlayView;->invalidate(Landroid/graphics/Rect;)V
+    invoke-virtual {p0, v0}, Landroid/view/View;->invalidate(Landroid/graphics/Rect;)V
 
     .line 534
     :cond_1
@@ -1155,7 +1155,7 @@
     invoke-direct {p0, p1, v3}, Landroid/gesture/GestureOverlayView;->touchUp(Landroid/view/MotionEvent;Z)V
 
     .line 540
-    invoke-virtual {p0}, Landroid/gesture/GestureOverlayView;->invalidate()V
+    invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
     .line 541
     return v2
@@ -1170,7 +1170,7 @@
     invoke-direct {p0, p1, v2}, Landroid/gesture/GestureOverlayView;->touchUp(Landroid/view/MotionEvent;Z)V
 
     .line 547
-    invoke-virtual {p0}, Landroid/gesture/GestureOverlayView;->invalidate()V
+    invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
     .line 548
     return v2
@@ -1213,7 +1213,7 @@
 
     .line 389
     :goto_0
-    invoke-virtual {p0}, Landroid/gesture/GestureOverlayView;->invalidate()V
+    invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
     .line 382
     return-void
@@ -1494,7 +1494,7 @@
     .line 583
     iget-object v6, p0, Landroid/gesture/GestureOverlayView;->mFadingOut:Landroid/gesture/GestureOverlayView$FadeOutRunnable;
 
-    invoke-virtual {p0, v6}, Landroid/gesture/GestureOverlayView;->removeCallbacks(Ljava/lang/Runnable;)Z
+    invoke-virtual {p0, v6}, Landroid/view/View;->removeCallbacks(Ljava/lang/Runnable;)Z
 
     goto :goto_1
 
@@ -2341,7 +2341,7 @@
     .line 459
     iget-object v0, p0, Landroid/gesture/GestureOverlayView;->mFadingOut:Landroid/gesture/GestureOverlayView$FadeOutRunnable;
 
-    invoke-virtual {p0, v0}, Landroid/gesture/GestureOverlayView;->removeCallbacks(Ljava/lang/Runnable;)Z
+    invoke-virtual {p0, v0}, Landroid/view/View;->removeCallbacks(Ljava/lang/Runnable;)Z
 
     .line 460
     iget-object v0, p0, Landroid/gesture/GestureOverlayView;->mPath:Landroid/graphics/Path;
@@ -2503,7 +2503,7 @@
 
     .prologue
     .line 503
-    invoke-virtual {p0}, Landroid/gesture/GestureOverlayView;->isEnabled()Z
+    invoke-virtual {p0}, Landroid/view/View;->isEnabled()Z
 
     move-result v1
 
@@ -3004,7 +3004,7 @@
 
     neg-float v3, v3
 
-    invoke-virtual {p0}, Landroid/gesture/GestureOverlayView;->getWidth()I
+    invoke-virtual {p0}, Landroid/view/View;->getWidth()I
 
     move-result v4
 
@@ -3025,7 +3025,7 @@
 
     neg-float v4, v4
 
-    invoke-virtual {p0}, Landroid/gesture/GestureOverlayView;->getHeight()I
+    invoke-virtual {p0}, Landroid/view/View;->getHeight()I
 
     move-result v5
 
@@ -3048,7 +3048,7 @@
     iput-boolean v8, p0, Landroid/gesture/GestureOverlayView;->mResetGesture:Z
 
     .line 307
-    invoke-virtual {p0}, Landroid/gesture/GestureOverlayView;->invalidate()V
+    invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
     .line 288
     return-void

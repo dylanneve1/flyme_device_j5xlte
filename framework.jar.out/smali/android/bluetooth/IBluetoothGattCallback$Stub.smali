@@ -26,7 +26,7 @@
 # static fields
 .field private static final DESCRIPTOR:Ljava/lang/String; = "android.bluetooth.IBluetoothGattCallback"
 
-.field static final TRANSACTION_onBatchScanResults_3:I = 0x4
+.field static final TRANSACTION_onBatchScanResults:I = 0x4
 
 .field static final TRANSACTION_onCharacteristicRead:I = 0x6
 
@@ -54,9 +54,9 @@
 
 .field static final TRANSACTION_onScanManagerErrorCallback:I = 0xe
 
-.field static final TRANSACTION_onScanResult_2:I = 0x3
+.field static final TRANSACTION_onScanResult:I = 0x3
 
-.field static final TRANSACTION_onSearchComplete_4:I = 0x5
+.field static final TRANSACTION_onSearchComplete:I = 0x5
 
 
 # direct methods

@@ -118,11 +118,13 @@
     <string name="notify_package_component_protected_title">액티비티 실행 제한됨</string>
     <string name="notify_package_component_protected_text">%1$s은(는) 실행이 제한되어 있습니다. 탭하여 제한을 해제하고 애플리케이션을 실행하세요.</string>
     <string name="lock_to_app_toast_no_navbar">화면 고정을 해제하려면 뒤로 버튼을 길게 누르세요.</string>
-    <string name="lineage_system_error_manufacturer">공급 업체 이미지 불일치가 감지되었습니다. 일반적으로 이것은 당신의 공급 업체 이미지가 오래되었다는 것을 의미합니다. 공급 업체 이미지가 %1$s과 일치하는지 확인하십시오.</string>
+    <string name="lineage_system_error_manufacturer">공급 업체 이미지가 일치하지 않습니다. 이는 일반적으로 사용자의 공급 업체 이미지가 오래되었음을 의미합니다. 공급 업체 이미지가 %1$s과 일치하는지 확인하십시오.</string>
     <string name="singlehandmode_click_hint_message">화면 바깥을 누르면 한 손 모드를 종료합니다</string>
     <string name="tethered_notification_no_device_message">연결된 장치 없음</string>
     <string name="tethered_notification_one_device_message">%1$s대의 장치가 연결되어 있습니다.</string>
     <string name="tethered_notification_multi_device_message">%1$s대의 장치가 연결되어 있습니다.</string>
+    <string name="silent_mode_priority">우선순위</string>
+    <string name="silent_mode_none">없음</string>
     <string name="month_day_year" formatted="false">%Y년 %-m월 %-e일</string>
     <string name="time_of_day" formatted="false">%p %-l:%M:%S</string>
     <string name="date_and_time" formatted="false">%Y년 %-m월 %-e일 %p %-l:%M:%S</string>

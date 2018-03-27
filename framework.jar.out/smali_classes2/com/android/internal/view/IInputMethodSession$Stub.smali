@@ -40,7 +40,7 @@
 
 .field static final TRANSACTION_updateCursorAnchorInfo:I = 0xa
 
-.field static final TRANSACTION_updateExtractedText_1:I = 0x2
+.field static final TRANSACTION_updateExtractedText:I = 0x2
 
 .field static final TRANSACTION_updateSelection:I = 0x3
 

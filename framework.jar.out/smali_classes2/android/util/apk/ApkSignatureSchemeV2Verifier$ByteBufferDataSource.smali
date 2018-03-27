@@ -68,7 +68,7 @@
 
     long-to-int v5, p2
 
-    invoke-virtual {v2, v5}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
+    invoke-virtual {v2, v5}, Ljava/nio/Buffer;->position(I)Ljava/nio/Buffer;
 
     .line 1111
     iget-object v2, p0, Landroid/util/apk/ApkSignatureSchemeV2Verifier$ByteBufferDataSource;->mBuf:Ljava/nio/ByteBuffer;
@@ -77,7 +77,7 @@
 
     add-int/2addr v5, p4
 
-    invoke-virtual {v2, v5}, Ljava/nio/ByteBuffer;->limit(I)Ljava/nio/Buffer;
+    invoke-virtual {v2, v5}, Ljava/nio/Buffer;->limit(I)Ljava/nio/Buffer;
 
     .line 1112
     iget-object v2, p0, Landroid/util/apk/ApkSignatureSchemeV2Verifier$ByteBufferDataSource;->mBuf:Ljava/nio/ByteBuffer;
@@ -103,7 +103,7 @@
 
     .line 1118
     .local v0, "md":Ljava/security/MessageDigest;
-    invoke-virtual {v1, v3}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
+    invoke-virtual {v1, v3}, Ljava/nio/Buffer;->position(I)Ljava/nio/Buffer;
 
     .line 1119
     invoke-virtual {v0, v1}, Ljava/security/MessageDigest;->update(Ljava/nio/ByteBuffer;)V
@@ -136,7 +136,7 @@
     .line 1093
     iget-object v0, p0, Landroid/util/apk/ApkSignatureSchemeV2Verifier$ByteBufferDataSource;->mBuf:Ljava/nio/ByteBuffer;
 
-    invoke-virtual {v0}, Ljava/nio/ByteBuffer;->capacity()I
+    invoke-virtual {v0}, Ljava/nio/Buffer;->capacity()I
 
     move-result v0
 

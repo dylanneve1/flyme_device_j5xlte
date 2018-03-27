@@ -212,8 +212,6 @@
 
 .field public static final ENHANCED_VOICE_PRIVACY_ENABLED:Ljava/lang/String; = "enhanced_voice_privacy_enabled"
 
-.field public static final FORCE_AUTHORIZE_SUBSTRATUM_PACKAGES:Ljava/lang/String; = "force_authorize_substratum_packages"
-
 .field public static final HTTP_PROXY:Ljava/lang/String; = "http_proxy"
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
@@ -1548,643 +1546,643 @@
 
     invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    .line 6636
+    .line 6630
     const/16 v0, 0x4e
 
     new-array v0, v0, [Ljava/lang/String;
 
-    .line 6637
+    .line 6631
     const-string/jumbo v1, "bugreport_in_power_menu"
 
     const/4 v2, 0x0
 
     aput-object v1, v0, v2
 
-    .line 6638
+    .line 6632
     const-string/jumbo v1, "mock_location"
 
     const/4 v2, 0x1
 
     aput-object v1, v0, v2
 
-    .line 6639
+    .line 6633
     const-string/jumbo v1, "parental_control_enabled"
 
     const/4 v2, 0x2
 
     aput-object v1, v0, v2
 
-    .line 6640
+    .line 6634
     const-string/jumbo v1, "parental_control_redirect_url"
 
     aput-object v1, v0, v4
 
-    .line 6641
+    .line 6635
     const-string/jumbo v1, "usb_mass_storage_enabled"
 
     const/4 v2, 0x4
 
     aput-object v1, v0, v2
 
-    .line 6642
+    .line 6636
     const-string/jumbo v1, "accessibility_display_inversion_enabled"
 
     const/4 v2, 0x5
 
     aput-object v1, v0, v2
 
-    .line 6643
+    .line 6637
     const-string/jumbo v1, "accessibility_display_daltonizer"
 
     const/4 v2, 0x6
 
     aput-object v1, v0, v2
 
-    .line 6644
+    .line 6638
     const-string/jumbo v1, "accessibility_display_daltonizer_enabled"
 
     const/4 v2, 0x7
 
     aput-object v1, v0, v2
 
-    .line 6645
+    .line 6639
     const-string/jumbo v1, "accessibility_display_magnification_enabled"
 
     const/16 v2, 0x8
 
     aput-object v1, v0, v2
 
-    .line 6646
+    .line 6640
     const-string/jumbo v1, "accessibility_display_magnification_scale"
 
     const/16 v2, 0x9
 
     aput-object v1, v0, v2
 
-    .line 6647
+    .line 6641
     const-string/jumbo v1, "accessibility_display_magnification_auto_update"
 
     const/16 v2, 0xa
 
     aput-object v1, v0, v2
 
-    .line 6648
+    .line 6642
     const-string/jumbo v1, "accessibility_script_injection"
 
     const/16 v2, 0xb
 
     aput-object v1, v0, v2
 
-    .line 6649
+    .line 6643
     const-string/jumbo v1, "accessibility_web_content_key_bindings"
 
     const/16 v2, 0xc
 
     aput-object v1, v0, v2
 
-    .line 6650
+    .line 6644
     const-string/jumbo v1, "enabled_accessibility_services"
 
     const/16 v2, 0xd
 
     aput-object v1, v0, v2
 
-    .line 6651
+    .line 6645
     const-string/jumbo v1, "enabled_notification_listeners"
 
     const/16 v2, 0xe
 
     aput-object v1, v0, v2
 
-    .line 6652
+    .line 6646
     const-string/jumbo v1, "enabled_vr_listeners"
 
     const/16 v2, 0xf
 
     aput-object v1, v0, v2
 
-    .line 6653
+    .line 6647
     const-string/jumbo v1, "enabled_input_methods"
 
     const/16 v2, 0x10
 
     aput-object v1, v0, v2
 
-    .line 6654
+    .line 6648
     const-string/jumbo v1, "touch_exploration_granted_accessibility_services"
 
     const/16 v2, 0x11
 
     aput-object v1, v0, v2
 
-    .line 6655
+    .line 6649
     const-string/jumbo v1, "touch_exploration_enabled"
 
     const/16 v2, 0x12
 
     aput-object v1, v0, v2
 
-    .line 6656
+    .line 6650
     const-string/jumbo v1, "accessibility_enabled"
 
     const/16 v2, 0x13
 
     aput-object v1, v0, v2
 
-    .line 6657
+    .line 6651
     const-string/jumbo v1, "speak_password"
 
     const/16 v2, 0x14
 
     aput-object v1, v0, v2
 
-    .line 6658
+    .line 6652
     const-string/jumbo v1, "high_text_contrast_enabled"
 
     const/16 v2, 0x15
 
     aput-object v1, v0, v2
 
-    .line 6659
+    .line 6653
     const-string/jumbo v1, "accessibility_captioning_preset"
 
     const/16 v2, 0x16
 
     aput-object v1, v0, v2
 
-    .line 6660
+    .line 6654
     const-string/jumbo v1, "accessibility_captioning_enabled"
 
     const/16 v2, 0x17
 
     aput-object v1, v0, v2
 
-    .line 6661
+    .line 6655
     const-string/jumbo v1, "accessibility_captioning_locale"
 
     const/16 v2, 0x18
 
     aput-object v1, v0, v2
 
-    .line 6662
+    .line 6656
     const-string/jumbo v1, "accessibility_captioning_background_color"
 
     const/16 v2, 0x19
 
     aput-object v1, v0, v2
 
-    .line 6663
+    .line 6657
     const-string/jumbo v1, "accessibility_captioning_foreground_color"
 
     const/16 v2, 0x1a
 
     aput-object v1, v0, v2
 
-    .line 6664
+    .line 6658
     const-string/jumbo v1, "accessibility_captioning_edge_type"
 
     const/16 v2, 0x1b
 
     aput-object v1, v0, v2
 
-    .line 6665
+    .line 6659
     const-string/jumbo v1, "accessibility_captioning_edge_color"
 
     const/16 v2, 0x1c
 
     aput-object v1, v0, v2
 
-    .line 6666
+    .line 6660
     const-string/jumbo v1, "accessibility_captioning_typeface"
 
     const/16 v2, 0x1d
 
     aput-object v1, v0, v2
 
-    .line 6667
+    .line 6661
     const-string/jumbo v1, "accessibility_captioning_font_scale"
 
     const/16 v2, 0x1e
 
     aput-object v1, v0, v2
 
-    .line 6668
+    .line 6662
     const-string/jumbo v1, "accessibility_captioning_window_color"
 
     const/16 v2, 0x1f
 
     aput-object v1, v0, v2
 
-    .line 6669
+    .line 6663
     const-string/jumbo v1, "tts_use_defaults"
 
     const/16 v2, 0x20
 
     aput-object v1, v0, v2
 
-    .line 6670
+    .line 6664
     const-string/jumbo v1, "tts_default_rate"
 
     const/16 v2, 0x21
 
     aput-object v1, v0, v2
 
-    .line 6671
+    .line 6665
     const-string/jumbo v1, "tts_default_pitch"
 
     const/16 v2, 0x22
 
     aput-object v1, v0, v2
 
-    .line 6672
+    .line 6666
     const-string/jumbo v1, "tts_default_synth"
 
     const/16 v2, 0x23
 
     aput-object v1, v0, v2
 
-    .line 6673
+    .line 6667
     const-string/jumbo v1, "tts_default_lang"
 
     const/16 v2, 0x24
 
     aput-object v1, v0, v2
 
-    .line 6674
+    .line 6668
     const-string/jumbo v1, "tts_default_country"
 
     const/16 v2, 0x25
 
     aput-object v1, v0, v2
 
-    .line 6675
+    .line 6669
     const-string/jumbo v1, "tts_enabled_plugins"
 
     const/16 v2, 0x26
 
     aput-object v1, v0, v2
 
-    .line 6676
+    .line 6670
     const-string/jumbo v1, "tts_default_locale"
 
     const/16 v2, 0x27
 
     aput-object v1, v0, v2
 
-    .line 6677
+    .line 6671
     const-string/jumbo v1, "show_ime_with_hard_keyboard"
 
     const/16 v2, 0x28
 
     aput-object v1, v0, v2
 
-    .line 6678
+    .line 6672
     const-string/jumbo v1, "wifi_networks_available_notification_on"
 
     const/16 v2, 0x29
 
     aput-object v1, v0, v2
 
-    .line 6679
+    .line 6673
     const-string/jumbo v1, "wifi_networks_available_repeat_delay"
 
     const/16 v2, 0x2a
 
     aput-object v1, v0, v2
 
-    .line 6680
+    .line 6674
     const-string/jumbo v1, "wifi_num_open_networks_kept"
 
     const/16 v2, 0x2b
 
     aput-object v1, v0, v2
 
-    .line 6681
+    .line 6675
     const-string/jumbo v1, "selected_spell_checker"
 
     const/16 v2, 0x2c
 
     aput-object v1, v0, v2
 
-    .line 6682
+    .line 6676
     const-string/jumbo v1, "selected_spell_checker_subtype"
 
     const/16 v2, 0x2d
 
     aput-object v1, v0, v2
 
-    .line 6683
+    .line 6677
     const-string/jumbo v1, "spell_checker_enabled"
 
     const/16 v2, 0x2e
 
     aput-object v1, v0, v2
 
-    .line 6684
+    .line 6678
     const-string/jumbo v1, "mount_play_not_snd"
 
     const/16 v2, 0x2f
 
     aput-object v1, v0, v2
 
-    .line 6685
+    .line 6679
     const-string/jumbo v1, "mount_ums_autostart"
 
     const/16 v2, 0x30
 
     aput-object v1, v0, v2
 
-    .line 6686
+    .line 6680
     const-string/jumbo v1, "mount_ums_prompt"
 
     const/16 v2, 0x31
 
     aput-object v1, v0, v2
 
-    .line 6687
+    .line 6681
     const-string/jumbo v1, "mount_ums_notify_enabled"
 
     const/16 v2, 0x32
 
     aput-object v1, v0, v2
 
-    .line 6688
+    .line 6682
     const-string/jumbo v1, "sleep_timeout"
 
     const/16 v2, 0x33
 
     aput-object v1, v0, v2
 
-    .line 6689
+    .line 6683
     const-string/jumbo v1, "double_tap_to_wake"
 
     const/16 v2, 0x34
 
     aput-object v1, v0, v2
 
-    .line 6690
+    .line 6684
     const-string/jumbo v1, "wake_gesture_enabled"
 
     const/16 v2, 0x35
 
     aput-object v1, v0, v2
 
-    .line 6691
+    .line 6685
     const-string/jumbo v1, "long_press_timeout"
 
     const/16 v2, 0x36
 
     aput-object v1, v0, v2
 
-    .line 6692
+    .line 6686
     const-string/jumbo v1, "camera_gesture_disabled"
 
     const/16 v2, 0x37
 
     aput-object v1, v0, v2
 
-    .line 6693
+    .line 6687
     const-string/jumbo v1, "accessibility_autoclick_enabled"
 
     const/16 v2, 0x38
 
     aput-object v1, v0, v2
 
-    .line 6694
+    .line 6688
     const-string/jumbo v1, "accessibility_autoclick_delay"
 
     const/16 v2, 0x39
 
     aput-object v1, v0, v2
 
-    .line 6695
+    .line 6689
     const-string/jumbo v1, "accessibility_large_pointer_icon"
 
     const/16 v2, 0x3a
 
     aput-object v1, v0, v2
 
-    .line 6696
+    .line 6690
     const-string/jumbo v1, "preferred_tty_mode"
 
     const/16 v2, 0x3b
 
     aput-object v1, v0, v2
 
-    .line 6697
+    .line 6691
     const-string/jumbo v1, "enhanced_voice_privacy_enabled"
 
     const/16 v2, 0x3c
 
     aput-object v1, v0, v2
 
-    .line 6698
+    .line 6692
     const-string/jumbo v1, "tty_mode_enabled"
 
     const/16 v2, 0x3d
 
     aput-object v1, v0, v2
 
-    .line 6699
+    .line 6693
     const-string/jumbo v1, "incall_power_button_behavior"
 
     const/16 v2, 0x3e
 
     aput-object v1, v0, v2
 
-    .line 6700
+    .line 6694
     const-string/jumbo v1, "wifi_disconnect_delay_duration"
 
     const/16 v2, 0x3f
 
     aput-object v1, v0, v2
 
-    .line 6701
+    .line 6695
     const-string/jumbo v1, "night_display_custom_start_time"
 
     const/16 v2, 0x40
 
     aput-object v1, v0, v2
 
-    .line 6702
+    .line 6696
     const-string/jumbo v1, "night_display_custom_end_time"
 
     const/16 v2, 0x41
 
     aput-object v1, v0, v2
 
-    .line 6703
+    .line 6697
     const-string/jumbo v1, "night_display_auto_mode"
 
     const/16 v2, 0x42
 
     aput-object v1, v0, v2
 
-    .line 6704
+    .line 6698
     const-string/jumbo v1, "night_display_activated"
 
     const/16 v2, 0x43
 
     aput-object v1, v0, v2
 
-    .line 6705
+    .line 6699
     const-string/jumbo v1, "camera_double_twist_to_flip_enabled"
 
     const/16 v2, 0x44
 
     aput-object v1, v0, v2
 
-    .line 6706
+    .line 6700
     const-string/jumbo v1, "camera_double_tap_power_gesture_disabled"
 
     const/16 v2, 0x45
 
     aput-object v1, v0, v2
 
-    .line 6707
+    .line 6701
     const-string/jumbo v1, "system_navigation_keys_enabled"
 
     const/16 v2, 0x46
 
     aput-object v1, v0, v2
 
-    .line 6708
+    .line 6702
     const-string/jumbo v1, "sysui_qs_tiles"
 
     const/16 v2, 0x47
 
     aput-object v1, v0, v2
 
-    .line 6709
+    .line 6703
     const-string/jumbo v1, "doze_enabled"
 
     const/16 v2, 0x48
 
     aput-object v1, v0, v2
 
-    .line 6710
+    .line 6704
     const-string/jumbo v1, "doze_pulse_on_pick_up"
 
     const/16 v2, 0x49
 
     aput-object v1, v0, v2
 
-    .line 6711
+    .line 6705
     const-string/jumbo v1, "doze_pulse_on_double_tap"
 
     const/16 v2, 0x4a
 
     aput-object v1, v0, v2
 
-    .line 6712
+    .line 6706
     const-string/jumbo v1, "nfc_payment_default_component"
 
     const/16 v2, 0x4b
 
     aput-object v1, v0, v2
 
-    .line 6713
+    .line 6707
     const-string/jumbo v1, "advanced_reboot"
 
     const/16 v2, 0x4c
 
     aput-object v1, v0, v2
 
-    .line 6714
+    .line 6708
     const-string/jumbo v1, "camera_gesture_disabled"
 
     const/16 v2, 0x4d
 
     aput-object v1, v0, v2
 
-    .line 6636
+    .line 6630
     sput-object v0, Landroid/provider/Settings$Secure;->SETTINGS_TO_BACKUP:[Ljava/lang/String;
 
-    .line 6721
+    .line 6715
     new-instance v0, Landroid/util/ArraySet;
 
     invoke-direct {v0}, Landroid/util/ArraySet;-><init>()V
 
     sput-object v0, Landroid/provider/Settings$Secure;->CLONE_TO_MANAGED_PROFILE:Ljava/util/Set;
 
-    .line 6724
+    .line 6718
     sget-object v0, Landroid/provider/Settings$Secure;->CLONE_TO_MANAGED_PROFILE:Ljava/util/Set;
 
     const-string/jumbo v1, "accessibility_enabled"
 
     invoke-interface {v0, v1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
-    .line 6725
+    .line 6719
     sget-object v0, Landroid/provider/Settings$Secure;->CLONE_TO_MANAGED_PROFILE:Ljava/util/Set;
 
     const-string/jumbo v1, "mock_location"
 
     invoke-interface {v0, v1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
-    .line 6726
+    .line 6720
     sget-object v0, Landroid/provider/Settings$Secure;->CLONE_TO_MANAGED_PROFILE:Ljava/util/Set;
 
     const-string/jumbo v1, "allowed_geolocation_origins"
 
     invoke-interface {v0, v1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
-    .line 6727
+    .line 6721
     sget-object v0, Landroid/provider/Settings$Secure;->CLONE_TO_MANAGED_PROFILE:Ljava/util/Set;
 
     const-string/jumbo v1, "default_input_method"
 
     invoke-interface {v0, v1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
-    .line 6728
+    .line 6722
     sget-object v0, Landroid/provider/Settings$Secure;->CLONE_TO_MANAGED_PROFILE:Ljava/util/Set;
 
     const-string/jumbo v1, "enabled_accessibility_services"
 
     invoke-interface {v0, v1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
-    .line 6729
+    .line 6723
     sget-object v0, Landroid/provider/Settings$Secure;->CLONE_TO_MANAGED_PROFILE:Ljava/util/Set;
 
     const-string/jumbo v1, "enabled_input_methods"
 
     invoke-interface {v0, v1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
-    .line 6730
+    .line 6724
     sget-object v0, Landroid/provider/Settings$Secure;->CLONE_TO_MANAGED_PROFILE:Ljava/util/Set;
 
     const-string/jumbo v1, "location_mode"
 
     invoke-interface {v0, v1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
-    .line 6731
+    .line 6725
     sget-object v0, Landroid/provider/Settings$Secure;->CLONE_TO_MANAGED_PROFILE:Ljava/util/Set;
 
     const-string/jumbo v1, "location_previous_mode"
 
     invoke-interface {v0, v1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
-    .line 6732
+    .line 6726
     sget-object v0, Landroid/provider/Settings$Secure;->CLONE_TO_MANAGED_PROFILE:Ljava/util/Set;
 
     const-string/jumbo v1, "location_providers_allowed"
 
     invoke-interface {v0, v1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
-    .line 6733
+    .line 6727
     sget-object v0, Landroid/provider/Settings$Secure;->CLONE_TO_MANAGED_PROFILE:Ljava/util/Set;
 
     const-string/jumbo v1, "selected_input_method_subtype"
 
     invoke-interface {v0, v1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
-    .line 6734
+    .line 6728
     sget-object v0, Landroid/provider/Settings$Secure;->CLONE_TO_MANAGED_PROFILE:Ljava/util/Set;
 
     const-string/jumbo v1, "selected_spell_checker"
 
     invoke-interface {v0, v1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
-    .line 6735
+    .line 6729
     sget-object v0, Landroid/provider/Settings$Secure;->CLONE_TO_MANAGED_PROFILE:Ljava/util/Set;
 
     const-string/jumbo v1, "selected_spell_checker_subtype"
@@ -2218,13 +2216,13 @@
     .end annotation
 
     .prologue
-    .line 6740
+    .line 6734
     .local p0, "outKeySet":Ljava/util/Set;, "Ljava/util/Set<Ljava/lang/String;>;"
     sget-object v0, Landroid/provider/Settings$Secure;->CLONE_TO_MANAGED_PROFILE:Ljava/util/Set;
 
     invoke-interface {p0, v0}, Ljava/util/Set;->addAll(Ljava/util/Collection;)Z
 
-    .line 6739
+    .line 6733
     return-void
 .end method
 
@@ -2607,69 +2605,69 @@
     .param p1, "userId"    # I
 
     .prologue
-    .line 6903
+    .line 6897
     invoke-static {}, Landroid/provider/Settings;->-get0()Ljava/lang/Object;
 
     move-result-object v3
 
     monitor-enter v3
 
-    .line 6905
+    .line 6899
     :try_start_0
     const-string/jumbo v2, "gps"
 
-    .line 6904
+    .line 6898
     invoke-static {p0, v2, p1}, Landroid/provider/Settings$Secure;->isLocationProviderEnabledForUser(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     move-result v0
 
-    .line 6907
+    .line 6901
     .local v0, "gpsEnabled":Z
     const-string/jumbo v2, "network"
 
-    .line 6906
+    .line 6900
     invoke-static {p0, v2, p1}, Landroid/provider/Settings$Secure;->isLocationProviderEnabledForUser(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     move-result v1
 
-    .line 6908
+    .line 6902
     .local v1, "networkEnabled":Z
     if-eqz v0, :cond_0
 
     if-eqz v1, :cond_0
 
-    .line 6909
+    .line 6903
     const/4 v2, 0x3
 
     monitor-exit v3
 
     return v2
 
-    .line 6910
+    .line 6904
     :cond_0
     if-eqz v0, :cond_1
 
-    .line 6911
+    .line 6905
     const/4 v2, 0x1
 
     monitor-exit v3
 
     return v2
 
-    .line 6912
+    .line 6906
     :cond_1
     if-eqz v1, :cond_2
 
-    .line 6913
+    .line 6907
     const/4 v2, 0x2
 
     monitor-exit v3
 
     return v2
 
-    .line 6915
+    .line 6909
     :cond_2
     const/4 v2, 0x0
 
@@ -2677,7 +2675,7 @@
 
     return v2
 
-    .line 6903
+    .line 6897
     .end local v0    # "gpsEnabled":Z
     .end local v1    # "networkEnabled":Z
     :catchall_0
@@ -3206,7 +3204,7 @@
     .end annotation
 
     .prologue
-    .line 6755
+    .line 6749
     invoke-static {}, Landroid/os/UserHandle;->myUserId()I
 
     move-result v0
@@ -3227,15 +3225,15 @@
     .end annotation
 
     .prologue
-    .line 6771
+    .line 6765
     const-string/jumbo v1, "location_providers_allowed"
 
-    .line 6770
+    .line 6764
     invoke-static {p0, v1, p2}, Landroid/provider/Settings$Secure;->getStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 6772
+    .line 6766
     .local v0, "allowedProviders":Ljava/lang/String;
     const/16 v1, 0x2c
 
@@ -3514,25 +3512,25 @@
     .param p1, "userId"    # I
 
     .prologue
-    .line 6829
+    .line 6823
     const-string/jumbo v1, "location_previous_mode"
 
-    .line 6830
+    .line 6824
     const/4 v2, 0x3
 
-    .line 6829
+    .line 6823
     invoke-static {p0, v1, v2, p1}, Landroid/provider/Settings$Secure;->getIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)I
 
     move-result v0
 
-    .line 6833
+    .line 6827
     .local v0, "mode":I
     if-nez v0, :cond_0
 
-    .line 6834
+    .line 6828
     const/4 v0, 0x3
 
-    .line 6836
+    .line 6830
     :cond_0
     invoke-static {p0, v0, p1}, Landroid/provider/Settings$Secure;->setLocationModeForUser(Landroid/content/ContentResolver;II)Z
 
@@ -3547,12 +3545,12 @@
     .param p1, "userId"    # I
 
     .prologue
-    .line 6821
+    .line 6815
     invoke-static {p0, p1}, Landroid/provider/Settings$Secure;->getLocationModeForUser(Landroid/content/ContentResolver;I)I
 
     move-result v0
 
-    .line 6822
+    .line 6816
     .local v0, "mode":I
     const-string/jumbo v1, "location_previous_mode"
 
@@ -3570,25 +3568,25 @@
     .param p2, "userId"    # I
 
     .prologue
-    .line 6853
+    .line 6847
     invoke-static {}, Landroid/provider/Settings;->-get0()Ljava/lang/Object;
 
     move-result-object v5
 
     monitor-enter v5
 
-    .line 6854
+    .line 6848
     const/4 v0, 0x0
 
-    .line 6855
+    .line 6849
     .local v0, "gps":Z
     const/4 v2, 0x0
 
-    .line 6856
+    .line 6850
     .local v2, "network":Z
     packed-switch p1, :pswitch_data_0
 
-    .line 6874
+    .line 6868
     :try_start_0
     new-instance v4, Ljava/lang/IllegalArgumentException;
 
@@ -3616,7 +3614,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 6853
+    .line 6847
     :catchall_0
     move-exception v4
 
@@ -3624,7 +3622,7 @@
 
     throw v4
 
-    .line 6859
+    .line 6853
     :pswitch_0
     :try_start_1
     invoke-static {p0, p2}, Landroid/provider/Settings$Secure;->restoreLocationModeForUser(Landroid/content/ContentResolver;I)Z
@@ -3637,32 +3635,32 @@
 
     return v4
 
-    .line 6861
+    .line 6855
     :pswitch_1
     :try_start_2
     invoke-static {p0, p2}, Landroid/provider/Settings$Secure;->saveLocationModeForUser(Landroid/content/ContentResolver;I)Z
 
-    .line 6886
+    .line 6880
     :goto_0
     const-string/jumbo v4, "network"
 
-    .line 6885
+    .line 6879
     invoke-static {p0, v4, v2, p2}, Landroid/provider/Settings$Secure;->setLocationProviderEnabledForUser(Landroid/content/ContentResolver;Ljava/lang/String;ZI)Z
 
     move-result v3
 
-    .line 6888
+    .line 6882
     .local v3, "nlpSuccess":Z
     const-string/jumbo v4, "gps"
 
-    .line 6887
+    .line 6881
     invoke-static {p0, v4, v0, p2}, Landroid/provider/Settings$Secure;->setLocationProviderEnabledForUser(Landroid/content/ContentResolver;Ljava/lang/String;ZI)Z
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     move-result v1
 
-    .line 6889
+    .line 6883
     .local v1, "gpsSuccess":Z
     if-eqz v1, :cond_0
 
@@ -3672,32 +3670,32 @@
 
     return v3
 
-    .line 6864
+    .line 6858
     .end local v1    # "gpsSuccess":Z
     :pswitch_2
     const/4 v0, 0x1
 
-    .line 6865
+    .line 6859
     goto :goto_0
 
-    .line 6867
+    .line 6861
     :pswitch_3
     const/4 v2, 0x1
 
-    .line 6868
+    .line 6862
     goto :goto_0
 
-    .line 6870
+    .line 6864
     :pswitch_4
     const/4 v0, 0x1
 
-    .line 6871
+    .line 6865
     const/4 v2, 0x1
 
-    .line 6872
+    .line 6866
     goto :goto_0
 
-    .line 6889
+    .line 6883
     .restart local v1    # "gpsSuccess":Z
     .restart local v3    # "nlpSuccess":Z
     :cond_0
@@ -3705,7 +3703,7 @@
 
     goto :goto_1
 
-    .line 6856
+    .line 6850
     nop
 
     :pswitch_data_0
@@ -3727,14 +3725,14 @@
     .end annotation
 
     .prologue
-    .line 6785
+    .line 6779
     invoke-static {}, Landroid/os/UserHandle;->myUserId()I
 
     move-result v0
 
     invoke-static {p0, p1, p2, v0}, Landroid/provider/Settings$Secure;->setLocationProviderEnabledForUser(Landroid/content/ContentResolver;Ljava/lang/String;ZI)Z
 
-    .line 6784
+    .line 6778
     return-void
 .end method
 
@@ -3748,17 +3746,17 @@
     .end annotation
 
     .prologue
-    .line 6803
+    .line 6797
     invoke-static {}, Landroid/provider/Settings;->-get0()Ljava/lang/Object;
 
     move-result-object v1
 
     monitor-enter v1
 
-    .line 6807
+    .line 6801
     if-eqz p2, :cond_0
 
-    .line 6808
+    .line 6802
     :try_start_0
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -3778,7 +3776,7 @@
 
     move-result-object p1
 
-    .line 6812
+    .line 6806
     :goto_0
     const-string/jumbo v0, "location_providers_allowed"
 
@@ -3792,7 +3790,7 @@
 
     return v0
 
-    .line 6810
+    .line 6804
     :cond_0
     :try_start_1
     new-instance v0, Ljava/lang/StringBuilder;
@@ -3817,7 +3815,7 @@
 
     goto :goto_0
 
-    .line 6803
+    .line 6797
     :catchall_0
     move-exception v0
 

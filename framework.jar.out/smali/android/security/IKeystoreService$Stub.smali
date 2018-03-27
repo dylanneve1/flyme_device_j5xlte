@@ -38,11 +38,11 @@
 
 .field static final TRANSACTION_clear_uid:I = 0x16
 
-.field static final TRANSACTION_del_3:I = 0x4
+.field static final TRANSACTION_del:I = 0x4
 
 .field static final TRANSACTION_duplicate:I = 0x14
 
-.field static final TRANSACTION_exist_4:I = 0x5
+.field static final TRANSACTION_exist:I = 0x5
 
 .field static final TRANSACTION_exportKey:I = 0x1b
 
@@ -52,11 +52,11 @@
 
 .field static final TRANSACTION_generateKey:I = 0x18
 
+.field static final TRANSACTION_get:I = 0x2
+
 .field static final TRANSACTION_getKeyCharacteristics:I = 0x19
 
-.field static final TRANSACTION_getState_0:I = 0x1
-
-.field static final TRANSACTION_get_1:I = 0x2
+.field static final TRANSACTION_getState:I = 0x1
 
 .field static final TRANSACTION_get_pubkey:I = 0x10
 
@@ -68,7 +68,7 @@
 
 .field static final TRANSACTION_import_key:I = 0xd
 
-.field static final TRANSACTION_insert_2:I = 0x3
+.field static final TRANSACTION_insert:I = 0x3
 
 .field static final TRANSACTION_isEmpty:I = 0xb
 

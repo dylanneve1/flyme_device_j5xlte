@@ -20,6 +20,9 @@
     .line 17
     invoke-direct/range {p0 .. p5}, Lcom/android/server/wm/WindowManagerService;-><init>(Landroid/content/Context;Lcom/android/server/input/InputManagerService;ZZZ)V
 
+    .line 19
+    sput-object p0, Lcom/android/server/wm/Wms_Interface;->WMS:Lcom/android/server/wm/WindowManagerService;
+
     .line 16
     return-void
 .end method
@@ -34,10 +37,10 @@
     .param p6, "wms"    # Lcom/android/server/wm/WindowManagerService;
 
     .prologue
-    .line 21
+    .line 24
     invoke-direct/range {p0 .. p5}, Lcom/android/server/wm/FlymeExtWindowManagerService;-><init>(Landroid/content/Context;Lcom/android/server/input/InputManagerService;ZZZ)V
 
-    .line 20
+    .line 23
     return-void
 .end method
 
@@ -60,23 +63,23 @@
 
     const/4 v6, 0x1
 
-    .line 26
+    .line 29
     packed-switch p1, :pswitch_data_0
 
-    .line 59
+    .line 62
     invoke-super {p0, p1, p2, p3, p4}, Lcom/android/server/wm/WindowManagerService;->onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
 
     move-result v6
 
     return v6
 
-    .line 28
+    .line 31
     :pswitch_0
     const-string/jumbo v7, "android.view.FlymeExtIWindowManager"
 
     invoke-virtual {p2, v7}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
 
-    .line 29
+    .line 32
     invoke-virtual {p2}, Landroid/os/Parcel;->readInt()I
 
     move-result v7
@@ -85,71 +88,71 @@
 
     move v1, v6
 
-    .line 30
+    .line 33
     .local v1, "_arg0":Z
     :cond_0
     invoke-virtual {p0, v1}, Lcom/android/server/wm/FlymeExtWindowManagerService;->disableRotationAnim(Z)V
 
-    .line 31
+    .line 34
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
 
-    .line 32
+    .line 35
     return v6
 
-    .line 36
+    .line 39
     .end local v1    # "_arg0":Z
     :pswitch_1
     const-string/jumbo v7, "android.view.FlymeExtIWindowManager"
 
     invoke-virtual {p2, v7}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
 
-    .line 37
+    .line 40
     invoke-virtual {p2}, Landroid/os/Parcel;->readStrongBinder()Landroid/os/IBinder;
 
     move-result-object v0
 
-    .line 38
+    .line 41
     .local v0, "_arg0":Landroid/os/IBinder;
     invoke-virtual {p2}, Landroid/os/Parcel;->readInt()I
 
     move-result v2
 
-    .line 39
+    .line 42
     .local v2, "_arg1":I
     invoke-virtual {p2}, Landroid/os/Parcel;->readInt()I
 
     move-result v3
 
-    .line 40
+    .line 43
     .local v3, "_arg2":I
     invoke-virtual {p0, v0, v2, v3}, Lcom/android/server/wm/FlymeExtWindowManagerService;->screenshotLiveWallpaper(Landroid/os/IBinder;II)Landroid/graphics/Bitmap;
 
     move-result-object v4
 
-    .line 41
+    .line 44
     .local v4, "_result":Landroid/graphics/Bitmap;
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
 
-    .line 42
+    .line 45
     if-eqz v4, :cond_1
 
-    .line 43
+    .line 46
     invoke-virtual {p3, v6}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 44
+    .line 47
     invoke-virtual {v4, p3, v6}, Landroid/graphics/Bitmap;->writeToParcel(Landroid/os/Parcel;I)V
 
-    .line 48
+    .line 51
     :goto_0
     return v6
 
-    .line 46
+    .line 49
     :cond_1
     invoke-virtual {p3, v1}, Landroid/os/Parcel;->writeInt(I)V
 
     goto :goto_0
 
-    .line 52
+    .line 55
     .end local v0    # "_arg0":Landroid/os/IBinder;
     .end local v2    # "_arg1":I
     .end local v3    # "_arg2":I
@@ -159,22 +162,22 @@
 
     invoke-virtual {p2, v7}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
 
-    .line 53
+    .line 56
     invoke-virtual {p0}, Lcom/android/server/wm/FlymeExtWindowManagerService;->getVisibleFloatWindowPackages()[Ljava/lang/String;
 
     move-result-object v5
 
-    .line 54
+    .line 57
     .local v5, "_result":[Ljava/lang/String;
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
 
-    .line 55
+    .line 58
     invoke-virtual {p3, v5}, Landroid/os/Parcel;->writeStringArray([Ljava/lang/String;)V
 
-    .line 56
+    .line 59
     return v6
 
-    .line 26
+    .line 29
     nop
 
     :pswitch_data_0

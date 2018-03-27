@@ -64,7 +64,7 @@
     .line 53
     const-string/jumbo v1, "frame"
 
-    invoke-virtual {p0, v1, v0}, Landroid/filterpacks/base/FrameFetch;->pushOutput(Ljava/lang/String;Landroid/filterfw/core/Frame;)V
+    invoke-virtual {p0, v1, v0}, Landroid/filterfw/core/Filter;->pushOutput(Ljava/lang/String;Landroid/filterfw/core/Frame;)V
 
     .line 54
     iget-boolean v1, p0, Landroid/filterpacks/base/FrameFetch;->mRepeatFrame:Z
@@ -74,7 +74,7 @@
     .line 55
     const-string/jumbo v1, "frame"
 
-    invoke-virtual {p0, v1}, Landroid/filterpacks/base/FrameFetch;->closeOutputPort(Ljava/lang/String;)V
+    invoke-virtual {p0, v1}, Landroid/filterfw/core/Filter;->closeOutputPort(Ljava/lang/String;)V
 
     .line 50
     :cond_0
@@ -85,7 +85,7 @@
     :cond_1
     const/16 v1, 0xfa
 
-    invoke-virtual {p0, v1}, Landroid/filterpacks/base/FrameFetch;->delayNextProcess(I)V
+    invoke-virtual {p0, v1}, Landroid/filterfw/core/Filter;->delayNextProcess(I)V
 
     goto :goto_0
 .end method
@@ -106,7 +106,7 @@
     move-result-object v0
 
     :goto_0
-    invoke-virtual {p0, v1, v0}, Landroid/filterpacks/base/FrameFetch;->addOutputPort(Ljava/lang/String;Landroid/filterfw/core/FrameFormat;)V
+    invoke-virtual {p0, v1, v0}, Landroid/filterfw/core/Filter;->addOutputPort(Ljava/lang/String;Landroid/filterfw/core/FrameFormat;)V
 
     .line 46
     return-void

@@ -95,7 +95,7 @@
 
     .prologue
     .line 64
-    invoke-virtual {p1}, Landroid/text/TextPaint;->getTextScaleX()F
+    invoke-virtual {p1}, Landroid/graphics/Paint;->getTextScaleX()F
 
     move-result v0
 
@@ -103,7 +103,7 @@
 
     mul-float/2addr v0, v1
 
-    invoke-virtual {p1, v0}, Landroid/text/TextPaint;->setTextScaleX(F)V
+    invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setTextScaleX(F)V
 
     .line 63
     return-void
@@ -115,7 +115,7 @@
 
     .prologue
     .line 69
-    invoke-virtual {p1}, Landroid/text/TextPaint;->getTextScaleX()F
+    invoke-virtual {p1}, Landroid/graphics/Paint;->getTextScaleX()F
 
     move-result v0
 
@@ -123,7 +123,7 @@
 
     mul-float/2addr v0, v1
 
-    invoke-virtual {p1, v0}, Landroid/text/TextPaint;->setTextScaleX(F)V
+    invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setTextScaleX(F)V
 
     .line 68
     return-void

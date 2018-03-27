@@ -40,7 +40,7 @@
     .line 22
     const-string/jumbo v0, "android.printservice.recommendation.IRecommendationService"
 
-    invoke-virtual {p0, p0, v0}, Landroid/printservice/recommendation/IRecommendationService$Stub;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
+    invoke-virtual {p0, p0, v0}, Landroid/os/Binder;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
 
     .line 20
     return-void

@@ -830,7 +830,7 @@
     .line 370
     .local v3, "e":Ljava/lang/CloneNotSupportedException;
     :try_start_1
-    invoke-virtual {v3}, Ljava/lang/CloneNotSupportedException;->printStackTrace()V
+    invoke-virtual {v3}, Ljava/lang/Throwable;->printStackTrace()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 

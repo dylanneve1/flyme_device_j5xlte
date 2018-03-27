@@ -69,7 +69,7 @@
     .line 3001
     const-string/jumbo v0, "booleanResult"
 
-    invoke-virtual {p1, v0}, Landroid/os/Bundle;->containsKey(Ljava/lang/String;)Z
+    invoke-virtual {p1, v0}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -88,7 +88,7 @@
     :cond_0
     const-string/jumbo v0, "booleanResult"
 
-    invoke-virtual {p1, v0}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;)Z
+    invoke-virtual {p1, v0}, Landroid/os/BaseBundle;->getBoolean(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -134,7 +134,7 @@
     move-result-object v0
 
     .line 2995
-    iget-object v1, p0, Landroid/accounts/AccountManager$23;->mResponse:Landroid/accounts/IAccountManagerResponse;
+    iget-object v1, p0, Landroid/accounts/AccountManager$BaseFutureTask;->mResponse:Landroid/accounts/IAccountManagerResponse;
 
     .line 2996
     iget-object v2, p0, Landroid/accounts/AccountManager$23;->val$account:Landroid/accounts/Account;

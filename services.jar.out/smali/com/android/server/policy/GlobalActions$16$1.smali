@@ -28,7 +28,7 @@
     .param p3, "val$myConn"    # Landroid/content/ServiceConnection;
 
     .prologue
-    .line 823
+    .line 827
     iput-object p1, p0, Lcom/android/server/policy/GlobalActions$16$1;->this$1:Lcom/android/server/policy/GlobalActions$16;
 
     iput-object p3, p0, Lcom/android/server/policy/GlobalActions$16$1;->val$myConn:Landroid/content/ServiceConnection;
@@ -45,7 +45,7 @@
     .param p1, "msg"    # Landroid/os/Message;
 
     .prologue
-    .line 826
+    .line 830
     iget-object v0, p0, Lcom/android/server/policy/GlobalActions$16$1;->this$1:Lcom/android/server/policy/GlobalActions$16;
 
     iget-object v0, v0, Lcom/android/server/policy/GlobalActions$16;->this$0:Lcom/android/server/policy/GlobalActions;
@@ -54,7 +54,7 @@
 
     monitor-enter v1
 
-    .line 827
+    .line 831
     :try_start_0
     iget-object v0, p0, Lcom/android/server/policy/GlobalActions$16$1;->this$1:Lcom/android/server/policy/GlobalActions$16;
 
@@ -66,7 +66,7 @@
 
     if-ne v0, v2, :cond_0
 
-    .line 828
+    .line 832
     iget-object v0, p0, Lcom/android/server/policy/GlobalActions$16$1;->this$1:Lcom/android/server/policy/GlobalActions$16;
 
     iget-object v0, v0, Lcom/android/server/policy/GlobalActions$16;->this$0:Lcom/android/server/policy/GlobalActions;
@@ -83,7 +83,7 @@
 
     invoke-virtual {v0, v2}, Landroid/content/Context;->unbindService(Landroid/content/ServiceConnection;)V
 
-    .line 829
+    .line 833
     iget-object v0, p0, Lcom/android/server/policy/GlobalActions$16$1;->this$1:Lcom/android/server/policy/GlobalActions$16;
 
     iget-object v0, v0, Lcom/android/server/policy/GlobalActions$16;->this$0:Lcom/android/server/policy/GlobalActions;
@@ -92,7 +92,7 @@
 
     iput-object v2, v0, Lcom/android/server/policy/GlobalActions;->mScreenshotConnection:Landroid/content/ServiceConnection;
 
-    .line 830
+    .line 834
     iget-object v0, p0, Lcom/android/server/policy/GlobalActions$16$1;->this$1:Lcom/android/server/policy/GlobalActions$16;
 
     iget-object v0, v0, Lcom/android/server/policy/GlobalActions$16;->this$0:Lcom/android/server/policy/GlobalActions;
@@ -114,10 +114,10 @@
     :cond_0
     monitor-exit v1
 
-    .line 825
+    .line 829
     return-void
 
-    .line 826
+    .line 830
     :catchall_0
     move-exception v0
 

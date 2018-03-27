@@ -113,6 +113,8 @@
     <string name="tethered_notification_no_device_message">Pole ühtegi ühendatud seadet</string>
     <string name="tethered_notification_one_device_message">%1$s ühendatud seade</string>
     <string name="tethered_notification_multi_device_message">%1$s ühendatud seadet</string>
+    <string name="silent_mode_priority">Prioriteet</string>
+    <string name="silent_mode_none">Puudub</string>
     <string name="byteShort">B</string>
     <string name="kilobyteShort">kB</string>
     <string name="megabyteShort">MB</string>

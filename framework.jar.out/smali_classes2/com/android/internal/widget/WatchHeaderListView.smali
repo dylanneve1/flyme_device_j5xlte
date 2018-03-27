@@ -63,7 +63,7 @@
 
     .prologue
     .line 111
-    invoke-virtual {p0}, Lcom/android/internal/widget/WatchHeaderListView;->getAdapter()Landroid/widget/ListAdapter;
+    invoke-virtual {p0}, Landroid/widget/ListView;->getAdapter()Landroid/widget/ListAdapter;
 
     move-result-object v0
 
@@ -81,11 +81,11 @@
     if-nez v1, :cond_0
 
     .line 114
-    invoke-virtual {p0}, Lcom/android/internal/widget/WatchHeaderListView;->wrapHeaderListAdapterInternal()V
+    invoke-virtual {p0}, Landroid/widget/ListView;->wrapHeaderListAdapterInternal()V
 
     .line 117
     :cond_0
-    invoke-virtual {p0}, Lcom/android/internal/widget/WatchHeaderListView;->getAdapter()Landroid/widget/ListAdapter;
+    invoke-virtual {p0}, Landroid/widget/ListView;->getAdapter()Landroid/widget/ListAdapter;
 
     move-result-object v1
 
@@ -96,7 +96,7 @@
     invoke-virtual {v1, v2}, Lcom/android/internal/widget/WatchHeaderListView$WatchHeaderListAdapter;->setTopPanel(Landroid/view/View;)V
 
     .line 118
-    invoke-virtual {p0}, Lcom/android/internal/widget/WatchHeaderListView;->dispatchDataSetObserverOnChangedInternal()V
+    invoke-virtual {p0}, Landroid/widget/ListView;->dispatchDataSetObserverOnChangedInternal()V
 
     .line 110
     :cond_1

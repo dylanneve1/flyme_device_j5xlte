@@ -288,7 +288,7 @@
     move-result-object v2
 
     .line 823
-    invoke-virtual {p1}, Landroid/net/wifi/p2p/nsd/WifiP2pDnsSdServiceResponse;->getSrcDevice()Landroid/net/wifi/p2p/WifiP2pDevice;
+    invoke-virtual {p1}, Landroid/net/wifi/p2p/nsd/WifiP2pServiceResponse;->getSrcDevice()Landroid/net/wifi/p2p/WifiP2pDevice;
 
     move-result-object v3
 
@@ -329,7 +329,7 @@
     move-result-object v2
 
     .line 830
-    invoke-virtual {p1}, Landroid/net/wifi/p2p/nsd/WifiP2pDnsSdServiceResponse;->getSrcDevice()Landroid/net/wifi/p2p/WifiP2pDevice;
+    invoke-virtual {p1}, Landroid/net/wifi/p2p/nsd/WifiP2pServiceResponse;->getSrcDevice()Landroid/net/wifi/p2p/WifiP2pDevice;
 
     move-result-object v3
 
@@ -376,7 +376,9 @@
     if-eqz v0, :cond_1
 
     .line 799
-    check-cast p1, Landroid/net/wifi/p2p/nsd/WifiP2pDnsSdServiceResponse;
+    nop
+
+    nop
 
     .end local p1    # "resp":Landroid/net/wifi/p2p/nsd/WifiP2pServiceResponse;
     invoke-direct {p0, p1}, Landroid/net/wifi/p2p/WifiP2pManager$Channel;->handleDnsSdServiceResponse(Landroid/net/wifi/p2p/nsd/WifiP2pDnsSdServiceResponse;)V
@@ -399,7 +401,9 @@
     if-eqz v0, :cond_0
 
     .line 802
-    check-cast p1, Landroid/net/wifi/p2p/nsd/WifiP2pUpnpServiceResponse;
+    nop
+
+    nop
 
     .end local p1    # "resp":Landroid/net/wifi/p2p/nsd/WifiP2pServiceResponse;
     invoke-direct {p0, p1}, Landroid/net/wifi/p2p/WifiP2pManager$Channel;->handleUpnpServiceResponse(Landroid/net/wifi/p2p/nsd/WifiP2pUpnpServiceResponse;)V
@@ -448,7 +452,7 @@
     move-result-object v1
 
     .line 814
-    invoke-virtual {p1}, Landroid/net/wifi/p2p/nsd/WifiP2pUpnpServiceResponse;->getSrcDevice()Landroid/net/wifi/p2p/WifiP2pDevice;
+    invoke-virtual {p1}, Landroid/net/wifi/p2p/nsd/WifiP2pServiceResponse;->getSrcDevice()Landroid/net/wifi/p2p/WifiP2pDevice;
 
     move-result-object v2
 

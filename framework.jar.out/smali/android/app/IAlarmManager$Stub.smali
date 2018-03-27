@@ -32,11 +32,11 @@
 
 .field static final TRANSACTION_remove:I = 0x4
 
+.field static final TRANSACTION_set:I = 0x1
+
+.field static final TRANSACTION_setTime:I = 0x2
+
 .field static final TRANSACTION_setTimeZone:I = 0x3
-
-.field static final TRANSACTION_setTime_1:I = 0x2
-
-.field static final TRANSACTION_set_0:I = 0x1
 
 .field static final TRANSACTION_updateBlockedUids:I = 0x7
 

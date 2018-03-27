@@ -832,7 +832,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Ljava/security/cert/X509Certificate;->getEncoded()[B
+    invoke-virtual {v2}, Ljava/security/cert/Certificate;->getEncoded()[B
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/security/cert/CertificateParsingException; {:try_start_0 .. :try_end_0} :catch_1
@@ -964,7 +964,7 @@
 
     invoke-direct {v10}, Lcom/android/org/bouncycastle/asn1/DERSequence;-><init>()V
 
-    invoke-virtual {v10}, Lcom/android/org/bouncycastle/asn1/DERSequence;->getEncoded()[B
+    invoke-virtual {v10}, Lcom/android/org/bouncycastle/asn1/ASN1Object;->getEncoded()[B
 
     move-result-object v5
 
@@ -1011,7 +1011,7 @@
     if-eqz v1, :cond_0
 
     :try_start_2
-    invoke-virtual {v1}, Lcom/android/org/bouncycastle/asn1/ASN1InputStream;->close()V
+    invoke-virtual {v1}, Ljava/io/FilterInputStream;->close()V
     :try_end_2
     .catch Ljava/lang/Throwable; {:try_start_2 .. :try_end_2} :catch_0
 
@@ -1078,7 +1078,7 @@
     if-eqz v0, :cond_1
 
     :try_start_4
-    invoke-virtual {v0}, Lcom/android/org/bouncycastle/asn1/ASN1InputStream;->close()V
+    invoke-virtual {v0}, Ljava/io/FilterInputStream;->close()V
     :try_end_4
     .catch Ljava/lang/Throwable; {:try_start_4 .. :try_end_4} :catch_2
 
@@ -2064,7 +2064,9 @@
     move-object v5, v0
 
     .line 390
-    check-cast v5, Ljava/security/spec/RSAKeyGenParameterSpec;
+    nop
+
+    nop
 
     .line 391
     .local v5, "rsaSpec":Ljava/security/spec/RSAKeyGenParameterSpec;
@@ -2308,7 +2310,9 @@
     move-object v2, v0
 
     .line 420
-    check-cast v2, Ljava/security/spec/ECGenParameterSpec;
+    nop
+
+    nop
 
     .line 421
     .local v2, "ecSpec":Ljava/security/spec/ECGenParameterSpec;
@@ -3195,7 +3199,9 @@
     .line 201
     move-object/from16 v0, p1
 
-    check-cast v0, Landroid/security/keystore/KeyGenParameterSpec;
+    nop
+
+    nop
 
     move-object v9, v0
 
@@ -3302,7 +3308,9 @@
     .line 204
     move-object/from16 v0, p1
 
-    check-cast v0, Landroid/security/KeyPairGeneratorSpec;
+    nop
+
+    nop
 
     move-object v8, v0
     :try_end_1
@@ -3329,7 +3337,6 @@
     :try_end_3
     .catch Ljava/lang/IllegalArgumentException; {:try_start_3 .. :try_end_3} :catch_1
     .catch Ljava/lang/NullPointerException; {:try_start_3 .. :try_end_3} :catch_0
-    .catch Ljava/lang/IllegalArgumentException; {:try_start_3 .. :try_end_3} :catch_0
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
     move-result v6

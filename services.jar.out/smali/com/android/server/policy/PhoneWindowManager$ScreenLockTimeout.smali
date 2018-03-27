@@ -29,7 +29,7 @@
     .param p1, "this$0"    # Lcom/android/server/policy/PhoneWindowManager;
 
     .prologue
-    .line 8156
+    .line 8157
     iput-object p1, p0, Lcom/android/server/policy/PhoneWindowManager$ScreenLockTimeout;->this$0:Lcom/android/server/policy/PhoneWindowManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -43,10 +43,10 @@
     .locals 2
 
     .prologue
-    .line 8161
+    .line 8162
     monitor-enter p0
 
-    .line 8163
+    .line 8164
     :try_start_0
     iget-object v0, p0, Lcom/android/server/policy/PhoneWindowManager$ScreenLockTimeout;->this$0:Lcom/android/server/policy/PhoneWindowManager;
 
@@ -54,7 +54,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 8164
+    .line 8165
     iget-object v0, p0, Lcom/android/server/policy/PhoneWindowManager$ScreenLockTimeout;->this$0:Lcom/android/server/policy/PhoneWindowManager;
 
     iget-object v0, v0, Lcom/android/server/policy/PhoneWindowManager;->mKeyguardDelegate:Lcom/android/server/policy/keyguard/KeyguardServiceDelegate;
@@ -63,7 +63,7 @@
 
     invoke-virtual {v0, v1}, Lcom/android/server/policy/keyguard/KeyguardServiceDelegate;->doKeyguardTimeout(Landroid/os/Bundle;)V
 
-    .line 8166
+    .line 8167
     :cond_0
     iget-object v0, p0, Lcom/android/server/policy/PhoneWindowManager$ScreenLockTimeout;->this$0:Lcom/android/server/policy/PhoneWindowManager;
 
@@ -71,7 +71,7 @@
 
     iput-boolean v1, v0, Lcom/android/server/policy/PhoneWindowManager;->mLockScreenTimerActive:Z
 
-    .line 8167
+    .line 8168
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/android/server/policy/PhoneWindowManager$ScreenLockTimeout;->options:Landroid/os/Bundle;
@@ -80,10 +80,10 @@
 
     monitor-exit p0
 
-    .line 8160
+    .line 8161
     return-void
 
-    .line 8161
+    .line 8162
     :catchall_0
     move-exception v0
 
@@ -97,9 +97,9 @@
     .param p1, "options"    # Landroid/os/Bundle;
 
     .prologue
-    .line 8172
+    .line 8173
     iput-object p1, p0, Lcom/android/server/policy/PhoneWindowManager$ScreenLockTimeout;->options:Landroid/os/Bundle;
 
-    .line 8171
+    .line 8172
     return-void
 .end method

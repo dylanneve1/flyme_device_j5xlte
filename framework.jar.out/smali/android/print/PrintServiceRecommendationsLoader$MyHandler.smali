@@ -28,7 +28,7 @@
     iput-object p1, p0, Landroid/print/PrintServiceRecommendationsLoader$MyHandler;->this$0:Landroid/print/PrintServiceRecommendationsLoader;
 
     .line 109
-    invoke-virtual {p1}, Landroid/print/PrintServiceRecommendationsLoader;->getContext()Landroid/content/Context;
+    invoke-virtual {p1}, Landroid/content/Loader;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -52,7 +52,7 @@
     .line 114
     iget-object v0, p0, Landroid/print/PrintServiceRecommendationsLoader$MyHandler;->this$0:Landroid/print/PrintServiceRecommendationsLoader;
 
-    invoke-virtual {v0}, Landroid/print/PrintServiceRecommendationsLoader;->isStarted()Z
+    invoke-virtual {v0}, Landroid/content/Loader;->isStarted()Z
 
     move-result v0
 
@@ -65,7 +65,7 @@
 
     check-cast v0, Ljava/util/List;
 
-    invoke-virtual {v1, v0}, Landroid/print/PrintServiceRecommendationsLoader;->deliverResult(Ljava/lang/Object;)V
+    invoke-virtual {v1, v0}, Landroid/content/Loader;->deliverResult(Ljava/lang/Object;)V
 
     .line 113
     :cond_0

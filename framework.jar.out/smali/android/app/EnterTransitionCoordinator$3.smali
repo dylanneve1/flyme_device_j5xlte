@@ -58,14 +58,14 @@
     .line 213
     iget-object v1, p0, Landroid/app/EnterTransitionCoordinator$3;->this$0:Landroid/app/EnterTransitionCoordinator;
 
-    iget-object v1, v1, Landroid/app/EnterTransitionCoordinator;->mResultReceiver:Landroid/os/ResultReceiver;
+    iget-object v1, v1, Landroid/app/ActivityTransitionCoordinator;->mResultReceiver:Landroid/os/ResultReceiver;
 
     if-eqz v1, :cond_0
 
     .line 214
     iget-object v1, p0, Landroid/app/EnterTransitionCoordinator$3;->this$0:Landroid/app/EnterTransitionCoordinator;
 
-    invoke-virtual {v1}, Landroid/app/EnterTransitionCoordinator;->captureSharedElementState()Landroid/os/Bundle;
+    invoke-virtual {v1}, Landroid/app/ActivityTransitionCoordinator;->captureSharedElementState()Landroid/os/Bundle;
 
     move-result-object v0
 
@@ -73,12 +73,12 @@
     .local v0, "state":Landroid/os/Bundle;
     iget-object v1, p0, Landroid/app/EnterTransitionCoordinator$3;->this$0:Landroid/app/EnterTransitionCoordinator;
 
-    invoke-virtual {v1}, Landroid/app/EnterTransitionCoordinator;->moveSharedElementsToOverlay()V
+    invoke-virtual {v1}, Landroid/app/ActivityTransitionCoordinator;->moveSharedElementsToOverlay()V
 
     .line 216
     iget-object v1, p0, Landroid/app/EnterTransitionCoordinator$3;->this$0:Landroid/app/EnterTransitionCoordinator;
 
-    iget-object v1, v1, Landroid/app/EnterTransitionCoordinator;->mResultReceiver:Landroid/os/ResultReceiver;
+    iget-object v1, v1, Landroid/app/ActivityTransitionCoordinator;->mResultReceiver:Landroid/os/ResultReceiver;
 
     const/16 v2, 0x6b
 

@@ -32,11 +32,11 @@
 
 .field static final TRANSACTION_forceUpdateIfaces:I = 0x8
 
-.field static final TRANSACTION_getDataLayerSnapshotForUid_3:I = 0x4
+.field static final TRANSACTION_getDataLayerSnapshotForUid:I = 0x4
 
 .field static final TRANSACTION_getMobileIfaces:I = 0x5
 
-.field static final TRANSACTION_getNetworkTotalBytes_2:I = 0x3
+.field static final TRANSACTION_getNetworkTotalBytes:I = 0x3
 
 .field static final TRANSACTION_incrementOperationCount:I = 0x6
 

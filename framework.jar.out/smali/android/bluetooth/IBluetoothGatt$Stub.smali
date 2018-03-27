@@ -38,9 +38,9 @@
 
 .field static final TRANSACTION_clearServices:I = 0x21
 
-.field static final TRANSACTION_clientConnect_8:I = 0x9
+.field static final TRANSACTION_clientConnect:I = 0x9
 
-.field static final TRANSACTION_clientDisconnect_9:I = 0xa
+.field static final TRANSACTION_clientDisconnect:I = 0xa
 
 .field static final TRANSACTION_configureMTU:I = 0x15
 
@@ -54,9 +54,9 @@
 
 .field static final TRANSACTION_endServiceDeclaration:I = 0x1f
 
-.field static final TRANSACTION_flushPendingBatchResults:I = 0x4
+.field static final TRANSACTION_flushPendingBatchResults_3:I = 0x4
 
-.field static final TRANSACTION_getDevicesMatchingConnectionStates:I = 0x1
+.field static final TRANSACTION_getDevicesMatchingConnectionStates_0:I = 0x1
 
 .field static final TRANSACTION_numHwTrackFiltersAvailable:I = 0x26
 
@@ -66,9 +66,9 @@
 
 .field static final TRANSACTION_readRemoteRssi:I = 0x14
 
-.field static final TRANSACTION_refreshDevice_10:I = 0xb
+.field static final TRANSACTION_refreshDevice:I = 0xb
 
-.field static final TRANSACTION_registerClient_6:I = 0x7
+.field static final TRANSACTION_registerClient:I = 0x7
 
 .field static final TRANSACTION_registerForNotification:I = 0x11
 
@@ -84,17 +84,17 @@
 
 .field static final TRANSACTION_serverDisconnect:I = 0x1a
 
-.field static final TRANSACTION_startMultiAdvertising_4:I = 0x5
+.field static final TRANSACTION_startMultiAdvertising:I = 0x5
 
-.field static final TRANSACTION_startScan:I = 0x2
+.field static final TRANSACTION_startScan_1:I = 0x2
 
-.field static final TRANSACTION_stopMultiAdvertising_5:I = 0x6
+.field static final TRANSACTION_stopMultiAdvertising:I = 0x6
 
-.field static final TRANSACTION_stopScan:I = 0x3
+.field static final TRANSACTION_stopScan_2:I = 0x3
 
 .field static final TRANSACTION_unregAll:I = 0x25
 
-.field static final TRANSACTION_unregisterClient_7:I = 0x8
+.field static final TRANSACTION_unregisterClient:I = 0x8
 
 .field static final TRANSACTION_unregisterServer:I = 0x18
 

@@ -421,7 +421,7 @@
     .line 95
     iget-object v2, p0, Lcom/android/internal/telephony/cat/Menu;->presentationType:Lcom/android/internal/telephony/cat/PresentationType;
 
-    invoke-virtual {v2}, Lcom/android/internal/telephony/cat/PresentationType;->ordinal()I
+    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
 
     move-result v2
 

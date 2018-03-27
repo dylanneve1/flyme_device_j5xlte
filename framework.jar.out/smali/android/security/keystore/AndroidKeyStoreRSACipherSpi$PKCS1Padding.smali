@@ -37,12 +37,12 @@
     .line 115
     const/4 v0, 0x2
 
-    invoke-virtual {p0, v0}, Landroid/security/keystore/AndroidKeyStoreRSACipherSpi$PKCS1Padding;->setKeymasterPurposeOverride(I)V
+    invoke-virtual {p0, v0}, Landroid/security/keystore/AndroidKeyStoreCipherSpiBase;->setKeymasterPurposeOverride(I)V
 
     .line 116
     const/4 v0, 0x5
 
-    invoke-virtual {p0, v0}, Landroid/security/keystore/AndroidKeyStoreRSACipherSpi$PKCS1Padding;->setKeymasterPaddingOverride(I)V
+    invoke-virtual {p0, v0}, Landroid/security/keystore/AndroidKeyStoreRSACipherSpi;->setKeymasterPaddingOverride(I)V
 
     .line 117
     const/4 v0, 0x1
@@ -84,13 +84,13 @@
 
     .prologue
     .line 154
-    invoke-virtual {p0}, Landroid/security/keystore/AndroidKeyStoreRSACipherSpi$PKCS1Padding;->isEncrypting()Z
+    invoke-virtual {p0}, Landroid/security/keystore/AndroidKeyStoreCipherSpiBase;->isEncrypting()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p0}, Landroid/security/keystore/AndroidKeyStoreRSACipherSpi$PKCS1Padding;->getModulusSizeBytes()I
+    invoke-virtual {p0}, Landroid/security/keystore/AndroidKeyStoreRSACipherSpi;->getModulusSizeBytes()I
 
     move-result v0
 

@@ -36,7 +36,7 @@
 
 .field static final TRANSACTION_setDiscoveryRequest:I = 0x4
 
-.field static final TRANSACTION_setSelectedRoute_4:I = 0x5
+.field static final TRANSACTION_setSelectedRoute:I = 0x5
 
 .field static final TRANSACTION_unregisterClient:I = 0x2
 

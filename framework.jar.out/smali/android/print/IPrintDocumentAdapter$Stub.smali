@@ -30,11 +30,11 @@
 
 .field static final TRANSACTION_kill:I = 0x6
 
-.field static final TRANSACTION_layout_2:I = 0x3
+.field static final TRANSACTION_layout:I = 0x3
 
 .field static final TRANSACTION_setObserver:I = 0x1
 
-.field static final TRANSACTION_start_1:I = 0x2
+.field static final TRANSACTION_start:I = 0x2
 
 .field static final TRANSACTION_write:I = 0x4
 
@@ -50,7 +50,7 @@
     .line 20
     const-string/jumbo v0, "android.print.IPrintDocumentAdapter"
 
-    invoke-virtual {p0, p0, v0}, Landroid/print/IPrintDocumentAdapter$Stub;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
+    invoke-virtual {p0, p0, v0}, Landroid/os/Binder;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
 
     .line 18
     return-void

@@ -73,7 +73,9 @@
     move-object v0, p1
 
     .line 266
-    check-cast v0, Lcom/android/internal/telephony/SmsBroadcastUndelivered$SmsReferenceKey;
+    nop
+
+    nop
 
     .line 267
     .local v0, "other":Lcom/android/internal/telephony/SmsBroadcastUndelivered$SmsReferenceKey;

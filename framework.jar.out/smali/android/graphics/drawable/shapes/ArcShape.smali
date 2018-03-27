@@ -38,7 +38,7 @@
 
     .prologue
     .line 48
-    invoke-virtual {p0}, Landroid/graphics/drawable/shapes/ArcShape;->rect()Landroid/graphics/RectF;
+    invoke-virtual {p0}, Landroid/graphics/drawable/shapes/RectShape;->rect()Landroid/graphics/RectF;
 
     move-result-object v1
 

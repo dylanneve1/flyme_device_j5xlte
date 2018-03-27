@@ -26,12 +26,12 @@
     .param p3, "$anonymous1"    # I
 
     .prologue
-    .line 633
+    .line 638
     iput-object p1, p0, Lcom/android/server/policy/GlobalActions$11;->this$0:Lcom/android/server/policy/GlobalActions;
 
     invoke-direct {p0, p2, p3}, Lcom/android/server/policy/GlobalActions$SinglePressAction;-><init>(II)V
 
-    .line 634
+    .line 639
     return-void
 .end method
 
@@ -41,7 +41,7 @@
     .locals 1
 
     .prologue
-    .line 637
+    .line 642
     iget-object v0, p0, Lcom/android/server/policy/GlobalActions$11;->this$0:Lcom/android/server/policy/GlobalActions;
 
     invoke-static {v0}, Lcom/android/server/policy/GlobalActions;->-get8(Lcom/android/server/policy/GlobalActions;)Lcom/android/internal/policy/EmergencyAffordanceManager;
@@ -50,7 +50,7 @@
 
     invoke-virtual {v0}, Lcom/android/internal/policy/EmergencyAffordanceManager;->performEmergencyCall()V
 
-    .line 636
+    .line 641
     return-void
 .end method
 
@@ -58,7 +58,7 @@
     .locals 1
 
     .prologue
-    .line 647
+    .line 652
     const/4 v0, 0x1
 
     return v0
@@ -68,7 +68,7 @@
     .locals 1
 
     .prologue
-    .line 642
+    .line 647
     const/4 v0, 0x1
 
     return v0

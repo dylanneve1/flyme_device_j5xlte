@@ -34,15 +34,15 @@
 
 .field static final TRANSACTION_applyRestore:I = 0x39
 
-.field static final TRANSACTION_areNotificationsEnabledForPackage_6:I = 0x7
+.field static final TRANSACTION_areNotificationsEnabled:I = 0x8
 
-.field static final TRANSACTION_areNotificationsEnabled_7:I = 0x8
+.field static final TRANSACTION_areNotificationsEnabledForPackage:I = 0x7
 
-.field static final TRANSACTION_cancelAllNotifications:I = 0x1
+.field static final TRANSACTION_cancelAllNotifications_0:I = 0x1
 
 .field static final TRANSACTION_cancelNotificationFromListener:I = 0x16
 
-.field static final TRANSACTION_cancelNotificationWithTag_4:I = 0x5
+.field static final TRANSACTION_cancelNotificationWithTag:I = 0x5
 
 .field static final TRANSACTION_cancelNotificationsFromListener:I = 0x17
 
@@ -50,7 +50,7 @@
 
 .field static final TRANSACTION_doLightsSupport:I = 0x3b
 
-.field static final TRANSACTION_enqueueNotificationWithTag_3:I = 0x4
+.field static final TRANSACTION_enqueueNotificationWithTag:I = 0x4
 
 .field static final TRANSACTION_enqueueToast_1:I = 0x2
 
@@ -128,7 +128,7 @@
 
 .field static final TRANSACTION_setNotificationSoundTimeout:I = 0x10
 
-.field static final TRANSACTION_setNotificationsEnabledForPackage_5:I = 0x6
+.field static final TRANSACTION_setNotificationsEnabledForPackage:I = 0x6
 
 .field static final TRANSACTION_setNotificationsShownFromListener:I = 0x1a
 

@@ -50,7 +50,7 @@
     .line 15
     const-string/jumbo v0, "android.os.IUpdateEngine"
 
-    invoke-virtual {p0, p0, v0}, Landroid/os/IUpdateEngine$Stub;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
+    invoke-virtual {p0, p0, v0}, Landroid/os/Binder;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
 
     .line 13
     return-void

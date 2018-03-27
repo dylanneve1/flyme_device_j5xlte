@@ -78,7 +78,7 @@
     move v1, v2
 
     :cond_0
-    invoke-virtual {p0, v1}, Landroid/media/WebVttRenderingWidget$CueLayout;->setOrientation(I)V
+    invoke-virtual {p0, v1}, Landroid/widget/LinearLayout;->setOrientation(I)V
 
     .line 1677
     iget v1, p2, Landroid/media/TextTrackCue;->mAlignment:I
@@ -104,7 +104,7 @@
     :pswitch_0
     const v1, 0x800005
 
-    invoke-virtual {p0, v1}, Landroid/media/WebVttRenderingWidget$CueLayout;->setGravity(I)V
+    invoke-virtual {p0, v1}, Landroid/widget/LinearLayout;->setGravity(I)V
 
     goto :goto_1
 
@@ -112,7 +112,7 @@
     :pswitch_1
     const/4 v1, 0x3
 
-    invoke-virtual {p0, v1}, Landroid/media/WebVttRenderingWidget$CueLayout;->setGravity(I)V
+    invoke-virtual {p0, v1}, Landroid/widget/LinearLayout;->setGravity(I)V
 
     goto :goto_1
 
@@ -121,7 +121,7 @@
     if-eqz v0, :cond_2
 
     :goto_2
-    invoke-virtual {p0, v2}, Landroid/media/WebVttRenderingWidget$CueLayout;->setGravity(I)V
+    invoke-virtual {p0, v2}, Landroid/widget/LinearLayout;->setGravity(I)V
 
     goto :goto_1
 
@@ -135,7 +135,7 @@
     :pswitch_3
     const/4 v1, 0x5
 
-    invoke-virtual {p0, v1}, Landroid/media/WebVttRenderingWidget$CueLayout;->setGravity(I)V
+    invoke-virtual {p0, v1}, Landroid/widget/LinearLayout;->setGravity(I)V
 
     goto :goto_1
 
@@ -143,7 +143,7 @@
     :pswitch_4
     const v1, 0x800003
 
-    invoke-virtual {p0, v1}, Landroid/media/WebVttRenderingWidget$CueLayout;->setGravity(I)V
+    invoke-virtual {p0, v1}, Landroid/widget/LinearLayout;->setGravity(I)V
 
     goto :goto_1
 
@@ -205,7 +205,7 @@
 
     .line 1765
     .local v5, "specHeight":I
-    invoke-virtual {p0}, Landroid/media/WebVttRenderingWidget$CueLayout;->getLayoutDirection()I
+    invoke-virtual {p0}, Landroid/view/View;->getLayoutDirection()I
 
     move-result v2
 
@@ -250,7 +250,7 @@
     move-result p2
 
     .line 1794
-    invoke-virtual {p0, p1, p2}, Landroid/media/WebVttRenderingWidget$CueLayout;->measure(II)V
+    invoke-virtual {p0, p1, p2}, Landroid/view/View;->measure(II)V
 
     .line 1761
     return-void
@@ -356,7 +356,7 @@
     iput p2, p0, Landroid/media/WebVttRenderingWidget$CueLayout;->mFontSize:F
 
     .line 1707
-    invoke-virtual {p0}, Landroid/media/WebVttRenderingWidget$CueLayout;->getChildCount()I
+    invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
     move-result v2
 
@@ -369,7 +369,7 @@
     if-ge v1, v2, :cond_1
 
     .line 1709
-    invoke-virtual {p0, v1}, Landroid/media/WebVttRenderingWidget$CueLayout;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {p0, v1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -380,7 +380,9 @@
     if-eqz v3, :cond_0
 
     .line 1711
-    check-cast v0, Landroid/media/WebVttRenderingWidget$SpanLayout;
+    nop
+
+    nop
 
     .end local v0    # "child":Landroid/view/View;
     invoke-virtual {v0, p1, p2}, Landroid/media/WebVttRenderingWidget$SpanLayout;->setCaptionStyle(Landroid/view/accessibility/CaptioningManager$CaptionStyle;F)V
@@ -420,10 +422,10 @@
     iput-boolean v8, p0, Landroid/media/WebVttRenderingWidget$CueLayout;->mActive:Z
 
     .line 1723
-    invoke-virtual {p0}, Landroid/media/WebVttRenderingWidget$CueLayout;->removeAllViews()V
+    invoke-virtual {p0}, Landroid/view/ViewGroup;->removeAllViews()V
 
     .line 1725
-    invoke-virtual {p0}, Landroid/media/WebVttRenderingWidget$CueLayout;->getLayoutDirection()I
+    invoke-virtual {p0}, Landroid/view/View;->getLayoutDirection()I
 
     move-result v8
 
@@ -472,7 +474,7 @@
     .line 1744
     new-instance v5, Landroid/media/WebVttRenderingWidget$SpanLayout;
 
-    invoke-virtual {p0}, Landroid/media/WebVttRenderingWidget$CueLayout;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v8
 
@@ -482,13 +484,13 @@
 
     .line 1745
     .local v5, "lineBox":Landroid/media/WebVttRenderingWidget$SpanLayout;
-    invoke-virtual {v5, v0}, Landroid/media/WebVttRenderingWidget$SpanLayout;->setAlignment(Landroid/text/Layout$Alignment;)V
+    invoke-virtual {v5, v0}, Lcom/android/internal/widget/SubtitleView;->setAlignment(Landroid/text/Layout$Alignment;)V
 
     .line 1746
     invoke-virtual {v5, v1, v3}, Landroid/media/WebVttRenderingWidget$SpanLayout;->setCaptionStyle(Landroid/view/accessibility/CaptioningManager$CaptionStyle;F)V
 
     .line 1748
-    invoke-virtual {p0, v5, v10, v10}, Landroid/media/WebVttRenderingWidget$CueLayout;->addView(Landroid/view/View;II)V
+    invoke-virtual {p0, v5, v10, v10}, Landroid/view/ViewGroup;->addView(Landroid/view/View;II)V
 
     .line 1743
     add-int/lit8 v4, v4, 0x1

@@ -397,7 +397,7 @@
     invoke-direct {p0}, Landroid/widget/RemoteViewsListAdapter;->init()V
 
     .line 46
-    invoke-virtual {p0}, Landroid/widget/RemoteViewsListAdapter;->notifyDataSetChanged()V
+    invoke-virtual {p0}, Landroid/widget/BaseAdapter;->notifyDataSetChanged()V
 
     .line 43
     return-void

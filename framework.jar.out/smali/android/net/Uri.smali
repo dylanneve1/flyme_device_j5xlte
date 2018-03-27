@@ -715,20 +715,6 @@
 
     move-result v0
 
-    if-nez v0, :cond_0
-
-    .line 2346
-    invoke-virtual {p0}, Landroid/net/Uri;->getPath()Ljava/lang/String;
-
-    move-result-object v0
-
-    const-string/jumbo v1, "/data/system/theme/"
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
-
-    move-result v0
-
-    .line 2345
     if-eqz v0, :cond_1
 
     .line 2344
@@ -736,7 +722,7 @@
     :goto_0
     return-void
 
-    .line 2347
+    .line 2346
     :cond_1
     invoke-static {p0, p1}, Landroid/os/StrictMode;->onFileUriExposed(Landroid/net/Uri;Ljava/lang/String;)V
 
@@ -1656,7 +1642,7 @@
     .prologue
     const/4 v6, 0x0
 
-    .line 2358
+    .line 2357
     invoke-virtual {p0}, Landroid/net/Uri;->getScheme()Ljava/lang/String;
 
     move-result-object v4
@@ -1673,7 +1659,7 @@
 
     return v6
 
-    .line 2359
+    .line 2358
     :cond_0
     invoke-virtual {p0}, Landroid/net/Uri;->getAuthority()Ljava/lang/String;
 
@@ -1691,25 +1677,25 @@
 
     return v6
 
-    .line 2361
+    .line 2360
     :cond_1
     invoke-virtual {p0}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
     move-result-object v3
 
-    .line 2362
+    .line 2361
     .local v3, "seg":Ljava/util/List;, "Ljava/util/List<Ljava/lang/String;>;"
     invoke-virtual {p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
     move-result-object v1
 
-    .line 2364
+    .line 2363
     .local v1, "prefixSeg":Ljava/util/List;, "Ljava/util/List<Ljava/lang/String;>;"
     invoke-interface {v1}, Ljava/util/List;->size()I
 
     move-result v2
 
-    .line 2365
+    .line 2364
     .local v2, "prefixSize":I
     invoke-interface {v3}, Ljava/util/List;->size()I
 
@@ -1719,7 +1705,7 @@
 
     return v6
 
-    .line 2367
+    .line 2366
     :cond_2
     const/4 v0, 0x0
 
@@ -1727,7 +1713,7 @@
     :goto_0
     if-ge v0, v2, :cond_4
 
-    .line 2368
+    .line 2367
     invoke-interface {v3, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v4
@@ -1742,16 +1728,16 @@
 
     if-nez v4, :cond_3
 
-    .line 2369
+    .line 2368
     return v6
 
-    .line 2367
+    .line 2366
     :cond_3
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 2373
+    .line 2372
     :cond_4
     const/4 v4, 0x1
 

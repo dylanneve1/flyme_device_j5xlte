@@ -26,13 +26,13 @@
 # static fields
 .field private static final DESCRIPTOR:Ljava/lang/String; = "android.os.IVibratorService"
 
-.field static final TRANSACTION_cancelVibrate_3:I = 0x4
+.field static final TRANSACTION_cancelVibrate:I = 0x4
 
 .field static final TRANSACTION_hasVibrator_0:I = 0x1
 
-.field static final TRANSACTION_vibratePattern:I = 0x3
+.field static final TRANSACTION_vibrate:I = 0x2
 
-.field static final TRANSACTION_vibrate_1:I = 0x2
+.field static final TRANSACTION_vibratePattern:I = 0x3
 
 
 # direct methods

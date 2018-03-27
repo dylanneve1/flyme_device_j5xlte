@@ -664,9 +664,9 @@
     invoke-virtual {v0}, Landroid/content/res/TypedArray;->recycle()V
 
     .line 302
-    iget-object v6, p0, Landroid/widget/CalendarViewLegacyDelegate;->mDelegator:Landroid/widget/CalendarView;
+    iget-object v6, p0, Landroid/widget/CalendarView$AbstractCalendarViewDelegate;->mDelegator:Landroid/widget/CalendarView;
 
-    invoke-virtual {v6}, Landroid/widget/CalendarView;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v6}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     move-result-object v6
 
@@ -746,7 +746,7 @@
     iput v6, p0, Landroid/widget/CalendarViewLegacyDelegate;->mWeekSeperatorLineWidth:I
 
     .line 314
-    iget-object v6, p0, Landroid/widget/CalendarViewLegacyDelegate;->mContext:Landroid/content/Context;
+    iget-object v6, p0, Landroid/widget/CalendarView$AbstractCalendarViewDelegate;->mContext:Landroid/content/Context;
 
     .line 315
     const-string/jumbo v7, "layout_inflater"
@@ -772,16 +772,16 @@
 
     .line 317
     .local v1, "content":Landroid/view/View;
-    iget-object v6, p0, Landroid/widget/CalendarViewLegacyDelegate;->mDelegator:Landroid/widget/CalendarView;
+    iget-object v6, p0, Landroid/widget/CalendarView$AbstractCalendarViewDelegate;->mDelegator:Landroid/widget/CalendarView;
 
-    invoke-virtual {v6, v1}, Landroid/widget/CalendarView;->addView(Landroid/view/View;)V
+    invoke-virtual {v6, v1}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
     .line 319
-    iget-object v6, p0, Landroid/widget/CalendarViewLegacyDelegate;->mDelegator:Landroid/widget/CalendarView;
+    iget-object v6, p0, Landroid/widget/CalendarView$AbstractCalendarViewDelegate;->mDelegator:Landroid/widget/CalendarView;
 
     const v7, 0x102000a
 
-    invoke-virtual {v6, v7}, Landroid/widget/CalendarView;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v6, v7}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v6
 
@@ -853,9 +853,9 @@
 
     .line 337
     :goto_0
-    iget-object v6, p0, Landroid/widget/CalendarViewLegacyDelegate;->mDelegator:Landroid/widget/CalendarView;
+    iget-object v6, p0, Landroid/widget/CalendarView$AbstractCalendarViewDelegate;->mDelegator:Landroid/widget/CalendarView;
 
-    invoke-virtual {v6}, Landroid/widget/CalendarView;->invalidate()V
+    invoke-virtual {v6}, Landroid/view/View;->invalidate()V
 
     .line 259
     return-void
@@ -1173,7 +1173,7 @@
     :cond_1
     iget-object v4, p0, Landroid/widget/CalendarViewLegacyDelegate;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v4}, Landroid/widget/ListView;->getFirstVisiblePosition()I
+    invoke-virtual {v4}, Landroid/widget/AdapterView;->getFirstVisiblePosition()I
 
     move-result v1
 
@@ -1181,7 +1181,7 @@
     .local v1, "firstFullyVisiblePosition":I
     iget-object v4, p0, Landroid/widget/CalendarViewLegacyDelegate;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v4, v8}, Landroid/widget/ListView;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {v4, v8}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -1298,7 +1298,7 @@
     const/16 v6, 0x3e8
 
     .line 811
-    invoke-virtual {v4, v3, v5, v6}, Landroid/widget/ListView;->smoothScrollToPositionFromTop(III)V
+    invoke-virtual {v4, v3, v5, v6}, Landroid/widget/AbsListView;->smoothScrollToPositionFromTop(III)V
 
     .line 772
     :cond_6
@@ -1333,7 +1333,7 @@
 
     iget v5, p0, Landroid/widget/CalendarViewLegacyDelegate;->mListScrollTopOffset:I
 
-    invoke-virtual {v4, v3, v5}, Landroid/widget/ListView;->setSelectionFromTop(II)V
+    invoke-virtual {v4, v3, v5}, Landroid/widget/AbsListView;->setSelectionFromTop(II)V
 
     .line 816
     iget-object v4, p0, Landroid/widget/CalendarViewLegacyDelegate;->mListView:Landroid/widget/ListView;
@@ -1350,7 +1350,7 @@
     .line 635
     iget-object v3, p0, Landroid/widget/CalendarViewLegacyDelegate;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v3}, Landroid/widget/ListView;->getChildCount()I
+    invoke-virtual {v3}, Landroid/view/ViewGroup;->getChildCount()I
 
     move-result v0
 
@@ -1365,7 +1365,7 @@
     .line 637
     iget-object v3, p0, Landroid/widget/CalendarViewLegacyDelegate;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v3, v1}, Landroid/widget/ListView;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {v3, v1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v2
 
@@ -1446,7 +1446,7 @@
     .line 838
     const/4 v7, 0x0
 
-    invoke-virtual {p1, v7}, Landroid/widget/AbsListView;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {p1, v7}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -1461,17 +1461,17 @@
 
     .line 845
     :cond_0
-    invoke-virtual {p1}, Landroid/widget/AbsListView;->getFirstVisiblePosition()I
+    invoke-virtual {p1}, Landroid/widget/AdapterView;->getFirstVisiblePosition()I
 
     move-result v7
 
-    invoke-virtual {v0}, Landroid/widget/CalendarViewLegacyDelegate$WeekView;->getHeight()I
+    invoke-virtual {v0}, Landroid/view/View;->getHeight()I
 
     move-result v8
 
     mul-int/2addr v7, v8
 
-    invoke-virtual {v0}, Landroid/widget/CalendarViewLegacyDelegate$WeekView;->getBottom()I
+    invoke-virtual {v0}, Landroid/view/View;->getBottom()I
 
     move-result v8
 
@@ -1494,7 +1494,7 @@
 
     .line 860
     :goto_0
-    invoke-virtual {v0}, Landroid/widget/CalendarViewLegacyDelegate$WeekView;->getBottom()I
+    invoke-virtual {v0}, Landroid/view/View;->getBottom()I
 
     move-result v7
 
@@ -1514,7 +1514,7 @@
     .line 862
     add-int/lit8 v7, v6, 0x2
 
-    invoke-virtual {p1, v7}, Landroid/widget/AbsListView;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {p1, v7}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -1630,7 +1630,7 @@
     if-eqz v6, :cond_1
 
     .line 864
-    invoke-virtual {p1, v6}, Landroid/widget/AbsListView;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {p1, v6}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -1745,7 +1745,7 @@
 
     .line 914
     .local v2, "millis":J
-    iget-object v1, p0, Landroid/widget/CalendarViewLegacyDelegate;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Landroid/widget/CalendarView$AbstractCalendarViewDelegate;->mContext:Landroid/content/Context;
 
     const/16 v6, 0x34
 
@@ -1764,7 +1764,7 @@
     .line 916
     iget-object v1, p0, Landroid/widget/CalendarViewLegacyDelegate;->mMonthName:Landroid/widget/TextView;
 
-    invoke-virtual {v1}, Landroid/widget/TextView;->invalidate()V
+    invoke-virtual {v1}, Landroid/view/View;->invalidate()V
 
     .line 908
     return-void
@@ -1782,7 +1782,7 @@
     .line 673
     new-instance v0, Landroid/widget/CalendarViewLegacyDelegate$WeeksAdapter;
 
-    iget-object v1, p0, Landroid/widget/CalendarViewLegacyDelegate;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Landroid/widget/CalendarView$AbstractCalendarViewDelegate;->mContext:Landroid/content/Context;
 
     invoke-direct {v0, p0, v1}, Landroid/widget/CalendarViewLegacyDelegate$WeeksAdapter;-><init>(Landroid/widget/CalendarViewLegacyDelegate;Landroid/content/Context;)V
 
@@ -1795,7 +1795,7 @@
 
     invoke-direct {v1, p0}, Landroid/widget/CalendarViewLegacyDelegate$1;-><init>(Landroid/widget/CalendarViewLegacyDelegate;)V
 
-    invoke-virtual {v0, v1}, Landroid/widget/CalendarViewLegacyDelegate$WeeksAdapter;->registerDataSetObserver(Landroid/database/DataSetObserver;)V
+    invoke-virtual {v0, v1}, Landroid/widget/BaseAdapter;->registerDataSetObserver(Landroid/database/DataSetObserver;)V
 
     .line 686
     iget-object v0, p0, Landroid/widget/CalendarViewLegacyDelegate;->mListView:Landroid/widget/ListView;
@@ -1808,7 +1808,7 @@
     :cond_0
     iget-object v0, p0, Landroid/widget/CalendarViewLegacyDelegate;->mAdapter:Landroid/widget/CalendarViewLegacyDelegate$WeeksAdapter;
 
-    invoke-virtual {v0}, Landroid/widget/CalendarViewLegacyDelegate$WeeksAdapter;->notifyDataSetChanged()V
+    invoke-virtual {v0}, Landroid/widget/BaseAdapter;->notifyDataSetChanged()V
 
     .line 671
     return-void
@@ -1924,7 +1924,7 @@
     if-eqz v4, :cond_3
 
     .line 709
-    invoke-virtual {v3, v7}, Landroid/widget/TextView;->setVisibility(I)V
+    invoke-virtual {v3, v7}, Landroid/view/View;->setVisibility(I)V
 
     .line 713
     :goto_2
@@ -1986,10 +1986,10 @@
 
     aget-object v4, v4, v5
 
-    invoke-virtual {v3, v4}, Landroid/widget/TextView;->setContentDescription(Ljava/lang/CharSequence;)V
+    invoke-virtual {v3, v4}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
     .line 721
-    invoke-virtual {v3, v7}, Landroid/widget/TextView;->setVisibility(I)V
+    invoke-virtual {v3, v7}, Landroid/view/View;->setVisibility(I)V
 
     .line 713
     :goto_4
@@ -1999,13 +1999,13 @@
 
     .line 711
     :cond_3
-    invoke-virtual {v3, v8}, Landroid/widget/TextView;->setVisibility(I)V
+    invoke-virtual {v3, v8}, Landroid/view/View;->setVisibility(I)V
 
     goto :goto_2
 
     .line 723
     :cond_4
-    invoke-virtual {v3, v8}, Landroid/widget/TextView;->setVisibility(I)V
+    invoke-virtual {v3, v8}, Landroid/view/View;->setVisibility(I)V
 
     goto :goto_4
 
@@ -2013,7 +2013,7 @@
     :cond_5
     iget-object v4, p0, Landroid/widget/CalendarViewLegacyDelegate;->mDayNamesHeader:Landroid/view/ViewGroup;
 
-    invoke-virtual {v4}, Landroid/view/ViewGroup;->invalidate()V
+    invoke-virtual {v4}, Landroid/view/View;->invalidate()V
 
     .line 696
     return-void
@@ -2042,7 +2042,7 @@
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Landroid/widget/ListView;->setVerticalScrollBarEnabled(Z)V
+    invoke-virtual {v0, v1}, Landroid/view/View;->setVerticalScrollBarEnabled(Z)V
 
     .line 737
     iget-object v0, p0, Landroid/widget/CalendarViewLegacyDelegate;->mListView:Landroid/widget/ListView;
@@ -2051,21 +2051,21 @@
 
     invoke-direct {v1, p0}, Landroid/widget/CalendarViewLegacyDelegate$2;-><init>(Landroid/widget/CalendarViewLegacyDelegate;)V
 
-    invoke-virtual {v0, v1}, Landroid/widget/ListView;->setOnScrollListener(Landroid/widget/AbsListView$OnScrollListener;)V
+    invoke-virtual {v0, v1}, Landroid/widget/AbsListView;->setOnScrollListener(Landroid/widget/AbsListView$OnScrollListener;)V
 
     .line 750
     iget-object v0, p0, Landroid/widget/CalendarViewLegacyDelegate;->mListView:Landroid/widget/ListView;
 
     iget v1, p0, Landroid/widget/CalendarViewLegacyDelegate;->mFriction:F
 
-    invoke-virtual {v0, v1}, Landroid/widget/ListView;->setFriction(F)V
+    invoke-virtual {v0, v1}, Landroid/widget/AbsListView;->setFriction(F)V
 
     .line 751
     iget-object v0, p0, Landroid/widget/CalendarViewLegacyDelegate;->mListView:Landroid/widget/ListView;
 
     iget v1, p0, Landroid/widget/CalendarViewLegacyDelegate;->mVelocityScale:F
 
-    invoke-virtual {v0, v1}, Landroid/widget/ListView;->setVelocityScale(F)V
+    invoke-virtual {v0, v1}, Landroid/widget/AbsListView;->setVelocityScale(F)V
 
     .line 732
     return-void
@@ -2076,9 +2076,9 @@
 
     .prologue
     .line 624
-    iget-object v1, p0, Landroid/widget/CalendarViewLegacyDelegate;->mDelegator:Landroid/widget/CalendarView;
+    iget-object v1, p0, Landroid/widget/CalendarView$AbstractCalendarViewDelegate;->mDelegator:Landroid/widget/CalendarView;
 
-    invoke-virtual {v1}, Landroid/widget/CalendarView;->getContext()Landroid/content/Context;
+    invoke-virtual {v1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -2437,7 +2437,7 @@
     .line 571
     iget-object v0, p0, Landroid/widget/CalendarViewLegacyDelegate;->mAdapter:Landroid/widget/CalendarViewLegacyDelegate$WeeksAdapter;
 
-    invoke-virtual {v0}, Landroid/widget/CalendarViewLegacyDelegate$WeeksAdapter;->notifyDataSetChanged()V
+    invoke-virtual {v0}, Landroid/widget/BaseAdapter;->notifyDataSetChanged()V
 
     .line 572
     invoke-direct {p0}, Landroid/widget/CalendarViewLegacyDelegate;->setUpHeader()V
@@ -2462,7 +2462,7 @@
     .line 376
     iget-object v3, p0, Landroid/widget/CalendarViewLegacyDelegate;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v3}, Landroid/widget/ListView;->getChildCount()I
+    invoke-virtual {v3}, Landroid/view/ViewGroup;->getChildCount()I
 
     move-result v0
 
@@ -2477,7 +2477,7 @@
     .line 378
     iget-object v3, p0, Landroid/widget/CalendarViewLegacyDelegate;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v3, v1}, Landroid/widget/ListView;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {v3, v1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v2
 
@@ -2492,7 +2492,7 @@
     if-eqz v3, :cond_0
 
     .line 380
-    invoke-virtual {v2}, Landroid/widget/CalendarViewLegacyDelegate$WeekView;->invalidate()V
+    invoke-virtual {v2}, Landroid/view/View;->invalidate()V
 
     .line 377
     :cond_0
@@ -2695,9 +2695,9 @@
 
     .prologue
     .line 440
-    iget-object v1, p0, Landroid/widget/CalendarViewLegacyDelegate;->mDelegator:Landroid/widget/CalendarView;
+    iget-object v1, p0, Landroid/widget/CalendarView$AbstractCalendarViewDelegate;->mDelegator:Landroid/widget/CalendarView;
 
-    invoke-virtual {v1}, Landroid/widget/CalendarView;->getContext()Landroid/content/Context;
+    invoke-virtual {v1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -2729,7 +2729,7 @@
     .line 448
     iget-object v3, p0, Landroid/widget/CalendarViewLegacyDelegate;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v3}, Landroid/widget/ListView;->getChildCount()I
+    invoke-virtual {v3}, Landroid/view/ViewGroup;->getChildCount()I
 
     move-result v0
 
@@ -2744,7 +2744,7 @@
     .line 450
     iget-object v3, p0, Landroid/widget/CalendarViewLegacyDelegate;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v3, v1}, Landroid/widget/ListView;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {v3, v1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v2
 
@@ -2759,7 +2759,7 @@
     if-eqz v3, :cond_0
 
     .line 452
-    invoke-virtual {v2}, Landroid/widget/CalendarViewLegacyDelegate$WeekView;->invalidate()V
+    invoke-virtual {v2}, Landroid/view/View;->invalidate()V
 
     .line 449
     :cond_0
@@ -2791,7 +2791,7 @@
     .line 357
     iget-object v3, p0, Landroid/widget/CalendarViewLegacyDelegate;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v3}, Landroid/widget/ListView;->getChildCount()I
+    invoke-virtual {v3}, Landroid/view/ViewGroup;->getChildCount()I
 
     move-result v0
 
@@ -2806,7 +2806,7 @@
     .line 359
     iget-object v3, p0, Landroid/widget/CalendarViewLegacyDelegate;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v3, v1}, Landroid/widget/ListView;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {v3, v1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v2
 
@@ -2821,7 +2821,7 @@
     if-eqz v3, :cond_0
 
     .line 361
-    invoke-virtual {v2}, Landroid/widget/CalendarViewLegacyDelegate$WeekView;->invalidate()V
+    invoke-virtual {v2}, Landroid/view/View;->invalidate()V
 
     .line 358
     :cond_0
@@ -2857,7 +2857,7 @@
     .line 555
     iget-object v0, p0, Landroid/widget/CalendarViewLegacyDelegate;->mAdapter:Landroid/widget/CalendarViewLegacyDelegate$WeeksAdapter;
 
-    invoke-virtual {v0}, Landroid/widget/CalendarViewLegacyDelegate$WeeksAdapter;->notifyDataSetChanged()V
+    invoke-virtual {v0}, Landroid/widget/BaseAdapter;->notifyDataSetChanged()V
 
     .line 556
     invoke-direct {p0}, Landroid/widget/CalendarViewLegacyDelegate;->setUpHeader()V
@@ -2880,9 +2880,9 @@
     iput p1, p0, Landroid/widget/CalendarViewLegacyDelegate;->mShownWeekCount:I
 
     .line 344
-    iget-object v0, p0, Landroid/widget/CalendarViewLegacyDelegate;->mDelegator:Landroid/widget/CalendarView;
+    iget-object v0, p0, Landroid/widget/CalendarView$AbstractCalendarViewDelegate;->mDelegator:Landroid/widget/CalendarView;
 
-    invoke-virtual {v0}, Landroid/widget/CalendarView;->invalidate()V
+    invoke-virtual {v0}, Landroid/view/View;->invalidate()V
 
     .line 341
     :cond_0
@@ -2905,7 +2905,7 @@
     .line 395
     iget-object v3, p0, Landroid/widget/CalendarViewLegacyDelegate;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v3}, Landroid/widget/ListView;->getChildCount()I
+    invoke-virtual {v3}, Landroid/view/ViewGroup;->getChildCount()I
 
     move-result v0
 
@@ -2920,7 +2920,7 @@
     .line 397
     iget-object v3, p0, Landroid/widget/CalendarViewLegacyDelegate;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v3, v1}, Landroid/widget/ListView;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {v3, v1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v2
 
@@ -2935,7 +2935,7 @@
     if-eqz v3, :cond_0
 
     .line 399
-    invoke-virtual {v2}, Landroid/widget/CalendarViewLegacyDelegate$WeekView;->invalidate()V
+    invoke-virtual {v2}, Landroid/view/View;->invalidate()V
 
     .line 396
     :cond_0

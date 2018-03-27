@@ -83,7 +83,7 @@
     iput-boolean v4, p0, Lcom/android/internal/widget/NumericTextView;->mShowLeadingZeroes:Z
 
     .line 60
-    invoke-virtual {p0}, Lcom/android/internal/widget/NumericTextView;->getTextColors()Landroid/content/res/ColorStateList;
+    invoke-virtual {p0}, Landroid/widget/TextView;->getTextColors()Landroid/content/res/ColorStateList;
 
     move-result-object v1
 
@@ -97,10 +97,10 @@
 
     .line 61
     .local v0, "textColorDisabled":I
-    invoke-virtual {p0, v0}, Lcom/android/internal/widget/NumericTextView;->setHintTextColor(I)V
+    invoke-virtual {p0, v0}, Landroid/widget/TextView;->setHintTextColor(I)V
 
     .line 63
-    invoke-virtual {p0, v4}, Lcom/android/internal/widget/NumericTextView;->setFocusable(Z)V
+    invoke-virtual {p0, v4}, Landroid/view/View;->setFocusable(Z)V
 
     .line 56
     return-void
@@ -190,7 +190,7 @@
     .line 291
     .local v0, "formattedValue":Ljava/lang/String;
     :goto_1
-    invoke-virtual {p0, v0}, Lcom/android/internal/widget/NumericTextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 293
     iget-object v5, p0, Lcom/android/internal/widget/NumericTextView;->mListener:Lcom/android/internal/widget/NumericTextView$OnValueChangedListener;
@@ -446,7 +446,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0, v1}, Lcom/android/internal/widget/NumericTextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 195
     return-void
@@ -467,7 +467,7 @@
     const/4 v7, 0x0
 
     .line 215
-    invoke-virtual {p0}, Lcom/android/internal/widget/NumericTextView;->getText()Ljava/lang/CharSequence;
+    invoke-virtual {p0}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
     move-result-object v2
 
@@ -526,13 +526,13 @@
 
     move-result-object v4
 
-    invoke-virtual {p0, v4}, Lcom/android/internal/widget/NumericTextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 220
-    invoke-virtual {p0, v7, v7}, Lcom/android/internal/widget/NumericTextView;->measure(II)V
+    invoke-virtual {p0, v7, v7}, Landroid/view/View;->measure(II)V
 
     .line 222
-    invoke-virtual {p0}, Lcom/android/internal/widget/NumericTextView;->getMeasuredWidth()I
+    invoke-virtual {p0}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result v3
 
@@ -552,13 +552,13 @@
     .line 228
     .end local v3    # "width":I
     :cond_1
-    invoke-virtual {p0, v2}, Lcom/android/internal/widget/NumericTextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 229
-    invoke-virtual {p0, v1}, Lcom/android/internal/widget/NumericTextView;->setMinWidth(I)V
+    invoke-virtual {p0, v1}, Landroid/widget/TextView;->setMinWidth(I)V
 
     .line 230
-    invoke-virtual {p0, v1}, Lcom/android/internal/widget/NumericTextView;->setMinimumWidth(I)V
+    invoke-virtual {p0, v1}, Landroid/view/View;->setMinimumWidth(I)V
 
     .line 214
     return-void
@@ -645,16 +645,16 @@
     iput v1, p0, Lcom/android/internal/widget/NumericTextView;->mCount:I
 
     .line 76
-    invoke-virtual {p0}, Lcom/android/internal/widget/NumericTextView;->getText()Ljava/lang/CharSequence;
+    invoke-virtual {p0}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/android/internal/widget/NumericTextView;->setHint(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0}, Landroid/widget/TextView;->setHint(Ljava/lang/CharSequence;)V
 
     .line 77
     const-string/jumbo v0, ""
 
-    invoke-virtual {p0, v0}, Lcom/android/internal/widget/NumericTextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 67
     :cond_0
@@ -673,16 +673,16 @@
     iput v0, p0, Lcom/android/internal/widget/NumericTextView;->mValue:I
 
     .line 83
-    invoke-virtual {p0}, Lcom/android/internal/widget/NumericTextView;->getHint()Ljava/lang/CharSequence;
+    invoke-virtual {p0}, Landroid/widget/TextView;->getHint()Ljava/lang/CharSequence;
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/android/internal/widget/NumericTextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 84
     const-string/jumbo v0, ""
 
-    invoke-virtual {p0, v0}, Lcom/android/internal/widget/NumericTextView;->setHint(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0}, Landroid/widget/TextView;->setHint(Ljava/lang/CharSequence;)V
 
     .line 88
     :cond_2

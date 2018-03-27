@@ -166,7 +166,7 @@
     move-result-object v6
 
     .line 372
-    const v7, 0x11200e6
+    const v7, 0x11200e7
 
     .line 371
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getBoolean(I)Z
@@ -1198,7 +1198,7 @@
     invoke-direct {v0, v1}, Landroid/app/Notification$Builder;-><init>(Landroid/content/Context;)V
 
     .line 968
-    const v1, 0x10806e7
+    const v1, 0x10806e9
 
     .line 967
     invoke-virtual {v0, v1}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;
@@ -2199,7 +2199,7 @@
     invoke-direct {v0, v3}, Landroid/app/Notification$Builder;-><init>(Landroid/content/Context;)V
 
     .line 909
-    const v3, 0x10806e7
+    const v3, 0x10806e9
 
     .line 908
     invoke-virtual {v0, v3}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;

@@ -30,7 +30,7 @@
 
 .field static final TRANSACTION_onListenerConnected:I = 0x1
 
-.field static final TRANSACTION_onListenerHintsChanged_4:I = 0x5
+.field static final TRANSACTION_onListenerHintsChanged:I = 0x5
 
 .field static final TRANSACTION_onNotificationActionClick:I = 0xa
 
@@ -40,11 +40,11 @@
 
 .field static final TRANSACTION_onNotificationPosted:I = 0x2
 
-.field static final TRANSACTION_onNotificationRankingUpdate_3:I = 0x4
+.field static final TRANSACTION_onNotificationRankingUpdate:I = 0x4
+
+.field static final TRANSACTION_onNotificationRemoved:I = 0x3
 
 .field static final TRANSACTION_onNotificationRemovedReason:I = 0xb
-
-.field static final TRANSACTION_onNotificationRemoved_2:I = 0x3
 
 .field static final TRANSACTION_onNotificationVisibilityChanged:I = 0x8
 

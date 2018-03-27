@@ -67,7 +67,7 @@
     .local v0, "data":Landroid/os/Bundle;
     const-string/jumbo v2, "android.app.PREFIX"
 
-    invoke-virtual {v0, v2, p2}, Landroid/os/Bundle;->putIntArray(Ljava/lang/String;[I)V
+    invoke-virtual {v0, v2, p2}, Landroid/os/BaseBundle;->putIntArray(Ljava/lang/String;[I)V
 
     .line 72
     invoke-virtual {v1, v0}, Landroid/os/Message;->setData(Landroid/os/Bundle;)V

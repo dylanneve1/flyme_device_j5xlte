@@ -134,77 +134,77 @@
 
     iget v2, p0, Lorg/codeaurora/camera/ExtendedFace;->smileDegree:I
 
-    invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
+    invoke-virtual {v0, v1, v2}, Landroid/os/BaseBundle;->putInt(Ljava/lang/String;I)V
 
     .line 195
     const-string/jumbo v1, "leftEyeClosedValue"
 
     iget v2, p0, Lorg/codeaurora/camera/ExtendedFace;->leyeBlink:I
 
-    invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
+    invoke-virtual {v0, v1, v2}, Landroid/os/BaseBundle;->putInt(Ljava/lang/String;I)V
 
     .line 196
     const-string/jumbo v1, "rightEyeClosedValue"
 
     iget v2, p0, Lorg/codeaurora/camera/ExtendedFace;->reyeBlink:I
 
-    invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
+    invoke-virtual {v0, v1, v2}, Landroid/os/BaseBundle;->putInt(Ljava/lang/String;I)V
 
     .line 198
     const-string/jumbo v1, "facePitchDegree"
 
     iget v2, p0, Lorg/codeaurora/camera/ExtendedFace;->updownDir:I
 
-    invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
+    invoke-virtual {v0, v1, v2}, Landroid/os/BaseBundle;->putInt(Ljava/lang/String;I)V
 
     .line 199
     const-string/jumbo v1, "faceYawDegree"
 
     iget v2, p0, Lorg/codeaurora/camera/ExtendedFace;->leftrightDir:I
 
-    invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
+    invoke-virtual {v0, v1, v2}, Landroid/os/BaseBundle;->putInt(Ljava/lang/String;I)V
 
     .line 200
     const-string/jumbo v1, "faceRollDegree"
 
     iget v2, p0, Lorg/codeaurora/camera/ExtendedFace;->rollDir:I
 
-    invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
+    invoke-virtual {v0, v1, v2}, Landroid/os/BaseBundle;->putInt(Ljava/lang/String;I)V
 
     .line 201
     const-string/jumbo v1, "gazeUpDownDegree"
 
     iget v2, p0, Lorg/codeaurora/camera/ExtendedFace;->topbottomGaze:I
 
-    invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
+    invoke-virtual {v0, v1, v2}, Landroid/os/BaseBundle;->putInt(Ljava/lang/String;I)V
 
     .line 202
     const-string/jumbo v1, "gazeLeftRightDegree"
 
     iget v2, p0, Lorg/codeaurora/camera/ExtendedFace;->leftrightGaze:I
 
-    invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
+    invoke-virtual {v0, v1, v2}, Landroid/os/BaseBundle;->putInt(Ljava/lang/String;I)V
 
     .line 204
     const-string/jumbo v1, "blinkDetected"
 
     iget v2, p0, Lorg/codeaurora/camera/ExtendedFace;->blinkDetected:I
 
-    invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
+    invoke-virtual {v0, v1, v2}, Landroid/os/BaseBundle;->putInt(Ljava/lang/String;I)V
 
     .line 205
     const-string/jumbo v1, "smileScore"
 
     iget v2, p0, Lorg/codeaurora/camera/ExtendedFace;->smileScore:I
 
-    invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
+    invoke-virtual {v0, v1, v2}, Landroid/os/BaseBundle;->putInt(Ljava/lang/String;I)V
 
     .line 206
     const-string/jumbo v1, "faceRecognized"
 
     iget v2, p0, Lorg/codeaurora/camera/ExtendedFace;->faceRecognized:I
 
-    invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
+    invoke-virtual {v0, v1, v2}, Landroid/os/BaseBundle;->putInt(Ljava/lang/String;I)V
 
     .line 208
     return-object v0

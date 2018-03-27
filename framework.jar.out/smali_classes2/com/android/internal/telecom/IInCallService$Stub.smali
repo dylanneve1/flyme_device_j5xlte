@@ -38,13 +38,13 @@
 
 .field static final TRANSACTION_setInCallAdapter:I = 0x1
 
-.field static final TRANSACTION_setPostDialWait:I = 0x5
+.field static final TRANSACTION_setPostDial:I = 0x4
 
-.field static final TRANSACTION_setPostDial_3:I = 0x4
+.field static final TRANSACTION_setPostDialWait:I = 0x5
 
 .field static final TRANSACTION_silenceRinger:I = 0x9
 
-.field static final TRANSACTION_updateCall_2:I = 0x3
+.field static final TRANSACTION_updateCall:I = 0x3
 
 
 # direct methods

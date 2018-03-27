@@ -77,14 +77,14 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Landroid/app/admin/ConnectEvent;->packageName:Ljava/lang/String;
+    iput-object v0, p0, Landroid/app/admin/NetworkEvent;->packageName:Ljava/lang/String;
 
     .line 45
     invoke-virtual {p1}, Landroid/os/Parcel;->readLong()J
 
     move-result-wide v0
 
-    iput-wide v0, p0, Landroid/app/admin/ConnectEvent;->timestamp:J
+    iput-wide v0, p0, Landroid/app/admin/NetworkEvent;->timestamp:J
 
     .line 41
     return-void
@@ -180,7 +180,7 @@
 
     aput-object v2, v1, v3
 
-    iget-wide v2, p0, Landroid/app/admin/ConnectEvent;->timestamp:J
+    iget-wide v2, p0, Landroid/app/admin/NetworkEvent;->timestamp:J
 
     invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
@@ -191,7 +191,7 @@
     aput-object v2, v1, v3
 
     .line 59
-    iget-object v2, p0, Landroid/app/admin/ConnectEvent;->packageName:Ljava/lang/String;
+    iget-object v2, p0, Landroid/app/admin/NetworkEvent;->packageName:Ljava/lang/String;
 
     const/4 v3, 0x3
 
@@ -227,12 +227,12 @@
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 89
-    iget-object v0, p0, Landroid/app/admin/ConnectEvent;->packageName:Ljava/lang/String;
+    iget-object v0, p0, Landroid/app/admin/NetworkEvent;->packageName:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 90
-    iget-wide v0, p0, Landroid/app/admin/ConnectEvent;->timestamp:J
+    iget-wide v0, p0, Landroid/app/admin/NetworkEvent;->timestamp:J
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Parcel;->writeLong(J)V
 

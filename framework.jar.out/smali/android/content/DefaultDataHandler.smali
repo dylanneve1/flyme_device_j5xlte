@@ -67,7 +67,7 @@
 
     iget-object v1, p0, Landroid/content/DefaultDataHandler;->mUris:Ljava/util/Stack;
 
-    invoke-virtual {v1}, Ljava/util/Stack;->lastElement()Ljava/lang/Object;
+    invoke-virtual {v1}, Ljava/util/Vector;->lastElement()Ljava/lang/Object;
 
     move-result-object v1
 
@@ -165,7 +165,7 @@
     :cond_0
     iget-object v3, p0, Landroid/content/DefaultDataHandler;->mUris:Ljava/util/Stack;
 
-    invoke-virtual {v3}, Ljava/util/Stack;->size()I
+    invoke-virtual {v3}, Ljava/util/Vector;->size()I
 
     move-result v3
 
@@ -185,7 +185,7 @@
     .line 114
     iget-object v3, p0, Landroid/content/DefaultDataHandler;->mUris:Ljava/util/Stack;
 
-    invoke-virtual {v3}, Ljava/util/Stack;->lastElement()Ljava/lang/Object;
+    invoke-virtual {v3}, Ljava/util/Vector;->lastElement()Ljava/lang/Object;
 
     move-result-object v3
 
@@ -213,7 +213,7 @@
     :cond_2
     iget-object v3, p0, Landroid/content/DefaultDataHandler;->mUris:Ljava/util/Stack;
 
-    invoke-virtual {v3}, Ljava/util/Stack;->lastElement()Ljava/lang/Object;
+    invoke-virtual {v3}, Ljava/util/Vector;->lastElement()Ljava/lang/Object;
 
     move-result-object v1
 
@@ -528,7 +528,7 @@
     .line 144
     iget-object v7, p0, Landroid/content/DefaultDataHandler;->mUris:Ljava/util/Stack;
 
-    invoke-virtual {v7}, Ljava/util/Stack;->lastElement()Ljava/lang/Object;
+    invoke-virtual {v7}, Ljava/util/Vector;->lastElement()Ljava/lang/Object;
 
     move-result-object v7
 
@@ -593,7 +593,7 @@
 
     iget-object v7, p0, Landroid/content/DefaultDataHandler;->mUris:Ljava/util/Stack;
 
-    invoke-virtual {v7}, Ljava/util/Stack;->lastElement()Ljava/lang/Object;
+    invoke-virtual {v7}, Ljava/util/Vector;->lastElement()Ljava/lang/Object;
 
     move-result-object v7
 

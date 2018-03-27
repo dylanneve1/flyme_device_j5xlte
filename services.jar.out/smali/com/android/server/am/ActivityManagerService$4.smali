@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/server/am/ActivityManagerService;
 
     .prologue
-    .line 2852
+    .line 2842
     iput-object p1, p0, Lcom/android/server/am/ActivityManagerService$4;->this$0:Lcom/android/server/am/ActivityManagerService;
 
     invoke-direct {p0}, Lcom/android/internal/app/IAppOpsCallback$Stub;-><init>()V
@@ -41,14 +41,14 @@
     .param p3, "packageName"    # Ljava/lang/String;
 
     .prologue
-    .line 2854
+    .line 2844
     const/16 v0, 0x3f
 
     if-ne p1, v0, :cond_0
 
     if-eqz p3, :cond_0
 
-    .line 2855
+    .line 2845
     iget-object v0, p0, Lcom/android/server/am/ActivityManagerService$4;->this$0:Lcom/android/server/am/ActivityManagerService;
 
     iget-object v0, v0, Lcom/android/server/am/ActivityManagerService;->mAppOpsService:Lcom/android/server/AppOpsService;
@@ -59,12 +59,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 2857
+    .line 2847
     iget-object v0, p0, Lcom/android/server/am/ActivityManagerService$4;->this$0:Lcom/android/server/am/ActivityManagerService;
 
     invoke-virtual {v0, p2}, Lcom/android/server/am/ActivityManagerService;->runInBackgroundDisabled(I)V
 
-    .line 2853
+    .line 2843
     :cond_0
     return-void
 .end method

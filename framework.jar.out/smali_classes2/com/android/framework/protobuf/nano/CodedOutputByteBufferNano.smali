@@ -1383,7 +1383,7 @@
 
     .prologue
     .line 416
-    invoke-virtual {p1}, Ljava/nio/ByteBuffer;->isReadOnly()Z
+    invoke-virtual {p1}, Ljava/nio/Buffer;->isReadOnly()Z
 
     move-result v3
 
@@ -1415,14 +1415,14 @@
 
     move-result v4
 
-    invoke-virtual {p1}, Ljava/nio/ByteBuffer;->position()I
+    invoke-virtual {p1}, Ljava/nio/Buffer;->position()I
 
     move-result v5
 
     add-int/2addr v4, v5
 
     .line 423
-    invoke-virtual {p1}, Ljava/nio/ByteBuffer;->remaining()I
+    invoke-virtual {p1}, Ljava/nio/Buffer;->remaining()I
 
     move-result v5
 
@@ -1439,7 +1439,7 @@
 
     sub-int v3, v2, v3
 
-    invoke-virtual {p1, v3}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
+    invoke-virtual {p1, v3}, Ljava/nio/Buffer;->position(I)Ljava/nio/Buffer;
     :try_end_0
     .catch Ljava/lang/ArrayIndexOutOfBoundsException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -1460,7 +1460,7 @@
 
     .line 427
     .local v0, "boe":Ljava/nio/BufferOverflowException;
-    invoke-virtual {v0, v1}, Ljava/nio/BufferOverflowException;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
+    invoke-virtual {v0, v1}, Ljava/lang/Throwable;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
 
     .line 428
     throw v0
@@ -2018,7 +2018,7 @@
     .line 954
     iget-object v0, p0, Lcom/android/framework/protobuf/nano/CodedOutputByteBufferNano;->buffer:Ljava/nio/ByteBuffer;
 
-    invoke-virtual {v0}, Ljava/nio/ByteBuffer;->position()I
+    invoke-virtual {v0}, Ljava/nio/Buffer;->position()I
 
     move-result v0
 
@@ -2032,7 +2032,7 @@
     .line 964
     iget-object v0, p0, Lcom/android/framework/protobuf/nano/CodedOutputByteBufferNano;->buffer:Ljava/nio/ByteBuffer;
 
-    invoke-virtual {v0}, Ljava/nio/ByteBuffer;->clear()Ljava/nio/Buffer;
+    invoke-virtual {v0}, Ljava/nio/Buffer;->clear()Ljava/nio/Buffer;
 
     .line 963
     return-void
@@ -2045,7 +2045,7 @@
     .line 933
     iget-object v0, p0, Lcom/android/framework/protobuf/nano/CodedOutputByteBufferNano;->buffer:Ljava/nio/ByteBuffer;
 
-    invoke-virtual {v0}, Ljava/nio/ByteBuffer;->remaining()I
+    invoke-virtual {v0}, Ljava/nio/Buffer;->remaining()I
 
     move-result v0
 
@@ -2600,7 +2600,7 @@
     .line 983
     iget-object v0, p0, Lcom/android/framework/protobuf/nano/CodedOutputByteBufferNano;->buffer:Ljava/nio/ByteBuffer;
 
-    invoke-virtual {v0}, Ljava/nio/ByteBuffer;->hasRemaining()Z
+    invoke-virtual {v0}, Ljava/nio/Buffer;->hasRemaining()Z
 
     move-result v0
 
@@ -2611,13 +2611,13 @@
 
     iget-object v1, p0, Lcom/android/framework/protobuf/nano/CodedOutputByteBufferNano;->buffer:Ljava/nio/ByteBuffer;
 
-    invoke-virtual {v1}, Ljava/nio/ByteBuffer;->position()I
+    invoke-virtual {v1}, Ljava/nio/Buffer;->position()I
 
     move-result v1
 
     iget-object v2, p0, Lcom/android/framework/protobuf/nano/CodedOutputByteBufferNano;->buffer:Ljava/nio/ByteBuffer;
 
-    invoke-virtual {v2}, Ljava/nio/ByteBuffer;->limit()I
+    invoke-virtual {v2}, Ljava/nio/Buffer;->limit()I
 
     move-result v2
 
@@ -2690,7 +2690,7 @@
     .line 1004
     iget-object v0, p0, Lcom/android/framework/protobuf/nano/CodedOutputByteBufferNano;->buffer:Ljava/nio/ByteBuffer;
 
-    invoke-virtual {v0}, Ljava/nio/ByteBuffer;->remaining()I
+    invoke-virtual {v0}, Ljava/nio/Buffer;->remaining()I
 
     move-result v0
 
@@ -2710,13 +2710,13 @@
 
     iget-object v1, p0, Lcom/android/framework/protobuf/nano/CodedOutputByteBufferNano;->buffer:Ljava/nio/ByteBuffer;
 
-    invoke-virtual {v1}, Ljava/nio/ByteBuffer;->position()I
+    invoke-virtual {v1}, Ljava/nio/Buffer;->position()I
 
     move-result v1
 
     iget-object v2, p0, Lcom/android/framework/protobuf/nano/CodedOutputByteBufferNano;->buffer:Ljava/nio/ByteBuffer;
 
-    invoke-virtual {v2}, Ljava/nio/ByteBuffer;->limit()I
+    invoke-virtual {v2}, Ljava/nio/Buffer;->limit()I
 
     move-result v2
 
@@ -2738,7 +2738,7 @@
     .line 1081
     iget-object v0, p0, Lcom/android/framework/protobuf/nano/CodedOutputByteBufferNano;->buffer:Ljava/nio/ByteBuffer;
 
-    invoke-virtual {v0}, Ljava/nio/ByteBuffer;->remaining()I
+    invoke-virtual {v0}, Ljava/nio/Buffer;->remaining()I
 
     move-result v0
 
@@ -2751,13 +2751,13 @@
 
     iget-object v1, p0, Lcom/android/framework/protobuf/nano/CodedOutputByteBufferNano;->buffer:Ljava/nio/ByteBuffer;
 
-    invoke-virtual {v1}, Ljava/nio/ByteBuffer;->position()I
+    invoke-virtual {v1}, Ljava/nio/Buffer;->position()I
 
     move-result v1
 
     iget-object v2, p0, Lcom/android/framework/protobuf/nano/CodedOutputByteBufferNano;->buffer:Ljava/nio/ByteBuffer;
 
-    invoke-virtual {v2}, Ljava/nio/ByteBuffer;->limit()I
+    invoke-virtual {v2}, Ljava/nio/Buffer;->limit()I
 
     move-result v2
 
@@ -2788,7 +2788,7 @@
     .line 1091
     iget-object v0, p0, Lcom/android/framework/protobuf/nano/CodedOutputByteBufferNano;->buffer:Ljava/nio/ByteBuffer;
 
-    invoke-virtual {v0}, Ljava/nio/ByteBuffer;->remaining()I
+    invoke-virtual {v0}, Ljava/nio/Buffer;->remaining()I
 
     move-result v0
 
@@ -2801,13 +2801,13 @@
 
     iget-object v1, p0, Lcom/android/framework/protobuf/nano/CodedOutputByteBufferNano;->buffer:Ljava/nio/ByteBuffer;
 
-    invoke-virtual {v1}, Ljava/nio/ByteBuffer;->position()I
+    invoke-virtual {v1}, Ljava/nio/Buffer;->position()I
 
     move-result v1
 
     iget-object v2, p0, Lcom/android/framework/protobuf/nano/CodedOutputByteBufferNano;->buffer:Ljava/nio/ByteBuffer;
 
-    invoke-virtual {v2}, Ljava/nio/ByteBuffer;->limit()I
+    invoke-virtual {v2}, Ljava/nio/Buffer;->limit()I
 
     move-result v2
 
@@ -3139,7 +3139,7 @@
     .line 312
     iget-object v6, p0, Lcom/android/framework/protobuf/nano/CodedOutputByteBufferNano;->buffer:Ljava/nio/ByteBuffer;
 
-    invoke-virtual {v6}, Ljava/nio/ByteBuffer;->position()I
+    invoke-virtual {v6}, Ljava/nio/Buffer;->position()I
 
     move-result v4
 
@@ -3147,7 +3147,7 @@
     .local v4, "oldPosition":I
     iget-object v6, p0, Lcom/android/framework/protobuf/nano/CodedOutputByteBufferNano;->buffer:Ljava/nio/ByteBuffer;
 
-    invoke-virtual {v6}, Ljava/nio/ByteBuffer;->remaining()I
+    invoke-virtual {v6}, Ljava/nio/Buffer;->remaining()I
 
     move-result v6
 
@@ -3160,7 +3160,7 @@
 
     iget-object v8, p0, Lcom/android/framework/protobuf/nano/CodedOutputByteBufferNano;->buffer:Ljava/nio/ByteBuffer;
 
-    invoke-virtual {v8}, Ljava/nio/ByteBuffer;->limit()I
+    invoke-virtual {v8}, Ljava/nio/Buffer;->limit()I
 
     move-result v8
 
@@ -3183,14 +3183,14 @@
 
     iget-object v6, p0, Lcom/android/framework/protobuf/nano/CodedOutputByteBufferNano;->buffer:Ljava/nio/ByteBuffer;
 
-    invoke-virtual {v6}, Ljava/nio/ByteBuffer;->position()I
+    invoke-virtual {v6}, Ljava/nio/Buffer;->position()I
 
     move-result v6
 
     .line 331
     iget-object v7, p0, Lcom/android/framework/protobuf/nano/CodedOutputByteBufferNano;->buffer:Ljava/nio/ByteBuffer;
 
-    invoke-virtual {v7}, Ljava/nio/ByteBuffer;->limit()I
+    invoke-virtual {v7}, Ljava/nio/Buffer;->limit()I
 
     move-result v7
 
@@ -3199,7 +3199,7 @@
 
     .line 332
     .local v5, "outOfSpaceException":Lcom/android/framework/protobuf/nano/CodedOutputByteBufferNano$OutOfSpaceException;
-    invoke-virtual {v5, v0}, Lcom/android/framework/protobuf/nano/CodedOutputByteBufferNano$OutOfSpaceException;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
+    invoke-virtual {v5, v0}, Ljava/lang/Throwable;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
 
     .line 333
     throw v5
@@ -3216,7 +3216,7 @@
 
     add-int v7, v4, v2
 
-    invoke-virtual {v6, v7}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
+    invoke-virtual {v6, v7}, Ljava/nio/Buffer;->position(I)Ljava/nio/Buffer;
 
     .line 320
     iget-object v6, p0, Lcom/android/framework/protobuf/nano/CodedOutputByteBufferNano;->buffer:Ljava/nio/ByteBuffer;
@@ -3226,7 +3226,7 @@
     .line 321
     iget-object v6, p0, Lcom/android/framework/protobuf/nano/CodedOutputByteBufferNano;->buffer:Ljava/nio/ByteBuffer;
 
-    invoke-virtual {v6}, Ljava/nio/ByteBuffer;->position()I
+    invoke-virtual {v6}, Ljava/nio/Buffer;->position()I
 
     move-result v3
 
@@ -3234,7 +3234,7 @@
     .local v3, "newPosition":I
     iget-object v6, p0, Lcom/android/framework/protobuf/nano/CodedOutputByteBufferNano;->buffer:Ljava/nio/ByteBuffer;
 
-    invoke-virtual {v6, v4}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
+    invoke-virtual {v6, v4}, Ljava/nio/Buffer;->position(I)Ljava/nio/Buffer;
 
     .line 323
     sub-int v6, v3, v4
@@ -3246,7 +3246,7 @@
     .line 324
     iget-object v6, p0, Lcom/android/framework/protobuf/nano/CodedOutputByteBufferNano;->buffer:Ljava/nio/ByteBuffer;
 
-    invoke-virtual {v6, v3}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
+    invoke-virtual {v6, v3}, Ljava/nio/Buffer;->position(I)Ljava/nio/Buffer;
 
     .line 304
     .end local v3    # "newPosition":I

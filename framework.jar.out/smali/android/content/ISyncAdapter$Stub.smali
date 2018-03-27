@@ -26,9 +26,9 @@
 # static fields
 .field private static final DESCRIPTOR:Ljava/lang/String; = "android.content.ISyncAdapter"
 
-.field static final TRANSACTION_cancelSync_1:I = 0x2
+.field static final TRANSACTION_cancelSync:I = 0x2
 
-.field static final TRANSACTION_initialize_2:I = 0x3
+.field static final TRANSACTION_initialize:I = 0x3
 
 .field static final TRANSACTION_startSync_0:I = 0x1
 

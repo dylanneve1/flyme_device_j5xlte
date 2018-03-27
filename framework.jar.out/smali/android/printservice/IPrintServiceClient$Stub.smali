@@ -36,17 +36,17 @@
 
 .field static final TRANSACTION_onPrintersRemoved:I = 0xa
 
-.field static final TRANSACTION_setPrintJobState_2:I = 0x3
+.field static final TRANSACTION_setPrintJobState:I = 0x3
 
-.field static final TRANSACTION_setPrintJobTag_3:I = 0x4
+.field static final TRANSACTION_setPrintJobTag:I = 0x4
 
 .field static final TRANSACTION_setProgress:I = 0x6
 
+.field static final TRANSACTION_setStatus:I = 0x7
+
 .field static final TRANSACTION_setStatusRes:I = 0x8
 
-.field static final TRANSACTION_setStatus_6:I = 0x7
-
-.field static final TRANSACTION_writePrintJobData_4:I = 0x5
+.field static final TRANSACTION_writePrintJobData:I = 0x5
 
 
 # direct methods

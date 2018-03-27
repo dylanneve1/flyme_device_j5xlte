@@ -71,7 +71,7 @@
     :cond_1
     const-string/jumbo v1, "media_item"
 
-    invoke-virtual {p2, v1}, Landroid/os/Bundle;->containsKey(Ljava/lang/String;)Z
+    invoke-virtual {p2, v1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -104,7 +104,9 @@
     :cond_2
     iget-object v1, p0, Landroid/media/browse/MediaBrowser$3;->val$cb:Landroid/media/browse/MediaBrowser$ItemCallback;
 
-    check-cast v0, Landroid/media/browse/MediaBrowser$MediaItem;
+    nop
+
+    nop
 
     .end local v0    # "item":Landroid/os/Parcelable;
     invoke-virtual {v1, v0}, Landroid/media/browse/MediaBrowser$ItemCallback;->onItemLoaded(Landroid/media/browse/MediaBrowser$MediaItem;)V

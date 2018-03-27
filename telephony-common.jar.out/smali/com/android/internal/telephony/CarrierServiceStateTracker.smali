@@ -201,7 +201,7 @@
 
     const/4 v2, 0x0
 
-    invoke-virtual {p0, v1, v2}, Lcom/android/internal/telephony/CarrierServiceStateTracker;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
+    invoke-virtual {p0, v1, v2}, Landroid/os/Handler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
 
     move-result-object v0
 
@@ -218,7 +218,7 @@
 
     int-to-long v2, v1
 
-    invoke-virtual {p0, v0, v2, v3}, Lcom/android/internal/telephony/CarrierServiceStateTracker;->sendMessageDelayed(Landroid/os/Message;J)Z
+    invoke-virtual {p0, v0, v2, v3}, Landroid/os/Handler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
     goto :goto_0
 .end method
@@ -484,7 +484,7 @@
 
     .line 162
     .local v5, "settingsIntent":Landroid/app/PendingIntent;
-    const v7, 0x1040143
+    const v7, 0x1040145
 
     invoke-virtual {v0, v7}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -492,7 +492,7 @@
 
     .line 164
     .local v6, "title":Ljava/lang/CharSequence;
-    const v7, 0x1040144
+    const v7, 0x1040146
 
     invoke-virtual {v0, v7}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 

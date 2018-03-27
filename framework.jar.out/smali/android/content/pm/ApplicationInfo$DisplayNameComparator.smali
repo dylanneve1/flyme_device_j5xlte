@@ -76,7 +76,7 @@
     if-nez v0, :cond_0
 
     .line 881
-    iget-object v0, p1, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
+    iget-object v0, p1, Landroid/content/pm/PackageItemInfo;->packageName:Ljava/lang/String;
 
     .line 883
     :cond_0
@@ -91,7 +91,7 @@
     if-nez v1, :cond_1
 
     .line 885
-    iget-object v1, p2, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
+    iget-object v1, p2, Landroid/content/pm/PackageItemInfo;->packageName:Ljava/lang/String;
 
     .line 888
     :cond_1

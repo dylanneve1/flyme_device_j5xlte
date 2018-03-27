@@ -128,7 +128,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v3}, Ljava/util/LinkedList;->listIterator()Ljava/util/ListIterator;
+    invoke-virtual {v3}, Ljava/util/AbstractList;->listIterator()Ljava/util/ListIterator;
 
     move-result-object v2
 
@@ -231,7 +231,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v3}, Ljava/util/LinkedList;->listIterator()Ljava/util/ListIterator;
+    invoke-virtual {v3}, Ljava/util/AbstractList;->listIterator()Ljava/util/ListIterator;
 
     move-result-object v1
 

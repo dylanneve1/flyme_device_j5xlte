@@ -28,7 +28,7 @@
 
     .prologue
     .line 81
-    invoke-virtual {p0}, Landroid/filterfw/core/InputPort;->hasFrame()Z
+    invoke-virtual {p0}, Landroid/filterfw/core/FilterPort;->hasFrame()Z
 
     move-result v0
 
@@ -56,7 +56,7 @@
 
     iget-object v0, p0, Landroid/filterfw/core/InputPort;->mSourcePort:Landroid/filterfw/core/OutputPort;
 
-    invoke-virtual {v0}, Landroid/filterfw/core/OutputPort;->isOpen()Z
+    invoke-virtual {v0}, Landroid/filterfw/core/FilterPort;->isOpen()Z
 
     move-result v0
 
@@ -82,19 +82,19 @@
     const/4 v0, 0x0
 
     .line 73
-    invoke-virtual {p0}, Landroid/filterfw/core/InputPort;->isOpen()Z
+    invoke-virtual {p0}, Landroid/filterfw/core/FilterPort;->isOpen()Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    invoke-virtual {p0}, Landroid/filterfw/core/InputPort;->isBlocking()Z
+    invoke-virtual {p0}, Landroid/filterfw/core/FilterPort;->isBlocking()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    invoke-virtual {p0}, Landroid/filterfw/core/InputPort;->hasFrame()Z
+    invoke-virtual {p0}, Landroid/filterfw/core/FilterPort;->hasFrame()Z
 
     move-result v1
 
@@ -127,7 +127,7 @@
     :cond_0
     iget-object v0, p0, Landroid/filterfw/core/InputPort;->mSourcePort:Landroid/filterfw/core/OutputPort;
 
-    invoke-virtual {v0}, Landroid/filterfw/core/OutputPort;->getFilter()Landroid/filterfw/core/Filter;
+    invoke-virtual {v0}, Landroid/filterfw/core/FilterPort;->getFilter()Landroid/filterfw/core/Filter;
 
     move-result-object v0
 
@@ -145,7 +145,7 @@
 
     iget-object v0, p0, Landroid/filterfw/core/InputPort;->mSourcePort:Landroid/filterfw/core/OutputPort;
 
-    invoke-virtual {v0}, Landroid/filterfw/core/OutputPort;->getPortFormat()Landroid/filterfw/core/FrameFormat;
+    invoke-virtual {v0}, Landroid/filterfw/core/FilterPort;->getPortFormat()Landroid/filterfw/core/FrameFormat;
 
     move-result-object v0
 
@@ -153,7 +153,7 @@
     return-object v0
 
     :cond_0
-    invoke-virtual {p0}, Landroid/filterfw/core/InputPort;->getPortFormat()Landroid/filterfw/core/FrameFormat;
+    invoke-virtual {p0}, Landroid/filterfw/core/FilterPort;->getPortFormat()Landroid/filterfw/core/FrameFormat;
 
     move-result-object v0
 
@@ -207,13 +207,13 @@
     const/4 v0, 0x1
 
     .line 77
-    invoke-virtual {p0}, Landroid/filterfw/core/InputPort;->hasFrame()Z
+    invoke-virtual {p0}, Landroid/filterfw/core/FilterPort;->hasFrame()Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    invoke-virtual {p0}, Landroid/filterfw/core/InputPort;->isBlocking()Z
+    invoke-virtual {p0}, Landroid/filterfw/core/FilterPort;->isBlocking()Z
 
     move-result v1
 
@@ -239,7 +239,7 @@
 
     iget-object v0, p0, Landroid/filterfw/core/InputPort;->mSourcePort:Landroid/filterfw/core/OutputPort;
 
-    invoke-virtual {v0}, Landroid/filterfw/core/OutputPort;->isOpen()Z
+    invoke-virtual {v0}, Landroid/filterfw/core/FilterPort;->isOpen()Z
 
     move-result v0
 

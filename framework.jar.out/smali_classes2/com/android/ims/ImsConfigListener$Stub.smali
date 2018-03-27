@@ -30,7 +30,7 @@
 
 .field static final TRANSACTION_onGetVideoQuality_2:I = 0x3
 
-.field static final TRANSACTION_onSetFeatureResponse_1:I = 0x2
+.field static final TRANSACTION_onSetFeatureResponse:I = 0x2
 
 .field static final TRANSACTION_onSetVideoQuality_3:I = 0x4
 

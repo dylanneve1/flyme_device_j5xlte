@@ -39,7 +39,7 @@
     iput p5, p0, Landroid/renderscript/Script$FieldID;->mSlot:I
 
     .line 122
-    iget-object v0, p0, Landroid/renderscript/Script$FieldID;->guard:Ldalvik/system/CloseGuard;
+    iget-object v0, p0, Landroid/renderscript/BaseObj;->guard:Ldalvik/system/CloseGuard;
 
     const-string/jumbo v1, "destroy"
 

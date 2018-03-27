@@ -42,7 +42,7 @@
     .line 1510
     iget-object v1, p0, Landroid/media/WebVttRenderingWidget$1;->this$0:Landroid/media/WebVttRenderingWidget;
 
-    invoke-virtual {v1}, Landroid/media/WebVttRenderingWidget;->getHeight()I
+    invoke-virtual {v1}, Landroid/view/View;->getHeight()I
 
     move-result v1
 

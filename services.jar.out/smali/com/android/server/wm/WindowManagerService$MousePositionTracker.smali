@@ -54,7 +54,7 @@
     .locals 0
 
     .prologue
-    .line 11502
+    .line 11487
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -76,7 +76,7 @@
     .param p1, "motionEvent"    # Landroid/view/MotionEvent;
 
     .prologue
-    .line 11517
+    .line 11502
     const/16 v0, 0x2002
 
     invoke-virtual {p1, v0}, Landroid/view/MotionEvent;->isFromSource(I)Z
@@ -85,7 +85,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 11518
+    .line 11503
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getRawX()F
 
     move-result v0
@@ -96,15 +96,15 @@
 
     invoke-virtual {p0, v0, v1}, Lcom/android/server/wm/WindowManagerService$MousePositionTracker;->updatePosition(FF)V
 
-    .line 11516
+    .line 11501
     :goto_0
     return-void
 
-    .line 11520
+    .line 11505
     :cond_0
     monitor-enter p0
 
-    .line 11521
+    .line 11506
     const/4 v0, 0x0
 
     :try_start_0
@@ -116,7 +116,7 @@
 
     goto :goto_0
 
-    .line 11520
+    .line 11505
     :catchall_0
     move-exception v0
 
@@ -131,29 +131,29 @@
     .param p2, "y"    # F
 
     .prologue
-    .line 11508
+    .line 11493
     monitor-enter p0
 
-    .line 11509
+    .line 11494
     const/4 v0, 0x1
 
     :try_start_0
     iput-boolean v0, p0, Lcom/android/server/wm/WindowManagerService$MousePositionTracker;->mLatestEventWasMouse:Z
 
-    .line 11510
+    .line 11495
     iput p1, p0, Lcom/android/server/wm/WindowManagerService$MousePositionTracker;->mLatestMouseX:F
 
-    .line 11511
+    .line 11496
     iput p2, p0, Lcom/android/server/wm/WindowManagerService$MousePositionTracker;->mLatestMouseY:F
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     monitor-exit p0
 
-    .line 11507
+    .line 11492
     return-void
 
-    .line 11508
+    .line 11493
     :catchall_0
     move-exception v0
 

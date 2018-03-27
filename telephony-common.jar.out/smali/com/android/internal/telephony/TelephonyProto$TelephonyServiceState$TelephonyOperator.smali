@@ -174,7 +174,7 @@
     .line 1548
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/internal/telephony/TelephonyProto$TelephonyServiceState$TelephonyOperator;->unknownFieldData:Lcom/android/framework/protobuf/nano/FieldArray;
+    iput-object v0, p0, Lcom/android/framework/protobuf/nano/ExtendableMessageNano;->unknownFieldData:Lcom/android/framework/protobuf/nano/FieldArray;
 
     .line 1549
     const/4 v0, -0x1

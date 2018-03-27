@@ -197,7 +197,7 @@
 
     .line 157
     .local v5, "keyCharacteristics":Landroid/security/keymaster/KeyCharacteristics;
-    invoke-virtual {p0}, Landroid/security/keystore/AndroidKeyStoreECDSASignatureSpi;->getKeyStore()Landroid/security/KeyStore;
+    invoke-virtual {p0}, Landroid/security/keystore/AndroidKeyStoreSignatureSpiBase;->getKeyStore()Landroid/security/KeyStore;
 
     move-result-object v0
 
@@ -224,7 +224,7 @@
     if-eq v6, v0, :cond_1
 
     .line 160
-    invoke-virtual {p0}, Landroid/security/keystore/AndroidKeyStoreECDSASignatureSpi;->getKeyStore()Landroid/security/KeyStore;
+    invoke-virtual {p0}, Landroid/security/keystore/AndroidKeyStoreSignatureSpiBase;->getKeyStore()Landroid/security/KeyStore;
 
     move-result-object v0
 

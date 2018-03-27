@@ -59,7 +59,7 @@
 
     .prologue
     .line 1571
-    iget v1, p0, Landroid/widget/RemoteViews$ViewGroupAction$1;->viewId:I
+    iget v1, p0, Landroid/widget/RemoteViews$Action;->viewId:I
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

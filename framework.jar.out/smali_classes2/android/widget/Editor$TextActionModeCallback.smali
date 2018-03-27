@@ -664,7 +664,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Landroid/widget/TextView;->hasTransientState()Z
+    invoke-virtual {v1}, Landroid/view/View;->hasTransientState()Z
 
     move-result v1
 
@@ -683,7 +683,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setHasTransientState(Z)V
+    invoke-virtual {v1, v2}, Landroid/view/View;->setHasTransientState(Z)V
 
     goto :goto_0
 
@@ -799,7 +799,7 @@
 
     move-object/from16 v0, p2
 
-    invoke-virtual {v0, v9}, Landroid/view/View;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v9}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result v9
 

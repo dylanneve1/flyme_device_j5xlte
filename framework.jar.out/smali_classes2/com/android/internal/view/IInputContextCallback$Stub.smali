@@ -32,9 +32,9 @@
 
 .field static final TRANSACTION_setExtractedText_3:I = 0x4
 
-.field static final TRANSACTION_setRequestUpdateCursorAnchorInfoResult_5:I = 0x6
+.field static final TRANSACTION_setRequestUpdateCursorAnchorInfoResult:I = 0x6
 
-.field static final TRANSACTION_setSelectedText_4:I = 0x5
+.field static final TRANSACTION_setSelectedText:I = 0x5
 
 .field static final TRANSACTION_setTextAfterCursor:I = 0x2
 

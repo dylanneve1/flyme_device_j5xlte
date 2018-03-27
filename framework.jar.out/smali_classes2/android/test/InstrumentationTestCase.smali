@@ -83,7 +83,9 @@
     const/4 v5, 0x0
 
     :try_start_0
-    check-cast v5, [Ljava/lang/Object;
+    nop
+
+    nop
 
     invoke-virtual {p1, p0, v5}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
@@ -110,7 +112,7 @@
     .local v3, "iterations":Landroid/os/Bundle;
     const-string/jumbo v5, "currentiterations"
 
-    invoke-virtual {v3, v5, v4}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
+    invoke-virtual {v3, v5, v4}, Landroid/os/BaseBundle;->putInt(Ljava/lang/String;I)V
 
     .line 234
     invoke-virtual {p0}, Landroid/test/InstrumentationTestCase;->getInstrumentation()Landroid/app/Instrumentation;
@@ -144,7 +146,7 @@
     .line 226
     .local v0, "e":Ljava/lang/IllegalAccessException;
     :try_start_1
-    invoke-virtual {v0}, Ljava/lang/IllegalAccessException;->fillInStackTrace()Ljava/lang/Throwable;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->fillInStackTrace()Ljava/lang/Throwable;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -167,7 +169,7 @@
     .restart local v3    # "iterations":Landroid/os/Bundle;
     const-string/jumbo v5, "currentiterations"
 
-    invoke-virtual {v3, v5, v4}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
+    invoke-virtual {v3, v5, v4}, Landroid/os/BaseBundle;->putInt(Ljava/lang/String;I)V
 
     .line 234
     invoke-virtual {p0}, Landroid/test/InstrumentationTestCase;->getInstrumentation()Landroid/app/Instrumentation;
@@ -188,7 +190,7 @@
     .line 223
     .local v1, "e":Ljava/lang/reflect/InvocationTargetException;
     :try_start_2
-    invoke-virtual {v1}, Ljava/lang/reflect/InvocationTargetException;->fillInStackTrace()Ljava/lang/Throwable;
+    invoke-virtual {v1}, Ljava/lang/Throwable;->fillInStackTrace()Ljava/lang/Throwable;
 
     .line 224
     invoke-virtual {v1}, Ljava/lang/reflect/InvocationTargetException;->getTargetException()Ljava/lang/Throwable;
@@ -213,7 +215,7 @@
     .restart local v3    # "iterations":Landroid/os/Bundle;
     const-string/jumbo v5, "currentiterations"
 
-    invoke-virtual {v3, v5, v4}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
+    invoke-virtual {v3, v5, v4}, Landroid/os/BaseBundle;->putInt(Ljava/lang/String;I)V
 
     .line 234
     invoke-virtual {p0}, Landroid/test/InstrumentationTestCase;->getInstrumentation()Landroid/app/Instrumentation;
@@ -246,7 +248,7 @@
     .restart local v3    # "iterations":Landroid/os/Bundle;
     const-string/jumbo v6, "currentiterations"
 
-    invoke-virtual {v3, v6, v4}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
+    invoke-virtual {v3, v6, v4}, Landroid/os/BaseBundle;->putInt(Ljava/lang/String;I)V
 
     .line 234
     invoke-virtual {p0}, Landroid/test/InstrumentationTestCase;->getInstrumentation()Landroid/app/Instrumentation;
@@ -409,7 +411,7 @@
     const/4 v12, 0x0
 
     .line 161
-    invoke-virtual {p0}, Landroid/test/InstrumentationTestCase;->getName()Ljava/lang/String;
+    invoke-virtual {p0}, Ljunit/framework/TestCase;->getName()Ljava/lang/String;
 
     move-result-object v7
 
@@ -423,13 +425,15 @@
     .line 169
     .local v9, "method":Ljava/lang/reflect/Method;
     :try_start_0
-    invoke-virtual {p0}, Landroid/test/InstrumentationTestCase;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v1
 
     const/4 v0, 0x0
 
-    check-cast v0, [Ljava/lang/Class;
+    nop
+
+    nop
 
     invoke-virtual {v1, v7, v0}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
     :try_end_0
@@ -489,7 +493,7 @@
     .local v8, "isRepetitive":Z
     const-class v0, Landroid/test/FlakyTest;
 
-    invoke-virtual {v9, v0}, Ljava/lang/reflect/Method;->isAnnotationPresent(Ljava/lang/Class;)Z
+    invoke-virtual {v9, v0}, Ljava/lang/reflect/AbstractMethod;->isAnnotationPresent(Ljava/lang/Class;)Z
 
     move-result v0
 
@@ -513,7 +517,7 @@
     :goto_1
     const-class v0, Landroid/test/UiThreadTest;
 
-    invoke-virtual {v9, v0}, Ljava/lang/reflect/Method;->isAnnotationPresent(Ljava/lang/Class;)Z
+    invoke-virtual {v9, v0}, Ljava/lang/reflect/AbstractMethod;->isAnnotationPresent(Ljava/lang/Class;)Z
 
     move-result v0
 
@@ -609,7 +613,7 @@
     :cond_2
     const-class v0, Landroid/test/RepetitiveTest;
 
-    invoke-virtual {v9, v0}, Ljava/lang/reflect/Method;->isAnnotationPresent(Ljava/lang/Class;)Z
+    invoke-virtual {v9, v0}, Ljava/lang/reflect/AbstractMethod;->isAnnotationPresent(Ljava/lang/Class;)Z
 
     move-result v0
 

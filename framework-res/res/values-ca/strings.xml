@@ -123,6 +123,8 @@
     <string name="tethered_notification_no_device_message">Cap dispositiu connectat</string>
     <string name="tethered_notification_one_device_message">%1$s dispositiu connectat</string>
     <string name="tethered_notification_multi_device_message">%1$s dispositius connectats</string>
+    <string name="silent_mode_priority">Prioritat</string>
+    <string name="silent_mode_none">Cap</string>
     <string name="month_day_year" formatted="false">%-e %B de %Y</string>
     <string name="time_of_day" formatted="false">%-k:%M:%S</string>
     <string name="date_and_time" formatted="false">%-k:%M:%S %d/%m/%Y</string>

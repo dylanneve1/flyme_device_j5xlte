@@ -49,7 +49,7 @@
 
     .prologue
     .line 60
-    invoke-virtual {p0, p0}, Landroid/renderscript/RSTextureView;->setSurfaceTextureListener(Landroid/view/TextureView$SurfaceTextureListener;)V
+    invoke-virtual {p0, p0}, Landroid/view/TextureView;->setSurfaceTextureListener(Landroid/view/TextureView$SurfaceTextureListener;)V
 
     .line 59
     return-void
@@ -65,7 +65,7 @@
     .line 152
     new-instance v0, Landroid/renderscript/RenderScriptGL;
 
-    invoke-virtual {p0}, Landroid/renderscript/RSTextureView;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -85,11 +85,11 @@
 
     iget-object v2, p0, Landroid/renderscript/RSTextureView;->mSurfaceTexture:Landroid/graphics/SurfaceTexture;
 
-    invoke-virtual {p0}, Landroid/renderscript/RSTextureView;->getWidth()I
+    invoke-virtual {p0}, Landroid/view/View;->getWidth()I
 
     move-result v3
 
-    invoke-virtual {p0}, Landroid/renderscript/RSTextureView;->getHeight()I
+    invoke-virtual {p0}, Landroid/view/View;->getHeight()I
 
     move-result v4
 
@@ -107,7 +107,7 @@
     .line 166
     iget-object v0, p0, Landroid/renderscript/RSTextureView;->mRS:Landroid/renderscript/RenderScriptGL;
 
-    invoke-virtual {v0}, Landroid/renderscript/RenderScriptGL;->destroy()V
+    invoke-virtual {v0}, Landroid/renderscript/RenderScript;->destroy()V
 
     .line 167
     const/4 v0, 0x0
@@ -279,11 +279,11 @@
 
     iget-object v1, p0, Landroid/renderscript/RSTextureView;->mSurfaceTexture:Landroid/graphics/SurfaceTexture;
 
-    invoke-virtual {p0}, Landroid/renderscript/RSTextureView;->getWidth()I
+    invoke-virtual {p0}, Landroid/view/View;->getWidth()I
 
     move-result v2
 
-    invoke-virtual {p0}, Landroid/renderscript/RSTextureView;->getHeight()I
+    invoke-virtual {p0}, Landroid/view/View;->getHeight()I
 
     move-result v3
 

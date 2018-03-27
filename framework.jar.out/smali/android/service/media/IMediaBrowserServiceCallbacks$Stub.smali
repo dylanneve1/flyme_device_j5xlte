@@ -28,11 +28,11 @@
 
 .field static final TRANSACTION_onConnect:I = 0x1
 
-.field static final TRANSACTION_onConnectFailed_1:I = 0x2
+.field static final TRANSACTION_onConnectFailed:I = 0x2
+
+.field static final TRANSACTION_onLoadChildren:I = 0x3
 
 .field static final TRANSACTION_onLoadChildrenWithOptions:I = 0x4
-
-.field static final TRANSACTION_onLoadChildren_2:I = 0x3
 
 
 # direct methods
@@ -46,7 +46,7 @@
     .line 20
     const-string/jumbo v0, "android.service.media.IMediaBrowserServiceCallbacks"
 
-    invoke-virtual {p0, p0, v0}, Landroid/service/media/IMediaBrowserServiceCallbacks$Stub;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
+    invoke-virtual {p0, p0, v0}, Landroid/os/Binder;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
 
     .line 18
     return-void

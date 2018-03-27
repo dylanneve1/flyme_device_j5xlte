@@ -50,7 +50,7 @@
     .line 53
     const-string/jumbo v2, "in"
 
-    invoke-virtual {p0, v2}, Landroid/filterpacks/base/FrameBranch;->pullInput(Ljava/lang/String;)Landroid/filterfw/core/Frame;
+    invoke-virtual {p0, v2}, Landroid/filterfw/core/Filter;->pullInput(Ljava/lang/String;)Landroid/filterfw/core/Frame;
 
     move-result-object v1
 
@@ -83,7 +83,7 @@
 
     move-result-object v2
 
-    invoke-virtual {p0, v2, v1}, Landroid/filterpacks/base/FrameBranch;->pushOutput(Ljava/lang/String;Landroid/filterfw/core/Frame;)V
+    invoke-virtual {p0, v2, v1}, Landroid/filterfw/core/Filter;->pushOutput(Ljava/lang/String;Landroid/filterfw/core/Frame;)V
 
     .line 56
     add-int/lit8 v0, v0, 0x1
@@ -102,7 +102,7 @@
     .line 40
     const-string/jumbo v1, "in"
 
-    invoke-virtual {p0, v1}, Landroid/filterpacks/base/FrameBranch;->addInputPort(Ljava/lang/String;)V
+    invoke-virtual {p0, v1}, Landroid/filterfw/core/Filter;->addInputPort(Ljava/lang/String;)V
 
     .line 41
     const/4 v0, 0x0
@@ -134,7 +134,7 @@
 
     const-string/jumbo v2, "in"
 
-    invoke-virtual {p0, v1, v2}, Landroid/filterpacks/base/FrameBranch;->addOutputBasedOnInput(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p0, v1, v2}, Landroid/filterfw/core/Filter;->addOutputBasedOnInput(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 41
     add-int/lit8 v0, v0, 0x1

@@ -38,9 +38,9 @@
 
 .field static final TRANSACTION_removeAidGroupForService:I = 0x7
 
-.field static final TRANSACTION_setDefaultForNextTap_3:I = 0x4
+.field static final TRANSACTION_setDefaultForNextTap:I = 0x4
 
-.field static final TRANSACTION_setDefaultServiceForCategory_2:I = 0x3
+.field static final TRANSACTION_setDefaultServiceForCategory:I = 0x3
 
 .field static final TRANSACTION_setPreferredService:I = 0x9
 

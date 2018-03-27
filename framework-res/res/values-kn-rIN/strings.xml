@@ -113,6 +113,8 @@
     <string name="tethered_notification_no_device_message">ಯಾವುದೇ ಸಂಪರ್ಕಗೊಂಡ ಸಾಧನವಿಲ್ಲ</string>
     <string name="tethered_notification_one_device_message">%1$s ಸಂಪರ್ಕಗೊಳಿಸಿದ ಸಾಧನ</string>
     <string name="tethered_notification_multi_device_message">%1$s ಸಂಪರ್ಕಗೊಳಿಸಿದ ಸಾಧನಗಳು</string>
+    <string name="silent_mode_priority">ಆದ್ಯತೆ</string>
+    <string name="silent_mode_none">ಶೂನ್ಯ</string>
     <string name="byteShort">B</string>
     <string name="kilobyteShort">KB</string>
     <string name="megabyteShort">MB</string>

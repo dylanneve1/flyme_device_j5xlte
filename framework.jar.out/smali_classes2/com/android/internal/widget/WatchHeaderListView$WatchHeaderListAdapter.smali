@@ -155,7 +155,7 @@
 
     .prologue
     .line 164
-    invoke-virtual {p0}, Lcom/android/internal/widget/WatchHeaderListView$WatchHeaderListAdapter;->getHeadersCount()I
+    invoke-virtual {p0}, Landroid/widget/HeaderViewListAdapter;->getHeadersCount()I
 
     move-result v3
 
@@ -167,7 +167,7 @@
 
     .line 165
     .local v2, "numHeaders":I
-    invoke-virtual {p0}, Lcom/android/internal/widget/WatchHeaderListView$WatchHeaderListAdapter;->getWrappedAdapter()Landroid/widget/ListAdapter;
+    invoke-virtual {p0}, Landroid/widget/HeaderViewListAdapter;->getWrappedAdapter()Landroid/widget/ListAdapter;
 
     move-result-object v3
 
@@ -180,7 +180,7 @@
 
     .line 167
     .local v1, "adjPosition":I
-    invoke-virtual {p0}, Lcom/android/internal/widget/WatchHeaderListView$WatchHeaderListAdapter;->getWrappedAdapter()Landroid/widget/ListAdapter;
+    invoke-virtual {p0}, Landroid/widget/HeaderViewListAdapter;->getWrappedAdapter()Landroid/widget/ListAdapter;
 
     move-result-object v3
 
@@ -193,7 +193,7 @@
     if-ge v1, v0, :cond_0
 
     .line 169
-    invoke-virtual {p0}, Lcom/android/internal/widget/WatchHeaderListView$WatchHeaderListAdapter;->getWrappedAdapter()Landroid/widget/ListAdapter;
+    invoke-virtual {p0}, Landroid/widget/HeaderViewListAdapter;->getWrappedAdapter()Landroid/widget/ListAdapter;
 
     move-result-object v3
 
@@ -218,7 +218,7 @@
 
     .prologue
     .line 184
-    invoke-virtual {p0}, Lcom/android/internal/widget/WatchHeaderListView$WatchHeaderListAdapter;->getHeadersCount()I
+    invoke-virtual {p0}, Landroid/widget/HeaderViewListAdapter;->getHeadersCount()I
 
     move-result v3
 
@@ -230,7 +230,7 @@
 
     .line 185
     .local v2, "numHeaders":I
-    invoke-virtual {p0}, Lcom/android/internal/widget/WatchHeaderListView$WatchHeaderListAdapter;->getWrappedAdapter()Landroid/widget/ListAdapter;
+    invoke-virtual {p0}, Landroid/widget/HeaderViewListAdapter;->getWrappedAdapter()Landroid/widget/ListAdapter;
 
     move-result-object v3
 
@@ -243,7 +243,7 @@
 
     .line 187
     .local v1, "adjPosition":I
-    invoke-virtual {p0}, Lcom/android/internal/widget/WatchHeaderListView$WatchHeaderListAdapter;->getWrappedAdapter()Landroid/widget/ListAdapter;
+    invoke-virtual {p0}, Landroid/widget/HeaderViewListAdapter;->getWrappedAdapter()Landroid/widget/ListAdapter;
 
     move-result-object v3
 
@@ -256,7 +256,7 @@
     if-ge v1, v0, :cond_0
 
     .line 189
-    invoke-virtual {p0}, Lcom/android/internal/widget/WatchHeaderListView$WatchHeaderListAdapter;->getWrappedAdapter()Landroid/widget/ListAdapter;
+    invoke-virtual {p0}, Landroid/widget/HeaderViewListAdapter;->getWrappedAdapter()Landroid/widget/ListAdapter;
 
     move-result-object v3
 

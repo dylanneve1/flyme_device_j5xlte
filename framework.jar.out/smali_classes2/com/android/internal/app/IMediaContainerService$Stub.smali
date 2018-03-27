@@ -32,15 +32,15 @@
 
 .field static final TRANSACTION_clearDirectory:I = 0x7
 
-.field static final TRANSACTION_copyPackageToContainer:I = 0x1
+.field static final TRANSACTION_copyPackage:I = 0x2
 
-.field static final TRANSACTION_copyPackage_1:I = 0x2
+.field static final TRANSACTION_copyPackageToContainer:I = 0x1
 
 .field static final TRANSACTION_getFileSystemStats:I = 0x6
 
-.field static final TRANSACTION_getMinimalPackageInfo_2:I = 0x3
+.field static final TRANSACTION_getMinimalPackageInfo:I = 0x3
 
-.field static final TRANSACTION_getObbInfo_3:I = 0x4
+.field static final TRANSACTION_getObbInfo:I = 0x4
 
 
 # direct methods

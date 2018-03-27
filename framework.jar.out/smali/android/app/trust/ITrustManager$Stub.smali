@@ -26,7 +26,7 @@
 # static fields
 .field private static final DESCRIPTOR:Ljava/lang/String; = "android.app.trust.ITrustManager"
 
-.field static final TRANSACTION_isDeviceLocked_6:I = 0x7
+.field static final TRANSACTION_isDeviceLocked:I = 0x7
 
 .field static final TRANSACTION_isDeviceSecure:I = 0x8
 
@@ -40,7 +40,7 @@
 
 .field static final TRANSACTION_reportUnlockAttempt:I = 0x1
 
-.field static final TRANSACTION_setDeviceLockedForUser_5:I = 0x6
+.field static final TRANSACTION_setDeviceLockedForUser:I = 0x6
 
 .field static final TRANSACTION_unregisterTrustListener:I = 0x4
 

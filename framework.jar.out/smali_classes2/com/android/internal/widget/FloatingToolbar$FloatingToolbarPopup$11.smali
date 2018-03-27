@@ -99,7 +99,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v3, v0}, Landroid/widget/ImageButton;->setX(F)V
+    invoke-virtual {v3, v0}, Landroid/view/View;->setX(F)V
 
     .line 851
     return-void
@@ -114,7 +114,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v3}, Landroid/view/ViewGroup;->getWidth()I
+    invoke-virtual {v3}, Landroid/view/View;->getWidth()I
 
     move-result v3
 

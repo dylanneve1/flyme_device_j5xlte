@@ -67,7 +67,7 @@
     invoke-interface {v1, v0, v2}, Lcom/android/internal/util/DumpUtils$Dump;->dump(Ljava/io/PrintWriter;Ljava/lang/String;)V
 
     .line 46
-    invoke-virtual {v0}, Ljava/io/PrintWriter;->close()V
+    invoke-virtual {v0}, Lcom/android/internal/util/FastPrintWriter;->close()V
 
     .line 43
     return-void

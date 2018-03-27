@@ -155,7 +155,9 @@
     move-object v1, p1
 
     .line 153
-    check-cast v1, Landroid/net/wifi/nan/SubscribeData;
+    nop
+
+    nop
 
     .line 155
     .local v1, "lhs":Landroid/net/wifi/nan/SubscribeData;

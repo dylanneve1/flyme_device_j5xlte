@@ -68,7 +68,7 @@
 
     iget-object v1, p0, Landroid/transition/ChangeBounds$10;->val$drawable:Landroid/graphics/drawable/BitmapDrawable;
 
-    invoke-virtual {v0, v1}, Landroid/view/ViewGroupOverlay;->remove(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {v0, v1}, Landroid/view/ViewOverlay;->remove(Landroid/graphics/drawable/Drawable;)V
 
     .line 460
     iget-object v0, p0, Landroid/transition/ChangeBounds$10;->val$view:Landroid/view/View;

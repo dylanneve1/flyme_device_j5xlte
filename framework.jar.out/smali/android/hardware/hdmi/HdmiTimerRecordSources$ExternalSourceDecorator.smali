@@ -86,7 +86,7 @@
     invoke-virtual {v0, v2, p1, v1}, Landroid/hardware/hdmi/HdmiRecordSources$RecordSource;->toByteArray(Z[BI)I
 
     .line 429
-    invoke-virtual {p0, v2}, Landroid/hardware/hdmi/HdmiTimerRecordSources$ExternalSourceDecorator;->getDataSize(Z)I
+    invoke-virtual {p0, v2}, Landroid/hardware/hdmi/HdmiRecordSources$RecordSource;->getDataSize(Z)I
 
     move-result v0
 

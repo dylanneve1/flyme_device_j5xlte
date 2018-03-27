@@ -30,7 +30,7 @@
 
 .field static final TRANSACTION_cmdStatus_4:I = 0x5
 
-.field static final TRANSACTION_getVersionCb:I = 0x1
+.field static final TRANSACTION_getVersionCb_0:I = 0x1
 
 .field static final TRANSACTION_listCapInfoReceived_7:I = 0x8
 
@@ -54,7 +54,7 @@
     .line 18
     const-string/jumbo v0, "com.android.ims.internal.uce.presence.IPresenceListener"
 
-    invoke-virtual {p0, p0, v0}, Lcom/android/ims/internal/uce/presence/IPresenceListener$Stub;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
+    invoke-virtual {p0, p0, v0}, Landroid/os/Binder;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
 
     .line 16
     return-void

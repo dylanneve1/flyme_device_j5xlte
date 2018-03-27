@@ -62,7 +62,7 @@
 
 .field static final TRANSACTION_getDefaultDialerPackage:I = 0x15
 
-.field static final TRANSACTION_getDefaultOutgoingPhoneAccount_1:I = 0x2
+.field static final TRANSACTION_getDefaultOutgoingPhoneAccount:I = 0x2
 
 .field static final TRANSACTION_getDefaultPhoneApp:I = 0x14
 
@@ -80,7 +80,7 @@
 
 .field static final TRANSACTION_getSystemDialerPackage:I = 0x16
 
-.field static final TRANSACTION_getUserSelectedOutgoingPhoneAccount_2:I = 0x3
+.field static final TRANSACTION_getUserSelectedOutgoingPhoneAccount:I = 0x3
 
 .field static final TRANSACTION_getVoiceMailNumber:I = 0x12
 
@@ -102,11 +102,11 @@
 
 .field static final TRANSACTION_setDefaultDialer:I = 0x29
 
-.field static final TRANSACTION_setUserSelectedOutgoingPhoneAccount_3:I = 0x4
+.field static final TRANSACTION_setUserSelectedOutgoingPhoneAccount:I = 0x4
 
-.field static final TRANSACTION_showInCallScreen_0:I = 0x1
+.field static final TRANSACTION_showInCallScreen:I = 0x1
 
-.field static final TRANSACTION_silenceRinger_23:I = 0x18
+.field static final TRANSACTION_silenceRinger:I = 0x18
 
 .field static final TRANSACTION_unregisterPhoneAccount:I = 0xf
 

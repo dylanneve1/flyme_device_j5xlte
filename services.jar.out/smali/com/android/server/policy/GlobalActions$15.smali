@@ -30,14 +30,14 @@
     .param p5, "val$user"    # Landroid/content/pm/UserInfo;
 
     .prologue
-    .line 755
+    .line 760
     iput-object p1, p0, Lcom/android/server/policy/GlobalActions$15;->this$0:Lcom/android/server/policy/GlobalActions;
 
     iput-object p5, p0, Lcom/android/server/policy/GlobalActions$15;->val$user:Landroid/content/pm/UserInfo;
 
     invoke-direct {p0, p2, p3, p4}, Lcom/android/server/policy/GlobalActions$SinglePressAction;-><init>(ILandroid/graphics/drawable/Drawable;Ljava/lang/CharSequence;)V
 
-    .line 757
+    .line 762
     return-void
 .end method
 
@@ -47,7 +47,7 @@
     .locals 4
 
     .prologue
-    .line 760
+    .line 765
     :try_start_0
     invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
 
@@ -61,15 +61,15 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 758
+    .line 763
     :goto_0
     return-void
 
-    .line 761
+    .line 766
     :catch_0
     move-exception v0
 
-    .line 762
+    .line 767
     .local v0, "re":Landroid/os/RemoteException;
     const-string/jumbo v1, "GlobalActions"
 
@@ -100,7 +100,7 @@
     .locals 1
 
     .prologue
-    .line 771
+    .line 776
     const/4 v0, 0x0
 
     return v0
@@ -110,7 +110,7 @@
     .locals 1
 
     .prologue
-    .line 767
+    .line 772
     const/4 v0, 0x1
 
     return v0

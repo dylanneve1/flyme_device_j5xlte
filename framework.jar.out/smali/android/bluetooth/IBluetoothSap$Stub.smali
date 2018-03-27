@@ -34,7 +34,7 @@
 
 .field static final TRANSACTION_getConnectedDevices:I = 0x6
 
-.field static final TRANSACTION_getConnectionState_7:I = 0x8
+.field static final TRANSACTION_getConnectionState:I = 0x8
 
 .field static final TRANSACTION_getDevicesMatchingConnectionStates:I = 0x7
 
@@ -44,7 +44,7 @@
 
 .field static final TRANSACTION_isConnected:I = 0x5
 
-.field static final TRANSACTION_setPriority_8:I = 0x9
+.field static final TRANSACTION_setPriority:I = 0x9
 
 
 # direct methods

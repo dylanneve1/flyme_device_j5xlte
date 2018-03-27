@@ -24,12 +24,12 @@
     .param p1, "aCount"    # I
 
     .prologue
-    .line 3855
+    .line 3840
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3856
+    .line 3841
     iput p1, p0, Landroid/app/ActivityThread$ProviderAcquiringCount;->acquiringCount:I
 
-    .line 3855
+    .line 3840
     return-void
 .end method

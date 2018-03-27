@@ -1860,6 +1860,15 @@
     throw v1
 .end method
 
+.method public setCursorVisibility(Z)V
+    .locals 0
+    .param p1, "visible"    # Z
+
+    .prologue
+    .line 1013
+    return-void
+.end method
+
 .method public setCustomPointerIcon(Landroid/view/PointerIcon;)V
     .locals 2
     .param p1, "icon"    # Landroid/view/PointerIcon;

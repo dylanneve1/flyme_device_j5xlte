@@ -67,7 +67,7 @@
 
     .line 58
     .local v0, "builder":Landroid/text/SpannableStringBuilder;
-    invoke-virtual {p0}, Lcom/google/android/util/SmileyParser;->getPartCount()I
+    invoke-virtual {p0}, Lcom/google/android/util/AbstractMessageParser;->getPartCount()I
 
     move-result v8
 
@@ -80,7 +80,7 @@
 
     .line 63
     :cond_0
-    invoke-virtual {p0, v9}, Lcom/google/android/util/SmileyParser;->getPart(I)Lcom/google/android/util/AbstractMessageParser$Part;
+    invoke-virtual {p0, v9}, Lcom/google/android/util/AbstractMessageParser;->getPart(I)Lcom/google/android/util/AbstractMessageParser$Part;
 
     move-result-object v3
 

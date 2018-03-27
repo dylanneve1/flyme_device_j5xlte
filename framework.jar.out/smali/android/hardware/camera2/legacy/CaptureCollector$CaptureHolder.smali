@@ -217,7 +217,9 @@
 
     if-eqz v1, :cond_0
 
-    check-cast p1, Landroid/hardware/camera2/legacy/CaptureCollector$CaptureHolder;
+    nop
+
+    nop
 
     .end local p1    # "o":Ljava/lang/Object;
     invoke-virtual {p0, p1}, Landroid/hardware/camera2/legacy/CaptureCollector$CaptureHolder;->compareTo(Landroid/hardware/camera2/legacy/CaptureCollector$CaptureHolder;)I

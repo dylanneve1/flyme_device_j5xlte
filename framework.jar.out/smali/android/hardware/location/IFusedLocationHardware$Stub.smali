@@ -42,7 +42,7 @@
 
 .field static final TRANSACTION_startBatching_3:I = 0x4
 
-.field static final TRANSACTION_stopBatching_4:I = 0x5
+.field static final TRANSACTION_stopBatching:I = 0x5
 
 .field static final TRANSACTION_supportsDeviceContextInjection_9:I = 0xa
 

@@ -34,7 +34,7 @@
 
 .field static final TRANSACTION_isDone:I = 0x3
 
-.field static final TRANSACTION_nextDexoptCommand_5:I = 0x6
+.field static final TRANSACTION_nextDexoptCommand:I = 0x6
 
 .field static final TRANSACTION_prepare_0:I = 0x1
 

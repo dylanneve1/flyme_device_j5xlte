@@ -125,7 +125,7 @@
     .local v1, "digitsText":Landroid/text/Editable;
     iget-object v4, p0, Landroid/widget/DialerFilter;->mLetters:Landroid/widget/EditText;
 
-    invoke-virtual {v4}, Landroid/widget/EditText;->getKeyListener()Landroid/text/method/KeyListener;
+    invoke-virtual {v4}, Landroid/widget/TextView;->getKeyListener()Landroid/text/method/KeyListener;
 
     move-result-object v2
 
@@ -133,7 +133,7 @@
     .local v2, "lettersInput":Landroid/text/method/KeyListener;
     iget-object v4, p0, Landroid/widget/DialerFilter;->mDigits:Landroid/widget/EditText;
 
-    invoke-virtual {v4}, Landroid/widget/EditText;->getKeyListener()Landroid/text/method/KeyListener;
+    invoke-virtual {v4}, Landroid/widget/TextView;->getKeyListener()Landroid/text/method/KeyListener;
 
     move-result-object v0
 
@@ -155,12 +155,12 @@
     :goto_0
     iget-object v4, p0, Landroid/widget/DialerFilter;->mLetters:Landroid/widget/EditText;
 
-    invoke-virtual {v4, v2}, Landroid/widget/EditText;->setKeyListener(Landroid/text/method/KeyListener;)V
+    invoke-virtual {v4, v2}, Landroid/widget/TextView;->setKeyListener(Landroid/text/method/KeyListener;)V
 
     .line 281
     iget-object v4, p0, Landroid/widget/DialerFilter;->mLetters:Landroid/widget/EditText;
 
-    invoke-virtual {v4, v3}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v4, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 282
     iget-object v4, p0, Landroid/widget/DialerFilter;->mLetters:Landroid/widget/EditText;
@@ -179,12 +179,12 @@
     .line 285
     iget-object v4, p0, Landroid/widget/DialerFilter;->mDigits:Landroid/widget/EditText;
 
-    invoke-virtual {v4, v0}, Landroid/widget/EditText;->setKeyListener(Landroid/text/method/KeyListener;)V
+    invoke-virtual {v4, v0}, Landroid/widget/TextView;->setKeyListener(Landroid/text/method/KeyListener;)V
 
     .line 286
     iget-object v4, p0, Landroid/widget/DialerFilter;->mDigits:Landroid/widget/EditText;
 
-    invoke-virtual {v4, v1}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v4, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 287
     iget-object v4, p0, Landroid/widget/DialerFilter;->mDigits:Landroid/widget/EditText;
@@ -205,14 +205,14 @@
 
     iget-object v5, p0, Landroid/widget/DialerFilter;->mInputFilters:[Landroid/text/InputFilter;
 
-    invoke-virtual {v4, v5}, Landroid/widget/EditText;->setFilters([Landroid/text/InputFilter;)V
+    invoke-virtual {v4, v5}, Landroid/widget/TextView;->setFilters([Landroid/text/InputFilter;)V
 
     .line 292
     iget-object v4, p0, Landroid/widget/DialerFilter;->mHint:Landroid/widget/EditText;
 
     iget-object v5, p0, Landroid/widget/DialerFilter;->mInputFilters:[Landroid/text/InputFilter;
 
-    invoke-virtual {v4, v5}, Landroid/widget/EditText;->setFilters([Landroid/text/InputFilter;)V
+    invoke-virtual {v4, v5}, Landroid/widget/TextView;->setFilters([Landroid/text/InputFilter;)V
 
     .line 266
     return-void
@@ -360,7 +360,7 @@
     .line 305
     iget-object v0, p0, Landroid/widget/DialerFilter;->mDigits:Landroid/widget/EditText;
 
-    invoke-virtual {v0}, Landroid/widget/EditText;->getVisibility()I
+    invoke-virtual {v0}, Landroid/view/View;->getVisibility()I
 
     move-result v0
 
@@ -416,7 +416,7 @@
     .line 297
     iget-object v0, p0, Landroid/widget/DialerFilter;->mLetters:Landroid/widget/EditText;
 
-    invoke-virtual {v0}, Landroid/widget/EditText;->getVisibility()I
+    invoke-virtual {v0}, Landroid/view/View;->getVisibility()I
 
     move-result v0
 
@@ -485,7 +485,7 @@
     .line 53
     const v0, 0x1020005
 
-    invoke-virtual {p0, v0}, Landroid/widget/DialerFilter;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -513,7 +513,7 @@
 
     iget-object v1, p0, Landroid/widget/DialerFilter;->mInputFilters:[Landroid/text/InputFilter;
 
-    invoke-virtual {v0, v1}, Landroid/widget/EditText;->setFilters([Landroid/text/InputFilter;)V
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setFilters([Landroid/text/InputFilter;)V
 
     .line 59
     iget-object v0, p0, Landroid/widget/DialerFilter;->mHint:Landroid/widget/EditText;
@@ -527,22 +527,22 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Landroid/widget/EditText;->setKeyListener(Landroid/text/method/KeyListener;)V
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setKeyListener(Landroid/text/method/KeyListener;)V
 
     .line 61
     iget-object v0, p0, Landroid/widget/DialerFilter;->mLetters:Landroid/widget/EditText;
 
-    invoke-virtual {v0, v3}, Landroid/widget/EditText;->setMovementMethod(Landroid/text/method/MovementMethod;)V
+    invoke-virtual {v0, v3}, Landroid/widget/TextView;->setMovementMethod(Landroid/text/method/MovementMethod;)V
 
     .line 62
     iget-object v0, p0, Landroid/widget/DialerFilter;->mLetters:Landroid/widget/EditText;
 
-    invoke-virtual {v0, v4}, Landroid/widget/EditText;->setFocusable(Z)V
+    invoke-virtual {v0, v4}, Landroid/view/View;->setFocusable(Z)V
 
     .line 65
     const v0, 0x102000c
 
-    invoke-virtual {p0, v0}, Landroid/widget/DialerFilter;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -570,7 +570,7 @@
 
     iget-object v1, p0, Landroid/widget/DialerFilter;->mInputFilters:[Landroid/text/InputFilter;
 
-    invoke-virtual {v0, v1}, Landroid/widget/EditText;->setFilters([Landroid/text/InputFilter;)V
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setFilters([Landroid/text/InputFilter;)V
 
     .line 71
     iget-object v0, p0, Landroid/widget/DialerFilter;->mPrimary:Landroid/widget/EditText;
@@ -584,22 +584,22 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Landroid/widget/EditText;->setKeyListener(Landroid/text/method/KeyListener;)V
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setKeyListener(Landroid/text/method/KeyListener;)V
 
     .line 73
     iget-object v0, p0, Landroid/widget/DialerFilter;->mDigits:Landroid/widget/EditText;
 
-    invoke-virtual {v0, v3}, Landroid/widget/EditText;->setMovementMethod(Landroid/text/method/MovementMethod;)V
+    invoke-virtual {v0, v3}, Landroid/widget/TextView;->setMovementMethod(Landroid/text/method/MovementMethod;)V
 
     .line 74
     iget-object v0, p0, Landroid/widget/DialerFilter;->mDigits:Landroid/widget/EditText;
 
-    invoke-virtual {v0, v4}, Landroid/widget/EditText;->setFocusable(Z)V
+    invoke-virtual {v0, v4}, Landroid/view/View;->setFocusable(Z)V
 
     .line 77
     const v0, 0x1020006
 
-    invoke-virtual {p0, v0}, Landroid/widget/DialerFilter;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -608,7 +608,7 @@
     iput-object v0, p0, Landroid/widget/DialerFilter;->mIcon:Landroid/widget/ImageView;
 
     .line 80
-    invoke-virtual {p0, v2}, Landroid/widget/DialerFilter;->setFocusable(Z)V
+    invoke-virtual {p0, v2}, Landroid/view/View;->setFocusable(Z)V
 
     .line 83
     iput-boolean v2, p0, Landroid/widget/DialerFilter;->mIsQwerty:Z
@@ -703,7 +703,7 @@
     :pswitch_0
     iget-object v3, p0, Landroid/widget/DialerFilter;->mDigits:Landroid/widget/EditText;
 
-    invoke-virtual {v3, p1, p2}, Landroid/widget/EditText;->onKeyDown(ILandroid/view/KeyEvent;)Z
+    invoke-virtual {v3, p1, p2}, Landroid/widget/TextView;->onKeyDown(ILandroid/view/KeyEvent;)Z
 
     move-result v1
 
@@ -711,7 +711,7 @@
     .local v1, "handled":Z
     iget-object v3, p0, Landroid/widget/DialerFilter;->mLetters:Landroid/widget/EditText;
 
-    invoke-virtual {v3, p1, p2}, Landroid/widget/EditText;->onKeyDown(ILandroid/view/KeyEvent;)Z
+    invoke-virtual {v3, p1, p2}, Landroid/widget/TextView;->onKeyDown(ILandroid/view/KeyEvent;)Z
 
     move-result v3
 
@@ -725,7 +725,7 @@
     :pswitch_1
     iget-object v3, p0, Landroid/widget/DialerFilter;->mLetters:Landroid/widget/EditText;
 
-    invoke-virtual {v3, p1, p2}, Landroid/widget/EditText;->onKeyDown(ILandroid/view/KeyEvent;)Z
+    invoke-virtual {v3, p1, p2}, Landroid/widget/TextView;->onKeyDown(ILandroid/view/KeyEvent;)Z
 
     move-result v1
 
@@ -786,7 +786,7 @@
     .line 133
     iget-object v3, p0, Landroid/widget/DialerFilter;->mLetters:Landroid/widget/EditText;
 
-    invoke-virtual {v3, p1, p2}, Landroid/widget/EditText;->onKeyDown(ILandroid/view/KeyEvent;)Z
+    invoke-virtual {v3, p1, p2}, Landroid/widget/TextView;->onKeyDown(ILandroid/view/KeyEvent;)Z
 
     .line 134
     invoke-virtual {p0, v5}, Landroid/widget/DialerFilter;->setMode(I)V
@@ -795,7 +795,7 @@
     :cond_1
     iget-object v3, p0, Landroid/widget/DialerFilter;->mDigits:Landroid/widget/EditText;
 
-    invoke-virtual {v3, p1, p2}, Landroid/widget/EditText;->onKeyDown(ILandroid/view/KeyEvent;)Z
+    invoke-virtual {v3, p1, p2}, Landroid/widget/TextView;->onKeyDown(ILandroid/view/KeyEvent;)Z
 
     move-result v1
 
@@ -807,7 +807,7 @@
     :pswitch_3
     iget-object v3, p0, Landroid/widget/DialerFilter;->mDigits:Landroid/widget/EditText;
 
-    invoke-virtual {v3, p1, p2}, Landroid/widget/EditText;->onKeyDown(ILandroid/view/KeyEvent;)Z
+    invoke-virtual {v3, p1, p2}, Landroid/widget/TextView;->onKeyDown(ILandroid/view/KeyEvent;)Z
 
     move-result v1
 
@@ -819,7 +819,7 @@
     :pswitch_4
     iget-object v3, p0, Landroid/widget/DialerFilter;->mLetters:Landroid/widget/EditText;
 
-    invoke-virtual {v3, p1, p2}, Landroid/widget/EditText;->onKeyDown(ILandroid/view/KeyEvent;)Z
+    invoke-virtual {v3, p1, p2}, Landroid/widget/TextView;->onKeyDown(ILandroid/view/KeyEvent;)Z
 
     move-result v1
 
@@ -831,7 +831,7 @@
     :pswitch_5
     iget-object v3, p0, Landroid/widget/DialerFilter;->mLetters:Landroid/widget/EditText;
 
-    invoke-virtual {v3, p1, p2}, Landroid/widget/EditText;->onKeyDown(ILandroid/view/KeyEvent;)Z
+    invoke-virtual {v3, p1, p2}, Landroid/widget/TextView;->onKeyDown(ILandroid/view/KeyEvent;)Z
 
     move-result v1
 
@@ -846,7 +846,7 @@
     .line 159
     iget-object v3, p0, Landroid/widget/DialerFilter;->mDigits:Landroid/widget/EditText;
 
-    invoke-virtual {v3, p1, p2}, Landroid/widget/EditText;->onKeyDown(ILandroid/view/KeyEvent;)Z
+    invoke-virtual {v3, p1, p2}, Landroid/widget/TextView;->onKeyDown(ILandroid/view/KeyEvent;)Z
 
     .line 160
     const/4 v1, 0x1
@@ -886,7 +886,7 @@
     .line 174
     iget-object v3, p0, Landroid/widget/DialerFilter;->mDigits:Landroid/widget/EditText;
 
-    invoke-virtual {v3, p1, p2}, Landroid/widget/EditText;->onKeyDown(ILandroid/view/KeyEvent;)Z
+    invoke-virtual {v3, p1, p2}, Landroid/widget/TextView;->onKeyDown(ILandroid/view/KeyEvent;)Z
 
     move-result v3
 
@@ -919,7 +919,7 @@
     :pswitch_6
     iget-object v3, p0, Landroid/widget/DialerFilter;->mDigits:Landroid/widget/EditText;
 
-    invoke-virtual {v3, p1, p2}, Landroid/widget/EditText;->onKeyDown(ILandroid/view/KeyEvent;)Z
+    invoke-virtual {v3, p1, p2}, Landroid/widget/TextView;->onKeyDown(ILandroid/view/KeyEvent;)Z
 
     move-result v1
 
@@ -931,7 +931,7 @@
     :pswitch_7
     iget-object v3, p0, Landroid/widget/DialerFilter;->mLetters:Landroid/widget/EditText;
 
-    invoke-virtual {v3, p1, p2}, Landroid/widget/EditText;->onKeyDown(ILandroid/view/KeyEvent;)Z
+    invoke-virtual {v3, p1, p2}, Landroid/widget/TextView;->onKeyDown(ILandroid/view/KeyEvent;)Z
 
     move-result v1
 
@@ -985,7 +985,7 @@
     .line 202
     iget-object v2, p0, Landroid/widget/DialerFilter;->mLetters:Landroid/widget/EditText;
 
-    invoke-virtual {v2, p1, p2}, Landroid/widget/EditText;->onKeyUp(ILandroid/view/KeyEvent;)Z
+    invoke-virtual {v2, p1, p2}, Landroid/widget/TextView;->onKeyUp(ILandroid/view/KeyEvent;)Z
 
     move-result v0
 
@@ -993,7 +993,7 @@
     .local v0, "a":Z
     iget-object v2, p0, Landroid/widget/DialerFilter;->mDigits:Landroid/widget/EditText;
 
-    invoke-virtual {v2, p1, p2}, Landroid/widget/EditText;->onKeyUp(ILandroid/view/KeyEvent;)Z
+    invoke-virtual {v2, p1, p2}, Landroid/widget/TextView;->onKeyUp(ILandroid/view/KeyEvent;)Z
 
     move-result v1
 
@@ -1078,7 +1078,9 @@
     move-object v0, v1
 
     .line 367
-    check-cast v0, Landroid/text/Spannable;
+    nop
+
+    nop
 
     .line 368
     .local v0, "span":Landroid/text/Spannable;
@@ -1138,7 +1140,9 @@
     move-object v0, v1
 
     .line 361
-    check-cast v0, Landroid/text/Spannable;
+    nop
+
+    nop
 
     .line 362
     .local v0, "span":Landroid/text/Spannable;
@@ -1192,12 +1196,12 @@
     .line 220
     iget-object v1, p0, Landroid/widget/DialerFilter;->mLetters:Landroid/widget/EditText;
 
-    invoke-virtual {v1, v2}, Landroid/widget/EditText;->setVisibility(I)V
+    invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
 
     .line 221
     iget-object v1, p0, Landroid/widget/DialerFilter;->mDigits:Landroid/widget/EditText;
 
-    invoke-virtual {v1, v2}, Landroid/widget/EditText;->setVisibility(I)V
+    invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
 
     goto :goto_0
 
@@ -1208,12 +1212,12 @@
     .line 226
     iget-object v1, p0, Landroid/widget/DialerFilter;->mLetters:Landroid/widget/EditText;
 
-    invoke-virtual {v1, v4}, Landroid/widget/EditText;->setVisibility(I)V
+    invoke-virtual {v1, v4}, Landroid/view/View;->setVisibility(I)V
 
     .line 227
     iget-object v1, p0, Landroid/widget/DialerFilter;->mDigits:Landroid/widget/EditText;
 
-    invoke-virtual {v1, v2}, Landroid/widget/EditText;->setVisibility(I)V
+    invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
 
     goto :goto_0
 
@@ -1224,12 +1228,12 @@
     .line 232
     iget-object v1, p0, Landroid/widget/DialerFilter;->mLetters:Landroid/widget/EditText;
 
-    invoke-virtual {v1, v2}, Landroid/widget/EditText;->setVisibility(I)V
+    invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
 
     .line 233
     iget-object v1, p0, Landroid/widget/DialerFilter;->mDigits:Landroid/widget/EditText;
 
-    invoke-virtual {v1, v4}, Landroid/widget/EditText;->setVisibility(I)V
+    invoke-virtual {v1, v4}, Landroid/view/View;->setVisibility(I)V
 
     goto :goto_0
 
@@ -1240,12 +1244,12 @@
     .line 238
     iget-object v1, p0, Landroid/widget/DialerFilter;->mLetters:Landroid/widget/EditText;
 
-    invoke-virtual {v1, v3}, Landroid/widget/EditText;->setVisibility(I)V
+    invoke-virtual {v1, v3}, Landroid/view/View;->setVisibility(I)V
 
     .line 239
     iget-object v1, p0, Landroid/widget/DialerFilter;->mDigits:Landroid/widget/EditText;
 
-    invoke-virtual {v1, v2}, Landroid/widget/EditText;->setVisibility(I)V
+    invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
 
     goto :goto_0
 
@@ -1256,12 +1260,12 @@
     .line 244
     iget-object v1, p0, Landroid/widget/DialerFilter;->mLetters:Landroid/widget/EditText;
 
-    invoke-virtual {v1, v2}, Landroid/widget/EditText;->setVisibility(I)V
+    invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
 
     .line 245
     iget-object v1, p0, Landroid/widget/DialerFilter;->mDigits:Landroid/widget/EditText;
 
-    invoke-virtual {v1, v3}, Landroid/widget/EditText;->setVisibility(I)V
+    invoke-virtual {v1, v3}, Landroid/view/View;->setVisibility(I)V
 
     goto :goto_0
 

@@ -147,7 +147,7 @@
     .line 151
     const/4 v1, 0x0
 
-    invoke-virtual {p1, v0, v1}, Landroid/hardware/soundtrigger/SoundTrigger$GenericRecognitionEvent;->writeToParcel(Landroid/os/Parcel;I)V
+    invoke-virtual {p1, v0, v1}, Landroid/hardware/soundtrigger/SoundTrigger$RecognitionEvent;->writeToParcel(Landroid/os/Parcel;I)V
 
     .line 156
     :goto_0

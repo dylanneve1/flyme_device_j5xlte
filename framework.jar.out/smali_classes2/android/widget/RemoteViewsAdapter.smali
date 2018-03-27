@@ -349,7 +349,7 @@
     .line 796
     iget-object v1, p0, Landroid/widget/RemoteViewsAdapter;->mWorkerThread:Landroid/os/HandlerThread;
 
-    invoke-virtual {v1}, Landroid/os/HandlerThread;->start()V
+    invoke-virtual {v1}, Ljava/lang/Thread;->start()V
 
     .line 797
     new-instance v1, Landroid/os/Handler;
@@ -392,7 +392,7 @@
     .line 802
     sget-object v1, Landroid/widget/RemoteViewsAdapter;->sCacheRemovalThread:Landroid/os/HandlerThread;
 
-    invoke-virtual {v1}, Landroid/os/HandlerThread;->start()V
+    invoke-virtual {v1}, Ljava/lang/Thread;->start()V
 
     .line 803
     new-instance v1, Landroid/os/Handler;
@@ -827,7 +827,7 @@
 
     move-result-object v7
 
-    invoke-virtual {v1}, Ljava/lang/RuntimeException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v8
 
@@ -863,7 +863,7 @@
 
     move-result-object v7
 
-    invoke-virtual {v0}, Landroid/os/RemoteException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v8
 
@@ -945,7 +945,7 @@
 
     move-result-object v2
 
-    invoke-virtual {p2}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+    invoke-virtual {p2}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v3
 
@@ -1201,7 +1201,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v10}, Ljava/lang/RuntimeException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v10}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v16
 
@@ -1255,7 +1255,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v9}, Landroid/os/RemoteException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v9}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v16
 
@@ -1859,7 +1859,9 @@
 
     move-object v0, p2
 
-    check-cast v0, Landroid/widget/RemoteViewsAdapter$RemoteViewsFrameLayout;
+    nop
+
+    nop
 
     move-object v6, v0
 
@@ -1889,7 +1891,9 @@
     .line 1107
     move-object v0, p2
 
-    check-cast v0, Landroid/widget/RemoteViewsAdapter$RemoteViewsFrameLayout;
+    nop
+
+    nop
 
     move-object v4, v0
 
@@ -1958,7 +1962,7 @@
     :try_start_2
     new-instance v4, Landroid/widget/RemoteViewsAdapter$RemoteViewsFrameLayout;
 
-    invoke-virtual {p3}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
+    invoke-virtual {p3}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v6
 

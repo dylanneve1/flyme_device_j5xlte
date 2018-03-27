@@ -144,7 +144,7 @@
 
     .prologue
     .line 135
-    invoke-virtual {p0}, Lcom/android/internal/app/LocalePickerWithRegion;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Landroid/app/Fragment;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v0
 
@@ -182,7 +182,7 @@
     iput-boolean p4, p0, Lcom/android/internal/app/LocalePickerWithRegion;->mTranslatedOnly:Z
 
     .line 108
-    invoke-virtual {p0, v5}, Lcom/android/internal/app/LocalePickerWithRegion;->setRetainInstance(Z)V
+    invoke-virtual {p0, v5}, Landroid/app/Fragment;->setRetainInstance(Z)V
 
     .line 110
     new-instance v1, Ljava/util/HashSet;
@@ -294,7 +294,7 @@
     invoke-super {p0, p1}, Landroid/app/ListFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 142
-    invoke-virtual {p0, v1}, Lcom/android/internal/app/LocalePickerWithRegion;->setHasOptionsMenu(Z)V
+    invoke-virtual {p0, v1}, Landroid/app/Fragment;->setHasOptionsMenu(Z)V
 
     .line 144
     iget-object v3, p0, Lcom/android/internal/app/LocalePickerWithRegion;->mLocaleList:Ljava/util/Set;
@@ -349,7 +349,7 @@
     .line 158
     iget-object v3, p0, Lcom/android/internal/app/LocalePickerWithRegion;->mAdapter:Lcom/android/internal/app/SuggestedLocaleAdapter;
 
-    invoke-virtual {p0, v3}, Lcom/android/internal/app/LocalePickerWithRegion;->setListAdapter(Landroid/widget/ListAdapter;)V
+    invoke-virtual {p0, v3}, Landroid/app/ListFragment;->setListAdapter(Landroid/widget/ListAdapter;)V
 
     .line 140
     return-void
@@ -397,7 +397,7 @@
     invoke-virtual {p2, v1, p1}, Landroid/view/MenuInflater;->inflate(ILandroid/view/Menu;)V
 
     .line 234
-    const v1, 0x102046e
+    const v1, 0x102046d
 
     invoke-interface {p1, v1}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
@@ -418,7 +418,7 @@
 
     const v2, 0x104065f
 
-    invoke-virtual {p0, v2}, Lcom/android/internal/app/LocalePickerWithRegion;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v2}, Landroid/app/Fragment;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v2
 
@@ -449,7 +449,7 @@
     .line 244
     iget-object v1, p0, Lcom/android/internal/app/LocalePickerWithRegion;->mSearchView:Landroid/widget/SearchView;
 
-    invoke-virtual {v1, v4}, Landroid/widget/SearchView;->setActivated(Z)V
+    invoke-virtual {v1, v4}, Landroid/view/View;->setActivated(Z)V
 
     .line 245
     iget-boolean v1, p0, Lcom/android/internal/app/LocalePickerWithRegion;->mPreviousSearchHadFocus:Z
@@ -459,7 +459,7 @@
     .line 246
     iget-object v1, p0, Lcom/android/internal/app/LocalePickerWithRegion;->mSearchView:Landroid/widget/SearchView;
 
-    invoke-virtual {v1}, Landroid/widget/SearchView;->requestFocus()Z
+    invoke-virtual {v1}, Landroid/view/View;->requestFocus()Z
 
     .line 248
     :cond_0
@@ -471,7 +471,7 @@
 
     .line 254
     :goto_0
-    invoke-virtual {p0}, Lcom/android/internal/app/LocalePickerWithRegion;->getListView()Landroid/widget/ListView;
+    invoke-virtual {p0}, Landroid/app/ListFragment;->getListView()Landroid/widget/ListView;
 
     move-result-object v1
 
@@ -479,7 +479,7 @@
 
     iget v3, p0, Lcom/android/internal/app/LocalePickerWithRegion;->mTopDistance:I
 
-    invoke-virtual {v1, v2, v3}, Landroid/widget/ListView;->setSelectionFromTop(II)V
+    invoke-virtual {v1, v2, v3}, Landroid/widget/AbsListView;->setSelectionFromTop(II)V
 
     .line 230
     .end local v0    # "searchMenuItem":Landroid/view/MenuItem;
@@ -507,7 +507,7 @@
     const/4 v5, 0x0
 
     .line 208
-    invoke-virtual {p0}, Lcom/android/internal/app/LocalePickerWithRegion;->getListAdapter()Landroid/widget/ListAdapter;
+    invoke-virtual {p0}, Landroid/app/ListFragment;->getListAdapter()Landroid/widget/ListAdapter;
 
     move-result-object v2
 
@@ -545,7 +545,7 @@
 
     .line 217
     :cond_1
-    invoke-virtual {p0}, Lcom/android/internal/app/LocalePickerWithRegion;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/app/Fragment;->getContext()Landroid/content/Context;
 
     move-result-object v2
 
@@ -563,7 +563,7 @@
     if-eqz v1, :cond_2
 
     .line 219
-    invoke-virtual {p0}, Lcom/android/internal/app/LocalePickerWithRegion;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Landroid/app/Fragment;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v2
 
@@ -580,7 +580,7 @@
     move-result-object v2
 
     .line 221
-    invoke-virtual {p0}, Lcom/android/internal/app/LocalePickerWithRegion;->getId()I
+    invoke-virtual {p0}, Landroid/app/Fragment;->getId()I
 
     move-result v3
 
@@ -627,7 +627,7 @@
 
     .line 166
     :pswitch_0
-    invoke-virtual {p0}, Lcom/android/internal/app/LocalePickerWithRegion;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Landroid/app/Fragment;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v1
 
@@ -666,7 +666,7 @@
     .line 191
     iget-object v3, p0, Lcom/android/internal/app/LocalePickerWithRegion;->mSearchView:Landroid/widget/SearchView;
 
-    invoke-virtual {v3}, Landroid/widget/SearchView;->hasFocus()Z
+    invoke-virtual {v3}, Landroid/view/ViewGroup;->hasFocus()Z
 
     move-result v3
 
@@ -683,19 +683,19 @@
 
     .line 199
     :goto_0
-    invoke-virtual {p0}, Lcom/android/internal/app/LocalePickerWithRegion;->getListView()Landroid/widget/ListView;
+    invoke-virtual {p0}, Landroid/app/ListFragment;->getListView()Landroid/widget/ListView;
 
     move-result-object v1
 
     .line 200
     .local v1, "list":Landroid/widget/ListView;
-    invoke-virtual {v1, v2}, Landroid/widget/ListView;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {v1, v2}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v0
 
     .line 201
     .local v0, "firstChild":Landroid/view/View;
-    invoke-virtual {v1}, Landroid/widget/ListView;->getFirstVisiblePosition()I
+    invoke-virtual {v1}, Landroid/widget/AdapterView;->getFirstVisiblePosition()I
 
     move-result v3
 
@@ -729,7 +729,7 @@
 
     move-result v2
 
-    invoke-virtual {v1}, Landroid/widget/ListView;->getPaddingTop()I
+    invoke-virtual {v1}, Landroid/view/View;->getPaddingTop()I
 
     move-result v3
 
@@ -788,7 +788,7 @@
     if-eqz v0, :cond_0
 
     .line 177
-    invoke-virtual {p0}, Lcom/android/internal/app/LocalePickerWithRegion;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -802,18 +802,18 @@
 
     .line 182
     :goto_0
-    invoke-virtual {p0}, Lcom/android/internal/app/LocalePickerWithRegion;->getListView()Landroid/widget/ListView;
+    invoke-virtual {p0}, Landroid/app/ListFragment;->getListView()Landroid/widget/ListView;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/widget/ListView;->requestFocus()Z
+    invoke-virtual {v0}, Landroid/view/View;->requestFocus()Z
 
     .line 173
     return-void
 
     .line 179
     :cond_0
-    invoke-virtual {p0}, Lcom/android/internal/app/LocalePickerWithRegion;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 

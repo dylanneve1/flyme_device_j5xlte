@@ -110,7 +110,7 @@
     :cond_0
     const/16 v4, 0x40
 
-    invoke-virtual {v0, v4}, Ljava/lang/String;->indexOf(I)I
+    invoke-virtual {v0, v4}, Ljava/lang/String;->lastIndexOf(I)I
 
     move-result v3
 
@@ -178,7 +178,7 @@
     :cond_0
     const/16 v5, 0x40
 
-    invoke-virtual {v0, v5}, Ljava/lang/String;->indexOf(I)I
+    invoke-virtual {v0, v5}, Ljava/lang/String;->lastIndexOf(I)I
 
     move-result v4
 
@@ -260,7 +260,7 @@
     :cond_0
     const/16 v3, 0x40
 
-    invoke-virtual {v0, v3}, Ljava/lang/String;->indexOf(I)I
+    invoke-virtual {v0, v3}, Ljava/lang/String;->lastIndexOf(I)I
 
     move-result v1
 

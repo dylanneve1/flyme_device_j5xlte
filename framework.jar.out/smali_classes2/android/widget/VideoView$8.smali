@@ -45,7 +45,7 @@
     .line 892
     iget-object v0, p0, Landroid/widget/VideoView$8;->this$0:Landroid/widget/VideoView;
 
-    invoke-virtual {v0}, Landroid/widget/VideoView;->invalidate()V
+    invoke-virtual {v0}, Landroid/view/View;->invalidate()V
 
     .line 891
     return-void

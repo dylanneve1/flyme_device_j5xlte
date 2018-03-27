@@ -169,7 +169,7 @@
     const/4 v5, 0x0
 
     .line 62
-    invoke-virtual {p1}, Ljava/nio/ByteBuffer;->mark()Ljava/nio/Buffer;
+    invoke-virtual {p1}, Ljava/nio/Buffer;->mark()Ljava/nio/Buffer;
 
     .line 64
     const/4 v0, 0x0
@@ -181,7 +181,7 @@
     .line 66
     .local v2, "stringLength":I
     :goto_0
-    invoke-virtual {p1}, Ljava/nio/ByteBuffer;->hasRemaining()Z
+    invoke-virtual {p1}, Ljava/nio/Buffer;->hasRemaining()Z
 
     move-result v3
 
@@ -218,7 +218,7 @@
 
     .line 85
     :cond_2
-    invoke-virtual {p1}, Ljava/nio/ByteBuffer;->reset()Ljava/nio/Buffer;
+    invoke-virtual {p1}, Ljava/nio/Buffer;->reset()Ljava/nio/Buffer;
 
     .line 87
     add-int/lit8 v3, v2, 0x1

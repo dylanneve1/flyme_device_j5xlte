@@ -481,7 +481,7 @@
 
     move-result v2
 
-    invoke-virtual {p0}, Landroid/accounts/ChooseTypeAndAccountActivity;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
 
@@ -641,7 +641,7 @@
     .line 544
     const v1, 0x102033f
 
-    invoke-virtual {p0, v1}, Landroid/accounts/ChooseTypeAndAccountActivity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -666,7 +666,7 @@
     :cond_0
     const/16 v1, 0x8
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
     goto :goto_0
 .end method
@@ -681,7 +681,7 @@
     .line 557
     const v1, 0x102000a
 
-    invoke-virtual {p0, v1}, Landroid/accounts/ChooseTypeAndAccountActivity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -700,7 +700,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
     .line 560
-    invoke-virtual {v0, v3}, Landroid/widget/ListView;->setChoiceMode(I)V
+    invoke-virtual {v0, v3}, Landroid/widget/AbsListView;->setChoiceMode(I)V
 
     .line 561
     const/4 v1, 0x0
@@ -713,7 +713,7 @@
     invoke-direct {v1, p0}, Landroid/accounts/ChooseTypeAndAccountActivity$1;-><init>(Landroid/accounts/ChooseTypeAndAccountActivity;)V
 
     .line 562
-    invoke-virtual {v0, v1}, Landroid/widget/ListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
+    invoke-virtual {v0, v1}, Landroid/widget/AdapterView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
     .line 570
     iget v1, p0, Landroid/accounts/ChooseTypeAndAccountActivity;->mSelectedItemIndex:I
@@ -725,7 +725,7 @@
     .line 571
     iget v1, p0, Landroid/accounts/ChooseTypeAndAccountActivity;->mSelectedItemIndex:I
 
-    invoke-virtual {v0, v1, v3}, Landroid/widget/ListView;->setItemChecked(IZ)V
+    invoke-virtual {v0, v1, v3}, Landroid/widget/AbsListView;->setItemChecked(IZ)V
 
     .line 572
     const-string/jumbo v1, "AccountChooser"
@@ -782,7 +782,7 @@
     .line 402
     const v0, 0x1030134
 
-    invoke-virtual {p0, v0}, Landroid/accounts/ChooseTypeAndAccountActivity;->setTheme(I)V
+    invoke-virtual {p0, v0}, Landroid/app/Activity;->setTheme(I)V
 
     .line 403
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
@@ -806,12 +806,12 @@
     .local v0, "bundle":Landroid/os/Bundle;
     const-string/jumbo v1, "authAccount"
 
-    invoke-virtual {v0, v1, p1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, p1}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 414
     const-string/jumbo v1, "accountType"
 
-    invoke-virtual {v0, v1, p2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, p2}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 415
     new-instance v1, Landroid/content/Intent;
@@ -824,7 +824,7 @@
 
     const/4 v2, -0x1
 
-    invoke-virtual {p0, v2, v1}, Landroid/accounts/ChooseTypeAndAccountActivity;->setResult(ILandroid/content/Intent;)V
+    invoke-virtual {p0, v2, v1}, Landroid/app/Activity;->setResult(ILandroid/content/Intent;)V
 
     .line 416
     const-string/jumbo v1, "AccountChooser"
@@ -874,7 +874,7 @@
 
     .line 420
     :cond_0
-    invoke-virtual {p0}, Landroid/accounts/ChooseTypeAndAccountActivity;->finish()V
+    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
 
     .line 411
     return-void
@@ -922,7 +922,7 @@
     const-string/jumbo v1, "allowableAccountTypes"
 
     .line 430
-    invoke-virtual {p0}, Landroid/accounts/ChooseTypeAndAccountActivity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
 
     move-result-object v2
 
@@ -939,7 +939,7 @@
     const-string/jumbo v1, "addAccountOptions"
 
     .line 432
-    invoke-virtual {p0}, Landroid/accounts/ChooseTypeAndAccountActivity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
 
     move-result-object v2
 
@@ -956,7 +956,7 @@
     const-string/jumbo v1, "addAccountRequiredFeatures"
 
     .line 434
-    invoke-virtual {p0}, Landroid/accounts/ChooseTypeAndAccountActivity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
 
     move-result-object v2
 
@@ -973,7 +973,7 @@
     const-string/jumbo v1, "authTokenType"
 
     .line 436
-    invoke-virtual {p0}, Landroid/accounts/ChooseTypeAndAccountActivity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
 
     move-result-object v2
 
@@ -987,7 +987,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 437
-    invoke-virtual {p0, v0, v4}, Landroid/accounts/ChooseTypeAndAccountActivity;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p0, v0, v4}, Landroid/app/Activity;->startActivityForResult(Landroid/content/Intent;I)V
 
     .line 438
     iput v4, p0, Landroid/accounts/ChooseTypeAndAccountActivity;->mPendingRequest:I
@@ -1031,7 +1031,7 @@
 
     move-result-object v7
 
-    invoke-virtual {v7}, Landroid/os/Bundle;->keySet()Ljava/util/Set;
+    invoke-virtual {v7}, Landroid/os/BaseBundle;->keySet()Ljava/util/Set;
 
     .line 285
     :cond_0
@@ -1114,10 +1114,10 @@
     if-eqz v7, :cond_2
 
     .line 297
-    invoke-virtual {p0, v8}, Landroid/accounts/ChooseTypeAndAccountActivity;->setResult(I)V
+    invoke-virtual {p0, v8}, Landroid/app/Activity;->setResult(I)V
 
     .line 298
-    invoke-virtual {p0}, Landroid/accounts/ChooseTypeAndAccountActivity;->finish()V
+    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
 
     .line 300
     :cond_2
@@ -1198,10 +1198,10 @@
 
     .line 350
     :cond_8
-    invoke-virtual {p0, v8}, Landroid/accounts/ChooseTypeAndAccountActivity;->setResult(I)V
+    invoke-virtual {p0, v8}, Landroid/app/Activity;->setResult(I)V
 
     .line 351
-    invoke-virtual {p0}, Landroid/accounts/ChooseTypeAndAccountActivity;->finish()V
+    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
 
     .line 282
     return-void
@@ -1350,7 +1350,7 @@
 
     .prologue
     .line 265
-    invoke-virtual {p0}, Landroid/accounts/ChooseTypeAndAccountActivity;->onBackPressed()V
+    invoke-virtual {p0}, Landroid/app/Activity;->onBackPressed()V
 
     .line 264
     return-void
@@ -1416,7 +1416,7 @@
     .line 143
     .local v3, "message":Ljava/lang/String;
     :try_start_0
-    invoke-virtual {p0}, Landroid/accounts/ChooseTypeAndAccountActivity;->getActivityToken()Landroid/os/IBinder;
+    invoke-virtual {p0}, Landroid/app/Activity;->getActivityToken()Landroid/os/IBinder;
 
     move-result-object v0
 
@@ -1479,7 +1479,7 @@
 
     const/4 v10, 0x0
 
-    invoke-virtual {v5, v7, v10}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-virtual {v5, v7, v10}, Landroid/os/BaseBundle;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v7
 
@@ -1493,7 +1493,7 @@
     .end local v5    # "restrictions":Landroid/os/Bundle;
     :cond_1
     :goto_0
-    invoke-virtual {p0}, Landroid/accounts/ChooseTypeAndAccountActivity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
@@ -1504,7 +1504,7 @@
     .line 162
     const-string/jumbo v7, "pendingRequest"
 
-    invoke-virtual {p1, v7}, Landroid/os/Bundle;->getInt(Ljava/lang/String;)I
+    invoke-virtual {p1, v7}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;)I
 
     move-result v7
 
@@ -1524,7 +1524,7 @@
     const-string/jumbo v7, "selectedAccountName"
 
     .line 167
-    invoke-virtual {p1, v7}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p1, v7}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v7
 
@@ -1534,7 +1534,7 @@
     const-string/jumbo v7, "selectedAddAccount"
 
     .line 170
-    invoke-virtual {p1, v7, v9}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-virtual {p1, v7, v9}, Landroid/os/BaseBundle;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v7
 
@@ -1636,12 +1636,12 @@
     if-eqz v7, :cond_4
 
     .line 196
-    invoke-virtual {p0, v8}, Landroid/accounts/ChooseTypeAndAccountActivity;->requestWindowFeature(I)Z
+    invoke-virtual {p0, v8}, Landroid/app/Activity;->requestWindowFeature(I)Z
 
     .line 197
     const v7, 0x1090034
 
-    invoke-virtual {p0, v7}, Landroid/accounts/ChooseTypeAndAccountActivity;->setContentView(I)V
+    invoke-virtual {p0, v7}, Landroid/app/Activity;->setContentView(I)V
 
     .line 198
     iput-boolean v8, p0, Landroid/accounts/ChooseTypeAndAccountActivity;->mDontShowPicker:Z
@@ -1665,7 +1665,7 @@
 
     .line 155
     .local v4, "re":Landroid/os/RemoteException;
-    invoke-virtual {p0}, Landroid/accounts/ChooseTypeAndAccountActivity;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v7
 
@@ -1797,7 +1797,7 @@
     .line 228
     const v7, 0x1090042
 
-    invoke-virtual {p0, v7}, Landroid/accounts/ChooseTypeAndAccountActivity;->setContentView(I)V
+    invoke-virtual {p0, v7}, Landroid/app/Activity;->setContentView(I)V
 
     .line 229
     iget-object v7, p0, Landroid/accounts/ChooseTypeAndAccountActivity;->mDescriptionOverride:Ljava/lang/String;
@@ -1810,7 +1810,7 @@
     .line 233
     const v7, 0x102001a
 
-    invoke-virtual {p0, v7}, Landroid/accounts/ChooseTypeAndAccountActivity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v7}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
     move-result-object v7
 
@@ -1830,7 +1830,7 @@
     move v7, v8
 
     :goto_3
-    invoke-virtual {v10, v7}, Landroid/widget/Button;->setEnabled(Z)V
+    invoke-virtual {v10, v7}, Landroid/widget/TextView;->setEnabled(Z)V
 
     .line 134
     return-void
@@ -1941,7 +1941,7 @@
 
     iget v1, p0, Landroid/accounts/ChooseTypeAndAccountActivity;->mPendingRequest:I
 
-    invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
+    invoke-virtual {p1, v0, v1}, Landroid/os/BaseBundle;->putInt(Ljava/lang/String;I)V
 
     .line 249
     iget v0, p0, Landroid/accounts/ChooseTypeAndAccountActivity;->mPendingRequest:I
@@ -1981,7 +1981,7 @@
 
     const/4 v1, 0x1
 
-    invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
+    invoke-virtual {p1, v0, v1}, Landroid/os/BaseBundle;->putBoolean(Ljava/lang/String;Z)V
 
     .line 261
     :cond_1
@@ -2001,7 +2001,7 @@
 
     const/4 v1, 0x0
 
-    invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
+    invoke-virtual {p1, v0, v1}, Landroid/os/BaseBundle;->putBoolean(Ljava/lang/String;Z)V
 
     .line 257
     const-string/jumbo v1, "selectedAccountName"
@@ -2020,7 +2020,7 @@
     iget-object v0, v0, Landroid/accounts/Account;->name:Ljava/lang/String;
 
     .line 257
-    invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p1, v1, v0}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 .end method
@@ -2098,7 +2098,7 @@
     .line 379
     const/4 v6, 0x2
 
-    invoke-virtual {p0, v5, v6}, Landroid/accounts/ChooseTypeAndAccountActivity;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p0, v5, v6}, Landroid/app/Activity;->startActivityForResult(Landroid/content/Intent;I)V
     :try_end_0
     .catch Landroid/accounts/OperationCanceledException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
@@ -2117,10 +2117,10 @@
     .local v3, "e":Landroid/accounts/OperationCanceledException;
     const/4 v6, 0x0
 
-    invoke-virtual {p0, v6}, Landroid/accounts/ChooseTypeAndAccountActivity;->setResult(I)V
+    invoke-virtual {p0, v6}, Landroid/app/Activity;->setResult(I)V
 
     .line 384
-    invoke-virtual {p0}, Landroid/accounts/ChooseTypeAndAccountActivity;->finish()V
+    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
 
     .line 385
     return-void
@@ -2143,7 +2143,7 @@
 
     const-string/jumbo v7, "error communicating with server"
 
-    invoke-virtual {v1, v6, v7}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1, v6, v7}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 391
     new-instance v6, Landroid/content/Intent;
@@ -2156,10 +2156,10 @@
 
     const/4 v7, -0x1
 
-    invoke-virtual {p0, v7, v6}, Landroid/accounts/ChooseTypeAndAccountActivity;->setResult(ILandroid/content/Intent;)V
+    invoke-virtual {p0, v7, v6}, Landroid/app/Activity;->setResult(ILandroid/content/Intent;)V
 
     .line 392
-    invoke-virtual {p0}, Landroid/accounts/ChooseTypeAndAccountActivity;->finish()V
+    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
 
     .line 369
     return-void
@@ -2216,7 +2216,7 @@
 
     .line 358
     :cond_0
-    invoke-virtual {p0}, Landroid/accounts/ChooseTypeAndAccountActivity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -2230,7 +2230,7 @@
 
     .line 360
     .local v4, "options":Landroid/os/Bundle;
-    invoke-virtual {p0}, Landroid/accounts/ChooseTypeAndAccountActivity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -2244,7 +2244,7 @@
 
     .line 362
     .local v3, "requiredFeatures":[Ljava/lang/String;
-    invoke-virtual {p0}, Landroid/accounts/ChooseTypeAndAccountActivity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 

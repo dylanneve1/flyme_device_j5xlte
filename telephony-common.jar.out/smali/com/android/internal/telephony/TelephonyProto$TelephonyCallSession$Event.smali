@@ -280,7 +280,7 @@
     iput-wide v0, p0, Lcom/android/internal/telephony/TelephonyProto$TelephonyCallSession$Event;->nitzTimestampMillis_:J
 
     .line 4832
-    iput-object v2, p0, Lcom/android/internal/telephony/TelephonyProto$TelephonyCallSession$Event;->unknownFieldData:Lcom/android/framework/protobuf/nano/FieldArray;
+    iput-object v2, p0, Lcom/android/framework/protobuf/nano/ExtendableMessageNano;->unknownFieldData:Lcom/android/framework/protobuf/nano/FieldArray;
 
     .line 4833
     const/4 v0, -0x1
@@ -1536,7 +1536,7 @@
     invoke-virtual {p1, v2}, Lcom/android/framework/protobuf/nano/CodedInputByteBufferNano;->rewindToPosition(I)V
 
     .line 5062
-    invoke-virtual {p0, p1, v5}, Lcom/android/internal/telephony/TelephonyProto$TelephonyCallSession$Event;->storeUnknownField(Lcom/android/framework/protobuf/nano/CodedInputByteBufferNano;I)Z
+    invoke-virtual {p0, p1, v5}, Lcom/android/framework/protobuf/nano/ExtendableMessageNano;->storeUnknownField(Lcom/android/framework/protobuf/nano/CodedInputByteBufferNano;I)Z
 
     goto :goto_0
 
@@ -1575,7 +1575,7 @@
     invoke-virtual {p1, v2}, Lcom/android/framework/protobuf/nano/CodedInputByteBufferNano;->rewindToPosition(I)V
 
     .line 5096
-    invoke-virtual {p0, p1, v5}, Lcom/android/internal/telephony/TelephonyProto$TelephonyCallSession$Event;->storeUnknownField(Lcom/android/framework/protobuf/nano/CodedInputByteBufferNano;I)Z
+    invoke-virtual {p0, p1, v5}, Lcom/android/framework/protobuf/nano/ExtendableMessageNano;->storeUnknownField(Lcom/android/framework/protobuf/nano/CodedInputByteBufferNano;I)Z
 
     goto :goto_0
 
@@ -1793,7 +1793,7 @@
     invoke-virtual {p1, v2}, Lcom/android/framework/protobuf/nano/CodedInputByteBufferNano;->rewindToPosition(I)V
 
     .line 5162
-    invoke-virtual {p0, p1, v5}, Lcom/android/internal/telephony/TelephonyProto$TelephonyCallSession$Event;->storeUnknownField(Lcom/android/framework/protobuf/nano/CodedInputByteBufferNano;I)Z
+    invoke-virtual {p0, p1, v5}, Lcom/android/framework/protobuf/nano/ExtendableMessageNano;->storeUnknownField(Lcom/android/framework/protobuf/nano/CodedInputByteBufferNano;I)Z
 
     goto/16 :goto_0
 
@@ -1832,7 +1832,7 @@
     invoke-virtual {p1, v2}, Lcom/android/framework/protobuf/nano/CodedInputByteBufferNano;->rewindToPosition(I)V
 
     .line 5186
-    invoke-virtual {p0, p1, v5}, Lcom/android/internal/telephony/TelephonyProto$TelephonyCallSession$Event;->storeUnknownField(Lcom/android/framework/protobuf/nano/CodedInputByteBufferNano;I)Z
+    invoke-virtual {p0, p1, v5}, Lcom/android/framework/protobuf/nano/ExtendableMessageNano;->storeUnknownField(Lcom/android/framework/protobuf/nano/CodedInputByteBufferNano;I)Z
 
     goto/16 :goto_0
 
@@ -2001,7 +2001,7 @@
     invoke-virtual {p1, v2}, Lcom/android/framework/protobuf/nano/CodedInputByteBufferNano;->rewindToPosition(I)V
 
     .line 5260
-    invoke-virtual {p0, p1, v5}, Lcom/android/internal/telephony/TelephonyProto$TelephonyCallSession$Event;->storeUnknownField(Lcom/android/framework/protobuf/nano/CodedInputByteBufferNano;I)Z
+    invoke-virtual {p0, p1, v5}, Lcom/android/framework/protobuf/nano/ExtendableMessageNano;->storeUnknownField(Lcom/android/framework/protobuf/nano/CodedInputByteBufferNano;I)Z
 
     goto/16 :goto_0
 
@@ -2040,7 +2040,7 @@
     invoke-virtual {p1, v2}, Lcom/android/framework/protobuf/nano/CodedInputByteBufferNano;->rewindToPosition(I)V
 
     .line 5282
-    invoke-virtual {p0, p1, v5}, Lcom/android/internal/telephony/TelephonyProto$TelephonyCallSession$Event;->storeUnknownField(Lcom/android/framework/protobuf/nano/CodedInputByteBufferNano;I)Z
+    invoke-virtual {p0, p1, v5}, Lcom/android/framework/protobuf/nano/ExtendableMessageNano;->storeUnknownField(Lcom/android/framework/protobuf/nano/CodedInputByteBufferNano;I)Z
 
     goto/16 :goto_0
 
@@ -2096,7 +2096,7 @@
     invoke-virtual {p1, v2}, Lcom/android/framework/protobuf/nano/CodedInputByteBufferNano;->rewindToPosition(I)V
 
     .line 5306
-    invoke-virtual {p0, p1, v5}, Lcom/android/internal/telephony/TelephonyProto$TelephonyCallSession$Event;->storeUnknownField(Lcom/android/framework/protobuf/nano/CodedInputByteBufferNano;I)Z
+    invoke-virtual {p0, p1, v5}, Lcom/android/framework/protobuf/nano/ExtendableMessageNano;->storeUnknownField(Lcom/android/framework/protobuf/nano/CodedInputByteBufferNano;I)Z
 
     goto/16 :goto_0
 
@@ -2135,7 +2135,7 @@
     invoke-virtual {p1, v2}, Lcom/android/framework/protobuf/nano/CodedInputByteBufferNano;->rewindToPosition(I)V
 
     .line 5332
-    invoke-virtual {p0, p1, v5}, Lcom/android/internal/telephony/TelephonyProto$TelephonyCallSession$Event;->storeUnknownField(Lcom/android/framework/protobuf/nano/CodedInputByteBufferNano;I)Z
+    invoke-virtual {p0, p1, v5}, Lcom/android/framework/protobuf/nano/ExtendableMessageNano;->storeUnknownField(Lcom/android/framework/protobuf/nano/CodedInputByteBufferNano;I)Z
 
     goto/16 :goto_0
 
@@ -2195,7 +2195,7 @@
     invoke-virtual {p1, v2}, Lcom/android/framework/protobuf/nano/CodedInputByteBufferNano;->rewindToPosition(I)V
 
     .line 5373
-    invoke-virtual {p0, p1, v5}, Lcom/android/internal/telephony/TelephonyProto$TelephonyCallSession$Event;->storeUnknownField(Lcom/android/framework/protobuf/nano/CodedInputByteBufferNano;I)Z
+    invoke-virtual {p0, p1, v5}, Lcom/android/framework/protobuf/nano/ExtendableMessageNano;->storeUnknownField(Lcom/android/framework/protobuf/nano/CodedInputByteBufferNano;I)Z
 
     goto/16 :goto_0
 
@@ -2234,7 +2234,7 @@
     invoke-virtual {p1, v2}, Lcom/android/framework/protobuf/nano/CodedInputByteBufferNano;->rewindToPosition(I)V
 
     .line 5407
-    invoke-virtual {p0, p1, v5}, Lcom/android/internal/telephony/TelephonyProto$TelephonyCallSession$Event;->storeUnknownField(Lcom/android/framework/protobuf/nano/CodedInputByteBufferNano;I)Z
+    invoke-virtual {p0, p1, v5}, Lcom/android/framework/protobuf/nano/ExtendableMessageNano;->storeUnknownField(Lcom/android/framework/protobuf/nano/CodedInputByteBufferNano;I)Z
 
     goto/16 :goto_0
 

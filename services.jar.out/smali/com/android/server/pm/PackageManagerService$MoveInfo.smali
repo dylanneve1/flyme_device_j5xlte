@@ -45,33 +45,33 @@
     .param p8, "targetSdkVersion"    # I
 
     .prologue
-    .line 12892
+    .line 12986
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 12894
+    .line 12988
     iput p1, p0, Lcom/android/server/pm/PackageManagerService$MoveInfo;->moveId:I
 
-    .line 12895
+    .line 12989
     iput-object p2, p0, Lcom/android/server/pm/PackageManagerService$MoveInfo;->fromUuid:Ljava/lang/String;
 
-    .line 12896
+    .line 12990
     iput-object p3, p0, Lcom/android/server/pm/PackageManagerService$MoveInfo;->toUuid:Ljava/lang/String;
 
-    .line 12897
+    .line 12991
     iput-object p4, p0, Lcom/android/server/pm/PackageManagerService$MoveInfo;->packageName:Ljava/lang/String;
 
-    .line 12898
+    .line 12992
     iput-object p5, p0, Lcom/android/server/pm/PackageManagerService$MoveInfo;->dataAppName:Ljava/lang/String;
 
-    .line 12899
+    .line 12993
     iput p6, p0, Lcom/android/server/pm/PackageManagerService$MoveInfo;->appId:I
 
-    .line 12900
+    .line 12994
     iput-object p7, p0, Lcom/android/server/pm/PackageManagerService$MoveInfo;->seinfo:Ljava/lang/String;
 
-    .line 12901
+    .line 12995
     iput p8, p0, Lcom/android/server/pm/PackageManagerService$MoveInfo;->targetSdkVersion:I
 
-    .line 12893
+    .line 12987
     return-void
 .end method

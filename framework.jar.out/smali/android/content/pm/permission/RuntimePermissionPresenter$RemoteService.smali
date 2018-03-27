@@ -138,7 +138,7 @@
 
     .line 321
     .local v0, "nextMessage":Landroid/os/Message;
-    invoke-virtual {p0, v0}, Landroid/content/pm/permission/RuntimePermissionPresenter$RemoteService;->sendMessage(Landroid/os/Message;)Z
+    invoke-virtual {p0, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
     goto :goto_0
 .end method
@@ -150,12 +150,12 @@
     const/4 v2, 0x3
 
     .line 326
-    invoke-virtual {p0, v2}, Landroid/content/pm/permission/RuntimePermissionPresenter$RemoteService;->removeMessages(I)V
+    invoke-virtual {p0, v2}, Landroid/os/Handler;->removeMessages(I)V
 
     .line 327
     const-wide/16 v0, 0x2710
 
-    invoke-virtual {p0, v2, v0, v1}, Landroid/content/pm/permission/RuntimePermissionPresenter$RemoteService;->sendEmptyMessageDelayed(IJ)Z
+    invoke-virtual {p0, v2, v0, v1}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
 
     .line 325
     return-void

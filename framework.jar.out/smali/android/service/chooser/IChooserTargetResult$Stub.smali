@@ -40,7 +40,7 @@
     .line 18
     const-string/jumbo v0, "android.service.chooser.IChooserTargetResult"
 
-    invoke-virtual {p0, p0, v0}, Landroid/service/chooser/IChooserTargetResult$Stub;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
+    invoke-virtual {p0, p0, v0}, Landroid/os/Binder;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
 
     .line 16
     return-void

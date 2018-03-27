@@ -168,7 +168,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v3, v4}, Ljava/io/DataOutputStream;->write([B)V
+    invoke-virtual {v3, v4}, Ljava/io/FilterOutputStream;->write([B)V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 

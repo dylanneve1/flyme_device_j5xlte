@@ -91,7 +91,7 @@
     :cond_1
     iget-object v1, p0, Landroid/app/ActionBar$FollowOutOfActionBar;->mFocusRoot:Landroid/view/ViewGroup;
 
-    invoke-virtual {v1, p0}, Landroid/view/ViewGroup;->post(Ljava/lang/Runnable;)Z
+    invoke-virtual {v1, p0}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
 
     goto :goto_0
 .end method

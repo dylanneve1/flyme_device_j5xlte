@@ -34,9 +34,9 @@
 
 .field static final TRANSACTION_getDeviceId_0:I = 0x1
 
-.field static final TRANSACTION_getDeviceSvnUsingSubId_5:I = 0x6
+.field static final TRANSACTION_getDeviceSvn:I = 0x5
 
-.field static final TRANSACTION_getDeviceSvn_4:I = 0x5
+.field static final TRANSACTION_getDeviceSvnUsingSubId:I = 0x6
 
 .field static final TRANSACTION_getGroupIdLevel1:I = 0x9
 

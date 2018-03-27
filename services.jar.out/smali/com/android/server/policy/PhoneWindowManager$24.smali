@@ -48,7 +48,7 @@
     .param p8, "val$needsMenu"    # Z
 
     .prologue
-    .line 8631
+    .line 8632
     iput-object p1, p0, Lcom/android/server/policy/PhoneWindowManager$24;->this$0:Lcom/android/server/policy/PhoneWindowManager;
 
     iput p2, p0, Lcom/android/server/policy/PhoneWindowManager$24;->val$visibility:I
@@ -76,28 +76,28 @@
     .locals 8
 
     .prologue
-    .line 8634
+    .line 8635
     iget-object v1, p0, Lcom/android/server/policy/PhoneWindowManager$24;->this$0:Lcom/android/server/policy/PhoneWindowManager;
 
     invoke-virtual {v1}, Lcom/android/server/policy/PhoneWindowManager;->getStatusBarManagerInternal()Lcom/android/server/statusbar/StatusBarManagerInternal;
 
     move-result-object v0
 
-    .line 8635
+    .line 8636
     .local v0, "statusbar":Lcom/android/server/statusbar/StatusBarManagerInternal;
     if-eqz v0, :cond_0
 
-    .line 8636
+    .line 8637
     iget v1, p0, Lcom/android/server/policy/PhoneWindowManager$24;->val$visibility:I
 
     iget v2, p0, Lcom/android/server/policy/PhoneWindowManager$24;->val$fullscreenVisibility:I
 
-    .line 8637
+    .line 8638
     iget v3, p0, Lcom/android/server/policy/PhoneWindowManager$24;->val$dockedVisibility:I
 
     iget-object v5, p0, Lcom/android/server/policy/PhoneWindowManager$24;->val$fullscreenStackBounds:Landroid/graphics/Rect;
 
-    .line 8638
+    .line 8639
     iget-object v6, p0, Lcom/android/server/policy/PhoneWindowManager$24;->val$dockedStackBounds:Landroid/graphics/Rect;
 
     iget-object v4, p0, Lcom/android/server/policy/PhoneWindowManager$24;->val$win:Landroid/view/WindowManagerPolicy$WindowState;
@@ -106,18 +106,18 @@
 
     move-result-object v7
 
-    .line 8637
+    .line 8638
     const/4 v4, -0x1
 
-    .line 8636
+    .line 8637
     invoke-interface/range {v0 .. v7}, Lcom/android/server/statusbar/StatusBarManagerInternal;->setSystemUiVisibility(IIIILandroid/graphics/Rect;Landroid/graphics/Rect;Ljava/lang/String;)V
 
-    .line 8639
+    .line 8640
     iget-boolean v1, p0, Lcom/android/server/policy/PhoneWindowManager$24;->val$needsMenu:Z
 
     invoke-interface {v0, v1}, Lcom/android/server/statusbar/StatusBarManagerInternal;->topAppWindowChanged(Z)V
 
-    .line 8633
+    .line 8634
     :cond_0
     return-void
 .end method

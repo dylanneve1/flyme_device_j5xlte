@@ -502,7 +502,7 @@
     invoke-direct {p0}, Landroid/media/tv/TvView;->resetSurfaceView()V
 
     .line 172
-    invoke-virtual {p0}, Landroid/media/tv/TvView;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -529,7 +529,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p0}, Landroid/media/tv/TvView;->isAttachedToWindow()Z
+    invoke-virtual {p0}, Landroid/view/View;->isAttachedToWindow()Z
 
     move-result v0
 
@@ -649,7 +649,7 @@
 
     .line 842
     .local v0, "location":[I
-    invoke-virtual {p0, v0}, Landroid/media/tv/TvView;->getLocationOnScreen([I)V
+    invoke-virtual {p0, v0}, Landroid/view/View;->getLocationOnScreen([I)V
 
     .line 843
     new-instance v1, Landroid/graphics/Rect;
@@ -661,7 +661,7 @@
     .line 844
     aget v4, v0, v4
 
-    invoke-virtual {p0}, Landroid/media/tv/TvView;->getWidth()I
+    invoke-virtual {p0}, Landroid/view/View;->getWidth()I
 
     move-result v5
 
@@ -669,7 +669,7 @@
 
     aget v5, v0, v6
 
-    invoke-virtual {p0}, Landroid/media/tv/TvView;->getHeight()I
+    invoke-virtual {p0}, Landroid/view/View;->getHeight()I
 
     move-result v6
 
@@ -690,7 +690,7 @@
 
     if-eqz v1, :cond_0
 
-    invoke-virtual {p0}, Landroid/media/tv/TvView;->isAttachedToWindow()Z
+    invoke-virtual {p0}, Landroid/view/View;->isAttachedToWindow()Z
 
     move-result v1
 
@@ -850,7 +850,7 @@
     .line 774
     iget-object v0, p0, Landroid/media/tv/TvView;->mSurfaceView:Landroid/view/SurfaceView;
 
-    invoke-virtual {p0, v0}, Landroid/media/tv/TvView;->removeView(Landroid/view/View;)V
+    invoke-virtual {p0, v0}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
 
     .line 776
     :cond_0
@@ -859,7 +859,7 @@
     .line 777
     new-instance v0, Landroid/media/tv/TvView$3;
 
-    invoke-virtual {p0}, Landroid/media/tv/TvView;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -902,7 +902,7 @@
     :goto_0
     iget-object v0, p0, Landroid/media/tv/TvView;->mSurfaceView:Landroid/view/SurfaceView;
 
-    invoke-virtual {p0, v0}, Landroid/media/tv/TvView;->addView(Landroid/view/View;)V
+    invoke-virtual {p0, v0}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
     .line 771
     return-void
@@ -1271,7 +1271,7 @@
     :try_start_0
     sget-object v0, Landroid/media/tv/TvView;->sMainTvView:Ljava/lang/ref/WeakReference;
 
-    invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -1348,13 +1348,13 @@
     if-eqz p1, :cond_0
 
     .line 728
-    invoke-virtual {p0}, Landroid/media/tv/TvView;->getWidth()I
+    invoke-virtual {p0}, Landroid/view/View;->getWidth()I
 
     move-result v8
 
     .line 729
     .local v8, "width":I
-    invoke-virtual {p0}, Landroid/media/tv/TvView;->getHeight()I
+    invoke-virtual {p0}, Landroid/view/View;->getHeight()I
 
     move-result v6
 
@@ -1369,7 +1369,7 @@
 
     .line 732
     .local v7, "location":[I
-    invoke-virtual {p0, v7}, Landroid/media/tv/TvView;->getLocationInWindow([I)V
+    invoke-virtual {p0, v7}, Landroid/view/View;->getLocationInWindow([I)V
 
     .line 733
     aget v1, v7, v3
@@ -1524,7 +1524,7 @@
     iget v4, p0, Landroid/media/tv/TvView;->mSurfaceViewBottom:I
 
     .line 706
-    invoke-virtual {v0, v1, v2, v3, v4}, Landroid/view/SurfaceView;->layout(IIII)V
+    invoke-virtual {v0, v1, v2, v3, v4}, Landroid/view/View;->layout(IIII)V
 
     .line 700
     :goto_0
@@ -1538,7 +1538,7 @@
 
     sub-int v2, p5, p3
 
-    invoke-virtual {v0, v3, v3, v1, v2}, Landroid/view/SurfaceView;->layout(IIII)V
+    invoke-virtual {v0, v3, v3, v1, v2}, Landroid/view/View;->layout(IIII)V
 
     goto :goto_0
 .end method
@@ -1552,12 +1552,12 @@
     .line 715
     iget-object v3, p0, Landroid/media/tv/TvView;->mSurfaceView:Landroid/view/SurfaceView;
 
-    invoke-virtual {v3, p1, p2}, Landroid/view/SurfaceView;->measure(II)V
+    invoke-virtual {v3, p1, p2}, Landroid/view/View;->measure(II)V
 
     .line 716
     iget-object v3, p0, Landroid/media/tv/TvView;->mSurfaceView:Landroid/view/SurfaceView;
 
-    invoke-virtual {v3}, Landroid/view/SurfaceView;->getMeasuredWidth()I
+    invoke-virtual {v3}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result v2
 
@@ -1565,7 +1565,7 @@
     .local v2, "width":I
     iget-object v3, p0, Landroid/media/tv/TvView;->mSurfaceView:Landroid/view/SurfaceView;
 
-    invoke-virtual {v3}, Landroid/view/SurfaceView;->getMeasuredHeight()I
+    invoke-virtual {v3}, Landroid/view/View;->getMeasuredHeight()I
 
     move-result v1
 
@@ -1573,7 +1573,7 @@
     .local v1, "height":I
     iget-object v3, p0, Landroid/media/tv/TvView;->mSurfaceView:Landroid/view/SurfaceView;
 
-    invoke-virtual {v3}, Landroid/view/SurfaceView;->getMeasuredState()I
+    invoke-virtual {v3}, Landroid/view/View;->getMeasuredState()I
 
     move-result v0
 
@@ -1592,7 +1592,7 @@
     move-result v4
 
     .line 719
-    invoke-virtual {p0, v3, v4}, Landroid/media/tv/TvView;->setMeasuredDimension(II)V
+    invoke-virtual {p0, v3, v4}, Landroid/view/View;->setMeasuredDimension(II)V
 
     .line 714
     return-void
@@ -1665,7 +1665,7 @@
     :try_start_0
     sget-object v0, Landroid/media/tv/TvView;->sMainTvView:Ljava/lang/ref/WeakReference;
 
-    invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -1855,7 +1855,7 @@
     sput-object v0, Landroid/media/tv/TvView;->sMainTvView:Ljava/lang/ref/WeakReference;
 
     .line 204
-    invoke-virtual {p0}, Landroid/media/tv/TvView;->hasWindowFocus()Z
+    invoke-virtual {p0}, Landroid/view/View;->hasWindowFocus()Z
 
     move-result v0
 
@@ -2091,7 +2091,7 @@
     :try_start_0
     sget-object v0, Landroid/media/tv/TvView;->sMainTvView:Ljava/lang/ref/WeakReference;
 
-    invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -2290,7 +2290,7 @@
     :try_start_0
     sget-object v0, Landroid/media/tv/TvView;->sMainTvView:Ljava/lang/ref/WeakReference;
 
-    invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     move-result-object v0
 

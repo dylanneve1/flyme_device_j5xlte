@@ -123,6 +123,8 @@
     <string name="tethered_notification_no_device_message">Geen gekoppelde toestel</string>
     <string name="tethered_notification_one_device_message">%1$s gekoppelde toestel</string>
     <string name="tethered_notification_multi_device_message">%1$s gekoppelde toestelle</string>
+    <string name="silent_mode_priority">Prioriteit</string>
+    <string name="silent_mode_none">Geen</string>
     <string name="month_day_year" formatted="false">%d %B %Y</string>
     <string name="time_of_day" formatted="false">%-l:%M:%S %p</string>
     <string name="date_and_time" formatted="false">%-l:%M:%S %p %d %b %Y</string>

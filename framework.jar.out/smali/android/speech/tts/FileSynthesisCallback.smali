@@ -215,7 +215,7 @@
     invoke-virtual {v3, p4}, Ljava/nio/ByteBuffer;->putInt(I)Ljava/nio/ByteBuffer;
 
     .line 308
-    invoke-virtual {v3}, Ljava/nio/ByteBuffer;->flip()Ljava/nio/Buffer;
+    invoke-virtual {v3}, Ljava/nio/Buffer;->flip()Ljava/nio/Buffer;
 
     .line 310
     return-object v3
@@ -290,7 +290,7 @@
     if-ne v3, v5, :cond_0
 
     .line 162
-    invoke-virtual {p0}, Landroid/speech/tts/FileSynthesisCallback;->errorCodeOnStop()I
+    invoke-virtual {p0}, Landroid/speech/tts/AbstractSynthesisCallback;->errorCodeOnStop()I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -509,7 +509,7 @@
     if-ne v6, v8, :cond_1
 
     .line 215
-    invoke-virtual {p0}, Landroid/speech/tts/FileSynthesisCallback;->errorCodeOnStop()I
+    invoke-virtual {p0}, Landroid/speech/tts/AbstractSynthesisCallback;->errorCodeOnStop()I
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -923,7 +923,7 @@
     if-ne v2, v4, :cond_1
 
     .line 120
-    invoke-virtual {p0}, Landroid/speech/tts/FileSynthesisCallback;->errorCodeOnStop()I
+    invoke-virtual {p0}, Landroid/speech/tts/AbstractSynthesisCallback;->errorCodeOnStop()I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 

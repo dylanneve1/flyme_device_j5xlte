@@ -78,7 +78,7 @@
 
     iget-object v1, p0, Lcom/android/internal/app/AlertController$AlertParams$5;->val$listView:Lcom/android/internal/app/AlertController$RecycleListView;
 
-    invoke-virtual {v1, p3}, Lcom/android/internal/app/AlertController$RecycleListView;->isItemChecked(I)Z
+    invoke-virtual {v1, p3}, Landroid/widget/AbsListView;->isItemChecked(I)Z
 
     move-result v1
 
@@ -99,7 +99,7 @@
 
     iget-object v2, p0, Lcom/android/internal/app/AlertController$AlertParams$5;->val$listView:Lcom/android/internal/app/AlertController$RecycleListView;
 
-    invoke-virtual {v2, p3}, Lcom/android/internal/app/AlertController$RecycleListView;->isItemChecked(I)Z
+    invoke-virtual {v2, p3}, Landroid/widget/AbsListView;->isItemChecked(I)Z
 
     move-result v2
 

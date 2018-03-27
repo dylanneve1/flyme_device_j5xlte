@@ -26,7 +26,7 @@
 # static fields
 .field private static final DESCRIPTOR:Ljava/lang/String; = "android.print.IPrintSpoolerCallbacks"
 
-.field static final TRANSACTION_customPrinterIconCacheCleared_7:I = 0x8
+.field static final TRANSACTION_customPrinterIconCacheCleared:I = 0x8
 
 .field static final TRANSACTION_onCancelPrintJobResult:I = 0x2
 
@@ -34,13 +34,13 @@
 
 .field static final TRANSACTION_onGetCustomPrinterIconResult_5:I = 0x6
 
-.field static final TRANSACTION_onGetPrintJobInfoResult_4:I = 0x5
+.field static final TRANSACTION_onGetPrintJobInfoResult:I = 0x5
 
 .field static final TRANSACTION_onGetPrintJobInfosResult:I = 0x1
 
-.field static final TRANSACTION_onSetPrintJobStateResult_2:I = 0x3
+.field static final TRANSACTION_onSetPrintJobStateResult:I = 0x3
 
-.field static final TRANSACTION_onSetPrintJobTagResult_3:I = 0x4
+.field static final TRANSACTION_onSetPrintJobTagResult:I = 0x4
 
 
 # direct methods

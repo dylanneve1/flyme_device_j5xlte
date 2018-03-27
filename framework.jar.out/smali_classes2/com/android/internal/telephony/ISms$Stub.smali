@@ -78,7 +78,7 @@
 
 .field static final TRANSACTION_setPremiumSmsPermissionForSubscriber:I = 0x13
 
-.field static final TRANSACTION_updateMessageOnIccEfForSubscriber_1:I = 0x2
+.field static final TRANSACTION_updateMessageOnIccEfForSubscriber:I = 0x2
 
 
 # direct methods

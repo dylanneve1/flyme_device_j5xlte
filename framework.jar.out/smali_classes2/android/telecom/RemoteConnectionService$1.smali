@@ -177,7 +177,7 @@
     .local v4, "newExtras":Landroid/os/Bundle;
     const-string/jumbo v5, "android.telecom.extra.ORIGINAL_CONNECTION_ID"
 
-    invoke-virtual {v4, v5, p1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v4, v5, p1}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 236
     invoke-virtual {v1, v4}, Landroid/telecom/RemoteConference;->putExtras(Landroid/os/Bundle;)V

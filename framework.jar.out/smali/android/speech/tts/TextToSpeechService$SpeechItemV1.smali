@@ -78,7 +78,7 @@
 
     const/16 v2, 0x64
 
-    invoke-virtual {p0, v0, v1, v2}, Landroid/speech/tts/TextToSpeechService$SpeechItemV1;->getIntParam(Landroid/os/Bundle;Ljava/lang/String;I)I
+    invoke-virtual {p0, v0, v1, v2}, Landroid/speech/tts/TextToSpeechService$UtteranceSpeechItem;->getIntParam(Landroid/os/Bundle;Ljava/lang/String;I)I
 
     move-result v0
 
@@ -100,7 +100,7 @@
 
     move-result v2
 
-    invoke-virtual {p0, v0, v1, v2}, Landroid/speech/tts/TextToSpeechService$SpeechItemV1;->getIntParam(Landroid/os/Bundle;Ljava/lang/String;I)I
+    invoke-virtual {p0, v0, v1, v2}, Landroid/speech/tts/TextToSpeechService$UtteranceSpeechItem;->getIntParam(Landroid/os/Bundle;Ljava/lang/String;I)I
 
     move-result v0
 
@@ -128,7 +128,7 @@
 
     const/4 v2, 0x0
 
-    invoke-virtual {p0, v0, v1, v2}, Landroid/speech/tts/TextToSpeechService$SpeechItemV1;->getStringParam(Landroid/os/Bundle;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v0, v1, v2}, Landroid/speech/tts/TextToSpeechService$UtteranceSpeechItem;->getStringParam(Landroid/os/Bundle;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

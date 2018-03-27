@@ -68,7 +68,7 @@
 
 .field static final TRANSACTION_getConfigFile:I = 0x31
 
-.field static final TRANSACTION_getConfiguredNetworks:I = 0x4
+.field static final TRANSACTION_getConfiguredNetworks_3:I = 0x4
 
 .field static final TRANSACTION_getConnectionInfo:I = 0x17
 

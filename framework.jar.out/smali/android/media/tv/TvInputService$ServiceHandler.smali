@@ -525,7 +525,7 @@
     const-string/jumbo v20, "tv_input"
 
     .line 2040
-    invoke-virtual/range {v19 .. v20}, Landroid/media/tv/TvInputService;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual/range {v19 .. v20}, Landroid/content/ContextWrapper;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v13
 

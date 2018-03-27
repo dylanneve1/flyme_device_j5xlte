@@ -175,7 +175,7 @@
 
     .prologue
     .line 313
-    invoke-virtual {p0}, Landroid/security/keystore/AndroidKeyStoreRSACipherSpi$OAEPWithMGF1Padding;->isEncrypting()Z
+    invoke-virtual {p0}, Landroid/security/keystore/AndroidKeyStoreCipherSpiBase;->isEncrypting()Z
 
     move-result v0
 
@@ -365,7 +365,9 @@
     move-object v9, p1
 
     .line 190
-    check-cast v9, Ljavax/crypto/spec/OAEPParameterSpec;
+    nop
+
+    nop
 
     .line 191
     .local v9, "spec":Ljavax/crypto/spec/OAEPParameterSpec;
@@ -579,7 +581,9 @@
     move-object v5, v4
 
     .line 225
-    check-cast v5, Ljava/security/spec/MGF1ParameterSpec;
+    nop
+
+    nop
 
     .line 226
     .local v5, "mgfSpec":Ljava/security/spec/MGF1ParameterSpec;
@@ -699,7 +703,9 @@
     move-object v7, v6
 
     .line 238
-    check-cast v7, Ljavax/crypto/spec/PSource$PSpecified;
+    nop
+
+    nop
 
     .line 239
     .local v7, "pSourceSpecified":Ljavax/crypto/spec/PSource$PSpecified;

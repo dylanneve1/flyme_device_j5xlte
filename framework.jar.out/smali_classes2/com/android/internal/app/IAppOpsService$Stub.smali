@@ -32,7 +32,7 @@
 
 .field static final TRANSACTION_checkPackage:I = 0xa
 
-.field static final TRANSACTION_finishOperation_3:I = 0x4
+.field static final TRANSACTION_finishOperation:I = 0x4
 
 .field static final TRANSACTION_getOpsForPackage:I = 0xc
 
@@ -68,9 +68,9 @@
 
 .field static final TRANSACTION_setUserRestrictions:I = 0x12
 
-.field static final TRANSACTION_startOperation_2:I = 0x3
+.field static final TRANSACTION_startOperation:I = 0x3
 
-.field static final TRANSACTION_startWatchingMode_4:I = 0x5
+.field static final TRANSACTION_startWatchingMode:I = 0x5
 
 .field static final TRANSACTION_stopWatchingMode:I = 0x6
 

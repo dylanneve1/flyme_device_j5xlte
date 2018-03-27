@@ -26,9 +26,9 @@
 
     .prologue
     .line 45
-    iget-object v0, p0, Landroid/net/wifi/nan/WifiNanSubscribeSession;->mManager:Landroid/net/wifi/nan/WifiNanManager;
+    iget-object v0, p0, Landroid/net/wifi/nan/WifiNanSession;->mManager:Landroid/net/wifi/nan/WifiNanManager;
 
-    iget v1, p0, Landroid/net/wifi/nan/WifiNanSubscribeSession;->mSessionId:I
+    iget v1, p0, Landroid/net/wifi/nan/WifiNanSession;->mSessionId:I
 
     invoke-virtual {v0, v1, p1, p2}, Landroid/net/wifi/nan/WifiNanManager;->subscribe(ILandroid/net/wifi/nan/SubscribeData;Landroid/net/wifi/nan/SubscribeSettings;)V
 

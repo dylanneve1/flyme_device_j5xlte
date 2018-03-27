@@ -32,7 +32,7 @@
 
 .field static final TRANSACTION_connect:I = 0x1
 
-.field static final TRANSACTION_disconnect_1:I = 0x2
+.field static final TRANSACTION_disconnect:I = 0x2
 
 .field static final TRANSACTION_getMediaItem:I = 0x5
 
@@ -52,7 +52,7 @@
     .line 20
     const-string/jumbo v0, "android.service.media.IMediaBrowserService"
 
-    invoke-virtual {p0, p0, v0}, Landroid/service/media/IMediaBrowserService$Stub;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
+    invoke-virtual {p0, p0, v0}, Landroid/os/Binder;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
 
     .line 18
     return-void

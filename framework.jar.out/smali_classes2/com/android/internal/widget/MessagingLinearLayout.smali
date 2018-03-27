@@ -224,7 +224,7 @@
     .line 252
     new-instance v0, Lcom/android/internal/widget/MessagingLinearLayout$LayoutParams;
 
-    iget-object v1, p0, Lcom/android/internal/widget/MessagingLinearLayout;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
     invoke-direct {v0, v1, p1}, Lcom/android/internal/widget/MessagingLinearLayout$LayoutParams;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -252,10 +252,12 @@
     if-eqz v1, :cond_0
 
     .line 265
-    check-cast p1, Landroid/view/ViewGroup$MarginLayoutParams;
+    nop
+
+    nop
 
     .end local p1    # "lp":Landroid/view/ViewGroup$LayoutParams;
-    invoke-virtual {v0, p1}, Lcom/android/internal/widget/MessagingLinearLayout$LayoutParams;->copyMarginsFrom(Landroid/view/ViewGroup$MarginLayoutParams;)V
+    invoke-virtual {v0, p1}, Landroid/view/ViewGroup$MarginLayoutParams;->copyMarginsFrom(Landroid/view/ViewGroup$MarginLayoutParams;)V
 
     .line 267
     :cond_0
@@ -282,7 +284,7 @@
 
     .prologue
     .line 195
-    iget v11, p0, Lcom/android/internal/widget/MessagingLinearLayout;->mPaddingLeft:I
+    iget v11, p0, Landroid/view/View;->mPaddingLeft:I
 
     .line 200
     .local v11, "paddingLeft":I
@@ -290,25 +292,25 @@
 
     .line 201
     .local v12, "width":I
-    iget v13, p0, Lcom/android/internal/widget/MessagingLinearLayout;->mPaddingRight:I
+    iget v13, p0, Landroid/view/View;->mPaddingRight:I
 
     sub-int v3, v12, v13
 
     .line 203
     .local v3, "childRight":I
-    invoke-virtual {p0}, Lcom/android/internal/widget/MessagingLinearLayout;->getLayoutDirection()I
+    invoke-virtual {p0}, Landroid/view/View;->getLayoutDirection()I
 
     move-result v9
 
     .line 204
     .local v9, "layoutDirection":I
-    invoke-virtual {p0}, Lcom/android/internal/widget/MessagingLinearLayout;->getChildCount()I
+    invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
     move-result v6
 
     .line 206
     .local v6, "count":I
-    iget v4, p0, Lcom/android/internal/widget/MessagingLinearLayout;->mPaddingTop:I
+    iget v4, p0, Landroid/view/View;->mPaddingTop:I
 
     .line 208
     .local v4, "childTop":I
@@ -323,7 +325,7 @@
     if-ge v8, v6, :cond_4
 
     .line 211
-    invoke-virtual {p0, v8}, Lcom/android/internal/widget/MessagingLinearLayout;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {p0, v8}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -377,7 +379,7 @@
     .line 223
     sub-int v13, v3, v5
 
-    iget v14, v10, Lcom/android/internal/widget/MessagingLinearLayout$LayoutParams;->rightMargin:I
+    iget v14, v10, Landroid/view/ViewGroup$MarginLayoutParams;->rightMargin:I
 
     sub-int v2, v13, v14
 
@@ -393,7 +395,7 @@
 
     .line 232
     :cond_2
-    iget v13, v10, Lcom/android/internal/widget/MessagingLinearLayout$LayoutParams;->topMargin:I
+    iget v13, v10, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
 
     add-int/2addr v4, v13
 
@@ -405,7 +407,7 @@
     invoke-virtual {v0, v2, v4, v13, v14}, Landroid/view/View;->layout(IIII)V
 
     .line 235
-    iget v13, v10, Lcom/android/internal/widget/MessagingLinearLayout$LayoutParams;->bottomMargin:I
+    iget v13, v10, Landroid/view/ViewGroup$MarginLayoutParams;->bottomMargin:I
 
     add-int/2addr v13, v1
 
@@ -419,7 +421,7 @@
     .line 225
     .end local v2    # "childLeft":I
     :cond_3
-    iget v13, v10, Lcom/android/internal/widget/MessagingLinearLayout$LayoutParams;->leftMargin:I
+    iget v13, v10, Landroid/view/ViewGroup$MarginLayoutParams;->leftMargin:I
 
     add-int v2, v11, v13
 
@@ -458,7 +460,7 @@
 
     .line 105
     .local v17, "targetHeight":I
-    invoke-virtual/range {p0 .. p0}, Lcom/android/internal/widget/MessagingLinearLayout;->getChildCount()I
+    invoke-virtual/range {p0 .. p0}, Landroid/view/ViewGroup;->getChildCount()I
 
     move-result v10
 
@@ -473,7 +475,7 @@
     .line 108
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v12}, Lcom/android/internal/widget/MessagingLinearLayout;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {v0, v12}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v3
 
@@ -548,11 +550,11 @@
     :cond_0
     move-object/from16 v0, p0
 
-    iget v2, v0, Lcom/android/internal/widget/MessagingLinearLayout;->mPaddingTop:I
+    iget v2, v0, Landroid/view/View;->mPaddingTop:I
 
     move-object/from16 v0, p0
 
-    iget v4, v0, Lcom/android/internal/widget/MessagingLinearLayout;->mPaddingBottom:I
+    iget v4, v0, Landroid/view/View;->mPaddingBottom:I
 
     add-int v19, v2, v4
 
@@ -576,7 +578,7 @@
     .line 119
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v12}, Lcom/android/internal/widget/MessagingLinearLayout;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {v0, v12}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v2
 
@@ -598,7 +600,7 @@
     :cond_1
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v12}, Lcom/android/internal/widget/MessagingLinearLayout;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {v0, v12}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v3
 
@@ -606,7 +608,7 @@
     .restart local v3    # "child":Landroid/view/View;
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v12}, Lcom/android/internal/widget/MessagingLinearLayout;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {v0, v12}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v2
 
@@ -625,7 +627,9 @@
     move-object v2, v3
 
     .line 129
-    check-cast v2, Lcom/android/internal/widget/ImageFloatingTextView;
+    nop
+
+    nop
 
     .line 130
     move-object/from16 v0, p0
@@ -654,7 +658,7 @@
 
     move/from16 v6, p2
 
-    invoke-virtual/range {v2 .. v7}, Lcom/android/internal/widget/MessagingLinearLayout;->measureChildWithMargins(Landroid/view/View;IIII)V
+    invoke-virtual/range {v2 .. v7}, Landroid/view/ViewGroup;->measureChildWithMargins(Landroid/view/View;IIII)V
 
     .line 135
     invoke-virtual {v3}, Landroid/view/View;->getMeasuredHeight()I
@@ -665,12 +669,12 @@
     .local v9, "childHeight":I
     add-int v2, v19, v9
 
-    iget v4, v14, Lcom/android/internal/widget/MessagingLinearLayout$LayoutParams;->topMargin:I
+    iget v4, v14, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
 
     add-int/2addr v2, v4
 
     .line 137
-    iget v4, v14, Lcom/android/internal/widget/MessagingLinearLayout$LayoutParams;->bottomMargin:I
+    iget v4, v14, Landroid/view/ViewGroup$MarginLayoutParams;->bottomMargin:I
 
     .line 136
     add-int/2addr v4, v2
@@ -737,11 +741,11 @@
     :cond_5
     move-object/from16 v0, p0
 
-    iget v2, v0, Lcom/android/internal/widget/MessagingLinearLayout;->mPaddingLeft:I
+    iget v2, v0, Landroid/view/View;->mPaddingLeft:I
 
     move-object/from16 v0, p0
 
-    iget v4, v0, Lcom/android/internal/widget/MessagingLinearLayout;->mPaddingRight:I
+    iget v4, v0, Landroid/view/View;->mPaddingRight:I
 
     add-int v15, v2, v4
 
@@ -755,11 +759,11 @@
     .local v13, "imageLines":I
     move-object/from16 v0, p0
 
-    iget v2, v0, Lcom/android/internal/widget/MessagingLinearLayout;->mPaddingTop:I
+    iget v2, v0, Landroid/view/View;->mPaddingTop:I
 
     move-object/from16 v0, p0
 
-    iget v4, v0, Lcom/android/internal/widget/MessagingLinearLayout;->mPaddingBottom:I
+    iget v4, v0, Landroid/view/View;->mPaddingBottom:I
 
     add-int v19, v2, v4
 
@@ -775,7 +779,7 @@
     .line 155
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v12}, Lcom/android/internal/widget/MessagingLinearLayout;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {v0, v12}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v3
 
@@ -817,7 +821,9 @@
     move-object/from16 v18, v3
 
     .line 163
-    check-cast v18, Lcom/android/internal/widget/ImageFloatingTextView;
+    nop
+
+    nop
 
     .line 164
     .local v18, "textChild":Lcom/android/internal/widget/ImageFloatingTextView;
@@ -825,7 +831,7 @@
 
     if-ne v13, v2, :cond_8
 
-    invoke-virtual/range {v18 .. v18}, Lcom/android/internal/widget/ImageFloatingTextView;->getLineCount()I
+    invoke-virtual/range {v18 .. v18}, Landroid/widget/TextView;->getLineCount()I
 
     move-result v2
 
@@ -865,11 +871,11 @@
 
     move/from16 v6, p2
 
-    invoke-virtual/range {v2 .. v7}, Lcom/android/internal/widget/MessagingLinearLayout;->measureChildWithMargins(Landroid/view/View;IIII)V
+    invoke-virtual/range {v2 .. v7}, Landroid/view/ViewGroup;->measureChildWithMargins(Landroid/view/View;IIII)V
 
     .line 174
     :cond_9
-    invoke-virtual/range {v18 .. v18}, Lcom/android/internal/widget/ImageFloatingTextView;->getLineCount()I
+    invoke-virtual/range {v18 .. v18}, Landroid/widget/TextView;->getLineCount()I
 
     move-result v2
 
@@ -883,18 +889,18 @@
 
     move-result v2
 
-    iget v4, v14, Lcom/android/internal/widget/MessagingLinearLayout$LayoutParams;->leftMargin:I
+    iget v4, v14, Landroid/view/ViewGroup$MarginLayoutParams;->leftMargin:I
 
     add-int/2addr v2, v4
 
-    iget v4, v14, Lcom/android/internal/widget/MessagingLinearLayout$LayoutParams;->rightMargin:I
+    iget v4, v14, Landroid/view/ViewGroup$MarginLayoutParams;->rightMargin:I
 
     add-int/2addr v2, v4
 
     .line 179
     move-object/from16 v0, p0
 
-    iget v4, v0, Lcom/android/internal/widget/MessagingLinearLayout;->mPaddingLeft:I
+    iget v4, v0, Landroid/view/View;->mPaddingLeft:I
 
     .line 178
     add-int/2addr v2, v4
@@ -902,7 +908,7 @@
     .line 179
     move-object/from16 v0, p0
 
-    iget v4, v0, Lcom/android/internal/widget/MessagingLinearLayout;->mPaddingRight:I
+    iget v4, v0, Landroid/view/View;->mPaddingRight:I
 
     .line 178
     add-int/2addr v2, v4
@@ -920,13 +926,13 @@
     add-int v2, v2, v19
 
     .line 181
-    iget v4, v14, Lcom/android/internal/widget/MessagingLinearLayout$LayoutParams;->topMargin:I
+    iget v4, v14, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
 
     .line 180
     add-int/2addr v2, v4
 
     .line 181
-    iget v4, v14, Lcom/android/internal/widget/MessagingLinearLayout$LayoutParams;->bottomMargin:I
+    iget v4, v14, Landroid/view/ViewGroup$MarginLayoutParams;->bottomMargin:I
 
     .line 180
     add-int/2addr v4, v2
@@ -963,7 +969,7 @@
     .end local v3    # "child":Landroid/view/View;
     .end local v14    # "lp":Lcom/android/internal/widget/MessagingLinearLayout$LayoutParams;
     :cond_c
-    invoke-virtual/range {p0 .. p0}, Lcom/android/internal/widget/MessagingLinearLayout;->getSuggestedMinimumWidth()I
+    invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getSuggestedMinimumWidth()I
 
     move-result v2
 
@@ -978,7 +984,7 @@
     move-result v2
 
     .line 189
-    invoke-virtual/range {p0 .. p0}, Lcom/android/internal/widget/MessagingLinearLayout;->getSuggestedMinimumHeight()I
+    invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getSuggestedMinimumHeight()I
 
     move-result v4
 
@@ -997,7 +1003,7 @@
     .line 186
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v2, v4}, Lcom/android/internal/widget/MessagingLinearLayout;->setMeasuredDimension(II)V
+    invoke-virtual {v0, v2, v4}, Landroid/view/View;->setMeasuredDimension(II)V
 
     .line 86
     return-void

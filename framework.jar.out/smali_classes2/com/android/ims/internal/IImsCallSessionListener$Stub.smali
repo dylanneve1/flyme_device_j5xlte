@@ -56,7 +56,7 @@
 
 .field static final TRANSACTION_callSessionMultipartyStateChanged_28:I = 0x1d
 
-.field static final TRANSACTION_callSessionProgressing_0:I = 0x1
+.field static final TRANSACTION_callSessionProgressing:I = 0x1
 
 .field static final TRANSACTION_callSessionRemoveParticipantsRequestDelivered:I = 0x16
 
@@ -70,7 +70,7 @@
 
 .field static final TRANSACTION_callSessionStartFailed:I = 0x3
 
-.field static final TRANSACTION_callSessionStarted_1:I = 0x2
+.field static final TRANSACTION_callSessionStarted:I = 0x2
 
 .field static final TRANSACTION_callSessionSuppServiceReceived:I = 0x1e
 

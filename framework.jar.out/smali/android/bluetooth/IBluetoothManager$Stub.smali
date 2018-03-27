@@ -30,9 +30,9 @@
 
 .field static final TRANSACTION_disable:I = 0x8
 
-.field static final TRANSACTION_enableNoAutoConnect:I = 0x7
+.field static final TRANSACTION_enable:I = 0x6
 
-.field static final TRANSACTION_enable_5:I = 0x6
+.field static final TRANSACTION_enableNoAutoConnect:I = 0x7
 
 .field static final TRANSACTION_getAddress:I = 0xd
 
@@ -46,17 +46,17 @@
 
 .field static final TRANSACTION_isBleScanAlwaysAvailable:I = 0xf
 
-.field static final TRANSACTION_isEnabled_4:I = 0x5
+.field static final TRANSACTION_isEnabled:I = 0x5
 
 .field static final TRANSACTION_registerAdapter:I = 0x1
 
-.field static final TRANSACTION_registerStateChangeCallback_2:I = 0x3
+.field static final TRANSACTION_registerStateChangeCallback:I = 0x3
 
 .field static final TRANSACTION_unbindBluetoothProfileService:I = 0xc
 
 .field static final TRANSACTION_unregisterAdapter:I = 0x2
 
-.field static final TRANSACTION_unregisterStateChangeCallback_3:I = 0x4
+.field static final TRANSACTION_unregisterStateChangeCallback:I = 0x4
 
 .field static final TRANSACTION_updateBleAppCount:I = 0x10
 

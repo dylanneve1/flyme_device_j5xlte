@@ -61,7 +61,7 @@
     .line 1310
     new-instance v2, Ljava/util/ArrayList;
 
-    iget-object v3, p2, Landroid/app/ExitTransitionCoordinator;->mSharedElements:Ljava/util/ArrayList;
+    iget-object v3, p2, Landroid/app/ActivityTransitionCoordinator;->mSharedElements:Ljava/util/ArrayList;
 
     invoke-direct {v2, v3}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 

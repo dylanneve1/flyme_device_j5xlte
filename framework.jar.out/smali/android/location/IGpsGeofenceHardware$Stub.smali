@@ -34,7 +34,7 @@
 
 .field static final TRANSACTION_removeHardwareGeofence:I = 0x3
 
-.field static final TRANSACTION_resumeHardwareGeofence_4:I = 0x5
+.field static final TRANSACTION_resumeHardwareGeofence:I = 0x5
 
 
 # direct methods

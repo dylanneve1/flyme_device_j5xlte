@@ -28,7 +28,7 @@
 
 .field static final TRANSACTION_getFromLocation:I = 0x1
 
-.field static final TRANSACTION_getFromLocationName_1:I = 0x2
+.field static final TRANSACTION_getFromLocationName:I = 0x2
 
 
 # direct methods

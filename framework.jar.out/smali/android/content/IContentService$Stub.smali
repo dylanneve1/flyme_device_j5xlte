@@ -72,11 +72,11 @@
 
 .field static final TRANSACTION_isSyncPending_31:I = 0x20
 
-.field static final TRANSACTION_notifyChange_2:I = 0x3
+.field static final TRANSACTION_notifyChange:I = 0x3
 
 .field static final TRANSACTION_putCache:I = 0x24
 
-.field static final TRANSACTION_registerContentObserver_1:I = 0x2
+.field static final TRANSACTION_registerContentObserver:I = 0x2
 
 .field static final TRANSACTION_removePeriodicSync:I = 0x10
 
@@ -98,7 +98,7 @@
 
 .field static final TRANSACTION_syncAsUser:I = 0x6
 
-.field static final TRANSACTION_unregisterContentObserver_0:I = 0x1
+.field static final TRANSACTION_unregisterContentObserver:I = 0x1
 
 
 # direct methods

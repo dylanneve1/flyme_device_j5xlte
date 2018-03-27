@@ -5501,7 +5501,7 @@
     iget-object v1, v0, Lcom/android/internal/telephony/imsphone/ImsPhone;->mContext:Landroid/content/Context;
 
     .line 1615
-    const v3, 0x104015f
+    const v3, 0x1040161
 
     .line 1614
     invoke-virtual {v1, v3}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;

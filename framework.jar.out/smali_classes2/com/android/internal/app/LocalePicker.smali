@@ -197,7 +197,7 @@
 
     .line 125
     .local v5, "localeList":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/String;>;"
-    const v11, 0x10400e3
+    const v11, 0x10400e5
 
     invoke-virtual {v8, v11}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -583,7 +583,7 @@
 
     .prologue
     .line 106
-    const v3, 0x10400e3
+    const v3, 0x10400e5
 
     invoke-virtual {p1, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

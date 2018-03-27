@@ -36,15 +36,15 @@
 
 .field static final TRANSACTION_getActiveLinkProperties:I = 0xc
 
-.field static final TRANSACTION_getActiveNetwork:I = 0x1
-
-.field static final TRANSACTION_getActiveNetworkForUid:I = 0x2
-
-.field static final TRANSACTION_getActiveNetworkInfo:I = 0x3
+.field static final TRANSACTION_getActiveNetworkForUid_1:I = 0x2
 
 .field static final TRANSACTION_getActiveNetworkInfoForUid:I = 0x4
 
+.field static final TRANSACTION_getActiveNetworkInfo_2:I = 0x3
+
 .field static final TRANSACTION_getActiveNetworkQuotaInfo:I = 0x11
+
+.field static final TRANSACTION_getActiveNetwork_0:I = 0x1
 
 .field static final TRANSACTION_getAllNetworkInfo:I = 0x7
 

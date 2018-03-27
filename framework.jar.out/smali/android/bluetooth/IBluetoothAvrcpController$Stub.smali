@@ -32,15 +32,15 @@
 
 .field static final TRANSACTION_getDevicesMatchingConnectionStates:I = 0x2
 
-.field static final TRANSACTION_getMetadata_5:I = 0x6
+.field static final TRANSACTION_getMetadata:I = 0x6
 
 .field static final TRANSACTION_getPlaybackState:I = 0x7
 
-.field static final TRANSACTION_getPlayerSettings_4:I = 0x5
+.field static final TRANSACTION_getPlayerSettings:I = 0x5
 
 .field static final TRANSACTION_sendGroupNavigationCmd:I = 0x9
 
-.field static final TRANSACTION_sendPassThroughCmd_3:I = 0x4
+.field static final TRANSACTION_sendPassThroughCmd:I = 0x4
 
 .field static final TRANSACTION_setPlayerApplicationSetting:I = 0x8
 
@@ -56,7 +56,7 @@
     .line 20
     const-string/jumbo v0, "android.bluetooth.IBluetoothAvrcpController"
 
-    invoke-virtual {p0, p0, v0}, Landroid/bluetooth/IBluetoothAvrcpController$Stub;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
+    invoke-virtual {p0, p0, v0}, Landroid/os/Binder;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
 
     .line 18
     return-void

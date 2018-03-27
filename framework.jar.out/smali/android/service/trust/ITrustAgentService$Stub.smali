@@ -36,7 +36,7 @@
 
 .field static final TRANSACTION_onUnlockAttempt:I = 0x1
 
-.field static final TRANSACTION_setCallback_5:I = 0x6
+.field static final TRANSACTION_setCallback:I = 0x6
 
 
 # direct methods

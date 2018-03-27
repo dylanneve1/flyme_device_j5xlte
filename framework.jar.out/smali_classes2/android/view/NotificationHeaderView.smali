@@ -521,7 +521,7 @@
     invoke-super {p0}, Landroid/view/ViewGroup;->onFinishInflate()V
 
     .line 120
-    const v0, 0x10203b0
+    const v0, 0x10203b1
 
     invoke-virtual {p0, v0}, Landroid/view/NotificationHeaderView;->findViewById(I)Landroid/view/View;
 
@@ -530,7 +530,7 @@
     iput-object v0, p0, Landroid/view/NotificationHeaderView;->mAppName:Landroid/view/View;
 
     .line 121
-    const v0, 0x10203b2
+    const v0, 0x10203b3
 
     invoke-virtual {p0, v0}, Landroid/view/NotificationHeaderView;->findViewById(I)Landroid/view/View;
 
@@ -539,7 +539,7 @@
     iput-object v0, p0, Landroid/view/NotificationHeaderView;->mHeaderText:Landroid/view/View;
 
     .line 122
-    const v0, 0x10203b5
+    const v0, 0x10203b6
 
     invoke-virtual {p0, v0}, Landroid/view/NotificationHeaderView;->findViewById(I)Landroid/view/View;
 
@@ -572,7 +572,7 @@
     iput-object v0, p0, Landroid/view/NotificationHeaderView;->mIcon:Landroid/view/View;
 
     .line 127
-    const v0, 0x10203b6
+    const v0, 0x10203b7
 
     invoke-virtual {p0, v0}, Landroid/view/NotificationHeaderView;->findViewById(I)Landroid/view/View;
 

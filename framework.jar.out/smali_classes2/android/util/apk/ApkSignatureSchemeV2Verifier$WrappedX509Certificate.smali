@@ -124,7 +124,7 @@
     .line 1258
     iget-object v0, p0, Landroid/util/apk/ApkSignatureSchemeV2Verifier$WrappedX509Certificate;->wrapped:Ljava/security/cert/X509Certificate;
 
-    invoke-virtual {v0}, Ljava/security/cert/X509Certificate;->getEncoded()[B
+    invoke-virtual {v0}, Ljava/security/cert/Certificate;->getEncoded()[B
 
     move-result-object v0
 
@@ -246,7 +246,7 @@
     .line 1281
     iget-object v0, p0, Landroid/util/apk/ApkSignatureSchemeV2Verifier$WrappedX509Certificate;->wrapped:Ljava/security/cert/X509Certificate;
 
-    invoke-virtual {v0}, Ljava/security/cert/X509Certificate;->getPublicKey()Ljava/security/PublicKey;
+    invoke-virtual {v0}, Ljava/security/cert/Certificate;->getPublicKey()Ljava/security/PublicKey;
 
     move-result-object v0
 
@@ -405,7 +405,7 @@
     .line 1276
     iget-object v0, p0, Landroid/util/apk/ApkSignatureSchemeV2Verifier$WrappedX509Certificate;->wrapped:Ljava/security/cert/X509Certificate;
 
-    invoke-virtual {v0}, Ljava/security/cert/X509Certificate;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/security/cert/Certificate;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -429,7 +429,7 @@
     .line 1264
     iget-object v0, p0, Landroid/util/apk/ApkSignatureSchemeV2Verifier$WrappedX509Certificate;->wrapped:Ljava/security/cert/X509Certificate;
 
-    invoke-virtual {v0, p1}, Ljava/security/cert/X509Certificate;->verify(Ljava/security/PublicKey;)V
+    invoke-virtual {v0, p1}, Ljava/security/cert/Certificate;->verify(Ljava/security/PublicKey;)V
 
     .line 1263
     return-void
@@ -453,7 +453,7 @@
     .line 1271
     iget-object v0, p0, Landroid/util/apk/ApkSignatureSchemeV2Verifier$WrappedX509Certificate;->wrapped:Ljava/security/cert/X509Certificate;
 
-    invoke-virtual {v0, p1, p2}, Ljava/security/cert/X509Certificate;->verify(Ljava/security/PublicKey;Ljava/lang/String;)V
+    invoke-virtual {v0, p1, p2}, Ljava/security/cert/Certificate;->verify(Ljava/security/PublicKey;Ljava/lang/String;)V
 
     .line 1270
     return-void

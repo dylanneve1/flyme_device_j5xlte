@@ -28,9 +28,9 @@
 
 .field static final TRANSACTION_addCircularFence:I = 0x5
 
-.field static final TRANSACTION_getMonitoringTypes_2:I = 0x3
+.field static final TRANSACTION_getMonitoringTypes:I = 0x3
 
-.field static final TRANSACTION_getStatusOfMonitoringType_3:I = 0x4
+.field static final TRANSACTION_getStatusOfMonitoringType:I = 0x4
 
 .field static final TRANSACTION_pauseGeofence:I = 0x7
 
@@ -40,7 +40,7 @@
 
 .field static final TRANSACTION_resumeGeofence:I = 0x8
 
-.field static final TRANSACTION_setFusedGeofenceHardware_1:I = 0x2
+.field static final TRANSACTION_setFusedGeofenceHardware:I = 0x2
 
 .field static final TRANSACTION_setGpsGeofenceHardware:I = 0x1
 

@@ -123,6 +123,8 @@
     <string name="tethered_notification_no_device_message">Нет подключенных устройств</string>
     <string name="tethered_notification_one_device_message">%1$s подключенное устройство</string>
     <string name="tethered_notification_multi_device_message">Подключено устройств: %1$s</string>
+    <string name="silent_mode_priority">Важные</string>
+    <string name="silent_mode_none">Нет</string>
     <string name="month_day_year" formatted="false">%-e %B %Y г.</string>
     <string name="time_of_day" formatted="false">%-k:%M:%S</string>
     <string name="date_and_time" formatted="false">%-k:%M:%S, %d.%m.%Y</string>

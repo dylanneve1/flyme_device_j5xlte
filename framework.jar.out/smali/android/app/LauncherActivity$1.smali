@@ -45,7 +45,7 @@
     .line 379
     iget-object v0, p0, Landroid/app/LauncherActivity$1;->this$0:Landroid/app/LauncherActivity;
 
-    invoke-virtual {v0}, Landroid/app/LauncherActivity;->finish()V
+    invoke-virtual {v0}, Landroid/app/Activity;->finish()V
 
     .line 378
     return-void

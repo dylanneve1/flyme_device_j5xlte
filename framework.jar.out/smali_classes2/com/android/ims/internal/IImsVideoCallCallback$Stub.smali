@@ -26,11 +26,11 @@
 # static fields
 .field private static final DESCRIPTOR:Ljava/lang/String; = "com.android.ims.internal.IImsVideoCallCallback"
 
-.field static final TRANSACTION_changeCallDataUsage_4:I = 0x5
+.field static final TRANSACTION_changeCallDataUsage:I = 0x5
 
-.field static final TRANSACTION_changeCameraCapabilities_5:I = 0x6
+.field static final TRANSACTION_changeCameraCapabilities:I = 0x6
 
-.field static final TRANSACTION_changePeerDimensions_3:I = 0x4
+.field static final TRANSACTION_changePeerDimensions:I = 0x4
 
 .field static final TRANSACTION_changeVideoQuality:I = 0x7
 
@@ -52,7 +52,7 @@
     .line 27
     const-string/jumbo v0, "com.android.ims.internal.IImsVideoCallCallback"
 
-    invoke-virtual {p0, p0, v0}, Lcom/android/ims/internal/IImsVideoCallCallback$Stub;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
+    invoke-virtual {p0, p0, v0}, Landroid/os/Binder;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
 
     .line 25
     return-void

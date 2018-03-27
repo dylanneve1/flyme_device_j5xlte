@@ -28,9 +28,9 @@
 
 .field static final TRANSACTION_acknowledgeFullBackupOrRestore_15:I = 0x10
 
-.field static final TRANSACTION_agentConnected_2:I = 0x3
+.field static final TRANSACTION_agentConnected:I = 0x3
 
-.field static final TRANSACTION_agentDisconnected_3:I = 0x4
+.field static final TRANSACTION_agentDisconnected:I = 0x4
 
 .field static final TRANSACTION_backupNow_11:I = 0xc
 
@@ -74,7 +74,7 @@
 
 .field static final TRANSACTION_requestBackup:I = 0x1f
 
-.field static final TRANSACTION_restoreAtInstall_4:I = 0x5
+.field static final TRANSACTION_restoreAtInstall:I = 0x5
 
 .field static final TRANSACTION_selectBackupTransport_19:I = 0x14
 

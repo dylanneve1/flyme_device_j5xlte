@@ -42,13 +42,13 @@
 
 .field static final TRANSACTION_getRestrictBackgroundWhitelistedUids:I = 0x12
 
-.field static final TRANSACTION_getUidPolicy_3:I = 0x4
+.field static final TRANSACTION_getUidPolicy:I = 0x4
 
-.field static final TRANSACTION_getUidsWithPolicy_4:I = 0x5
+.field static final TRANSACTION_getUidsWithPolicy:I = 0x5
 
 .field static final TRANSACTION_isNetworkMetered:I = 0x16
 
-.field static final TRANSACTION_isUidForeground_5:I = 0x6
+.field static final TRANSACTION_isUidForeground:I = 0x6
 
 .field static final TRANSACTION_onTetheringChanged:I = 0xf
 
@@ -56,9 +56,9 @@
 
 .field static final TRANSACTION_removeRestrictBackgroundWhitelistedUid:I = 0x11
 
-.field static final TRANSACTION_removeUidPolicy_2:I = 0x3
+.field static final TRANSACTION_removeUidPolicy:I = 0x3
 
-.field static final TRANSACTION_setConnectivityListener_6:I = 0x7
+.field static final TRANSACTION_setConnectivityListener:I = 0x7
 
 .field static final TRANSACTION_setDeviceIdleMode:I = 0x14
 

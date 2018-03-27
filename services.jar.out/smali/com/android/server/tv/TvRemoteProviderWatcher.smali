@@ -157,7 +157,7 @@
     iput-object v0, p0, Lcom/android/server/tv/TvRemoteProviderWatcher;->mPackageManager:Landroid/content/pm/PackageManager;
 
     .line 64
-    const v0, 0x10400d6
+    const v0, 0x10400d8
 
     .line 63
     invoke-virtual {p1, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;

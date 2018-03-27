@@ -80,7 +80,7 @@
 
     .line 64
     .local v4, "resolver":Landroid/content/ContentResolver;
-    const v7, 0x10400b7
+    const v7, 0x10400b9
 
     .line 63
     invoke-virtual {v1, v7}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;

@@ -304,7 +304,7 @@
     .local v1, "key":Ljava/lang/String;
     iget-object v3, p0, Landroid/app/backup/WallpaperBackupHelper;->mKeys:[Ljava/lang/String;
 
-    invoke-virtual {p0, v1, v3}, Landroid/app/backup/WallpaperBackupHelper;->isKeyInList(Ljava/lang/String;[Ljava/lang/String;)Z
+    invoke-virtual {p0, v1, v3}, Landroid/app/backup/FileBackupHelperBase;->isKeyInList(Ljava/lang/String;[Ljava/lang/String;)Z
 
     move-result v3
 
@@ -328,7 +328,7 @@
 
     .line 144
     .local v0, "f":Ljava/io/File;
-    invoke-virtual {p0, v0, p1}, Landroid/app/backup/WallpaperBackupHelper;->writeFile(Ljava/io/File;Landroid/app/backup/BackupDataInputStream;)Z
+    invoke-virtual {p0, v0, p1}, Landroid/app/backup/FileBackupHelperBase;->writeFile(Ljava/io/File;Landroid/app/backup/BackupDataInputStream;)Z
 
     move-result v3
 
@@ -376,7 +376,7 @@
 
     .line 188
     .restart local v0    # "f":Ljava/io/File;
-    invoke-virtual {p0, v0, p1}, Landroid/app/backup/WallpaperBackupHelper;->writeFile(Ljava/io/File;Landroid/app/backup/BackupDataInputStream;)Z
+    invoke-virtual {p0, v0, p1}, Landroid/app/backup/FileBackupHelperBase;->writeFile(Ljava/io/File;Landroid/app/backup/BackupDataInputStream;)Z
 
     goto :goto_0
 .end method

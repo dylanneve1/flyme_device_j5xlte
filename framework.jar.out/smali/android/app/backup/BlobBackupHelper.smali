@@ -71,7 +71,7 @@
     .line 225
     .local v4, "nRead":I
     :goto_0
-    invoke-virtual {v0, v1}, Ljava/io/ByteArrayInputStream;->read([B)I
+    invoke-virtual {v0, v1}, Ljava/io/InputStream;->read([B)I
 
     move-result v4
 
@@ -150,7 +150,7 @@
 
     .line 171
     .local v2, "out":Ljava/util/zip/DeflaterOutputStream;
-    invoke-virtual {v2, p1}, Ljava/util/zip/DeflaterOutputStream;->write([B)V
+    invoke-virtual {v2, p1}, Ljava/io/FilterOutputStream;->write([B)V
 
     .line 172
     invoke-virtual {v2}, Ljava/util/zip/DeflaterOutputStream;->close()V
@@ -190,7 +190,7 @@
 
     move-result-object v6
 
-    invoke-virtual {v0}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v7
 
@@ -292,7 +292,7 @@
     .line 201
     .local v0, "buffer":[B
     :goto_0
-    invoke-virtual {v3, v0}, Ljava/util/zip/InflaterInputStream;->read([B)I
+    invoke-virtual {v3, v0}, Ljava/io/FilterInputStream;->read([B)I
 
     move-result v5
 
@@ -333,7 +333,7 @@
 
     move-result-object v10
 
-    invoke-virtual {v1}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v11
 
@@ -368,7 +368,7 @@
     invoke-virtual {v3}, Ljava/util/zip/InflaterInputStream;->close()V
 
     .line 205
-    invoke-virtual {v4}, Ljava/io/ByteArrayOutputStream;->flush()V
+    invoke-virtual {v4}, Ljava/io/OutputStream;->flush()V
 
     .line 206
     invoke-virtual {v4}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
@@ -524,7 +524,7 @@
 
     move-result-object v12
 
-    invoke-virtual {v3}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+    invoke-virtual {v3}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v13
 
@@ -829,7 +829,7 @@
 
     move-result-object v11
 
-    invoke-virtual {v4}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+    invoke-virtual {v4}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v12
 
@@ -1022,7 +1022,7 @@
 
     move-result-object v6
 
-    invoke-virtual {v1}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v7
 

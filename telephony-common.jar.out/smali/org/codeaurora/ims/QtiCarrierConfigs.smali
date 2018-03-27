@@ -6,6 +6,8 @@
 # static fields
 .field public static final ALLOW_VIDEO_CALL_IN_LOW_BATTERY:Ljava/lang/String; = "allow_video_call_in_low_battery"
 
+.field public static final CHECK_SUPPORT_FOR_HIGH_VIDEO_QUALITY:Ljava/lang/String; = "check_support_for_high_video_quality"
+
 .field public static final CONFIG_CS_RETRY:Ljava/lang/String; = "config_carrier_cs_retry_available"
 
 .field public static final HIDE_PREVIEW_IN_VT_CONFERENCE:Ljava/lang/String; = "config_hide_preview_in_vt_confcall"
@@ -16,7 +18,11 @@
 
 .field public static final SHOW_DATA_USAGE_TOAST:Ljava/lang/String; = "show_data_usage_toast"
 
+.field public static final SHOW_STATIC_IMAGE_UI:Ljava/lang/String; = "show_static_image_ui"
+
 .field public static final SHOW_VIDEO_QUALITY_TOAST:Ljava/lang/String; = "show_video_quality_toast"
+
+.field public static final TRANSMIT_STATIC_IMAGE:Ljava/lang/String; = "transmit_static_image"
 
 .field public static final USE_CUSTOM_VIDEO_UI:Ljava/lang/String; = "use_custom_video_ui"
 

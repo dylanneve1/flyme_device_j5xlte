@@ -32,11 +32,11 @@
 
 .field static final TRANSACTION_onPackageRemoved:I = 0x1
 
-.field static final TRANSACTION_onPackagesAvailable_3:I = 0x4
+.field static final TRANSACTION_onPackagesAvailable:I = 0x4
 
 .field static final TRANSACTION_onPackagesSuspended:I = 0x6
 
-.field static final TRANSACTION_onPackagesUnavailable_4:I = 0x5
+.field static final TRANSACTION_onPackagesUnavailable:I = 0x5
 
 .field static final TRANSACTION_onPackagesUnsuspended:I = 0x7
 

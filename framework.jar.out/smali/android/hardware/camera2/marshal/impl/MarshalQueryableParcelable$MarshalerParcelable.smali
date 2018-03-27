@@ -384,7 +384,7 @@
     .prologue
     .line 122
     .local p0, "this":Landroid/hardware/camera2/marshal/impl/MarshalQueryableParcelable$MarshalerParcelable;, "Landroid/hardware/camera2/marshal/impl/MarshalQueryableParcelable<TT;>.MarshalerParcelable;"
-    invoke-virtual {p1}, Ljava/nio/ByteBuffer;->mark()Ljava/nio/Buffer;
+    invoke-virtual {p1}, Ljava/nio/Buffer;->mark()Ljava/nio/Buffer;
 
     .line 124
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
@@ -394,7 +394,7 @@
     .line 126
     .local v2, "parcel":Landroid/os/Parcel;
     :try_start_0
-    invoke-virtual {p1}, Ljava/nio/ByteBuffer;->remaining()I
+    invoke-virtual {p1}, Ljava/nio/Buffer;->remaining()I
 
     move-result v1
 
@@ -483,16 +483,16 @@
     .restart local v4    # "value":Landroid/os/Parcelable;, "TT;"
     :cond_0
     :try_start_1
-    invoke-virtual {p1}, Ljava/nio/ByteBuffer;->reset()Ljava/nio/Buffer;
+    invoke-virtual {p1}, Ljava/nio/Buffer;->reset()Ljava/nio/Buffer;
 
     .line 143
-    invoke-virtual {p1}, Ljava/nio/ByteBuffer;->position()I
+    invoke-virtual {p1}, Ljava/nio/Buffer;->position()I
 
     move-result v5
 
     add-int/2addr v5, v0
 
-    invoke-virtual {p1, v5}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
+    invoke-virtual {p1, v5}, Ljava/nio/Buffer;->position(I)Ljava/nio/Buffer;
 
     .line 150
     iget-object v5, p0, Landroid/hardware/camera2/marshal/impl/MarshalQueryableParcelable$MarshalerParcelable;->mClass:Ljava/lang/Class;

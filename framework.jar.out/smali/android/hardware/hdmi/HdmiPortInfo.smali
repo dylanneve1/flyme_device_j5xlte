@@ -128,7 +128,9 @@
     move-object v0, p1
 
     .line 181
-    check-cast v0, Landroid/hardware/hdmi/HdmiPortInfo;
+    nop
+
+    nop
 
     .line 182
     .local v0, "other":Landroid/hardware/hdmi/HdmiPortInfo;

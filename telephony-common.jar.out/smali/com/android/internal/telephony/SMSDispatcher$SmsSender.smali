@@ -57,7 +57,7 @@
 
     iget-object v0, v0, Lcom/android/internal/telephony/SMSDispatcher;->mContext:Landroid/content/Context;
 
-    invoke-virtual {p0, v0, p1}, Lcom/android/internal/telephony/SMSDispatcher$SmsSender;->bindToCarrierMessagingService(Landroid/content/Context;Ljava/lang/String;)Z
+    invoke-virtual {p0, v0, p1}, Landroid/telephony/CarrierMessagingServiceManager;->bindToCarrierMessagingService(Landroid/content/Context;Ljava/lang/String;)Z
 
     move-result v0
 

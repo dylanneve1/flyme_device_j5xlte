@@ -30,7 +30,7 @@
 
 .field static final TRANSACTION_getCurrentSpellChecker:I = 0x1
 
-.field static final TRANSACTION_getCurrentSpellCheckerSubtype_1:I = 0x2
+.field static final TRANSACTION_getCurrentSpellCheckerSubtype:I = 0x2
 
 .field static final TRANSACTION_getEnabledSpellCheckers:I = 0x9
 

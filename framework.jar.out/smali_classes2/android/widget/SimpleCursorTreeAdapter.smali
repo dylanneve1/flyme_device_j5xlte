@@ -200,7 +200,9 @@
     if-eqz v5, :cond_3
 
     .line 229
-    check-cast v4, Landroid/widget/TextView;
+    nop
+
+    nop
 
     .end local v4    # "v":Landroid/view/View;
     invoke-virtual {p0, v4, v3}, Landroid/widget/SimpleCursorTreeAdapter;->setViewText(Landroid/widget/TextView;Ljava/lang/String;)V
@@ -222,7 +224,9 @@
     if-eqz v5, :cond_4
 
     .line 231
-    check-cast v4, Landroid/widget/ImageView;
+    nop
+
+    nop
 
     .end local v4    # "v":Landroid/view/View;
     invoke-virtual {p0, v4, v3}, Landroid/widget/SimpleCursorTreeAdapter;->setViewImage(Landroid/widget/ImageView;Ljava/lang/String;)V

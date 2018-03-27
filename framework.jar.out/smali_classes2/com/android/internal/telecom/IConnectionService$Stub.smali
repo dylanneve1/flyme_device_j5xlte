@@ -26,7 +26,7 @@
 # static fields
 .field private static final DESCRIPTOR:Ljava/lang/String; = "com.android.internal.telecom.IConnectionService"
 
-.field static final TRANSACTION_abort_3:I = 0x4
+.field static final TRANSACTION_abort:I = 0x4
 
 .field static final TRANSACTION_addConnectionServiceAdapter:I = 0x1
 
@@ -34,11 +34,11 @@
 
 .field static final TRANSACTION_answer:I = 0x6
 
-.field static final TRANSACTION_answerVideo_4:I = 0x5
+.field static final TRANSACTION_answerVideo:I = 0x5
 
 .field static final TRANSACTION_conference:I = 0x10
 
-.field static final TRANSACTION_createConnection_2:I = 0x3
+.field static final TRANSACTION_createConnection:I = 0x3
 
 .field static final TRANSACTION_disconnect:I = 0x9
 
@@ -60,7 +60,7 @@
 
 .field static final TRANSACTION_rejectWithMessage:I = 0x8
 
-.field static final TRANSACTION_removeConnectionServiceAdapter_1:I = 0x2
+.field static final TRANSACTION_removeConnectionServiceAdapter:I = 0x2
 
 .field static final TRANSACTION_sendCallEvent:I = 0x16
 

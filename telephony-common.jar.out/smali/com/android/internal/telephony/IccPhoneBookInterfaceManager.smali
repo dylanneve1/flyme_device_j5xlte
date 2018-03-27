@@ -75,7 +75,7 @@
     .line 70
     sget-object v0, Lcom/android/internal/telephony/IccPhoneBookInterfaceManager;->mHandlerThread:Landroid/os/HandlerThread;
 
-    invoke-virtual {v0}, Landroid/os/HandlerThread;->start()V
+    invoke-virtual {v0}, Ljava/lang/Thread;->start()V
 
     .line 45
     return-void

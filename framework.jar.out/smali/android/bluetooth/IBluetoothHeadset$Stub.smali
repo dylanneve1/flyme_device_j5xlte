@@ -54,9 +54,9 @@
 
 .field static final TRANSACTION_getDevicesMatchingConnectionStates:I = 0x4
 
-.field static final TRANSACTION_getPriority_6:I = 0x7
+.field static final TRANSACTION_getPriority:I = 0x7
 
-.field static final TRANSACTION_isAudioConnected_9:I = 0xa
+.field static final TRANSACTION_isAudioConnected:I = 0xa
 
 .field static final TRANSACTION_isAudioOn:I = 0x10
 
@@ -72,11 +72,11 @@
 
 .field static final TRANSACTION_startScoUsingVirtualVoiceCall:I = 0x15
 
-.field static final TRANSACTION_startVoiceRecognition_7:I = 0x8
+.field static final TRANSACTION_startVoiceRecognition:I = 0x8
 
 .field static final TRANSACTION_stopScoUsingVirtualVoiceCall:I = 0x16
 
-.field static final TRANSACTION_stopVoiceRecognition_8:I = 0x9
+.field static final TRANSACTION_stopVoiceRecognition:I = 0x9
 
 
 # direct methods

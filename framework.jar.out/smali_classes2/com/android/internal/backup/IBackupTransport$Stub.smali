@@ -74,7 +74,7 @@
 
 .field static final TRANSACTION_sendBackupData:I = 0x15
 
-.field static final TRANSACTION_startRestore:I = 0xe
+.field static final TRANSACTION_startRestore_13:I = 0xe
 
 .field static final TRANSACTION_transportDirName_5:I = 0x6
 

@@ -92,7 +92,7 @@
     .line 164
     iget-object v0, p0, Lcom/android/internal/app/PlatLogoActivity$2;->val$im:Landroid/widget/ImageView;
 
-    invoke-virtual {v0}, Landroid/widget/ImageView;->performLongClick()Z
+    invoke-virtual {v0}, Landroid/view/View;->performLongClick()Z
 
     .line 169
     :cond_0
@@ -105,7 +105,7 @@
     :cond_1
     iget-object v0, p0, Lcom/android/internal/app/PlatLogoActivity$2;->val$im:Landroid/widget/ImageView;
 
-    invoke-virtual {v0}, Landroid/widget/ImageView;->performClick()Z
+    invoke-virtual {v0}, Landroid/view/View;->performClick()Z
 
     goto :goto_0
 

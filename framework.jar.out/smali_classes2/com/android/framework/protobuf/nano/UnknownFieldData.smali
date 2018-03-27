@@ -84,7 +84,9 @@
     move-object v0, p1
 
     .line 77
-    check-cast v0, Lcom/android/framework/protobuf/nano/UnknownFieldData;
+    nop
+
+    nop
 
     .line 78
     .local v0, "other":Lcom/android/framework/protobuf/nano/UnknownFieldData;

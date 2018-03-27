@@ -357,7 +357,7 @@
 
     move-result-object v5
 
-    invoke-virtual {v0}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v6
 
@@ -701,7 +701,7 @@
 
     .line 229
     .local v5, "e":Landroid/os/RemoteException;
-    invoke-virtual {v5}, Landroid/os/RemoteException;->printStackTrace()V
+    invoke-virtual {v5}, Ljava/lang/Throwable;->printStackTrace()V
 
     goto :goto_0
 
@@ -811,7 +811,7 @@
 
     move-result-object v12
 
-    invoke-virtual {v3}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v3}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v13
 
@@ -838,7 +838,7 @@
     .line 160
     .local v2, "e":Landroid/os/RemoteException;
     :try_start_2
-    invoke-virtual {v2}, Landroid/os/RemoteException;->printStackTrace()V
+    invoke-virtual {v2}, Ljava/lang/Throwable;->printStackTrace()V
 
     goto :goto_0
 
@@ -1079,7 +1079,7 @@
 
     .line 194
     .restart local v2    # "e":Landroid/os/RemoteException;
-    invoke-virtual {v2}, Landroid/os/RemoteException;->printStackTrace()V
+    invoke-virtual {v2}, Ljava/lang/Throwable;->printStackTrace()V
 
     goto :goto_2
 

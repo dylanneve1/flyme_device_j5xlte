@@ -57,20 +57,20 @@
     .locals 1
 
     .prologue
-    .line 662
+    .line 655
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 666
+    .line 659
     const/4 v0, 0x0
 
     iput v0, p0, Lcom/android/server/am/ActivityManagerService$PriorityState;->regionCounter:I
 
-    .line 669
+    .line 662
     const/high16 v0, -0x80000000
 
     iput v0, p0, Lcom/android/server/am/ActivityManagerService$PriorityState;->prevPriority:I
 
-    .line 662
+    .line 655
     return-void
 .end method
 

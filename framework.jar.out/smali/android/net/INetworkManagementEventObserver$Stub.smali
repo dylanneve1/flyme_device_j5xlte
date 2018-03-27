@@ -26,21 +26,21 @@
 # static fields
 .field private static final DESCRIPTOR:Ljava/lang/String; = "android.net.INetworkManagementEventObserver"
 
-.field static final TRANSACTION_addressRemoved_5:I = 0x6
+.field static final TRANSACTION_addressRemoved:I = 0x6
 
-.field static final TRANSACTION_addressUpdated_4:I = 0x5
+.field static final TRANSACTION_addressUpdated:I = 0x5
 
-.field static final TRANSACTION_interfaceAdded_2:I = 0x3
+.field static final TRANSACTION_interfaceAdded:I = 0x3
 
 .field static final TRANSACTION_interfaceClassDataActivityChanged:I = 0x8
 
 .field static final TRANSACTION_interfaceDnsServerInfo_9:I = 0xa
 
-.field static final TRANSACTION_interfaceLinkStateChanged:I = 0x2
+.field static final TRANSACTION_interfaceLinkStateChanged_1:I = 0x2
 
 .field static final TRANSACTION_interfaceMessageRecevied:I = 0x9
 
-.field static final TRANSACTION_interfaceRemoved_3:I = 0x4
+.field static final TRANSACTION_interfaceRemoved:I = 0x4
 
 .field static final TRANSACTION_interfaceStatusChanged_0:I = 0x1
 

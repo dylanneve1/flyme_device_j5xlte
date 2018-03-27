@@ -120,12 +120,12 @@
     .prologue
     .line 697
     :try_start_0
-    invoke-virtual {p0}, Landroid/service/voice/VoiceInteractionSession$AbortVoiceRequest;->finishRequest()V
+    invoke-virtual {p0}, Landroid/service/voice/VoiceInteractionSession$Request;->finishRequest()V
 
     .line 698
-    iget-object v1, p0, Landroid/service/voice/VoiceInteractionSession$AbortVoiceRequest;->mCallback:Lcom/android/internal/app/IVoiceInteractorCallback;
+    iget-object v1, p0, Landroid/service/voice/VoiceInteractionSession$Request;->mCallback:Lcom/android/internal/app/IVoiceInteractorCallback;
 
-    iget-object v2, p0, Landroid/service/voice/VoiceInteractionSession$AbortVoiceRequest;->mInterface:Lcom/android/internal/app/IVoiceInteractorRequest;
+    iget-object v2, p0, Landroid/service/voice/VoiceInteractionSession$Request;->mInterface:Lcom/android/internal/app/IVoiceInteractorRequest;
 
     invoke-interface {v1, v2, p1}, Lcom/android/internal/app/IVoiceInteractorCallback;->deliverAbortVoiceResult(Lcom/android/internal/app/IVoiceInteractorRequest;Landroid/os/Bundle;)V
     :try_end_0

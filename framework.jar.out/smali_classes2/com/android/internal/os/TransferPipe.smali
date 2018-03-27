@@ -506,7 +506,7 @@
     .line 150
     :cond_2
     :try_start_4
-    invoke-virtual {p0, v2, v3}, Lcom/android/internal/os/TransferPipe;->wait(J)V
+    invoke-virtual {p0, v2, v3}, Ljava/lang/Object;->wait(J)V
     :try_end_4
     .catch Ljava/lang/InterruptedException; {:try_start_4 .. :try_end_4} :catch_0
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
@@ -687,14 +687,14 @@
 
     .line 243
     :try_start_3
-    invoke-virtual {v2}, Ljava/io/IOException;->toString()Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/Throwable;->toString()Ljava/lang/String;
 
     move-result-object v10
 
     iput-object v10, p0, Lcom/android/internal/os/TransferPipe;->mFailure:Ljava/lang/String;
 
     .line 244
-    invoke-virtual {p0}, Lcom/android/internal/os/TransferPipe;->notifyAll()V
+    invoke-virtual {p0}, Ljava/lang/Object;->notifyAll()V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
@@ -820,7 +820,7 @@
     iput-boolean v10, p0, Lcom/android/internal/os/TransferPipe;->mComplete:Z
 
     .line 251
-    invoke-virtual {p0}, Lcom/android/internal/os/TransferPipe;->notifyAll()V
+    invoke-virtual {p0}, Ljava/lang/Object;->notifyAll()V
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_2
 

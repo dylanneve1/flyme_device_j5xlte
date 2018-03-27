@@ -55,7 +55,7 @@
 
     .line 63
     .local v0, "li":Landroid/net/WifiLinkQualityInfo;
-    invoke-virtual {v0, p0}, Landroid/net/WifiLinkQualityInfo;->initializeFromParcel(Landroid/os/Parcel;)V
+    invoke-virtual {v0, p0}, Landroid/net/LinkQualityInfo;->initializeFromParcel(Landroid/os/Parcel;)V
 
     .line 65
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I

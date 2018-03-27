@@ -44,7 +44,7 @@
     .line 30
     iget-object v0, p0, Landroid/widget/ZoomButton$1;->this$0:Landroid/widget/ZoomButton;
 
-    invoke-virtual {v0}, Landroid/widget/ZoomButton;->hasOnClickListeners()Z
+    invoke-virtual {v0}, Landroid/view/View;->hasOnClickListeners()Z
 
     move-result v0
 
@@ -60,7 +60,7 @@
 
     iget-object v0, p0, Landroid/widget/ZoomButton$1;->this$0:Landroid/widget/ZoomButton;
 
-    invoke-virtual {v0}, Landroid/widget/ZoomButton;->isEnabled()Z
+    invoke-virtual {v0}, Landroid/view/View;->isEnabled()Z
 
     move-result v0
 
@@ -69,7 +69,7 @@
     .line 31
     iget-object v0, p0, Landroid/widget/ZoomButton$1;->this$0:Landroid/widget/ZoomButton;
 
-    invoke-virtual {v0}, Landroid/widget/ZoomButton;->callOnClick()Z
+    invoke-virtual {v0}, Landroid/view/View;->callOnClick()Z
 
     .line 32
     iget-object v0, p0, Landroid/widget/ZoomButton$1;->this$0:Landroid/widget/ZoomButton;
@@ -80,7 +80,7 @@
 
     move-result-wide v2
 
-    invoke-virtual {v0, p0, v2, v3}, Landroid/widget/ZoomButton;->postDelayed(Ljava/lang/Runnable;J)Z
+    invoke-virtual {v0, p0, v2, v3}, Landroid/view/View;->postDelayed(Ljava/lang/Runnable;J)Z
 
     .line 29
     :cond_0

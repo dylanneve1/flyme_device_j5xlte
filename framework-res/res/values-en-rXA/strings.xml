@@ -123,16 +123,17 @@
     <string name="tethered_notification_no_device_message">[Ñö çöññéçţéð ðéVîçé one two three]</string>
     <string name="tethered_notification_one_device_message">[%1$s çöññéçţéð ðéVîçé one two three]</string>
     <string name="tethered_notification_multi_device_message">[%1$s çöññéçţéð ðéVîçéš one two three]</string>
+    <string name="silent_mode_priority">[Þŕîöŕîţý one two]</string>
+    <string name="silent_mode_none">[Ñöñé one]</string>
     <string name="config_iccHotswapPromptForRestartDialogComponent">@null</string>
-    <string name="config_datause_iface">[ŕḿñéţ0 one two]</string>
     <string name="config_mms_user_agent">[ĻîñéåĝéÖŠ one two]</string>
     <string name="config_mms_user_agent_profile_url">[ĥţţþ://ŵŵŵ.ĝööĝļé.çöḿ/öĥå/ŕðƒ/ûå-þŕöƒîļé-ķîļå.хḿļ one two three four five six]</string>
     <string name="config_dozeComponent">[çöḿ.åñðŕöîð.šýšţéḿûî/çöḿ.åñðŕöîð.šýšţéḿûî.ðöžé.ÐöžéŠéŕVîçé one two three four five six seven]</string>
-    <string name="config_wifi_tcp_buffers">[524288,2097152,4194304,262144,524288,1048576 one two three four five]</string>
     <string name="config_customAdbPublicKeyConfirmationComponent">[çöḿ.åñðŕöîð.šýšţéḿûî/çöḿ.åñðŕöîð.šýšţéḿûî.ûšɓ.ÛšɓÐéɓûĝĝîñĝÅçţîVîţý one two three four five six seven eight]</string>
     <string name="config_customAdbPublicKeyConfirmationSecondaryUserComponent">[çöḿ.åñðŕöîð.šýšţéḿûî/çöḿ.åñðŕöîð.šýšţéḿûî.ûšɓ.ÛšɓÐéɓûĝĝîñĝŠéçöñðåŕýÛšéŕÅçţîVîţý one two three four five six seven eight nine]</string>
     <string name="config_customVpnConfirmDialogComponent">[çöḿ.åñðŕöîð.Vþñðîåļöĝš/çöḿ.åñðŕöîð.Vþñðîåļöĝš.ÇöñƒîŕḿÐîåļöĝ one two three four five six seven]</string>
     <string name="config_defaultNetworkScorerPackageName">[]</string>
+    <string name="config_radio_access_family">[ĜŠḾ|ŴÇÐḾÅ|ĻŢÉ one two]</string>
     <string name="config_doubleTouchGestureEnableFile">[]</string>
     <string name="power_key_emergency_number">[112 one]</string>
     <string name="config_demoModeLauncherComponent">[çöḿ.åñðŕöîð.ŕéţåîļðéḿö/.ÐéḿöÞļåýéŕ one two three four]</string>
@@ -223,7 +224,7 @@
     <string name="roamingText0">[Ŕöåḿîñĝ Îñðîçåţöŕ Öñ one two three]</string>
     <string name="roamingText1">[Ŕöåḿîñĝ Îñðîçåţöŕ Öƒƒ one two three]</string>
     <string name="roamingText2">[Ŕöåḿîñĝ Îñðîçåţöŕ Fļåšĥîñĝ one two three four]</string>
-    <string name="roamingText3">[Ñéţŵöŕķ Éхţéñðéŕ one two three]</string>
+    <string name="roamingText3">[Öûţ öƒ Ñéîĝĥɓöŕĥööð one two three]</string>
     <string name="roamingText4">[Öûţ öƒ βûîļðîñĝ one two three]</string>
     <string name="roamingText5">[Ŕöåḿîñĝ - Þŕéƒéŕŕéð Šýšţéḿ one two three four]</string>
     <string name="roamingText6">[Ŕöåḿîñĝ - ÅVåîļåɓļé Šýšţéḿ one two three four]</string>
@@ -550,8 +551,6 @@
     <string name="permdesc_bindCarrierServices">[Åļļöŵš ţĥé ĥöļðéŕ ţö ɓîñð ţö çåŕŕîéŕ šéŕVîçéš. Šĥöûļð ñéVéŕ ɓé ñééðéð ƒöŕ ñöŕḿåļ åþþš. one two three four five six seven eight nine]</string>
     <string name="permlab_access_notification_policy">[åççéšš Ðö Ñöţ Ðîšţûŕɓ one two three]</string>
     <string name="permdesc_access_notification_policy">[Åļļöŵš ţĥé åþþ ţö ŕéåð åñð ŵŕîţé Ðö Ñöţ Ðîšţûŕɓ çöñƒîĝûŕåţîöñ. one two three four five six seven]</string>
-    <string name="permlab_modifyOverlays">[ḿöðîƒý ţĥéḿé öVéŕļåýš one two three]</string>
-    <string name="permdesc_modifyOverlays">[Åļļöŵš ţĥé åþþ ţö ḿåķé ḿöðîƒîçåţîöñš ţö ţĥéḿé öVéŕļåýš ûšîñĝ ÖVéŕļåýḾåñåĝéŕŠéŕVîçé one two three four five six seven eight nine]</string>
     <string name="policylab_limitPassword">[Šéţ þåššŵöŕð ŕûļéš one two three]</string>
     <string name="policydesc_limitPassword">[Çöñţŕöļ ţĥé ļéñĝţĥ åñð ţĥé çĥåŕåçţéŕš åļļöŵéð îñ šçŕééñ ļöçķ þåššŵöŕðš åñð ÞÎÑš. one two three four five six seven eight nine]</string>
     <string name="policylab_watchLogin">[Ḿöñîţöŕ šçŕééñ-ûñļöçķ åţţéḿþţš one two three four]</string>

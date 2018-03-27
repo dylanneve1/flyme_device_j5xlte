@@ -50,7 +50,7 @@
     invoke-static {v0}, Landroid/widget/TimePickerSpinnerDelegate;->-wrap2(Landroid/widget/TimePickerSpinnerDelegate;)V
 
     .line 168
-    invoke-virtual {p1}, Landroid/widget/NumberPicker;->requestFocus()Z
+    invoke-virtual {p1}, Landroid/view/View;->requestFocus()Z
 
     .line 169
     iget-object v1, p0, Landroid/widget/TimePickerSpinnerDelegate$4;->this$0:Landroid/widget/TimePickerSpinnerDelegate;

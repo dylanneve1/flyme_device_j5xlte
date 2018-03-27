@@ -30,7 +30,7 @@
 
 .field static final TRANSACTION_doFullBackup_2:I = 0x3
 
-.field static final TRANSACTION_doMeasureFullBackup:I = 0x4
+.field static final TRANSACTION_doMeasureFullBackup_3:I = 0x4
 
 .field static final TRANSACTION_doQuotaExceeded_4:I = 0x5
 
@@ -54,7 +54,7 @@
     .line 22
     const-string/jumbo v0, "android.app.IBackupAgent"
 
-    invoke-virtual {p0, p0, v0}, Landroid/app/IBackupAgent$Stub;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
+    invoke-virtual {p0, p0, v0}, Landroid/os/Binder;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
 
     .line 20
     return-void

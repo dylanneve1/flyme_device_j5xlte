@@ -176,7 +176,7 @@
 
     move-result-object v0
 
-    invoke-virtual/range {v0 .. v5}, Lcom/android/internal/midi/MidiDispatcher;->send([BIIJ)V
+    invoke-virtual/range {v0 .. v5}, Landroid/media/midi/MidiReceiver;->send([BIIJ)V
     :try_end_3
     .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_0
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
@@ -215,7 +215,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/android/internal/midi/MidiDispatcher;->flush()V
+    invoke-virtual {v0}, Landroid/media/midi/MidiReceiver;->flush()V
     :try_end_4
     .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_0
     .catchall {:try_start_4 .. :try_end_4} :catchall_0

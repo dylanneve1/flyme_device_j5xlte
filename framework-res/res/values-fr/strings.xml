@@ -112,7 +112,7 @@
     <string name="app_ops_write_external_storage">écrire sur le stockage externe</string>
     <string name="app_ops_turn_on_screen">"allumer l'écran"</string>
     <string name="app_ops_get_accounts">"obtenir les comptes de l'appareil"</string>
-    <string name="app_ops_run_in_background">ouvrir en arrière-plan</string>
+    <string name="app_ops_run_in_background">exécuter en arrière-plan</string>
     <string name="app_ops_wifi_change">"changer l'état du Wi-Fi"</string>
     <string name="app_ops_su">"obtenir l'accès root"</string>
     <string name="notify_package_component_protected_title">"Lancement d'activité bloqué"</string>
@@ -123,6 +123,8 @@
     <string name="tethered_notification_no_device_message">Aucun appareil connecté</string>
     <string name="tethered_notification_one_device_message">%1$s appareil connecté</string>
     <string name="tethered_notification_multi_device_message">%1$s appareils connectés</string>
+    <string name="silent_mode_priority">Priorité</string>
+    <string name="silent_mode_none">Aucun</string>
     <string name="month_day_year" formatted="false">%-e %B %Y</string>
     <string name="time_of_day" formatted="false">%H:%M:%S</string>
     <string name="date_and_time" formatted="false">%-e %b %Y à %H:%M:%S</string>

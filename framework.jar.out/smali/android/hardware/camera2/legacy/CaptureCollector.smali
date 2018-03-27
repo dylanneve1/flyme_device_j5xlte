@@ -396,7 +396,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v3, p1}, Landroid/hardware/camera2/legacy/RequestHolder;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v3, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result v3
 

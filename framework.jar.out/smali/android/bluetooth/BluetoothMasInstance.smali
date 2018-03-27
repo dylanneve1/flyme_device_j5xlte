@@ -109,7 +109,9 @@
     .line 39
     iget v1, p0, Landroid/bluetooth/BluetoothMasInstance;->mId:I
 
-    check-cast p1, Landroid/bluetooth/BluetoothMasInstance;
+    nop
+
+    nop
 
     .end local p1    # "o":Ljava/lang/Object;
     iget v2, p1, Landroid/bluetooth/BluetoothMasInstance;->mId:I

@@ -83,6 +83,7 @@
     <string name="app_ops_use_voice_volume">ভয়েস কলের ভলিউম নিয়ন্ত্রণ</string>
     <string name="app_ops_write_mms">এমএমএস বার্তা লিখুন</string>
     <string name="app_ops_write_sms">এসএমএস বার্তা লিখুন</string>
+    <string name="silent_mode_priority">অগ্রাধিকার</string>
     <string name="byteShort">বাইট</string>
     <string name="kilobyteShort">KB</string>
     <string name="megabyteShort">MB</string>

@@ -35,10 +35,10 @@
 
     .line 51
     :try_start_0
-    invoke-virtual {p0}, Landroid/filterfw/core/StreamPort;->assertPortIsOpen()V
+    invoke-virtual {p0}, Landroid/filterfw/core/FilterPort;->assertPortIsOpen()V
 
     .line 52
-    invoke-virtual {p0, p1, p2}, Landroid/filterfw/core/StreamPort;->checkFrameType(Landroid/filterfw/core/Frame;Z)V
+    invoke-virtual {p0, p1, p2}, Landroid/filterfw/core/FilterPort;->checkFrameType(Landroid/filterfw/core/Frame;Z)V
 
     .line 54
     if-eqz p2, :cond_1
@@ -346,7 +346,7 @@
     .line 97
     iget-object v0, p0, Landroid/filterfw/core/StreamPort;->mFrame:Landroid/filterfw/core/Frame;
 
-    invoke-virtual {p0, v0, p1}, Landroid/filterfw/core/StreamPort;->checkFrameManager(Landroid/filterfw/core/Frame;Landroid/filterfw/core/FilterContext;)V
+    invoke-virtual {p0, v0, p1}, Landroid/filterfw/core/FilterPort;->checkFrameManager(Landroid/filterfw/core/Frame;Landroid/filterfw/core/FilterContext;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 

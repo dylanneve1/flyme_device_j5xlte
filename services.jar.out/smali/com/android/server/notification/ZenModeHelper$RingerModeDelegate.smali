@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/android/server/notification/ZenModeHelper;
 
     .prologue
-    .line 968
+    .line 970
     iput-object p1, p0, Lcom/android/server/notification/ZenModeHelper$RingerModeDelegate;->this$0:Lcom/android/server/notification/ZenModeHelper;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -53,7 +53,7 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 1054
+    .line 1056
     iget-object v1, p0, Lcom/android/server/notification/ZenModeHelper$RingerModeDelegate;->this$0:Lcom/android/server/notification/ZenModeHelper;
 
     invoke-static {v1}, Lcom/android/server/notification/ZenModeHelper;->-get3(Lcom/android/server/notification/ZenModeHelper;)I
@@ -73,10 +73,10 @@
     .param p1, "streams"    # I
 
     .prologue
-    .line 1060
+    .line 1062
     or-int/lit8 p1, p1, 0x26
 
-    .line 1065
+    .line 1067
     iget-object v0, p0, Lcom/android/server/notification/ZenModeHelper$RingerModeDelegate;->this$0:Lcom/android/server/notification/ZenModeHelper;
 
     invoke-static {v0}, Lcom/android/server/notification/ZenModeHelper;->-get3(Lcom/android/server/notification/ZenModeHelper;)I
@@ -87,14 +87,14 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 1066
+    .line 1068
     or-int/lit8 p1, p1, 0x18
 
-    .line 1072
+    .line 1074
     :goto_0
     return p1
 
-    .line 1069
+    .line 1071
     :cond_0
     and-int/lit8 p1, p1, -0x19
 
@@ -112,16 +112,16 @@
     .prologue
     const/4 v5, 0x0
 
-    .line 1018
+    .line 1020
     move v8, p2
 
-    .line 1019
+    .line 1021
     .local v8, "ringerModeInternalOut":I
     if-eq p1, p2, :cond_2
 
     const/4 v6, 0x1
 
-    .line 1020
+    .line 1022
     .local v6, "isChange":Z
     :goto_0
     const/4 v0, 0x1
@@ -130,23 +130,23 @@
 
     const/4 v7, 0x1
 
-    .line 1022
+    .line 1024
     .local v7, "isVibrate":Z
     :goto_1
     const/4 v1, -0x1
 
-    .line 1023
+    .line 1025
     .local v1, "newZen":I
     packed-switch p2, :pswitch_data_0
 
-    .line 1042
+    .line 1044
     :cond_0
     :goto_2
     const/4 v0, -0x1
 
     if-eq v1, v0, :cond_1
 
-    .line 1043
+    .line 1045
     iget-object v0, p0, Lcom/android/server/notification/ZenModeHelper$RingerModeDelegate;->this$0:Lcom/android/server/notification/ZenModeHelper;
 
     const-string/jumbo v3, "ringerModeExternal"
@@ -157,14 +157,14 @@
 
     invoke-static/range {v0 .. v5}, Lcom/android/server/notification/ZenModeHelper;->-wrap5(Lcom/android/server/notification/ZenModeHelper;ILandroid/net/Uri;Ljava/lang/String;Ljava/lang/String;Z)V
 
-    .line 1047
+    .line 1049
     :cond_1
     invoke-static {p1, p2, p3, p4, v8}, Lcom/android/server/notification/ZenLog;->traceSetRingerModeExternal(IILjava/lang/String;II)V
 
-    .line 1049
+    .line 1051
     return v8
 
-    .line 1019
+    .line 1021
     .end local v1    # "newZen":I
     .end local v6    # "isChange":Z
     .end local v7    # "isVibrate":Z
@@ -174,19 +174,19 @@
     .restart local v6    # "isChange":Z
     goto :goto_0
 
-    .line 1020
+    .line 1022
     :cond_3
     const/4 v7, 0x0
 
     .restart local v7    # "isVibrate":Z
     goto :goto_1
 
-    .line 1025
+    .line 1027
     .restart local v1    # "newZen":I
     :pswitch_0
     if-eqz v6, :cond_6
 
-    .line 1026
+    .line 1028
     iget-object v0, p0, Lcom/android/server/notification/ZenModeHelper$RingerModeDelegate;->this$0:Lcom/android/server/notification/ZenModeHelper;
 
     invoke-static {v0}, Lcom/android/server/notification/ZenModeHelper;->-get3(Lcom/android/server/notification/ZenModeHelper;)I
@@ -195,10 +195,10 @@
 
     if-nez v0, :cond_4
 
-    .line 1027
+    .line 1029
     const/4 v1, 0x3
 
-    .line 1029
+    .line 1031
     :cond_4
     if-eqz v7, :cond_5
 
@@ -206,19 +206,19 @@
 
     goto :goto_2
 
-    .line 1030
+    .line 1032
     :cond_5
     const/4 v8, 0x0
 
     goto :goto_2
 
-    .line 1032
+    .line 1034
     :cond_6
     move v8, p4
 
     goto :goto_2
 
-    .line 1037
+    .line 1039
     :pswitch_1
     iget-object v0, p0, Lcom/android/server/notification/ZenModeHelper$RingerModeDelegate;->this$0:Lcom/android/server/notification/ZenModeHelper;
 
@@ -228,12 +228,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 1038
+    .line 1040
     const/4 v1, 0x0
 
     goto :goto_2
 
-    .line 1023
+    .line 1025
     nop
 
     :pswitch_data_0
@@ -263,30 +263,30 @@
 
     const/4 v5, 0x0
 
-    .line 977
+    .line 979
     if-eq p1, p2, :cond_4
 
     const/4 v6, 0x1
 
-    .line 979
+    .line 981
     .local v6, "isChange":Z
     :goto_0
     move v7, p2
 
-    .line 981
+    .line 983
     .local v7, "ringerModeExternalOut":I
     const/4 v1, -0x1
 
-    .line 982
+    .line 984
     .local v1, "newZen":I
     packed-switch p2, :pswitch_data_0
 
-    .line 1003
+    .line 1005
     :cond_0
     :goto_1
     if-eq v1, v8, :cond_1
 
-    .line 1004
+    .line 1006
     iget-object v0, p0, Lcom/android/server/notification/ZenModeHelper$RingerModeDelegate;->this$0:Lcom/android/server/notification/ZenModeHelper;
 
     const-string/jumbo v3, "ringerModeInternal"
@@ -295,22 +295,22 @@
 
     invoke-static/range {v0 .. v5}, Lcom/android/server/notification/ZenModeHelper;->-wrap5(Lcom/android/server/notification/ZenModeHelper;ILandroid/net/Uri;Ljava/lang/String;Ljava/lang/String;Z)V
 
-    .line 1008
+    .line 1010
     :cond_1
     if-nez v6, :cond_2
 
     if-eq v1, v8, :cond_8
 
-    .line 1009
+    .line 1011
     :cond_2
     :goto_2
     invoke-static {p1, p2, p3, p4, v7}, Lcom/android/server/notification/ZenLog;->traceSetRingerModeInternal(IILjava/lang/String;II)V
 
-    .line 1012
+    .line 1014
     :cond_3
     return v7
 
-    .line 977
+    .line 979
     .end local v1    # "newZen":I
     .end local v6    # "isChange":Z
     .end local v7    # "ringerModeExternalOut":I
@@ -320,7 +320,7 @@
     .restart local v6    # "isChange":Z
     goto :goto_0
 
-    .line 984
+    .line 986
     .restart local v1    # "newZen":I
     .restart local v7    # "ringerModeExternalOut":I
     :pswitch_0
@@ -330,7 +330,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 985
+    .line 987
     iget-object v0, p0, Lcom/android/server/notification/ZenModeHelper$RingerModeDelegate;->this$0:Lcom/android/server/notification/ZenModeHelper;
 
     invoke-static {v0}, Lcom/android/server/notification/ZenModeHelper;->-get3(Lcom/android/server/notification/ZenModeHelper;)I
@@ -339,7 +339,7 @@
 
     if-eq v0, v3, :cond_5
 
-    .line 986
+    .line 988
     iget-object v0, p0, Lcom/android/server/notification/ZenModeHelper$RingerModeDelegate;->this$0:Lcom/android/server/notification/ZenModeHelper;
 
     invoke-static {v0}, Lcom/android/server/notification/ZenModeHelper;->-get3(Lcom/android/server/notification/ZenModeHelper;)I
@@ -348,10 +348,10 @@
 
     if-eq v0, v4, :cond_5
 
-    .line 987
+    .line 989
     const/4 v1, 0x3
 
-    .line 989
+    .line 991
     :cond_5
     iget-object v0, p0, Lcom/android/server/notification/ZenModeHelper$RingerModeDelegate;->this$0:Lcom/android/server/notification/ZenModeHelper;
 
@@ -363,13 +363,13 @@
 
     goto :goto_1
 
-    .line 994
+    .line 996
     :pswitch_1
     if-eqz v6, :cond_7
 
     if-nez p1, :cond_7
 
-    .line 995
+    .line 997
     iget-object v0, p0, Lcom/android/server/notification/ZenModeHelper$RingerModeDelegate;->this$0:Lcom/android/server/notification/ZenModeHelper;
 
     invoke-static {v0}, Lcom/android/server/notification/ZenModeHelper;->-get3(Lcom/android/server/notification/ZenModeHelper;)I
@@ -378,7 +378,7 @@
 
     if-eq v0, v3, :cond_6
 
-    .line 996
+    .line 998
     iget-object v0, p0, Lcom/android/server/notification/ZenModeHelper$RingerModeDelegate;->this$0:Lcom/android/server/notification/ZenModeHelper;
 
     invoke-static {v0}, Lcom/android/server/notification/ZenModeHelper;->-get3(Lcom/android/server/notification/ZenModeHelper;)I
@@ -387,14 +387,14 @@
 
     if-ne v0, v4, :cond_7
 
-    .line 997
+    .line 999
     :cond_6
     const/4 v1, 0x0
 
-    .line 996
+    .line 998
     goto :goto_1
 
-    .line 998
+    .line 1000
     :cond_7
     iget-object v0, p0, Lcom/android/server/notification/ZenModeHelper$RingerModeDelegate;->this$0:Lcom/android/server/notification/ZenModeHelper;
 
@@ -404,18 +404,18 @@
 
     if-eqz v0, :cond_0
 
-    .line 999
+    .line 1001
     const/4 v7, 0x0
 
     goto :goto_1
 
-    .line 1008
+    .line 1010
     :cond_8
     if-eq p4, v7, :cond_3
 
     goto :goto_2
 
-    .line 982
+    .line 984
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0
@@ -428,7 +428,7 @@
     .locals 1
 
     .prologue
-    .line 971
+    .line 973
     const-string/jumbo v0, "ZenModeHelper"
 
     return-object v0

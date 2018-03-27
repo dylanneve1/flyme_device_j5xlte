@@ -81,7 +81,7 @@
 
     .prologue
     .line 151
-    invoke-virtual {p0}, Landroid/app/MediaRouteActionProvider;->refreshVisibility()V
+    invoke-virtual {p0}, Landroid/view/ActionProvider;->refreshVisibility()V
 
     .line 150
     return-void
@@ -185,7 +185,7 @@
     .line 125
     invoke-direct {v1, v2, v3}, Landroid/view/ViewGroup$LayoutParams;-><init>(II)V
 
-    invoke-virtual {v0, v1}, Landroid/app/MediaRouteButton;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {v0, v1}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 128
     iget-object v0, p0, Landroid/app/MediaRouteActionProvider;->mButton:Landroid/app/MediaRouteButton;

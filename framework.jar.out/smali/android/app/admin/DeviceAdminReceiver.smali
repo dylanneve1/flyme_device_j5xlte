@@ -161,7 +161,7 @@
     :cond_0
     new-instance v0, Landroid/content/ComponentName;
 
-    invoke-virtual {p0}, Landroid/app/admin/DeviceAdminReceiver;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v1
 
@@ -447,7 +447,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v6}, Landroid/app/admin/DeviceAdminReceiver;->getResultExtras(Z)Landroid/os/Bundle;
+    invoke-virtual {v0, v6}, Landroid/content/BroadcastReceiver;->getResultExtras(Z)Landroid/os/Bundle;
 
     move-result-object v21
 
@@ -571,7 +571,7 @@
 
     move-object/from16 v1, v20
 
-    invoke-virtual {v0, v1}, Landroid/app/admin/DeviceAdminReceiver;->setResultData(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Landroid/content/BroadcastReceiver;->setResultData(Ljava/lang/String;)V
 
     goto/16 :goto_0
 

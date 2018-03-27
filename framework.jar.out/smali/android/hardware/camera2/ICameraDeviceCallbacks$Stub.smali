@@ -26,17 +26,17 @@
 # static fields
 .field private static final DESCRIPTOR:Ljava/lang/String; = "android.hardware.camera2.ICameraDeviceCallbacks"
 
-.field static final TRANSACTION_onCaptureStarted_2:I = 0x3
+.field static final TRANSACTION_onCaptureStarted:I = 0x3
 
 .field static final TRANSACTION_onDeviceError:I = 0x1
 
 .field static final TRANSACTION_onDeviceIdle:I = 0x2
 
-.field static final TRANSACTION_onPrepared_4:I = 0x5
+.field static final TRANSACTION_onPrepared:I = 0x5
 
 .field static final TRANSACTION_onRepeatingRequestError:I = 0x6
 
-.field static final TRANSACTION_onResultReceived_3:I = 0x4
+.field static final TRANSACTION_onResultReceived:I = 0x4
 
 
 # direct methods

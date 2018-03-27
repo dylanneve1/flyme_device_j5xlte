@@ -61,7 +61,7 @@
 
     .prologue
     .line 242
-    invoke-virtual {p0}, Landroid/security/keystore/AndroidKeyStoreUnauthenticatedAESCipherSpi;->isEncrypting()Z
+    invoke-virtual {p0}, Landroid/security/keystore/AndroidKeyStoreCipherSpiBase;->isEncrypting()Z
 
     move-result v0
 
@@ -267,7 +267,7 @@
 
     if-nez v0, :cond_0
 
-    invoke-virtual {p0}, Landroid/security/keystore/AndroidKeyStoreUnauthenticatedAESCipherSpi;->isEncrypting()Z
+    invoke-virtual {p0}, Landroid/security/keystore/AndroidKeyStoreCipherSpiBase;->isEncrypting()Z
 
     move-result v0
 
@@ -314,7 +314,7 @@
 
     .line 146
     :cond_0
-    invoke-virtual {p0}, Landroid/security/keystore/AndroidKeyStoreUnauthenticatedAESCipherSpi;->isEncrypting()Z
+    invoke-virtual {p0}, Landroid/security/keystore/AndroidKeyStoreCipherSpiBase;->isEncrypting()Z
 
     move-result v0
 
@@ -388,7 +388,7 @@
     if-nez p1, :cond_3
 
     .line 192
-    invoke-virtual {p0}, Landroid/security/keystore/AndroidKeyStoreUnauthenticatedAESCipherSpi;->isEncrypting()Z
+    invoke-virtual {p0}, Landroid/security/keystore/AndroidKeyStoreCipherSpiBase;->isEncrypting()Z
 
     move-result v2
 
@@ -502,7 +502,7 @@
 
     .line 210
     .local v0, "e":Ljava/security/spec/InvalidParameterSpecException;
-    invoke-virtual {p0}, Landroid/security/keystore/AndroidKeyStoreUnauthenticatedAESCipherSpi;->isEncrypting()Z
+    invoke-virtual {p0}, Landroid/security/keystore/AndroidKeyStoreCipherSpiBase;->isEncrypting()Z
 
     move-result v2
 
@@ -599,7 +599,7 @@
     if-nez p1, :cond_3
 
     .line 164
-    invoke-virtual {p0}, Landroid/security/keystore/AndroidKeyStoreUnauthenticatedAESCipherSpi;->isEncrypting()Z
+    invoke-virtual {p0}, Landroid/security/keystore/AndroidKeyStoreCipherSpiBase;->isEncrypting()Z
 
     move-result v0
 
@@ -637,7 +637,9 @@
 
     .line 174
     :cond_4
-    check-cast p1, Ljavax/crypto/spec/IvParameterSpec;
+    nop
+
+    nop
 
     .end local p1    # "params":Ljava/security/spec/AlgorithmParameterSpec;
     invoke-virtual {p1}, Ljavax/crypto/spec/IvParameterSpec;->getIV()[B
@@ -794,10 +796,12 @@
 
     .line 136
     :cond_2
-    check-cast p2, Landroid/security/keystore/AndroidKeyStoreSecretKey;
+    nop
+
+    nop
 
     .end local p2    # "key":Ljava/security/Key;
-    invoke-virtual {p0, p2}, Landroid/security/keystore/AndroidKeyStoreUnauthenticatedAESCipherSpi;->setKey(Landroid/security/keystore/AndroidKeyStoreKey;)V
+    invoke-virtual {p0, p2}, Landroid/security/keystore/AndroidKeyStoreCipherSpiBase;->setKey(Landroid/security/keystore/AndroidKeyStoreKey;)V
 
     .line 126
     return-void

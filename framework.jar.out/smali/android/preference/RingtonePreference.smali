@@ -185,7 +185,7 @@
     move-result-object v1
 
     :goto_0
-    invoke-virtual {p0, v1}, Landroid/preference/RingtonePreference;->callChangeListener(Ljava/lang/Object;)Z
+    invoke-virtual {p0, v1}, Landroid/preference/Preference;->callChangeListener(Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -254,7 +254,7 @@
     invoke-virtual {p0, v0}, Landroid/preference/RingtonePreference;->onPrepareRingtonePickerIntent(Landroid/content/Intent;)V
 
     .line 144
-    invoke-virtual {p0}, Landroid/preference/RingtonePreference;->getPreferenceManager()Landroid/preference/PreferenceManager;
+    invoke-virtual {p0}, Landroid/preference/Preference;->getPreferenceManager()Landroid/preference/PreferenceManager;
 
     move-result-object v2
 
@@ -269,7 +269,7 @@
     .line 146
     iget v2, p0, Landroid/preference/RingtonePreference;->mRequestCode:I
 
-    invoke-virtual {v1, v0, v2}, Landroid/preference/PreferenceFragment;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {v1, v0, v2}, Landroid/app/Fragment;->startActivityForResult(Landroid/content/Intent;I)V
 
     .line 140
     :goto_0
@@ -277,7 +277,7 @@
 
     .line 148
     :cond_0
-    invoke-virtual {p0}, Landroid/preference/RingtonePreference;->getPreferenceManager()Landroid/preference/PreferenceManager;
+    invoke-virtual {p0}, Landroid/preference/Preference;->getPreferenceManager()Landroid/preference/PreferenceManager;
 
     move-result-object v2
 
@@ -367,7 +367,7 @@
     .line 172
     const-string/jumbo v0, "android.intent.extra.ringtone.TITLE"
 
-    invoke-virtual {p0}, Landroid/preference/RingtonePreference;->getTitle()Ljava/lang/CharSequence;
+    invoke-virtual {p0}, Landroid/preference/Preference;->getTitle()Ljava/lang/CharSequence;
 
     move-result-object v1
 
@@ -393,7 +393,7 @@
     const/4 v1, 0x0
 
     .line 199
-    invoke-virtual {p0, v1}, Landroid/preference/RingtonePreference;->getPersistedString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Landroid/preference/Preference;->getPersistedString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -426,7 +426,7 @@
     move-result-object v0
 
     :goto_0
-    invoke-virtual {p0, v0}, Landroid/preference/RingtonePreference;->persistString(Ljava/lang/String;)Z
+    invoke-virtual {p0, v0}, Landroid/preference/Preference;->persistString(Ljava/lang/String;)Z
 
     .line 185
     return-void

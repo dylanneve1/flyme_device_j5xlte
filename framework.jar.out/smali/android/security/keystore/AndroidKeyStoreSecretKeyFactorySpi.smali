@@ -907,7 +907,7 @@
     :cond_3
     const-class v3, Landroid/security/keystore/KeyInfo;
 
-    invoke-virtual {v3, p2}, Ljava/lang/Class;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v3, p2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result v3
 
@@ -946,7 +946,9 @@
     move-object v2, p1
 
     .line 64
-    check-cast v2, Landroid/security/keystore/AndroidKeyStoreKey;
+    nop
+
+    nop
 
     .line 65
     .local v2, "keystoreKey":Landroid/security/keystore/AndroidKeyStoreKey;

@@ -34,7 +34,7 @@
 
 .field static final TRANSACTION_getNightMode:I = 0x5
 
-.field static final TRANSACTION_isNightModeLocked_6:I = 0x7
+.field static final TRANSACTION_isNightModeLocked:I = 0x7
 
 .field static final TRANSACTION_isUiModeLocked:I = 0x6
 

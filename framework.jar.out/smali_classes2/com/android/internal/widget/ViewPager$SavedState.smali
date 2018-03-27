@@ -82,7 +82,7 @@
     if-nez p2, :cond_0
 
     .line 1242
-    invoke-virtual {p0}, Lcom/android/internal/widget/ViewPager$SavedState;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v0
 

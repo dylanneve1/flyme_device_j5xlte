@@ -194,7 +194,7 @@
     .end local v1    # "windowLayout":Landroid/media/Cea708CCWidget$CCWindowLayout;
     iget-object v2, p0, Landroid/media/Cea708CCWidget$CCHandler;->mCCLayout:Landroid/media/Cea708CCWidget$CCLayout;
 
-    invoke-virtual {v2}, Landroid/media/Cea708CCWidget$CCLayout;->getContext()Landroid/content/Context;
+    invoke-virtual {v2}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v2
 
@@ -755,7 +755,7 @@
 
     .line 1539
     .local v0, "windowLayout":Landroid/media/Cea708CCWidget$CCWindowLayout;
-    invoke-virtual {v0}, Landroid/media/Cea708CCWidget$CCWindowLayout;->isShown()Z
+    invoke-virtual {v0}, Landroid/view/View;->isShown()Z
 
     move-result v2
 
@@ -1116,7 +1116,7 @@
 
     const/4 v2, 0x4
 
-    invoke-virtual {v1, v2}, Landroid/media/Cea708CCWidget$CCLayout;->setVisibility(I)V
+    invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
 
     .line 1568
     iget-object v1, p0, Landroid/media/Cea708CCWidget$CCHandler;->mHandler:Landroid/os/Handler;
